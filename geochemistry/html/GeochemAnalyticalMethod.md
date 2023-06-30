@@ -4,7 +4,7 @@
 [Analytical methods for geochemistry](#Analyticalmethodsforgeochemistry)
 
 
-This file generated at: "2023-06-29T21:12:27.235269+00:00"
+This file generated at: "2023-06-30T07:20:43.258107+00:00"
 ---
 comment: | 
   WARNING: This file is generated. Any edits will be lost!
@@ -6208,8 +6208,7 @@ can be used to characterize the sample.
 (https://en.wikipedia.org/wiki/M%C3%B6ssbauer_spectroscopy)
 
 - **Alternate labels:**
-Mossbauer spectroscopy, 
-Mössbauer SPECTROSCOPY, 
+Mossbauer spectroscopy
 
 
 - **Source:**
