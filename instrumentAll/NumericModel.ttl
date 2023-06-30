@@ -1,0 +1,1164 @@
+# baseURI: http://w3id.org/ogeochem/def/numericmodel/ontology
+# imports: http://purl.org/dc/elements/1.1/
+# imports: http://www.w3.org/2000/01/rdf-schema
+# imports: http://www.w3.org/2004/02/skos/core
+
+@prefix dcterm: <http://purl.org/dc/terms/> .
+@prefix dspl: <http://vocab.nerc.ac.uk/collection/P08/current/> .
+@prefix grg: <http://www.isotc211.org/schemas/grg/> .
+@prefix inst: <http://vocab.nerc.ac.uk/collection/L22/current/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <https://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdev: <http://vocab.nerc.ac.uk/collection/L05/current/> .
+@prefix sdnc: <http://vocab.nerc.ac.uk/collection/L21/current/> .
+@prefix sdnd: <http://vocab.nerc.ac.uk/collection/C77/current/> .
+@prefix sdnk: <http://vocab.nerc.ac.uk/collection/L19/current/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+pav:authoredOn
+  rdf:type owl:AnnotationProperty ;
+.
+pav:hasCurrentVersion
+  rdf:type owl:AnnotationProperty ;
+.
+pav:hasVersion
+  rdf:type owl:AnnotationProperty ;
+.
+pav:version
+  rdf:type owl:AnnotationProperty ;
+.
+sdev:MOD01
+  rdf:type skos:Concept ;
+  dcterm:date "2012-07-16 14:13:04.0" ;
+  dcterm:identifier "SDN:L05::MOD01" ;
+  pav:authoredOn "2012-07-16 14:13:04.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/MOD01/1> ;
+  owl:versionInfo "1" ;
+  skos:broader sdnc:ICAT08 ;
+  skos:definition "Numerical models that make predictions over the whole globe."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::MOD01" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Global models"@en ;
+.
+sdev:MOD02
+  rdf:type skos:Concept ;
+  dcterm:date "2012-07-16 14:13:37.0" ;
+  dcterm:identifier "SDN:L05::MOD02" ;
+  pav:authoredOn "2012-07-16 14:13:37.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/MOD02/1> ;
+  owl:versionInfo "1" ;
+  skos:broader sdnc:ICAT08 ;
+  skos:definition "Numerical models that make predictions within a limited geographic area."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/EDMED_DCAT_THEMES/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/NETMAR_OCEAN/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/NETOC_INSTRUMENT/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::MOD02" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Regional models"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/ATEMP> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/CDIAM> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/KVISC> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/LTHICK> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/SALIN> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/WCONT> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/WINDF> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/WINDT> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/WINDX> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/WINDY> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/WTEMP> ;
+.
+sdev:MOD03
+  rdf:type skos:Concept ;
+  dcterm:date "2012-07-16 14:14:53.0" ;
+  dcterm:identifier "SDN:L05::MOD03" ;
+  pav:authoredOn "2012-07-16 14:14:53.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/MOD03/1> ;
+  owl:versionInfo "1" ;
+  skos:broader sdnc:ICAT08 ;
+  skos:definition "Numerical models the make predictions in the atmosphere assuming that it is a closed system that doesn't interact with the hydrosphere."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::MOD03" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Atmosphere models"@en ;
+.
+sdev:MOD04
+  rdf:type skos:Concept ;
+  dcterm:date "2012-07-16 14:15:37.0" ;
+  dcterm:identifier "SDN:L05::MOD04" ;
+  pav:authoredOn "2012-07-16 14:15:37.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/MOD04/1> ;
+  owl:versionInfo "1" ;
+  skos:broader sdnc:ICAT08 ;
+  skos:definition "Numerical models the make predictions in the hydrosphere assuming that it is a closed system that doesn't interact with the atmosphere."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/EDMED_DCAT_THEMES/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::MOD04" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Ocean models"@en ;
+.
+sdev:MOD05
+  rdf:type skos:Concept ;
+  dcterm:date "2012-07-16 14:17:11.0" ;
+  dcterm:identifier "SDN:L05::MOD05" ;
+  pav:authoredOn "2012-07-16 14:17:11.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/MOD05/1> ;
+  owl:versionInfo "1" ;
+  skos:broader sdnc:ICAT08 ;
+  skos:definition "Numerical models that make predictions in both the atmosphere and the hydrosphere by considering both spheres as a single system."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/EDMED_DCAT_THEMES/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::MOD05" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Coupled models"@en ;
+.
+sdev:MOD06
+  rdf:type skos:Concept ;
+  dcterm:date "2012-07-16 14:18:04.0" ;
+  dcterm:identifier "SDN:L05::MOD06" ;
+  pav:authoredOn "2012-07-16 14:18:04.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/MOD06/1> ;
+  owl:versionInfo "1" ;
+  skos:broader sdnc:ICAT08 ;
+  skos:definition "Numerical models that make predictions of weather parameters such as air temperature, pressure, humidity and winds."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/NETMAR_OCEAN/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/NETOC_INSTRUMENT/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::MOD06" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Meteorological models"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/ATEMP> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/WINDF> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/WINDT> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/WINDX> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/WINDY> ;
+.
+sdev:MOD07
+  rdf:type skos:Concept ;
+  dcterm:date "2012-07-16 14:19:02.0" ;
+  dcterm:identifier "SDN:L05::MOD07" ;
+  pav:authoredOn "2012-07-16 14:19:02.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/MOD07/1> ;
+  owl:versionInfo "1" ;
+  skos:broader sdnc:ICAT08 ;
+  skos:definition "Numerical models that make predictions of physical oceanographic parameters such as water body temperature, salinity, currents and waves."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/EDMED_DCAT_THEMES/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/NETMAR_OCEAN/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/NETOC_INSTRUMENT/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::MOD07" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Physical oceanographic models"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/CDIAM> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/KVISC> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/LTHICK> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/SALIN> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/WCONT> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P25/current/WTEMP> ;
+.
+sdev:MOD08
+  rdf:type skos:Concept ;
+  dcterm:date "2012-07-16 14:20:04.0" ;
+  dcterm:identifier "SDN:L05::MOD08" ;
+  pav:authoredOn "2012-07-16 14:20:04.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/MOD08/1> ;
+  owl:versionInfo "1" ;
+  skos:broader sdnc:ICAT08 ;
+  skos:definition "Numerical models that make predictions of biological parameters, including ecosystem models."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/EDMED_DCAT_THEMES/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::MOD08" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Biological and biogeochemical models"@en ;
+.
+sdnk:SDNKG17
+  rdf:type skos:Collection ;
+  dcterm:date "2021-07-07 10:53:52.0" ;
+  dcterm:identifier "SDN:L19::SDNKG17" ;
+  pav:authoredOn "2021-07-07 10:53:52.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L19/current/SDNKG17/1> ;
+  pav:version "1" ;
+  owl:versionInfo "1" ;
+  skos:altLabel "sensor_model"@en ;
+  skos:definition "Keyword identifies a sensor model"@en ;
+  skos:member inst:NETT0001 ;
+  skos:member inst:NETT0003 ;
+  skos:member inst:NETT0006 ;
+  skos:member inst:NETT0009 ;
+  skos:member inst:NETT0010 ;
+  skos:member inst:NETT0012 ;
+  skos:member inst:NETT0016 ;
+  skos:member inst:NETT0019 ;
+  skos:member inst:NETT0023 ;
+  skos:member inst:NETT0024 ;
+  skos:member inst:NETT0027 ;
+  skos:member inst:NETT0031 ;
+  skos:member inst:NETT0032 ;
+  skos:member inst:NETT0034 ;
+  skos:member inst:NETT0035 ;
+  skos:member inst:NETT0036 ;
+  skos:member inst:NETT0039 ;
+  skos:member inst:NETT0044 ;
+  skos:member inst:NETT0045 ;
+  skos:member inst:NETT0054 ;
+  skos:member inst:NETT0074 ;
+  skos:member inst:NETT0075 ;
+  skos:member inst:NETT0077 ;
+  skos:member inst:NETT0078 ;
+  skos:member inst:NETT0079 ;
+  skos:member inst:NETT0080 ;
+  skos:member inst:NETT0090 ;
+  skos:member inst:NETT0091 ;
+  skos:member inst:NETT0092 ;
+  skos:member inst:NETT0095 ;
+  skos:member inst:NETT0096 ;
+  skos:member inst:NETT0100 ;
+  skos:member inst:NETT0102 ;
+  skos:member inst:NETT0103 ;
+  skos:member inst:NETT0104 ;
+  skos:member inst:NETT0105 ;
+  skos:member inst:NETT0106 ;
+  skos:member inst:NETT0108 ;
+  skos:member inst:NETT0111 ;
+  skos:member inst:NETT0112 ;
+  skos:member inst:NETT0113 ;
+  skos:member inst:NETT0114 ;
+  skos:member inst:NETT0115 ;
+  skos:member inst:NETT0116 ;
+  skos:member inst:NETT0118 ;
+  skos:member inst:NETT0122 ;
+  skos:member inst:NETT0124 ;
+  skos:member inst:NETT0126 ;
+  skos:member inst:NETT0127 ;
+  skos:member inst:NETT0128 ;
+  skos:member inst:NETT0129 ;
+  skos:member inst:NETT0131 ;
+  skos:member inst:NETT0132 ;
+  skos:member inst:NETT0133 ;
+  skos:member inst:NETT0135 ;
+  skos:member inst:NETT0136 ;
+  skos:member inst:NETT0137 ;
+  skos:member inst:NETT0138 ;
+  skos:member inst:NETT0140 ;
+  skos:member inst:NETT0143 ;
+  skos:member inst:NETT0144 ;
+  skos:member inst:NETT0145 ;
+  skos:member inst:NETT0147 ;
+  skos:member inst:NETT0151 ;
+  skos:member inst:NETT0153 ;
+  skos:member inst:NETT0155 ;
+  skos:member inst:NETT0163 ;
+  skos:member inst:NETT0164 ;
+  skos:member inst:NETT0167 ;
+  skos:member inst:NETT0169 ;
+  skos:member inst:NETT0171 ;
+  skos:member inst:NETT0173 ;
+  skos:member inst:NETT0174 ;
+  skos:member inst:NETT0175 ;
+  skos:member inst:NETT0176 ;
+  skos:member inst:NETT0177 ;
+  skos:member inst:NETT0183 ;
+  skos:member inst:NETT0188 ;
+  skos:member inst:NETT0195 ;
+  skos:member inst:NETT0196 ;
+  skos:member inst:NETT0197 ;
+  skos:member inst:NETT0198 ;
+  skos:member inst:TOOL0001 ;
+  skos:member inst:TOOL000X ;
+  skos:member inst:TOOL0148 ;
+  skos:member inst:TOOL0235 ;
+  skos:member inst:TOOL0236 ;
+  skos:member inst:TOOL0237 ;
+  skos:member inst:TOOL0238 ;
+  skos:member inst:TOOL0248 ;
+  skos:member inst:TOOL0281 ;
+  skos:member inst:TOOL0282 ;
+  skos:member inst:TOOL0283 ;
+  skos:member inst:TOOL0353 ;
+  skos:member inst:TOOL0354 ;
+  skos:member inst:TOOL0355 ;
+  skos:member inst:TOOL0356 ;
+  skos:member inst:TOOL0357 ;
+  skos:member inst:TOOL0358 ;
+  skos:member inst:TOOL0381 ;
+  skos:member inst:TOOL0412 ;
+  skos:member inst:TOOL0413 ;
+  skos:member inst:TOOL0418 ;
+  skos:member inst:TOOL0427 ;
+  skos:member inst:TOOL0430 ;
+  skos:member inst:TOOL0501 ;
+  skos:member inst:TOOL0502 ;
+  skos:member inst:TOOL0503 ;
+  skos:member inst:TOOL0504 ;
+  skos:member inst:TOOL0505 ;
+  skos:member inst:TOOL0506 ;
+  skos:member inst:TOOL0508 ;
+  skos:member inst:TOOL0535 ;
+  skos:member inst:TOOL0536 ;
+  skos:member inst:TOOL0537 ;
+  skos:member inst:TOOL0538 ;
+  skos:member inst:TOOL0539 ;
+  skos:member inst:TOOL0540 ;
+  skos:member inst:TOOL0541 ;
+  skos:member inst:TOOL0542 ;
+  skos:member inst:TOOL0543 ;
+  skos:member inst:TOOL0544 ;
+  skos:member inst:TOOL0545 ;
+  skos:member inst:TOOL0546 ;
+  skos:member inst:TOOL0547 ;
+  skos:member inst:TOOL0548 ;
+  skos:member inst:TOOL0550 ;
+  skos:member inst:TOOL0551 ;
+  skos:member inst:TOOL0552 ;
+  skos:member inst:TOOL0553 ;
+  skos:member inst:TOOL0554 ;
+  skos:member inst:TOOL0555 ;
+  skos:member inst:TOOL0556 ;
+  skos:member inst:TOOL0557 ;
+  skos:member inst:TOOL0561 ;
+  skos:member inst:TOOL0562 ;
+  skos:member inst:TOOL0563 ;
+  skos:member inst:TOOL0571 ;
+  skos:member inst:TOOL0573 ;
+  skos:member inst:TOOL0588 ;
+  skos:member inst:TOOL0651 ;
+  skos:member inst:TOOL0652 ;
+  skos:member inst:TOOL0653 ;
+  skos:member inst:TOOL0660 ;
+  skos:member inst:TOOL0788 ;
+  skos:member inst:TOOL0817 ;
+  skos:member inst:TOOL0818 ;
+  skos:member inst:TOOL0819 ;
+  skos:member inst:TOOL0828 ;
+  skos:member inst:TOOL0843 ;
+  skos:member inst:TOOL0939 ;
+  skos:member inst:TOOL0940 ;
+  skos:member inst:TOOL0960 ;
+  skos:member inst:TOOL0961 ;
+  skos:member inst:TOOL0962 ;
+  skos:member inst:TOOL0963 ;
+  skos:member inst:TOOL0978 ;
+  skos:member inst:TOOL0979 ;
+  skos:member inst:TOOL0980 ;
+  skos:member inst:TOOL0981 ;
+  skos:member inst:TOOL0982 ;
+  skos:member inst:TOOL0983 ;
+  skos:member inst:TOOL0984 ;
+  skos:member inst:TOOL0986 ;
+  skos:member inst:TOOL0987 ;
+  skos:member inst:TOOL0988 ;
+  skos:member inst:TOOL0989 ;
+  skos:member inst:TOOL0990 ;
+  skos:member inst:TOOL0991 ;
+  skos:member inst:TOOL0992 ;
+  skos:member inst:TOOL0993 ;
+  skos:member inst:TOOL0994 ;
+  skos:member inst:TOOL0995 ;
+  skos:member inst:TOOL0996 ;
+  skos:member inst:TOOL0997 ;
+  skos:member inst:TOOL1012 ;
+  skos:member inst:TOOL1083 ;
+  skos:member inst:TOOL1135 ;
+  skos:member inst:TOOL1181 ;
+  skos:member inst:TOOL1214 ;
+  skos:member inst:TOOL1215 ;
+  skos:member inst:TOOL1216 ;
+  skos:member inst:TOOL1252 ;
+  skos:member inst:TOOL1253 ;
+  skos:member inst:TOOL1261 ;
+  skos:member inst:TOOL1272 ;
+  skos:member inst:TOOL1326 ;
+  skos:member inst:TOOL1339 ;
+  skos:member inst:TOOL1405 ;
+  skos:member inst:TOOL1413 ;
+  skos:member inst:TOOL1414 ;
+  skos:member inst:TOOL1415 ;
+  skos:member inst:TOOL1416 ;
+  skos:member inst:TOOL1417 ;
+  skos:member inst:TOOL1463 ;
+  skos:member inst:TOOL1464 ;
+  skos:member inst:TOOL1465 ;
+  skos:member inst:TOOL1466 ;
+  skos:member inst:TOOL1467 ;
+  skos:member inst:TOOL1477 ;
+  skos:member inst:TOOL1478 ;
+  skos:member inst:TOOL1487 ;
+  skos:member inst:TOOL1533 ;
+  skos:member inst:TOOL1535 ;
+  skos:member inst:TOOL1574 ;
+  skos:member inst:TOOL1575 ;
+  skos:member inst:TOOL1576 ;
+  skos:member inst:TOOL1638 ;
+  skos:member inst:TOOL1654 ;
+  skos:notation "SDN:L19::SDNKG17" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "sensor_model"@en ;
+.
+sdnc:ICAT08
+  rdf:type skos:Concept ;
+  dcterm:date "2012-07-16 14:04:04.0" ;
+  dcterm:identifier "SDN:L21::ICAT08" ;
+  pav:authoredOn "2012-07-16 14:04:04.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L21/current/ICAT08/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "SeaDataNet numerical model categories"@en ;
+  skos:altLabel "numerical models"@en ;
+  skos:definition "Categories used in the SeaDataNet project to classify algorithmic predications that produce datasets."@en ;
+  skos:inScheme <http://w3id.org/def/numericalmodel/conceptscheme> ;
+  skos:narrower sdev:MOD01 ;
+  skos:narrower sdev:MOD02 ;
+  skos:narrower sdev:MOD03 ;
+  skos:narrower sdev:MOD04 ;
+  skos:narrower sdev:MOD05 ;
+  skos:narrower sdev:MOD06 ;
+  skos:narrower sdev:MOD07 ;
+  skos:narrower sdev:MOD08 ;
+  skos:notation "SDN:L21::ICAT08" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Numerical model"@en ;
+  skos:topConceptOf <http://w3id.org/def/numericalmodel/conceptscheme> ;
+.
+sdnc:collection
+  rdf:type skos:Collection ;
+  dcterm:alternative "Device category types" ;
+  dcterm:creator "SeaDataNet" ;
+  dcterm:date "2012-07-17 02:00:03.0" ;
+  dcterm:description "High-level classification of devices based on function and mode of deployment." ;
+  dcterm:license <https://creativecommons.org/licenses/by/4.0> ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "SeaDataNet device category types" ;
+  grg:RE_RegisterManager "British Oceanographic Data Centre" ;
+  grg:RE_RegisterOwner "SeaDataNet" ;
+  rdfs:comment "Governance for vocabularies used in the EU SeaDataNet project implemented as consultation between BODC and the members of the SeaDataNet Technical Task Team" ;
+  owl:versionInfo "5" ;
+  skos:altLabel "Device category types" ;
+  skos:member sdnc:ICAT08 ;
+  skos:prefLabel "SeaDataNet device category types" ;
+.
+inst:seavoxdevicecatalog
+  rdf:type skos:Collection ;
+  dcterm:alternative "SeaVoX Device Catalogue" ;
+  dcterm:creator "SeaDataNet and MarineXML Vocabulary Content Governance Group" ;
+  dcterm:date "2023-03-07 02:00:03.0" ;
+  dcterm:description "Terms for distinct sampling or measuring devices that may be identified in the real world in terms of manufacturer and model number." ;
+  dcterm:license <https://creativecommons.org/licenses/by/4.0> ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "SeaVoX Device Catalogue" ;
+  grg:RE_RegisterManager "British Oceanographic Data Centre" ;
+  grg:RE_RegisterOwner "SeaDataNet and MarineXML Vocabulary Content Governance Group" ;
+  rdfs:comment "Group set up under the joint auspices of the SeaDataNet project and the Intergovernmental Oceanographic Commission MarineXML Steering Group for controlled vocabulary governance in the marine domain" ;
+  rdfs:seeAlso <https://github.com/nvs-vocabs/L22> ;
+  owl:versionInfo "613" ;
+  skos:altLabel "SeaVoX Device Catalogue" ;
+  skos:member inst:NETT0001 ;
+  skos:member inst:NETT0003 ;
+  skos:member inst:NETT0006 ;
+  skos:member inst:NETT0009 ;
+  skos:member inst:NETT0010 ;
+  skos:member inst:NETT0012 ;
+  skos:member inst:NETT0016 ;
+  skos:member inst:NETT0019 ;
+  skos:member inst:NETT0023 ;
+  skos:member inst:NETT0024 ;
+  skos:member inst:NETT0027 ;
+  skos:member inst:NETT0031 ;
+  skos:member inst:NETT0032 ;
+  skos:member inst:NETT0034 ;
+  skos:member inst:NETT0035 ;
+  skos:member inst:NETT0036 ;
+  skos:member inst:NETT0039 ;
+  skos:member inst:NETT0044 ;
+  skos:member inst:NETT0045 ;
+  skos:member inst:NETT0054 ;
+  skos:member inst:NETT0074 ;
+  skos:member inst:NETT0075 ;
+  skos:member inst:NETT0077 ;
+  skos:member inst:NETT0078 ;
+  skos:member inst:NETT0079 ;
+  skos:member inst:NETT0080 ;
+  skos:member inst:NETT0090 ;
+  skos:member inst:NETT0091 ;
+  skos:member inst:NETT0092 ;
+  skos:member inst:NETT0095 ;
+  skos:member inst:NETT0096 ;
+  skos:member inst:NETT0100 ;
+  skos:member inst:NETT0102 ;
+  skos:member inst:NETT0103 ;
+  skos:member inst:NETT0104 ;
+  skos:member inst:NETT0105 ;
+  skos:member inst:NETT0106 ;
+  skos:member inst:NETT0108 ;
+  skos:member inst:NETT0111 ;
+  skos:member inst:NETT0112 ;
+  skos:member inst:NETT0113 ;
+  skos:member inst:NETT0114 ;
+  skos:member inst:NETT0115 ;
+  skos:member inst:NETT0116 ;
+  skos:member inst:NETT0118 ;
+  skos:member inst:NETT0122 ;
+  skos:member inst:NETT0124 ;
+  skos:member inst:NETT0126 ;
+  skos:member inst:NETT0127 ;
+  skos:member inst:NETT0128 ;
+  skos:member inst:NETT0129 ;
+  skos:member inst:NETT0131 ;
+  skos:member inst:NETT0132 ;
+  skos:member inst:NETT0133 ;
+  skos:member inst:NETT0135 ;
+  skos:member inst:NETT0136 ;
+  skos:member inst:NETT0137 ;
+  skos:member inst:NETT0138 ;
+  skos:member inst:NETT0140 ;
+  skos:member inst:NETT0143 ;
+  skos:member inst:NETT0144 ;
+  skos:member inst:NETT0145 ;
+  skos:member inst:NETT0147 ;
+  skos:member inst:NETT0151 ;
+  skos:member inst:NETT0153 ;
+  skos:member inst:NETT0155 ;
+  skos:member inst:NETT0163 ;
+  skos:member inst:NETT0164 ;
+  skos:member inst:NETT0167 ;
+  skos:member inst:NETT0169 ;
+  skos:member inst:NETT0171 ;
+  skos:member inst:NETT0173 ;
+  skos:member inst:NETT0174 ;
+  skos:member inst:NETT0175 ;
+  skos:member inst:NETT0176 ;
+  skos:member inst:NETT0177 ;
+  skos:member inst:NETT0183 ;
+  skos:member inst:NETT0188 ;
+  skos:member inst:NETT0195 ;
+  skos:member inst:NETT0196 ;
+  skos:member inst:NETT0197 ;
+  skos:member inst:NETT0198 ;
+  skos:member inst:NETT0199 ;
+  skos:member inst:NETT0200 ;
+  skos:member inst:NETT0201 ;
+  skos:member inst:NETT0202 ;
+  skos:member inst:TOOL0001 ;
+  skos:member inst:TOOL000X ;
+  skos:member inst:TOOL0078 ;
+  skos:member inst:TOOL0148 ;
+  skos:member inst:TOOL0199 ;
+  skos:member inst:TOOL0235 ;
+  skos:member inst:TOOL0236 ;
+  skos:member inst:TOOL0237 ;
+  skos:member inst:TOOL0238 ;
+  skos:member inst:TOOL0248 ;
+  skos:member inst:TOOL0281 ;
+  skos:member inst:TOOL0282 ;
+  skos:member inst:TOOL0283 ;
+  skos:member inst:TOOL0304 ;
+  skos:member inst:TOOL0313 ;
+  skos:member inst:TOOL0337 ;
+  skos:member inst:TOOL0348 ;
+  skos:member inst:TOOL0349 ;
+  skos:member inst:TOOL0353 ;
+  skos:member inst:TOOL0354 ;
+  skos:member inst:TOOL0355 ;
+  skos:member inst:TOOL0356 ;
+  skos:member inst:TOOL0357 ;
+  skos:member inst:TOOL0358 ;
+  skos:member inst:TOOL0381 ;
+  skos:member inst:TOOL0388 ;
+  skos:member inst:TOOL0389 ;
+  skos:member inst:TOOL0390 ;
+  skos:member inst:TOOL0391 ;
+  skos:member inst:TOOL0412 ;
+  skos:member inst:TOOL0413 ;
+  skos:member inst:TOOL0418 ;
+  skos:member inst:TOOL0420 ;
+  skos:member inst:TOOL0427 ;
+  skos:member inst:TOOL0430 ;
+  skos:member inst:TOOL0457 ;
+  skos:member inst:TOOL0469 ;
+  skos:member inst:TOOL0491 ;
+  skos:member inst:TOOL0500 ;
+  skos:member inst:TOOL0501 ;
+  skos:member inst:TOOL0502 ;
+  skos:member inst:TOOL0503 ;
+  skos:member inst:TOOL0504 ;
+  skos:member inst:TOOL0505 ;
+  skos:member inst:TOOL0506 ;
+  skos:member inst:TOOL0507 ;
+  skos:member inst:TOOL0508 ;
+  skos:member inst:TOOL0524 ;
+  skos:member inst:TOOL0535 ;
+  skos:member inst:TOOL0536 ;
+  skos:member inst:TOOL0537 ;
+  skos:member inst:TOOL0538 ;
+  skos:member inst:TOOL0539 ;
+  skos:member inst:TOOL0540 ;
+  skos:member inst:TOOL0541 ;
+  skos:member inst:TOOL0542 ;
+  skos:member inst:TOOL0543 ;
+  skos:member inst:TOOL0544 ;
+  skos:member inst:TOOL0545 ;
+  skos:member inst:TOOL0546 ;
+  skos:member inst:TOOL0547 ;
+  skos:member inst:TOOL0548 ;
+  skos:member inst:TOOL0550 ;
+  skos:member inst:TOOL0551 ;
+  skos:member inst:TOOL0552 ;
+  skos:member inst:TOOL0553 ;
+  skos:member inst:TOOL0554 ;
+  skos:member inst:TOOL0555 ;
+  skos:member inst:TOOL0556 ;
+  skos:member inst:TOOL0557 ;
+  skos:member inst:TOOL0561 ;
+  skos:member inst:TOOL0562 ;
+  skos:member inst:TOOL0563 ;
+  skos:member inst:TOOL0567 ;
+  skos:member inst:TOOL0571 ;
+  skos:member inst:TOOL0573 ;
+  skos:member inst:TOOL0588 ;
+  skos:member inst:TOOL0601 ;
+  skos:member inst:TOOL0623 ;
+  skos:member inst:TOOL0651 ;
+  skos:member inst:TOOL0652 ;
+  skos:member inst:TOOL0653 ;
+  skos:member inst:TOOL0660 ;
+  skos:member inst:TOOL0698 ;
+  skos:member inst:TOOL0735 ;
+  skos:member inst:TOOL0742 ;
+  skos:member inst:TOOL0743 ;
+  skos:member inst:TOOL0751 ;
+  skos:member inst:TOOL0753 ;
+  skos:member inst:TOOL0758 ;
+  skos:member inst:TOOL0759 ;
+  skos:member inst:TOOL0760 ;
+  skos:member inst:TOOL0761 ;
+  skos:member inst:TOOL0762 ;
+  skos:member inst:TOOL0763 ;
+  skos:member inst:TOOL0764 ;
+  skos:member inst:TOOL0765 ;
+  skos:member inst:TOOL0766 ;
+  skos:member inst:TOOL0767 ;
+  skos:member inst:TOOL0768 ;
+  skos:member inst:TOOL0769 ;
+  skos:member inst:TOOL0788 ;
+  skos:member inst:TOOL0792 ;
+  skos:member inst:TOOL0798 ;
+  skos:member inst:TOOL0799 ;
+  skos:member inst:TOOL0800 ;
+  skos:member inst:TOOL0801 ;
+  skos:member inst:TOOL0802 ;
+  skos:member inst:TOOL0803 ;
+  skos:member inst:TOOL0817 ;
+  skos:member inst:TOOL0818 ;
+  skos:member inst:TOOL0819 ;
+  skos:member inst:TOOL0828 ;
+  skos:member inst:TOOL0833 ;
+  skos:member inst:TOOL0843 ;
+  skos:member inst:TOOL0862 ;
+  skos:member inst:TOOL0882 ;
+  skos:member inst:TOOL0885 ;
+  skos:member inst:TOOL0899 ;
+  skos:member inst:TOOL0900 ;
+  skos:member inst:TOOL0926 ;
+  skos:member inst:TOOL0933 ;
+  skos:member inst:TOOL0934 ;
+  skos:member inst:TOOL0935 ;
+  skos:member inst:TOOL0936 ;
+  skos:member inst:TOOL0939 ;
+  skos:member inst:TOOL0940 ;
+  skos:member inst:TOOL0960 ;
+  skos:member inst:TOOL0961 ;
+  skos:member inst:TOOL0962 ;
+  skos:member inst:TOOL0963 ;
+  skos:member inst:TOOL0978 ;
+  skos:member inst:TOOL0979 ;
+  skos:member inst:TOOL0980 ;
+  skos:member inst:TOOL0981 ;
+  skos:member inst:TOOL0982 ;
+  skos:member inst:TOOL0983 ;
+  skos:member inst:TOOL0984 ;
+  skos:member inst:TOOL0986 ;
+  skos:member inst:TOOL0987 ;
+  skos:member inst:TOOL0988 ;
+  skos:member inst:TOOL0989 ;
+  skos:member inst:TOOL0990 ;
+  skos:member inst:TOOL0991 ;
+  skos:member inst:TOOL0992 ;
+  skos:member inst:TOOL0993 ;
+  skos:member inst:TOOL0994 ;
+  skos:member inst:TOOL0995 ;
+  skos:member inst:TOOL0996 ;
+  skos:member inst:TOOL0997 ;
+  skos:member inst:TOOL1012 ;
+  skos:member inst:TOOL1083 ;
+  skos:member inst:TOOL1135 ;
+  skos:member inst:TOOL1181 ;
+  skos:member inst:TOOL1214 ;
+  skos:member inst:TOOL1215 ;
+  skos:member inst:TOOL1216 ;
+  skos:member inst:TOOL1252 ;
+  skos:member inst:TOOL1253 ;
+  skos:member inst:TOOL1261 ;
+  skos:member inst:TOOL1272 ;
+  skos:member inst:TOOL1299 ;
+  skos:member inst:TOOL1326 ;
+  skos:member inst:TOOL1339 ;
+  skos:member inst:TOOL1348 ;
+  skos:member inst:TOOL1405 ;
+  skos:member inst:TOOL1413 ;
+  skos:member inst:TOOL1414 ;
+  skos:member inst:TOOL1415 ;
+  skos:member inst:TOOL1416 ;
+  skos:member inst:TOOL1417 ;
+  skos:member inst:TOOL1433 ;
+  skos:member inst:TOOL1434 ;
+  skos:member inst:TOOL1435 ;
+  skos:member inst:TOOL1446 ;
+  skos:member inst:TOOL1463 ;
+  skos:member inst:TOOL1464 ;
+  skos:member inst:TOOL1465 ;
+  skos:member inst:TOOL1466 ;
+  skos:member inst:TOOL1467 ;
+  skos:member inst:TOOL1477 ;
+  skos:member inst:TOOL1478 ;
+  skos:member inst:TOOL1487 ;
+  skos:member inst:TOOL1533 ;
+  skos:member inst:TOOL1535 ;
+  skos:member inst:TOOL1547 ;
+  skos:member inst:TOOL1553 ;
+  skos:member inst:TOOL1554 ;
+  skos:member inst:TOOL1574 ;
+  skos:member inst:TOOL1575 ;
+  skos:member inst:TOOL1576 ;
+  skos:member inst:TOOL1606 ;
+  skos:member inst:TOOL1621 ;
+  skos:member inst:TOOL1623 ;
+  skos:member inst:TOOL1636 ;
+  skos:member inst:TOOL1637 ;
+  skos:member inst:TOOL1638 ;
+  skos:member inst:TOOL1654 ;
+  skos:member inst:TOOL1697 ;
+  skos:member inst:TOOL1698 ;
+  skos:member inst:TOOL1699 ;
+  skos:member inst:TOOL1727 ;
+  skos:member inst:TOOL1757 ;
+  skos:member inst:TOOL1791 ;
+  skos:member inst:TOOL1820 ;
+  skos:member inst:TOOL1823 ;
+  skos:member inst:TOOL1857 ;
+  skos:member inst:TOOL1858 ;
+  skos:member inst:TOOL1859 ;
+  skos:member inst:TOOL1860 ;
+  skos:member inst:TOOL1861 ;
+  skos:member inst:TOOL1879 ;
+  skos:member inst:TOOL1899 ;
+  skos:prefLabel "SeaVoX Device Catalogue" ;
+.
+<http://vocab.nerc.ac.uk/scheme/EDMED_DCAT_THEMES/current>
+  rdf:type skos:ConceptScheme ;
+  dcterm:creator "SeaDataNet" ;
+  dcterm:date "2023-01-04 02:00:08.0" ;
+  dcterm:description "A SKOS concept scheme to allow the representation of the SeaDataNet EDMED catalogue as Linked Data following the W3C DCAT profile." ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "W3C DCAT Themes for the SeaDataNet EDMED Catalogue" ;
+  owl:versionInfo "24" ;
+  skos:altLabel "EDMED DCAT themes" ;
+  skos:hasTopConcept <http://vocab.nerc.ac.uk/collection/D01/current/D0100001> ;
+  skos:hasTopConcept <http://vocab.nerc.ac.uk/collection/D01/current/D0100002> ;
+  skos:hasTopConcept <http://vocab.nerc.ac.uk/collection/D01/current/D0100003> ;
+  skos:hasTopConcept <http://vocab.nerc.ac.uk/collection/D01/current/D0100004> ;
+  skos:hasTopConcept <http://vocab.nerc.ac.uk/collection/D01/current/D0100005> ;
+  skos:prefLabel "W3C DCAT Themes for the SeaDataNet EDMED Catalogue" ;
+.
+<http://vocab.nerc.ac.uk/scheme/NETMAR_OCEAN/current>
+  rdf:type skos:ConceptScheme ;
+  dcterm:creator "NETMAR Ontology Governance Group" ;
+  dcterm:date "2023-02-04 02:00:09.0" ;
+  dcterm:description "Thesaurus centred on parameter descriptions from the BODC PUV and CF Standard Names mapping to parameter discovery, units, instrument, platform, project and coverage concepts.  Underpins discovery and semantic service chain validation for the NETMAR sea ice and oceanography pilots." ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "NETMAR Oceanography Thesaurus" ;
+  owl:versionInfo "91" ;
+  skos:altLabel "NETMAR Oceans" ;
+  skos:hasTopConcept sdnk:SDNKG02 ;
+  skos:hasTopConcept sdnk:SDNKG04 ;
+  skos:hasTopConcept sdnk:SDNKG05 ;
+  skos:hasTopConcept sdnk:SDNKG16 ;
+  skos:prefLabel "NETMAR Oceanography Thesaurus" ;
+.
+<http://vocab.nerc.ac.uk/scheme/NETOC_INSTRUMENT/current>
+  rdf:type skos:ConceptScheme ;
+  dcterm:creator "NETMAR Ontology Governance Group" ;
+  dcterm:date "2020-09-18 15:00:10.0" ;
+  dcterm:description "Instrument facet of a thesaurus centred on parameter descriptions from the BODC PUV and CF Standard Names mapping to parameter discovery, units, instrument, platform, project and coverage concepts.  Underpins discovery and semantic service chain validation for the NETMAR sea ice and oceanography pilots." ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "NETMAR Oceanography Thesaurus Instrument Facet" ;
+  owl:versionInfo "10" ;
+  skos:altLabel "NETMAR Oceans Instrument" ;
+  skos:prefLabel "NETMAR Oceanography Thesaurus Instrument Facet" ;
+.
+<http://vocab.nerc.ac.uk/scheme/NETOC_ORTHO/current>
+  rdf:type skos:ConceptScheme ;
+  dcterm:creator "NETMAR Ontology Governance Group" ;
+  dcterm:date "2022-12-03 02:00:06.0" ;
+  dcterm:description "Linking concepts and concepts external to the NVS of a thesaurus centred on parameter descriptions from the BODC PUV and CF Standard Names mapping to parameter discovery, units, instrument, platform, project and coverage concepts.  Underpins discovery and semantic service chain validation for the NETMAR sea ice and oceanography pilots." ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "NETMAR Oceanography Thesaurus Facet linkages and external concepts" ;
+  owl:versionInfo "15" ;
+  skos:altLabel "NETMAR Oceans Orthogonal" ;
+  skos:prefLabel "NETMAR Oceanography Thesaurus Facet linkages and external concepts" ;
+.
+<http://vocab.nerc.ac.uk/scheme/NETOC_PARAM/current>
+  rdf:type skos:ConceptScheme ;
+  dcterm:creator "NETMAR Ontology Governance Group" ;
+  dcterm:date "2023-02-04 02:00:09.0" ;
+  dcterm:description "Parameter facet of a thesaurus centred on parameter descriptions from the BODC PUV and CF Standard Names mapping to parameter discovery, units, instrument, platform, project and coverage concepts.  Underpins discovery and semantic service chain validation for the NETMAR sea ice and oceanography pilots." ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "NETMAR Oceanography Thesaurus Parameter Facet" ;
+  owl:versionInfo "70" ;
+  skos:altLabel "NETMAR Oceans Parameter" ;
+  skos:prefLabel "NETMAR Oceanography Thesaurus Parameter Facet" ;
+.
+<http://vocab.nerc.ac.uk/scheme/SDNDEV/current>
+  rdf:type skos:ConceptScheme ;
+  dcterm:creator "SeaDataNet" ;
+  dcterm:date "2023-03-09 02:00:06.0" ;
+  dcterm:description "A thesarus comprising categorisations of devices (sensors, instrument packages and sample collectors) developed by SeaDataNet mapped to a catalogue of specific devices maintained by SeaVoX." ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "SeaDataNet Device Thesaurus" ;
+  owl:versionInfo "541" ;
+  skos:altLabel "Devices" ;
+  skos:prefLabel "SeaDataNet Device Thesaurus" ;
+.
+<http://w3id.org/def/nerc/discipline-P08/collection>
+
+  rdf:type skos:Collection ;
+  dcterm:alternative "SeaDataNet Disciplines" ;
+  dcterm:creator "SeaDataNet" ;
+  dcterm:date "2017-02-03 02:00:03.0" ;
+  dcterm:description "Terms used to classify SeaDataNet Agreed Parameter Groups to provide topic/theme level terms in a hierarchical parameter discovery interface." ;
+  dcterm:license <https://creativecommons.org/licenses/by/4.0> ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "SeaDataNet Parameter Disciplines" ;
+  grg:RE_RegisterManager "British Oceanographic Data Centre" ;
+  grg:RE_RegisterOwner "SeaDataNet" ;
+  rdfs:comment "Governance for vocabularies used in the EU SeaDataNet project implemented as consultation between BODC and the members of the SeaDataNet Technical Task Team" ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "5" ;
+  skos:altLabel "SeaDataNet Disciplines" ;
+  skos:member dspl:DS06 ;
+  skos:member dspl:DS07 ;
+  skos:member dspl:DS08 ;
+  skos:member dspl:DS12 ;
+  skos:prefLabel "SeaDataNet Parameter Disciplines" ;
+.
+<http://w3id.org/def/nerc/instrument-L05/collection>
+
+  rdf:type skos:Collection ;
+  <http://purl.org/dc/terms/:alternative> "SDN devices" ;
+  <http://purl.org/dc/terms/:creator> "SeaDataNet" ;
+  <http://purl.org/dc/terms/:description> "Terms used to classify groups of sensors, instruments, sources of algorithmically computed data (numerical models) or samplers (collectors of water, SPM, sediment, rock, air or biota samples)." ;
+  <http://purl.org/dc/terms/:license> <https://creativecommons.org/licenses/by/4.0/> ;
+  <http://purl.org/dc/terms/:publisher> "Natural Environment Research Council" ;
+  <http://purl.org/dc/terms/:title> "SeaDataNet device categories" ;
+  dcterm:date "2023-02-17 02:00:01.0" ;
+  grg:RE_RegisterManager "British Oceanographic Data Centre" ;
+  grg:RE_RegisterOwner "SeaDataNet" ;
+  rdfs:comment "Governance for vocabularies used in the EU SeaDataNet project implemented as consultation between BODC and the members of the SeaDataNet Technical Task Team" ;
+  rdfs:seeAlso <https://github.com/nvs-vocabs/L05> ;
+  owl:imports <http://w3id.org/def/nerc/sdncategories-L21/conceptscheme> ;
+  owl:imports <http://w3id.org/def/nerc/seadatanetdatacat/collection> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "86" ;
+  skos:altLabel "SDN devices" ;
+  skos:historyNote "original URI http://vocab.nerc.ac.uk/collection/L05/current/, SMR change to put instrument vocabs together"@en ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/12> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/151> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/180> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/303> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/312> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/313> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/315> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/32> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/354> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/357> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/362> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/363> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/364> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/365> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/366> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/371> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/372> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/373> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/374> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/375> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/389> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/390> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/394> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/54> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/55> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/57> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/66> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/70> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/71> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/72> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/81> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/82> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/83> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/85> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/86> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/90> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/91> ;
+  skos:member sdev:AQPL ;
+  skos:member sdev:ARAG ;
+  skos:member sdev:BOMR ;
+  skos:member sdev:CSEM ;
+  skos:member sdev:ERTQ ;
+  skos:member sdev:EXHL ;
+  skos:member sdev:EXLH ;
+  skos:member sdev:FLXS ;
+  skos:member sdev:GIAG ;
+  skos:member sdev:LAB01 ;
+  skos:member sdev:LAB02 ;
+  skos:member sdev:LAB03 ;
+  skos:member sdev:LAB04 ;
+  skos:member sdev:LAB06 ;
+  skos:member sdev:LAB07 ;
+  skos:member sdev:LAB08 ;
+  skos:member sdev:LAB09 ;
+  skos:member sdev:LAB10 ;
+  skos:member sdev:LAB11 ;
+  skos:member sdev:LAB12 ;
+  skos:member sdev:LAB13 ;
+  skos:member sdev:LAB14 ;
+  skos:member sdev:LAB18 ;
+  skos:member sdev:LAB21 ;
+  skos:member sdev:LAB22 ;
+  skos:member sdev:LAB23 ;
+  skos:member sdev:LAB24 ;
+  skos:member sdev:LAB25 ;
+  skos:member sdev:LAB26 ;
+  skos:member sdev:LAB27 ;
+  skos:member sdev:LAB28 ;
+  skos:member sdev:LAB29 ;
+  skos:member sdev:LAB30 ;
+  skos:member sdev:LAB31 ;
+  skos:member sdev:LAB32 ;
+  skos:member sdev:LAB33 ;
+  skos:member sdev:LAB34 ;
+  skos:member sdev:LAB35 ;
+  skos:member sdev:LAB36 ;
+  skos:member sdev:LAB37 ;
+  skos:member sdev:LAB38 ;
+  skos:member sdev:LAB39 ;
+  skos:member sdev:LAB40 ;
+  skos:member sdev:LAB42 ;
+  skos:member sdev:LAB43 ;
+  skos:member sdev:LAB44 ;
+  skos:member sdev:LAB45 ;
+  skos:member sdev:LAB49 ;
+  skos:member sdev:LAB50 ;
+  skos:member sdev:LAB51 ;
+  skos:member sdev:LAB52 ;
+  skos:member sdev:LBTG ;
+  skos:member sdev:MOD01 ;
+  skos:member sdev:MOD02 ;
+  skos:member sdev:MOD03 ;
+  skos:member sdev:MOD04 ;
+  skos:member sdev:MOD05 ;
+  skos:member sdev:MOD06 ;
+  skos:member sdev:MOD07 ;
+  skos:member sdev:MOD08 ;
+  skos:member sdev:MVBR ;
+  skos:member sdev:POS05 ;
+  skos:member sdev:POS07 ;
+  skos:member sdev:POS08 ;
+  skos:member sdev:POS09 ;
+  skos:member sdev:POS10 ;
+  skos:member sdev:POS11 ;
+  skos:member sdev:POS13 ;
+  skos:member sdev:POS14 ;
+  skos:member sdev:POS15 ;
+  skos:member sdev:POS20 ;
+  skos:member sdev:POS21 ;
+  skos:member sdev:POS22 ;
+  skos:member sdev:POS23 ;
+  skos:member sdev:POS24 ;
+  skos:member sdev:POS27 ;
+  skos:member sdev:SBAG ;
+  skos:member sdev:SNWG ;
+  skos:member sdev:VSHC ;
+  skos:prefLabel "SeaDataNet device categories" ;
+.
+<http://w3id.org/def/nerc/instrumenttype/ontology>
+
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "nerc collection W06"@en ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  skos:prefLabel "nerc collection W06"@en ;
+.
+<http://w3id.org/def/nerc/keyword-L19/collection>
+
+  rdf:type skos:Collection ;
+  dcterm:alternative "SDN keyword types" ;
+  dcterm:creator "SeaDataNet" ;
+  dcterm:date "2021-07-07 15:21:48.0" ;
+  dcterm:description "Terms used in SeaDataNet metadata to describe the purpose of a keyword.  An extension of the ISO19115 KeywordTypeCode codelist." ;
+  dcterm:license <https://creativecommons.org/licenses/by/4.0> ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "SeaDataNet keyword types" ;
+  grg:RE_RegisterManager "British Oceanographic Data Centre" ;
+  grg:RE_RegisterOwner "SeaDataNet" ;
+  rdfs:comment "Governance for vocabularies used in the EU SeaDataNet project implemented as consultation between BODC and the members of the SeaDataNet Technical Task Team" ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "4" ;
+  skos:altLabel "SDN keyword types" ;
+  skos:historyNote "original URI was http://vocab.nerc.ac.uk/collection/L19/current/"@en ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L19/current/002> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L19/current/003> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L19/current/004> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L19/current/005> ;
+  skos:member sdnk:SDNKG02 ;
+  skos:member sdnk:SDNKG04 ;
+  skos:member sdnk:SDNKG05 ;
+  skos:member sdnk:SDNKG06 ;
+  skos:member sdnk:SDNKG07 ;
+  skos:member sdnk:SDNKG08 ;
+  skos:member sdnk:SDNKG09 ;
+  skos:member sdnk:SDNKG10 ;
+  skos:member sdnk:SDNKG11 ;
+  skos:member sdnk:SDNKG12 ;
+  skos:member sdnk:SDNKG13 ;
+  skos:member sdnk:SDNKG14 ;
+  skos:member sdnk:SDNKG15 ;
+  skos:member sdnk:SDNKG16 ;
+  skos:member sdnk:SDNKG17 ;
+  skos:prefLabel "SeaDataNet keyword types" ;
+.
+<http://w3id.org/def/nerc/sdncategories-L21/conceptscheme>
+
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "categories for SeaDataNet resources"@en ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+.
+<http://w3id.org/def/nerc/seadatanetdatacat/collection>
+
+  rdf:type skos:Collection ;
+  dcterm:alternative "SeaDataNet CSR data categories" ;
+  dcterm:creator "SeaDataNet" ;
+  dcterm:date "2022-09-27 03:00:02.0" ;
+  dcterm:description "Terms used to describe shipboard activities (sometimes inaccurately described as parameters) by SeaDataNet in Cruise Summary Report (formerly known as ROSCOP) metadata." ;
+  dcterm:license <https://creativecommons.org/licenses/by/4.0> ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "SeaDataNet Cruise Summary Report data categories" ;
+  grg:RE_RegisterManager "British Oceanographic Data Centre" ;
+  grg:RE_RegisterOwner "SeaDataNet" ;
+  rdfs:comment "Governance for vocabularies used in the EU SeaDataNet project implemented as consultation between BODC and the members of the SeaDataNet Technical Task Team" ;
+  owl:imports <http://w3id.org/def/nerc/discipline-P08/collection> ;
+  owl:imports <http://w3id.org/def/nerc/instrument-L05/collection> ;
+  owl:imports <http://w3id.org/def/nerc/keyword-L19/collection> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  skos:altLabel "SeaDataNet CSR data categories" ;
+  skos:historyNote "original URI was http://vocab.nerc.ac.uk/collection/C77/current/"@en ;
+  skos:member sdnd:R01 ;
+  skos:member sdnd:R02 ;
+  skos:member sdnd:R03 ;
+  skos:member sdnd:R04 ;
+  skos:prefLabel "SeaDataNet Cruise Summary Report data categories" ;
+.
+<http://w3id.org/def/numericalmodel/conceptscheme>
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "Numeric Model" ;
+  skos:definition " " ;
+  skos:prefLabel "Numeric Model" ;
+.
+<http://w3id.org/def/positioningsystem/conceptscheme>
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "Positioning system "@en ;
+  skos:definition " " ;
+  skos:prefLabel "Positioning system "@en ;
+.
+<http://w3id.org/def/samplecollectioninstrument/conceptscheme>
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "Sample collection instrument "@en ;
+  skos:definition " " ;
+  skos:prefLabel "Sample collection instrument "@en ;
+.
+<http://w3id.org/def/sampleprepreationinstrument/conceptscheme>
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "Sample preparation instrument "@en ;
+  skos:definition " " ;
+  skos:prefLabel "Sample preparation instrument "@en ;
+.
+<http://w3id.org/def/seismicsource/conceptscheme>
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "Seismic source instrument "@en ;
+  skos:definition " " ;
+  skos:prefLabel "Seismic source instrument "@en ;
+.
+<http://w3id.org/ogeochem/def/numericmodel/measurement/conceptscheme>
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "Measurement instruments" ;
+  skos:definition " " ;
+  skos:prefLabel "Measurement instruments" ;
+.
+<http://w3id.org/ogeochem/def/numericmodel/ontology>
+  rdf:type owl:Ontology ;
+  dcterm:created "2023-02-09"^^xsd:date ;
+  dcterm:creator "SMR" ;
+  dcterm:modified "2023-03-09"^^xsd:date ;
+  dcterm:publisher "TBD" ;
+  dcterm:source "Compiled NERC vocabularies related to measurement instyruments" ;
+  rdfs:label "Measurement instruments for geochemistry"@en ;
+  owl:imports <http://purl.org/dc/elements/1.1/> ;
+  owl:imports <http://www.w3.org/2000/01/rdf-schema> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  skos:definition "TBD"@en ;
+  skos:prefLabel "Measurement instruments for geochemistry"@en ;
+.
+<http://w3id.org/ogeochem/def/numericmodel/parameters/conceptscheme>
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "Measurement type" ;
+  skos:definition " " ;
+  skos:prefLabel "Measurement type" ;
+.
+grg:RE_RegisterManager
+  rdf:type owl:AnnotationProperty ;
+.
+grg:RE_RegisterOwner
+  rdf:type owl:AnnotationProperty ;
+.
+skos:Collection
+  rdf:type owl:Class ;
+.
+skos:Concept
+  rdf:type owl:Class ;
+.
+skos:altLabel
+  rdf:type owl:AnnotationProperty ;
+.
+skos:definition
+  rdf:type owl:AnnotationProperty ;
+.
+skos:narrower
+  rdf:type owl:AnnotationProperty ;
+.
+skos:notation
+  rdf:type owl:AnnotationProperty ;
+.
+skos:note
+  rdf:type owl:AnnotationProperty ;
+.
+skos:prefLabel
+  rdf:type owl:AnnotationProperty ;
+.

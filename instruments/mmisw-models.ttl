@@ -1,0 +1,228 @@
+# baseURI: http://w3id.org/def/mmisw/models/ontology
+# imports: http://www.w3.org/2004/02/skos/core
+
+@prefix : <http://mmisw.org/ont/trdi/models/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterm: <http://purl.org/dc/terms/> .
+@prefix omv: <http://omv.ontoware.org/2005/05/ontology#> .
+@prefix omvmmi: <http://mmisw.org/ont/mmi/20081020/ontologyMetadata/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:
+  rdf:type owl:Ontology ;
+.
+:Category
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :ModelName ;
+  rdfs:label "Category" ;
+.
+:ChannelMaster
+  rdf:type :ModelName ;
+  :ID "ChannelMaster" ;
+  :LongName "ChannelMaster" ;
+  rdfs:label "ChannelMaster" ;
+  skos:definition "Teledyne Rd Instruments model name for an ADCP designed to use horizontal profiling for flow monitoring in inland waterways." ;
+  skos:inScheme <http://w3id.org/def/mmisw/models/ontology> ;
+  skos:prefLabel "ChannelMaster" ;
+.
+:Equations_s
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :ModelName ;
+  rdfs:label "Equations(s)" ;
+.
+:Figure_s
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :ModelName ;
+  rdfs:label "Figure(s)" ;
+.
+:HorizontalADCP
+  rdf:type :ModelName ;
+  :ID "HorizontalADCP" ;
+  :LongName "Horizontal ADCP" ;
+  :ShortName "HADCP" ;
+  rdfs:label "HorizontalADCP" ;
+  skos:definition "Instrument designed to measure velocity profiles in a horizontal plane." ;
+  skos:inScheme <http://w3id.org/def/mmisw/models/ontology> ;
+  skos:prefLabel "HorizontalADCP" ;
+.
+:ID
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :ModelName ;
+  rdfs:label "ID" ;
+.
+:LongName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :ModelName ;
+  rdfs:label "LongName" ;
+.
+:LongRanger
+  rdf:type :ModelName ;
+  :ID "LongRanger" ;
+  :LongName "Long Ranger" ;
+  rdfs:label "LongRanger" ;
+  skos:definition "Model name for Teledyne RD Instruments Workhorse ADCPs of frequency 75 kHz." ;
+  skos:inScheme <http://w3id.org/def/mmisw/models/ontology> ;
+  skos:prefLabel "LongRanger" ;
+.
+:Mariner
+  rdf:type :ModelName ;
+  :ID "Mariner" ;
+  :LongName "Mariner" ;
+  rdfs:label "Mariner" ;
+  skos:definition "Model name for a Teledyne RD Instruments Workhorse Monitor ADCP configured for underway current measurement in shallow water (as opposed to the deep water Ocean Surveyor systems)." ;
+  skos:inScheme <http://w3id.org/def/mmisw/models/ontology> ;
+  skos:prefLabel "Mariner" ;
+.
+:ModelName
+  rdf:type owl:Class ;
+  rdfs:label "ModelName" ;
+  rdfs:subClassOf skos:Concept ;
+  skos:historyNote "change from owl:Class to skos:Concept SMR 2023-03-07" ;
+.
+:Monitor
+  rdf:type :ModelName ;
+  :ID "Monitor" ;
+  :LongName "Monitor" ;
+  :Relationship_s "DirectReadingADCP" ;
+  rdfs:label "Monitor" ;
+  skos:definition "Teledyne RD Instruments model name for a direct reading Workhorse ADCP." ;
+  skos:inScheme <http://w3id.org/def/mmisw/models/ontology> ;
+  skos:prefLabel "Monitor" ;
+.
+:Navigator
+  rdf:type :ModelName ;
+  :ID "Navigator" ;
+  :LongName "Navigator" ;
+  rdfs:label "Navigator" ;
+  skos:definition "Teledyne RD Instruments model name for the Teledyne RDI Doppler Velocity Log." ;
+  skos:inScheme <http://w3id.org/def/mmisw/models/ontology> ;
+  skos:prefLabel "Navigator" ;
+.
+:Notes
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :ModelName ;
+  rdfs:label "Notes" ;
+.
+:OceanObserver
+  rdf:type :ModelName ;
+  :ID "OceanObserver" ;
+  :LongName "Ocean Observer" ;
+  :ShortName "OO" ;
+  rdfs:label "OceanObserver" ;
+  skos:definition "Teledyne RD Instruments model name for a low frequency Phased Array ADCP for cabled deployment, usually from an oil rig." ;
+  skos:inScheme <http://w3id.org/def/mmisw/models/ontology> ;
+  skos:prefLabel "OceanObserver" ;
+.
+:OceanSurveyor
+  rdf:type :ModelName ;
+  :ID "OceanSurveyor" ;
+  :LongName "Ocean Surveyor" ;
+  :ShortName "OS" ;
+  rdfs:label "OceanSurveyor" ;
+  skos:definition "Teledyne RD Instruments model name for a low frequency Phased Array ADCP for vessel mounted operations." ;
+  skos:inScheme <http://w3id.org/def/mmisw/models/ontology> ;
+  skos:prefLabel "OceanSurveyor" ;
+.
+:Reference
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :ModelName ;
+  rdfs:label "Reference" ;
+.
+:Relationship_s
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :ModelName ;
+  rdfs:label "Relationship(s)" ;
+.
+:RioGrandeADCP
+  rdf:type :ModelName ;
+  :ID "RioGrandeADCP" ;
+  :LongName "Rio Grande ADCP" ;
+  rdfs:label "RioGrandeADCP" ;
+  skos:definition "Teledyne RD Instruments model name for an ADCP optimally configured for measurement of river discharge. A distinguishing feature of Rio Grande ADCPs is that they are designed to operate from a 12 VDC power supply (all other ADCPs operate from 20 - 60 VDC)." ;
+  skos:inScheme <http://w3id.org/def/mmisw/models/ontology> ;
+  skos:prefLabel "RioGrandeADCP" ;
+.
+:Sentinel
+  rdf:type :ModelName ;
+  :ID "Sentinel" ;
+  :LongName "Sentinel" ;
+  rdfs:label "Sentinel" ;
+  skos:definition "Teledyne RD Instruments model name for a self-contained Workhorse ADCP." ;
+  skos:inScheme <http://w3id.org/def/mmisw/models/ontology> ;
+  skos:prefLabel "Sentinel" ;
+.
+:ShortName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :ModelName ;
+  rdfs:label "ShortName" ;
+.
+:StreamPro
+  rdf:type :ModelName ;
+  :ID "StreamPro" ;
+  :LongName "StreamPro" ;
+  rdfs:label "StreamPro" ;
+  skos:definition "Teledyne RD Instruments model name for a miniaturized ADCP packaged into a streamlined float designed to be towed by hand across very shallow streams for quick and efficient discharge measurements." ;
+  skos:inScheme <http://w3id.org/def/mmisw/models/ontology> ;
+  skos:prefLabel "StreamPro" ;
+.
+:Symbol
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :ModelName ;
+  rdfs:label "Symbol" ;
+.
+:VesselMount
+  rdf:type :ModelName ;
+  :ID "VesselMount" ;
+  :LongName "Vessel Mount" ;
+  rdfs:label "VesselMount" ;
+  skos:definition "An ADCP mounted to the hull of a vessel, typically in a sea chest, and having inputs from the vessel's navigation equipment." ;
+  skos:inScheme <http://w3id.org/def/mmisw/models/ontology> ;
+  skos:prefLabel "VesselMount" ;
+.
+:WorkhorseADCP
+  rdf:type :ModelName ;
+  :ID "WorkhorseADCP" ;
+  :LongName "Workhorse ADCP" ;
+  :ShortName "WH" ;
+  rdfs:label "WorkhorseADCP" ;
+  skos:definition "The generic model name for all of the non-phased array broadband ADCPs currently produced by Teledyne RD Instruments" ;
+  skos:inScheme <http://w3id.org/def/mmisw/models/ontology> ;
+  skos:prefLabel "WorkhorseADCP" ;
+.
+:ZedHead
+  rdf:type :ModelName ;
+  :ID "ZedHead" ;
+  :LongName "ZedHead" ;
+  rdfs:label "ZedHead" ;
+  skos:definition "Teledyne RD Instruments trade name for a transducer designed to minimize ringing." ;
+  skos:inScheme <http://w3id.org/def/mmisw/models/ontology> ;
+  skos:prefLabel "ZedHead" ;
+.
+<http://w3id.org/def/mmisw/models/ontology>
+  rdf:type owl:Ontology ;
+  rdf:type skos:ConceptScheme ;
+  omvmmi:creditRequired "not specified" ;
+  omvmmi:hasResourceType "sensor" ;
+  omvmmi:origMaintainerCode "trdi" ;
+  omvmmi:shortNameUri "http://mmisw.org/ont/mmi/resourcetype/sensor" ;
+  omv:acronym "models" ;
+  omv:creationDate "2012-04-19T19:25:05+0000" ;
+  omv:description "Names and descriptions of various Teledyne RD Instruments Sensor Models" ;
+  omv:hasCreator "Jerry Mullison" ;
+  omv:keywords "ADCP, Doppler, Waves, Ocean Currents" ;
+  omv:name "Teledyne RD Instruments Model Names" ;
+  omv:uri "http://mmisw.org/ont/trdi/models" ;
+  omv:usedOntologyEngineeringTool omvmmi:voc2rdf ;
+  omv:version "20120419T192505" ;
+  dcterm:creator "Jerry Mullison" ;
+  dcterm:date "2012-04-19T19:25:05+0000" ;
+  dcterm:description "Names and descriptions of various Teledyne RD Instruments Sensor Models" ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+.
+skos:definition
+  rdf:type owl:DatatypeProperty ;
+.

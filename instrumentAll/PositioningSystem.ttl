@@ -1,0 +1,3654 @@
+# baseURI: http://w3id.org/ogeochem/def/positioningsystem/ontology
+# imports: http://purl.org/dc/elements/1.1/
+# imports: http://www.w3.org/2000/01/rdf-schema
+# imports: http://www.w3.org/2004/02/skos/core
+
+@prefix dcterm: <http://purl.org/dc/terms/> .
+@prefix dspl: <http://vocab.nerc.ac.uk/collection/P08/current/> .
+@prefix grg: <http://www.isotc211.org/schemas/grg/> .
+@prefix inst: <http://vocab.nerc.ac.uk/collection/L22/current/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <https://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdev: <http://vocab.nerc.ac.uk/collection/L05/current/> .
+@prefix sdnc: <http://vocab.nerc.ac.uk/collection/L21/current/> .
+@prefix sdnd: <http://vocab.nerc.ac.uk/collection/C77/current/> .
+@prefix sdnk: <http://vocab.nerc.ac.uk/collection/L19/current/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+pav:authoredOn
+  rdf:type owl:AnnotationProperty ;
+.
+pav:hasCurrentVersion
+  rdf:type owl:AnnotationProperty ;
+.
+pav:hasVersion
+  rdf:type owl:AnnotationProperty ;
+.
+pav:version
+  rdf:type owl:AnnotationProperty ;
+.
+<http://vocab.nerc.ac.uk/collection/L05/current/357>
+  rdf:type skos:Concept ;
+  dcterm:date "2011-02-02 12:45:55.0" ;
+  dcterm:identifier "SDN:L05::357" ;
+  pav:authoredOn "2011-02-02 12:45:55.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/357/1> ;
+  owl:versionInfo "1" ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition "A network of acoustic sensors that determine the location of a sound source by triangulation such as acoustically active float tracking systems."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/EDMED_DCAT_THEMES/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::357" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "acoustic tracking systems"@en ;
+  skos:related sdnd:D06 ;
+.
+sdev:POS01
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS01" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS01/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS01/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS01/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "Decca main chain"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"mode\": \"hyperbolic\",
+    \"notes\": \"Transmitter groups, each with a master and three slaves\",
+    \"range\": \"450km (day) to 750km (night)\",
+    \"accuracy\": \"50m(day) to 200m (night) in good conditions down to 2km near range limit\",
+    \"operating\": \"WWII to 2001-03 (2000-03-31 in UK)\",
+    \"frequency\": \"70 and 130kHz\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower inst:TOOL0337 ;
+  skos:narrower inst:TOOL1857 ;
+  skos:narrower inst:TOOL1858 ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS01" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Decca Navigator System main chain receivers"@en ;
+.
+sdev:POS02
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS02" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS02/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS02/1> ;
+  owl:versionInfo "2" ;
+  skos:altLabel "GLONASS"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition "{\"node\": {\"notes\": \"Based on a network of satellites deployed by the former Soviet Union.  The network was initiated in 1976 but fell into disrepair before full global coverage was reached during the political upheaval of the early 90s\"}}"@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/EDMED_DCAT_THEMES/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower inst:TOOL0388 ;
+  skos:narrower inst:TOOL0491 ;
+  skos:narrower inst:TOOL0698 ;
+  skos:narrower inst:TOOL1227 ;
+  skos:narrower inst:TOOL1228 ;
+  skos:narrower inst:TOOL1299 ;
+  skos:narrower inst:TOOL1348 ;
+  skos:narrower inst:TOOL1446 ;
+  skos:narrower inst:TOOL1623 ;
+  skos:narrower inst:TOOL1791 ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS02" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Global Navigation Satellite System receivers"@en ;
+.
+sdev:POS03
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS03" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS03/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS03/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS03/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "GPS"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"notes\": \"Global navigation based on a network of satellites deployed and maintained by the USA.\",
+    \"accuracy\": \"better than 100m\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/EDMED_DCAT_THEMES/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower inst:TOOL0078 ;
+  skos:narrower inst:TOOL0199 ;
+  skos:narrower inst:TOOL0313 ;
+  skos:narrower inst:TOOL0388 ;
+  skos:narrower inst:TOOL0390 ;
+  skos:narrower inst:TOOL0457 ;
+  skos:narrower inst:TOOL0524 ;
+  skos:narrower inst:TOOL0601 ;
+  skos:narrower inst:TOOL0735 ;
+  skos:narrower inst:TOOL0758 ;
+  skos:narrower inst:TOOL0759 ;
+  skos:narrower inst:TOOL0760 ;
+  skos:narrower inst:TOOL0761 ;
+  skos:narrower inst:TOOL0768 ;
+  skos:narrower inst:TOOL0769 ;
+  skos:narrower inst:TOOL0792 ;
+  skos:narrower inst:TOOL0798 ;
+  skos:narrower inst:TOOL0799 ;
+  skos:narrower inst:TOOL0800 ;
+  skos:narrower inst:TOOL0801 ;
+  skos:narrower inst:TOOL0802 ;
+  skos:narrower inst:TOOL0803 ;
+  skos:narrower inst:TOOL0862 ;
+  skos:narrower inst:TOOL0899 ;
+  skos:narrower inst:TOOL0933 ;
+  skos:narrower inst:TOOL0934 ;
+  skos:narrower inst:TOOL0935 ;
+  skos:narrower inst:TOOL1227 ;
+  skos:narrower inst:TOOL1228 ;
+  skos:narrower inst:TOOL1299 ;
+  skos:narrower inst:TOOL1547 ;
+  skos:narrower inst:TOOL1553 ;
+  skos:narrower inst:TOOL1554 ;
+  skos:narrower inst:TOOL1606 ;
+  skos:narrower inst:TOOL1621 ;
+  skos:narrower inst:TOOL1860 ;
+  skos:narrower inst:TOOL1899 ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS03" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "NAVSTAR Global Positioning System receivers"@en ;
+.
+sdev:POS04
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS04" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS04/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS04/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS04/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "DGPS"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"notes\": \"GPS augmented by a network of fixed ground stations that continuously broadcast the difference between their true locations and the location determined from the satellites.\",
+    \"accuracy\": \"better than 100m to better than 10m\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/EDMED_DCAT_THEMES/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower inst:TOOL0348 ;
+  skos:narrower inst:TOOL0349 ;
+  skos:narrower inst:TOOL0389 ;
+  skos:narrower inst:TOOL0391 ;
+  skos:narrower inst:TOOL0482 ;
+  skos:narrower inst:TOOL0491 ;
+  skos:narrower inst:TOOL0524 ;
+  skos:narrower inst:TOOL0623 ;
+  skos:narrower inst:TOOL0698 ;
+  skos:narrower inst:TOOL0742 ;
+  skos:narrower inst:TOOL0743 ;
+  skos:narrower inst:TOOL0751 ;
+  skos:narrower inst:TOOL0762 ;
+  skos:narrower inst:TOOL0763 ;
+  skos:narrower inst:TOOL0764 ;
+  skos:narrower inst:TOOL0765 ;
+  skos:narrower inst:TOOL0766 ;
+  skos:narrower inst:TOOL0767 ;
+  skos:narrower inst:TOOL0792 ;
+  skos:narrower inst:TOOL0798 ;
+  skos:narrower inst:TOOL0799 ;
+  skos:narrower inst:TOOL0801 ;
+  skos:narrower inst:TOOL0802 ;
+  skos:narrower inst:TOOL0803 ;
+  skos:narrower inst:TOOL0882 ;
+  skos:narrower inst:TOOL0899 ;
+  skos:narrower inst:TOOL0926 ;
+  skos:narrower inst:TOOL0936 ;
+  skos:narrower inst:TOOL1227 ;
+  skos:narrower inst:TOOL1228 ;
+  skos:narrower inst:TOOL1280 ;
+  skos:narrower inst:TOOL1299 ;
+  skos:narrower inst:TOOL1433 ;
+  skos:narrower inst:TOOL1434 ;
+  skos:narrower inst:TOOL1435 ;
+  skos:narrower inst:TOOL1547 ;
+  skos:narrower inst:TOOL1553 ;
+  skos:narrower inst:TOOL1554 ;
+  skos:narrower inst:TOOL1606 ;
+  skos:narrower inst:TOOL1621 ;
+  skos:narrower inst:TOOL1623 ;
+  skos:narrower inst:TOOL1697 ;
+  skos:narrower inst:TOOL1698 ;
+  skos:narrower inst:TOOL1699 ;
+  skos:narrower inst:TOOL1820 ;
+  skos:narrower inst:TOOL1861 ;
+  skos:narrower inst:TOOL1879 ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS04" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Differential Global Positioning System receivers"@en ;
+.
+sdev:POS05
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS05" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS05/4> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS05/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS05/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS05/3> ;
+  owl:versionInfo "4" ;
+  skos:altLabel "LORAN C"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"mode\": \"hyperbolic\",
+    \"notes\": \"Global navigation based on transmitters in several European countries, Japan, Canada (until 2002-10) and USA (until 2010-02-08).\",
+    \"range\": \"950kmto 1700km (day): 650km to 1250km (day)\",
+    \"operational\": \"1947 to 2010. Maintained as GPS backup in the EU.\",
+    \"frequency\": \"70-130kHz\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS05" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Long Range Navigation version C receivers"@en ;
+.
+sdev:POS06
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS06" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS06/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS06/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS06/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "Clock"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition "{\"node\": {\"notes\": \"Timepieces of sufficient precision to allow their use of portable time standards.\"}}"@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower inst:TOOL1636 ;
+  skos:narrower inst:TOOL1637 ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS06" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Marine chronometers"@en ;
+.
+sdev:POS07
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS07" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS07/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS07/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS07/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "Sextant"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition "{\"node\": {\"notes\": \"Optical instruments that accurately measure the angle between pairs of visible celestial bodies such as the sun, moon or stars.\"}}"@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS07" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Sextants"@en ;
+.
+sdev:POS08
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS08" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS08/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS08/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS08/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "Decca HiFix"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"mode\": \"hyperbolic\",
+    \"notes\": \"Not for general navigation.  Chains usually set up for specific surveys.\",
+    \"range\": \"under 100km\",
+    \"accuracy\": \"better than 10m: maximum accuracy at 50km range is 1.5m\",
+    \"operating\": \"1962 to 2000\",
+    \"frequency\": \"1.6MHz\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS08" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Decca Navigator System HiFix receivers"@en ;
+.
+sdev:POS09
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS09" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS09/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS09/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS09/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "Toran"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"mode\": \"hyperbolic\",
+    \"notes\": \"Mostly used for aircraft.\",
+    \"range\": \"150-200km\",
+    \"accuracy\": \"better than 20m\",
+    \"frequency\": \"around 2MHz\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS09" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Toran receivers"@en ;
+.
+sdev:POS10
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS10" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS10/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS10/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS10/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "Argo DM54"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"mode\": \"hyperbolic\",
+    \"notes\": \"Survey positioning system.\",
+    \"range\": \"450km\",
+    \"accuracy\": \"4-7m down to 20m at maximum range\",
+    \"operational\": \"from 1977 (mid-80s in Europe)\",
+    \"frequency\": \"1.6-2MHz\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS10" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Automatic Ranging Grid Overlay DM 54 receivers"@en ;
+.
+sdev:POS11
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS11" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS11/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS11/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS11/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "Trident"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"mode\": \"circular\",
+    \"notes\": \"Survey positioning system.\",
+    \"range\": \"150km\",
+    \"accuracy\": \"better than 3m\",
+    \"frequency\": \"420-450MHz\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS11" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Trident receivers"@en ;
+.
+sdev:POS12
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS12" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS12/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS12/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS12/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "Syledis"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"mode\": \"hyperbolic or circular\",
+    \"notes\": \"Navigation and positioning system for the North Sea petroleum industry.\",
+    \"range\": \"400km hyperbolic; 75-100km circular\",
+    \"accuracy\": \"better than 2m below horizon (10m above horizon)\",
+    \"operational\": \"1980s to 1995\",
+    \"frequency\": \"420-450MHz\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower inst:TOOL1859 ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS12" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "lightweight distance measuring system"@en ;
+  skos:prefLabel "systeme leger de measure de distance receivers"@fr ;
+.
+sdev:POS13
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:27:02.0" ;
+  dcterm:identifier "SDN:L05::POS13" ;
+  pav:authoredOn "2015-12-09 11:27:02.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS13/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS13/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS13/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "Rana"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"mode\": \"hyperbolic\",
+    \"frequency\": \"around 300-400kHz\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS13" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Rana receivers"@en ;
+.
+sdev:POS14
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:27:24.0" ;
+  dcterm:identifier "SDN:L05::POS14" ;
+  pav:authoredOn "2015-12-09 11:27:24.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS14/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS14/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS14/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "Pulse8"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"mode\": \"hyperbolic\",
+    \"range\": \"250km to 750km\",
+    \"accuracy\": \"30m to 500m\",
+    \"operational\": \"1970s to late 1990s\",
+    \"frequency\": \"100kHz\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS14" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Pulse8 receivers"@en ;
+.
+sdev:POS15
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS15" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS15/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS15/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS15/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "Omega"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"mode\": \"hyperbolic\",
+    \"notes\": \"Global long-range but low accuracy navigation system\",
+    \"range\": \"up to 15000km\",
+    \"accuracy\": \"better than 7.4km\",
+    \"operational\": \"1968-1997\",
+    \"frequency\": \"10-14kHz\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS15" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Omega receivers"@en ;
+.
+sdev:POS16
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:26:24.0" ;
+  dcterm:identifier "SDN:L05::POS16" ;
+  pav:authoredOn "2015-12-09 11:26:24.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS16/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS16/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS16/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "Argos GPS"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"mode\": \"GPS localisation\",
+    \"accuracy\": \"better than 100m\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/EDMED_DCAT_THEMES/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS16" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Argos GPS-localised transmitters"@en ;
+.
+sdev:POS17
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:26:24.0" ;
+  dcterm:identifier "SDN:L05::POS17" ;
+  pav:authoredOn "2015-12-09 11:26:24.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS17/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS17/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS17/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "Argos Doppler"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"mode\": \"Doppler-derived Argos localisation\",
+    \"accuracy\": \"better than 250m (class 3) to worse than 1500m (class 0)\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/EDMED_DCAT_THEMES/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS17" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Argos doppler-localised transmitters"@en ;
+.
+sdev:POS18
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:26:24.0" ;
+  dcterm:identifier "SDN:L05::POS18" ;
+  pav:authoredOn "2015-12-09 11:26:24.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS18/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS18/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS18/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "Navsat"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"mode\": \"Doppler-derived localisation\",
+    \"accuracy\": \"better than 10km or 2km if combined with relative water velocity em-log\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS18" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Navy Navigation Satellite System receivers"@en ;
+.
+sdev:POS19
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS19" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS19/4> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS19/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS19/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS19/3> ;
+  owl:versionInfo "4" ;
+  skos:altLabel "INS"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition "{\"node\": {\"notes\": \"Systems that determine spatial position using high-accuracy inertial measurements plus input from other sensors such as doppler current sensors to determine platform 3-D location by interpolation between satellite network fixes.\"}}"@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower inst:TOOL0304 ;
+  skos:narrower inst:TOOL0482 ;
+  skos:narrower inst:TOOL0491 ;
+  skos:narrower inst:TOOL0698 ;
+  skos:narrower inst:TOOL0753 ;
+  skos:narrower inst:TOOL0833 ;
+  skos:narrower inst:TOOL0885 ;
+  skos:narrower inst:TOOL0900 ;
+  skos:narrower inst:TOOL1623 ;
+  skos:narrower inst:TOOL1823 ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS19" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "inertial navigation systems"@en ;
+.
+sdev:POS20
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS20" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS20/5> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS20/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS20/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS20/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS20/4> ;
+  owl:versionInfo "5" ;
+  skos:altLabel "Mini-Ranger"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"notes\": \"A family of short-wave receivers that determine position by determining the line-of-sight distance from 3 or more transmitters set up for the survey.\",
+    \"range\": \"up to 75km\",
+    \"accuracy\": \"up to 2m\",
+    \"frequency\": \"5410-5890MHz\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS20" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Motorola Mini-Ranger receivers"@en ;
+.
+sdev:POS21
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS21" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS21/4> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS21/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS21/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS21/3> ;
+  owl:versionInfo "4" ;
+  skos:altLabel "Hyperfix"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"mode\": \"hyperbolic (usual), circular or combined\",
+    \"notes\": \"Racal positioning system similar to Decca HiFix based on temporary or permanent transmitter chains comprising a master plus at least two slaves.\",
+    \"range\": \"250km (night) to 700km (day)\",
+    \"accuracy\": \"up to 0.5-1m\",
+    \"operating\": \"until 2000\",
+    \"frequency\": \"1.6-3.4MHz\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS21" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Hyperfix receivers"@en ;
+.
+sdev:POS22
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS22" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS22/4> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS22/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS22/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS22/3> ;
+  owl:versionInfo "4" ;
+  skos:altLabel "Trisponder"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"notes\": \"Family of microwave short-range positioning systems with vessel equipment and three shore transponders (master and two slaves) set up specifically for surveys.\",
+    \"range\": \"80km\",
+    \"accuracy\": \"1m (resolution 0.1m)\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS22" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Trisponder navigation systems"@en ;
+.
+sdev:POS23
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS23" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS23/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS23/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS23/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "radioTracking"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition "{\"node\": {\"notes\": \"Directional radio receivers that determine the location of a mobile radio transmitter (such as a bird or animal tag) by triangulation.\"}}"@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS23" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "radio tracking systems"@en ;
+.
+sdev:POS24
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS24" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS24/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS24/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS24/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "deadReckoning"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition "{\"node\": {\"notes\": \"The process of estimating current position based upon a previously determined position, or fix, and advancing that position based upon known or estimated speeds over elapsed time, and course.\"}}"@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS24" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "dead reckoning"@en ;
+.
+sdev:POS25
+  rdf:type skos:Concept ;
+  dcterm:date "2015-12-09 11:25:50.0" ;
+  dcterm:identifier "SDN:L05::POS25" ;
+  pav:authoredOn "2015-12-09 11:25:50.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS25/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS25/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS25/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "KGPS"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition """{\"node\": {
+    \"notes\": \"Real Time Kinematic (RTK) satellite navigation technique based on the use of carrier phase measurements of the GPS signals where a single reference station or a network of reference stations provides the real-time corrections.\",
+    \"accuracy\": \"Horizontal Accuracy: Fixed RTK mode: 1-5cm, Float RTK mode: 20cm-1m. Vertical accuracy : twice the horizontal accuracy\",
+    \"operating\": \"Since the mid-1990s\"
+}}"""@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower inst:TOOL0482 ;
+  skos:narrower inst:TOOL1227 ;
+  skos:narrower inst:TOOL1228 ;
+  skos:narrower inst:TOOL1280 ;
+  skos:narrower inst:TOOL1521 ;
+  skos:narrower inst:TOOL1524 ;
+  skos:narrower inst:TOOL1848 ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS25" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Kinematic Global Positioning System receivers"@en ;
+.
+sdev:POS26
+  rdf:type skos:Concept ;
+  dcterm:date "2012-11-13 13:38:20.0" ;
+  dcterm:identifier "SDN:L05::POS26" ;
+  pav:authoredOn "2012-11-13 13:38:20.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS26/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "USBL"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition "Systems dedicated to the positioning of subsea vehicles such as ROV and AUV. They are based on acoustic transmitted signals between one or several transponders and one acoustic antenna installed on a surface vessel. The transponders are mounted on the underwater vehicle or are fixed on the seafloor. These underwater acoustic positioning systems are coupled with inertial navigation systems."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/EDMED_DCAT_THEMES/current> ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:narrower inst:TOOL1111 ;
+  skos:narrower inst:TOOL1684 ;
+  skos:narrower inst:TOOL1790 ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/W01/current/003> ;
+  skos:notation "SDN:L05::POS26" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Ultra Short Baseline Positioning Systems"@en ;
+.
+sdev:POS27
+  rdf:type skos:Concept ;
+  dcterm:date "2023-02-16 16:53:32.0" ;
+  dcterm:identifier "SDN:L05::POS27" ;
+  pav:authoredOn "2023-02-16 16:53:32.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L05/current/POS27/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "AIS receivers"@en ;
+  skos:broader sdnc:ICAT06 ;
+  skos:definition "Digital positional awareness systems operating in the Very High Frequency (VHF) maritime band. They allow vessels and marine traffic services to automatically receive identity, position, speed, course, operational status and destination transmitted by other ships and platforms."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L05::POS27" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Automatic Identification System receivers"@en ;
+.
+sdnk:SDNKG17
+  rdf:type skos:Collection ;
+  dcterm:date "2021-07-07 10:53:52.0" ;
+  dcterm:identifier "SDN:L19::SDNKG17" ;
+  pav:authoredOn "2021-07-07 10:53:52.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L19/current/SDNKG17/1> ;
+  pav:version "1" ;
+  owl:versionInfo "1" ;
+  skos:altLabel "sensor_model"@en ;
+  skos:definition "Keyword identifies a sensor model"@en ;
+  skos:member inst:NETT0001 ;
+  skos:member inst:NETT0002 ;
+  skos:member inst:NETT0003 ;
+  skos:member inst:NETT0005 ;
+  skos:member inst:NETT0006 ;
+  skos:member inst:NETT0009 ;
+  skos:member inst:NETT0010 ;
+  skos:member inst:NETT0012 ;
+  skos:member inst:NETT0016 ;
+  skos:member inst:NETT0019 ;
+  skos:member inst:NETT0020 ;
+  skos:member inst:NETT0022 ;
+  skos:member inst:NETT0023 ;
+  skos:member inst:NETT0024 ;
+  skos:member inst:NETT0026 ;
+  skos:member inst:NETT0027 ;
+  skos:member inst:NETT0030 ;
+  skos:member inst:NETT0031 ;
+  skos:member inst:NETT0032 ;
+  skos:member inst:NETT0034 ;
+  skos:member inst:NETT0035 ;
+  skos:member inst:NETT0036 ;
+  skos:member inst:NETT0040 ;
+  skos:member inst:NETT0041 ;
+  skos:member inst:NETT0042 ;
+  skos:member inst:NETT0043 ;
+  skos:member inst:NETT0044 ;
+  skos:member inst:NETT0045 ;
+  skos:member inst:NETT0047 ;
+  skos:member inst:NETT0052 ;
+  skos:member inst:NETT0053 ;
+  skos:member inst:NETT0054 ;
+  skos:member inst:NETT0055 ;
+  skos:member inst:NETT0056 ;
+  skos:member inst:NETT0057 ;
+  skos:member inst:NETT0058 ;
+  skos:member inst:NETT0059 ;
+  skos:member inst:NETT0060 ;
+  skos:member inst:NETT0061 ;
+  skos:member inst:NETT0062 ;
+  skos:member inst:NETT0063 ;
+  skos:member inst:NETT0065 ;
+  skos:member inst:NETT0066 ;
+  skos:member inst:NETT0067 ;
+  skos:member inst:NETT0068 ;
+  skos:member inst:NETT0071 ;
+  skos:member inst:NETT0072 ;
+  skos:member inst:NETT0073 ;
+  skos:member inst:NETT0074 ;
+  skos:member inst:NETT0075 ;
+  skos:member inst:NETT0077 ;
+  skos:member inst:NETT0078 ;
+  skos:member inst:NETT0079 ;
+  skos:member inst:NETT0080 ;
+  skos:member inst:NETT0090 ;
+  skos:member inst:NETT0091 ;
+  skos:member inst:NETT0092 ;
+  skos:member inst:NETT0095 ;
+  skos:member inst:NETT0096 ;
+  skos:member inst:NETT0098 ;
+  skos:member inst:NETT0100 ;
+  skos:member inst:NETT0102 ;
+  skos:member inst:NETT0103 ;
+  skos:member inst:NETT0104 ;
+  skos:member inst:NETT0105 ;
+  skos:member inst:NETT0106 ;
+  skos:member inst:NETT0108 ;
+  skos:member inst:NETT0109 ;
+  skos:member inst:NETT0111 ;
+  skos:member inst:NETT0112 ;
+  skos:member inst:NETT0113 ;
+  skos:member inst:NETT0114 ;
+  skos:member inst:NETT0115 ;
+  skos:member inst:NETT0116 ;
+  skos:member inst:NETT0118 ;
+  skos:member inst:NETT0122 ;
+  skos:member inst:NETT0124 ;
+  skos:member inst:NETT0125 ;
+  skos:member inst:NETT0126 ;
+  skos:member inst:NETT0127 ;
+  skos:member inst:NETT0128 ;
+  skos:member inst:NETT0129 ;
+  skos:member inst:NETT0131 ;
+  skos:member inst:NETT0132 ;
+  skos:member inst:NETT0133 ;
+  skos:member inst:NETT0134 ;
+  skos:member inst:NETT0135 ;
+  skos:member inst:NETT0136 ;
+  skos:member inst:NETT0137 ;
+  skos:member inst:NETT0138 ;
+  skos:member inst:NETT0139 ;
+  skos:member inst:NETT0140 ;
+  skos:member inst:NETT0141 ;
+  skos:member inst:NETT0142 ;
+  skos:member inst:NETT0143 ;
+  skos:member inst:NETT0144 ;
+  skos:member inst:NETT0145 ;
+  skos:member inst:NETT0147 ;
+  skos:member inst:NETT0150 ;
+  skos:member inst:NETT0151 ;
+  skos:member inst:NETT0153 ;
+  skos:member inst:NETT0154 ;
+  skos:member inst:NETT0155 ;
+  skos:member inst:NETT0161 ;
+  skos:member inst:NETT0162 ;
+  skos:member inst:NETT0163 ;
+  skos:member inst:NETT0164 ;
+  skos:member inst:NETT0165 ;
+  skos:member inst:NETT0166 ;
+  skos:member inst:NETT0167 ;
+  skos:member inst:NETT0169 ;
+  skos:member inst:NETT0171 ;
+  skos:member inst:NETT0173 ;
+  skos:member inst:NETT0174 ;
+  skos:member inst:NETT0175 ;
+  skos:member inst:NETT0176 ;
+  skos:member inst:NETT0177 ;
+  skos:member inst:NETT0178 ;
+  skos:member inst:NETT0179 ;
+  skos:member inst:NETT0180 ;
+  skos:member inst:NETT0181 ;
+  skos:member inst:NETT0182 ;
+  skos:member inst:NETT0184 ;
+  skos:member inst:NETT0186 ;
+  skos:member inst:NETT0188 ;
+  skos:member inst:NETT0189 ;
+  skos:member inst:NETT0190 ;
+  skos:member inst:NETT0191 ;
+  skos:member inst:NETT0192 ;
+  skos:member inst:TOOL0001 ;
+  skos:member inst:TOOL000X ;
+  skos:member inst:TOOL0148 ;
+  skos:member inst:TOOL0235 ;
+  skos:member inst:TOOL0236 ;
+  skos:member inst:TOOL0237 ;
+  skos:member inst:TOOL0238 ;
+  skos:member inst:TOOL0248 ;
+  skos:member inst:TOOL0281 ;
+  skos:member inst:TOOL0282 ;
+  skos:member inst:TOOL0283 ;
+  skos:member inst:TOOL0353 ;
+  skos:member inst:TOOL0354 ;
+  skos:member inst:TOOL0355 ;
+  skos:member inst:TOOL0356 ;
+  skos:member inst:TOOL0357 ;
+  skos:member inst:TOOL0358 ;
+  skos:member inst:TOOL0381 ;
+  skos:member inst:TOOL0412 ;
+  skos:member inst:TOOL0413 ;
+  skos:member inst:TOOL0418 ;
+  skos:member inst:TOOL0427 ;
+  skos:member inst:TOOL0430 ;
+  skos:member inst:TOOL0472 ;
+  skos:member inst:TOOL0501 ;
+  skos:member inst:TOOL0502 ;
+  skos:member inst:TOOL0503 ;
+  skos:member inst:TOOL0504 ;
+  skos:member inst:TOOL0505 ;
+  skos:member inst:TOOL0506 ;
+  skos:member inst:TOOL0508 ;
+  skos:member inst:TOOL0535 ;
+  skos:member inst:TOOL0536 ;
+  skos:member inst:TOOL0537 ;
+  skos:member inst:TOOL0538 ;
+  skos:member inst:TOOL0539 ;
+  skos:member inst:TOOL0540 ;
+  skos:member inst:TOOL0541 ;
+  skos:member inst:TOOL0542 ;
+  skos:member inst:TOOL0543 ;
+  skos:member inst:TOOL0544 ;
+  skos:member inst:TOOL0545 ;
+  skos:member inst:TOOL0546 ;
+  skos:member inst:TOOL0547 ;
+  skos:member inst:TOOL0548 ;
+  skos:member inst:TOOL0550 ;
+  skos:member inst:TOOL0551 ;
+  skos:member inst:TOOL0552 ;
+  skos:member inst:TOOL0553 ;
+  skos:member inst:TOOL0554 ;
+  skos:member inst:TOOL0555 ;
+  skos:member inst:TOOL0556 ;
+  skos:member inst:TOOL0557 ;
+  skos:member inst:TOOL0561 ;
+  skos:member inst:TOOL0562 ;
+  skos:member inst:TOOL0563 ;
+  skos:member inst:TOOL0571 ;
+  skos:member inst:TOOL0573 ;
+  skos:member inst:TOOL0588 ;
+  skos:member inst:TOOL0653 ;
+  skos:member inst:TOOL0660 ;
+  skos:member inst:TOOL0784 ;
+  skos:member inst:TOOL0785 ;
+  skos:member inst:TOOL0786 ;
+  skos:member inst:TOOL0787 ;
+  skos:member inst:TOOL0788 ;
+  skos:member inst:TOOL0806 ;
+  skos:member inst:TOOL0807 ;
+  skos:member inst:TOOL0817 ;
+  skos:member inst:TOOL0818 ;
+  skos:member inst:TOOL0819 ;
+  skos:member inst:TOOL0828 ;
+  skos:member inst:TOOL0843 ;
+  skos:member inst:TOOL0917 ;
+  skos:member inst:TOOL0939 ;
+  skos:member inst:TOOL0940 ;
+  skos:member inst:TOOL0960 ;
+  skos:member inst:TOOL0961 ;
+  skos:member inst:TOOL0962 ;
+  skos:member inst:TOOL0963 ;
+  skos:member inst:TOOL0978 ;
+  skos:member inst:TOOL0979 ;
+  skos:member inst:TOOL0980 ;
+  skos:member inst:TOOL0981 ;
+  skos:member inst:TOOL0982 ;
+  skos:member inst:TOOL0983 ;
+  skos:member inst:TOOL0984 ;
+  skos:member inst:TOOL0985 ;
+  skos:member inst:TOOL0986 ;
+  skos:member inst:TOOL0987 ;
+  skos:member inst:TOOL0988 ;
+  skos:member inst:TOOL0989 ;
+  skos:member inst:TOOL0990 ;
+  skos:member inst:TOOL0992 ;
+  skos:member inst:TOOL0993 ;
+  skos:member inst:TOOL0994 ;
+  skos:member inst:TOOL0995 ;
+  skos:member inst:TOOL0996 ;
+  skos:member inst:TOOL0997 ;
+  skos:member inst:TOOL1012 ;
+  skos:member inst:TOOL1038 ;
+  skos:member inst:TOOL1083 ;
+  skos:member inst:TOOL1135 ;
+  skos:member inst:TOOL1165 ;
+  skos:member inst:TOOL1166 ;
+  skos:member inst:TOOL1169 ;
+  skos:member inst:TOOL1170 ;
+  skos:member inst:TOOL1171 ;
+  skos:member inst:TOOL1172 ;
+  skos:member inst:TOOL1173 ;
+  skos:member inst:TOOL1174 ;
+  skos:member inst:TOOL1175 ;
+  skos:member inst:TOOL1176 ;
+  skos:member inst:TOOL1177 ;
+  skos:member inst:TOOL1178 ;
+  skos:member inst:TOOL1179 ;
+  skos:member inst:TOOL1181 ;
+  skos:member inst:TOOL1191 ;
+  skos:member inst:TOOL1199 ;
+  skos:member inst:TOOL1204 ;
+  skos:member inst:TOOL1214 ;
+  skos:member inst:TOOL1215 ;
+  skos:member inst:TOOL1216 ;
+  skos:member inst:TOOL1235 ;
+  skos:member inst:TOOL1249 ;
+  skos:member inst:TOOL1253 ;
+  skos:member inst:TOOL1259 ;
+  skos:member inst:TOOL1260 ;
+  skos:member inst:TOOL1261 ;
+  skos:member inst:TOOL1272 ;
+  skos:member inst:TOOL1274 ;
+  skos:member inst:TOOL1285 ;
+  skos:member inst:TOOL1304 ;
+  skos:member inst:TOOL1326 ;
+  skos:member inst:TOOL1339 ;
+  skos:member inst:TOOL1371 ;
+  skos:member inst:TOOL1372 ;
+  skos:member inst:TOOL1373 ;
+  skos:member inst:TOOL1374 ;
+  skos:member inst:TOOL1375 ;
+  skos:member inst:TOOL1376 ;
+  skos:member inst:TOOL1378 ;
+  skos:member inst:TOOL1379 ;
+  skos:member inst:TOOL1405 ;
+  skos:member inst:TOOL1413 ;
+  skos:member inst:TOOL1414 ;
+  skos:member inst:TOOL1415 ;
+  skos:member inst:TOOL1416 ;
+  skos:member inst:TOOL1417 ;
+  skos:member inst:TOOL1454 ;
+  skos:member inst:TOOL1455 ;
+  skos:member inst:TOOL1462 ;
+  skos:member inst:TOOL1463 ;
+  skos:member inst:TOOL1464 ;
+  skos:member inst:TOOL1465 ;
+  skos:member inst:TOOL1466 ;
+  skos:member inst:TOOL1467 ;
+  skos:member inst:TOOL1468 ;
+  skos:member inst:TOOL1469 ;
+  skos:member inst:TOOL1477 ;
+  skos:member inst:TOOL1478 ;
+  skos:member inst:TOOL1480 ;
+  skos:member inst:TOOL1485 ;
+  skos:member inst:TOOL1486 ;
+  skos:member inst:TOOL1487 ;
+  skos:member inst:TOOL1527 ;
+  skos:member inst:TOOL1533 ;
+  skos:member inst:TOOL1535 ;
+  skos:member inst:TOOL1536 ;
+  skos:member inst:TOOL1537 ;
+  skos:member inst:TOOL1560 ;
+  skos:member inst:TOOL1574 ;
+  skos:member inst:TOOL1575 ;
+  skos:member inst:TOOL1576 ;
+  skos:member inst:TOOL1638 ;
+  skos:member inst:TOOL1644 ;
+  skos:member inst:TOOL1654 ;
+  skos:member inst:TOOL1668 ;
+  skos:member inst:TOOL1703 ;
+  skos:member inst:TOOLZZZ ;
+  skos:notation "SDN:L19::SDNKG17" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "sensor_model"@en ;
+.
+sdnc:ICAT06
+  rdf:type skos:Concept ;
+  dcterm:date "2010-02-11 16:38:10.0" ;
+  dcterm:identifier "SDN:L21::ICAT06" ;
+  pav:authoredOn "2010-02-11 16:38:10.0" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L21/current/ICAT06/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "SeaDataNet positioning system categories"@en ;
+  skos:altLabel "positioning systems"@en ;
+  skos:definition "Terms used to describe groups of devices that determine the spatial location of a platform"@en ;
+  skos:narrower <http://vocab.nerc.ac.uk/collection/L05/current/357> ;
+  skos:narrower sdev:POS01 ;
+  skos:narrower sdev:POS02 ;
+  skos:narrower sdev:POS03 ;
+  skos:narrower sdev:POS04 ;
+  skos:narrower sdev:POS05 ;
+  skos:narrower sdev:POS06 ;
+  skos:narrower sdev:POS07 ;
+  skos:narrower sdev:POS08 ;
+  skos:narrower sdev:POS09 ;
+  skos:narrower sdev:POS10 ;
+  skos:narrower sdev:POS11 ;
+  skos:narrower sdev:POS12 ;
+  skos:narrower sdev:POS13 ;
+  skos:narrower sdev:POS14 ;
+  skos:narrower sdev:POS15 ;
+  skos:narrower sdev:POS16 ;
+  skos:narrower sdev:POS17 ;
+  skos:narrower sdev:POS18 ;
+  skos:narrower sdev:POS19 ;
+  skos:narrower sdev:POS20 ;
+  skos:narrower sdev:POS21 ;
+  skos:narrower sdev:POS22 ;
+  skos:narrower sdev:POS23 ;
+  skos:narrower sdev:POS24 ;
+  skos:narrower sdev:POS25 ;
+  skos:narrower sdev:POS26 ;
+  skos:narrower sdev:POS27 ;
+  skos:notation "SDN:L21::ICAT06" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Positioning system"@en ;
+  skos:topConceptOf <http://w3id.org/def/positioningsystem/conceptscheme> ;
+.
+sdnc:collection
+  rdf:type skos:Collection ;
+  dcterm:alternative "Device category types" ;
+  dcterm:creator "SeaDataNet" ;
+  dcterm:date "2012-07-17 02:00:03.0" ;
+  dcterm:description "High-level classification of devices based on function and mode of deployment." ;
+  dcterm:license <https://creativecommons.org/licenses/by/4.0> ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "SeaDataNet device category types" ;
+  grg:RE_RegisterManager "British Oceanographic Data Centre" ;
+  grg:RE_RegisterOwner "SeaDataNet" ;
+  rdfs:comment "Governance for vocabularies used in the EU SeaDataNet project implemented as consultation between BODC and the members of the SeaDataNet Technical Task Team" ;
+  owl:versionInfo "5" ;
+  skos:altLabel "Device category types" ;
+  skos:member sdnc:ICAT06 ;
+  skos:prefLabel "SeaDataNet device category types" ;
+.
+inst:TOOL0078
+  rdf:type skos:Concept ;
+  dcterm:date "2010-09-08 11:18:07.0" ;
+  dcterm:identifier "SDN:L22::TOOL0078" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0078/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "GPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "A location system of unspecified make or model that determines location on the Earth's surface using the Global Positioning Satellite Network. Angular co-ordinates are given relative to WGS84 CRS. Other parameters such as platform velocity may be derived from this."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0078" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Global Positioning Satellite System"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00001> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P01/current/ALATGP01> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P01/current/ALONGP01> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P01/current/APEWGP01> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P01/current/APNSGP01> ;
+.
+inst:TOOL0199
+  rdf:type skos:Concept ;
+  dcterm:date "2010-05-18 16:10:58.0" ;
+  dcterm:identifier "SDN:L22::TOOL0199" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0199/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Trimble NT300D GPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "A high-performance, sub-meter position GPS receiver for marine applications. It combines a state-of-the-art, 12-channel GPS receiver and a high-performance dual-channel transmitter. It was discontinued in 2009."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0199" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Trimble NT300D Global Positioning System receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00357> ;
+.
+inst:TOOL0304
+  rdf:type skos:Concept ;
+  dcterm:date "2010-05-18 16:10:58.0" ;
+  dcterm:identifier "SDN:L22::TOOL0304" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0304/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "IXSEA PHINS"@en ;
+  skos:broader sdev:POS19 ;
+  skos:definition "PHINS, or PHotonic Inertial Navigation System (INS) that outputs position, heading, pitch, roll, heave, depth and velocity. The PHINS uses a high accuracy inertial measurement unit and produces positional data with an accuracy ranging from metres to cm, depending on the specific instrumentation setup. INS drift performance is known to be inadequate without a velocity input from an ADCP."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0304" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "IXSEA Photonic Inertial Navigation System"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00459> ;
+.
+inst:TOOL0313
+  rdf:type skos:Concept ;
+  dcterm:date "2010-09-06 12:45:22.0" ;
+  dcterm:identifier "SDN:L22::TOOL0313" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0313/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Trimble 4000AX GPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "A GPS receiver in use on research vessels in the 1990s. Sampling rate reported in cruise report literature as approximately 1 second"@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0313" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Trimble 4000AX Global Positioning System receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00357> ;
+.
+inst:TOOL0337
+  rdf:type skos:Concept ;
+  dcterm:date "2010-09-06 12:45:22.0" ;
+  dcterm:identifier "SDN:L22::TOOL0337" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0337/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Decca navigation"@en ;
+  skos:broader sdev:POS01 ;
+  skos:definition "A hyperbolic low-frequency (70 and 130 kHz) signal receiver that determined position based on the phase difference between signals transmitted by groups of a master plus three slave transmitters. Range depended on radio reception conditions but was typically 450km (day) to 750km (night). Accuracy ranged from 50m (day) or 200m (night) in ideal conditions down to 2km near the range limit. The system operated from the WWII until the UK transmitters were switched off at the end of March 2000."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0337" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Decca main chain navigation receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/UNSPEC> ;
+.
+inst:TOOL0348
+  rdf:type skos:Concept ;
+  dcterm:date "2010-09-06 12:45:22.0" ;
+  dcterm:identifier "SDN:L22::TOOL0348" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0348/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Fugro SeaSTAR 9200-G2"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A dual-frequency Differential Global Satellite Navigation System (DGSNS) receiver that incorporates both GPS and GLONASS reception capability. It also tracks the Fugro L-Band satellite broadcast of DGNSS corrections and, as backup, can receive these corrections via the internet. This functionality allows the instrument to provide positional information with a horizontal accuracy of 15cm and a vertical accuracy of 20cm."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0348" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Fugro SeaSTAR 9200-G2 Differential Navigation System receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00290> ;
+.
+inst:TOOL0349
+  rdf:type skos:Concept ;
+  dcterm:date "2010-09-06 12:45:22.0" ;
+  dcterm:identifier "SDN:L22::TOOL0349" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0349/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "C&C Tech. C-Nav3050 receiver"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A 66-channel \"all-in-view\" parallel tracking combined GPS/GNSS/L-band receiver providing high accuracy positional information worldwide between 72N and 72S. The C-Nav3050 tracks GPS, GLONASS, Galileo, C-Nav and other SBAS signals, producing positional fixes with a horizontal accuracy of <10cm and a vertical accuracy of <15cm. The instrument has a range of user-programmable output rates (1, 5, 10, 25, 50 and 100 Hz)."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0349" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "C&C Technologies C-Nav3050 satellite positioning system receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00486> ;
+.
+inst:TOOL0388
+  rdf:type skos:Concept ;
+  dcterm:date "2011-04-14 09:29:16.0" ;
+  dcterm:identifier "SDN:L22::TOOL0388" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0388/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Ashtech GG24 GPS+GLONASS"@en ;
+  skos:broader sdev:POS02 ;
+  skos:broader sdev:POS03 ;
+  skos:definition "A receiver which utilises both GPS and GLONASS satellite constellations for all-in-view positioning at a rate of up to 2 Hz (standard), or 5 Hz (optional). The GG24 has 12 channels for GPS and 12 for GLONASS, providing real-time horizontal position accuracy of ≥ 3.2 m in autonomous mode and ≥ 40 cm in differential mode."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0388" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Ashtech GG24 Global Positioning System and Global Navigation Satellite System receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00522> ;
+.
+inst:TOOL0389
+  rdf:type skos:Concept ;
+  dcterm:date "2022-03-18 14:26:47.0" ;
+  dcterm:identifier "SDN:L22::TOOL0389" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0389/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0389/1> ;
+  owl:versionInfo "2" ;
+  skos:altLabel "Ashtech ADU5 GPS"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A GPS receiver providing three-dimensional position, velocity and attitude information at a rate of up to 5 Hz. The ADU5 uses four antennas and 56 channels for satellite tracking and reliable positioning. It incorporates signals from Satellite Based Augmentation Systems (SBAS) and includes a 2-channel 300-kHz beacon receiver for differential GPS (DGPS) operations. Real-time horizontal position accuracy is ≥ 3 m in autonomous mode and ≥ 40 cm in differential mode."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0389" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Ashtech ADU5 Global Positioning System receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00522> ;
+.
+inst:TOOL0390
+  rdf:type skos:Concept ;
+  dcterm:date "2022-03-18 14:28:15.0" ;
+  dcterm:identifier "SDN:L22::TOOL0390" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0390/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0390/1> ;
+  owl:versionInfo "2" ;
+  skos:altLabel "Ashtech ADU2 GPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "A GPS receiver providing three-dimensional position, velocity and attitude information at a rate of up to 2 Hz. The ADU2 uses four antennas and a 48-channel receiver for Position Dilution of Precision (PDOP)-based satellite tracking. Real-time horizontal position accuracy is ≥ 5 m in autonomous mode and ≥ 1 m in differential mode."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0390" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Ashtech ADU2 Global Positioning System receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00522> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P01/current/ALATGP01> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P01/current/ALONGP01> ;
+.
+inst:TOOL0391
+  rdf:type skos:Concept ;
+  dcterm:date "2011-04-14 09:29:16.0" ;
+  dcterm:identifier "SDN:L22::TOOL0391" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0391/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Trimble 4000DL GPS"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A differential GPS receiver used on research vessels during the 1990s and early 2000s. Cruise literature reports that this instrument used an 8-channel receiver. Maximum sampling rate is recorded as approximately 1 Hz."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0391" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Trimble 4000DL Global Positioning System receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00357> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P01/current/ALATGP01> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P01/current/ALONGP01> ;
+.
+inst:TOOL0457
+  rdf:type skos:Concept ;
+  dcterm:date "2012-02-07 12:32:54.0" ;
+  dcterm:identifier "SDN:L22::TOOL0457" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0457/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Furuno GP32 GPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "A 12-channel, all-in-view Global Positioning System (GPS) receiver. The unit also contains a Wide Area Augmentation System (WAAS) receiver, which applies correction data by means of geostationary satellites, thereby improving positional accuracy. It is Differential GPS (DGPS) ready, with a positional accuracy of 10 m in GPS mode, 5 m in DGPS mode and 3 m in WAAS mode."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0457" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Furuno GP32 Global Positioning System receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00571> ;
+.
+inst:TOOL0482
+  rdf:type skos:Concept ;
+  dcterm:date "2012-03-19 13:44:14.0" ;
+  dcterm:identifier "SDN:L22::TOOL0482" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0482/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Applanix POSMV GPS"@en ;
+  skos:broader sdev:POS04 ;
+  skos:broader sdev:POS19 ;
+  skos:broader sdev:POS25 ;
+  skos:definition "The Position and Orientation Systems for Marine Vessels (POSMV) is a real time kinematic (RTK) and differential global positioning system (DGPS) receiver for marine navigation. It includes an inertial system that provides platform attitude information. The instrument provides accurate location, heading, velocity, attitude, heave, acceleration and angular rate measurements."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0482" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Trimble Applanix POSMV global positioning system"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00357> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P01/current/ALATGP01> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P01/current/ALATPM01> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P01/current/ALONGP01> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P01/current/ALONPM01> ;
+.
+inst:TOOL0491
+  rdf:type skos:Concept ;
+  dcterm:date "2017-02-09 16:29:02.0" ;
+  dcterm:identifier "SDN:L22::TOOL0491" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0491/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0491/1> ;
+  owl:versionInfo "2" ;
+  skos:altLabel "Kongsberg Seapath 320+ GPS"@en ;
+  skos:broader sdev:POS02 ;
+  skos:broader sdev:POS04 ;
+  skos:broader sdev:POS19 ;
+  skos:definition "A navigational system including two Global Navigation Satellite System (GNSS) receivers and a MRU 5+ inertial sensor. The inertial sensor employs linear accelerometers and unique microelectromechanical systems (MEMS)-type angular rate gyros to provide 0.01 RMS pitch and roll accuracy. The GNSS receivers can use multiple satellite constellations (GPS, GLONASS and Galileo, when available) to provide accurate heading and position data. This model has a position accuracy of 1 m inifferential GPS (DGPS), GLONASS and satellite-based augmentation system (SBAS) modes, and an accuracy of 0.2 m with real-time kinematic (RTK) corrections."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0491" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Kongsberg Seatex Seapath 320+ Precise Heading, Attitude and Positioning Sensor"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00360> ;
+.
+inst:TOOL0524
+  rdf:type skos:Concept ;
+  dcterm:date "2012-07-16 16:22:59.0" ;
+  dcterm:identifier "SDN:L22::TOOL0524" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0524/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0524/1> ;
+  owl:versionInfo "2" ;
+  skos:altLabel "Ashtech G12 GPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A 12-channel, all-in-view Global Positioning System (GPS) receiver. It is Differential GPS (DGPS) ready, with a horizontal accuracy of 90 cm in GPS mode and 40 cm in DGPS mode. Update rate is selectable up to 10 Hz."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0524" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Ashtech G12 Global Positioning System receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00522> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P01/current/ALATGP01> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P01/current/ALONGP01> ;
+.
+inst:TOOL0601
+  rdf:type skos:Concept ;
+  dcterm:date "2013-02-27 15:52:20.0" ;
+  dcterm:identifier "SDN:L22::TOOL0601" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0601/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "LAIPAC GD30L GPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "A high performance Global Positioning System (GPS) recorder and vehicle tracking system for passive tracking applications. The maximum sampling interval selectable is 3 seconds, with a minimum sampling interval of 30 minutes. The recorded data includes date, time, longitude, latitude, speed, trajectory, and number of tracking satellites."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0601" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "LAIPAC GD30L MMC Global Positioning System logger"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00709> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P01/current/ALATGP01> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/P01/current/ALONGP01> ;
+.
+inst:TOOL0623
+  rdf:type skos:Concept ;
+  dcterm:date "2013-06-10 15:51:02.0" ;
+  dcterm:identifier "SDN:L22::TOOL0623" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0623/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Kongsberg Seatex DPS 116"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A 14-channel, all-in-view, L1 GPS receiver which primarily utilises the free, WAAS, EGNOS and MSAS Satellite Based Augmentation Systems (SBAS) for differential corrections (DGPS). It is also capable of simultaneous DGPS from a wide variety of other reference stations (Multiref), resulting in improved accuracy. Positional accuracy is < 1.5 m, 95% CEP (SBAS service) and < 1 m, 95% CEP (Multiref). Output rate is 1 Hz."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0623" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Kongsberg Seatex Differential Positioning Sensor 116"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00360> ;
+.
+inst:TOOL0698
+  rdf:type skos:Concept ;
+  dcterm:date "2014-06-16 13:34:31.0" ;
+  dcterm:identifier "SDN:L22::TOOL0698" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0698/3> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0698/1> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0698/2> ;
+  owl:versionInfo "3" ;
+  skos:altLabel "Seapath 300 GPS"@en ;
+  skos:broader sdev:POS02 ;
+  skos:broader sdev:POS04 ;
+  skos:broader sdev:POS19 ;
+  skos:definition "A combined DGPS receiver and inertial measurement unit for use in hydroacoustic positioning and seabed mapping systems. The system comprises 2 built-in GPS receivers and a MRU 5. The inertial unit consists of linear accelometers and MEMS type angular rate gyros. The system can achieve 0.02 degrees RMS roll and pitch accuracy, 2 cm heave accuracy (delayed-signal), 20 cm positonal accuracy (with RTK corrections) and <200 Hz data output rate."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0698" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Kongsberg Seatex Seapath 300 precise heading, attitude and positioning Sensor"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00360> ;
+.
+inst:TOOL0735
+  rdf:type skos:Concept ;
+  dcterm:date "2022-04-27 16:55:15.0" ;
+  dcterm:identifier "SDN:L22::TOOL0735" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0735/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0735/1> ;
+  owl:versionInfo "2" ;
+  skos:altLabel "Navman Jupiter 32 GPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "A miniature (17.0 x 15.0 mm, 2 g), 20-channel GPS receiver for use in marine buoys. The unit contains a SiRF GSC3 GPS chipset and is capable of Satellite Based Augmentation Systems (SBAS) corrections. Horizontal accuracy of the unit is 2.2 m (CEP), 5.5 m 2dRMS. PPS accuracy is typically better than 1micro second. The Jupiter 32 is the successor to the Jupiter 30. The product was replaced by the Jupiter 32 xLP. Navman Wireless OEM Solutions is now Telit Wireless Solutions."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0735" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Navman Jupiter 32 GPS receiver module"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00807> ;
+.
+inst:TOOL0742
+  rdf:type skos:Concept ;
+  dcterm:date "2014-07-17 15:46:36.0" ;
+  dcterm:identifier "SDN:L22::TOOL0742" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0742/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "C-Nav 2000"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A 10-channel all-in-view L-band receiver, the C-Nav2000 produces positional fixes with a horizontal accuracy of <10cm and a vertical accuracy of <30cm. The instrument has a range of user-programmable output rates."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0742" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "C and C Technologies C-Nav2000 satellite positioning system receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00486> ;
+.
+inst:TOOL0743
+  rdf:type skos:Concept ;
+  dcterm:date "2014-07-17 15:46:36.0" ;
+  dcterm:identifier "SDN:L22::TOOL0743" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0743/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "C-Nav 2050"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A 26-channel all-in-view receiver, with 12-channels available for each of L1 and L2, plus two channels for SBAS. The C-Nav2000 produces positional fixes with a horizontal accuracy of <10cm and a vertical accuracy of <15cm. The instrument has a range of user-programmable output rates up to 50 Hz for raw data, and 25 Hz for position, velocity and time data. The C-Nav2050G is the standard model. A C-Nav2050M is available with a 1PPS output port and a combined Event/CAN Bus interface port. A C-nav2050R is available, which allows for two L-Band signal connections: one for the Dual Frequency GPS antenna and the other for a hi-gain L-band communication satellite antenna."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0743" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "C and C Technologies C-Nav2050G satellite positioning system receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00486> ;
+.
+inst:TOOL0751
+  rdf:type skos:Concept ;
+  dcterm:date "2014-12-12 12:30:04.0" ;
+  dcterm:identifier "SDN:L22::TOOL0751" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0751/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0751/1> ;
+  owl:versionInfo "2" ;
+  skos:altLabel "Applanix POSMV 320"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "The Applanix POS/MV 320 (POS) is a vessel positioning and orientation system. The GPS aided Inertial Motion Unit (IMU) provides measurements of roll, pitch, and heading that are all accurate to +/- 0.02 degrees. There have been 5 generations of this unit (V1-5)."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0751" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Applanix POSMV 320 global positioning system"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00357> ;
+.
+inst:TOOL0753
+  rdf:type skos:Concept ;
+  dcterm:date "2014-08-14 16:07:38.0" ;
+  dcterm:identifier "SDN:L22::TOOL0753" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0753/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Seapath 20"@en ;
+  skos:broader sdev:POS19 ;
+  skos:definition "The Kongsberg Seapath 20 provides position and heading output with no moving parts. It replaces several vessel instruments with one navigation package (gyrocompass, GPS receiver equipment, speed log and Rate-Of-Turn indicator) that outputs heading, position, velocity and rate-of-turn, together with 1-second time pulse (1PPS) for synchronization of other systems. This unit provides 0.05 degree heading accuracy"@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0753" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Kongsberg Seapath 20 NAV"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00360> ;
+.
+inst:TOOL0758
+  rdf:type skos:Concept ;
+  dcterm:date "2014-08-14 16:07:38.0" ;
+  dcterm:identifier "SDN:L22::TOOL0758" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0758/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Centurion P(Y)"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "The Trimble Centurion P(Y) GPS receiver utilizes the P(Y)-code broadcast on the L2 carrier frequency for positioning. This device can use Asset surveyor software and TDC1 data logger to collect data with accuracy of 1-4m. This device has been discontinued, and is no longer supported by Trimble."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0758" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Trimble Centurion P(Y)"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00357> ;
+.
+inst:TOOL0759
+  rdf:type skos:Concept ;
+  dcterm:date "2014-08-14 16:07:38.0" ;
+  dcterm:identifier "SDN:L22::TOOL0759" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0759/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "NT200D"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "The Trimble NT-200D was a high-performance, sub-meter position GPS receiver for marine applications. It combines a 12-channel GPS receiver and a dual-channel transmitter. This model was the predecessor of the NT300D, and has been discontinued."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0759" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Trimble NT200D GPS receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00357> ;
+.
+inst:TOOL0760
+  rdf:type skos:Concept ;
+  dcterm:date "2014-08-14 16:07:38.0" ;
+  dcterm:identifier "SDN:L22::TOOL0760" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0760/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "TA-12"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "The Trimble Tasman (also TA-12) is a 12-channel GPS receiver with all-in-view tracking. This receiver can be used for navigation in international areas where the MSO reciprocity may not yet have been established, or where the TA-12 can be switched in real time between PPS and SPS modes with no loss of continuity. The TA-12 operates in temperatures from -20 to +55 degC, at altitudes up to 51,000 ft, and with a maximum track velocity of 800 knots. It offers acquisition time of 1.5 minutes, 1 Hz update rate, and accuracy of 0.124 NM (2dRMS), 5.6 m/s (RMS per axis), 24 meters, 1 sigma 100 nsec."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0760" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Trimble Tasman 12-channel GPS receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00357> ;
+.
+inst:TOOL0761
+  rdf:type skos:Concept ;
+  dcterm:date "2014-08-15 11:24:21.0" ;
+  dcterm:identifier "SDN:L22::TOOL0761" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0761/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Northstar 826"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "The 826 navigation system was designed and manufactured by Northstar. This instrument has been discontinued."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0761" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Northstar 826 navigation system"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00900> ;
+.
+inst:TOOL0762
+  rdf:type skos:Concept ;
+  dcterm:date "2014-08-15 11:24:21.0" ;
+  dcterm:identifier "SDN:L22::TOOL0762" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0762/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Northstar 952"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "The Northstar 952 combines GPS navigation with Differential GPS capability, high definition display, loran compatibility, built-in tide data up to year 2010, and other navigation features. The 12 parallel dual channel updates once every second with a 3m accuracy. This instrument has been discontinued."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0762" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Northstar 952 GPS receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00900> ;
+.
+inst:TOOL0763
+  rdf:type skos:Concept ;
+  dcterm:date "2014-08-15 11:24:21.0" ;
+  dcterm:identifier "SDN:L22::TOOL0763" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0763/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Northstar 957 SGPS/WAAS"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "The Northstar 957 SGPS/WAAS receiver is an optional component of the Northstar 957 GPS/WASS vector chart navigator. Measurements have accuracy of 3m for this model."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0763" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Northstar 957 SGPS/WAAS receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00900> ;
+.
+inst:TOOL0764
+  rdf:type skos:Concept ;
+  dcterm:date "2014-08-15 11:24:21.0" ;
+  dcterm:identifier "SDN:L22::TOOL0764" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0764/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Northstar 941X"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "The Northstar 941X combines 12-channels GPS navigation with Differential GPS capability, high definition display, loran compatibility, built-in tide data up to year 2010, and other navigation features. This instrument has been discontinued."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0764" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Northstar 941X GPS receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00900> ;
+.
+inst:TOOL0765
+  rdf:type skos:Concept ;
+  dcterm:date "2014-08-15 11:24:21.0" ;
+  dcterm:identifier "SDN:L22::TOOL0765" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0765/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Northstar 941XD"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "The Northstar 941XD combines a 12-channel GPS navigation with Differential GPS capability, high definition display, loran compatibility, built-in tide data up to year 2010, and other navigation features. This model contains an internal DGPS (differential GPS) receiver. This provides accuracy in the 2-5m range."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0765" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Northstar 941XD GPS receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00900> ;
+.
+inst:TOOL0766
+  rdf:type skos:Concept ;
+  dcterm:date "2014-08-15 11:24:21.0" ;
+  dcterm:identifier "SDN:L22::TOOL0766" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0766/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Northstar 951X"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "The Northstar 951X combines GPS navigation with Differential GPS capability, high definition display, loran compatibility, built-in tide data up to year 2010, and other navigation features. This instrument has been discontinued."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0766" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Northstar 951X GPS receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00900> ;
+.
+inst:TOOL0767
+  rdf:type skos:Concept ;
+  dcterm:date "2014-08-15 11:24:21.0" ;
+  dcterm:identifier "SDN:L22::TOOL0767" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0767/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Northstar 952X"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "The Northstar 952X combines GPS navigation with Differential GPS capability, high definition display, loran compatibility, built-in tide data up to year 2010, and other navigation features. The 12 parallel dual channel updates once every second with a 3m accuracy. This instrument has been discontinued."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0767" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Northstar 952X GPS receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00900> ;
+.
+inst:TOOL0768
+  rdf:type skos:Concept ;
+  dcterm:date "2014-08-15 11:24:21.0" ;
+  dcterm:identifier "SDN:L22::TOOL0768" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0768/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Raynav 300"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "The Raytheon 300 GPS Plotter has a 12-channel built-in GPS that provides the following navigational systems: Wide Area Augmentation System (WAAS), ground based differential GPS, and standard GPS. This model is WAAS, EGNOS, and MSAS ready and provides a position accuracy of 3 meters"@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0768" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Raytheon Raynav 300 GPS"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00901> ;
+.
+inst:TOOL0769
+  rdf:type skos:Concept ;
+  dcterm:date "2014-08-15 11:24:21.0" ;
+  dcterm:identifier "SDN:L22::TOOL0769" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0769/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Raychart 320"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "The Raytheon 320 GPS Plotter has a 12-channel built-in GPS that provides the following navigational systems: Wide Area Augmentation System (WAAS), ground based differential GPS, and standard GPS. This model is WAAS, EGNOS, and MSAS ready and provides a position accuracy of 2 meters"@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0769" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Raytheon Raychart 320 GPS"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00901> ;
+.
+inst:TOOL0792
+  rdf:type skos:Concept ;
+  dcterm:date "2022-04-27 16:55:15.0" ;
+  dcterm:identifier "SDN:L22::TOOL0792" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0792/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0792/1> ;
+  owl:versionInfo "2" ;
+  skos:altLabel "Furuno GP150 and GP150D GPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A 12 channel, all-in-view GPS receiver designed for the SOLAS ships according to the GPS performance standard IMO Res MSC. 112(73). The standard system is capable of WAAS augmentation. A second model is also capable of differential GPS (DGPS) corrections  (GP150D). The system feeds positioning information to AIS, Radar, VDR, VideoPlotter, Autopilot, Echo Sounder, and Sonar.  Accuracy - GPS: 10 m (95%), GPS: 5 m (95%), WAAS: 3 m (95%), limited coverageSOG: +/-0.2 kt (SOG < 10 kt), COG: +/-3 degrees (SOG 1-17 kt) or +/- 1 degrees (SOG > 17 kt)"@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0792" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Furuno Navigator GP150 and GP150D Global Positioning System receivers"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00571> ;
+.
+inst:TOOL0798
+  rdf:type skos:Concept ;
+  dcterm:date "2014-09-18 15:18:31.0" ;
+  dcterm:identifier "SDN:L22::TOOL0798" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0798/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Furuno GP36 GPS+DGPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:broader sdev:POS04 ;
+  skos:definition "The Furuno GP-36 is a 12 parallel channel, all-in-view GPS system with a built in differential GPS (DGPS) receiver. It is has a 4.5 inch monochrome LCD video display. Accuracy is approx. 50 m (GPS), or approx. 5 m (DGPS), 95% of the time. This model superseded the Furuno GP-35."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0798" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Furuno Navigator GP36 Global Positioning System receivers"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00571> ;
+.
+inst:TOOL0799
+  rdf:type skos:Concept ;
+  dcterm:date "2014-09-18 15:18:31.0" ;
+  dcterm:identifier "SDN:L22::TOOL0799" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0799/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Furuno GP37 GPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:broader sdev:POS04 ;
+  skos:definition "The Furuno GP-37 is a 12-parallel channel, all-in-view GPS receiver designed for coastal ships, and fishing boats. It is equipped with WAAS (Wide Area Augmentation System) and DGPS (differential GPS) receivers. It has a 4.5 inch monochrome LCD display. The unit offers position fixes with accuracy of 10m for basic GPS, 3m where a WAAS service is available, and 5m with DGPS."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0799" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Furuno Navigator GP37 Global Positioning System receivers"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00571> ;
+.
+inst:TOOL0800
+  rdf:type skos:Concept ;
+  dcterm:date "2014-09-18 15:18:31.0" ;
+  dcterm:identifier "SDN:L22::TOOL0800" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0800/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Furuno GP500 GPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "The Furuno GP-500 is a dual channel (up to 5 satellites multiplex tracked) GPS receiver. It has an LCD readout display. Accuracy is better than 15 m rms (HDOP < 3)."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0800" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Furuno Navigator GP500 Global Positioning System receivers"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00571> ;
+.
+inst:TOOL0801
+  rdf:type skos:Concept ;
+  dcterm:date "2014-09-18 15:18:31.0" ;
+  dcterm:identifier "SDN:L22::TOOL0801" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0801/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Furuno GP80 and GP80D GPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:broader sdev:POS04 ;
+  skos:definition "The Furuno GP-80 is an 8-parallel channel, all-in-view GPS receiver designed for every type of vessel. It has a 6 inch monochrome LCD display.  The GP-80 is a DGPS-ready receiver that can be linked with an external differential beacon receiver. The GP-80D has a built-in DGPS receiver. Accuracy is GPS: 10 m approx. (95 % of the time SA off), DGPS: approx. 5 m (95% of the time)."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0801" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Furuno Navigator GP80 and GP80D Global Positioning System receivers"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00571> ;
+.
+inst:TOOL0802
+  rdf:type skos:Concept ;
+  dcterm:date "2014-09-18 15:18:31.0" ;
+  dcterm:identifier "SDN:L22::TOOL0802" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0802/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Furuno GP90 and GP90D GPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:broader sdev:POS04 ;
+  skos:definition "The Furuno GP-90 is a 12-parallel channel, all-in-view GPS receiver designed for SOLAS ships. It has a 6 inch monochrome LCD display. It is equipped with WAAS (Wide Area Augmentation System). The GP-90 is a DGPS-ready receiver that can be linked with an external differential beacon receiver. The GP-90D has a built-in DGPS receiver. Accuracy is GPS: 10 m approx. (95 % of the time SA off), DGPS: approx. 5 m (95% of the time), WAAS: 3 m (95% of the time)."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0802" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Furuno Navigator GP90 and GP90D Global Positioning System receivers"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00571> ;
+.
+inst:TOOL0803
+  rdf:type skos:Concept ;
+  dcterm:date "2022-04-27 16:55:15.0" ;
+  dcterm:identifier "SDN:L22::TOOL0803" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0803/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0803/1> ;
+  owl:versionInfo "2" ;
+  skos:altLabel "Garmin GPS16 and GPS17 GPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:broader sdev:POS04 ;
+  skos:definition "The Garmin GPS-16/17 series are 12 parallel channel GPSreceivers designed for marine applications.  The systems are capable of differential GPS (DGPS) using real-timeWAAS or RTCM corrections yielding 3 to 5 meter positionaccuracy. The GPS 16LVS and GPS 16HVS are black with a white logo. The GPS 17HVS is white with a blue logo and can be flush mounted or pole mounted on the enclosed 1 inch marine mast mount."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0803" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Garmin GPS 16 and GPS 17 series Global Positioning System receivers"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00911> ;
+.
+inst:TOOL0833
+  rdf:type skos:Concept ;
+  dcterm:date "2015-02-19 10:36:40.0" ;
+  dcterm:identifier "SDN:L22::TOOL0833" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0833/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "IXBlue Hydrins"@en ;
+  skos:broader sdev:POS19 ;
+  skos:definition "An inertial navigation system for use in multibeam echo sounder systems. It uses fibre optic gyros and accelorometers to determine heading, attitude and position (via dead reckoning). The unit can accept positional aiding from Global Positioning Systems (GPS) and Doppler Velocity Logs (DVL). There has been more than one generation of the unit, however, the heading accuracy is typically better than 0.02 deg and the roll or pitch accuracy is better than 0.01 deg. The navigation system was first manufactured by IXSea which is now part of IXBlue."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0833" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "IXBlue Hydrins inertial navigation system"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00459> ;
+.
+inst:TOOL0862
+  rdf:type skos:Concept ;
+  dcterm:date "2015-05-27 15:47:59.0" ;
+  dcterm:identifier "SDN:L22::TOOL0862" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0862/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Ashtech 3DF"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "The Ashtech 3DF was a global positioning system receiver that provided three dimensional attitude measurements to better than 3 arc minutes. It was the predecessor of the more advanced Ashtech ADU5 receiver."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0862" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Ashtech 3DF Global Positioning System receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00522> ;
+.
+inst:TOOL0882
+  rdf:type skos:Concept ;
+  dcterm:date "2015-06-16 17:00:57.0" ;
+  dcterm:identifier "SDN:L22::TOOL0882" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0882/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Rockwell Collins PLGR 96 DGPS"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "Handheld precision lightweight differential GPS (DGPS) receiver (with a vehicle mounting option). The unit can be programmed on-site at a rate of up to 900 units per day to minimize downtime. Accuracy is less than 1 m in DGPS mode."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0882" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Rockwell Collins PLGR 96 global positioning receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00963> ;
+.
+inst:TOOL0885
+  rdf:type skos:Concept ;
+  dcterm:date "2015-06-17 10:53:15.0" ;
+  dcterm:identifier "SDN:L22::TOOL0885" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0885/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Sperry Marine MK39 INS"@en ;
+  skos:broader sdev:POS19 ;
+  skos:definition "An inertial navigation system which uses a Ring-Laser gyro. It calculates, via dead reckoning, the position, heading, attitude and velocity. It is mainly used in naval ships. Heading acurracy: 3 Arcmin Sec (Lat) RMS and 7 Arcmin Sec (Lat) Peak. Position: 1.0 nm in 8 hr TRMS."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0885" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Sperry Marine MK39 inertial navigation system"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00586> ;
+.
+inst:TOOL0899
+  rdf:type skos:Concept ;
+  dcterm:date "2015-06-19 09:20:24.0" ;
+  dcterm:identifier "SDN:L22::TOOL0899" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0899/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Starlink Invicta 210S GPS and DGPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A 10-channel GPS receiver and dual-channel differential GPS (DGPS) beacon receiver. It is primarily used in farming applications. It is also capable of accepting Wide Area Augmentation System (WAAS) DPGS corrections. It has a frequency range of 283.5 - 325.0 kHz and positional accuracy of less than 1 m (rms) in DGPS mode."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0899" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Raven Starlink Invicta 210S global positioning system"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00965> ;
+.
+inst:TOOL0900
+  rdf:type skos:Concept ;
+  dcterm:date "2015-06-19 09:20:24.0" ;
+  dcterm:identifier "SDN:L22::TOOL0900" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0900/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Teledyne TSS Orion INS"@en ;
+  skos:broader sdev:POS19 ;
+  skos:definition "An Inertial Navigation System (INS) used for hydrographic survey, offshore construction and ROV operations. The system comprises three Ring Laser Gyros (RLG) and three accelerometers. A surface and sub-sea variant is available. Heading accuracy: 0.1 degrees RMS secant latitude (with GPS antenna aiding). Pitch and roll dynamic accuracy: 0.01 degrees. Heave accuracy: 5cm or 5% whichever is greater."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0900" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Teledyne TSS Orion inertial navigation system"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00964> ;
+.
+inst:TOOL0926
+  rdf:type skos:Concept ;
+  dcterm:date "2015-07-30 14:44:53.0" ;
+  dcterm:identifier "SDN:L22::TOOL0926" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0926/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Trimble 4000DS GPS"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "The Trimble 4000DS Differential Surveyor is similar to the 4000RS (a Maxwell-based receiver that is oriented toward precision positioning applications. It is intended for use as a DGPS base station, generating RTCM-104 corrections). The 4000Ds can apply RTCM-104 corrections to the satellite data it receives in order to generate accurate position fixes in real time."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0926" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Trimble 4000DS Global Positioning System receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00357> ;
+.
+inst:TOOL0933
+  rdf:type skos:Concept ;
+  dcterm:date "2020-10-08 12:34:36.0" ;
+  dcterm:identifier "SDN:L22::TOOL0933" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0933/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0933/1> ;
+  owl:versionInfo "2" ;
+  skos:altLabel "MX Marine MX200 GPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "A marine positioning system which comprises a MX200 Control and Display Unit (CDU) of unknown sub-model, fitted to an unknown GPS receiver model. The navigation system has since been replaced by the MX512."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0933" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Navico Simrad Yachting MX200 global positioning system"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00900> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0122> ;
+.
+inst:TOOL0934
+  rdf:type skos:Concept ;
+  dcterm:date "2020-10-08 12:34:36.0" ;
+  dcterm:identifier "SDN:L22::TOOL0934" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0934/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0934/1> ;
+  owl:versionInfo "2" ;
+  skos:altLabel "MX Marine MX300 GPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "A marine positioning system which comprises a MX300 Control and Display Unit (CDU) of unknown sub-model, fitted to an unknown GPS receiver model. The navigation system has since been replaced by the MX512."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0934" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Navico Simrad Yachting MX300 global positioning system"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00900> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0122> ;
+.
+inst:TOOL0935
+  rdf:type skos:Concept ;
+  dcterm:date "2020-10-08 12:34:36.0" ;
+  dcterm:identifier "SDN:L22::TOOL0935" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0935/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0935/1> ;
+  owl:versionInfo "2" ;
+  skos:altLabel "MX Marine MX100 GPS"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "A marine positioning system which comprises a MX100 Control and Display Unit (CDU) of unknown sub-model, fitted to an unknown GPS receiver model. The navigation system has since been replaced by the MX512."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0935" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Navico Simrad Yachting MX100 global positioning system"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00900> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0122> ;
+.
+inst:TOOL0936
+  rdf:type skos:Concept ;
+  dcterm:date "2020-10-08 12:34:36.0" ;
+  dcterm:identifier "SDN:L22::TOOL0936" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0936/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL0936/1> ;
+  owl:versionInfo "2" ;
+  skos:altLabel "MX Marine MX412 DGPS"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A 12-channel (L1, 1575 MHz, C/A code) GPS and 2 beacon DGPS receiver (283.5-325 KHz). It comprises a MX412 Control and Display Unit (CDU) of unknown sub-model, fitted to a co-axial cabled, combined GPS and beacon combo antenna (compatible models are MGL-4, MGL-3 or MXB5). Depending on the combo antenna unit used, the system can achieve <1 - 2 m accuracy in areas with good beacon differential coverage. The navigation system has been replaced by the MX512."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL0936" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Navico Simrad Yachting MX412 differential global positioning system"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00900> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0122> ;
+.
+inst:TOOL1111
+  rdf:type skos:Concept ;
+  dcterm:date "2017-02-09 17:19:44.0" ;
+  dcterm:identifier "SDN:L22::TOOL1111" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1111/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Sonardyne Ranger 2 USBL"@en ;
+  skos:broader sdev:POS26 ;
+  skos:definition "An acoustic positioning system for deep water, long range tracking of underwater targets and position referencing for dynamically positioned (DP) vessels. It calculates the position of a subsea target, for example an ROV, by measuring the range and bearing from a vessel-mounted transceiver to an acoustic transponder fitted to the target. It supports 6G acoustic systems and inverted USBL (iUSBL) tracking. It is available in two versions. In standard configuration, Ranger 2 allows up to 10 subsea targets to be simultaneously tracked from a surface vessel. In Ranger 2 Pro configuration, any number of subsea targets can be tracked. The positioning accuracy obtainable from either configuration can be improved by interfacing the system directly into Sonardyne Lodestar attitude and heading reference system (Optimised Ranger 2). It has an operating range of over 6000 m. It has a system accuracy of 0.2% of Slant Range (0.1% of Slant Range for optimised system)."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1111" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Sonardyne Ranger 2 Ultra Short BaseLine acoustic positioning system"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG01062> ;
+.
+inst:TOOL1227
+  rdf:type skos:Concept ;
+  dcterm:date "2018-04-20 17:20:46.0" ;
+  dcterm:identifier "SDN:L22::TOOL1227" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1227/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Septentrio AsteRx-m"@en ;
+  skos:broader sdev:POS02 ;
+  skos:broader sdev:POS03 ;
+  skos:broader sdev:POS04 ;
+  skos:broader sdev:POS25 ;
+  skos:definition "Low-power, compact GPS and GLONASS RTK receiver. Integrates into hand-held devices, mobile computing platforms and other space constrained applications requiring low power consumption. Measures 70 x 47.5 mm and weighs 40 g. Dual-frequency L1/L2 positioning and 132 channels for simultaneous tracking of satellite signals. Positional accuracy : 0.5-1.3 m (horizontal), 0.9-1.9 m (vertical)."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1227" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Septentrio AsteRx-m global positioning system"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG01128> ;
+.
+inst:TOOL1228
+  rdf:type skos:Concept ;
+  dcterm:date "2018-04-20 17:20:46.0" ;
+  dcterm:identifier "SDN:L22::TOOL1228" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1228/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Septentrio AsteRx-m UAS"@en ;
+  skos:broader sdev:POS02 ;
+  skos:broader sdev:POS03 ;
+  skos:broader sdev:POS04 ;
+  skos:broader sdev:POS25 ;
+  skos:definition "Low-power, compact GPS and GLONASS RTK receiver. Integrates into unmanned aircraft systems (UAS) requiring low power consumption. Measures 70 x 47.5 mm and weighs 50 g. Dual-frequency L1/L2 positioning and 132 channels for simultaneous tracking of satellite signals. Positional accuracy: 0.4-1.2 m (horizontal), 0.9-1.9 m (vertical)."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1228" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Septentrio AsteRx-m UAS global positioning system"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG01128> ;
+.
+inst:TOOL1280
+  rdf:type skos:Concept ;
+  dcterm:date "2018-09-10 16:23:45.0" ;
+  dcterm:identifier "SDN:L22::TOOL1280" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1280/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Trimble 5800 GPS"@en ;
+  skos:broader sdev:POS04 ;
+  skos:broader sdev:POS25 ;
+  skos:definition "An integrated 24-channel dual-frequency GPS receiver scalable from L1 postprocessing to full real-time kinematic (RTK) configurations. The instrument is designed for use in surveying, construction and asset management and it primarily measures geographic position and elevation. Key characteristics include the instrument's integration on a cable-free rover, allowing flexibility and ease of operation in the field. The GPS also utilises Trimble's proven Maxwell technology for robust GPS tracking, and the four-point antenna feed provides sub-millimeter phase center stability. The position of the UHF radio antenna mounting increases accuracy by being out of the GPS line-of-sight, reducing multipath and avoiding interference with the GPS antenna. Two additional channels for WAAS and EGNOS tracking enables performance of real-time differential surveys to GIS grade without a base station. The instrument exhibits low noise L1 and L2 carrier phase measurements at <1 mm precision in a 1 Hz bandwidth. The instrument has a code differential resolution of +/- 0.25 m (horizontal) and +/- 0.5 m (vertical), and a kinematic resolution of +/- 10 mm (horizontal) and +/- 20 mm (vertical). It can operate in temperatures ranging from -40 to +65 degC."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1280" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Trimble 5800 GPS System"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00357> ;
+.
+inst:TOOL1299
+  rdf:type skos:Concept ;
+  dcterm:date "2018-12-06 12:31:34.0" ;
+  dcterm:identifier "SDN:L22::TOOL1299" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1299/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Garmin 19X GPS"@en ;
+  skos:broader sdev:POS02 ;
+  skos:broader sdev:POS03 ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A series of a 32-channel GPS receivers. They are designed for marine applications. Receivers track and use multiple GLONASS satellites in addition to GPS satellites to provide positioning and velocity. Also supports differential capability using real-time WAAS corrections. Standard models consist of an embedded antenna and receiver that operates at 10 Hz. Optional models have a NMEA 2000 interface. Update-rate can be configured at 10 times per second at 38400bps and 1 times per second at 4800bps. They are capable of positional accuracies of less than 15 m (GPS) or less than 3 m (DGPS)."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1299" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Garmin 19X global positioning system receiver series"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00911> ;
+.
+inst:TOOL1348
+  rdf:type skos:Concept ;
+  dcterm:date "2019-08-09 15:58:10.0" ;
+  dcterm:identifier "SDN:L22::TOOL1348" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1348/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1348/1> ;
+  owl:versionInfo "2" ;
+  skos:altLabel "Sepentrio PolaRx5 GNSS"@en ;
+  skos:broader sdev:POS02 ;
+  skos:definition "A multi-frequency Global Navigation Satellite System (GNSS) receiver used to track visible signals (GPS, GLONASS, Galileo, BeiDou, IRNSS) for satellite positioning. It is specifically designed to support applications in earth science. The device operates by converting signals from visible satellites into a position on earth. The PolaRx5 offers 544 channels for GNSS tracking, and uses Advanced Interference Mitigation (AIM+) technology to filter out sources of interference. The devices also uses Septentrio’s patented APME+ multipath mitigation technology to eliminate short delay multipath without the introduction of bias. APME+ can be activated or de-activated by the user as necessary. It is compatible with Septentrio PolaNt Choke Ring B3/E6 Antenna. The IP68 compliant variant, the PolaRx5e comes complete with battery. The PolaRx5 offers an in-built web-UI, internal data logging up to 16 GB, and up to 100 Hz raw data output. Operating temperature ranges between -40 and +65 degC, and measurement precision (unsmoothed pseudorange) ranges from 1.5 to 25 cm."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1348" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Septentrio PolaRx5 Global Navigation Satellite System (GNSS) receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG01128> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0047> ;
+.
+inst:TOOL1433
+  rdf:type skos:Concept ;
+  dcterm:date "2020-05-06 08:59:45.0" ;
+  dcterm:identifier "SDN:L22::TOOL1433" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1433/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Trimble NetR8 GNSS"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A 76-channel, multiple-frequency GNSS receiver that serves as a reference station for positional corrections. It can track all GPS signals (L1/L2/L2C/L5) as well as GLONASS (L1/L2). It has 4 GB on-board memory, integrated battery providing up to 12 hours operation and has tracking and storage rates of up to 50 Hz. WAAS/EGNOS, MSAS, and L-band (OmniSTAR) Satellite Based Augmentation (SBAS) compatibility. It can also be used as a temporary base station to broadcast RTK corrections. Code phase differential GPS accuracy is +/-0.25m + 1 ppm RMS."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1433" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Trimble NetR8 GNSS reference station"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00357> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0077> ;
+.
+inst:TOOL1434
+  rdf:type skos:Concept ;
+  dcterm:date "2020-05-06 08:59:45.0" ;
+  dcterm:identifier "SDN:L22::TOOL1434" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1434/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Trimble NetR9 GNSS"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A 440-channel, multiple-frequency GNSS receiver that serves as a reference station for positional corrections. It can track all GPS signals (L1/L2/L2C/L5) as well as GLONASS (L1/L2). It has 8 GB on-board memory, integrated battery providing up to 15 hours operation and has tracking and storage rates of up to 50 Hz. WAAS/EGNOS, MSAS, Galileo (GIOVE-A, GIOVE-B) and L-band (OmniSTAR) Satellite Based Augmentation (SBAS) compatibility. It can also be used as a temporary base station to broadcast RTK corrections. Static GNSS surveying horizontal accuracy is +/-3 mm + 1 ppm RMS (baseline <30km)."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1434" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Trimble NetR9 GNSS reference station"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00357> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0077> ;
+.
+inst:TOOL1435
+  rdf:type skos:Concept ;
+  dcterm:date "2020-05-06 08:59:45.0" ;
+  dcterm:identifier "SDN:L22::TOOL1435" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1435/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Trimble NetRS GPS"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A 24 channel, dual-frequency GPS receiver that serves as a reference station for positional corrections. It can track GPS signals L1 and L2 (and L2C with later firmware versions). It has 1GB flashcard and 150MB internal memory, providing up to 3400 hours of raw data observables. WAAS/EGNOS compatibility. Static horizontal accuracy is 5 mm + 1 ppm RMS."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1435" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Trimble NetRS GPS reference station"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00357> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0077> ;
+.
+inst:TOOL1446
+  rdf:type skos:Concept ;
+  dcterm:date "2020-05-15 17:21:10.0" ;
+  dcterm:identifier "SDN:L22::TOOL1446" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1446/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Topcon NET-G3A"@en ;
+  skos:broader sdev:POS02 ;
+  skos:definition "A 144-channel, multiple-frequency Global Navigation Satellite System (GNSS) receiver that serves as a reference station for positional corrections. Using Topcon's patented Paradigm-G3 chip technology, the NET-G3A provides Universal Signal Tracking of all signals from the GPS (L1/L2/L5/CA/L1P/L2P/L2C), GLONASS (L1/L2/L5/L1CA/L2CA/L1P/L2P), and Galileo (GIOVE-A/GIOVE-B) constellations. It is also compatible with WAAS/EGNOS. Although it has no internal memory, it has a removable CF memory card up to 2GB, and the USB Host feature enables users to connect a USB memory stick or mass storage device. The NET-G3A also includes a built-in web server allowing users to configure and monitor the receiver via a Web interface. The NET-G3A can be used with its companion CR-G3 choke ring antenna. Real-time RTK horizontal accuracy is 10 mm + 1 ppm."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1446" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Topcon Positioning Systems NET-G3A GNSS Receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG01063> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0079> ;
+.
+inst:TOOL1521
+  rdf:type skos:Concept ;
+  dcterm:date "2020-08-11 13:01:19.0" ;
+  dcterm:identifier "SDN:L22::TOOL1521" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1521/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Trimble ABX-Two"@en ;
+  skos:broader sdev:POS25 ;
+  skos:definition "Measures heading, roll and pitch, together with 3D position solutions up to cm-level accuracy. It can also provide drift-free, absolute attitude solution. This sensor is ideal for a wide variety of marine, air and terrestrial applications. The GNSS agnostic engine is driven by Z-Blade technology that allows the module not to rely on GPS to obtain positioning by using a single GNSS system, or any combination of them. The GNSS engine uses embedded L-band hardware for over-the-air satellite corrections to achieve cm/dm level accuracy. Global inland availability of RTX corrections allows the unit to not need a dedicated base station to deliver cm-level positioning. The ABX -Two uses a RTK engine to deliver cm-level accuracy for systems that use corrections from a RTK network or a local base, and achieves relative positioning by using RTK against a moving base. 3rd-party network corrections capabilities such as MAC, FKP, and VRS are included. When more than one RTK correcting data are available, the device utilizes the Trimble Hot Standby RTK algorithm. This allows it to use the sets of data simultaneously for positioning. Supports two modules that could be used for Precise Platform Position (P3). This option uses data from three antennas for full GNSS attitude. 240 channels. 2 MSS L-Band Tracking Channels. Precise Platform Positioning (P3). Dual Core Engine with Z-Blade Technology. Precise Point Positioning using Trimble RTX. Web User-Interface. Operating Temperature: -30 degrees Celsius to 60 degrees Celsius."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1521" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Trimble ABX-Two gyrocompass"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00357> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0077> ;
+.
+inst:TOOL1524
+  rdf:type skos:Concept ;
+  dcterm:date "2020-08-17 15:17:03.0" ;
+  dcterm:identifier "SDN:L22::TOOL1524" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1524/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1524/1> ;
+  owl:versionInfo "2" ;
+  skos:altLabel "ADU800"@en ;
+  skos:broader sdev:POS25 ;
+  skos:definition "A 6D positioning system providing position and orientation It is a three antenna GNSS system employing on-the-fly integer ambiguity resolution techniques using carrier phase measurements from the three on board GNSS receivers to provide instantaneous 3D attitude information. In addition to the 3D attitude, the main GNSS board of the ADU800 is providing a 3D position up to centimeter-level accuracy in RTK mode."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1524" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Ashtech ADU800 gyrocompass"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00357> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0077> ;
+.
+inst:TOOL1547
+  rdf:type skos:Concept ;
+  dcterm:date "2020-10-27 10:29:53.0" ;
+  dcterm:identifier "SDN:L22::TOOL1547" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1547/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Furuno GP-330B"@en ;
+  skos:broader sdev:POS03 ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A high-performance CAN bus GPS receiver antenna designed for use on marine vessels. It features a 14-channel all-in-view receiver with 12 dedicated GPS channels and 2 dedicated SBAS (WAAS/EGNOS/MSAS) channels. It has a receiving frequency of 1575.42 MHz (L1). The GP-330B is capable of data output in CAN bus/NMEA2000 format, so can be used with NavNet 3D systems. Its unique 'Pin-Enabled' termination resistor allows simple NMEA2000 backbone or drop wiring configurations. The GP-330B can be supplied with various optional 10 m NMEA cable assemblies, extensions, terminators and mounting base configurations. It is capable of 60 second cold start time-to-first-fix, and position is updated every second. Its GPS accuracy is 10m, MSAS accuracy is 7m and WAAS accuracy is 3m."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1547" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Furuno GP-330B GPS/WAAS receiver antenna"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00571> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0115> ;
+.
+inst:TOOL1553
+  rdf:type skos:Concept ;
+  dcterm:date "2020-10-27 10:29:53.0" ;
+  dcterm:identifier "SDN:L22::TOOL1553" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1553/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Furuno GP-320B"@en ;
+  skos:broader sdev:POS03 ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A high-performance GPS receiver antenna designed for use on marine vessels. It features a 12-channel all-in-view parallel tracking GPS receiver including SBAS (WAAS/EGNOS/MSAS), with a receiving frequency of 1575.42 MHz (L1). The GP-320B can be supplied with an optional mast mounting kit, 10 m extension cable, or various mounting base configurations. It is capable of 90 second cold start acquisition and 20 second warm state acquisition. Its GPS accuracy is 10m, MSAS accuracy is 7m and WAAS accuracy is 3m."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1553" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Furuno GP-320B GPS/WAAS receiver antenna"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00571> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0115> ;
+.
+inst:TOOL1554
+  rdf:type skos:Concept ;
+  dcterm:date "2021-01-13 15:08:32.0" ;
+  dcterm:identifier "SDN:L22::TOOL1554" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1554/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1554/1> ;
+  owl:versionInfo "2" ;
+  skos:altLabel "Furuno GP-33"@en ;
+  skos:broader sdev:POS03 ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A high-performance GPS navigator designed for use on marine vessels. It features a 12-channel GPS receiver combined with integrated SBAS (WAAS/EGNOS/MSAS) technology, with a receiving frequency of 1575.42 MHz (L1). The GP-33 is capable of data output in CAN bus/NMEA0183 format. It comes with a waterproof display and a 6 m drop cable as standard, with a GPA-017 antenna unit. There is also an optional junction box and various cable assemblies available. The GP-33 has a tracking velocity of 999.9 knots and is capable of a 90 second cold start time-to-first-fix. Its GPS accuracy is 10m and WAAS accuracy is 3m."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1554" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Furuno GPS Navigator GP-33 GPS"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00571> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0115> ;
+.
+inst:TOOL1606
+  rdf:type skos:Concept ;
+  dcterm:date "2021-02-03 09:56:26.0" ;
+  dcterm:identifier "SDN:L22::TOOL1606" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1606/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "MX Marine MX421"@en ;
+  skos:broader sdev:POS03 ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A series of GPS sensors that may be configured to use differential corrections (DGPS). They are designed for the marine environment. The sensors determine position using the US Navstar satellite system. Differential corrections (RTCM) may be applied using an internal beacon receiver (MX421B-10) or via an external receiver and control and display unit (MX421-10). The GPS receiver uses 12 channels for tracking of L1 C/A signals (1.575 GHz Frequency) and a position update rate of 1 Hz. The differential beacon (MX421B-10) uses 2 channels for tracking (283.5 to 325 kHz). MX 421B-10 can be optionally upgraded to output 5Hz position update. Horizontal Accuracy: <1 m RMS (DGPS) <3m RMS (GPS no S/A)."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1606" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Navico Simrad MX421 {MX Marine MX421} GPS series"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00900> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0122> ;
+.
+inst:TOOL1621
+  rdf:type skos:Concept ;
+  dcterm:date "2021-02-03 09:56:26.0" ;
+  dcterm:identifier "SDN:L22::TOOL1621" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1621/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Furuno GP-31"@en ;
+  skos:broader sdev:POS03 ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A 12-channel, all-in-view Global Positioning System (GPS). Designed for use on marine vessels. It receives L1 C/A (1575.42 MHz) frequencies. It is Differential GPS (DGPS) ready (requires an external DGPS beacon receiver - Furuno GR-80) with frequency range 283.5-325 kHz. Accuracy is approx. 50 m (GPS), or approx. 5 m (DGPS), 95% of the time."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1621" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Furuno GPS Navigator GP-31 GPS"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00571> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0115> ;
+.
+inst:TOOL1623
+  rdf:type skos:Concept ;
+  dcterm:date "2021-02-03 13:48:25.0" ;
+  dcterm:identifier "SDN:L22::TOOL1623" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1623/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Kongsberg Seapath 380 series"@en ;
+  skos:broader sdev:POS02 ;
+  skos:broader sdev:POS04 ;
+  skos:broader sdev:POS19 ;
+  skos:definition "Heading, attitude and positioning sensor series, designed to support hydrographic surveying and dredging activities with high precision navigation measurements. Seapath 380 instruments are composed of a 555-channel dual frequency Real Time Kinematics (RTK) Global Navigation Satellite System (GNSS) receiver and a Motion Reference Unit (MRU) inertial sensor. Different Seapath 380 models within the series determine the type of MRU mounted on the instrument: MRU models be either 5+, 5, H or 3, with associated RMS roll and pith accuracy of 0.008 deg, 0.02 deg, 0.03 deg and 0.08 deg respectively. Each instrument features 2 cm heave accuracy (delayed signal), and position accuracy of 0.01 m + 1 ppm RMS (X and Y) can be achieved through post processing of satellite and Inertial Measurement Unit (IMU) data. The position solution can use all available satellites, including GPS, GLONASS, Galileo, Beidou and QZSS."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1623" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Kongsberg Seatex Seapath 380 heading, attitude and positioning sensor series"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00360> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0153> ;
+.
+inst:TOOL1636
+  rdf:type skos:Concept ;
+  dcterm:date "2021-02-10 18:43:00.0" ;
+  dcterm:identifier "SDN:L22::TOOL1636" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1636/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "ESE ES-185A"@en ;
+  skos:broader sdev:POS06 ;
+  skos:definition "An 8-channel Global Positioning System (GPS) master clock/time code generator. The unit receives accurate time and date information from GPS satellites in UTC time. The receiver offers an accuracy of <0.1 s per 24 hour period and is self-setting. Outputs at one pulse per second."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1636" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "ESE ES-185 A Global Positioning System master clock"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG01754> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0137> ;
+.
+inst:TOOL1637
+  rdf:type skos:Concept ;
+  dcterm:date "2021-02-10 18:43:00.0" ;
+  dcterm:identifier "SDN:L22::TOOL1637" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1637/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "ESE ES-185E"@en ;
+  skos:broader sdev:POS06 ;
+  skos:definition "A 12-channel Global Positioning System (GPS) master clock/time code generator. The unit receives accurate time and date information from GPS satellites in UTC time. The receiver offers an accuracy of +/-10 nS and is self-setting. Outputs at one pulse per second."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1637" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "ESE ES-185 E Global Positioning System master clock"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG01754> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0137> ;
+.
+inst:TOOL1684
+  rdf:type skos:Concept ;
+  dcterm:date "2022-03-03 12:13:26.0" ;
+  dcterm:identifier "SDN:L22::TOOL1684" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1684/2> ;
+  pav:hasVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1684/1> ;
+  owl:versionInfo "2" ;
+  skos:altLabel "HiPAP 102 USBL"@en ;
+  skos:broader sdev:POS26 ;
+  skos:definition "A low frequency acoustic positioning system designed for use in deep water, utilising transponders with a depth rating down to 7000 metres, whilst the transducer has an operating range of 1 - 10,000 meters. The HiPAP has applications in towfish and towed platform tracking, seabed reference for dynamic positioning of a vessel, high accuracy subsea metrology and positioning, telemetry and scientific research. The system is primarily used to position ROVs and other objects in very deep water and at long ranges, using either or both super short base line (SSBL) and long base line (LBL) principles. The instrument operates in a frequency band of 10 - 15 kHz, and features narrow 15 degree listening beams, with a range detection accuracy of 0.02 metres."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1684" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Kongsberg HiPAP 102 Ultra Short BaseLine acoustic positioning system"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00360> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0015> ;
+.
+inst:TOOL1697
+  rdf:type skos:Concept ;
+  dcterm:date "2021-06-15 13:00:02.0" ;
+  dcterm:identifier "SDN:L22::TOOL1697" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1697/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Trimble SPS351 GPS"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A flexible, modular, DGPS/Beacon receiver that delivers sub-meter horizontal positioning accuracy for marine and OEM applications These receivers are ideal for the following marine construction applications: DGPS rover receiver on marine vessel, Site and marine rover applications using Location GPS augmentation, including OmniSTAR, Location RTK, SBAS, Beacon, and DGPS RTCM. All the receivers can optionally record GPS data to the internal memory, and transfer the data over a serial or Ethernet connection. The instrument has an IP67 environmental rating and an operating temperature range of -40 degrees Celsius to +65 degrees Celsius."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1697" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Trimble SPS 351 (modular) GPS receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00357> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0077> ;
+.
+inst:TOOL1698
+  rdf:type skos:Concept ;
+  dcterm:date "2021-06-15 13:00:02.0" ;
+  dcterm:identifier "SDN:L22::TOOL1698" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1698/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Trimble SPS461 GPS"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A flexible, modular, GPS Heading receiver that delivers precise heading and sub-meter horizontal positioning accuracy for marine and OEM applications. The SPS461 is available in the following hardware configurations: Integrated dual-channel MSK Beacon receiver, Internal 450 MHz (410 MHz to 470 MHz band) receive-only radio with integrated dual-channel MSK Beacon receiver, Internal 900 MHz receive-only radio. The following options and upgrades are available for the SPS461 receiver: Location RTK (includes OmniSTAR XP/HP support), Location RTK with Precise Vertical (PV), Precise RTK, Choice of external GPS antenna for base station or rover operation, Attached or external radio antenna for rover or high-gain base station radio operation, Permanent/semi-permanent and mobile quick setup base station capability, and Backpack, belt, rod, truck, and marine vessel mounting options for rover applications. The instrument has an IP67 environmental rating and an operating temperature range of -40 degrees Celsius to +65 degrees Celsius."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1698" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Trimble SPS 461 (modular) GPS receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00357> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0077> ;
+.
+inst:TOOL1699
+  rdf:type skos:Concept ;
+  dcterm:date "2021-06-15 13:00:02.0" ;
+  dcterm:identifier "SDN:L22::TOOL1699" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1699/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Furuno GP-150-DUAL"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "The GP-150-DUAL consists of two dual differential GPS navigator systems and an interface unit. Each GPS navigator consists of a display unit combining a GPS receiver and video plotter, and a GPS antenna. The interface unit functions to exchange data between the GPS navigators and external equipment. A high sensitivity receiver tracks up to 12 satellites simultaneously. An 8-state Kalman filter ensures optimum accuracy in determination of vessel position, course and speed. The instrument has storage for 999 waypoints and 30 routes, and its memory can store 2,000 points of track and marks. The instrument fully meets the following regulations: IMO MSC. 112(73), IEC 61162-1, IEC 61108-1 and IEC 62288."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1699" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Furuno GP-150 Dual Global Positioning System receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00571> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0115> ;
+.
+inst:TOOL1790
+  rdf:type skos:Concept ;
+  dcterm:date "2022-04-19 19:41:46.0" ;
+  dcterm:identifier "SDN:L22::TOOL1790" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1790/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "HiPAP 502 USBL"@en ;
+  skos:broader sdev:POS26 ;
+  skos:definition "A high accuracy omnidirectional acoustic positioning system with an operating range of 1 - 5,000 metres. The HiPAP 502 makes use of a spherical transducer containing an array of 241 computer controlled elements for accurate underwater positioning of submerged structures or underwater vehicles deployed with transponders. The spherical transducer enables an operating area of 200 degrees, and allows the system to form narrow listening beams of 10 degrees for reception of signals from the transponder. Beams can be pointed in any direction below the vessel, including horizontally and upwards toward the surface. The instrument operates in a frequency band of 21 - 31 kHz and has a range detection accuracy of 0.02 metres."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1790" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Kongsberg HiPAP 502 Ultra Short BaseLine acoustic positioning system"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00360> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0015> ;
+.
+inst:TOOL1791
+  rdf:type skos:Concept ;
+  dcterm:date "2022-04-19 19:41:46.0" ;
+  dcterm:identifier "SDN:L22::TOOL1791" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1791/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "R5 Supreme Mk II"@en ;
+  skos:broader sdev:POS02 ;
+  skos:definition "A navigation system incorporating a colour control and display unit (CDU), and optional R5 sensor and antennas. The R5 SUPREME system is self-monitoring with Receiver Autonomous Integrity Monitoring (RAIM), and features a multitude of interfaces to enable integration into modern networked bridge solutions. The system can receive GNSS, L-Band and IALA beacon inputs for Satellite-based Augmentation System and Differential GPS correction, in addition to real-time kinematic positioning (RTK) to correct GNSS errors. The system is capable of handling and storing up to 4000 individually named waypoints and up to 128 different routes."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1791" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Saab R5 Supreme Mk II navigation system"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG01869> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0202> ;
+.
+inst:TOOL1820
+  rdf:type skos:Concept ;
+  dcterm:date "2022-07-27 14:39:48.0" ;
+  dcterm:identifier "SDN:L22::TOOL1820" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1820/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Sercel NR103"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A 10-channel Differential Global Positioning System (DGPS) in use from the early 1990s, for use in hydrographic and oceanographic vessel positioning. It receives L1 C/A (1575 MHz) frequencies and has an accuracy of 3-5 metres."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1820" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Sercel NR103 Differential Global Positioning System"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG01805> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0176> ;
+.
+inst:TOOL1823
+  rdf:type skos:Concept ;
+  dcterm:date "2022-08-02 12:33:41.0" ;
+  dcterm:identifier "SDN:L22::TOOL1823" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1823/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "iXblue Phins Surface"@en ;
+  skos:broader sdev:POS19 ;
+  skos:definition "An Inertial Navigation System (INS) providing position, true heading, attitude, speed, depth, and heave. Its high accuracy inertial measurement unit is based on iXblue's Fiber-Optic Gyroscope (FOG) technology coupled with an embedded digital signal processor that runs an advanced Kalman filter. There are multiple aides available including DVL, EM log, GPS, USBL, LBL and depth sensor. It has an IMU option for high accuracy platform stabilization. There are static and dynamic alignment modes, with and without GNSS Operates in temperatures between -20 degrees Celsius and +55 degrees Celsius. It is accurate to 0.01 degrees for heading, roll and pitch. Heave is accurate to 5 cm or 5% and Smart Heave is accurate to 2 cm or 2%."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1823" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "iXblue Phins Surface Inertial Navigation System (INS)"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00459> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0012> ;
+.
+inst:TOOL1848
+  rdf:type skos:Concept ;
+  dcterm:date "2022-09-27 10:57:36.0" ;
+  dcterm:identifier "SDN:L22::TOOL1848" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1848/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "CARTHE drifter"@en ;
+  skos:broader sdev:POS25 ;
+  skos:definition "A drifter used for physical and biological oceanography, search and rescue missions, marine pollution tracking, as well as surface current monitoring for the offshore industry and the Navy for purposes of navigation and operational risk reduction. Large scale deployments can also be used to study the upper ocean processes that control the transport of hydrocarbons in the environment. The drifter is made from PHA biodegradable plastic. The instrument is activated by a magnetic switch and can send its position every 5 minutes for a period of up to 3 months with meter accuracy using very-low cost GlobalStar Simplex telemetry systems. The client can receive the data in real-time through the Pacific Gyre LLC website, the official distributor of CARTHE drifters."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1848" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "University of Miami CARTHE drifter drifting surface float"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG00131> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0229> ;
+.
+inst:TOOL1857
+  rdf:type skos:Concept ;
+  dcterm:date "2022-10-12 12:35:50.0" ;
+  dcterm:identifier "SDN:L22::TOOL1857" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1857/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Navstar 602D"@en ;
+  skos:broader sdev:POS01 ;
+  skos:definition "Compact radio navigation system. Designed to be a receiver compatible with the Decca Navigator System (DNS) and developed for commercial use. This instrument can operate either stand-alone or interfaced with a Navstar SA Satellite Navigator. The instrument has a digital display and push buttons. Decca guidance suggests 50 m positional accuracy in daylight and 200 m in darkness. The instrument was used in the 1980's and is no longer in production."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1857" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Navstar 602D Navigator System"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/UNSPEC> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0235> ;
+.
+inst:TOOL1858
+  rdf:type skos:Concept ;
+  dcterm:date "2022-10-12 12:35:50.0" ;
+  dcterm:identifier "SDN:L22::TOOL1858" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1858/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Shipmate RS4000"@en ;
+  skos:broader sdev:POS01 ;
+  skos:definition "Radio navigation system designed specifically as a Decca Navigator System (DNS) receiver. This instrument can be integrated into an RS5100 Satellite Navigator. The instrument has a digital display and push buttons. Decca guidance suggests 50 m positional accuracy in daylight and 200 m in darkness. The instrument was used in the 1980's and is no longer in production."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1858" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Shipmate RS4000 Navigator System"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/UNSPEC> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0236> ;
+.
+inst:TOOL1859
+  rdf:type skos:Concept ;
+  dcterm:date "2022-10-12 12:35:50.0" ;
+  dcterm:identifier "SDN:L22::TOOL1859" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1859/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Syledis STR4"@en ;
+  skos:broader sdev:POS12 ;
+  skos:definition "Radio navigation system. Designed to receive signals from the Syledis radio network. The device outputs ASCII data string with latitude, longitude, status, heading, and time. The instrument can be interfaced with various navigation systems, including GPS. Receives frequencies from 420 to 450 MHz, with power range up to 1 Watt. This instrument was commercialised in 1985 and is no longer in production."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1859" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Sercel Syledis Str4 Navigator"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG01805> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0176> ;
+.
+inst:TOOL1860
+  rdf:type skos:Concept ;
+  dcterm:date "2022-10-12 12:35:50.0" ;
+  dcterm:identifier "SDN:L22::TOOL1860" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1860/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Magnavox MX100"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "A Global Positioning System (GPS) receiver designed for use on non-commercial vessels. The device has three settings, Navigate, Plotter, and Sailplan, which include outputs such as position, speed, speed over ground, course over ground, bearing, distance and cross-track error, as well as over 200 waypoints and 20 routes. This instrument has six channels for continuous tracking. It has a back-lit LCD screen, which allows for day and nighttime navigation. The Sailplan setting allows the user to plan routes, whilst the Plotter setting graphically shows the chosen course. The instrument can be removed from the vessel and copies can be made via audio cassette recorder. Position updates every 0.6 seconds. This instrument was commercialised in 1991 and is no longer in production."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1860" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Magnavox MX100 GPS Navigator"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/UNSPEC> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0237> ;
+.
+inst:TOOL1861
+  rdf:type skos:Concept ;
+  dcterm:date "2022-10-12 12:35:50.0" ;
+  dcterm:identifier "SDN:L22::TOOL1861" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1861/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Magnavox MX200"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A Global Positioning System (GPS) receiver capable of receiving and processing differential navigation data, designed for professional use. The device includes outputs such as position, speed over ground, set and drift as well as cross-track error, 200 waypoints, and 20 routes. This instrument has six channels for continuous tracking. It has a back-lit LCD screen and uses multiple screens to show different navigational data. The screen has daytime and nighttime modes. The differential capabilities of this instrument allows for accuracies of better than 5 meters. Data copies can be made via audio cassette recorder. Position updates every 0.6 seconds. This instrument was commercialised in 1991 and is no longer in production."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1861" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Magnavox MX200 GPS Navigator"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/UNSPEC> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0237> ;
+.
+inst:TOOL1879
+  rdf:type skos:Concept ;
+  dcterm:date "2022-11-15 11:48:38.0" ;
+  dcterm:identifier "SDN:L22::TOOL1879" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1879/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Aquarius2"@en ;
+  skos:broader sdev:POS04 ;
+  skos:definition "A Global Positioning System (GPS) receiver designed for navigation and precise heading for use during multi-beam sounding, dredging, construction, and machine automation. The instrument can be a stand alone GPS receiver, wide area differential GPS (WADGPS), differential GPS (DGPS) using corrections from radio link or external RTCM receiver, or give relative positioning and heading processing from primary and secondary antennas. It gives LRK or KART centimeter real-time positioning. It has 32 L1 channels and 24 L2 channels. Heading precision range is between 0.1 and 0.04 deg. The output rate is 1-20 Hz with < 5 ms latency. Distance precision to 2 metres for GPS and 5-10 mm in real-time centimeter LRK and KART modes."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1879" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Thales Ashtech Aquarius2 GPS receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG01756> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0125> ;
+.
+inst:TOOL1899
+  rdf:type skos:Concept ;
+  dcterm:date "2023-02-27 14:59:29.0" ;
+  dcterm:identifier "SDN:L22::TOOL1899" ;
+  pav:hasCurrentVersion <http://vocab.nerc.ac.uk/collection/L22/current/TOOL1899/1> ;
+  owl:versionInfo "1" ;
+  skos:altLabel "Pacific Gyre Globeacon"@en ;
+  skos:broader sdev:POS03 ;
+  skos:definition "The Globeacon is a GPS receiver and satellite telemetry instrument designed to monitor and track platforms such as buoys, vessels, and oil platforms. The tracking feature uses Iridium Short Burst Data (SBD) with Iridum Modem and Globalstar Modem. The housing is made of PVC and the instrument is battery operated. The instrument can include air temperature, air pressure, and wind velocity sensors, and is waterproof to 5 meters."@en ;
+  skos:inScheme <http://vocab.nerc.ac.uk/scheme/SDNDEV/current> ;
+  skos:notation "SDN:L22::TOOL1899" ;
+  skos:note "accepted"@en ;
+  skos:prefLabel "Pacific Gyre Globeacon GPS receiver"@en ;
+  skos:related <http://vocab.nerc.ac.uk/collection/B75/current/ORG01998> ;
+  skos:related <http://vocab.nerc.ac.uk/collection/L35/current/MAN0247> ;
+.
+inst:seavoxdevicecatalog
+  rdf:type skos:Collection ;
+  dcterm:alternative "SeaVoX Device Catalogue" ;
+  dcterm:creator "SeaDataNet and MarineXML Vocabulary Content Governance Group" ;
+  dcterm:date "2023-03-07 02:00:03.0" ;
+  dcterm:description "Terms for distinct sampling or measuring devices that may be identified in the real world in terms of manufacturer and model number." ;
+  dcterm:license <https://creativecommons.org/licenses/by/4.0> ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "SeaVoX Device Catalogue" ;
+  grg:RE_RegisterManager "British Oceanographic Data Centre" ;
+  grg:RE_RegisterOwner "SeaDataNet and MarineXML Vocabulary Content Governance Group" ;
+  rdfs:comment "Group set up under the joint auspices of the SeaDataNet project and the Intergovernmental Oceanographic Commission MarineXML Steering Group for controlled vocabulary governance in the marine domain" ;
+  rdfs:seeAlso <https://github.com/nvs-vocabs/L22> ;
+  owl:versionInfo "613" ;
+  skos:altLabel "SeaVoX Device Catalogue" ;
+  skos:member inst:NETT0001 ;
+  skos:member inst:NETT0002 ;
+  skos:member inst:NETT0003 ;
+  skos:member inst:NETT0005 ;
+  skos:member inst:NETT0006 ;
+  skos:member inst:NETT0009 ;
+  skos:member inst:NETT0010 ;
+  skos:member inst:NETT0012 ;
+  skos:member inst:NETT0016 ;
+  skos:member inst:NETT0019 ;
+  skos:member inst:NETT0020 ;
+  skos:member inst:NETT0022 ;
+  skos:member inst:NETT0023 ;
+  skos:member inst:NETT0024 ;
+  skos:member inst:NETT0026 ;
+  skos:member inst:NETT0027 ;
+  skos:member inst:NETT0030 ;
+  skos:member inst:NETT0031 ;
+  skos:member inst:NETT0032 ;
+  skos:member inst:NETT0034 ;
+  skos:member inst:NETT0035 ;
+  skos:member inst:NETT0036 ;
+  skos:member inst:NETT0040 ;
+  skos:member inst:NETT0041 ;
+  skos:member inst:NETT0042 ;
+  skos:member inst:NETT0043 ;
+  skos:member inst:NETT0044 ;
+  skos:member inst:NETT0045 ;
+  skos:member inst:NETT0047 ;
+  skos:member inst:NETT0052 ;
+  skos:member inst:NETT0053 ;
+  skos:member inst:NETT0054 ;
+  skos:member inst:NETT0055 ;
+  skos:member inst:NETT0056 ;
+  skos:member inst:NETT0057 ;
+  skos:member inst:NETT0058 ;
+  skos:member inst:NETT0059 ;
+  skos:member inst:NETT0060 ;
+  skos:member inst:NETT0061 ;
+  skos:member inst:NETT0062 ;
+  skos:member inst:NETT0063 ;
+  skos:member inst:NETT0065 ;
+  skos:member inst:NETT0066 ;
+  skos:member inst:NETT0067 ;
+  skos:member inst:NETT0068 ;
+  skos:member inst:NETT0071 ;
+  skos:member inst:NETT0072 ;
+  skos:member inst:NETT0073 ;
+  skos:member inst:NETT0074 ;
+  skos:member inst:NETT0075 ;
+  skos:member inst:NETT0077 ;
+  skos:member inst:NETT0078 ;
+  skos:member inst:NETT0079 ;
+  skos:member inst:NETT0080 ;
+  skos:member inst:NETT0090 ;
+  skos:member inst:NETT0091 ;
+  skos:member inst:NETT0092 ;
+  skos:member inst:NETT0095 ;
+  skos:member inst:NETT0096 ;
+  skos:member inst:NETT0098 ;
+  skos:member inst:NETT0100 ;
+  skos:member inst:NETT0102 ;
+  skos:member inst:NETT0103 ;
+  skos:member inst:NETT0104 ;
+  skos:member inst:NETT0105 ;
+  skos:member inst:NETT0106 ;
+  skos:member inst:NETT0108 ;
+  skos:member inst:NETT0109 ;
+  skos:member inst:NETT0111 ;
+  skos:member inst:NETT0112 ;
+  skos:member inst:NETT0113 ;
+  skos:member inst:NETT0114 ;
+  skos:member inst:NETT0115 ;
+  skos:member inst:NETT0116 ;
+  skos:member inst:NETT0118 ;
+  skos:member inst:NETT0122 ;
+  skos:member inst:NETT0124 ;
+  skos:member inst:NETT0125 ;
+  skos:member inst:NETT0126 ;
+  skos:member inst:NETT0127 ;
+  skos:member inst:NETT0128 ;
+  skos:member inst:NETT0129 ;
+  skos:member inst:NETT0131 ;
+  skos:member inst:NETT0132 ;
+  skos:member inst:NETT0133 ;
+  skos:member inst:NETT0134 ;
+  skos:member inst:NETT0135 ;
+  skos:member inst:NETT0136 ;
+  skos:member inst:NETT0137 ;
+  skos:member inst:NETT0138 ;
+  skos:member inst:NETT0139 ;
+  skos:member inst:NETT0140 ;
+  skos:member inst:NETT0141 ;
+  skos:member inst:NETT0142 ;
+  skos:member inst:NETT0143 ;
+  skos:member inst:NETT0144 ;
+  skos:member inst:NETT0145 ;
+  skos:member inst:NETT0147 ;
+  skos:member inst:NETT0150 ;
+  skos:member inst:NETT0151 ;
+  skos:member inst:NETT0153 ;
+  skos:member inst:NETT0154 ;
+  skos:member inst:NETT0155 ;
+  skos:member inst:NETT0161 ;
+  skos:member inst:NETT0162 ;
+  skos:member inst:NETT0163 ;
+  skos:member inst:NETT0164 ;
+  skos:member inst:NETT0165 ;
+  skos:member inst:NETT0166 ;
+  skos:member inst:NETT0167 ;
+  skos:member inst:NETT0169 ;
+  skos:member inst:NETT0171 ;
+  skos:member inst:NETT0173 ;
+  skos:member inst:NETT0174 ;
+  skos:member inst:NETT0175 ;
+  skos:member inst:NETT0176 ;
+  skos:member inst:NETT0177 ;
+  skos:member inst:NETT0178 ;
+  skos:member inst:NETT0179 ;
+  skos:member inst:NETT0180 ;
+  skos:member inst:NETT0181 ;
+  skos:member inst:NETT0182 ;
+  skos:member inst:NETT0184 ;
+  skos:member inst:NETT0186 ;
+  skos:member inst:NETT0188 ;
+  skos:member inst:NETT0189 ;
+  skos:member inst:NETT0190 ;
+  skos:member inst:NETT0191 ;
+  skos:member inst:NETT0192 ;
+  skos:member inst:NETT0199 ;
+  skos:member inst:NETT0200 ;
+  skos:member inst:NETT0201 ;
+  skos:member inst:NETT0202 ;
+  skos:member inst:TOOL0001 ;
+  skos:member inst:TOOL000X ;
+  skos:member inst:TOOL0078 ;
+  skos:member inst:TOOL0148 ;
+  skos:member inst:TOOL0199 ;
+  skos:member inst:TOOL0235 ;
+  skos:member inst:TOOL0236 ;
+  skos:member inst:TOOL0237 ;
+  skos:member inst:TOOL0238 ;
+  skos:member inst:TOOL0248 ;
+  skos:member inst:TOOL0281 ;
+  skos:member inst:TOOL0282 ;
+  skos:member inst:TOOL0283 ;
+  skos:member inst:TOOL0304 ;
+  skos:member inst:TOOL0313 ;
+  skos:member inst:TOOL0337 ;
+  skos:member inst:TOOL0348 ;
+  skos:member inst:TOOL0349 ;
+  skos:member inst:TOOL0353 ;
+  skos:member inst:TOOL0354 ;
+  skos:member inst:TOOL0355 ;
+  skos:member inst:TOOL0356 ;
+  skos:member inst:TOOL0357 ;
+  skos:member inst:TOOL0358 ;
+  skos:member inst:TOOL0359 ;
+  skos:member inst:TOOL0381 ;
+  skos:member inst:TOOL0388 ;
+  skos:member inst:TOOL0389 ;
+  skos:member inst:TOOL0390 ;
+  skos:member inst:TOOL0391 ;
+  skos:member inst:TOOL0412 ;
+  skos:member inst:TOOL0413 ;
+  skos:member inst:TOOL0418 ;
+  skos:member inst:TOOL0420 ;
+  skos:member inst:TOOL0427 ;
+  skos:member inst:TOOL0430 ;
+  skos:member inst:TOOL0457 ;
+  skos:member inst:TOOL0469 ;
+  skos:member inst:TOOL0472 ;
+  skos:member inst:TOOL0482 ;
+  skos:member inst:TOOL0491 ;
+  skos:member inst:TOOL0500 ;
+  skos:member inst:TOOL0501 ;
+  skos:member inst:TOOL0502 ;
+  skos:member inst:TOOL0503 ;
+  skos:member inst:TOOL0504 ;
+  skos:member inst:TOOL0505 ;
+  skos:member inst:TOOL0506 ;
+  skos:member inst:TOOL0507 ;
+  skos:member inst:TOOL0508 ;
+  skos:member inst:TOOL0524 ;
+  skos:member inst:TOOL0535 ;
+  skos:member inst:TOOL0536 ;
+  skos:member inst:TOOL0537 ;
+  skos:member inst:TOOL0538 ;
+  skos:member inst:TOOL0539 ;
+  skos:member inst:TOOL0540 ;
+  skos:member inst:TOOL0541 ;
+  skos:member inst:TOOL0542 ;
+  skos:member inst:TOOL0543 ;
+  skos:member inst:TOOL0544 ;
+  skos:member inst:TOOL0545 ;
+  skos:member inst:TOOL0546 ;
+  skos:member inst:TOOL0547 ;
+  skos:member inst:TOOL0548 ;
+  skos:member inst:TOOL0550 ;
+  skos:member inst:TOOL0551 ;
+  skos:member inst:TOOL0552 ;
+  skos:member inst:TOOL0553 ;
+  skos:member inst:TOOL0554 ;
+  skos:member inst:TOOL0555 ;
+  skos:member inst:TOOL0556 ;
+  skos:member inst:TOOL0557 ;
+  skos:member inst:TOOL0561 ;
+  skos:member inst:TOOL0562 ;
+  skos:member inst:TOOL0563 ;
+  skos:member inst:TOOL0567 ;
+  skos:member inst:TOOL0571 ;
+  skos:member inst:TOOL0573 ;
+  skos:member inst:TOOL0588 ;
+  skos:member inst:TOOL0601 ;
+  skos:member inst:TOOL0623 ;
+  skos:member inst:TOOL0653 ;
+  skos:member inst:TOOL0660 ;
+  skos:member inst:TOOL0695 ;
+  skos:member inst:TOOL0697 ;
+  skos:member inst:TOOL0698 ;
+  skos:member inst:TOOL0702 ;
+  skos:member inst:TOOL0703 ;
+  skos:member inst:TOOL0722 ;
+  skos:member inst:TOOL0723 ;
+  skos:member inst:TOOL0735 ;
+  skos:member inst:TOOL0742 ;
+  skos:member inst:TOOL0743 ;
+  skos:member inst:TOOL0751 ;
+  skos:member inst:TOOL0753 ;
+  skos:member inst:TOOL0758 ;
+  skos:member inst:TOOL0759 ;
+  skos:member inst:TOOL0760 ;
+  skos:member inst:TOOL0761 ;
+  skos:member inst:TOOL0762 ;
+  skos:member inst:TOOL0763 ;
+  skos:member inst:TOOL0764 ;
+  skos:member inst:TOOL0765 ;
+  skos:member inst:TOOL0766 ;
+  skos:member inst:TOOL0767 ;
+  skos:member inst:TOOL0768 ;
+  skos:member inst:TOOL0769 ;
+  skos:member inst:TOOL0784 ;
+  skos:member inst:TOOL0785 ;
+  skos:member inst:TOOL0786 ;
+  skos:member inst:TOOL0787 ;
+  skos:member inst:TOOL0788 ;
+  skos:member inst:TOOL0792 ;
+  skos:member inst:TOOL0798 ;
+  skos:member inst:TOOL0799 ;
+  skos:member inst:TOOL0800 ;
+  skos:member inst:TOOL0801 ;
+  skos:member inst:TOOL0802 ;
+  skos:member inst:TOOL0803 ;
+  skos:member inst:TOOL0806 ;
+  skos:member inst:TOOL0807 ;
+  skos:member inst:TOOL0817 ;
+  skos:member inst:TOOL0818 ;
+  skos:member inst:TOOL0819 ;
+  skos:member inst:TOOL0828 ;
+  skos:member inst:TOOL0833 ;
+  skos:member inst:TOOL0843 ;
+  skos:member inst:TOOL0844 ;
+  skos:member inst:TOOL0862 ;
+  skos:member inst:TOOL0867 ;
+  skos:member inst:TOOL0882 ;
+  skos:member inst:TOOL0885 ;
+  skos:member inst:TOOL0899 ;
+  skos:member inst:TOOL0900 ;
+  skos:member inst:TOOL0912 ;
+  skos:member inst:TOOL0917 ;
+  skos:member inst:TOOL0926 ;
+  skos:member inst:TOOL0930 ;
+  skos:member inst:TOOL0933 ;
+  skos:member inst:TOOL0934 ;
+  skos:member inst:TOOL0935 ;
+  skos:member inst:TOOL0936 ;
+  skos:member inst:TOOL0939 ;
+  skos:member inst:TOOL0940 ;
+  skos:member inst:TOOL0960 ;
+  skos:member inst:TOOL0961 ;
+  skos:member inst:TOOL0962 ;
+  skos:member inst:TOOL0963 ;
+  skos:member inst:TOOL0978 ;
+  skos:member inst:TOOL0979 ;
+  skos:member inst:TOOL0980 ;
+  skos:member inst:TOOL0981 ;
+  skos:member inst:TOOL0982 ;
+  skos:member inst:TOOL0983 ;
+  skos:member inst:TOOL0984 ;
+  skos:member inst:TOOL0985 ;
+  skos:member inst:TOOL0986 ;
+  skos:member inst:TOOL0987 ;
+  skos:member inst:TOOL0988 ;
+  skos:member inst:TOOL0989 ;
+  skos:member inst:TOOL0990 ;
+  skos:member inst:TOOL0992 ;
+  skos:member inst:TOOL0993 ;
+  skos:member inst:TOOL0994 ;
+  skos:member inst:TOOL0995 ;
+  skos:member inst:TOOL0996 ;
+  skos:member inst:TOOL0997 ;
+  skos:member inst:TOOL1012 ;
+  skos:member inst:TOOL1016 ;
+  skos:member inst:TOOL1034 ;
+  skos:member inst:TOOL1035 ;
+  skos:member inst:TOOL1036 ;
+  skos:member inst:TOOL1037 ;
+  skos:member inst:TOOL1038 ;
+  skos:member inst:TOOL1039 ;
+  skos:member inst:TOOL1040 ;
+  skos:member inst:TOOL1041 ;
+  skos:member inst:TOOL1042 ;
+  skos:member inst:TOOL1043 ;
+  skos:member inst:TOOL1044 ;
+  skos:member inst:TOOL1045 ;
+  skos:member inst:TOOL1046 ;
+  skos:member inst:TOOL1047 ;
+  skos:member inst:TOOL1048 ;
+  skos:member inst:TOOL1049 ;
+  skos:member inst:TOOL1050 ;
+  skos:member inst:TOOL1051 ;
+  skos:member inst:TOOL1052 ;
+  skos:member inst:TOOL1053 ;
+  skos:member inst:TOOL1054 ;
+  skos:member inst:TOOL1055 ;
+  skos:member inst:TOOL1056 ;
+  skos:member inst:TOOL1057 ;
+  skos:member inst:TOOL1058 ;
+  skos:member inst:TOOL1059 ;
+  skos:member inst:TOOL1060 ;
+  skos:member inst:TOOL1061 ;
+  skos:member inst:TOOL1062 ;
+  skos:member inst:TOOL1063 ;
+  skos:member inst:TOOL1064 ;
+  skos:member inst:TOOL1065 ;
+  skos:member inst:TOOL1066 ;
+  skos:member inst:TOOL1067 ;
+  skos:member inst:TOOL1068 ;
+  skos:member inst:TOOL1069 ;
+  skos:member inst:TOOL1070 ;
+  skos:member inst:TOOL1071 ;
+  skos:member inst:TOOL1072 ;
+  skos:member inst:TOOL1073 ;
+  skos:member inst:TOOL1074 ;
+  skos:member inst:TOOL1075 ;
+  skos:member inst:TOOL1076 ;
+  skos:member inst:TOOL1077 ;
+  skos:member inst:TOOL1078 ;
+  skos:member inst:TOOL1079 ;
+  skos:member inst:TOOL1080 ;
+  skos:member inst:TOOL1081 ;
+  skos:member inst:TOOL1082 ;
+  skos:member inst:TOOL1083 ;
+  skos:member inst:TOOL1084 ;
+  skos:member inst:TOOL1085 ;
+  skos:member inst:TOOL1086 ;
+  skos:member inst:TOOL1087 ;
+  skos:member inst:TOOL1088 ;
+  skos:member inst:TOOL1090 ;
+  skos:member inst:TOOL1091 ;
+  skos:member inst:TOOL1111 ;
+  skos:member inst:TOOL1120 ;
+  skos:member inst:TOOL1135 ;
+  skos:member inst:TOOL1165 ;
+  skos:member inst:TOOL1166 ;
+  skos:member inst:TOOL1169 ;
+  skos:member inst:TOOL1170 ;
+  skos:member inst:TOOL1171 ;
+  skos:member inst:TOOL1172 ;
+  skos:member inst:TOOL1173 ;
+  skos:member inst:TOOL1174 ;
+  skos:member inst:TOOL1175 ;
+  skos:member inst:TOOL1176 ;
+  skos:member inst:TOOL1177 ;
+  skos:member inst:TOOL1178 ;
+  skos:member inst:TOOL1179 ;
+  skos:member inst:TOOL1181 ;
+  skos:member inst:TOOL1191 ;
+  skos:member inst:TOOL1199 ;
+  skos:member inst:TOOL1204 ;
+  skos:member inst:TOOL1214 ;
+  skos:member inst:TOOL1215 ;
+  skos:member inst:TOOL1216 ;
+  skos:member inst:TOOL1227 ;
+  skos:member inst:TOOL1228 ;
+  skos:member inst:TOOL1235 ;
+  skos:member inst:TOOL1249 ;
+  skos:member inst:TOOL1253 ;
+  skos:member inst:TOOL1259 ;
+  skos:member inst:TOOL1260 ;
+  skos:member inst:TOOL1261 ;
+  skos:member inst:TOOL1272 ;
+  skos:member inst:TOOL1274 ;
+  skos:member inst:TOOL1280 ;
+  skos:member inst:TOOL1285 ;
+  skos:member inst:TOOL1299 ;
+  skos:member inst:TOOL1304 ;
+  skos:member inst:TOOL1326 ;
+  skos:member inst:TOOL1334 ;
+  skos:member inst:TOOL1339 ;
+  skos:member inst:TOOL1348 ;
+  skos:member inst:TOOL1349 ;
+  skos:member inst:TOOL1351 ;
+  skos:member inst:TOOL1352 ;
+  skos:member inst:TOOL1371 ;
+  skos:member inst:TOOL1372 ;
+  skos:member inst:TOOL1373 ;
+  skos:member inst:TOOL1374 ;
+  skos:member inst:TOOL1375 ;
+  skos:member inst:TOOL1376 ;
+  skos:member inst:TOOL1378 ;
+  skos:member inst:TOOL1379 ;
+  skos:member inst:TOOL1405 ;
+  skos:member inst:TOOL1413 ;
+  skos:member inst:TOOL1414 ;
+  skos:member inst:TOOL1415 ;
+  skos:member inst:TOOL1416 ;
+  skos:member inst:TOOL1417 ;
+  skos:member inst:TOOL1433 ;
+  skos:member inst:TOOL1434 ;
+  skos:member inst:TOOL1435 ;
+  skos:member inst:TOOL1446 ;
+  skos:member inst:TOOL1454 ;
+  skos:member inst:TOOL1455 ;
+  skos:member inst:TOOL1462 ;
+  skos:member inst:TOOL1463 ;
+  skos:member inst:TOOL1464 ;
+  skos:member inst:TOOL1465 ;
+  skos:member inst:TOOL1466 ;
+  skos:member inst:TOOL1467 ;
+  skos:member inst:TOOL1468 ;
+  skos:member inst:TOOL1469 ;
+  skos:member inst:TOOL1477 ;
+  skos:member inst:TOOL1478 ;
+  skos:member inst:TOOL1480 ;
+  skos:member inst:TOOL1485 ;
+  skos:member inst:TOOL1486 ;
+  skos:member inst:TOOL1487 ;
+  skos:member inst:TOOL1521 ;
+  skos:member inst:TOOL1524 ;
+  skos:member inst:TOOL1527 ;
+  skos:member inst:TOOL1533 ;
+  skos:member inst:TOOL1535 ;
+  skos:member inst:TOOL1536 ;
+  skos:member inst:TOOL1537 ;
+  skos:member inst:TOOL1547 ;
+  skos:member inst:TOOL1553 ;
+  skos:member inst:TOOL1554 ;
+  skos:member inst:TOOL1560 ;
+  skos:member inst:TOOL1574 ;
+  skos:member inst:TOOL1575 ;
+  skos:member inst:TOOL1576 ;
+  skos:member inst:TOOL1591 ;
+  skos:member inst:TOOL1606 ;
+  skos:member inst:TOOL1621 ;
+  skos:member inst:TOOL1623 ;
+  skos:member inst:TOOL1624 ;
+  skos:member inst:TOOL1625 ;
+  skos:member inst:TOOL1626 ;
+  skos:member inst:TOOL1627 ;
+  skos:member inst:TOOL1633 ;
+  skos:member inst:TOOL1636 ;
+  skos:member inst:TOOL1637 ;
+  skos:member inst:TOOL1638 ;
+  skos:member inst:TOOL1644 ;
+  skos:member inst:TOOL1654 ;
+  skos:member inst:TOOL1668 ;
+  skos:member inst:TOOL1675 ;
+  skos:member inst:TOOL1684 ;
+  skos:member inst:TOOL1697 ;
+  skos:member inst:TOOL1698 ;
+  skos:member inst:TOOL1699 ;
+  skos:member inst:TOOL1703 ;
+  skos:member inst:TOOL1709 ;
+  skos:member inst:TOOL1727 ;
+  skos:member inst:TOOL1734 ;
+  skos:member inst:TOOL1741 ;
+  skos:member inst:TOOL1755 ;
+  skos:member inst:TOOL1756 ;
+  skos:member inst:TOOL1757 ;
+  skos:member inst:TOOL1790 ;
+  skos:member inst:TOOL1791 ;
+  skos:member inst:TOOL1815 ;
+  skos:member inst:TOOL1820 ;
+  skos:member inst:TOOL1823 ;
+  skos:member inst:TOOL1848 ;
+  skos:member inst:TOOL1853 ;
+  skos:member inst:TOOL1854 ;
+  skos:member inst:TOOL1857 ;
+  skos:member inst:TOOL1858 ;
+  skos:member inst:TOOL1859 ;
+  skos:member inst:TOOL1860 ;
+  skos:member inst:TOOL1861 ;
+  skos:member inst:TOOL1873 ;
+  skos:member inst:TOOL1879 ;
+  skos:member inst:TOOL1885 ;
+  skos:member inst:TOOL1899 ;
+  skos:member inst:TOOLZZZ ;
+  skos:prefLabel "SeaVoX Device Catalogue" ;
+.
+<http://vocab.nerc.ac.uk/scheme/EDMED_DCAT_THEMES/current>
+  rdf:type skos:ConceptScheme ;
+  dcterm:creator "SeaDataNet" ;
+  dcterm:date "2023-01-04 02:00:08.0" ;
+  dcterm:description "A SKOS concept scheme to allow the representation of the SeaDataNet EDMED catalogue as Linked Data following the W3C DCAT profile." ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "W3C DCAT Themes for the SeaDataNet EDMED Catalogue" ;
+  owl:versionInfo "24" ;
+  skos:altLabel "EDMED DCAT themes" ;
+  skos:hasTopConcept <http://vocab.nerc.ac.uk/collection/D01/current/D0100001> ;
+  skos:hasTopConcept <http://vocab.nerc.ac.uk/collection/D01/current/D0100002> ;
+  skos:hasTopConcept <http://vocab.nerc.ac.uk/collection/D01/current/D0100003> ;
+  skos:hasTopConcept <http://vocab.nerc.ac.uk/collection/D01/current/D0100004> ;
+  skos:hasTopConcept <http://vocab.nerc.ac.uk/collection/D01/current/D0100005> ;
+  skos:prefLabel "W3C DCAT Themes for the SeaDataNet EDMED Catalogue" ;
+.
+<http://vocab.nerc.ac.uk/scheme/NETMAR_OCEAN/current>
+  rdf:type skos:ConceptScheme ;
+  dcterm:creator "NETMAR Ontology Governance Group" ;
+  dcterm:date "2023-02-04 02:00:09.0" ;
+  dcterm:description "Thesaurus centred on parameter descriptions from the BODC PUV and CF Standard Names mapping to parameter discovery, units, instrument, platform, project and coverage concepts.  Underpins discovery and semantic service chain validation for the NETMAR sea ice and oceanography pilots." ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "NETMAR Oceanography Thesaurus" ;
+  owl:versionInfo "91" ;
+  skos:altLabel "NETMAR Oceans" ;
+  skos:hasTopConcept sdnk:SDNKG02 ;
+  skos:hasTopConcept sdnk:SDNKG04 ;
+  skos:hasTopConcept sdnk:SDNKG05 ;
+  skos:hasTopConcept sdnk:SDNKG16 ;
+  skos:prefLabel "NETMAR Oceanography Thesaurus" ;
+.
+<http://vocab.nerc.ac.uk/scheme/NETOC_INSTRUMENT/current>
+  rdf:type skos:ConceptScheme ;
+  dcterm:creator "NETMAR Ontology Governance Group" ;
+  dcterm:date "2020-09-18 15:00:10.0" ;
+  dcterm:description "Instrument facet of a thesaurus centred on parameter descriptions from the BODC PUV and CF Standard Names mapping to parameter discovery, units, instrument, platform, project and coverage concepts.  Underpins discovery and semantic service chain validation for the NETMAR sea ice and oceanography pilots." ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "NETMAR Oceanography Thesaurus Instrument Facet" ;
+  owl:versionInfo "10" ;
+  skos:altLabel "NETMAR Oceans Instrument" ;
+  skos:prefLabel "NETMAR Oceanography Thesaurus Instrument Facet" ;
+.
+<http://vocab.nerc.ac.uk/scheme/NETOC_ORTHO/current>
+  rdf:type skos:ConceptScheme ;
+  dcterm:creator "NETMAR Ontology Governance Group" ;
+  dcterm:date "2022-12-03 02:00:06.0" ;
+  dcterm:description "Linking concepts and concepts external to the NVS of a thesaurus centred on parameter descriptions from the BODC PUV and CF Standard Names mapping to parameter discovery, units, instrument, platform, project and coverage concepts.  Underpins discovery and semantic service chain validation for the NETMAR sea ice and oceanography pilots." ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "NETMAR Oceanography Thesaurus Facet linkages and external concepts" ;
+  owl:versionInfo "15" ;
+  skos:altLabel "NETMAR Oceans Orthogonal" ;
+  skos:prefLabel "NETMAR Oceanography Thesaurus Facet linkages and external concepts" ;
+.
+<http://vocab.nerc.ac.uk/scheme/NETOC_PARAM/current>
+  rdf:type skos:ConceptScheme ;
+  dcterm:creator "NETMAR Ontology Governance Group" ;
+  dcterm:date "2023-02-04 02:00:09.0" ;
+  dcterm:description "Parameter facet of a thesaurus centred on parameter descriptions from the BODC PUV and CF Standard Names mapping to parameter discovery, units, instrument, platform, project and coverage concepts.  Underpins discovery and semantic service chain validation for the NETMAR sea ice and oceanography pilots." ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "NETMAR Oceanography Thesaurus Parameter Facet" ;
+  owl:versionInfo "70" ;
+  skos:altLabel "NETMAR Oceans Parameter" ;
+  skos:prefLabel "NETMAR Oceanography Thesaurus Parameter Facet" ;
+.
+<http://vocab.nerc.ac.uk/scheme/SDNDEV/current>
+  rdf:type skos:ConceptScheme ;
+  dcterm:creator "SeaDataNet" ;
+  dcterm:date "2023-03-09 02:00:06.0" ;
+  dcterm:description "A thesarus comprising categorisations of devices (sensors, instrument packages and sample collectors) developed by SeaDataNet mapped to a catalogue of specific devices maintained by SeaVoX." ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "SeaDataNet Device Thesaurus" ;
+  owl:versionInfo "541" ;
+  skos:altLabel "Devices" ;
+  skos:hasTopConcept sdnc:ICAT06 ;
+  skos:prefLabel "SeaDataNet Device Thesaurus" ;
+.
+<http://w3id.org/def/nerc/discipline-P08/collection>
+
+  rdf:type skos:Collection ;
+  dcterm:alternative "SeaDataNet Disciplines" ;
+  dcterm:creator "SeaDataNet" ;
+  dcterm:date "2017-02-03 02:00:03.0" ;
+  dcterm:description "Terms used to classify SeaDataNet Agreed Parameter Groups to provide topic/theme level terms in a hierarchical parameter discovery interface." ;
+  dcterm:license <https://creativecommons.org/licenses/by/4.0> ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "SeaDataNet Parameter Disciplines" ;
+  grg:RE_RegisterManager "British Oceanographic Data Centre" ;
+  grg:RE_RegisterOwner "SeaDataNet" ;
+  rdfs:comment "Governance for vocabularies used in the EU SeaDataNet project implemented as consultation between BODC and the members of the SeaDataNet Technical Task Team" ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "5" ;
+  skos:altLabel "SeaDataNet Disciplines" ;
+  skos:member dspl:DS06 ;
+  skos:member dspl:DS07 ;
+  skos:member dspl:DS08 ;
+  skos:member dspl:DS12 ;
+  skos:prefLabel "SeaDataNet Parameter Disciplines" ;
+.
+<http://w3id.org/def/nerc/instrument-L05/collection>
+
+  rdf:type skos:Collection ;
+  <http://purl.org/dc/terms/:alternative> "SDN devices" ;
+  <http://purl.org/dc/terms/:creator> "SeaDataNet" ;
+  <http://purl.org/dc/terms/:description> "Terms used to classify groups of sensors, instruments, sources of algorithmically computed data (numerical models) or samplers (collectors of water, SPM, sediment, rock, air or biota samples)." ;
+  <http://purl.org/dc/terms/:license> <https://creativecommons.org/licenses/by/4.0/> ;
+  <http://purl.org/dc/terms/:publisher> "Natural Environment Research Council" ;
+  <http://purl.org/dc/terms/:title> "SeaDataNet device categories" ;
+  dcterm:date "2023-02-17 02:00:01.0" ;
+  grg:RE_RegisterManager "British Oceanographic Data Centre" ;
+  grg:RE_RegisterOwner "SeaDataNet" ;
+  rdfs:comment "Governance for vocabularies used in the EU SeaDataNet project implemented as consultation between BODC and the members of the SeaDataNet Technical Task Team" ;
+  rdfs:seeAlso <https://github.com/nvs-vocabs/L05> ;
+  owl:imports <http://w3id.org/def/nerc/sdncategories-L21/conceptscheme> ;
+  owl:imports <http://w3id.org/def/nerc/seadatanetdatacat/collection> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "86" ;
+  skos:altLabel "SDN devices" ;
+  skos:historyNote "original URI http://vocab.nerc.ac.uk/collection/L05/current/, SMR change to put instrument vocabs together"@en ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/101> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/110> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/113> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/114> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/115> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/12> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/122> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/123> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/130> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/131> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/133> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/135> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/150> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/151> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/152> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/155> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/156> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/157> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/158> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/159> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/181> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/183> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/184> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/185> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/303> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/312> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/313> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/315> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/32> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/351> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/352> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/353> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/355> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/356> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/357> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/358> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/359> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/360> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/361> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/362> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/363> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/364> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/365> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/366> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/367> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/368> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/370> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/371> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/372> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/373> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/374> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/375> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/376> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/377> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/379> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/380> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/381> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/382> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/383> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/384> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/385> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/386> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/387> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/388> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/389> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/390> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/394> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/395> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/55> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/57> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/66> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/70> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/71> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/72> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/81> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/82> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/83> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/85> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/86> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/90> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L05/current/91> ;
+  skos:member sdev:AQPL ;
+  skos:member sdev:ARAG ;
+  skos:member sdev:ATRANS ;
+  skos:member sdev:BLUMS ;
+  skos:member sdev:BOMR ;
+  skos:member sdev:CCOV ;
+  skos:member sdev:COLCMP ;
+  skos:member sdev:CSEM ;
+  skos:member sdev:DLOG ;
+  skos:member sdev:EMSR ;
+  skos:member sdev:ERTQ ;
+  skos:member sdev:EXHL ;
+  skos:member sdev:EXLH ;
+  skos:member sdev:FFES ;
+  skos:member sdev:FLXS ;
+  skos:member sdev:GIAG ;
+  skos:member sdev:ICEP ;
+  skos:member sdev:LAB01 ;
+  skos:member sdev:LAB02 ;
+  skos:member sdev:LAB03 ;
+  skos:member sdev:LAB04 ;
+  skos:member sdev:LAB06 ;
+  skos:member sdev:LAB07 ;
+  skos:member sdev:LAB08 ;
+  skos:member sdev:LAB09 ;
+  skos:member sdev:LAB10 ;
+  skos:member sdev:LAB11 ;
+  skos:member sdev:LAB12 ;
+  skos:member sdev:LAB13 ;
+  skos:member sdev:LAB14 ;
+  skos:member sdev:LAB15 ;
+  skos:member sdev:LAB17 ;
+  skos:member sdev:LAB18 ;
+  skos:member sdev:LAB19 ;
+  skos:member sdev:LAB21 ;
+  skos:member sdev:LAB22 ;
+  skos:member sdev:LAB23 ;
+  skos:member sdev:LAB24 ;
+  skos:member sdev:LAB25 ;
+  skos:member sdev:LAB26 ;
+  skos:member sdev:LAB27 ;
+  skos:member sdev:LAB28 ;
+  skos:member sdev:LAB29 ;
+  skos:member sdev:LAB30 ;
+  skos:member sdev:LAB31 ;
+  skos:member sdev:LAB32 ;
+  skos:member sdev:LAB33 ;
+  skos:member sdev:LAB34 ;
+  skos:member sdev:LAB35 ;
+  skos:member sdev:LAB36 ;
+  skos:member sdev:LAB37 ;
+  skos:member sdev:LAB38 ;
+  skos:member sdev:LAB39 ;
+  skos:member sdev:LAB40 ;
+  skos:member sdev:LAB42 ;
+  skos:member sdev:LAB43 ;
+  skos:member sdev:LAB44 ;
+  skos:member sdev:LAB45 ;
+  skos:member sdev:LAB46 ;
+  skos:member sdev:LAB47 ;
+  skos:member sdev:LAB48 ;
+  skos:member sdev:LAB49 ;
+  skos:member sdev:LAB50 ;
+  skos:member sdev:LAB51 ;
+  skos:member sdev:LAB52 ;
+  skos:member sdev:LBTG ;
+  skos:member sdev:LVLST ;
+  skos:member sdev:MMIS ;
+  skos:member sdev:MOD01 ;
+  skos:member sdev:MOD02 ;
+  skos:member sdev:MOD03 ;
+  skos:member sdev:MOD04 ;
+  skos:member sdev:MOD05 ;
+  skos:member sdev:MOD06 ;
+  skos:member sdev:MOD07 ;
+  skos:member sdev:MOD08 ;
+  skos:member sdev:MPIS ;
+  skos:member sdev:MVBR ;
+  skos:member sdev:PERMON ;
+  skos:member sdev:POS01 ;
+  skos:member sdev:POS02 ;
+  skos:member sdev:POS03 ;
+  skos:member sdev:POS04 ;
+  skos:member sdev:POS05 ;
+  skos:member sdev:POS06 ;
+  skos:member sdev:POS07 ;
+  skos:member sdev:POS08 ;
+  skos:member sdev:POS09 ;
+  skos:member sdev:POS10 ;
+  skos:member sdev:POS11 ;
+  skos:member sdev:POS12 ;
+  skos:member sdev:POS13 ;
+  skos:member sdev:POS14 ;
+  skos:member sdev:POS15 ;
+  skos:member sdev:POS16 ;
+  skos:member sdev:POS17 ;
+  skos:member sdev:POS18 ;
+  skos:member sdev:POS19 ;
+  skos:member sdev:POS20 ;
+  skos:member sdev:POS21 ;
+  skos:member sdev:POS22 ;
+  skos:member sdev:POS23 ;
+  skos:member sdev:POS24 ;
+  skos:member sdev:POS25 ;
+  skos:member sdev:POS26 ;
+  skos:member sdev:POS27 ;
+  skos:member sdev:SBAG ;
+  skos:member sdev:SNWG ;
+  skos:member sdev:TRTG ;
+  skos:member sdev:VSHC ;
+  skos:member sdev:WDRG ;
+  skos:member sdev:WPS ;
+  skos:prefLabel "SeaDataNet device categories" ;
+.
+<http://w3id.org/def/nerc/instrumenttype/ontology>
+
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "nerc collection W06"@en ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  skos:prefLabel "nerc collection W06"@en ;
+.
+<http://w3id.org/def/nerc/keyword-L19/collection>
+
+  rdf:type skos:Collection ;
+  dcterm:alternative "SDN keyword types" ;
+  dcterm:creator "SeaDataNet" ;
+  dcterm:date "2021-07-07 15:21:48.0" ;
+  dcterm:description "Terms used in SeaDataNet metadata to describe the purpose of a keyword.  An extension of the ISO19115 KeywordTypeCode codelist." ;
+  dcterm:license <https://creativecommons.org/licenses/by/4.0> ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "SeaDataNet keyword types" ;
+  grg:RE_RegisterManager "British Oceanographic Data Centre" ;
+  grg:RE_RegisterOwner "SeaDataNet" ;
+  rdfs:comment "Governance for vocabularies used in the EU SeaDataNet project implemented as consultation between BODC and the members of the SeaDataNet Technical Task Team" ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "4" ;
+  skos:altLabel "SDN keyword types" ;
+  skos:historyNote "original URI was http://vocab.nerc.ac.uk/collection/L19/current/"@en ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L19/current/002> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L19/current/003> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L19/current/004> ;
+  skos:member <http://vocab.nerc.ac.uk/collection/L19/current/005> ;
+  skos:member sdnk:SDNKG02 ;
+  skos:member sdnk:SDNKG04 ;
+  skos:member sdnk:SDNKG05 ;
+  skos:member sdnk:SDNKG06 ;
+  skos:member sdnk:SDNKG07 ;
+  skos:member sdnk:SDNKG08 ;
+  skos:member sdnk:SDNKG09 ;
+  skos:member sdnk:SDNKG10 ;
+  skos:member sdnk:SDNKG11 ;
+  skos:member sdnk:SDNKG12 ;
+  skos:member sdnk:SDNKG13 ;
+  skos:member sdnk:SDNKG14 ;
+  skos:member sdnk:SDNKG15 ;
+  skos:member sdnk:SDNKG16 ;
+  skos:member sdnk:SDNKG17 ;
+  skos:prefLabel "SeaDataNet keyword types" ;
+.
+<http://w3id.org/def/nerc/sdncategories-L21/conceptscheme>
+
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "categories for SeaDataNet resources"@en ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+.
+<http://w3id.org/def/nerc/seadatanetdatacat/collection>
+
+  rdf:type skos:Collection ;
+  dcterm:alternative "SeaDataNet CSR data categories" ;
+  dcterm:creator "SeaDataNet" ;
+  dcterm:date "2022-09-27 03:00:02.0" ;
+  dcterm:description "Terms used to describe shipboard activities (sometimes inaccurately described as parameters) by SeaDataNet in Cruise Summary Report (formerly known as ROSCOP) metadata." ;
+  dcterm:license <https://creativecommons.org/licenses/by/4.0> ;
+  dcterm:publisher "Natural Environment Research Council" ;
+  dcterm:title "SeaDataNet Cruise Summary Report data categories" ;
+  grg:RE_RegisterManager "British Oceanographic Data Centre" ;
+  grg:RE_RegisterOwner "SeaDataNet" ;
+  rdfs:comment "Governance for vocabularies used in the EU SeaDataNet project implemented as consultation between BODC and the members of the SeaDataNet Technical Task Team" ;
+  owl:imports <http://w3id.org/def/nerc/discipline-P08/collection> ;
+  owl:imports <http://w3id.org/def/nerc/instrument-L05/collection> ;
+  owl:imports <http://w3id.org/def/nerc/keyword-L19/collection> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  skos:altLabel "SeaDataNet CSR data categories" ;
+  skos:historyNote "original URI was http://vocab.nerc.ac.uk/collection/C77/current/"@en ;
+  skos:member sdnd:B01 ;
+  skos:member sdnd:B02 ;
+  skos:member sdnd:B03 ;
+  skos:member sdnd:B06 ;
+  skos:member sdnd:B07 ;
+  skos:member sdnd:B08 ;
+  skos:member sdnd:B09 ;
+  skos:member sdnd:B10 ;
+  skos:member sdnd:B11 ;
+  skos:member sdnd:B13 ;
+  skos:member sdnd:B14 ;
+  skos:member sdnd:B16 ;
+  skos:member sdnd:B17 ;
+  skos:member sdnd:B18 ;
+  skos:member sdnd:B19 ;
+  skos:member sdnd:B20 ;
+  skos:member sdnd:B21 ;
+  skos:member sdnd:B25 ;
+  skos:member sdnd:B26 ;
+  skos:member sdnd:B28 ;
+  skos:member sdnd:B37 ;
+  skos:member sdnd:B64 ;
+  skos:member sdnd:B65 ;
+  skos:member sdnd:B71 ;
+  skos:member sdnd:B72 ;
+  skos:member sdnd:B73 ;
+  skos:member sdnd:B90 ;
+  skos:member sdnd:D01 ;
+  skos:member sdnd:D03 ;
+  skos:member sdnd:D04 ;
+  skos:member sdnd:D05 ;
+  skos:member sdnd:D06 ;
+  skos:member sdnd:D72 ;
+  skos:member sdnd:D90 ;
+  skos:member sdnd:G02 ;
+  skos:member sdnd:G03 ;
+  skos:member sdnd:G04 ;
+  skos:member sdnd:G24 ;
+  skos:member sdnd:G26 ;
+  skos:member sdnd:G27 ;
+  skos:member sdnd:G28 ;
+  skos:member sdnd:G71 ;
+  skos:member sdnd:G72 ;
+  skos:member sdnd:G73 ;
+  skos:member sdnd:G74 ;
+  skos:member sdnd:G75 ;
+  skos:member sdnd:G76 ;
+  skos:member sdnd:G90 ;
+  skos:member sdnd:H09 ;
+  skos:member sdnd:H11 ;
+  skos:member sdnd:H13 ;
+  skos:member sdnd:H16 ;
+  skos:member sdnd:H17 ;
+  skos:member sdnd:H21 ;
+  skos:member sdnd:H22 ;
+  skos:member sdnd:H23 ;
+  skos:member sdnd:H24 ;
+  skos:member sdnd:H25 ;
+  skos:member sdnd:H26 ;
+  skos:member sdnd:H27 ;
+  skos:member sdnd:H28 ;
+  skos:member sdnd:H30 ;
+  skos:member sdnd:H31 ;
+  skos:member sdnd:H32 ;
+  skos:member sdnd:H33 ;
+  skos:member sdnd:H71 ;
+  skos:member sdnd:H72 ;
+  skos:member sdnd:H73 ;
+  skos:member sdnd:H74 ;
+  skos:member sdnd:H75 ;
+  skos:member sdnd:H76 ;
+  skos:member sdnd:H90 ;
+  skos:member sdnd:M04 ;
+  skos:member sdnd:M05 ;
+  skos:member sdnd:M06 ;
+  skos:member sdnd:M71 ;
+  skos:member sdnd:M90 ;
+  skos:member sdnd:P01 ;
+  skos:member sdnd:P02 ;
+  skos:member sdnd:P03 ;
+  skos:member sdnd:P04 ;
+  skos:member sdnd:P05 ;
+  skos:member sdnd:P12 ;
+  skos:member sdnd:P13 ;
+  skos:member sdnd:P90 ;
+  skos:member sdnd:R01 ;
+  skos:member sdnd:R02 ;
+  skos:member sdnd:R03 ;
+  skos:member sdnd:R04 ;
+  skos:prefLabel "SeaDataNet Cruise Summary Report data categories" ;
+.
+<http://w3id.org/def/numericalmodel/conceptscheme>
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "Numeric Model" ;
+  skos:definition " " ;
+  skos:prefLabel "Numeric Model" ;
+.
+<http://w3id.org/def/positioningsystem/conceptscheme>
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "Positioning system "@en ;
+  skos:definition " " ;
+  skos:prefLabel "Positioning system "@en ;
+.
+<http://w3id.org/def/samplecollectioninstrument/conceptscheme>
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "Sample collection instrument "@en ;
+  skos:definition " " ;
+  skos:prefLabel "Sample collection instrument "@en ;
+.
+<http://w3id.org/def/sampleprepreationinstrument/conceptscheme>
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "Sample preparation instrument "@en ;
+  skos:definition " " ;
+  skos:prefLabel "Sample preparation instrument "@en ;
+.
+<http://w3id.org/def/seismicsource/conceptscheme>
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "Seismic source instrument "@en ;
+  skos:definition " " ;
+  skos:prefLabel "Seismic source instrument "@en ;
+.
+<http://w3id.org/ogeochem/def/positioningsystem/measurement/conceptscheme>
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "Measurement instruments" ;
+  skos:definition " " ;
+  skos:prefLabel "Measurement instruments" ;
+.
+<http://w3id.org/ogeochem/def/positioningsystem/ontology>
+  rdf:type owl:Ontology ;
+  dcterm:created "2023-02-09"^^xsd:date ;
+  dcterm:creator "SMR" ;
+  dcterm:modified "2023-03-09"^^xsd:date ;
+  dcterm:publisher "TBD" ;
+  dcterm:source "Compiled NERC vocabularies related to measurement instyruments" ;
+  rdfs:label "Measurement instruments for geochemistry"@en ;
+  owl:imports <http://purl.org/dc/elements/1.1/> ;
+  owl:imports <http://www.w3.org/2000/01/rdf-schema> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  skos:definition "TBD"@en ;
+  skos:prefLabel "Measurement instruments for geochemistry"@en ;
+.
+<http://w3id.org/ogeochem/def/positioningsystem/parameters/conceptscheme>
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "Measurement type" ;
+  skos:definition " " ;
+  skos:prefLabel "Measurement type" ;
+.
+grg:RE_RegisterManager
+  rdf:type owl:AnnotationProperty ;
+.
+grg:RE_RegisterOwner
+  rdf:type owl:AnnotationProperty ;
+.
+skos:Collection
+  rdf:type owl:Class ;
+.
+skos:Concept
+  rdf:type owl:Class ;
+.
+skos:altLabel
+  rdf:type owl:AnnotationProperty ;
+.
+skos:definition
+  rdf:type owl:AnnotationProperty ;
+.
+skos:narrower
+  rdf:type owl:AnnotationProperty ;
+.
+skos:notation
+  rdf:type owl:AnnotationProperty ;
+.
+skos:note
+  rdf:type owl:AnnotationProperty ;
+.
+skos:prefLabel
+  rdf:type owl:AnnotationProperty ;
+.
