@@ -111,21 +111,24 @@
 .
 <etma:1:1:49506:4>
   rdf:type skos:Concept ;
-  dcterms:modified "2023-06-19" ;
+  dcterms:modified "2023-06-30" ;
+  dcterms:source "https://doi.org/10.1016/B0-12-227410-5/00390-2" ;
   dcterms:source "https://www.mindat.org/min-49506.html" ;
   rdfs:label "Mare basalt"@en ;
   skos:broader <etma:1:1:49505:5> ;
   skos:definition "Basalt from the lunar maria."@en ;
   skos:inScheme etma:cscheme ;
+  skos:note "The lunar mare rocks are basalts similar in texture and chemical composition to volcanic basaltic rocks on the earth. The lunar basalts consist chiefly of the silicates—clinopyroxene ([Ca,Fe,Mg]SiO3), anorthitic plagioclase (CaAl2Si2O8), olivine ([Mg,Fe]2SiO4)—and the iron–titanium oxides, ilmenite and spinel. The mineralogy is generally similar to that on earth except for the very low content of sodium in the plagioclase, the high abundance of ilmenite, and the total absence of hydrous alteration minerals (Arden L. Albee, in Encyclopedia of Physical Science and Technology (Third Edition), 2003, https://doi.org/10.1016/B0-12-227410-5/00390-2)."@en ;
   skos:prefLabel "Mare basalt"@en ;
 .
 <etma:1:1:49507:3>
   rdf:type skos:Concept ;
-  dcterms:modified "2023-06-19" ;
+  dcterms:modified "2023-06-30" ;
   dcterms:source "https://www.mindat.org/min-49507.html" ;
   rdfs:label "Highland rock"@en ;
+  rdfs:seeAlso <https://www3.nd.edu/~cneal/lunar-l/Stoffler80_PCLHC_Highland-Rock-Classification.pdf> ;
   skos:broader <etma:1:1:49505:5> ;
-  skos:definition "Older, highland lunar rock."@en ;
+  skos:definition "Older, highland lunar rock"@en ;
   skos:inScheme etma:cscheme ;
   skos:prefLabel "Highland rock"@en ;
 .

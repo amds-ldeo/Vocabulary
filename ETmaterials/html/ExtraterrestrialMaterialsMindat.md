@@ -4,7 +4,7 @@
 [Extraterrestrial Materials](#ExtraterrestrialMaterials)
 
 
-This file generated at: "2023-06-30T08:06:50.032859+00:00"
+This file generated at: "2023-06-30T13:30:24.254050+00:00"
 ---
 comment: | 
   WARNING: This file is generated. Any edits will be lost!
@@ -1073,7 +1073,8 @@ https://www.mindat.org/min-49505.html
 - Basalt from the lunar maria.
 
 - **Source:**
-https://www.mindat.org/min-49506.html
+https://doi.org/10.1016/B0-12-227410-5/00390-2, 
+https://www.mindat.org/min-49506.html, 
 
 - Concept URI token: etma:1:1:49506:4
 
@@ -1086,7 +1087,10 @@ https://www.mindat.org/min-49506.html
 - Child of:
  [`etma:1:1:49505:5`](#etma:1:1:49505:5)
 
-- Older, highland lunar rock.
+- Older, highland lunar rock
+
+- See Also:
+* [<https://www3.nd.edu/~cneal/lunar-l/Stoffler80_PCLHC_Highland-Rock-Classification.pdf>](https://www3.nd.edu/~cneal/lunar-l/Stoffler80_PCLHC_Highland-Rock-Classification.pdf)
 
 - **Source:**
 https://www.mindat.org/min-49507.html
