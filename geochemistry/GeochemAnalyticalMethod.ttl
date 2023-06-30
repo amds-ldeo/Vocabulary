@@ -2298,7 +2298,6 @@ meth:mossbauerspectroscopy
   rdfs:isDefinedBy meth:method ;
   rdfs:label "Mossbauer spectrometry"@en ;
   skos:altLabel "Mossbauer spectroscopy"@en ;
-  skos:altLabel "Mössbauer SPECTROSCOPY"@en ;
   skos:broader meth:gammarayspectrometry ;
   skos:definition "In its most common form a solid sample is exposed to a beam of gamma radiation, and a detector measures the intensity of the beam transmitted through the sample. The atoms in the source emitting the gamma rays must be of the same isotope as the atoms in the sample absorbing them. The source is accelerated through a range of velocities using a linear motor to produce a Doppler effect and scan the gamma ray energy through a given range. In the resulting spectra, gamma ray intensity is plotted as a function of the source velocity. At velocities corresponding to the resonant energy levels of the sample, a fraction of the gamma rays are absorbed, resulting in a drop in the measured intensity and a corresponding dip in the spectrum. The number, positions, and intensities of the dips (also called peaks; dips in transmitted intensity are peaks in absorbance) provide information about the chemical environment of the absorbing nuclei and can be used to characterize the sample. (https://en.wikipedia.org/wiki/M%C3%B6ssbauer_spectroscopy)"@en ;
   skos:inScheme meth:method ;
@@ -3588,7 +3587,7 @@ meth:wavelengthmodulationspectrometry
   rdfs:label "Wavelength-modulation spectrometry"@en ;
   skos:altLabel "Wavelength-modulation spectroscopy"@en ;
   skos:broader meth:laserabsorptionspectrometry ;
-  skos:definition "Laser-absorption spectroscopy (LAS) technique in which excitation laser wavelength is modulated to embed discrete frequencies in the detector signal while the nominal wavelength of the laser is scanned across a molecule’s absorption transition. The modulation shifts absorption information to harmonics the excitation frequency,  extracted via digital lock-in filters during post-processing, and the wavelength scanning enables spectra of WMS signals to be measured. The WMS signals are then used to calculate gas conditions using calibration-free WMS models."@en ;
+  skos:definition "Laser-absorption spectroscopy (LAS) technique in which excitation laser wavelength is modulated to embed discrete frequencies in the detector signal while the nominal wavelength of the laser is scanned across a molecules absorption transition. The modulation shifts absorption information to harmonics the excitation frequency,  extracted via digital lock-in filters during post-processing, and the wavelength scanning enables spectra of WMS signals to be measured. The WMS signals are then used to calculate gas conditions using calibration-free WMS models."@en ;
   skos:prefLabel "Wavelength-modulation spectrometry"@en ;
 .
 meth:wetchemistry
