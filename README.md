@@ -8,7 +8,7 @@ Vocabularies for for analytical techniques in geochemistry and cosmochemistry.  
 
 ### Analytical methods for geochemistry and cosmochemistry
 Vocabulary of analytical techniques for analyzing Earth,  astronomic, and planetary materials. 
-- [HTML view of Geochemical analytical methods vocabulary]( https://github.com/amds-ldeo/Vocabulary/blob/master/geochemistry/html/GeochemAnalyticalMethod.html)
+- [HTML view of Geochemical analytical methods vocabulary]( https://amds-ldeo.github.io/Vocabulary/geochemistry/html/GeochemAnalyticalMethod.html)
 - Research Vocabularies Australia vocabulary service to access vocabulary; [landing page](https://vocabs.ardc.edu.au/viewById/650)
 - SKOS vocabulary, serialized using Turtle. [SKOS Analytical Techniques vocabulary]( https://github.com/amds-ldeo/Vocabulary/blob/master/geochemistry/GeochemAnalyticalMethod.ttl)
 
@@ -22,6 +22,6 @@ This folder contains development work for a vocabulary to classify types of mete
 
 ### Extraterrestrial Materials classes
 Vocabulary of categories of meteorites and lunar materials. 
-- [HTML view of Extraterrestrial materials vocabulary]( https://github.com/amds-ldeo/Vocabulary/blob/master/ETmaterials/html/ExtraterrestrialMaterialsMindat.html)
+- [HTML view of Extraterrestrial materials vocabulary]( https://amds-ldeo.github.io/Vocabulary/ETmaterials/html/ExtraterrestrialMaterialsMindat.html)
 - SKOS vocabualary, serialized using Turtle. [SKOS Extraterrestrial materials vocabulary]( https://github.com/amds-ldeo/Vocabulary/blob/master/ETmaterials/ExtraterrestrialMaterialsMindat.ttl)
 
