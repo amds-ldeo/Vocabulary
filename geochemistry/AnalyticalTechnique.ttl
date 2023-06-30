@@ -4888,6 +4888,7 @@ wrkf:calcination
   skos:broader wrkf:pyrolysis ;
   skos:definition "calcination refers to the heating of inorganic materials to remove volatile components (B. Rand, in Concise Encyclopedia of Advanced Ceramic Materials, 1991) Reported data in GeoRoc are for organic carbon and CO2"@en ;
   skos:inScheme analt:workflow ;
+  skos:notation "CALC" ;
   skos:prefLabel "Calcination "@en ;
 .
 wrkf:calculation
