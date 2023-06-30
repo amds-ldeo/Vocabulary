@@ -4,7 +4,7 @@
 [Extraterrestrial Materials](#ExtraterrestrialMaterials)
 
 
-This file generated at: "2023-06-29T21:09:20.025982+00:00"
+This file generated at: "2023-06-30T08:06:50.032859+00:00"
 ---
 comment: | 
   WARNING: This file is generated. Any edits will be lost!
@@ -29,10 +29,11 @@ Vocabulary last modified:  2023-06-19
 subtitle: 
 
 Namespace: 
-[`https://mindat.org/etmat/cscheme`](https://mindat.org/etmat/cscheme)
+[`https://w3id.org/geochem/etmaterial/cscheme`](https://w3id.org/geochem/etmaterial/cscheme)
 
 **History**
 
+* 2023-06-30 SMR change URI base to https://w3id.org/geochem/etmaterial/, move maintenance github to https://github.com/amds-ldeo/Vocabulary/tree/master/ETmaterials
 
 - [Meteorite and other extra-terrestrial rock and sediment](#etma:1:1:49504:6)
     - [Lunar igneous rock](#etma:1:1:49505:5)
@@ -1290,8 +1291,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Chondrite-uncl
 - A piece of fusion crust that became detatched from a chondrite.
 
 - **Source:**
-https://www.mindat.org/min-49517.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Chondrite-fusion%20crust, 
+https://www.mindat.org/min-49517.html, 
 
 - Concept URI token: etma:1:1:49517:0
 
@@ -1307,8 +1308,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Chondrite-fusion%20crust,
 - An ungrouped chondrite.
 
 - **Source:**
-https://www.mindat.org/min-49518.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Chondrite-ung, 
+https://www.mindat.org/min-49518.html, 
 
 - Concept URI token: etma:1:1:49518:9
 
@@ -1327,8 +1328,8 @@ the most primitive known meteorites. The C chondrites represent only a
 small proportion (4.6 percent ) of meteorite falls.
 
 - **Source:**
-https://www.mindat.org/min-49519.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C, 
+https://www.mindat.org/min-49519.html, 
 
 - Concept URI token: etma:1:1:49519:8
 
@@ -1344,8 +1345,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C,
 - Undifferentiated carbonaceous chondrites.
 
 - **Source:**
-https://www.mindat.org/min-49520.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C, 
+https://www.mindat.org/min-49520.html, 
 
 - Concept URI token: etma:1:1:49520:4
 
@@ -1382,8 +1383,8 @@ C1-ung chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49522.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C1-ung, 
+https://www.mindat.org/min-49522.html, 
 
 - Concept URI token: etma:1:1:49522:2
 
@@ -1405,8 +1406,8 @@ C1/2-ung chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49523.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C1/2-ung, 
+https://www.mindat.org/min-49523.html, 
 
 - Concept URI token: etma:1:1:49523:1
 
@@ -1423,8 +1424,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C1/2-ung,
 - A C chondrite that is petrologic type 2.
 
 - **Source:**
-https://www.mindat.org/min-49524.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C2, 
+https://www.mindat.org/min-49524.html, 
 
 - Concept URI token: etma:1:1:49524:0
 
@@ -1446,8 +1447,8 @@ C1/2-ung chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49523.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C1/2-ung, 
+https://www.mindat.org/min-49523.html, 
 
 - Concept URI token: etma:1:1:49523:1
 
@@ -1467,8 +1468,8 @@ C2-ung chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49525.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C2-ung, 
+https://www.mindat.org/min-49525.html, 
 
 - Concept URI token: etma:1:1:49525:9
 
@@ -1485,8 +1486,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C2-ung,
 - A C chondrite that is petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49526.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C3, 
+https://www.mindat.org/min-49526.html, 
 
 - Concept URI token: etma:1:1:49526:8
 
@@ -1506,8 +1507,8 @@ C3-ung chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49527.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C3-ung, 
+https://www.mindat.org/min-49527.html, 
 
 - Concept URI token: etma:1:1:49527:7
 
@@ -1527,8 +1528,8 @@ C3.0-ung chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49528.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C3.0-ung, 
+https://www.mindat.org/min-49528.html, 
 
 - Concept URI token: etma:1:1:49528:6
 
@@ -1550,8 +1551,8 @@ C3/4-ung chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49529.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C3/4-ung, 
+https://www.mindat.org/min-49529.html, 
 
 - Concept URI token: etma:1:1:49529:5
 
@@ -1568,8 +1569,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C3/4-ung,
 - A C chondrite that is petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49530.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C4, 
+https://www.mindat.org/min-49530.html, 
 
 - Concept URI token: etma:1:1:49530:1
 
@@ -1591,8 +1592,8 @@ C3/4-ung chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49529.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C3/4-ung, 
+https://www.mindat.org/min-49529.html, 
 
 - Concept URI token: etma:1:1:49529:5
 
@@ -1608,8 +1609,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C3/4-ung,
 - A C chondrite that is petrologic type 4, ungrouped.
 
 - **Source:**
-https://www.mindat.org/min-49531.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C4-ung, 
+https://www.mindat.org/min-49531.html, 
 
 - Concept URI token: etma:1:1:49531:0
 
@@ -1626,8 +1627,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C4-ung,
 - A C chondrite that is transitional between petrologic type 4 and 5.
 
 - **Source:**
-https://www.mindat.org/min-49532.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C4/5, 
+https://www.mindat.org/min-49532.html, 
 
 - Concept URI token: etma:1:1:49532:9
 
@@ -1661,8 +1662,8 @@ https://www.mindat.org/min-49533.html
 - A C chondrite that is transitional between petrologic type 4 and 5.
 
 - **Source:**
-https://www.mindat.org/min-49532.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C4/5, 
+https://www.mindat.org/min-49532.html, 
 
 - Concept URI token: etma:1:1:49532:9
 
@@ -1680,8 +1681,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C4/5,
 ungrouped
 
 - **Source:**
-https://www.mindat.org/min-49534.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C5/6-ung, 
+https://www.mindat.org/min-49534.html, 
 
 - Concept URI token: etma:1:1:49534:7
 
@@ -1698,8 +1699,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C5/6-ung,
 - A C chondrite that is petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49535.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C6, 
+https://www.mindat.org/min-49535.html, 
 
 - Concept URI token: etma:1:1:49535:6
 
@@ -1717,8 +1718,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C6,
 ungrouped
 
 - **Source:**
-https://www.mindat.org/min-49534.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C5/6-ung, 
+https://www.mindat.org/min-49534.html, 
 
 - Concept URI token: etma:1:1:49534:7
 
@@ -1739,8 +1740,8 @@ C-ung chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-52202.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C-ung, 
+https://www.mindat.org/min-52202.html, 
 
 - Concept URI token: etma:1:1:52202:1
 
@@ -1758,8 +1759,8 @@ Ongoing research suggests this is the product of asteroidal
 collisions.
 
 - **Source:**
-https://www.mindat.org/min-49536.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CB, 
+https://www.mindat.org/min-49536.html, 
 
 - Concept URI token: etma:1:1:49536:5
 
@@ -1775,8 +1776,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CB,
 - A CB chondrite of subtype a (contains large chondrule-like objects).
 
 - **Source:**
-https://www.mindat.org/min-49537.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CBa, 
+https://www.mindat.org/min-49537.html, 
 
 - Concept URI token: etma:1:1:49537:4
 
@@ -1792,8 +1793,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CBa,
 - A CB chondrite of subtype b (contains small chondrules).
 
 - **Source:**
-https://www.mindat.org/min-49538.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CBb, 
+https://www.mindat.org/min-49538.html, 
 
 - Concept URI token: etma:1:1:49538:3
 
@@ -1811,8 +1812,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CBb,
 and the b-subgroup of the CB group
 
 - **Source:**
-https://www.mindat.org/min-52204.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CH/CBb, 
+https://www.mindat.org/min-52204.html, 
 
 - Concept URI token: etma:1:1:52204:9
 
@@ -1846,8 +1847,8 @@ https://www.mindat.org/min-49539.html
 - A CH chondrite that is of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49540.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CH3, 
+https://www.mindat.org/min-49540.html, 
 
 - Concept URI token: etma:1:1:49540:8
 
@@ -1865,8 +1866,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CH3,
 and the b-subgroup of the CB group
 
 - **Source:**
-https://www.mindat.org/min-52204.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CH/CBb, 
+https://www.mindat.org/min-52204.html, 
 
 - Concept URI token: etma:1:1:52204:9
 
@@ -1901,8 +1902,8 @@ https://www.mindat.org/min-49541.html
 - A CI chondrite that is of petrologic type 1.
 
 - **Source:**
-https://www.mindat.org/min-49542.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CI1, 
+https://www.mindat.org/min-49542.html, 
 
 - Concept URI token: etma:1:1:49542:6
 
@@ -1922,8 +1923,8 @@ inclusions, and a high degree of oxidation; most CK chondrites have
 been metamorphosed to type 4 or higher.
 
 - **Source:**
-https://www.mindat.org/min-49543.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK, 
+https://www.mindat.org/min-49543.html, 
 
 - Concept URI token: etma:1:1:49543:5
 
@@ -1940,8 +1941,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK,
 - A CK chondrite that is of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49544.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3, 
+https://www.mindat.org/min-49544.html, 
 
 - Concept URI token: etma:1:1:49544:4
 
@@ -1962,8 +1963,8 @@ CK3-an chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49545.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3-an, 
+https://www.mindat.org/min-49545.html, 
 
 - Concept URI token: etma:1:1:49545:3
 
@@ -1979,8 +1980,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3-an,
 - A CK chondrite that is of petrologic type 3.8.
 
 - **Source:**
-https://www.mindat.org/min-49546.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3.8, 
+https://www.mindat.org/min-49546.html, 
 
 - Concept URI token: etma:1:1:49546:2
 
@@ -1997,8 +1998,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3.8,
 - A CK chondrite that is transitional between petrologic type 3 and 4.
 
 - **Source:**
-https://www.mindat.org/min-49547.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3/4, 
+https://www.mindat.org/min-49547.html, 
 
 - Concept URI token: etma:1:1:49547:1
 
@@ -2016,8 +2017,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3/4,
 petrologic type type 3 to type 6.
 
 - **Source:**
-https://www.mindat.org/min-52203.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3-6, 
+https://www.mindat.org/min-52203.html, 
 
 - Concept URI token: etma:1:1:52203:0
 
@@ -2034,8 +2035,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3-6,
 - A CK chondrite that is of petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49548.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK4, 
+https://www.mindat.org/min-49548.html, 
 
 - Concept URI token: etma:1:1:49548:0
 
@@ -2052,8 +2053,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK4,
 - A CK chondrite that is transitional between petrologic type 3 and 4.
 
 - **Source:**
-https://www.mindat.org/min-49547.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3/4, 
+https://www.mindat.org/min-49547.html, 
 
 - Concept URI token: etma:1:1:49547:1
 
@@ -2074,8 +2075,8 @@ CK4-an chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49549.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK4-an, 
+https://www.mindat.org/min-49549.html, 
 
 - Concept URI token: etma:1:1:49549:9
 
@@ -2093,8 +2094,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK4-an,
 type 4 or type 5.
 
 - **Source:**
-https://www.mindat.org/min-52205.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK4/5, 
+https://www.mindat.org/min-52205.html, 
 
 - Concept URI token: etma:1:1:52205:8
 
@@ -2111,8 +2112,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK4/5,
 - A CK chondrite that is of petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49550.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK5, 
+https://www.mindat.org/min-49550.html, 
 
 - Concept URI token: etma:1:1:49550:5
 
@@ -2130,8 +2131,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK5,
 type 4 or type 5.
 
 - **Source:**
-https://www.mindat.org/min-52205.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK4/5, 
+https://www.mindat.org/min-52205.html, 
 
 - Concept URI token: etma:1:1:52205:8
 
@@ -2152,8 +2153,8 @@ CK5-an chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-52206.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK5-an, 
+https://www.mindat.org/min-52206.html, 
 
 - Concept URI token: etma:1:1:52206:7
 
@@ -2171,8 +2172,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK5-an,
 type 5 or type 6.
 
 - **Source:**
-https://www.mindat.org/min-52207.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK5/6, 
+https://www.mindat.org/min-52207.html, 
 
 - Concept URI token: etma:1:1:52207:6
 
@@ -2189,8 +2190,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK5/6,
 - A CK chondrite that is of petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49551.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK6, 
+https://www.mindat.org/min-49551.html, 
 
 - Concept URI token: etma:1:1:49551:4
 
@@ -2208,8 +2209,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK6,
 petrologic type type 3 to type 6.
 
 - **Source:**
-https://www.mindat.org/min-52203.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3-6, 
+https://www.mindat.org/min-52203.html, 
 
 - Concept URI token: etma:1:1:52203:0
 
@@ -2227,8 +2228,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3-6,
 type 5 or type 6.
 
 - **Source:**
-https://www.mindat.org/min-52207.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK5/6, 
+https://www.mindat.org/min-52207.html, 
 
 - Concept URI token: etma:1:1:52207:6
 
@@ -2247,8 +2248,8 @@ abundant fine-grained matrix (about 70 vol percent), and abundant
 hydrated minerals.
 
 - **Source:**
-https://www.mindat.org/min-49552.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM, 
+https://www.mindat.org/min-49552.html, 
 
 - Concept URI token: etma:1:1:49552:3
 
@@ -2265,8 +2266,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM,
 - A CM chondrite that is of petrologic type 1.
 
 - **Source:**
-https://www.mindat.org/min-49553.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM1, 
+https://www.mindat.org/min-49553.html, 
 
 - Concept URI token: etma:1:1:49553:2
 
@@ -2283,8 +2284,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM1,
 - A CM chondrite that is transitional between petrologic type 1 and 2.
 
 - **Source:**
-https://www.mindat.org/min-49554.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM1/2, 
+https://www.mindat.org/min-49554.html, 
 
 - Concept URI token: etma:1:1:49554:1
 
@@ -2302,8 +2303,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM1/2,
 type 1 and 2.
 
 - **Source:**
-https://www.mindat.org/min-50444.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM1-2, 
+https://www.mindat.org/min-50444.html, 
 
 - Concept URI token: etma:1:1:50444:1
 
@@ -2324,8 +2325,8 @@ CM-an chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49556.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM-an, 
+https://www.mindat.org/min-49556.html, 
 
 - Concept URI token: etma:1:1:49556:9
 
@@ -2342,8 +2343,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM-an,
 - A CM chondrite that is of petrologic type 2.
 
 - **Source:**
-https://www.mindat.org/min-49557.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM2, 
+https://www.mindat.org/min-49557.html, 
 
 - Concept URI token: etma:1:1:49557:8
 
@@ -2360,8 +2361,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM2,
 - A CM chondrite that is transitional between petrologic type 1 and 2.
 
 - **Source:**
-https://www.mindat.org/min-49554.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM1/2, 
+https://www.mindat.org/min-49554.html, 
 
 - Concept URI token: etma:1:1:49554:1
 
@@ -2382,8 +2383,8 @@ CM2-an chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49558.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM2-an, 
+https://www.mindat.org/min-49558.html, 
 
 - Concept URI token: etma:1:1:49558:7
 
@@ -2401,8 +2402,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM2-an,
 type 1 and 2.
 
 - **Source:**
-https://www.mindat.org/min-50444.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM1-2, 
+https://www.mindat.org/min-50444.html, 
 
 - Concept URI token: etma:1:1:50444:1
 
@@ -2419,8 +2420,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM1-2,
 distinguished by small chondrules and refractory inclusions.
 
 - **Source:**
-https://www.mindat.org/min-49559.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO, 
+https://www.mindat.org/min-49559.html, 
 
 - Concept URI token: etma:1:1:49559:6
 
@@ -2437,8 +2438,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO,
 - A CO chondrite that is of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49560.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3, 
+https://www.mindat.org/min-49560.html, 
 
 - Concept URI token: etma:1:1:49560:2
 
@@ -2454,8 +2455,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3,
 - A CO chondrite that is of petrologic type 3.0.
 
 - **Source:**
-https://www.mindat.org/min-49561.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.0, 
+https://www.mindat.org/min-49561.html, 
 
 - Concept URI token: etma:1:1:49561:1
 
@@ -2471,8 +2472,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.0,
 - A CO chondrite that is of petrologic type 3.1.
 
 - **Source:**
-https://www.mindat.org/min-49562.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.1, 
+https://www.mindat.org/min-49562.html, 
 
 - Concept URI token: etma:1:1:49562:0
 
@@ -2488,8 +2489,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.1,
 - A CO chondrite that is of petrologic type 3.2.
 
 - **Source:**
-https://www.mindat.org/min-49563.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.2, 
+https://www.mindat.org/min-49563.html, 
 
 - Concept URI token: etma:1:1:49563:9
 
@@ -2505,8 +2506,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.2,
 - A CO chondrite that is of petrologic type 3.3.
 
 - **Source:**
-https://www.mindat.org/min-49564.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.3, 
+https://www.mindat.org/min-49564.html, 
 
 - Concept URI token: etma:1:1:49564:8
 
@@ -2522,8 +2523,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.3,
 - A CO chondrite that is of petrologic type 3.4.
 
 - **Source:**
-https://www.mindat.org/min-49565.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.4, 
+https://www.mindat.org/min-49565.html, 
 
 - Concept URI token: etma:1:1:49565:7
 
@@ -2539,8 +2540,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.4,
 - A CO chondrite that is of petrologic type 3.5.
 
 - **Source:**
-https://www.mindat.org/min-49566.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.5, 
+https://www.mindat.org/min-49566.html, 
 
 - Concept URI token: etma:1:1:49566:6
 
@@ -2556,8 +2557,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.5,
 - A CO chondrite that is of petrologic type 3.6.
 
 - **Source:**
-https://www.mindat.org/min-49567.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.6, 
+https://www.mindat.org/min-49567.html, 
 
 - Concept URI token: etma:1:1:49567:5
 
@@ -2573,8 +2574,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.6,
 - A CO chondrite that is of petrologic type 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49568.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.7, 
+https://www.mindat.org/min-49568.html, 
 
 - Concept URI token: etma:1:1:49568:4
 
@@ -2590,8 +2591,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.7,
 - A CO chondrite that is of petrologic type 3.8.
 
 - **Source:**
-https://www.mindat.org/min-49569.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.8, 
+https://www.mindat.org/min-49569.html, 
 
 - Concept URI token: etma:1:1:49569:3
 
@@ -2624,8 +2625,8 @@ https://www.mindat.org/min-49570.html
 and is a breccia with melted material forming the matrix.
 
 - **Source:**
-https://www.mindat.org/min-52396.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3-melt%20breccia, 
+https://www.mindat.org/min-52396.html, 
 
 - Concept URI token: etma:1:1:52396:9
 
@@ -2645,8 +2646,8 @@ inclusions, abundant metal (5-8 volume percent), and fine-grained
 matrix that is commonly hydrated (up to 50 volume percent).
 
 - **Source:**
-https://www.mindat.org/min-49571.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR, 
+https://www.mindat.org/min-49571.html, 
 
 - Concept URI token: etma:1:1:49571:8
 
@@ -2663,8 +2664,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR,
 - A CR chondrite that is of petrologic type 1.
 
 - **Source:**
-https://www.mindat.org/min-49572.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR1, 
+https://www.mindat.org/min-49572.html, 
 
 - Concept URI token: etma:1:1:49572:7
 
@@ -2681,8 +2682,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR1,
 - A CR chondrite that is of petrologic type 2.
 
 - **Source:**
-https://www.mindat.org/min-49573.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR2, 
+https://www.mindat.org/min-49573.html, 
 
 - Concept URI token: etma:1:1:49573:6
 
@@ -2703,8 +2704,8 @@ CR2-an chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49574.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR2-an, 
+https://www.mindat.org/min-49574.html, 
 
 - Concept URI token: etma:1:1:49574:5
 
@@ -2721,8 +2722,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR2-an,
 - A CR chondrite that is of petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49575.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR6, 
+https://www.mindat.org/min-49575.html, 
 
 - Concept URI token: etma:1:1:49575:4
 
@@ -2740,8 +2741,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR6,
 type 7 is not used consistently or widely accepted in the literature.
 
 - **Source:**
-https://www.mindat.org/min-49576.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR7, 
+https://www.mindat.org/min-49576.html, 
 
 - Concept URI token: etma:1:1:49576:3
 
@@ -2778,8 +2779,8 @@ https://www.mindat.org/min-49577.html
 - A CV chondrite that is of petrologic type 2.
 
 - **Source:**
-https://www.mindat.org/min-49578.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CV2, 
+https://www.mindat.org/min-49578.html, 
 
 - Concept URI token: etma:1:1:49578:1
 
@@ -2800,8 +2801,8 @@ CV3 carbonaceous chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49579.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CV3, 
+https://www.mindat.org/min-49579.html, 
 
 - Concept URI token: etma:1:1:49579:0
 
@@ -2818,8 +2819,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CV3,
 properties.
 
 - **Source:**
-https://www.mindat.org/min-49580.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CV3-an, 
+https://www.mindat.org/min-49580.html, 
 
 - Concept URI token: etma:1:1:49580:6
 
@@ -2843,8 +2844,8 @@ OC chondrite meteorite,
 
 
 - **Source:**
-https://www.mindat.org/min-49581.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=OC, 
+https://www.mindat.org/min-49581.html, 
 
 - Concept URI token: etma:1:1:49581:5
 
@@ -2864,8 +2865,8 @@ closer to the terrestrial fractionation line than those of other
 ordinary chondrites.
 
 - **Source:**
-https://www.mindat.org/min-49584.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H, 
+https://www.mindat.org/min-49584.html, 
 
 - Concept URI token: etma:1:1:49584:2
 
@@ -2882,8 +2883,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H,
 - An H chondrite that is of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49585.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3, 
+https://www.mindat.org/min-49585.html, 
 
 - Concept URI token: etma:1:1:49585:1
 
@@ -2901,8 +2902,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3,
 petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49586.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3, 
+https://www.mindat.org/min-49586.html, 
 
 - Concept URI token: etma:1:1:49586:0
 
@@ -2919,8 +2920,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3,
 petrologic type 3 and has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49595.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3-an, 
+https://www.mindat.org/min-49595.html, 
 
 - Concept URI token: etma:1:1:49595:8
 
@@ -2937,8 +2938,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3-an,
 petrologic type 3.1.
 
 - **Source:**
-https://www.mindat.org/min-49596.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3.1, 
+https://www.mindat.org/min-49596.html, 
 
 - Concept URI token: etma:1:1:49596:7
 
@@ -2955,8 +2956,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3.1,
 - An H chondrite that is transitional between petrologic type 3 and 4.
 
 - **Source:**
-https://www.mindat.org/min-49592.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3/4, 
+https://www.mindat.org/min-49592.html, 
 
 - Concept URI token: etma:1:1:49592:1
 
@@ -2973,8 +2974,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3/4,
 properties.
 
 - **Source:**
-https://www.mindat.org/min-49593.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3-an, 
+https://www.mindat.org/min-49593.html, 
 
 - Concept URI token: etma:1:1:49593:0
 
@@ -2994,8 +2995,8 @@ H.3.05 chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49597.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.0, 
+https://www.mindat.org/min-49597.html, 
 
 - Concept URI token: etma:1:1:49597:6
 
@@ -3012,8 +3013,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.0,
 petrologic type 3.0 to type 3.4
 
 - **Source:**
-https://www.mindat.org/min-49599.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.0-3.4, 
+https://www.mindat.org/min-49599.html, 
 
 - Concept URI token: etma:1:1:49599:4
 
@@ -3034,8 +3035,8 @@ H3.15 chondrite meteorite,
 
 
 - **Source:**
-https://www.mindat.org/min-49600.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.1, 
+https://www.mindat.org/min-49600.html, 
 
 - Concept URI token: etma:1:1:49600:9
 
@@ -3051,8 +3052,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.1,
 - An H chondrite that is petrologic type 3.2.
 
 - **Source:**
-https://www.mindat.org/min-49603.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.2, 
+https://www.mindat.org/min-49603.html, 
 
 - Concept URI token: etma:1:1:49603:6
 
@@ -3069,8 +3070,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.2,
 petrologic type 3.2 to type 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49604.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.2-3.7, 
+https://www.mindat.org/min-49604.html, 
 
 - Concept URI token: etma:1:1:49604:5
 
@@ -3088,8 +3089,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.2-3.7,
 petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49622.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)6, 
+https://www.mindat.org/min-49622.html, 
 
 - Concept URI token: etma:1:1:49622:1
 
@@ -3107,8 +3108,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)6,
 petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49682.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(H)3, 
+https://www.mindat.org/min-49682.html, 
 
 - Concept URI token: etma:1:1:49682:3
 
@@ -3125,8 +3126,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(H)3,
 - An H chondrite or L chondrite that is of petrological type 3.
 
 - **Source:**
-https://www.mindat.org/min-50445.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3, 
+https://www.mindat.org/min-50445.html, 
 
 - Concept URI token: etma:1:1:50445:0
 
@@ -3142,8 +3143,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3,
 - An H chondrite or L chondrite that is of petrological type 3.5.
 
 - **Source:**
-https://www.mindat.org/min-49587.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.5, 
+https://www.mindat.org/min-49587.html, 
 
 - Concept URI token: etma:1:1:49587:9
 
@@ -3159,8 +3160,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.5,
 - An H chondrite or L chondrite that is of petrological type 3.6.
 
 - **Source:**
-https://www.mindat.org/min-49588.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.6, 
+https://www.mindat.org/min-49588.html, 
 
 - Concept URI token: etma:1:1:49588:8
 
@@ -3176,8 +3177,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.6,
 - An H chondrite or L chondrite that is of petrological type 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49589.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.7, 
+https://www.mindat.org/min-49589.html, 
 
 - Concept URI token: etma:1:1:49589:7
 
@@ -3193,8 +3194,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.7,
 - An H chondrite or L chondrite that is of petrological type 3.9.
 
 - **Source:**
-https://www.mindat.org/min-49590.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.9, 
+https://www.mindat.org/min-49590.html, 
 
 - Concept URI token: etma:1:1:49590:3
 
@@ -3212,8 +3213,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.9,
 3 and 4 components.
 
 - **Source:**
-https://www.mindat.org/min-49591.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3-4, 
+https://www.mindat.org/min-49591.html, 
 
 - Concept URI token: etma:1:1:49591:2
 
@@ -3231,8 +3232,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3-4,
 petrologic type 3 to type 4.
 
 - **Source:**
-https://www.mindat.org/min-50446.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3-4, 
+https://www.mindat.org/min-50446.html, 
 
 - Concept URI token: etma:1:1:50446:9
 
@@ -3248,8 +3249,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3-4,
 - An H chondrite that is petrological type 3.5
 
 - **Source:**
-https://www.mindat.org/min-52199.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.5, 
+https://www.mindat.org/min-52199.html, 
 
 - Concept URI token: etma:1:1:52199:8
 
@@ -3265,8 +3266,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.5,
 - An H chondrite that is petrological type 3.4
 
 - **Source:**
-https://www.mindat.org/min-52200.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.4, 
+https://www.mindat.org/min-52200.html, 
 
 - Concept URI token: etma:1:1:52200:3
 
@@ -3282,8 +3283,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.4,
 - An ordinary chondrite from the H group that is petrologic type 3.8
 
 - **Source:**
-https://www.mindat.org/min-52226.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.8, 
+https://www.mindat.org/min-52226.html, 
 
 - Concept URI token: etma:1:1:52226:1
 
@@ -3300,8 +3301,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.8,
 and has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-52395.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.8-an, 
+https://www.mindat.org/min-52395.html, 
 
 - Concept URI token: etma:1:1:52395:0
 
@@ -3317,8 +3318,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.8-an,
 - An ordinary chondrite from the H group that is petrologic type 3.9
 
 - **Source:**
-https://www.mindat.org/min-52227.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.9, 
+https://www.mindat.org/min-52227.html, 
 
 - Concept URI token: etma:1:1:52227:0
 
@@ -3334,8 +3335,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.9,
 - An ordinary chondrite from the H group that is petrologic type 3.6
 
 - **Source:**
-https://www.mindat.org/min-52228.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.6, 
+https://www.mindat.org/min-52228.html, 
 
 - Concept URI token: etma:1:1:52228:9
 
@@ -3351,8 +3352,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.6,
 - An ordinary chondrite from the H group that is petrologic type 3.7
 
 - **Source:**
-https://www.mindat.org/min-52229.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.7, 
+https://www.mindat.org/min-52229.html, 
 
 - Concept URI token: etma:1:1:52229:8
 
@@ -3368,8 +3369,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.7,
 - An H chondrite meteorite that is of petrologic type 3.3
 
 - **Source:**
-https://www.mindat.org/min-52368.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.3, 
+https://www.mindat.org/min-52368.html, 
 
 - Concept URI token: etma:1:1:52368:6
 
@@ -3386,8 +3387,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.3,
 - An H chondrite that is of petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49606.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4, 
+https://www.mindat.org/min-49606.html, 
 
 - Concept URI token: etma:1:1:49606:3
 
@@ -3404,8 +3405,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4,
 - An H chondrite that is transitional between petrologic type 3 and 4.
 
 - **Source:**
-https://www.mindat.org/min-49592.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3/4, 
+https://www.mindat.org/min-49592.html, 
 
 - Concept URI token: etma:1:1:49592:1
 
@@ -3422,8 +3423,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3/4,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49607.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4-melt%20breccia, 
+https://www.mindat.org/min-49607.html, 
 
 - Concept URI token: etma:1:1:49607:2
 
@@ -3440,8 +3441,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4-melt%20breccia,
 properties.
 
 - **Source:**
-https://www.mindat.org/min-49608.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4-an, 
+https://www.mindat.org/min-49608.html, 
 
 - Concept URI token: etma:1:1:49608:1
 
@@ -3458,8 +3459,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4-an,
 - An H chondrite or L chondrite that is of petrological type 4.
 
 - **Source:**
-https://www.mindat.org/min-49609.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4, 
+https://www.mindat.org/min-49609.html, 
 
 - Concept URI token: etma:1:1:49609:0
 
@@ -3477,8 +3478,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4,
 3 and 4 components.
 
 - **Source:**
-https://www.mindat.org/min-49591.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3-4, 
+https://www.mindat.org/min-49591.html, 
 
 - Concept URI token: etma:1:1:49591:2
 
@@ -3496,8 +3497,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3-4,
 petrological types 4 and 5.
 
 - **Source:**
-https://www.mindat.org/min-49610.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4/5, 
+https://www.mindat.org/min-49610.html, 
 
 - Concept URI token: etma:1:1:49610:6
 
@@ -3515,8 +3516,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4/5,
 4 and 5 components.
 
 - **Source:**
-https://www.mindat.org/min-50447.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4-5, 
+https://www.mindat.org/min-50447.html, 
 
 - Concept URI token: etma:1:1:50447:8
 
@@ -3533,8 +3534,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4-5,
 5.
 
 - **Source:**
-https://www.mindat.org/min-49612.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4/5, 
+https://www.mindat.org/min-49612.html, 
 
 - Concept URI token: etma:1:1:49612:4
 
@@ -3552,8 +3553,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4/5,
 petrologic type 3 to type 4.
 
 - **Source:**
-https://www.mindat.org/min-50446.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3-4, 
+https://www.mindat.org/min-50446.html, 
 
 - Concept URI token: etma:1:1:50446:9
 
@@ -3570,8 +3571,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3-4,
 components.
 
 - **Source:**
-https://www.mindat.org/min-50448.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4-5, 
+https://www.mindat.org/min-50448.html, 
 
 - Concept URI token: etma:1:1:50448:7
 
@@ -3588,8 +3589,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4-5,
 - An H chondrite that is of petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49614.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5, 
+https://www.mindat.org/min-49614.html, 
 
 - Concept URI token: etma:1:1:49614:2
 
@@ -3606,8 +3607,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5,
 properties.
 
 - **Source:**
-https://www.mindat.org/min-49615.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5-an, 
+https://www.mindat.org/min-49615.html, 
 
 - Concept URI token: etma:1:1:49615:1
 
@@ -3624,8 +3625,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5-an,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49616.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5-melt%20breccia, 
+https://www.mindat.org/min-49616.html, 
 
 - Concept URI token: etma:1:1:49616:0
 
@@ -3641,8 +3642,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5-melt%20breccia,
 - An H chondrite or L chondrite that is of petrological type 5.
 
 - **Source:**
-https://www.mindat.org/min-49617.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L5, 
+https://www.mindat.org/min-49617.html, 
 
 - Concept URI token: etma:1:1:49617:9
 
@@ -3660,8 +3661,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L5,
 petrological types 4 and 5.
 
 - **Source:**
-https://www.mindat.org/min-49610.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4/5, 
+https://www.mindat.org/min-49610.html, 
 
 - Concept URI token: etma:1:1:49610:6
 
@@ -3679,8 +3680,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4/5,
 4 and 5 components.
 
 - **Source:**
-https://www.mindat.org/min-50447.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4-5, 
+https://www.mindat.org/min-50447.html, 
 
 - Concept URI token: etma:1:1:50447:8
 
@@ -3697,8 +3698,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4-5,
 components.
 
 - **Source:**
-https://www.mindat.org/min-49618.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5-6, 
+https://www.mindat.org/min-49618.html, 
 
 - Concept URI token: etma:1:1:49618:8
 
@@ -3715,8 +3716,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5-6,
 - An H chondrite that is of petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49619.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H6, 
+https://www.mindat.org/min-49619.html, 
 
 - Concept URI token: etma:1:1:49619:7
 
@@ -3733,8 +3734,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H6,
 properties.
 
 - **Source:**
-https://www.mindat.org/min-49620.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H6-an, 
+https://www.mindat.org/min-49620.html, 
 
 - Concept URI token: etma:1:1:49620:3
 
@@ -3751,8 +3752,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H6-an,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49621.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H6-melt%20breccia, 
+https://www.mindat.org/min-49621.html, 
 
 - Concept URI token: etma:1:1:49621:2
 
@@ -3769,8 +3770,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H6-melt%20breccia,
 - An H chondrite or L chondrite that is of petrological type 6.
 
 - **Source:**
-https://www.mindat.org/min-50449.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L6, 
+https://www.mindat.org/min-50449.html, 
 
 - Concept URI token: etma:1:1:50449:6
 
@@ -3787,8 +3788,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L6,
 experienced secondary melting.
 
 - **Source:**
-https://www.mindat.org/min-49623.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L6-melt%20rock, 
+https://www.mindat.org/min-49623.html, 
 
 - Concept URI token: etma:1:1:49623:0
 
@@ -3806,8 +3807,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L6-melt%20rock,
 type 7 is not used consistently or widely accepted in the literature.
 
 - **Source:**
-https://www.mindat.org/min-49625.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H7, 
+https://www.mindat.org/min-49625.html, 
 
 - Concept URI token: etma:1:1:49625:8
 
@@ -3824,8 +3825,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H7,
 has not been determined.
 
 - **Source:**
-https://www.mindat.org/min-49626.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H-an, 
+https://www.mindat.org/min-49626.html, 
 
 - Concept URI token: etma:1:1:49626:7
 
@@ -3842,8 +3843,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H-an,
 petrologic type has not been determined.
 
 - **Source:**
-https://www.mindat.org/min-49627.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H-imp%20melt, 
+https://www.mindat.org/min-49627.html, 
 
 - Concept URI token: etma:1:1:49627:6
 
@@ -3860,8 +3861,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H-imp%20melt,
 matrix and for which the petrologic type has not been determined.
 
 - **Source:**
-https://www.mindat.org/min-49628.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H-melt%20breccia, 
+https://www.mindat.org/min-49628.html, 
 
 - Concept URI token: etma:1:1:49628:5
 
@@ -3878,8 +3879,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H-melt%20breccia,
 the petrologic type has not been determined.
 
 - **Source:**
-https://www.mindat.org/min-49629.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H-melt%20rock, 
+https://www.mindat.org/min-49629.html, 
 
 - Concept URI token: etma:1:1:49629:4
 
@@ -3897,8 +3898,8 @@ likely that the object was derived from an ordinary H chondrite and
 was not once part of an extended metal-rich body.
 
 - **Source:**
-https://www.mindat.org/min-49630.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H-metal, 
+https://www.mindat.org/min-49630.html, 
 
 - Concept URI token: etma:1:1:49630:0
 
@@ -3915,8 +3916,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H-metal,
 which petrologic type has not been determined.
 
 - **Source:**
-https://www.mindat.org/min-49631.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H?, 
+https://www.mindat.org/min-49631.html, 
 
 - Concept URI token: etma:1:1:49631:9
 
@@ -3932,8 +3933,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H?,
 - An H chondrite that is approximately petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49632.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H~4, 
+https://www.mindat.org/min-49632.html, 
 
 - Concept URI token: etma:1:1:49632:8
 
@@ -3949,8 +3950,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H~4,
 - An H chondrite that is approximately petrologic type 4 or 5.
 
 - **Source:**
-https://www.mindat.org/min-49633.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H~4/5, 
+https://www.mindat.org/min-49633.html, 
 
 - Concept URI token: etma:1:1:49633:7
 
@@ -3966,8 +3967,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H~4/5,
 - An H chondrite that is approximately petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49634.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H~5, 
+https://www.mindat.org/min-49634.html, 
 
 - Concept URI token: etma:1:1:49634:6
 
@@ -3983,8 +3984,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H~5,
 - An H chondrite that is approximately petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49635.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H~6, 
+https://www.mindat.org/min-49635.html, 
 
 - Concept URI token: etma:1:1:49635:5
 
@@ -4000,8 +4001,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H~6,
 - An H chondrite that is possibly petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49636.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(5?), 
+https://www.mindat.org/min-49636.html, 
 
 - Concept URI token: etma:1:1:49636:4
 
@@ -4017,8 +4018,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(5?),
 - An H chondrite that is a breccia of petrological types 5 to 7.
 
 - **Source:**
-https://www.mindat.org/min-49637.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5-7, 
+https://www.mindat.org/min-49637.html, 
 
 - Concept URI token: etma:1:1:49637:3
 
@@ -4035,8 +4036,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5-7,
 type 4.
 
 - **Source:**
-https://www.mindat.org/min-49638.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L~4, 
+https://www.mindat.org/min-49638.html, 
 
 - Concept URI token: etma:1:1:49638:2
 
@@ -4053,8 +4054,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L~4,
 possibly an H chondrite.
 
 - **Source:**
-https://www.mindat.org/min-49639.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4(?), 
+https://www.mindat.org/min-49639.html, 
 
 - Concept URI token: etma:1:1:49639:1
 
@@ -4071,8 +4072,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4(?),
 chondrite.
 
 - **Source:**
-https://www.mindat.org/min-49640.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(?)4, 
+https://www.mindat.org/min-49640.html, 
 
 - Concept URI token: etma:1:1:49640:7
 
@@ -4088,8 +4089,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(?)4,
 - An H chondrite that is a breccia of petrological types 3 to 5.
 
 - **Source:**
-https://www.mindat.org/min-49641.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3-5, 
+https://www.mindat.org/min-49641.html, 
 
 - Concept URI token: etma:1:1:49641:6
 
@@ -4105,8 +4106,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3-5,
 - An H chondrite that is a breccia of petrological types 3 to 6.
 
 - **Source:**
-https://www.mindat.org/min-49642.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3-6, 
+https://www.mindat.org/min-49642.html, 
 
 - Concept URI token: etma:1:1:49642:5
 
@@ -4122,8 +4123,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3-6,
 - An H chondrite that is a breccia of petrological types 3.2 to 6.
 
 - **Source:**
-https://www.mindat.org/min-49643.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.2-6, 
+https://www.mindat.org/min-49643.html, 
 
 - Concept URI token: etma:1:1:49643:4
 
@@ -4139,8 +4140,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.2-6,
 - An H chondrite that is a breccia of petrological types 3.9 to 5.
 
 - **Source:**
-https://www.mindat.org/min-49644.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.9-5, 
+https://www.mindat.org/min-49644.html, 
 
 - Concept URI token: etma:1:1:49644:3
 
@@ -4156,8 +4157,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.9-5,
 - An H chondrite that is a breccia of petrological types 3 to 5.
 
 - **Source:**
-https://www.mindat.org/min-49645.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.9-6, 
+https://www.mindat.org/min-49645.html, 
 
 - Concept URI token: etma:1:1:49645:2
 
@@ -4173,8 +4174,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.9-6,
 - An H chondrite that is a breccia of petrological types 4 to 6.
 
 - **Source:**
-https://www.mindat.org/min-49646.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4-6, 
+https://www.mindat.org/min-49646.html, 
 
 - Concept URI token: etma:1:1:49646:1
 
@@ -4190,8 +4191,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4-6,
 - An H chondrite that is petrological type 4, 5 or 6.
 
 - **Source:**
-https://www.mindat.org/min-49647.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4/6, 
+https://www.mindat.org/min-49647.html, 
 
 - Concept URI token: etma:1:1:49647:0
 
@@ -4211,8 +4212,8 @@ that intermediate between H chondrites and LL chondrites.  Parent body
 is possibly 433 Eros, 8 Flora or the Flora family as a whole
 
 - **Source:**
-https://www.mindat.org/min-49648.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L, 
+https://www.mindat.org/min-49648.html, 
 
 - Concept URI token: etma:1:1:49648:9
 
@@ -4229,8 +4230,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L,
 - An L chondrite that is of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49649.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3, 
+https://www.mindat.org/min-49649.html, 
 
 - Concept URI token: etma:1:1:49649:8
 
@@ -4248,8 +4249,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3,
 petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49586.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3, 
+https://www.mindat.org/min-49586.html, 
 
 - Concept URI token: etma:1:1:49586:0
 
@@ -4266,8 +4267,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3,
 petrologic type 3 and has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49595.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3-an, 
+https://www.mindat.org/min-49595.html, 
 
 - Concept URI token: etma:1:1:49595:8
 
@@ -4284,8 +4285,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3-an,
 petrologic type 3.1.
 
 - **Source:**
-https://www.mindat.org/min-49596.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3.1, 
+https://www.mindat.org/min-49596.html, 
 
 - Concept URI token: etma:1:1:49596:7
 
@@ -4302,8 +4303,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3.1,
 components that are between 3.0 and 3.9
 
 - **Source:**
-https://www.mindat.org/min-49650.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.0-3.9, 
+https://www.mindat.org/min-49650.html, 
 
 - Concept URI token: etma:1:1:49650:4
 
@@ -4320,8 +4321,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.0-3.9,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49651.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-melt%20breccia, 
+https://www.mindat.org/min-49651.html, 
 
 - Concept URI token: etma:1:1:49651:3
 
@@ -4337,8 +4338,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-melt%20breccia,
 - An L chondrite that is petrologic type 3.0.
 
 - **Source:**
-https://www.mindat.org/min-49652.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.0, 
+https://www.mindat.org/min-49652.html, 
 
 - Concept URI token: etma:1:1:49652:2
 
@@ -4354,8 +4355,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.0,
 - An ordinary chondrite from the L group that is petrologic type 3.00
 
 - **Source:**
-https://www.mindat.org/min-49653.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.00, 
+https://www.mindat.org/min-49653.html, 
 
 - Concept URI token: etma:1:1:49653:1
 
@@ -4371,8 +4372,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.00,
 - An ordinary chondrite from the L group that is petrologic type 3.05
 
 - **Source:**
-https://www.mindat.org/min-49654.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.05, 
+https://www.mindat.org/min-49654.html, 
 
 - Concept URI token: etma:1:1:49654:0
 
@@ -4388,8 +4389,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.05,
 - An L chondrite that is a breccia of petrological types 3.2 to 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49655.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.0-3.7, 
+https://www.mindat.org/min-49655.html, 
 
 - Concept URI token: etma:1:1:49655:9
 
@@ -4405,8 +4406,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.0-3.7,
 - An L chondrite that is petrologic type 3.1.
 
 - **Source:**
-https://www.mindat.org/min-49656.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.1, 
+https://www.mindat.org/min-49656.html, 
 
 - Concept URI token: etma:1:1:49656:8
 
@@ -4422,8 +4423,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.1,
 - An ordinary chondrite from the L group that is petrologic type 3.10
 
 - **Source:**
-https://www.mindat.org/min-49657.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.10, 
+https://www.mindat.org/min-49657.html, 
 
 - Concept URI token: etma:1:1:49657:7
 
@@ -4439,8 +4440,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.10,
 - An ordinary chondrite from the L group that is petrologic type 3.15
 
 - **Source:**
-https://www.mindat.org/min-49658.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.15, 
+https://www.mindat.org/min-49658.html, 
 
 - Concept URI token: etma:1:1:49658:6
 
@@ -4456,8 +4457,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.15,
 - An L chondrite that is petrologic type 3.2.
 
 - **Source:**
-https://www.mindat.org/min-49659.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.2, 
+https://www.mindat.org/min-49659.html, 
 
 - Concept URI token: etma:1:1:49659:5
 
@@ -4473,8 +4474,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.2,
 - An L chondrite that is a breccia of petrological types 3.2 to 3.5.
 
 - **Source:**
-https://www.mindat.org/min-49660.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.2-3.5, 
+https://www.mindat.org/min-49660.html, 
 
 - Concept URI token: etma:1:1:49660:1
 
@@ -4490,8 +4491,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.2-3.5,
 - An L chondrite that is a breccia of petrological types 3.2 to 3.6.
 
 - **Source:**
-https://www.mindat.org/min-49661.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.2-3.6, 
+https://www.mindat.org/min-49661.html, 
 
 - Concept URI token: etma:1:1:49661:0
 
@@ -4507,8 +4508,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.2-3.6,
 - An L chondrite that is petrologic type 3.3.
 
 - **Source:**
-https://www.mindat.org/min-49662.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.3, 
+https://www.mindat.org/min-49662.html, 
 
 - Concept URI token: etma:1:1:49662:9
 
@@ -4524,8 +4525,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.3,
 - An L chondrite that is a breccia of petrological types 3.3 to 3.5.
 
 - **Source:**
-https://www.mindat.org/min-49663.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.3-3.5, 
+https://www.mindat.org/min-49663.html, 
 
 - Concept URI token: etma:1:1:49663:8
 
@@ -4541,8 +4542,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.3-3.5,
 - An L chondrite that is a breccia of petrological types 3.3 to 3.6.
 
 - **Source:**
-https://www.mindat.org/min-49664.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.3-3.6, 
+https://www.mindat.org/min-49664.html, 
 
 - Concept URI token: etma:1:1:49664:7
 
@@ -4558,8 +4559,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.3-3.6,
 - An L chondrite that is a breccia of petrological types 3.3 to 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49665.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.3-3.7, 
+https://www.mindat.org/min-49665.html, 
 
 - Concept URI token: etma:1:1:49665:6
 
@@ -4576,8 +4577,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.3-3.7,
 - An L chondrite that is a breccia of petrological types 3 to 4.
 
 - **Source:**
-https://www.mindat.org/min-49666.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-4, 
+https://www.mindat.org/min-49666.html, 
 
 - Concept URI token: etma:1:1:49666:5
 
@@ -4593,8 +4594,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-4,
 - An L chondrite that is petrologic type 3.5.
 
 - **Source:**
-https://www.mindat.org/min-49667.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5, 
+https://www.mindat.org/min-49667.html, 
 
 - Concept URI token: etma:1:1:49667:4
 
@@ -4610,8 +4611,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5,
 - An L chondrite that is a breccia of petrological types 3.5 tto 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49668.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5-3.7, 
+https://www.mindat.org/min-49668.html, 
 
 - Concept URI token: etma:1:1:49668:3
 
@@ -4627,8 +4628,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5-3.7,
 - An L chondrite that is a breccia of petrological types 3.5 to 3.8.
 
 - **Source:**
-https://www.mindat.org/min-49669.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5-3.8, 
+https://www.mindat.org/min-49669.html, 
 
 - Concept URI token: etma:1:1:49669:2
 
@@ -4644,8 +4645,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5-3.8,
 - An L chondrite that is a breccia of petrological types 3.5 to 3.9.
 
 - **Source:**
-https://www.mindat.org/min-49670.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5-3.9, 
+https://www.mindat.org/min-49670.html, 
 
 - Concept URI token: etma:1:1:49670:8
 
@@ -4661,8 +4662,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5-3.9,
 - An L chondrite that is petrologic type 3.6.
 
 - **Source:**
-https://www.mindat.org/min-49671.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.6, 
+https://www.mindat.org/min-49671.html, 
 
 - Concept URI token: etma:1:1:49671:7
 
@@ -4678,8 +4679,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.6,
 - An L chondrite that is a breccia of petrological types 3.6 to 4.
 
 - **Source:**
-https://www.mindat.org/min-49672.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.6-4, 
+https://www.mindat.org/min-49672.html, 
 
 - Concept URI token: etma:1:1:49672:6
 
@@ -4695,8 +4696,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.6-4,
 - An L chondrite that is petrologic type 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49673.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7, 
+https://www.mindat.org/min-49673.html, 
 
 - Concept URI token: etma:1:1:49673:5
 
@@ -4713,8 +4714,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7,
 - An L chondrite that is petrologic type 3.7 to 3.8.
 
 - **Source:**
-https://www.mindat.org/min-49674.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7/3.8, 
+https://www.mindat.org/min-49674.html, 
 
 - Concept URI token: etma:1:1:49674:4
 
@@ -4730,8 +4731,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7/3.8,
 - An L chondrite that is a breccia of petrological types 3.7 to 3.9.
 
 - **Source:**
-https://www.mindat.org/min-49675.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7-3.9, 
+https://www.mindat.org/min-49675.html, 
 
 - Concept URI token: etma:1:1:49675:3
 
@@ -4748,8 +4749,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7-3.9,
 - An L chondrite that is a breccia of petrological types 3.7 to 4.
 
 - **Source:**
-https://www.mindat.org/min-49676.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7-4, 
+https://www.mindat.org/min-49676.html, 
 
 - Concept URI token: etma:1:1:49676:2
 
@@ -4765,8 +4766,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7-4,
 - An L chondrite that is petrologic type 3.8.
 
 - **Source:**
-https://www.mindat.org/min-49677.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.8, 
+https://www.mindat.org/min-49677.html, 
 
 - Concept URI token: etma:1:1:49677:1
 
@@ -4783,8 +4784,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.8,
 - An L chondrite that is petrologic type 3.7 to 3.8.
 
 - **Source:**
-https://www.mindat.org/min-49674.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7/3.8, 
+https://www.mindat.org/min-49674.html, 
 
 - Concept URI token: etma:1:1:49674:4
 
@@ -4801,8 +4802,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7/3.8,
 properties.
 
 - **Source:**
-https://www.mindat.org/min-49678.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.8-an, 
+https://www.mindat.org/min-49678.html, 
 
 - Concept URI token: etma:1:1:49678:0
 
@@ -4818,8 +4819,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.8-an,
 - An L chondrite that is petrologic type 3.9.
 
 - **Source:**
-https://www.mindat.org/min-49679.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.9, 
+https://www.mindat.org/min-49679.html, 
 
 - Concept URI token: etma:1:1:49679:9
 
@@ -4836,8 +4837,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.9,
 - An L chondrite that is petrologic type 3.9 to 4.
 
 - **Source:**
-https://www.mindat.org/min-49680.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.9/4, 
+https://www.mindat.org/min-49680.html, 
 
 - Concept URI token: etma:1:1:49680:5
 
@@ -4855,8 +4856,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.9/4,
 petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49682.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(H)3, 
+https://www.mindat.org/min-49682.html, 
 
 - Concept URI token: etma:1:1:49682:3
 
@@ -4873,8 +4874,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(H)3,
 - An H chondrite or L chondrite that is of petrological type 3.
 
 - **Source:**
-https://www.mindat.org/min-50445.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3, 
+https://www.mindat.org/min-50445.html, 
 
 - Concept URI token: etma:1:1:50445:0
 
@@ -4890,8 +4891,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3,
 - An H chondrite or L chondrite that is of petrological type 3.5.
 
 - **Source:**
-https://www.mindat.org/min-49587.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.5, 
+https://www.mindat.org/min-49587.html, 
 
 - Concept URI token: etma:1:1:49587:9
 
@@ -4907,8 +4908,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.5,
 - An H chondrite or L chondrite that is of petrological type 3.6.
 
 - **Source:**
-https://www.mindat.org/min-49588.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.6, 
+https://www.mindat.org/min-49588.html, 
 
 - Concept URI token: etma:1:1:49588:8
 
@@ -4924,8 +4925,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.6,
 - An H chondrite or L chondrite that is of petrological type 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49589.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.7, 
+https://www.mindat.org/min-49589.html, 
 
 - Concept URI token: etma:1:1:49589:7
 
@@ -4941,8 +4942,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.7,
 - An H chondrite or L chondrite that is of petrological type 3.9.
 
 - **Source:**
-https://www.mindat.org/min-49590.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.9, 
+https://www.mindat.org/min-49590.html, 
 
 - Concept URI token: etma:1:1:49590:3
 
@@ -4960,8 +4961,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.9,
 3 and 4 components.
 
 - **Source:**
-https://www.mindat.org/min-49591.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3-4, 
+https://www.mindat.org/min-49591.html, 
 
 - Concept URI token: etma:1:1:49591:2
 
@@ -4977,8 +4978,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3-4,
 - An L chondrite that is petrologic type 3.4.
 
 - **Source:**
-https://www.mindat.org/min-50450.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.4, 
+https://www.mindat.org/min-50450.html, 
 
 - Concept URI token: etma:1:1:50450:2
 
@@ -4995,8 +4996,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.4,
 - An L chondrite that is petrologic type 3 to 4.
 
 - **Source:**
-https://www.mindat.org/min-50451.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3/4, 
+https://www.mindat.org/min-50451.html, 
 
 - Concept URI token: etma:1:1:50451:1
 
@@ -5014,8 +5015,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3/4,
 petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-50452.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3, 
+https://www.mindat.org/min-50452.html, 
 
 - Concept URI token: etma:1:1:50452:0
 
@@ -5032,8 +5033,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3,
 petrologic type 3.0.
 
 - **Source:**
-https://www.mindat.org/min-49684.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.0, 
+https://www.mindat.org/min-49684.html, 
 
 - Concept URI token: etma:1:1:49684:1
 
@@ -5050,8 +5051,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.0,
 of components ranging from petrologic type 3.5 to 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49686.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.5-3.7, 
+https://www.mindat.org/min-49686.html, 
 
 - Concept URI token: etma:1:1:49686:9
 
@@ -5068,8 +5069,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.5-3.7,
 - An L chondrite or LL chondrite that is of petrological type 3.
 
 - **Source:**
-https://www.mindat.org/min-50453.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3, 
+https://www.mindat.org/min-50453.html, 
 
 - Concept URI token: etma:1:1:50453:9
 
@@ -5085,8 +5086,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3,
 - An L chondrite or LL chondrite that is of petrological type 3.4.
 
 - **Source:**
-https://www.mindat.org/min-49690.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.4, 
+https://www.mindat.org/min-49690.html, 
 
 - Concept URI token: etma:1:1:49690:2
 
@@ -5102,8 +5103,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.4,
 - An L chondrite or LL chondrite that is of petrological type 3.5
 
 - **Source:**
-https://www.mindat.org/min-49692.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.5, 
+https://www.mindat.org/min-49692.html, 
 
 - Concept URI token: etma:1:1:49692:0
 
@@ -5120,8 +5121,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.5,
 or 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49693.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.6/3.7, 
+https://www.mindat.org/min-49693.html, 
 
 - Concept URI token: etma:1:1:49693:9
 
@@ -5137,8 +5138,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.6/3.7,
 - An L chondrite or LL chondrite that is of petrological type 3.2.
 
 - **Source:**
-https://www.mindat.org/min-50455.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.2, 
+https://www.mindat.org/min-50455.html, 
 
 - Concept URI token: etma:1:1:50455:7
 
@@ -5156,8 +5157,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.2,
 petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49683.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3, 
+https://www.mindat.org/min-49683.html, 
 
 - Concept URI token: etma:1:1:49683:2
 
@@ -5174,8 +5175,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3,
 LL group that is petrologic type 3.05
 
 - **Source:**
-https://www.mindat.org/min-49685.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.05, 
+https://www.mindat.org/min-49685.html, 
 
 - Concept URI token: etma:1:1:49685:0
 
@@ -5192,8 +5193,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.05,
 petrologic type 3.1.
 
 - **Source:**
-https://www.mindat.org/min-49688.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3.1, 
+https://www.mindat.org/min-49688.html, 
 
 - Concept URI token: etma:1:1:49688:7
 
@@ -5210,8 +5211,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3.1,
 petrologic type 3.2.
 
 - **Source:**
-https://www.mindat.org/min-49689.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3.2, 
+https://www.mindat.org/min-49689.html, 
 
 - Concept URI token: etma:1:1:49689:6
 
@@ -5228,8 +5229,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3.2,
 petrologic type 3.10
 
 - **Source:**
-https://www.mindat.org/min-49691.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.10, 
+https://www.mindat.org/min-49691.html, 
 
 - Concept URI token: etma:1:1:49691:1
 
@@ -5245,8 +5246,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.10,
 - An L chondrite or LL chondrite that is of petrological type 3.1.
 
 - **Source:**
-https://www.mindat.org/min-50454.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.10, 
+https://www.mindat.org/min-50454.html, 
 
 - Concept URI token: etma:1:1:50454:8
 
@@ -5263,8 +5264,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.10,
 - An L chondrite that is of petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49695.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4, 
+https://www.mindat.org/min-49695.html, 
 
 - Concept URI token: etma:1:1:49695:7
 
@@ -5281,8 +5282,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4,
 - An H chondrite or L chondrite that is of petrological type 4.
 
 - **Source:**
-https://www.mindat.org/min-49609.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4, 
+https://www.mindat.org/min-49609.html, 
 
 - Concept URI token: etma:1:1:49609:0
 
@@ -5300,8 +5301,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4,
 3 and 4 components.
 
 - **Source:**
-https://www.mindat.org/min-49591.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3-4, 
+https://www.mindat.org/min-49591.html, 
 
 - Concept URI token: etma:1:1:49591:2
 
@@ -5319,8 +5320,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3-4,
 petrological types 4 and 5.
 
 - **Source:**
-https://www.mindat.org/min-49610.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4/5, 
+https://www.mindat.org/min-49610.html, 
 
 - Concept URI token: etma:1:1:49610:6
 
@@ -5338,8 +5339,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4/5,
 4 and 5 components.
 
 - **Source:**
-https://www.mindat.org/min-50447.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4-5, 
+https://www.mindat.org/min-50447.html, 
 
 - Concept URI token: etma:1:1:50447:8
 
@@ -5356,8 +5357,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4-5,
 - An L chondrite that is a breccia of petrological types 3 to 4.
 
 - **Source:**
-https://www.mindat.org/min-49666.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-4, 
+https://www.mindat.org/min-49666.html, 
 
 - Concept URI token: etma:1:1:49666:5
 
@@ -5374,8 +5375,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-4,
 - An L chondrite that is a breccia of petrological types 3.7 to 4.
 
 - **Source:**
-https://www.mindat.org/min-49676.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7-4, 
+https://www.mindat.org/min-49676.html, 
 
 - Concept URI token: etma:1:1:49676:2
 
@@ -5392,8 +5393,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7-4,
 - An L chondrite that is petrologic type 3.9 to 4.
 
 - **Source:**
-https://www.mindat.org/min-49680.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.9/4, 
+https://www.mindat.org/min-49680.html, 
 
 - Concept URI token: etma:1:1:49680:5
 
@@ -5410,8 +5411,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.9/4,
 properties.
 
 - **Source:**
-https://www.mindat.org/min-49696.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-an, 
+https://www.mindat.org/min-49696.html, 
 
 - Concept URI token: etma:1:1:49696:6
 
@@ -5428,8 +5429,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-an,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49697.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-melt%20breccia, 
+https://www.mindat.org/min-49697.html, 
 
 - Concept URI token: etma:1:1:49697:5
 
@@ -5445,8 +5446,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-melt%20breccia,
 - An L4 chondrite that has experienced secondary melting.
 
 - **Source:**
-https://www.mindat.org/min-49698.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-melt%20rock, 
+https://www.mindat.org/min-49698.html, 
 
 - Concept URI token: etma:1:1:49698:4
 
@@ -5463,8 +5464,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-melt%20rock,
 - An L chondrite or LL chondrite that is of petrological type 4.
 
 - **Source:**
-https://www.mindat.org/min-49699.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL4, 
+https://www.mindat.org/min-49699.html, 
 
 - Concept URI token: etma:1:1:49699:3
 
@@ -5481,8 +5482,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL4,
 - An L chondrite that is petrologic type 4 to 5.
 
 - **Source:**
-https://www.mindat.org/min-49700.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4/5, 
+https://www.mindat.org/min-49700.html, 
 
 - Concept URI token: etma:1:1:49700:8
 
@@ -5499,8 +5500,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4/5,
 - An L chondrite that is petrologic type 3 to 4.
 
 - **Source:**
-https://www.mindat.org/min-50451.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3/4, 
+https://www.mindat.org/min-50451.html, 
 
 - Concept URI token: etma:1:1:50451:1
 
@@ -5517,8 +5518,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3/4,
 - An L chondrite that is a breccia of petrological types 4 to 5.
 
 - **Source:**
-https://www.mindat.org/min-50456.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-5, 
+https://www.mindat.org/min-50456.html, 
 
 - Concept URI token: etma:1:1:50456:6
 
@@ -5535,8 +5536,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-5,
 - An L chondrite that is of petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49702.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5, 
+https://www.mindat.org/min-49702.html, 
 
 - Concept URI token: etma:1:1:49702:6
 
@@ -5553,8 +5554,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5,
 - An L chondrite that is petrologic type 4 to 5.
 
 - **Source:**
-https://www.mindat.org/min-49700.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4/5, 
+https://www.mindat.org/min-49700.html, 
 
 - Concept URI token: etma:1:1:49700:8
 
@@ -5571,8 +5572,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4/5,
 - An L chondrite or LL chondrite that is of petrological type 5.
 
 - **Source:**
-https://www.mindat.org/min-49703.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5, 
+https://www.mindat.org/min-49703.html, 
 
 - Concept URI token: etma:1:1:49703:5
 
@@ -5590,8 +5591,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5,
 6.
 
 - **Source:**
-https://www.mindat.org/min-49705.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5/6, 
+https://www.mindat.org/min-49705.html, 
 
 - Concept URI token: etma:1:1:49705:3
 
@@ -5609,8 +5610,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5/6,
 of components ranging from petrologic type 5 to 6.
 
 - **Source:**
-https://www.mindat.org/min-50458.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5-6, 
+https://www.mindat.org/min-50458.html, 
 
 - Concept URI token: etma:1:1:50458:4
 
@@ -5628,8 +5629,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5-6,
 petrologic type 5 to 6.
 
 - **Source:**
-https://www.mindat.org/min-49707.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5-6, 
+https://www.mindat.org/min-49707.html, 
 
 - Concept URI token: etma:1:1:49707:1
 
@@ -5646,8 +5647,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5-6,
 - An L chondrite that is either petrological type 5 or 6.
 
 - **Source:**
-https://www.mindat.org/min-49708.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5/6, 
+https://www.mindat.org/min-49708.html, 
 
 - Concept URI token: etma:1:1:49708:0
 
@@ -5664,8 +5665,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5/6,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49709.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5-melt%20breccia, 
+https://www.mindat.org/min-49709.html, 
 
 - Concept URI token: etma:1:1:49709:9
 
@@ -5682,8 +5683,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5-melt%20breccia,
 - An L chondrite that is a breccia of petrological types 4 to 5.
 
 - **Source:**
-https://www.mindat.org/min-50456.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-5, 
+https://www.mindat.org/min-50456.html, 
 
 - Concept URI token: etma:1:1:50456:6
 
@@ -5701,8 +5702,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-5,
 petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-50457.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)5, 
+https://www.mindat.org/min-50457.html, 
 
 - Concept URI token: etma:1:1:50457:5
 
@@ -5719,8 +5720,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)5,
 - An L chondrite that is of petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49710.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6, 
+https://www.mindat.org/min-49710.html, 
 
 - Concept URI token: etma:1:1:49710:5
 
@@ -5738,8 +5739,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6,
 petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49622.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)6, 
+https://www.mindat.org/min-49622.html, 
 
 - Concept URI token: etma:1:1:49622:1
 
@@ -5757,8 +5758,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)6,
 petrologic type 5 to 6.
 
 - **Source:**
-https://www.mindat.org/min-49707.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5-6, 
+https://www.mindat.org/min-49707.html, 
 
 - Concept URI token: etma:1:1:49707:1
 
@@ -5775,8 +5776,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5-6,
 - An L chondrite that is either petrological type 5 or 6.
 
 - **Source:**
-https://www.mindat.org/min-49708.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5/6, 
+https://www.mindat.org/min-49708.html, 
 
 - Concept URI token: etma:1:1:49708:0
 
@@ -5793,8 +5794,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5/6,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49711.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6-melt%20breccia, 
+https://www.mindat.org/min-49711.html, 
 
 - Concept URI token: etma:1:1:49711:4
 
@@ -5810,8 +5811,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6-melt%20breccia,
 - An L6 chondrite that has experienced secondary melting.
 
 - **Source:**
-https://www.mindat.org/min-49712.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6-melt%20rock, 
+https://www.mindat.org/min-49712.html, 
 
 - Concept URI token: etma:1:1:49712:3
 
@@ -5828,8 +5829,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6-melt%20rock,
 - An L chondrite or LL chondrite that is of petrological type 6.
 
 - **Source:**
-https://www.mindat.org/min-49713.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL6, 
+https://www.mindat.org/min-49713.html, 
 
 - Concept URI token: etma:1:1:49713:2
 
@@ -5846,8 +5847,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL6,
 has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49715.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL6-an, 
+https://www.mindat.org/min-49715.html, 
 
 - Concept URI token: etma:1:1:49715:0
 
@@ -5864,8 +5865,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL6-an,
 - An L chondrite that is either petrological type 6 or 7.
 
 - **Source:**
-https://www.mindat.org/min-49716.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6/7, 
+https://www.mindat.org/min-49716.html, 
 
 - Concept URI token: etma:1:1:49716:9
 
@@ -5882,8 +5883,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6/7,
 - An H chondrite or L chondrite that is of petrological type 6.
 
 - **Source:**
-https://www.mindat.org/min-50449.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L6, 
+https://www.mindat.org/min-50449.html, 
 
 - Concept URI token: etma:1:1:50449:6
 
@@ -5900,8 +5901,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L6,
 experienced secondary melting.
 
 - **Source:**
-https://www.mindat.org/min-49623.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L6-melt%20rock, 
+https://www.mindat.org/min-49623.html, 
 
 - Concept URI token: etma:1:1:49623:0
 
@@ -5919,8 +5920,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L6-melt%20rock,
 petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-50459.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)6, 
+https://www.mindat.org/min-50459.html, 
 
 - Concept URI token: etma:1:1:50459:3
 
@@ -5938,8 +5939,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)6,
 6.
 
 - **Source:**
-https://www.mindat.org/min-49705.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5/6, 
+https://www.mindat.org/min-49705.html, 
 
 - Concept URI token: etma:1:1:49705:3
 
@@ -5957,8 +5958,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5/6,
 of components ranging from petrologic type 5 to 6.
 
 - **Source:**
-https://www.mindat.org/min-50458.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5-6, 
+https://www.mindat.org/min-50458.html, 
 
 - Concept URI token: etma:1:1:50458:4
 
@@ -5976,8 +5977,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5-6,
 type 7 is not used consistently or widely accepted in the literature.
 
 - **Source:**
-https://www.mindat.org/min-49717.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L7, 
+https://www.mindat.org/min-49717.html, 
 
 - Concept URI token: etma:1:1:49717:8
 
@@ -5994,8 +5995,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L7,
 - An L chondrite that is either petrological type 6 or 7.
 
 - **Source:**
-https://www.mindat.org/min-49716.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6/7, 
+https://www.mindat.org/min-49716.html, 
 
 - Concept URI token: etma:1:1:49716:9
 
@@ -6012,8 +6013,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6/7,
 petrologic type has not been determined.
 
 - **Source:**
-https://www.mindat.org/min-49718.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L-imp%20melt, 
+https://www.mindat.org/min-49718.html, 
 
 - Concept URI token: etma:1:1:49718:7
 
@@ -6030,8 +6031,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L-imp%20melt,
 matrix and for which the petrologic type has not been determined.
 
 - **Source:**
-https://www.mindat.org/min-49719.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L-melt%20breccia, 
+https://www.mindat.org/min-49719.html, 
 
 - Concept URI token: etma:1:1:49719:6
 
@@ -6047,8 +6048,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L-melt%20breccia,
 - An L chondrite that has experienced secondary melting.
 
 - **Source:**
-https://www.mindat.org/min-49720.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L-melt%20rock, 
+https://www.mindat.org/min-49720.html, 
 
 - Concept URI token: etma:1:1:49720:2
 
@@ -6066,8 +6067,8 @@ likely that the object was derived from an ordinary L chondrite and
 was not once part of an extended metal-rich body.
 
 - **Source:**
-https://www.mindat.org/min-49721.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L-metal, 
+https://www.mindat.org/min-49721.html, 
 
 - Concept URI token: etma:1:1:49721:1
 
@@ -6085,8 +6086,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L-metal,
 melting.
 
 - **Source:**
-https://www.mindat.org/min-49722.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL-melt%20rock, 
+https://www.mindat.org/min-49722.html, 
 
 - Concept URI token: etma:1:1:49722:0
 
@@ -6103,8 +6104,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL-melt%20rock,
 type 3 to 6 components.
 
 - **Source:**
-https://www.mindat.org/min-49723.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3-6, 
+https://www.mindat.org/min-49723.html, 
 
 - Concept URI token: etma:1:1:49723:9
 
@@ -6121,8 +6122,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3-6,
 type 3 to 5 components.
 
 - **Source:**
-https://www.mindat.org/min-49724.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3-5, 
+https://www.mindat.org/min-49724.html, 
 
 - Concept URI token: etma:1:1:49724:8
 
@@ -6139,8 +6140,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3-5,
 is of petrological type 3.
 
 - **Source:**
-https://www.mindat.org/min-49725.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL(?)3, 
+https://www.mindat.org/min-49725.html, 
 
 - Concept URI token: etma:1:1:49725:7
 
@@ -6157,8 +6158,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL(?)3,
 petrological type 3.
 
 - **Source:**
-https://www.mindat.org/min-49726.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(?)3, 
+https://www.mindat.org/min-49726.html, 
 
 - Concept URI token: etma:1:1:49726:6
 
@@ -6175,8 +6176,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(?)3,
 approximately of petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49727.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)~4, 
+https://www.mindat.org/min-49727.html, 
 
 - Concept URI token: etma:1:1:49727:5
 
@@ -6193,8 +6194,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)~4,
 type 4.
 
 - **Source:**
-https://www.mindat.org/min-49728.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL~4, 
+https://www.mindat.org/min-49728.html, 
 
 - Concept URI token: etma:1:1:49728:4
 
@@ -6211,8 +6212,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL~4,
 type 5.
 
 - **Source:**
-https://www.mindat.org/min-49729.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL~5, 
+https://www.mindat.org/min-49729.html, 
 
 - Concept URI token: etma:1:1:49729:3
 
@@ -6229,8 +6230,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL~5,
 type 6.
 
 - **Source:**
-https://www.mindat.org/min-49730.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL~6, 
+https://www.mindat.org/min-49730.html, 
 
 - Concept URI token: etma:1:1:49730:9
 
@@ -6246,8 +6247,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL~6,
 - An L chondrite that is a breccia of petrological types 3 to 5.
 
 - **Source:**
-https://www.mindat.org/min-49731.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-5, 
+https://www.mindat.org/min-49731.html, 
 
 - Concept URI token: etma:1:1:49731:8
 
@@ -6263,8 +6264,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-5,
 - An L chondrite that is a breccia of petrological types 3 to 6.
 
 - **Source:**
-https://www.mindat.org/min-49732.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-6, 
+https://www.mindat.org/min-49732.html, 
 
 - Concept URI token: etma:1:1:49732:7
 
@@ -6280,8 +6281,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-6,
 - An L chondrite that is a breccia of petrological types 3 to 7.
 
 - **Source:**
-https://www.mindat.org/min-49733.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-7, 
+https://www.mindat.org/min-49733.html, 
 
 - Concept URI token: etma:1:1:49733:6
 
@@ -6297,8 +6298,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-7,
 - An L chondrite that is a breccia of petrological types 3.5 to 5.
 
 - **Source:**
-https://www.mindat.org/min-49734.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5-5, 
+https://www.mindat.org/min-49734.html, 
 
 - Concept URI token: etma:1:1:49734:5
 
@@ -6314,8 +6315,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5-5,
 - An L chondrite that is a breccia of petrological types 3.7 to 6.
 
 - **Source:**
-https://www.mindat.org/min-49735.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7-6, 
+https://www.mindat.org/min-49735.html, 
 
 - Concept URI token: etma:1:1:49735:4
 
@@ -6331,8 +6332,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7-6,
 - An L chondrite that is a breccia of petrological types 3.8 to 5.
 
 - **Source:**
-https://www.mindat.org/min-49736.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.8-5, 
+https://www.mindat.org/min-49736.html, 
 
 - Concept URI token: etma:1:1:49736:3
 
@@ -6348,8 +6349,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.8-5,
 - An L chondrite that is a breccia of petrological types 3.8 to 6.
 
 - **Source:**
-https://www.mindat.org/min-49737.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.8-6, 
+https://www.mindat.org/min-49737.html, 
 
 - Concept URI token: etma:1:1:49737:2
 
@@ -6365,8 +6366,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.8-6,
 - An L chondrite that is a breccia of petrological types 4 to 6.
 
 - **Source:**
-https://www.mindat.org/min-49738.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-6, 
+https://www.mindat.org/min-49738.html, 
 
 - Concept URI token: etma:1:1:49738:1
 
@@ -6382,8 +6383,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-6,
 - An L chondrite that is a breccia of petrological types 5 to 7.
 
 - **Source:**
-https://www.mindat.org/min-49739.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5-7, 
+https://www.mindat.org/min-49739.html, 
 
 - Concept URI token: etma:1:1:49739:0
 
@@ -6399,8 +6400,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5-7,
 - An L chondrite that is approximately of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49740.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L~3, 
+https://www.mindat.org/min-49740.html, 
 
 - Concept URI token: etma:1:1:49740:6
 
@@ -6416,8 +6417,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L~3,
 - An L chondrite that is approximately of petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49741.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L~4, 
+https://www.mindat.org/min-49741.html, 
 
 - Concept URI token: etma:1:1:49741:5
 
@@ -6434,8 +6435,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L~4,
 petrological types 4 to 6.
 
 - **Source:**
-https://www.mindat.org/min-49742.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L~4-6, 
+https://www.mindat.org/min-49742.html, 
 
 - Concept URI token: etma:1:1:49742:4
 
@@ -6451,8 +6452,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L~4-6,
 - An L chondrite that is approximately of petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49743.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L~5, 
+https://www.mindat.org/min-49743.html, 
 
 - Concept URI token: etma:1:1:49743:3
 
@@ -6468,8 +6469,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L~5,
 - An L chondrite that is approximately of petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49744.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L~6, 
+https://www.mindat.org/min-49744.html, 
 
 - Concept URI token: etma:1:1:49744:2
 
@@ -6489,8 +6490,8 @@ above the terrestrial fractionation line than those of other ordinary
 chondrites.
 
 - **Source:**
-https://www.mindat.org/min-49745.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL, 
+https://www.mindat.org/min-49745.html, 
 
 - Concept URI token: etma:1:1:49745:1
 
@@ -6508,8 +6509,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL,
 melting.
 
 - **Source:**
-https://www.mindat.org/min-49722.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL-melt%20rock, 
+https://www.mindat.org/min-49722.html, 
 
 - Concept URI token: etma:1:1:49722:0
 
@@ -6526,8 +6527,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL-melt%20rock,
 - An LL chondrite that is of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49746.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3, 
+https://www.mindat.org/min-49746.html, 
 
 - Concept URI token: etma:1:1:49746:0
 
@@ -6545,8 +6546,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3,
 petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49683.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3, 
+https://www.mindat.org/min-49683.html, 
 
 - Concept URI token: etma:1:1:49683:2
 
@@ -6563,8 +6564,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3,
 LL group that is petrologic type 3.05
 
 - **Source:**
-https://www.mindat.org/min-49685.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.05, 
+https://www.mindat.org/min-49685.html, 
 
 - Concept URI token: etma:1:1:49685:0
 
@@ -6581,8 +6582,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.05,
 petrologic type 3.1.
 
 - **Source:**
-https://www.mindat.org/min-49688.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3.1, 
+https://www.mindat.org/min-49688.html, 
 
 - Concept URI token: etma:1:1:49688:7
 
@@ -6599,8 +6600,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3.1,
 petrologic type 3.2.
 
 - **Source:**
-https://www.mindat.org/min-49689.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3.2, 
+https://www.mindat.org/min-49689.html, 
 
 - Concept URI token: etma:1:1:49689:6
 
@@ -6617,8 +6618,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3.2,
 petrologic type 3.10
 
 - **Source:**
-https://www.mindat.org/min-49691.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.10, 
+https://www.mindat.org/min-49691.html, 
 
 - Concept URI token: etma:1:1:49691:1
 
@@ -6634,8 +6635,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.10,
 - An L chondrite or LL chondrite that is of petrological type 3.1.
 
 - **Source:**
-https://www.mindat.org/min-50454.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.10, 
+https://www.mindat.org/min-50454.html, 
 
 - Concept URI token: etma:1:1:50454:8
 
@@ -6652,8 +6653,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.10,
 - An LL chondrite that is either petrological type 3 or 4.
 
 - **Source:**
-https://www.mindat.org/min-49750.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3/4, 
+https://www.mindat.org/min-49750.html, 
 
 - Concept URI token: etma:1:1:49750:3
 
@@ -6669,8 +6670,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3/4,
 - An LL chondrite that is petrologic type 3.0.
 
 - **Source:**
-https://www.mindat.org/min-49751.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.0, 
+https://www.mindat.org/min-49751.html, 
 
 - Concept URI token: etma:1:1:49751:2
 
@@ -6686,8 +6687,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.0,
 - An ordinary chondrite from the LL group that is petrologic type 3.00
 
 - **Source:**
-https://www.mindat.org/min-49752.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.00, 
+https://www.mindat.org/min-49752.html, 
 
 - Concept URI token: etma:1:1:49752:1
 
@@ -6703,8 +6704,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.00,
 - An ordinary chondrite from the LL group that is petrologic type 3.05
 
 - **Source:**
-https://www.mindat.org/min-49753.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.05, 
+https://www.mindat.org/min-49753.html, 
 
 - Concept URI token: etma:1:1:49753:0
 
@@ -6720,8 +6721,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.05,
 - An LL chondrite that is petrologic type 3.1.
 
 - **Source:**
-https://www.mindat.org/min-49754.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.1, 
+https://www.mindat.org/min-49754.html, 
 
 - Concept URI token: etma:1:1:49754:9
 
@@ -6738,8 +6739,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.1,
 3.15
 
 - **Source:**
-https://www.mindat.org/min-49756.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.15, 
+https://www.mindat.org/min-49756.html, 
 
 - Concept URI token: etma:1:1:49756:7
 
@@ -6755,8 +6756,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.15,
 - An ordinary chondrite from the LL group that is petrologic type 3.10
 
 - **Source:**
-https://www.mindat.org/min-49755.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.10, 
+https://www.mindat.org/min-49755.html, 
 
 - Concept URI token: etma:1:1:49755:8
 
@@ -6772,8 +6773,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.10,
 - An LL chondrite that is petrologic type 3.2.
 
 - **Source:**
-https://www.mindat.org/min-49757.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.2, 
+https://www.mindat.org/min-49757.html, 
 
 - Concept URI token: etma:1:1:49757:6
 
@@ -6789,8 +6790,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.2,
 - An LL chondrite that is petrologic type 3.3.
 
 - **Source:**
-https://www.mindat.org/min-49758.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.3, 
+https://www.mindat.org/min-49758.html, 
 
 - Concept URI token: etma:1:1:49758:5
 
@@ -6806,8 +6807,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.3,
 - An LL chondrite that is petrologic type 3.5.
 
 - **Source:**
-https://www.mindat.org/min-49760.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.5, 
+https://www.mindat.org/min-49760.html, 
 
 - Concept URI token: etma:1:1:49760:0
 
@@ -6823,8 +6824,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.5,
 - An LL chondrite that is petrologic type 3.6.
 
 - **Source:**
-https://www.mindat.org/min-49761.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.6, 
+https://www.mindat.org/min-49761.html, 
 
 - Concept URI token: etma:1:1:49761:9
 
@@ -6841,8 +6842,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.6,
 - An LL chondrite that is either petrological type 3.6 or 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49762.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.6/3.7, 
+https://www.mindat.org/min-49762.html, 
 
 - Concept URI token: etma:1:1:49762:8
 
@@ -6858,8 +6859,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.6/3.7,
 - An LL chondrite that is petrologic type 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49763.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.7, 
+https://www.mindat.org/min-49763.html, 
 
 - Concept URI token: etma:1:1:49763:7
 
@@ -6876,8 +6877,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.7,
 - An LL chondrite that is either petrological type 3.6 or 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49762.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.6/3.7, 
+https://www.mindat.org/min-49762.html, 
 
 - Concept URI token: etma:1:1:49762:8
 
@@ -6893,8 +6894,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.6/3.7,
 - An LL chondrite that is petrologic type 3.8.
 
 - **Source:**
-https://www.mindat.org/min-49764.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.8, 
+https://www.mindat.org/min-49764.html, 
 
 - Concept URI token: etma:1:1:49764:6
 
@@ -6910,8 +6911,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.8,
 - An LL chondrite that is petrologic type 3.9.
 
 - **Source:**
-https://www.mindat.org/min-49765.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.9, 
+https://www.mindat.org/min-49765.html, 
 
 - Concept URI token: etma:1:1:49765:5
 
@@ -6928,8 +6929,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.9,
 - An LL chondrite that is either petrological type 3.9 or 4.
 
 - **Source:**
-https://www.mindat.org/min-49767.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.9/4, 
+https://www.mindat.org/min-49767.html, 
 
 - Concept URI token: etma:1:1:49767:3
 
@@ -6947,8 +6948,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.9/4,
 petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-50452.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3, 
+https://www.mindat.org/min-50452.html, 
 
 - Concept URI token: etma:1:1:50452:0
 
@@ -6965,8 +6966,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3,
 petrologic type 3.0.
 
 - **Source:**
-https://www.mindat.org/min-49684.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.0, 
+https://www.mindat.org/min-49684.html, 
 
 - Concept URI token: etma:1:1:49684:1
 
@@ -6983,8 +6984,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.0,
 of components ranging from petrologic type 3.5 to 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49686.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.5-3.7, 
+https://www.mindat.org/min-49686.html, 
 
 - Concept URI token: etma:1:1:49686:9
 
@@ -7001,8 +7002,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.5-3.7,
 - An L chondrite or LL chondrite that is of petrological type 3.
 
 - **Source:**
-https://www.mindat.org/min-50453.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3, 
+https://www.mindat.org/min-50453.html, 
 
 - Concept URI token: etma:1:1:50453:9
 
@@ -7018,8 +7019,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3,
 - An L chondrite or LL chondrite that is of petrological type 3.4.
 
 - **Source:**
-https://www.mindat.org/min-49690.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.4, 
+https://www.mindat.org/min-49690.html, 
 
 - Concept URI token: etma:1:1:49690:2
 
@@ -7035,8 +7036,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.4,
 - An L chondrite or LL chondrite that is of petrological type 3.5
 
 - **Source:**
-https://www.mindat.org/min-49692.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.5, 
+https://www.mindat.org/min-49692.html, 
 
 - Concept URI token: etma:1:1:49692:0
 
@@ -7053,8 +7054,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.5,
 or 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49693.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.6/3.7, 
+https://www.mindat.org/min-49693.html, 
 
 - Concept URI token: etma:1:1:49693:9
 
@@ -7070,8 +7071,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.6/3.7,
 - An L chondrite or LL chondrite that is of petrological type 3.2.
 
 - **Source:**
-https://www.mindat.org/min-50455.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.2, 
+https://www.mindat.org/min-50455.html, 
 
 - Concept URI token: etma:1:1:50455:7
 
@@ -7088,8 +7089,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.2,
 - An LL chondrite that is a breccia of petrological types 3 to 4.
 
 - **Source:**
-https://www.mindat.org/min-50460.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3-4, 
+https://www.mindat.org/min-50460.html, 
 
 - Concept URI token: etma:1:1:50460:9
 
@@ -7105,8 +7106,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3-4,
 - An LL chondrite that is petrologic type 3.4.
 
 - **Source:**
-https://www.mindat.org/min-50461.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.4, 
+https://www.mindat.org/min-50461.html, 
 
 - Concept URI token: etma:1:1:50461:8
 
@@ -7123,8 +7124,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.4,
 - An LL chondrite that is of petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49768.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4, 
+https://www.mindat.org/min-49768.html, 
 
 - Concept URI token: etma:1:1:49768:2
 
@@ -7141,8 +7142,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4,
 - An L chondrite or LL chondrite that is of petrological type 4.
 
 - **Source:**
-https://www.mindat.org/min-49699.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL4, 
+https://www.mindat.org/min-49699.html, 
 
 - Concept URI token: etma:1:1:49699:3
 
@@ -7159,8 +7160,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL4,
 - An LL chondrite that is either petrological type 3 or 4.
 
 - **Source:**
-https://www.mindat.org/min-49750.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3/4, 
+https://www.mindat.org/min-49750.html, 
 
 - Concept URI token: etma:1:1:49750:3
 
@@ -7177,8 +7178,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3/4,
 - An LL chondrite that is either petrological type 3.9 or 4.
 
 - **Source:**
-https://www.mindat.org/min-49767.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.9/4, 
+https://www.mindat.org/min-49767.html, 
 
 - Concept URI token: etma:1:1:49767:3
 
@@ -7195,8 +7196,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.9/4,
 - An LL chondrite that is either petrological type 4 or 5.
 
 - **Source:**
-https://www.mindat.org/min-49769.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4/5, 
+https://www.mindat.org/min-49769.html, 
 
 - Concept URI token: etma:1:1:49769:1
 
@@ -7213,8 +7214,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4/5,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49770.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4-melt%20breccia, 
+https://www.mindat.org/min-49770.html, 
 
 - Concept URI token: etma:1:1:49770:7
 
@@ -7231,8 +7232,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4-melt%20breccia,
 - An LL chondrite that is a breccia of petrological types 3 to 4.
 
 - **Source:**
-https://www.mindat.org/min-50460.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3-4, 
+https://www.mindat.org/min-50460.html, 
 
 - Concept URI token: etma:1:1:50460:9
 
@@ -7249,8 +7250,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3-4,
 - An LL chondrite that is a breccia of petrological types 4 to 5.
 
 - **Source:**
-https://www.mindat.org/min-50462.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4-5, 
+https://www.mindat.org/min-50462.html, 
 
 - Concept URI token: etma:1:1:50462:7
 
@@ -7267,8 +7268,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4-5,
 - An LL chondrite that is of petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49772.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5, 
+https://www.mindat.org/min-49772.html, 
 
 - Concept URI token: etma:1:1:49772:5
 
@@ -7285,8 +7286,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5,
 - An L chondrite or LL chondrite that is of petrological type 5.
 
 - **Source:**
-https://www.mindat.org/min-49703.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5, 
+https://www.mindat.org/min-49703.html, 
 
 - Concept URI token: etma:1:1:49703:5
 
@@ -7304,8 +7305,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5,
 6.
 
 - **Source:**
-https://www.mindat.org/min-49705.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5/6, 
+https://www.mindat.org/min-49705.html, 
 
 - Concept URI token: etma:1:1:49705:3
 
@@ -7323,8 +7324,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5/6,
 of components ranging from petrologic type 5 to 6.
 
 - **Source:**
-https://www.mindat.org/min-50458.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5-6, 
+https://www.mindat.org/min-50458.html, 
 
 - Concept URI token: etma:1:1:50458:4
 
@@ -7341,8 +7342,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5-6,
 - An LL chondrite that is either petrological type 4 or 5.
 
 - **Source:**
-https://www.mindat.org/min-49769.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4/5, 
+https://www.mindat.org/min-49769.html, 
 
 - Concept URI token: etma:1:1:49769:1
 
@@ -7359,8 +7360,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4/5,
 - An LL chondrite that is either petrological type 5 or 6.
 
 - **Source:**
-https://www.mindat.org/min-49773.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5/6, 
+https://www.mindat.org/min-49773.html, 
 
 - Concept URI token: etma:1:1:49773:4
 
@@ -7377,8 +7378,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5/6,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49774.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5-melt%20breccia, 
+https://www.mindat.org/min-49774.html, 
 
 - Concept URI token: etma:1:1:49774:3
 
@@ -7396,8 +7397,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5-melt%20breccia,
 petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-50457.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)5, 
+https://www.mindat.org/min-50457.html, 
 
 - Concept URI token: etma:1:1:50457:5
 
@@ -7414,8 +7415,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)5,
 - An LL chondrite that is a breccia of petrological types 4 to 5.
 
 - **Source:**
-https://www.mindat.org/min-50462.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4-5, 
+https://www.mindat.org/min-50462.html, 
 
 - Concept URI token: etma:1:1:50462:7
 
@@ -7432,8 +7433,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4-5,
 - An LL chondrite that is a breccia of petrological types 5 to 6.
 
 - **Source:**
-https://www.mindat.org/min-50463.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5-6, 
+https://www.mindat.org/min-50463.html, 
 
 - Concept URI token: etma:1:1:50463:6
 
@@ -7450,8 +7451,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5-6,
 - An LL chondrite that is of petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49776.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL6, 
+https://www.mindat.org/min-49776.html, 
 
 - Concept URI token: etma:1:1:49776:1
 
@@ -7468,8 +7469,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL6,
 - An L chondrite or LL chondrite that is of petrological type 6.
 
 - **Source:**
-https://www.mindat.org/min-49713.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL6, 
+https://www.mindat.org/min-49713.html, 
 
 - Concept URI token: etma:1:1:49713:2
 
@@ -7486,8 +7487,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL6,
 has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49715.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL6-an, 
+https://www.mindat.org/min-49715.html, 
 
 - Concept URI token: etma:1:1:49715:0
 
@@ -7504,8 +7505,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL6-an,
 - An LL chondrite that is either petrological type 5 or 6.
 
 - **Source:**
-https://www.mindat.org/min-49773.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5/6, 
+https://www.mindat.org/min-49773.html, 
 
 - Concept URI token: etma:1:1:49773:4
 
@@ -7523,8 +7524,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5/6,
 petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-50459.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)6, 
+https://www.mindat.org/min-50459.html, 
 
 - Concept URI token: etma:1:1:50459:3
 
@@ -7542,8 +7543,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)6,
 6.
 
 - **Source:**
-https://www.mindat.org/min-49705.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5/6, 
+https://www.mindat.org/min-49705.html, 
 
 - Concept URI token: etma:1:1:49705:3
 
@@ -7561,8 +7562,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5/6,
 of components ranging from petrologic type 5 to 6.
 
 - **Source:**
-https://www.mindat.org/min-50458.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5-6, 
+https://www.mindat.org/min-50458.html, 
 
 - Concept URI token: etma:1:1:50458:4
 
@@ -7579,8 +7580,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5-6,
 - An LL chondrite that is a breccia of petrological types 5 to 6.
 
 - **Source:**
-https://www.mindat.org/min-50463.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5-6, 
+https://www.mindat.org/min-50463.html, 
 
 - Concept URI token: etma:1:1:50463:6
 
@@ -7597,8 +7598,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5-6,
 properties.
 
 - **Source:**
-https://www.mindat.org/min-49777.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL6-an, 
+https://www.mindat.org/min-49777.html, 
 
 - Concept URI token: etma:1:1:49777:0
 
@@ -7615,8 +7616,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL6-an,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49778.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL6-melt%20breccia, 
+https://www.mindat.org/min-49778.html, 
 
 - Concept URI token: etma:1:1:49778:9
 
@@ -7632,8 +7633,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL6-melt%20breccia,
 - An LL chondrite that is either petrological type 6 or 7.
 
 - **Source:**
-https://www.mindat.org/min-49779.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL6/7, 
+https://www.mindat.org/min-49779.html, 
 
 - Concept URI token: etma:1:1:49779:8
 
@@ -7650,8 +7651,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL6/7,
 the petrologic type has not been determined.
 
 - **Source:**
-https://www.mindat.org/min-49780.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL-imp%20melt, 
+https://www.mindat.org/min-49780.html, 
 
 - Concept URI token: etma:1:1:49780:4
 
@@ -7668,8 +7669,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL-imp%20melt,
 matrix and for which the petrologic type has not been determined.
 
 - **Source:**
-https://www.mindat.org/min-49781.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL-melt%20breccia, 
+https://www.mindat.org/min-49781.html, 
 
 - Concept URI token: etma:1:1:49781:3
 
@@ -7685,8 +7686,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL-melt%20breccia,
 - An L chondrite that has experienced secondary melting.
 
 - **Source:**
-https://www.mindat.org/min-49782.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL-melt%20rock, 
+https://www.mindat.org/min-49782.html, 
 
 - Concept URI token: etma:1:1:49782:2
 
@@ -7702,8 +7703,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL-melt%20rock,
 - An LL chondrite that is a breccia of petrological types 3 to 5.
 
 - **Source:**
-https://www.mindat.org/min-49783.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3-5, 
+https://www.mindat.org/min-49783.html, 
 
 - Concept URI token: etma:1:1:49783:1
 
@@ -7719,8 +7720,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3-5,
 - An LL chondrite that is a breccia of petrological types 3 to 6.
 
 - **Source:**
-https://www.mindat.org/min-49784.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3-6, 
+https://www.mindat.org/min-49784.html, 
 
 - Concept URI token: etma:1:1:49784:0
 
@@ -7736,8 +7737,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3-6,
 - An LL chondrite that is a breccia of petrological types 3.7 to 6.
 
 - **Source:**
-https://www.mindat.org/min-49785.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.7-6, 
+https://www.mindat.org/min-49785.html, 
 
 - Concept URI token: etma:1:1:49785:9
 
@@ -7753,8 +7754,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.7-6,
 - An LL chondrite that is a breccia of petrological types 3.8 to 4.
 
 - **Source:**
-https://www.mindat.org/min-49786.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.8-4, 
+https://www.mindat.org/min-49786.html, 
 
 - Concept URI token: etma:1:1:49786:8
 
@@ -7770,8 +7771,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.8-4,
 - An LL chondrite that is a breccia of petrological types 3.8 to 6.
 
 - **Source:**
-https://www.mindat.org/min-49787.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.8-6, 
+https://www.mindat.org/min-49787.html, 
 
 - Concept URI token: etma:1:1:49787:7
 
@@ -7787,8 +7788,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.8-6,
 - An LL chondrite that is a breccia of petrological types 4 to 6.
 
 - **Source:**
-https://www.mindat.org/min-49788.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4-6, 
+https://www.mindat.org/min-49788.html, 
 
 - Concept URI token: etma:1:1:49788:6
 
@@ -7804,8 +7805,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4-6,
 - An LL chondrite that is a breccia of petrological types 4 to 7.
 
 - **Source:**
-https://www.mindat.org/min-49789.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4-7, 
+https://www.mindat.org/min-49789.html, 
 
 - Concept URI token: etma:1:1:49789:5
 
@@ -7821,8 +7822,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4-7,
 - An LL chondrite that is either petrological type 4, 5 or 6.
 
 - **Source:**
-https://www.mindat.org/min-49790.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4/6, 
+https://www.mindat.org/min-49790.html, 
 
 - Concept URI token: etma:1:1:49790:1
 
@@ -7839,8 +7840,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4/6,
 possibly an LL chondrite.
 
 - **Source:**
-https://www.mindat.org/min-49791.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL6(?), 
+https://www.mindat.org/min-49791.html, 
 
 - Concept URI token: etma:1:1:49791:0
 
@@ -7857,8 +7858,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL6(?),
 possibly an LL chondrite.
 
 - **Source:**
-https://www.mindat.org/min-49792.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL7(?), 
+https://www.mindat.org/min-49792.html, 
 
 - Concept URI token: etma:1:1:49792:9
 
@@ -7874,8 +7875,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL7(?),
 - An LL chondrite that has a petrological type below 3.5.
 
 - **Source:**
-https://www.mindat.org/min-49793.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL<3.5, 
+https://www.mindat.org/min-49793.html, 
 
 - Concept URI token: etma:1:1:49793:8
 
@@ -7891,8 +7892,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL<3.5,
 - An LL chondrite that is approximately of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49794.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL~3, 
+https://www.mindat.org/min-49794.html, 
 
 - Concept URI token: etma:1:1:49794:7
 
@@ -7908,8 +7909,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL~3,
 - An LL chondrite that is approximately of petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49795.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL~4, 
+https://www.mindat.org/min-49795.html, 
 
 - Concept URI token: etma:1:1:49795:6
 
@@ -7925,8 +7926,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL~4,
 - An LL chondrite that is approximately of petrologic type 4 or 5.
 
 - **Source:**
-https://www.mindat.org/min-49796.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL~4/5, 
+https://www.mindat.org/min-49796.html, 
 
 - Concept URI token: etma:1:1:49796:5
 
@@ -7942,8 +7943,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL~4/5,
 - An L chondrite that is approximately of petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49797.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL~5, 
+https://www.mindat.org/min-49797.html, 
 
 - Concept URI token: etma:1:1:49797:4
 
@@ -7959,8 +7960,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL~5,
 - An L chondrite that is approximately of petrologic type 7.
 
 - **Source:**
-https://www.mindat.org/min-49798.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL~6, 
+https://www.mindat.org/min-49798.html, 
 
 - Concept URI token: etma:1:1:49798:3
 
@@ -7976,8 +7977,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL~6,
 - An ordinary chondrite that may an LL chondrite.
 
 - **Source:**
-https://www.mindat.org/min-49799.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL?, 
+https://www.mindat.org/min-49799.html, 
 
 - Concept URI token: etma:1:1:49799:2
 
@@ -7997,8 +7998,8 @@ are indistinct or absent. This term is not used consistently or widely
 accepted in the literature.
 
 - **Source:**
-https://www.mindat.org/min-52394.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL7, 
+https://www.mindat.org/min-52394.html, 
 
 - Concept URI token: etma:1:1:52394:1
 
@@ -8015,8 +8016,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL7,
 petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-52374.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=OC3, 
+https://www.mindat.org/min-52374.html, 
 
 - Concept URI token: etma:1:1:52374:7
 
@@ -8053,8 +8054,8 @@ https://www.mindat.org/min-49800.html
 has not been determined.
 
 - **Source:**
-https://www.mindat.org/min-49802.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E-an, 
+https://www.mindat.org/min-49802.html, 
 
 - Concept URI token: etma:1:1:49802:5
 
@@ -8071,8 +8072,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E-an,
 matrix and for which the petrologic type has not been determined.
 
 - **Source:**
-https://www.mindat.org/min-49803.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E-melt%20breccia, 
+https://www.mindat.org/min-49803.html, 
 
 - Concept URI token: etma:1:1:49803:4
 
@@ -8089,8 +8090,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E-melt%20breccia,
 - An E chondrite that is of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49804.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E3, 
+https://www.mindat.org/min-49804.html, 
 
 - Concept URI token: etma:1:1:49804:3
 
@@ -8111,8 +8112,8 @@ E3-an chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49805.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E3-an, 
+https://www.mindat.org/min-49805.html, 
 
 - Concept URI token: etma:1:1:49805:2
 
@@ -8129,8 +8130,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E3-an,
 - An E chondrite that is of petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49806.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E4, 
+https://www.mindat.org/min-49806.html, 
 
 - Concept URI token: etma:1:1:49806:1
 
@@ -8147,8 +8148,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E4,
 - An E chondrite that is of petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49807.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E5, 
+https://www.mindat.org/min-49807.html, 
 
 - Concept URI token: etma:1:1:49807:0
 
@@ -8169,8 +8170,8 @@ E5-an chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49808.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E5-an, 
+https://www.mindat.org/min-49808.html, 
 
 - Concept URI token: etma:1:1:49808:9
 
@@ -8187,8 +8188,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E5-an,
 - An E chondrite that is of petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49809.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E6, 
+https://www.mindat.org/min-49809.html, 
 
 - Concept URI token: etma:1:1:49809:8
 
@@ -8208,8 +8209,8 @@ mineral assemblage including niningerite (MgS) and perryite (Fe-Ni
 silicide)
 
 - **Source:**
-https://www.mindat.org/min-49810.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH, 
+https://www.mindat.org/min-49810.html, 
 
 - Concept URI token: etma:1:1:49810:4
 
@@ -8226,8 +8227,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH,
 - An EH chondrite that is of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49811.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH3, 
+https://www.mindat.org/min-49811.html, 
 
 - Concept URI token: etma:1:1:49811:3
 
@@ -8245,8 +8246,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH3,
 4 and has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49812.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH3/4-an, 
+https://www.mindat.org/min-49812.html, 
 
 - Concept URI token: etma:1:1:49812:2
 
@@ -8263,8 +8264,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH3/4-an,
 - An EH chondrite that is of petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49813.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH4, 
+https://www.mindat.org/min-49813.html, 
 
 - Concept URI token: etma:1:1:49813:1
 
@@ -8282,8 +8283,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH4,
 4 and has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49812.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH3/4-an, 
+https://www.mindat.org/min-49812.html, 
 
 - Concept URI token: etma:1:1:49812:2
 
@@ -8300,8 +8301,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH3/4-an,
 type 4 or 5.
 
 - **Source:**
-https://www.mindat.org/min-52208.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH4/5, 
+https://www.mindat.org/min-52208.html, 
 
 - Concept URI token: etma:1:1:52208:5
 
@@ -8318,8 +8319,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH4/5,
 - An EH chondrite that is of petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49814.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH5, 
+https://www.mindat.org/min-49814.html, 
 
 - Concept URI token: etma:1:1:49814:0
 
@@ -8336,8 +8337,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH5,
 - An EH chondrite that is of petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49815.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH6, 
+https://www.mindat.org/min-49815.html, 
 
 - Concept URI token: etma:1:1:49815:9
 
@@ -8354,8 +8355,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH6,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49816.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH6-melt%20breccia, 
+https://www.mindat.org/min-49816.html, 
 
 - Concept URI token: etma:1:1:49816:8
 
@@ -8371,8 +8372,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH6-melt%20breccia,
 - An EH chondrite that has been impact melted.
 
 - **Source:**
-https://www.mindat.org/min-49817.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH-imp%20melt, 
+https://www.mindat.org/min-49817.html, 
 
 - Concept URI token: etma:1:1:49817:7
 
@@ -8388,8 +8389,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH-imp%20melt,
 - An EH chondrite that has experienced secondary melting.
 
 - **Source:**
-https://www.mindat.org/min-49818.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH-melt%20rock, 
+https://www.mindat.org/min-49818.html, 
 
 - Concept URI token: etma:1:1:49818:6
 
@@ -8407,8 +8408,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH-melt%20rock,
 type 7 is not used consistently or widely accepted in the literature.
 
 - **Source:**
-https://www.mindat.org/min-49819.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH7, 
+https://www.mindat.org/min-49819.html, 
 
 - Concept URI token: etma:1:1:49819:5
 
@@ -8425,8 +8426,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH7,
 has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-52360.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH7-an, 
+https://www.mindat.org/min-52360.html, 
 
 - Concept URI token: etma:1:1:52360:4
 
@@ -8462,8 +8463,8 @@ https://www.mindat.org/min-49820.html
 - An EL chondrite that has experienced secondary melting.
 
 - **Source:**
-https://www.mindat.org/min-49821.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL-melt%20rock, 
+https://www.mindat.org/min-49821.html, 
 
 - Concept URI token: etma:1:1:49821:0
 
@@ -8480,8 +8481,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL-melt%20rock,
 - An EL chondrite that is petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49822.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL3, 
+https://www.mindat.org/min-49822.html, 
 
 - Concept URI token: etma:1:1:49822:9
 
@@ -8498,8 +8499,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL3,
 - An EL chondrite that is of petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49823.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL4, 
+https://www.mindat.org/min-49823.html, 
 
 - Concept URI token: etma:1:1:49823:8
 
@@ -8516,8 +8517,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL4,
 - An EL chondrite that is of petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49824.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL5, 
+https://www.mindat.org/min-49824.html, 
 
 - Concept URI token: etma:1:1:49824:7
 
@@ -8534,8 +8535,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL5,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49825.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL5-melt%20breccia, 
+https://www.mindat.org/min-49825.html, 
 
 - Concept URI token: etma:1:1:49825:6
 
@@ -8552,8 +8553,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL5-melt%20breccia,
 - An EL chondrite that is of petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49826.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL6, 
+https://www.mindat.org/min-49826.html, 
 
 - Concept URI token: etma:1:1:49826:5
 
@@ -8572,8 +8573,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL6,
 accepted in the literature.
 
 - **Source:**
-https://www.mindat.org/min-49827.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL6/7, 
+https://www.mindat.org/min-49827.html, 
 
 - Concept URI token: etma:1:1:49827:4
 
@@ -8591,8 +8592,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL6/7,
 type 7 is not used consistently or widely accepted in the literature.
 
 - **Source:**
-https://www.mindat.org/min-49828.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL7, 
+https://www.mindat.org/min-49828.html, 
 
 - Concept URI token: etma:1:1:49828:3
 
@@ -8611,8 +8612,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL7,
 accepted in the literature.
 
 - **Source:**
-https://www.mindat.org/min-49827.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL6/7, 
+https://www.mindat.org/min-49827.html, 
 
 - Concept URI token: etma:1:1:49827:4
 
@@ -8637,8 +8638,8 @@ Kakangari chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49829.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=K, 
+https://www.mindat.org/min-49829.html, 
 
 - Concept URI token: etma:1:1:49829:2
 
@@ -8655,8 +8656,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=K,
 - A K chondrite that is petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49831.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=K3, 
+https://www.mindat.org/min-49831.html, 
 
 - Concept URI token: etma:1:1:49831:7
 
@@ -8673,8 +8674,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=K3,
 - A K chondrite that is petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49832.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=K4, 
+https://www.mindat.org/min-49832.html, 
 
 - Concept URI token: etma:1:1:49832:6
 
@@ -8698,8 +8699,8 @@ Rumuruti chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49833.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R, 
+https://www.mindat.org/min-49833.html, 
 
 - Concept URI token: etma:1:1:49833:5
 
@@ -8716,8 +8717,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R,
 - An R chondrite that is petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49835.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3, 
+https://www.mindat.org/min-49835.html, 
 
 - Concept URI token: etma:1:1:49835:3
 
@@ -8734,8 +8735,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3,
 - An R chondrite that is a breccia of type 3 and type 4 components.
 
 - **Source:**
-https://www.mindat.org/min-52209.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-4, 
+https://www.mindat.org/min-52209.html, 
 
 - Concept URI token: etma:1:1:52209:4
 
@@ -8751,8 +8752,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-4,
 - An R chondrite that is a breccia of type 3.5 to type 4 components.
 
 - **Source:**
-https://www.mindat.org/min-52213.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.5-4, 
+https://www.mindat.org/min-52213.html, 
 
 - Concept URI token: etma:1:1:52213:7
 
@@ -8769,8 +8770,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.5-4,
 - An R chondrite that is a breccia of type 3 to type 5 components.
 
 - **Source:**
-https://www.mindat.org/min-52210.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-5, 
+https://www.mindat.org/min-52210.html, 
 
 - Concept URI token: etma:1:1:52210:0
 
@@ -8787,8 +8788,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-5,
 petrologic type 3.8 to type 5.
 
 - **Source:**
-https://www.mindat.org/min-52218.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8-5, 
+https://www.mindat.org/min-52218.html, 
 
 - Concept URI token: etma:1:1:52218:2
 
@@ -8805,8 +8806,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8-5,
 - An R chondrite that is a breccia of type 3 to type 6 components.
 
 - **Source:**
-https://www.mindat.org/min-52211.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-6, 
+https://www.mindat.org/min-52211.html, 
 
 - Concept URI token: etma:1:1:52211:9
 
@@ -8823,8 +8824,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-6,
 petrologic type 3.5 to type 6.
 
 - **Source:**
-https://www.mindat.org/min-52214.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.5-6, 
+https://www.mindat.org/min-52214.html, 
 
 - Concept URI token: etma:1:1:52214:6
 
@@ -8841,8 +8842,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.5-6,
 petrologic type 3.8 to type 6.
 
 - **Source:**
-https://www.mindat.org/min-52219.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8-6, 
+https://www.mindat.org/min-52219.html, 
 
 - Concept URI token: etma:1:1:52219:1
 
@@ -8858,8 +8859,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8-6,
 - An R chondrite that is petrologic type 3.4
 
 - **Source:**
-https://www.mindat.org/min-52212.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.4, 
+https://www.mindat.org/min-52212.html, 
 
 - Concept URI token: etma:1:1:52212:8
 
@@ -8875,8 +8876,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.4,
 - An R chondrite that is petrologic type 3.6
 
 - **Source:**
-https://www.mindat.org/min-52215.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.6, 
+https://www.mindat.org/min-52215.html, 
 
 - Concept URI token: etma:1:1:52215:5
 
@@ -8892,8 +8893,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.6,
 - An R chondrite that is petrologic type 3.7
 
 - **Source:**
-https://www.mindat.org/min-52216.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.7, 
+https://www.mindat.org/min-52216.html, 
 
 - Concept URI token: etma:1:1:52216:4
 
@@ -8909,8 +8910,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.7,
 - An R chondrite that is petrologic type 3.8
 
 - **Source:**
-https://www.mindat.org/min-52217.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8, 
+https://www.mindat.org/min-52217.html, 
 
 - Concept URI token: etma:1:1:52217:3
 
@@ -8926,8 +8927,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8,
 - An R chondrite of petrologic type 3.9
 
 - **Source:**
-https://www.mindat.org/min-52220.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.9, 
+https://www.mindat.org/min-52220.html, 
 
 - Concept URI token: etma:1:1:52220:7
 
@@ -8944,8 +8945,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.9,
 - An R chondrite that is either petrologic type 3 or type 4.
 
 - **Source:**
-https://www.mindat.org/min-52221.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3/4, 
+https://www.mindat.org/min-52221.html, 
 
 - Concept URI token: etma:1:1:52221:6
 
@@ -8962,8 +8963,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3/4,
 - An R chondrite that is petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49836.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4, 
+https://www.mindat.org/min-49836.html, 
 
 - Concept URI token: etma:1:1:49836:2
 
@@ -8980,8 +8981,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4,
 - An R chondrite that is a breccia of type 3 and type 4 components.
 
 - **Source:**
-https://www.mindat.org/min-52209.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-4, 
+https://www.mindat.org/min-52209.html, 
 
 - Concept URI token: etma:1:1:52209:4
 
@@ -8997,8 +8998,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-4,
 - An R chondrite that is a breccia of type 3.5 to type 4 components.
 
 - **Source:**
-https://www.mindat.org/min-52213.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.5-4, 
+https://www.mindat.org/min-52213.html, 
 
 - Concept URI token: etma:1:1:52213:7
 
@@ -9015,8 +9016,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.5-4,
 - An R chondrite that is either petrologic type 3 or type 4.
 
 - **Source:**
-https://www.mindat.org/min-52221.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3/4, 
+https://www.mindat.org/min-52221.html, 
 
 - Concept URI token: etma:1:1:52221:6
 
@@ -9034,8 +9035,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3/4,
 petrologic type 4 to type 5.
 
 - **Source:**
-https://www.mindat.org/min-52222.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4-5, 
+https://www.mindat.org/min-52222.html, 
 
 - Concept URI token: etma:1:1:52222:5
 
@@ -9053,8 +9054,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4-5,
 petrologic type 4 to type 6.
 
 - **Source:**
-https://www.mindat.org/min-52223.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4-6, 
+https://www.mindat.org/min-52223.html, 
 
 - Concept URI token: etma:1:1:52223:4
 
@@ -9071,8 +9072,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4-6,
 - An R chondrite that is either petrologic type 4 or type 5.
 
 - **Source:**
-https://www.mindat.org/min-52224.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4/5, 
+https://www.mindat.org/min-52224.html, 
 
 - Concept URI token: etma:1:1:52224:3
 
@@ -9089,8 +9090,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4/5,
 - An R chondrite that is petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49837.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R5, 
+https://www.mindat.org/min-49837.html, 
 
 - Concept URI token: etma:1:1:49837:1
 
@@ -9107,8 +9108,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R5,
 - An R chondrite that is a breccia of type 3 to type 5 components.
 
 - **Source:**
-https://www.mindat.org/min-52210.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-5, 
+https://www.mindat.org/min-52210.html, 
 
 - Concept URI token: etma:1:1:52210:0
 
@@ -9125,8 +9126,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-5,
 petrologic type 3.8 to type 5.
 
 - **Source:**
-https://www.mindat.org/min-52218.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8-5, 
+https://www.mindat.org/min-52218.html, 
 
 - Concept URI token: etma:1:1:52218:2
 
@@ -9144,8 +9145,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8-5,
 petrologic type 4 to type 5.
 
 - **Source:**
-https://www.mindat.org/min-52222.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4-5, 
+https://www.mindat.org/min-52222.html, 
 
 - Concept URI token: etma:1:1:52222:5
 
@@ -9162,8 +9163,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4-5,
 - An R chondrite that is either petrologic type 4 or type 5.
 
 - **Source:**
-https://www.mindat.org/min-52224.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4/5, 
+https://www.mindat.org/min-52224.html, 
 
 - Concept URI token: etma:1:1:52224:3
 
@@ -9180,8 +9181,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4/5,
 - An R chondrite that is petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49838.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R6, 
+https://www.mindat.org/min-49838.html, 
 
 - Concept URI token: etma:1:1:49838:0
 
@@ -9198,8 +9199,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R6,
 - An R chondrite that is a breccia of type 3 to type 6 components.
 
 - **Source:**
-https://www.mindat.org/min-52211.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-6, 
+https://www.mindat.org/min-52211.html, 
 
 - Concept URI token: etma:1:1:52211:9
 
@@ -9216,8 +9217,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-6,
 petrologic type 3.5 to type 6.
 
 - **Source:**
-https://www.mindat.org/min-52214.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.5-6, 
+https://www.mindat.org/min-52214.html, 
 
 - Concept URI token: etma:1:1:52214:6
 
@@ -9234,8 +9235,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.5-6,
 petrologic type 3.8 to type 6.
 
 - **Source:**
-https://www.mindat.org/min-52219.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8-6, 
+https://www.mindat.org/min-52219.html, 
 
 - Concept URI token: etma:1:1:52219:1
 
@@ -9253,8 +9254,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8-6,
 petrologic type 4 to type 6.
 
 - **Source:**
-https://www.mindat.org/min-52223.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4-6, 
+https://www.mindat.org/min-52223.html, 
 
 - Concept URI token: etma:1:1:52223:4
 
@@ -9326,8 +9327,8 @@ C1-ung chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49522.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C1-ung, 
+https://www.mindat.org/min-49522.html, 
 
 - Concept URI token: etma:1:1:49522:2
 
@@ -9349,8 +9350,8 @@ C1/2-ung chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49523.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C1/2-ung, 
+https://www.mindat.org/min-49523.html, 
 
 - Concept URI token: etma:1:1:49523:1
 
@@ -9367,8 +9368,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C1/2-ung,
 - A CI chondrite that is of petrologic type 1.
 
 - **Source:**
-https://www.mindat.org/min-49542.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CI1, 
+https://www.mindat.org/min-49542.html, 
 
 - Concept URI token: etma:1:1:49542:6
 
@@ -9385,8 +9386,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CI1,
 - A CM chondrite that is of petrologic type 1.
 
 - **Source:**
-https://www.mindat.org/min-49553.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM1, 
+https://www.mindat.org/min-49553.html, 
 
 - Concept URI token: etma:1:1:49553:2
 
@@ -9403,8 +9404,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM1,
 - A CM chondrite that is transitional between petrologic type 1 and 2.
 
 - **Source:**
-https://www.mindat.org/min-49554.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM1/2, 
+https://www.mindat.org/min-49554.html, 
 
 - Concept URI token: etma:1:1:49554:1
 
@@ -9422,8 +9423,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM1/2,
 type 1 and 2.
 
 - **Source:**
-https://www.mindat.org/min-50444.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM1-2, 
+https://www.mindat.org/min-50444.html, 
 
 - Concept URI token: etma:1:1:50444:1
 
@@ -9440,8 +9441,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM1-2,
 - A CR chondrite that is of petrologic type 1.
 
 - **Source:**
-https://www.mindat.org/min-49572.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR1, 
+https://www.mindat.org/min-49572.html, 
 
 - Concept URI token: etma:1:1:49572:7
 
@@ -9476,8 +9477,8 @@ https://www.mindat.org/min-49841.html
 - A C chondrite that is petrologic type 2.
 
 - **Source:**
-https://www.mindat.org/min-49524.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C2, 
+https://www.mindat.org/min-49524.html, 
 
 - Concept URI token: etma:1:1:49524:0
 
@@ -9499,8 +9500,8 @@ C1/2-ung chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49523.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C1/2-ung, 
+https://www.mindat.org/min-49523.html, 
 
 - Concept URI token: etma:1:1:49523:1
 
@@ -9520,8 +9521,8 @@ C2-ung chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49525.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C2-ung, 
+https://www.mindat.org/min-49525.html, 
 
 - Concept URI token: etma:1:1:49525:9
 
@@ -9538,8 +9539,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C2-ung,
 - A CM chondrite that is of petrologic type 2.
 
 - **Source:**
-https://www.mindat.org/min-49557.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM2, 
+https://www.mindat.org/min-49557.html, 
 
 - Concept URI token: etma:1:1:49557:8
 
@@ -9556,8 +9557,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM2,
 - A CM chondrite that is transitional between petrologic type 1 and 2.
 
 - **Source:**
-https://www.mindat.org/min-49554.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM1/2, 
+https://www.mindat.org/min-49554.html, 
 
 - Concept URI token: etma:1:1:49554:1
 
@@ -9578,8 +9579,8 @@ CM2-an chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49558.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM2-an, 
+https://www.mindat.org/min-49558.html, 
 
 - Concept URI token: etma:1:1:49558:7
 
@@ -9597,8 +9598,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM2-an,
 type 1 and 2.
 
 - **Source:**
-https://www.mindat.org/min-50444.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM1-2, 
+https://www.mindat.org/min-50444.html, 
 
 - Concept URI token: etma:1:1:50444:1
 
@@ -9615,8 +9616,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CM1-2,
 - A CR chondrite that is of petrologic type 2.
 
 - **Source:**
-https://www.mindat.org/min-49573.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR2, 
+https://www.mindat.org/min-49573.html, 
 
 - Concept URI token: etma:1:1:49573:6
 
@@ -9637,8 +9638,8 @@ CR2-an chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49574.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR2-an, 
+https://www.mindat.org/min-49574.html, 
 
 - Concept URI token: etma:1:1:49574:5
 
@@ -9655,8 +9656,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR2-an,
 - A CV chondrite that is of petrologic type 2.
 
 - **Source:**
-https://www.mindat.org/min-49578.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CV2, 
+https://www.mindat.org/min-49578.html, 
 
 - Concept URI token: etma:1:1:49578:1
 
@@ -9695,8 +9696,8 @@ https://www.mindat.org/min-49842.html
 - A C chondrite that is petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49526.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C3, 
+https://www.mindat.org/min-49526.html, 
 
 - Concept URI token: etma:1:1:49526:8
 
@@ -9716,8 +9717,8 @@ C3-ung chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49527.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C3-ung, 
+https://www.mindat.org/min-49527.html, 
 
 - Concept URI token: etma:1:1:49527:7
 
@@ -9737,8 +9738,8 @@ C3.0-ung chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49528.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C3.0-ung, 
+https://www.mindat.org/min-49528.html, 
 
 - Concept URI token: etma:1:1:49528:6
 
@@ -9760,8 +9761,8 @@ C3/4-ung chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49529.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C3/4-ung, 
+https://www.mindat.org/min-49529.html, 
 
 - Concept URI token: etma:1:1:49529:5
 
@@ -9778,8 +9779,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C3/4-ung,
 - A CH chondrite that is of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49540.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CH3, 
+https://www.mindat.org/min-49540.html, 
 
 - Concept URI token: etma:1:1:49540:8
 
@@ -9796,8 +9797,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CH3,
 - A CK chondrite that is of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49544.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3, 
+https://www.mindat.org/min-49544.html, 
 
 - Concept URI token: etma:1:1:49544:4
 
@@ -9818,8 +9819,8 @@ CK3-an chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49545.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3-an, 
+https://www.mindat.org/min-49545.html, 
 
 - Concept URI token: etma:1:1:49545:3
 
@@ -9835,8 +9836,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3-an,
 - A CK chondrite that is of petrologic type 3.8.
 
 - **Source:**
-https://www.mindat.org/min-49546.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3.8, 
+https://www.mindat.org/min-49546.html, 
 
 - Concept URI token: etma:1:1:49546:2
 
@@ -9853,8 +9854,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3.8,
 - A CK chondrite that is transitional between petrologic type 3 and 4.
 
 - **Source:**
-https://www.mindat.org/min-49547.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3/4, 
+https://www.mindat.org/min-49547.html, 
 
 - Concept URI token: etma:1:1:49547:1
 
@@ -9872,8 +9873,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3/4,
 petrologic type type 3 to type 6.
 
 - **Source:**
-https://www.mindat.org/min-52203.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3-6, 
+https://www.mindat.org/min-52203.html, 
 
 - Concept URI token: etma:1:1:52203:0
 
@@ -9890,8 +9891,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3-6,
 - A CO chondrite that is of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49560.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3, 
+https://www.mindat.org/min-49560.html, 
 
 - Concept URI token: etma:1:1:49560:2
 
@@ -9907,8 +9908,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3,
 - A CO chondrite that is of petrologic type 3.0.
 
 - **Source:**
-https://www.mindat.org/min-49561.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.0, 
+https://www.mindat.org/min-49561.html, 
 
 - Concept URI token: etma:1:1:49561:1
 
@@ -9924,8 +9925,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.0,
 - A CO chondrite that is of petrologic type 3.1.
 
 - **Source:**
-https://www.mindat.org/min-49562.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.1, 
+https://www.mindat.org/min-49562.html, 
 
 - Concept URI token: etma:1:1:49562:0
 
@@ -9941,8 +9942,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.1,
 - A CO chondrite that is of petrologic type 3.2.
 
 - **Source:**
-https://www.mindat.org/min-49563.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.2, 
+https://www.mindat.org/min-49563.html, 
 
 - Concept URI token: etma:1:1:49563:9
 
@@ -9958,8 +9959,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.2,
 - A CO chondrite that is of petrologic type 3.3.
 
 - **Source:**
-https://www.mindat.org/min-49564.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.3, 
+https://www.mindat.org/min-49564.html, 
 
 - Concept URI token: etma:1:1:49564:8
 
@@ -9975,8 +9976,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.3,
 - A CO chondrite that is of petrologic type 3.4.
 
 - **Source:**
-https://www.mindat.org/min-49565.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.4, 
+https://www.mindat.org/min-49565.html, 
 
 - Concept URI token: etma:1:1:49565:7
 
@@ -9992,8 +9993,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.4,
 - A CO chondrite that is of petrologic type 3.5.
 
 - **Source:**
-https://www.mindat.org/min-49566.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.5, 
+https://www.mindat.org/min-49566.html, 
 
 - Concept URI token: etma:1:1:49566:6
 
@@ -10009,8 +10010,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.5,
 - A CO chondrite that is of petrologic type 3.6.
 
 - **Source:**
-https://www.mindat.org/min-49567.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.6, 
+https://www.mindat.org/min-49567.html, 
 
 - Concept URI token: etma:1:1:49567:5
 
@@ -10026,8 +10027,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.6,
 - A CO chondrite that is of petrologic type 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49568.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.7, 
+https://www.mindat.org/min-49568.html, 
 
 - Concept URI token: etma:1:1:49568:4
 
@@ -10043,8 +10044,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.7,
 - A CO chondrite that is of petrologic type 3.8.
 
 - **Source:**
-https://www.mindat.org/min-49569.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3.8, 
+https://www.mindat.org/min-49569.html, 
 
 - Concept URI token: etma:1:1:49569:3
 
@@ -10077,8 +10078,8 @@ https://www.mindat.org/min-49570.html
 and is a breccia with melted material forming the matrix.
 
 - **Source:**
-https://www.mindat.org/min-52396.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CO3-melt%20breccia, 
+https://www.mindat.org/min-52396.html, 
 
 - Concept URI token: etma:1:1:52396:9
 
@@ -10099,8 +10100,8 @@ CV3 carbonaceous chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49579.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CV3, 
+https://www.mindat.org/min-49579.html, 
 
 - Concept URI token: etma:1:1:49579:0
 
@@ -10117,8 +10118,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CV3,
 properties.
 
 - **Source:**
-https://www.mindat.org/min-49580.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CV3-an, 
+https://www.mindat.org/min-49580.html, 
 
 - Concept URI token: etma:1:1:49580:6
 
@@ -10135,8 +10136,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CV3-an,
 - An H chondrite that is of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49585.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3, 
+https://www.mindat.org/min-49585.html, 
 
 - Concept URI token: etma:1:1:49585:1
 
@@ -10154,8 +10155,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3,
 petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49586.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3, 
+https://www.mindat.org/min-49586.html, 
 
 - Concept URI token: etma:1:1:49586:0
 
@@ -10172,8 +10173,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3,
 petrologic type 3 and has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49595.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3-an, 
+https://www.mindat.org/min-49595.html, 
 
 - Concept URI token: etma:1:1:49595:8
 
@@ -10190,8 +10191,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3-an,
 petrologic type 3.1.
 
 - **Source:**
-https://www.mindat.org/min-49596.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3.1, 
+https://www.mindat.org/min-49596.html, 
 
 - Concept URI token: etma:1:1:49596:7
 
@@ -10208,8 +10209,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3.1,
 - An H chondrite that is transitional between petrologic type 3 and 4.
 
 - **Source:**
-https://www.mindat.org/min-49592.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3/4, 
+https://www.mindat.org/min-49592.html, 
 
 - Concept URI token: etma:1:1:49592:1
 
@@ -10226,8 +10227,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3/4,
 properties.
 
 - **Source:**
-https://www.mindat.org/min-49593.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3-an, 
+https://www.mindat.org/min-49593.html, 
 
 - Concept URI token: etma:1:1:49593:0
 
@@ -10247,8 +10248,8 @@ H.3.05 chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49597.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.0, 
+https://www.mindat.org/min-49597.html, 
 
 - Concept URI token: etma:1:1:49597:6
 
@@ -10265,8 +10266,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.0,
 petrologic type 3.0 to type 3.4
 
 - **Source:**
-https://www.mindat.org/min-49599.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.0-3.4, 
+https://www.mindat.org/min-49599.html, 
 
 - Concept URI token: etma:1:1:49599:4
 
@@ -10287,8 +10288,8 @@ H3.15 chondrite meteorite,
 
 
 - **Source:**
-https://www.mindat.org/min-49600.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.1, 
+https://www.mindat.org/min-49600.html, 
 
 - Concept URI token: etma:1:1:49600:9
 
@@ -10304,8 +10305,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.1,
 - An H chondrite that is petrologic type 3.2.
 
 - **Source:**
-https://www.mindat.org/min-49603.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.2, 
+https://www.mindat.org/min-49603.html, 
 
 - Concept URI token: etma:1:1:49603:6
 
@@ -10322,8 +10323,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.2,
 petrologic type 3.2 to type 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49604.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.2-3.7, 
+https://www.mindat.org/min-49604.html, 
 
 - Concept URI token: etma:1:1:49604:5
 
@@ -10341,8 +10342,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.2-3.7,
 petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49622.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)6, 
+https://www.mindat.org/min-49622.html, 
 
 - Concept URI token: etma:1:1:49622:1
 
@@ -10360,8 +10361,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)6,
 petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49682.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(H)3, 
+https://www.mindat.org/min-49682.html, 
 
 - Concept URI token: etma:1:1:49682:3
 
@@ -10378,8 +10379,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(H)3,
 - An H chondrite or L chondrite that is of petrological type 3.
 
 - **Source:**
-https://www.mindat.org/min-50445.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3, 
+https://www.mindat.org/min-50445.html, 
 
 - Concept URI token: etma:1:1:50445:0
 
@@ -10395,8 +10396,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3,
 - An H chondrite or L chondrite that is of petrological type 3.5.
 
 - **Source:**
-https://www.mindat.org/min-49587.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.5, 
+https://www.mindat.org/min-49587.html, 
 
 - Concept URI token: etma:1:1:49587:9
 
@@ -10412,8 +10413,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.5,
 - An H chondrite or L chondrite that is of petrological type 3.6.
 
 - **Source:**
-https://www.mindat.org/min-49588.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.6, 
+https://www.mindat.org/min-49588.html, 
 
 - Concept URI token: etma:1:1:49588:8
 
@@ -10429,8 +10430,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.6,
 - An H chondrite or L chondrite that is of petrological type 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49589.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.7, 
+https://www.mindat.org/min-49589.html, 
 
 - Concept URI token: etma:1:1:49589:7
 
@@ -10446,8 +10447,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.7,
 - An H chondrite or L chondrite that is of petrological type 3.9.
 
 - **Source:**
-https://www.mindat.org/min-49590.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.9, 
+https://www.mindat.org/min-49590.html, 
 
 - Concept URI token: etma:1:1:49590:3
 
@@ -10465,8 +10466,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.9,
 3 and 4 components.
 
 - **Source:**
-https://www.mindat.org/min-49591.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3-4, 
+https://www.mindat.org/min-49591.html, 
 
 - Concept URI token: etma:1:1:49591:2
 
@@ -10484,8 +10485,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3-4,
 petrologic type 3 to type 4.
 
 - **Source:**
-https://www.mindat.org/min-50446.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3-4, 
+https://www.mindat.org/min-50446.html, 
 
 - Concept URI token: etma:1:1:50446:9
 
@@ -10501,8 +10502,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3-4,
 - An H chondrite that is petrological type 3.5
 
 - **Source:**
-https://www.mindat.org/min-52199.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.5, 
+https://www.mindat.org/min-52199.html, 
 
 - Concept URI token: etma:1:1:52199:8
 
@@ -10518,8 +10519,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.5,
 - An H chondrite that is petrological type 3.4
 
 - **Source:**
-https://www.mindat.org/min-52200.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.4, 
+https://www.mindat.org/min-52200.html, 
 
 - Concept URI token: etma:1:1:52200:3
 
@@ -10535,8 +10536,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.4,
 - An ordinary chondrite from the H group that is petrologic type 3.8
 
 - **Source:**
-https://www.mindat.org/min-52226.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.8, 
+https://www.mindat.org/min-52226.html, 
 
 - Concept URI token: etma:1:1:52226:1
 
@@ -10553,8 +10554,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.8,
 and has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-52395.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.8-an, 
+https://www.mindat.org/min-52395.html, 
 
 - Concept URI token: etma:1:1:52395:0
 
@@ -10570,8 +10571,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.8-an,
 - An ordinary chondrite from the H group that is petrologic type 3.9
 
 - **Source:**
-https://www.mindat.org/min-52227.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.9, 
+https://www.mindat.org/min-52227.html, 
 
 - Concept URI token: etma:1:1:52227:0
 
@@ -10587,8 +10588,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.9,
 - An ordinary chondrite from the H group that is petrologic type 3.6
 
 - **Source:**
-https://www.mindat.org/min-52228.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.6, 
+https://www.mindat.org/min-52228.html, 
 
 - Concept URI token: etma:1:1:52228:9
 
@@ -10604,8 +10605,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.6,
 - An ordinary chondrite from the H group that is petrologic type 3.7
 
 - **Source:**
-https://www.mindat.org/min-52229.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.7, 
+https://www.mindat.org/min-52229.html, 
 
 - Concept URI token: etma:1:1:52229:8
 
@@ -10621,8 +10622,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.7,
 - An H chondrite meteorite that is of petrologic type 3.3
 
 - **Source:**
-https://www.mindat.org/min-52368.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.3, 
+https://www.mindat.org/min-52368.html, 
 
 - Concept URI token: etma:1:1:52368:6
 
@@ -10639,8 +10640,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3.3,
 - An L chondrite that is of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49649.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3, 
+https://www.mindat.org/min-49649.html, 
 
 - Concept URI token: etma:1:1:49649:8
 
@@ -10658,8 +10659,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3,
 petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49586.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3, 
+https://www.mindat.org/min-49586.html, 
 
 - Concept URI token: etma:1:1:49586:0
 
@@ -10676,8 +10677,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3,
 petrologic type 3 and has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49595.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3-an, 
+https://www.mindat.org/min-49595.html, 
 
 - Concept URI token: etma:1:1:49595:8
 
@@ -10694,8 +10695,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3-an,
 petrologic type 3.1.
 
 - **Source:**
-https://www.mindat.org/min-49596.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3.1, 
+https://www.mindat.org/min-49596.html, 
 
 - Concept URI token: etma:1:1:49596:7
 
@@ -10712,8 +10713,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)3.1,
 components that are between 3.0 and 3.9
 
 - **Source:**
-https://www.mindat.org/min-49650.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.0-3.9, 
+https://www.mindat.org/min-49650.html, 
 
 - Concept URI token: etma:1:1:49650:4
 
@@ -10730,8 +10731,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.0-3.9,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49651.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-melt%20breccia, 
+https://www.mindat.org/min-49651.html, 
 
 - Concept URI token: etma:1:1:49651:3
 
@@ -10747,8 +10748,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-melt%20breccia,
 - An L chondrite that is petrologic type 3.0.
 
 - **Source:**
-https://www.mindat.org/min-49652.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.0, 
+https://www.mindat.org/min-49652.html, 
 
 - Concept URI token: etma:1:1:49652:2
 
@@ -10764,8 +10765,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.0,
 - An ordinary chondrite from the L group that is petrologic type 3.00
 
 - **Source:**
-https://www.mindat.org/min-49653.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.00, 
+https://www.mindat.org/min-49653.html, 
 
 - Concept URI token: etma:1:1:49653:1
 
@@ -10781,8 +10782,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.00,
 - An ordinary chondrite from the L group that is petrologic type 3.05
 
 - **Source:**
-https://www.mindat.org/min-49654.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.05, 
+https://www.mindat.org/min-49654.html, 
 
 - Concept URI token: etma:1:1:49654:0
 
@@ -10798,8 +10799,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.05,
 - An L chondrite that is a breccia of petrological types 3.2 to 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49655.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.0-3.7, 
+https://www.mindat.org/min-49655.html, 
 
 - Concept URI token: etma:1:1:49655:9
 
@@ -10815,8 +10816,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.0-3.7,
 - An L chondrite that is petrologic type 3.1.
 
 - **Source:**
-https://www.mindat.org/min-49656.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.1, 
+https://www.mindat.org/min-49656.html, 
 
 - Concept URI token: etma:1:1:49656:8
 
@@ -10832,8 +10833,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.1,
 - An ordinary chondrite from the L group that is petrologic type 3.10
 
 - **Source:**
-https://www.mindat.org/min-49657.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.10, 
+https://www.mindat.org/min-49657.html, 
 
 - Concept URI token: etma:1:1:49657:7
 
@@ -10849,8 +10850,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.10,
 - An ordinary chondrite from the L group that is petrologic type 3.15
 
 - **Source:**
-https://www.mindat.org/min-49658.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.15, 
+https://www.mindat.org/min-49658.html, 
 
 - Concept URI token: etma:1:1:49658:6
 
@@ -10866,8 +10867,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.15,
 - An L chondrite that is petrologic type 3.2.
 
 - **Source:**
-https://www.mindat.org/min-49659.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.2, 
+https://www.mindat.org/min-49659.html, 
 
 - Concept URI token: etma:1:1:49659:5
 
@@ -10883,8 +10884,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.2,
 - An L chondrite that is a breccia of petrological types 3.2 to 3.5.
 
 - **Source:**
-https://www.mindat.org/min-49660.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.2-3.5, 
+https://www.mindat.org/min-49660.html, 
 
 - Concept URI token: etma:1:1:49660:1
 
@@ -10900,8 +10901,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.2-3.5,
 - An L chondrite that is a breccia of petrological types 3.2 to 3.6.
 
 - **Source:**
-https://www.mindat.org/min-49661.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.2-3.6, 
+https://www.mindat.org/min-49661.html, 
 
 - Concept URI token: etma:1:1:49661:0
 
@@ -10917,8 +10918,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.2-3.6,
 - An L chondrite that is petrologic type 3.3.
 
 - **Source:**
-https://www.mindat.org/min-49662.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.3, 
+https://www.mindat.org/min-49662.html, 
 
 - Concept URI token: etma:1:1:49662:9
 
@@ -10934,8 +10935,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.3,
 - An L chondrite that is a breccia of petrological types 3.3 to 3.5.
 
 - **Source:**
-https://www.mindat.org/min-49663.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.3-3.5, 
+https://www.mindat.org/min-49663.html, 
 
 - Concept URI token: etma:1:1:49663:8
 
@@ -10951,8 +10952,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.3-3.5,
 - An L chondrite that is a breccia of petrological types 3.3 to 3.6.
 
 - **Source:**
-https://www.mindat.org/min-49664.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.3-3.6, 
+https://www.mindat.org/min-49664.html, 
 
 - Concept URI token: etma:1:1:49664:7
 
@@ -10968,8 +10969,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.3-3.6,
 - An L chondrite that is a breccia of petrological types 3.3 to 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49665.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.3-3.7, 
+https://www.mindat.org/min-49665.html, 
 
 - Concept URI token: etma:1:1:49665:6
 
@@ -10986,8 +10987,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.3-3.7,
 - An L chondrite that is a breccia of petrological types 3 to 4.
 
 - **Source:**
-https://www.mindat.org/min-49666.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-4, 
+https://www.mindat.org/min-49666.html, 
 
 - Concept URI token: etma:1:1:49666:5
 
@@ -11003,8 +11004,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-4,
 - An L chondrite that is petrologic type 3.5.
 
 - **Source:**
-https://www.mindat.org/min-49667.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5, 
+https://www.mindat.org/min-49667.html, 
 
 - Concept URI token: etma:1:1:49667:4
 
@@ -11020,8 +11021,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5,
 - An L chondrite that is a breccia of petrological types 3.5 tto 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49668.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5-3.7, 
+https://www.mindat.org/min-49668.html, 
 
 - Concept URI token: etma:1:1:49668:3
 
@@ -11037,8 +11038,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5-3.7,
 - An L chondrite that is a breccia of petrological types 3.5 to 3.8.
 
 - **Source:**
-https://www.mindat.org/min-49669.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5-3.8, 
+https://www.mindat.org/min-49669.html, 
 
 - Concept URI token: etma:1:1:49669:2
 
@@ -11054,8 +11055,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5-3.8,
 - An L chondrite that is a breccia of petrological types 3.5 to 3.9.
 
 - **Source:**
-https://www.mindat.org/min-49670.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5-3.9, 
+https://www.mindat.org/min-49670.html, 
 
 - Concept URI token: etma:1:1:49670:8
 
@@ -11071,8 +11072,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.5-3.9,
 - An L chondrite that is petrologic type 3.6.
 
 - **Source:**
-https://www.mindat.org/min-49671.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.6, 
+https://www.mindat.org/min-49671.html, 
 
 - Concept URI token: etma:1:1:49671:7
 
@@ -11088,8 +11089,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.6,
 - An L chondrite that is a breccia of petrological types 3.6 to 4.
 
 - **Source:**
-https://www.mindat.org/min-49672.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.6-4, 
+https://www.mindat.org/min-49672.html, 
 
 - Concept URI token: etma:1:1:49672:6
 
@@ -11105,8 +11106,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.6-4,
 - An L chondrite that is petrologic type 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49673.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7, 
+https://www.mindat.org/min-49673.html, 
 
 - Concept URI token: etma:1:1:49673:5
 
@@ -11123,8 +11124,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7,
 - An L chondrite that is petrologic type 3.7 to 3.8.
 
 - **Source:**
-https://www.mindat.org/min-49674.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7/3.8, 
+https://www.mindat.org/min-49674.html, 
 
 - Concept URI token: etma:1:1:49674:4
 
@@ -11140,8 +11141,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7/3.8,
 - An L chondrite that is a breccia of petrological types 3.7 to 3.9.
 
 - **Source:**
-https://www.mindat.org/min-49675.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7-3.9, 
+https://www.mindat.org/min-49675.html, 
 
 - Concept URI token: etma:1:1:49675:3
 
@@ -11158,8 +11159,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7-3.9,
 - An L chondrite that is a breccia of petrological types 3.7 to 4.
 
 - **Source:**
-https://www.mindat.org/min-49676.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7-4, 
+https://www.mindat.org/min-49676.html, 
 
 - Concept URI token: etma:1:1:49676:2
 
@@ -11175,8 +11176,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7-4,
 - An L chondrite that is petrologic type 3.8.
 
 - **Source:**
-https://www.mindat.org/min-49677.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.8, 
+https://www.mindat.org/min-49677.html, 
 
 - Concept URI token: etma:1:1:49677:1
 
@@ -11193,8 +11194,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.8,
 - An L chondrite that is petrologic type 3.7 to 3.8.
 
 - **Source:**
-https://www.mindat.org/min-49674.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7/3.8, 
+https://www.mindat.org/min-49674.html, 
 
 - Concept URI token: etma:1:1:49674:4
 
@@ -11211,8 +11212,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7/3.8,
 properties.
 
 - **Source:**
-https://www.mindat.org/min-49678.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.8-an, 
+https://www.mindat.org/min-49678.html, 
 
 - Concept URI token: etma:1:1:49678:0
 
@@ -11228,8 +11229,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.8-an,
 - An L chondrite that is petrologic type 3.9.
 
 - **Source:**
-https://www.mindat.org/min-49679.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.9, 
+https://www.mindat.org/min-49679.html, 
 
 - Concept URI token: etma:1:1:49679:9
 
@@ -11246,8 +11247,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.9,
 - An L chondrite that is petrologic type 3.9 to 4.
 
 - **Source:**
-https://www.mindat.org/min-49680.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.9/4, 
+https://www.mindat.org/min-49680.html, 
 
 - Concept URI token: etma:1:1:49680:5
 
@@ -11265,8 +11266,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.9/4,
 petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49682.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(H)3, 
+https://www.mindat.org/min-49682.html, 
 
 - Concept URI token: etma:1:1:49682:3
 
@@ -11283,8 +11284,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(H)3,
 - An H chondrite or L chondrite that is of petrological type 3.
 
 - **Source:**
-https://www.mindat.org/min-50445.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3, 
+https://www.mindat.org/min-50445.html, 
 
 - Concept URI token: etma:1:1:50445:0
 
@@ -11300,8 +11301,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3,
 - An H chondrite or L chondrite that is of petrological type 3.5.
 
 - **Source:**
-https://www.mindat.org/min-49587.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.5, 
+https://www.mindat.org/min-49587.html, 
 
 - Concept URI token: etma:1:1:49587:9
 
@@ -11317,8 +11318,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.5,
 - An H chondrite or L chondrite that is of petrological type 3.6.
 
 - **Source:**
-https://www.mindat.org/min-49588.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.6, 
+https://www.mindat.org/min-49588.html, 
 
 - Concept URI token: etma:1:1:49588:8
 
@@ -11334,8 +11335,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.6,
 - An H chondrite or L chondrite that is of petrological type 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49589.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.7, 
+https://www.mindat.org/min-49589.html, 
 
 - Concept URI token: etma:1:1:49589:7
 
@@ -11351,8 +11352,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.7,
 - An H chondrite or L chondrite that is of petrological type 3.9.
 
 - **Source:**
-https://www.mindat.org/min-49590.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.9, 
+https://www.mindat.org/min-49590.html, 
 
 - Concept URI token: etma:1:1:49590:3
 
@@ -11370,8 +11371,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3.9,
 3 and 4 components.
 
 - **Source:**
-https://www.mindat.org/min-49591.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3-4, 
+https://www.mindat.org/min-49591.html, 
 
 - Concept URI token: etma:1:1:49591:2
 
@@ -11387,8 +11388,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3-4,
 - An L chondrite that is petrologic type 3.4.
 
 - **Source:**
-https://www.mindat.org/min-50450.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.4, 
+https://www.mindat.org/min-50450.html, 
 
 - Concept URI token: etma:1:1:50450:2
 
@@ -11405,8 +11406,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.4,
 - An L chondrite that is petrologic type 3 to 4.
 
 - **Source:**
-https://www.mindat.org/min-50451.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3/4, 
+https://www.mindat.org/min-50451.html, 
 
 - Concept URI token: etma:1:1:50451:1
 
@@ -11424,8 +11425,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3/4,
 petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-50452.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3, 
+https://www.mindat.org/min-50452.html, 
 
 - Concept URI token: etma:1:1:50452:0
 
@@ -11442,8 +11443,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3,
 petrologic type 3.0.
 
 - **Source:**
-https://www.mindat.org/min-49684.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.0, 
+https://www.mindat.org/min-49684.html, 
 
 - Concept URI token: etma:1:1:49684:1
 
@@ -11460,8 +11461,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.0,
 of components ranging from petrologic type 3.5 to 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49686.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.5-3.7, 
+https://www.mindat.org/min-49686.html, 
 
 - Concept URI token: etma:1:1:49686:9
 
@@ -11478,8 +11479,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.5-3.7,
 - An L chondrite or LL chondrite that is of petrological type 3.
 
 - **Source:**
-https://www.mindat.org/min-50453.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3, 
+https://www.mindat.org/min-50453.html, 
 
 - Concept URI token: etma:1:1:50453:9
 
@@ -11495,8 +11496,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3,
 - An L chondrite or LL chondrite that is of petrological type 3.4.
 
 - **Source:**
-https://www.mindat.org/min-49690.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.4, 
+https://www.mindat.org/min-49690.html, 
 
 - Concept URI token: etma:1:1:49690:2
 
@@ -11512,8 +11513,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.4,
 - An L chondrite or LL chondrite that is of petrological type 3.5
 
 - **Source:**
-https://www.mindat.org/min-49692.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.5, 
+https://www.mindat.org/min-49692.html, 
 
 - Concept URI token: etma:1:1:49692:0
 
@@ -11530,8 +11531,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.5,
 or 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49693.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.6/3.7, 
+https://www.mindat.org/min-49693.html, 
 
 - Concept URI token: etma:1:1:49693:9
 
@@ -11547,8 +11548,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.6/3.7,
 - An L chondrite or LL chondrite that is of petrological type 3.2.
 
 - **Source:**
-https://www.mindat.org/min-50455.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.2, 
+https://www.mindat.org/min-50455.html, 
 
 - Concept URI token: etma:1:1:50455:7
 
@@ -11565,8 +11566,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.2,
 - An LL chondrite that is of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49746.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3, 
+https://www.mindat.org/min-49746.html, 
 
 - Concept URI token: etma:1:1:49746:0
 
@@ -11584,8 +11585,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3,
 petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49683.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3, 
+https://www.mindat.org/min-49683.html, 
 
 - Concept URI token: etma:1:1:49683:2
 
@@ -11602,8 +11603,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3,
 LL group that is petrologic type 3.05
 
 - **Source:**
-https://www.mindat.org/min-49685.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.05, 
+https://www.mindat.org/min-49685.html, 
 
 - Concept URI token: etma:1:1:49685:0
 
@@ -11620,8 +11621,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.05,
 petrologic type 3.1.
 
 - **Source:**
-https://www.mindat.org/min-49688.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3.1, 
+https://www.mindat.org/min-49688.html, 
 
 - Concept URI token: etma:1:1:49688:7
 
@@ -11638,8 +11639,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3.1,
 petrologic type 3.2.
 
 - **Source:**
-https://www.mindat.org/min-49689.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3.2, 
+https://www.mindat.org/min-49689.html, 
 
 - Concept URI token: etma:1:1:49689:6
 
@@ -11656,8 +11657,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL(L)3.2,
 petrologic type 3.10
 
 - **Source:**
-https://www.mindat.org/min-49691.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.10, 
+https://www.mindat.org/min-49691.html, 
 
 - Concept URI token: etma:1:1:49691:1
 
@@ -11673,8 +11674,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.10,
 - An L chondrite or LL chondrite that is of petrological type 3.1.
 
 - **Source:**
-https://www.mindat.org/min-50454.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.10, 
+https://www.mindat.org/min-50454.html, 
 
 - Concept URI token: etma:1:1:50454:8
 
@@ -11691,8 +11692,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.10,
 - An LL chondrite that is either petrological type 3 or 4.
 
 - **Source:**
-https://www.mindat.org/min-49750.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3/4, 
+https://www.mindat.org/min-49750.html, 
 
 - Concept URI token: etma:1:1:49750:3
 
@@ -11708,8 +11709,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3/4,
 - An LL chondrite that is petrologic type 3.0.
 
 - **Source:**
-https://www.mindat.org/min-49751.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.0, 
+https://www.mindat.org/min-49751.html, 
 
 - Concept URI token: etma:1:1:49751:2
 
@@ -11725,8 +11726,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.0,
 - An ordinary chondrite from the LL group that is petrologic type 3.00
 
 - **Source:**
-https://www.mindat.org/min-49752.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.00, 
+https://www.mindat.org/min-49752.html, 
 
 - Concept URI token: etma:1:1:49752:1
 
@@ -11742,8 +11743,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.00,
 - An ordinary chondrite from the LL group that is petrologic type 3.05
 
 - **Source:**
-https://www.mindat.org/min-49753.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.05, 
+https://www.mindat.org/min-49753.html, 
 
 - Concept URI token: etma:1:1:49753:0
 
@@ -11759,8 +11760,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.05,
 - An LL chondrite that is petrologic type 3.1.
 
 - **Source:**
-https://www.mindat.org/min-49754.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.1, 
+https://www.mindat.org/min-49754.html, 
 
 - Concept URI token: etma:1:1:49754:9
 
@@ -11777,8 +11778,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.1,
 3.15
 
 - **Source:**
-https://www.mindat.org/min-49756.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.15, 
+https://www.mindat.org/min-49756.html, 
 
 - Concept URI token: etma:1:1:49756:7
 
@@ -11794,8 +11795,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.15,
 - An ordinary chondrite from the LL group that is petrologic type 3.10
 
 - **Source:**
-https://www.mindat.org/min-49755.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.10, 
+https://www.mindat.org/min-49755.html, 
 
 - Concept URI token: etma:1:1:49755:8
 
@@ -11811,8 +11812,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.10,
 - An LL chondrite that is petrologic type 3.2.
 
 - **Source:**
-https://www.mindat.org/min-49757.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.2, 
+https://www.mindat.org/min-49757.html, 
 
 - Concept URI token: etma:1:1:49757:6
 
@@ -11828,8 +11829,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.2,
 - An LL chondrite that is petrologic type 3.3.
 
 - **Source:**
-https://www.mindat.org/min-49758.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.3, 
+https://www.mindat.org/min-49758.html, 
 
 - Concept URI token: etma:1:1:49758:5
 
@@ -11845,8 +11846,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.3,
 - An LL chondrite that is petrologic type 3.5.
 
 - **Source:**
-https://www.mindat.org/min-49760.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.5, 
+https://www.mindat.org/min-49760.html, 
 
 - Concept URI token: etma:1:1:49760:0
 
@@ -11862,8 +11863,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.5,
 - An LL chondrite that is petrologic type 3.6.
 
 - **Source:**
-https://www.mindat.org/min-49761.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.6, 
+https://www.mindat.org/min-49761.html, 
 
 - Concept URI token: etma:1:1:49761:9
 
@@ -11880,8 +11881,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.6,
 - An LL chondrite that is either petrological type 3.6 or 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49762.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.6/3.7, 
+https://www.mindat.org/min-49762.html, 
 
 - Concept URI token: etma:1:1:49762:8
 
@@ -11897,8 +11898,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.6/3.7,
 - An LL chondrite that is petrologic type 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49763.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.7, 
+https://www.mindat.org/min-49763.html, 
 
 - Concept URI token: etma:1:1:49763:7
 
@@ -11915,8 +11916,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.7,
 - An LL chondrite that is either petrological type 3.6 or 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49762.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.6/3.7, 
+https://www.mindat.org/min-49762.html, 
 
 - Concept URI token: etma:1:1:49762:8
 
@@ -11932,8 +11933,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.6/3.7,
 - An LL chondrite that is petrologic type 3.8.
 
 - **Source:**
-https://www.mindat.org/min-49764.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.8, 
+https://www.mindat.org/min-49764.html, 
 
 - Concept URI token: etma:1:1:49764:6
 
@@ -11949,8 +11950,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.8,
 - An LL chondrite that is petrologic type 3.9.
 
 - **Source:**
-https://www.mindat.org/min-49765.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.9, 
+https://www.mindat.org/min-49765.html, 
 
 - Concept URI token: etma:1:1:49765:5
 
@@ -11967,8 +11968,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.9,
 - An LL chondrite that is either petrological type 3.9 or 4.
 
 - **Source:**
-https://www.mindat.org/min-49767.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.9/4, 
+https://www.mindat.org/min-49767.html, 
 
 - Concept URI token: etma:1:1:49767:3
 
@@ -11986,8 +11987,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.9/4,
 petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-50452.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3, 
+https://www.mindat.org/min-50452.html, 
 
 - Concept URI token: etma:1:1:50452:0
 
@@ -12004,8 +12005,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3,
 petrologic type 3.0.
 
 - **Source:**
-https://www.mindat.org/min-49684.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.0, 
+https://www.mindat.org/min-49684.html, 
 
 - Concept URI token: etma:1:1:49684:1
 
@@ -12022,8 +12023,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.0,
 of components ranging from petrologic type 3.5 to 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49686.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.5-3.7, 
+https://www.mindat.org/min-49686.html, 
 
 - Concept URI token: etma:1:1:49686:9
 
@@ -12040,8 +12041,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)3.5-3.7,
 - An L chondrite or LL chondrite that is of petrological type 3.
 
 - **Source:**
-https://www.mindat.org/min-50453.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3, 
+https://www.mindat.org/min-50453.html, 
 
 - Concept URI token: etma:1:1:50453:9
 
@@ -12057,8 +12058,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3,
 - An L chondrite or LL chondrite that is of petrological type 3.4.
 
 - **Source:**
-https://www.mindat.org/min-49690.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.4, 
+https://www.mindat.org/min-49690.html, 
 
 - Concept URI token: etma:1:1:49690:2
 
@@ -12074,8 +12075,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.4,
 - An L chondrite or LL chondrite that is of petrological type 3.5
 
 - **Source:**
-https://www.mindat.org/min-49692.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.5, 
+https://www.mindat.org/min-49692.html, 
 
 - Concept URI token: etma:1:1:49692:0
 
@@ -12092,8 +12093,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.5,
 or 3.7.
 
 - **Source:**
-https://www.mindat.org/min-49693.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.6/3.7, 
+https://www.mindat.org/min-49693.html, 
 
 - Concept URI token: etma:1:1:49693:9
 
@@ -12109,8 +12110,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.6/3.7,
 - An L chondrite or LL chondrite that is of petrological type 3.2.
 
 - **Source:**
-https://www.mindat.org/min-50455.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.2, 
+https://www.mindat.org/min-50455.html, 
 
 - Concept URI token: etma:1:1:50455:7
 
@@ -12127,8 +12128,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL3.2,
 - An LL chondrite that is a breccia of petrological types 3 to 4.
 
 - **Source:**
-https://www.mindat.org/min-50460.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3-4, 
+https://www.mindat.org/min-50460.html, 
 
 - Concept URI token: etma:1:1:50460:9
 
@@ -12144,8 +12145,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3-4,
 - An LL chondrite that is petrologic type 3.4.
 
 - **Source:**
-https://www.mindat.org/min-50461.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.4, 
+https://www.mindat.org/min-50461.html, 
 
 - Concept URI token: etma:1:1:50461:8
 
@@ -12162,8 +12163,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.4,
 - An E chondrite that is of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49804.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E3, 
+https://www.mindat.org/min-49804.html, 
 
 - Concept URI token: etma:1:1:49804:3
 
@@ -12184,8 +12185,8 @@ E3-an chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49805.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E3-an, 
+https://www.mindat.org/min-49805.html, 
 
 - Concept URI token: etma:1:1:49805:2
 
@@ -12202,8 +12203,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E3-an,
 - An EH chondrite that is of petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49811.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH3, 
+https://www.mindat.org/min-49811.html, 
 
 - Concept URI token: etma:1:1:49811:3
 
@@ -12221,8 +12222,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH3,
 4 and has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49812.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH3/4-an, 
+https://www.mindat.org/min-49812.html, 
 
 - Concept URI token: etma:1:1:49812:2
 
@@ -12239,8 +12240,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH3/4-an,
 - An EL chondrite that is petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49822.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL3, 
+https://www.mindat.org/min-49822.html, 
 
 - Concept URI token: etma:1:1:49822:9
 
@@ -12257,8 +12258,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL3,
 - A K chondrite that is petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49831.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=K3, 
+https://www.mindat.org/min-49831.html, 
 
 - Concept URI token: etma:1:1:49831:7
 
@@ -12275,8 +12276,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=K3,
 - An R chondrite that is petrologic type 3.
 
 - **Source:**
-https://www.mindat.org/min-49835.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3, 
+https://www.mindat.org/min-49835.html, 
 
 - Concept URI token: etma:1:1:49835:3
 
@@ -12293,8 +12294,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3,
 - An R chondrite that is a breccia of type 3 and type 4 components.
 
 - **Source:**
-https://www.mindat.org/min-52209.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-4, 
+https://www.mindat.org/min-52209.html, 
 
 - Concept URI token: etma:1:1:52209:4
 
@@ -12310,8 +12311,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-4,
 - An R chondrite that is a breccia of type 3.5 to type 4 components.
 
 - **Source:**
-https://www.mindat.org/min-52213.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.5-4, 
+https://www.mindat.org/min-52213.html, 
 
 - Concept URI token: etma:1:1:52213:7
 
@@ -12328,8 +12329,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.5-4,
 - An R chondrite that is a breccia of type 3 to type 5 components.
 
 - **Source:**
-https://www.mindat.org/min-52210.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-5, 
+https://www.mindat.org/min-52210.html, 
 
 - Concept URI token: etma:1:1:52210:0
 
@@ -12346,8 +12347,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-5,
 petrologic type 3.8 to type 5.
 
 - **Source:**
-https://www.mindat.org/min-52218.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8-5, 
+https://www.mindat.org/min-52218.html, 
 
 - Concept URI token: etma:1:1:52218:2
 
@@ -12364,8 +12365,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8-5,
 - An R chondrite that is a breccia of type 3 to type 6 components.
 
 - **Source:**
-https://www.mindat.org/min-52211.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-6, 
+https://www.mindat.org/min-52211.html, 
 
 - Concept URI token: etma:1:1:52211:9
 
@@ -12382,8 +12383,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-6,
 petrologic type 3.5 to type 6.
 
 - **Source:**
-https://www.mindat.org/min-52214.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.5-6, 
+https://www.mindat.org/min-52214.html, 
 
 - Concept URI token: etma:1:1:52214:6
 
@@ -12400,8 +12401,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.5-6,
 petrologic type 3.8 to type 6.
 
 - **Source:**
-https://www.mindat.org/min-52219.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8-6, 
+https://www.mindat.org/min-52219.html, 
 
 - Concept URI token: etma:1:1:52219:1
 
@@ -12417,8 +12418,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8-6,
 - An R chondrite that is petrologic type 3.4
 
 - **Source:**
-https://www.mindat.org/min-52212.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.4, 
+https://www.mindat.org/min-52212.html, 
 
 - Concept URI token: etma:1:1:52212:8
 
@@ -12434,8 +12435,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.4,
 - An R chondrite that is petrologic type 3.6
 
 - **Source:**
-https://www.mindat.org/min-52215.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.6, 
+https://www.mindat.org/min-52215.html, 
 
 - Concept URI token: etma:1:1:52215:5
 
@@ -12451,8 +12452,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.6,
 - An R chondrite that is petrologic type 3.7
 
 - **Source:**
-https://www.mindat.org/min-52216.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.7, 
+https://www.mindat.org/min-52216.html, 
 
 - Concept URI token: etma:1:1:52216:4
 
@@ -12468,8 +12469,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.7,
 - An R chondrite that is petrologic type 3.8
 
 - **Source:**
-https://www.mindat.org/min-52217.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8, 
+https://www.mindat.org/min-52217.html, 
 
 - Concept URI token: etma:1:1:52217:3
 
@@ -12485,8 +12486,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8,
 - An R chondrite of petrologic type 3.9
 
 - **Source:**
-https://www.mindat.org/min-52220.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.9, 
+https://www.mindat.org/min-52220.html, 
 
 - Concept URI token: etma:1:1:52220:7
 
@@ -12503,8 +12504,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.9,
 - An R chondrite that is either petrologic type 3 or type 4.
 
 - **Source:**
-https://www.mindat.org/min-52221.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3/4, 
+https://www.mindat.org/min-52221.html, 
 
 - Concept URI token: etma:1:1:52221:6
 
@@ -12541,8 +12542,8 @@ https://www.mindat.org/min-49843.html
 - A C chondrite that is petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49530.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C4, 
+https://www.mindat.org/min-49530.html, 
 
 - Concept URI token: etma:1:1:49530:1
 
@@ -12564,8 +12565,8 @@ C3/4-ung chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49529.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C3/4-ung, 
+https://www.mindat.org/min-49529.html, 
 
 - Concept URI token: etma:1:1:49529:5
 
@@ -12581,8 +12582,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C3/4-ung,
 - A C chondrite that is petrologic type 4, ungrouped.
 
 - **Source:**
-https://www.mindat.org/min-49531.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C4-ung, 
+https://www.mindat.org/min-49531.html, 
 
 - Concept URI token: etma:1:1:49531:0
 
@@ -12599,8 +12600,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C4-ung,
 - A C chondrite that is transitional between petrologic type 4 and 5.
 
 - **Source:**
-https://www.mindat.org/min-49532.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C4/5, 
+https://www.mindat.org/min-49532.html, 
 
 - Concept URI token: etma:1:1:49532:9
 
@@ -12617,8 +12618,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C4/5,
 - A CK chondrite that is of petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49548.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK4, 
+https://www.mindat.org/min-49548.html, 
 
 - Concept URI token: etma:1:1:49548:0
 
@@ -12635,8 +12636,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK4,
 - A CK chondrite that is transitional between petrologic type 3 and 4.
 
 - **Source:**
-https://www.mindat.org/min-49547.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3/4, 
+https://www.mindat.org/min-49547.html, 
 
 - Concept URI token: etma:1:1:49547:1
 
@@ -12657,8 +12658,8 @@ CK4-an chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49549.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK4-an, 
+https://www.mindat.org/min-49549.html, 
 
 - Concept URI token: etma:1:1:49549:9
 
@@ -12676,8 +12677,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK4-an,
 type 4 or type 5.
 
 - **Source:**
-https://www.mindat.org/min-52205.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK4/5, 
+https://www.mindat.org/min-52205.html, 
 
 - Concept URI token: etma:1:1:52205:8
 
@@ -12694,8 +12695,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK4/5,
 - An H chondrite that is of petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49606.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4, 
+https://www.mindat.org/min-49606.html, 
 
 - Concept URI token: etma:1:1:49606:3
 
@@ -12712,8 +12713,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4,
 - An H chondrite that is transitional between petrologic type 3 and 4.
 
 - **Source:**
-https://www.mindat.org/min-49592.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3/4, 
+https://www.mindat.org/min-49592.html, 
 
 - Concept URI token: etma:1:1:49592:1
 
@@ -12730,8 +12731,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3/4,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49607.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4-melt%20breccia, 
+https://www.mindat.org/min-49607.html, 
 
 - Concept URI token: etma:1:1:49607:2
 
@@ -12748,8 +12749,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4-melt%20breccia,
 properties.
 
 - **Source:**
-https://www.mindat.org/min-49608.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4-an, 
+https://www.mindat.org/min-49608.html, 
 
 - Concept URI token: etma:1:1:49608:1
 
@@ -12766,8 +12767,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4-an,
 - An H chondrite or L chondrite that is of petrological type 4.
 
 - **Source:**
-https://www.mindat.org/min-49609.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4, 
+https://www.mindat.org/min-49609.html, 
 
 - Concept URI token: etma:1:1:49609:0
 
@@ -12785,8 +12786,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4,
 3 and 4 components.
 
 - **Source:**
-https://www.mindat.org/min-49591.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3-4, 
+https://www.mindat.org/min-49591.html, 
 
 - Concept URI token: etma:1:1:49591:2
 
@@ -12804,8 +12805,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3-4,
 petrological types 4 and 5.
 
 - **Source:**
-https://www.mindat.org/min-49610.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4/5, 
+https://www.mindat.org/min-49610.html, 
 
 - Concept URI token: etma:1:1:49610:6
 
@@ -12823,8 +12824,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4/5,
 4 and 5 components.
 
 - **Source:**
-https://www.mindat.org/min-50447.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4-5, 
+https://www.mindat.org/min-50447.html, 
 
 - Concept URI token: etma:1:1:50447:8
 
@@ -12841,8 +12842,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4-5,
 5.
 
 - **Source:**
-https://www.mindat.org/min-49612.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4/5, 
+https://www.mindat.org/min-49612.html, 
 
 - Concept URI token: etma:1:1:49612:4
 
@@ -12860,8 +12861,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4/5,
 petrologic type 3 to type 4.
 
 - **Source:**
-https://www.mindat.org/min-50446.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3-4, 
+https://www.mindat.org/min-50446.html, 
 
 - Concept URI token: etma:1:1:50446:9
 
@@ -12878,8 +12879,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H3-4,
 components.
 
 - **Source:**
-https://www.mindat.org/min-50448.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4-5, 
+https://www.mindat.org/min-50448.html, 
 
 - Concept URI token: etma:1:1:50448:7
 
@@ -12896,8 +12897,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H4-5,
 - An L chondrite that is of petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49695.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4, 
+https://www.mindat.org/min-49695.html, 
 
 - Concept URI token: etma:1:1:49695:7
 
@@ -12914,8 +12915,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4,
 - An H chondrite or L chondrite that is of petrological type 4.
 
 - **Source:**
-https://www.mindat.org/min-49609.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4, 
+https://www.mindat.org/min-49609.html, 
 
 - Concept URI token: etma:1:1:49609:0
 
@@ -12933,8 +12934,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4,
 3 and 4 components.
 
 - **Source:**
-https://www.mindat.org/min-49591.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3-4, 
+https://www.mindat.org/min-49591.html, 
 
 - Concept URI token: etma:1:1:49591:2
 
@@ -12952,8 +12953,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L3-4,
 petrological types 4 and 5.
 
 - **Source:**
-https://www.mindat.org/min-49610.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4/5, 
+https://www.mindat.org/min-49610.html, 
 
 - Concept URI token: etma:1:1:49610:6
 
@@ -12971,8 +12972,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4/5,
 4 and 5 components.
 
 - **Source:**
-https://www.mindat.org/min-50447.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4-5, 
+https://www.mindat.org/min-50447.html, 
 
 - Concept URI token: etma:1:1:50447:8
 
@@ -12989,8 +12990,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4-5,
 - An L chondrite that is a breccia of petrological types 3 to 4.
 
 - **Source:**
-https://www.mindat.org/min-49666.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-4, 
+https://www.mindat.org/min-49666.html, 
 
 - Concept URI token: etma:1:1:49666:5
 
@@ -13007,8 +13008,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3-4,
 - An L chondrite that is a breccia of petrological types 3.7 to 4.
 
 - **Source:**
-https://www.mindat.org/min-49676.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7-4, 
+https://www.mindat.org/min-49676.html, 
 
 - Concept URI token: etma:1:1:49676:2
 
@@ -13025,8 +13026,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.7-4,
 - An L chondrite that is petrologic type 3.9 to 4.
 
 - **Source:**
-https://www.mindat.org/min-49680.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.9/4, 
+https://www.mindat.org/min-49680.html, 
 
 - Concept URI token: etma:1:1:49680:5
 
@@ -13043,8 +13044,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3.9/4,
 properties.
 
 - **Source:**
-https://www.mindat.org/min-49696.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-an, 
+https://www.mindat.org/min-49696.html, 
 
 - Concept URI token: etma:1:1:49696:6
 
@@ -13061,8 +13062,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-an,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49697.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-melt%20breccia, 
+https://www.mindat.org/min-49697.html, 
 
 - Concept URI token: etma:1:1:49697:5
 
@@ -13078,8 +13079,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-melt%20breccia,
 - An L4 chondrite that has experienced secondary melting.
 
 - **Source:**
-https://www.mindat.org/min-49698.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-melt%20rock, 
+https://www.mindat.org/min-49698.html, 
 
 - Concept URI token: etma:1:1:49698:4
 
@@ -13096,8 +13097,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-melt%20rock,
 - An L chondrite or LL chondrite that is of petrological type 4.
 
 - **Source:**
-https://www.mindat.org/min-49699.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL4, 
+https://www.mindat.org/min-49699.html, 
 
 - Concept URI token: etma:1:1:49699:3
 
@@ -13114,8 +13115,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL4,
 - An L chondrite that is petrologic type 4 to 5.
 
 - **Source:**
-https://www.mindat.org/min-49700.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4/5, 
+https://www.mindat.org/min-49700.html, 
 
 - Concept URI token: etma:1:1:49700:8
 
@@ -13132,8 +13133,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4/5,
 - An L chondrite that is petrologic type 3 to 4.
 
 - **Source:**
-https://www.mindat.org/min-50451.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3/4, 
+https://www.mindat.org/min-50451.html, 
 
 - Concept URI token: etma:1:1:50451:1
 
@@ -13150,8 +13151,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L3/4,
 - An L chondrite that is a breccia of petrological types 4 to 5.
 
 - **Source:**
-https://www.mindat.org/min-50456.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-5, 
+https://www.mindat.org/min-50456.html, 
 
 - Concept URI token: etma:1:1:50456:6
 
@@ -13168,8 +13169,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-5,
 - An LL chondrite that is of petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49768.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4, 
+https://www.mindat.org/min-49768.html, 
 
 - Concept URI token: etma:1:1:49768:2
 
@@ -13186,8 +13187,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4,
 - An L chondrite or LL chondrite that is of petrological type 4.
 
 - **Source:**
-https://www.mindat.org/min-49699.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL4, 
+https://www.mindat.org/min-49699.html, 
 
 - Concept URI token: etma:1:1:49699:3
 
@@ -13204,8 +13205,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL4,
 - An LL chondrite that is either petrological type 3 or 4.
 
 - **Source:**
-https://www.mindat.org/min-49750.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3/4, 
+https://www.mindat.org/min-49750.html, 
 
 - Concept URI token: etma:1:1:49750:3
 
@@ -13222,8 +13223,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3/4,
 - An LL chondrite that is either petrological type 3.9 or 4.
 
 - **Source:**
-https://www.mindat.org/min-49767.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.9/4, 
+https://www.mindat.org/min-49767.html, 
 
 - Concept URI token: etma:1:1:49767:3
 
@@ -13240,8 +13241,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3.9/4,
 - An LL chondrite that is either petrological type 4 or 5.
 
 - **Source:**
-https://www.mindat.org/min-49769.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4/5, 
+https://www.mindat.org/min-49769.html, 
 
 - Concept URI token: etma:1:1:49769:1
 
@@ -13258,8 +13259,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4/5,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49770.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4-melt%20breccia, 
+https://www.mindat.org/min-49770.html, 
 
 - Concept URI token: etma:1:1:49770:7
 
@@ -13276,8 +13277,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4-melt%20breccia,
 - An LL chondrite that is a breccia of petrological types 3 to 4.
 
 - **Source:**
-https://www.mindat.org/min-50460.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3-4, 
+https://www.mindat.org/min-50460.html, 
 
 - Concept URI token: etma:1:1:50460:9
 
@@ -13294,8 +13295,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL3-4,
 - An LL chondrite that is a breccia of petrological types 4 to 5.
 
 - **Source:**
-https://www.mindat.org/min-50462.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4-5, 
+https://www.mindat.org/min-50462.html, 
 
 - Concept URI token: etma:1:1:50462:7
 
@@ -13312,8 +13313,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4-5,
 - An E chondrite that is of petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49806.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E4, 
+https://www.mindat.org/min-49806.html, 
 
 - Concept URI token: etma:1:1:49806:1
 
@@ -13330,8 +13331,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E4,
 - An EH chondrite that is of petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49813.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH4, 
+https://www.mindat.org/min-49813.html, 
 
 - Concept URI token: etma:1:1:49813:1
 
@@ -13349,8 +13350,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH4,
 4 and has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49812.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH3/4-an, 
+https://www.mindat.org/min-49812.html, 
 
 - Concept URI token: etma:1:1:49812:2
 
@@ -13367,8 +13368,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH3/4-an,
 type 4 or 5.
 
 - **Source:**
-https://www.mindat.org/min-52208.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH4/5, 
+https://www.mindat.org/min-52208.html, 
 
 - Concept URI token: etma:1:1:52208:5
 
@@ -13385,8 +13386,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH4/5,
 - An EL chondrite that is of petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49823.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL4, 
+https://www.mindat.org/min-49823.html, 
 
 - Concept URI token: etma:1:1:49823:8
 
@@ -13403,8 +13404,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL4,
 - A K chondrite that is petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49832.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=K4, 
+https://www.mindat.org/min-49832.html, 
 
 - Concept URI token: etma:1:1:49832:6
 
@@ -13421,8 +13422,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=K4,
 - An R chondrite that is petrologic type 4.
 
 - **Source:**
-https://www.mindat.org/min-49836.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4, 
+https://www.mindat.org/min-49836.html, 
 
 - Concept URI token: etma:1:1:49836:2
 
@@ -13439,8 +13440,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4,
 - An R chondrite that is a breccia of type 3 and type 4 components.
 
 - **Source:**
-https://www.mindat.org/min-52209.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-4, 
+https://www.mindat.org/min-52209.html, 
 
 - Concept URI token: etma:1:1:52209:4
 
@@ -13456,8 +13457,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-4,
 - An R chondrite that is a breccia of type 3.5 to type 4 components.
 
 - **Source:**
-https://www.mindat.org/min-52213.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.5-4, 
+https://www.mindat.org/min-52213.html, 
 
 - Concept URI token: etma:1:1:52213:7
 
@@ -13474,8 +13475,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.5-4,
 - An R chondrite that is either petrologic type 3 or type 4.
 
 - **Source:**
-https://www.mindat.org/min-52221.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3/4, 
+https://www.mindat.org/min-52221.html, 
 
 - Concept URI token: etma:1:1:52221:6
 
@@ -13493,8 +13494,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3/4,
 petrologic type 4 to type 5.
 
 - **Source:**
-https://www.mindat.org/min-52222.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4-5, 
+https://www.mindat.org/min-52222.html, 
 
 - Concept URI token: etma:1:1:52222:5
 
@@ -13512,8 +13513,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4-5,
 petrologic type 4 to type 6.
 
 - **Source:**
-https://www.mindat.org/min-52223.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4-6, 
+https://www.mindat.org/min-52223.html, 
 
 - Concept URI token: etma:1:1:52223:4
 
@@ -13530,8 +13531,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4-6,
 - An R chondrite that is either petrologic type 4 or type 5.
 
 - **Source:**
-https://www.mindat.org/min-52224.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4/5, 
+https://www.mindat.org/min-52224.html, 
 
 - Concept URI token: etma:1:1:52224:3
 
@@ -13584,8 +13585,8 @@ https://www.mindat.org/min-49533.html
 - A C chondrite that is transitional between petrologic type 4 and 5.
 
 - **Source:**
-https://www.mindat.org/min-49532.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C4/5, 
+https://www.mindat.org/min-49532.html, 
 
 - Concept URI token: etma:1:1:49532:9
 
@@ -13603,8 +13604,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C4/5,
 ungrouped
 
 - **Source:**
-https://www.mindat.org/min-49534.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C5/6-ung, 
+https://www.mindat.org/min-49534.html, 
 
 - Concept URI token: etma:1:1:49534:7
 
@@ -13621,8 +13622,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C5/6-ung,
 - A CK chondrite that is of petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49550.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK5, 
+https://www.mindat.org/min-49550.html, 
 
 - Concept URI token: etma:1:1:49550:5
 
@@ -13640,8 +13641,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK5,
 type 4 or type 5.
 
 - **Source:**
-https://www.mindat.org/min-52205.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK4/5, 
+https://www.mindat.org/min-52205.html, 
 
 - Concept URI token: etma:1:1:52205:8
 
@@ -13662,8 +13663,8 @@ CK5-an chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-52206.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK5-an, 
+https://www.mindat.org/min-52206.html, 
 
 - Concept URI token: etma:1:1:52206:7
 
@@ -13681,8 +13682,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK5-an,
 type 5 or type 6.
 
 - **Source:**
-https://www.mindat.org/min-52207.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK5/6, 
+https://www.mindat.org/min-52207.html, 
 
 - Concept URI token: etma:1:1:52207:6
 
@@ -13699,8 +13700,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK5/6,
 - An H chondrite that is of petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49614.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5, 
+https://www.mindat.org/min-49614.html, 
 
 - Concept URI token: etma:1:1:49614:2
 
@@ -13717,8 +13718,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5,
 properties.
 
 - **Source:**
-https://www.mindat.org/min-49615.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5-an, 
+https://www.mindat.org/min-49615.html, 
 
 - Concept URI token: etma:1:1:49615:1
 
@@ -13735,8 +13736,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5-an,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49616.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5-melt%20breccia, 
+https://www.mindat.org/min-49616.html, 
 
 - Concept URI token: etma:1:1:49616:0
 
@@ -13752,8 +13753,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5-melt%20breccia,
 - An H chondrite or L chondrite that is of petrological type 5.
 
 - **Source:**
-https://www.mindat.org/min-49617.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L5, 
+https://www.mindat.org/min-49617.html, 
 
 - Concept URI token: etma:1:1:49617:9
 
@@ -13771,8 +13772,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L5,
 petrological types 4 and 5.
 
 - **Source:**
-https://www.mindat.org/min-49610.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4/5, 
+https://www.mindat.org/min-49610.html, 
 
 - Concept URI token: etma:1:1:49610:6
 
@@ -13790,8 +13791,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4/5,
 4 and 5 components.
 
 - **Source:**
-https://www.mindat.org/min-50447.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4-5, 
+https://www.mindat.org/min-50447.html, 
 
 - Concept URI token: etma:1:1:50447:8
 
@@ -13808,8 +13809,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L4-5,
 components.
 
 - **Source:**
-https://www.mindat.org/min-49618.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5-6, 
+https://www.mindat.org/min-49618.html, 
 
 - Concept URI token: etma:1:1:49618:8
 
@@ -13826,8 +13827,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H5-6,
 - An L chondrite that is of petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49702.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5, 
+https://www.mindat.org/min-49702.html, 
 
 - Concept URI token: etma:1:1:49702:6
 
@@ -13844,8 +13845,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5,
 - An L chondrite that is petrologic type 4 to 5.
 
 - **Source:**
-https://www.mindat.org/min-49700.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4/5, 
+https://www.mindat.org/min-49700.html, 
 
 - Concept URI token: etma:1:1:49700:8
 
@@ -13862,8 +13863,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4/5,
 - An L chondrite or LL chondrite that is of petrological type 5.
 
 - **Source:**
-https://www.mindat.org/min-49703.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5, 
+https://www.mindat.org/min-49703.html, 
 
 - Concept URI token: etma:1:1:49703:5
 
@@ -13881,8 +13882,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5,
 6.
 
 - **Source:**
-https://www.mindat.org/min-49705.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5/6, 
+https://www.mindat.org/min-49705.html, 
 
 - Concept URI token: etma:1:1:49705:3
 
@@ -13900,8 +13901,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5/6,
 of components ranging from petrologic type 5 to 6.
 
 - **Source:**
-https://www.mindat.org/min-50458.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5-6, 
+https://www.mindat.org/min-50458.html, 
 
 - Concept URI token: etma:1:1:50458:4
 
@@ -13919,8 +13920,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5-6,
 petrologic type 5 to 6.
 
 - **Source:**
-https://www.mindat.org/min-49707.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5-6, 
+https://www.mindat.org/min-49707.html, 
 
 - Concept URI token: etma:1:1:49707:1
 
@@ -13937,8 +13938,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5-6,
 - An L chondrite that is either petrological type 5 or 6.
 
 - **Source:**
-https://www.mindat.org/min-49708.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5/6, 
+https://www.mindat.org/min-49708.html, 
 
 - Concept URI token: etma:1:1:49708:0
 
@@ -13955,8 +13956,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5/6,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49709.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5-melt%20breccia, 
+https://www.mindat.org/min-49709.html, 
 
 - Concept URI token: etma:1:1:49709:9
 
@@ -13973,8 +13974,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5-melt%20breccia,
 - An L chondrite that is a breccia of petrological types 4 to 5.
 
 - **Source:**
-https://www.mindat.org/min-50456.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-5, 
+https://www.mindat.org/min-50456.html, 
 
 - Concept URI token: etma:1:1:50456:6
 
@@ -13992,8 +13993,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L4-5,
 petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-50457.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)5, 
+https://www.mindat.org/min-50457.html, 
 
 - Concept URI token: etma:1:1:50457:5
 
@@ -14010,8 +14011,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)5,
 - An LL chondrite that is of petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49772.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5, 
+https://www.mindat.org/min-49772.html, 
 
 - Concept URI token: etma:1:1:49772:5
 
@@ -14028,8 +14029,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5,
 - An L chondrite or LL chondrite that is of petrological type 5.
 
 - **Source:**
-https://www.mindat.org/min-49703.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5, 
+https://www.mindat.org/min-49703.html, 
 
 - Concept URI token: etma:1:1:49703:5
 
@@ -14047,8 +14048,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5,
 6.
 
 - **Source:**
-https://www.mindat.org/min-49705.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5/6, 
+https://www.mindat.org/min-49705.html, 
 
 - Concept URI token: etma:1:1:49705:3
 
@@ -14066,8 +14067,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5/6,
 of components ranging from petrologic type 5 to 6.
 
 - **Source:**
-https://www.mindat.org/min-50458.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5-6, 
+https://www.mindat.org/min-50458.html, 
 
 - Concept URI token: etma:1:1:50458:4
 
@@ -14084,8 +14085,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5-6,
 - An LL chondrite that is either petrological type 4 or 5.
 
 - **Source:**
-https://www.mindat.org/min-49769.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4/5, 
+https://www.mindat.org/min-49769.html, 
 
 - Concept URI token: etma:1:1:49769:1
 
@@ -14102,8 +14103,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4/5,
 - An LL chondrite that is either petrological type 5 or 6.
 
 - **Source:**
-https://www.mindat.org/min-49773.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5/6, 
+https://www.mindat.org/min-49773.html, 
 
 - Concept URI token: etma:1:1:49773:4
 
@@ -14120,8 +14121,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5/6,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49774.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5-melt%20breccia, 
+https://www.mindat.org/min-49774.html, 
 
 - Concept URI token: etma:1:1:49774:3
 
@@ -14139,8 +14140,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5-melt%20breccia,
 petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-50457.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)5, 
+https://www.mindat.org/min-50457.html, 
 
 - Concept URI token: etma:1:1:50457:5
 
@@ -14157,8 +14158,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)5,
 - An LL chondrite that is a breccia of petrological types 4 to 5.
 
 - **Source:**
-https://www.mindat.org/min-50462.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4-5, 
+https://www.mindat.org/min-50462.html, 
 
 - Concept URI token: etma:1:1:50462:7
 
@@ -14175,8 +14176,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL4-5,
 - An LL chondrite that is a breccia of petrological types 5 to 6.
 
 - **Source:**
-https://www.mindat.org/min-50463.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5-6, 
+https://www.mindat.org/min-50463.html, 
 
 - Concept URI token: etma:1:1:50463:6
 
@@ -14193,8 +14194,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5-6,
 - An E chondrite that is of petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49807.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E5, 
+https://www.mindat.org/min-49807.html, 
 
 - Concept URI token: etma:1:1:49807:0
 
@@ -14215,8 +14216,8 @@ E5-an chondrite meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49808.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E5-an, 
+https://www.mindat.org/min-49808.html, 
 
 - Concept URI token: etma:1:1:49808:9
 
@@ -14233,8 +14234,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E5-an,
 - An EH chondrite that is of petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49814.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH5, 
+https://www.mindat.org/min-49814.html, 
 
 - Concept URI token: etma:1:1:49814:0
 
@@ -14251,8 +14252,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH5,
 - An EL chondrite that is of petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49824.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL5, 
+https://www.mindat.org/min-49824.html, 
 
 - Concept URI token: etma:1:1:49824:7
 
@@ -14269,8 +14270,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL5,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49825.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL5-melt%20breccia, 
+https://www.mindat.org/min-49825.html, 
 
 - Concept URI token: etma:1:1:49825:6
 
@@ -14287,8 +14288,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL5-melt%20breccia,
 - An R chondrite that is petrologic type 5.
 
 - **Source:**
-https://www.mindat.org/min-49837.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R5, 
+https://www.mindat.org/min-49837.html, 
 
 - Concept URI token: etma:1:1:49837:1
 
@@ -14305,8 +14306,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R5,
 - An R chondrite that is a breccia of type 3 to type 5 components.
 
 - **Source:**
-https://www.mindat.org/min-52210.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-5, 
+https://www.mindat.org/min-52210.html, 
 
 - Concept URI token: etma:1:1:52210:0
 
@@ -14323,8 +14324,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-5,
 petrologic type 3.8 to type 5.
 
 - **Source:**
-https://www.mindat.org/min-52218.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8-5, 
+https://www.mindat.org/min-52218.html, 
 
 - Concept URI token: etma:1:1:52218:2
 
@@ -14342,8 +14343,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8-5,
 petrologic type 4 to type 5.
 
 - **Source:**
-https://www.mindat.org/min-52222.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4-5, 
+https://www.mindat.org/min-52222.html, 
 
 - Concept URI token: etma:1:1:52222:5
 
@@ -14360,8 +14361,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4-5,
 - An R chondrite that is either petrologic type 4 or type 5.
 
 - **Source:**
-https://www.mindat.org/min-52224.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4/5, 
+https://www.mindat.org/min-52224.html, 
 
 - Concept URI token: etma:1:1:52224:3
 
@@ -14398,8 +14399,8 @@ https://www.mindat.org/min-49845.html
 - A C chondrite that is petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49535.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C6, 
+https://www.mindat.org/min-49535.html, 
 
 - Concept URI token: etma:1:1:49535:6
 
@@ -14417,8 +14418,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C6,
 ungrouped
 
 - **Source:**
-https://www.mindat.org/min-49534.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C5/6-ung, 
+https://www.mindat.org/min-49534.html, 
 
 - Concept URI token: etma:1:1:49534:7
 
@@ -14435,8 +14436,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=C5/6-ung,
 - A CK chondrite that is of petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49551.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK6, 
+https://www.mindat.org/min-49551.html, 
 
 - Concept URI token: etma:1:1:49551:4
 
@@ -14454,8 +14455,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK6,
 petrologic type type 3 to type 6.
 
 - **Source:**
-https://www.mindat.org/min-52203.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3-6, 
+https://www.mindat.org/min-52203.html, 
 
 - Concept URI token: etma:1:1:52203:0
 
@@ -14473,8 +14474,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK3-6,
 type 5 or type 6.
 
 - **Source:**
-https://www.mindat.org/min-52207.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK5/6, 
+https://www.mindat.org/min-52207.html, 
 
 - Concept URI token: etma:1:1:52207:6
 
@@ -14491,8 +14492,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CK5/6,
 - A CR chondrite that is of petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49575.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR6, 
+https://www.mindat.org/min-49575.html, 
 
 - Concept URI token: etma:1:1:49575:4
 
@@ -14509,8 +14510,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR6,
 - An H chondrite that is of petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49619.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H6, 
+https://www.mindat.org/min-49619.html, 
 
 - Concept URI token: etma:1:1:49619:7
 
@@ -14527,8 +14528,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H6,
 properties.
 
 - **Source:**
-https://www.mindat.org/min-49620.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H6-an, 
+https://www.mindat.org/min-49620.html, 
 
 - Concept URI token: etma:1:1:49620:3
 
@@ -14545,8 +14546,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H6-an,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49621.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H6-melt%20breccia, 
+https://www.mindat.org/min-49621.html, 
 
 - Concept URI token: etma:1:1:49621:2
 
@@ -14563,8 +14564,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H6-melt%20breccia,
 - An H chondrite or L chondrite that is of petrological type 6.
 
 - **Source:**
-https://www.mindat.org/min-50449.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L6, 
+https://www.mindat.org/min-50449.html, 
 
 - Concept URI token: etma:1:1:50449:6
 
@@ -14581,8 +14582,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L6,
 experienced secondary melting.
 
 - **Source:**
-https://www.mindat.org/min-49623.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L6-melt%20rock, 
+https://www.mindat.org/min-49623.html, 
 
 - Concept URI token: etma:1:1:49623:0
 
@@ -14599,8 +14600,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L6-melt%20rock,
 - An L chondrite that is of petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49710.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6, 
+https://www.mindat.org/min-49710.html, 
 
 - Concept URI token: etma:1:1:49710:5
 
@@ -14618,8 +14619,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6,
 petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49622.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)6, 
+https://www.mindat.org/min-49622.html, 
 
 - Concept URI token: etma:1:1:49622:1
 
@@ -14637,8 +14638,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H(L)6,
 petrologic type 5 to 6.
 
 - **Source:**
-https://www.mindat.org/min-49707.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5-6, 
+https://www.mindat.org/min-49707.html, 
 
 - Concept URI token: etma:1:1:49707:1
 
@@ -14655,8 +14656,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5-6,
 - An L chondrite that is either petrological type 5 or 6.
 
 - **Source:**
-https://www.mindat.org/min-49708.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5/6, 
+https://www.mindat.org/min-49708.html, 
 
 - Concept URI token: etma:1:1:49708:0
 
@@ -14673,8 +14674,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L5/6,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49711.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6-melt%20breccia, 
+https://www.mindat.org/min-49711.html, 
 
 - Concept URI token: etma:1:1:49711:4
 
@@ -14690,8 +14691,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6-melt%20breccia,
 - An L6 chondrite that has experienced secondary melting.
 
 - **Source:**
-https://www.mindat.org/min-49712.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6-melt%20rock, 
+https://www.mindat.org/min-49712.html, 
 
 - Concept URI token: etma:1:1:49712:3
 
@@ -14708,8 +14709,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6-melt%20rock,
 - An L chondrite or LL chondrite that is of petrological type 6.
 
 - **Source:**
-https://www.mindat.org/min-49713.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL6, 
+https://www.mindat.org/min-49713.html, 
 
 - Concept URI token: etma:1:1:49713:2
 
@@ -14726,8 +14727,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL6,
 has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49715.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL6-an, 
+https://www.mindat.org/min-49715.html, 
 
 - Concept URI token: etma:1:1:49715:0
 
@@ -14744,8 +14745,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL6-an,
 - An L chondrite that is either petrological type 6 or 7.
 
 - **Source:**
-https://www.mindat.org/min-49716.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6/7, 
+https://www.mindat.org/min-49716.html, 
 
 - Concept URI token: etma:1:1:49716:9
 
@@ -14762,8 +14763,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6/7,
 - An H chondrite or L chondrite that is of petrological type 6.
 
 - **Source:**
-https://www.mindat.org/min-50449.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L6, 
+https://www.mindat.org/min-50449.html, 
 
 - Concept URI token: etma:1:1:50449:6
 
@@ -14780,8 +14781,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L6,
 experienced secondary melting.
 
 - **Source:**
-https://www.mindat.org/min-49623.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L6-melt%20rock, 
+https://www.mindat.org/min-49623.html, 
 
 - Concept URI token: etma:1:1:49623:0
 
@@ -14799,8 +14800,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H/L6-melt%20rock,
 petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-50459.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)6, 
+https://www.mindat.org/min-50459.html, 
 
 - Concept URI token: etma:1:1:50459:3
 
@@ -14818,8 +14819,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)6,
 6.
 
 - **Source:**
-https://www.mindat.org/min-49705.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5/6, 
+https://www.mindat.org/min-49705.html, 
 
 - Concept URI token: etma:1:1:49705:3
 
@@ -14837,8 +14838,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5/6,
 of components ranging from petrologic type 5 to 6.
 
 - **Source:**
-https://www.mindat.org/min-50458.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5-6, 
+https://www.mindat.org/min-50458.html, 
 
 - Concept URI token: etma:1:1:50458:4
 
@@ -14855,8 +14856,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5-6,
 - An LL chondrite that is of petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49776.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL6, 
+https://www.mindat.org/min-49776.html, 
 
 - Concept URI token: etma:1:1:49776:1
 
@@ -14873,8 +14874,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL6,
 - An L chondrite or LL chondrite that is of petrological type 6.
 
 - **Source:**
-https://www.mindat.org/min-49713.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL6, 
+https://www.mindat.org/min-49713.html, 
 
 - Concept URI token: etma:1:1:49713:2
 
@@ -14891,8 +14892,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL6,
 has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49715.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL6-an, 
+https://www.mindat.org/min-49715.html, 
 
 - Concept URI token: etma:1:1:49715:0
 
@@ -14909,8 +14910,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL6-an,
 - An LL chondrite that is either petrological type 5 or 6.
 
 - **Source:**
-https://www.mindat.org/min-49773.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5/6, 
+https://www.mindat.org/min-49773.html, 
 
 - Concept URI token: etma:1:1:49773:4
 
@@ -14928,8 +14929,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5/6,
 petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-50459.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)6, 
+https://www.mindat.org/min-50459.html, 
 
 - Concept URI token: etma:1:1:50459:3
 
@@ -14947,8 +14948,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L(LL)6,
 6.
 
 - **Source:**
-https://www.mindat.org/min-49705.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5/6, 
+https://www.mindat.org/min-49705.html, 
 
 - Concept URI token: etma:1:1:49705:3
 
@@ -14966,8 +14967,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5/6,
 of components ranging from petrologic type 5 to 6.
 
 - **Source:**
-https://www.mindat.org/min-50458.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5-6, 
+https://www.mindat.org/min-50458.html, 
 
 - Concept URI token: etma:1:1:50458:4
 
@@ -14984,8 +14985,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L/LL5-6,
 - An LL chondrite that is a breccia of petrological types 5 to 6.
 
 - **Source:**
-https://www.mindat.org/min-50463.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5-6, 
+https://www.mindat.org/min-50463.html, 
 
 - Concept URI token: etma:1:1:50463:6
 
@@ -15002,8 +15003,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=LL5-6,
 - An E chondrite that is of petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49809.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E6, 
+https://www.mindat.org/min-49809.html, 
 
 - Concept URI token: etma:1:1:49809:8
 
@@ -15020,8 +15021,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=E6,
 - An EH chondrite that is of petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49815.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH6, 
+https://www.mindat.org/min-49815.html, 
 
 - Concept URI token: etma:1:1:49815:9
 
@@ -15038,8 +15039,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH6,
 matrix.
 
 - **Source:**
-https://www.mindat.org/min-49816.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH6-melt%20breccia, 
+https://www.mindat.org/min-49816.html, 
 
 - Concept URI token: etma:1:1:49816:8
 
@@ -15056,8 +15057,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH6-melt%20breccia,
 - An EL chondrite that is of petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49826.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL6, 
+https://www.mindat.org/min-49826.html, 
 
 - Concept URI token: etma:1:1:49826:5
 
@@ -15076,8 +15077,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL6,
 accepted in the literature.
 
 - **Source:**
-https://www.mindat.org/min-49827.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL6/7, 
+https://www.mindat.org/min-49827.html, 
 
 - Concept URI token: etma:1:1:49827:4
 
@@ -15094,8 +15095,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL6/7,
 - An R chondrite that is petrologic type 6.
 
 - **Source:**
-https://www.mindat.org/min-49838.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R6, 
+https://www.mindat.org/min-49838.html, 
 
 - Concept URI token: etma:1:1:49838:0
 
@@ -15112,8 +15113,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R6,
 - An R chondrite that is a breccia of type 3 to type 6 components.
 
 - **Source:**
-https://www.mindat.org/min-52211.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-6, 
+https://www.mindat.org/min-52211.html, 
 
 - Concept URI token: etma:1:1:52211:9
 
@@ -15130,8 +15131,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3-6,
 petrologic type 3.5 to type 6.
 
 - **Source:**
-https://www.mindat.org/min-52214.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.5-6, 
+https://www.mindat.org/min-52214.html, 
 
 - Concept URI token: etma:1:1:52214:6
 
@@ -15148,8 +15149,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.5-6,
 petrologic type 3.8 to type 6.
 
 - **Source:**
-https://www.mindat.org/min-52219.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8-6, 
+https://www.mindat.org/min-52219.html, 
 
 - Concept URI token: etma:1:1:52219:1
 
@@ -15167,8 +15168,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R3.8-6,
 petrologic type 4 to type 6.
 
 - **Source:**
-https://www.mindat.org/min-52223.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=R4-6, 
+https://www.mindat.org/min-52223.html, 
 
 - Concept URI token: etma:1:1:52223:4
 
@@ -15205,8 +15206,8 @@ https://www.mindat.org/min-49846.html
 type 7 is not used consistently or widely accepted in the literature.
 
 - **Source:**
-https://www.mindat.org/min-49576.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR7, 
+https://www.mindat.org/min-49576.html, 
 
 - Concept URI token: etma:1:1:49576:3
 
@@ -15224,8 +15225,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=CR7,
 type 7 is not used consistently or widely accepted in the literature.
 
 - **Source:**
-https://www.mindat.org/min-49625.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H7, 
+https://www.mindat.org/min-49625.html, 
 
 - Concept URI token: etma:1:1:49625:8
 
@@ -15243,8 +15244,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=H7,
 type 7 is not used consistently or widely accepted in the literature.
 
 - **Source:**
-https://www.mindat.org/min-49717.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L7, 
+https://www.mindat.org/min-49717.html, 
 
 - Concept URI token: etma:1:1:49717:8
 
@@ -15261,8 +15262,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L7,
 - An L chondrite that is either petrological type 6 or 7.
 
 - **Source:**
-https://www.mindat.org/min-49716.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6/7, 
+https://www.mindat.org/min-49716.html, 
 
 - Concept URI token: etma:1:1:49716:9
 
@@ -15280,8 +15281,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=L6/7,
 type 7 is not used consistently or widely accepted in the literature.
 
 - **Source:**
-https://www.mindat.org/min-49819.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH7, 
+https://www.mindat.org/min-49819.html, 
 
 - Concept URI token: etma:1:1:49819:5
 
@@ -15298,8 +15299,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH7,
 has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-52360.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH7-an, 
+https://www.mindat.org/min-52360.html, 
 
 - Concept URI token: etma:1:1:52360:4
 
@@ -15317,8 +15318,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EH7-an,
 type 7 is not used consistently or widely accepted in the literature.
 
 - **Source:**
-https://www.mindat.org/min-49828.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL7, 
+https://www.mindat.org/min-49828.html, 
 
 - Concept URI token: etma:1:1:49828:3
 
@@ -15337,8 +15338,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL7,
 accepted in the literature.
 
 - **Source:**
-https://www.mindat.org/min-49827.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL6/7, 
+https://www.mindat.org/min-49827.html, 
 
 - Concept URI token: etma:1:1:49827:4
 
@@ -15355,8 +15356,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=EL6/7,
 partial melting, but still has nearly chondritic composition.
 
 - **Source:**
-https://www.mindat.org/min-49847.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Achondrite-prim, 
+https://www.mindat.org/min-49847.html, 
 
 - Concept URI token: etma:1:1:49847:8
 
@@ -15375,8 +15376,8 @@ partial melting occurred and some of the metal and silica melt was
 removed.
 
 - **Source:**
-https://www.mindat.org/min-11263.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lodranite, 
+https://www.mindat.org/min-11263.html, 
 
 - Concept URI token: etma:1:1:11263:9
 
@@ -15393,8 +15394,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lodranite,
 - A transitional type between acapulcoite and lodranite.
 
 - **Source:**
-https://www.mindat.org/min-49849.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Acapulcoite/lodranite, 
+https://www.mindat.org/min-49849.html, 
 
 - Concept URI token: etma:1:1:49849:6
 
@@ -15410,8 +15411,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Acapulcoite/lodranite,
 - An lodranite that has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49865.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lodranite-an, 
+https://www.mindat.org/min-49865.html, 
 
 - Concept URI token: etma:1:1:49865:4
 
@@ -15434,8 +15435,8 @@ those of ordinary chondrites. Compositions are subchondritic, with
 lodranites showing a higher degree of fractionation.
 
 - **Source:**
-https://www.mindat.org/min-49848.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Acapulcoite, 
+https://www.mindat.org/min-49848.html, 
 
 - Concept URI token: etma:1:1:49848:7
 
@@ -15452,8 +15453,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Acapulcoite,
 - A transitional type between acapulcoite and lodranite.
 
 - **Source:**
-https://www.mindat.org/min-49849.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Acapulcoite/lodranite, 
+https://www.mindat.org/min-49849.html, 
 
 - Concept URI token: etma:1:1:49849:6
 
@@ -15472,8 +15473,8 @@ the parent body might be the Nenetta Asteroid (289 Nenetta). Named
 after Brachina, a meteorite found in Australia in 1974.
 
 - **Source:**
-https://www.mindat.org/min-49850.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Brachinite, 
+https://www.mindat.org/min-49850.html, 
 
 - Concept URI token: etma:1:1:49850:2
 
@@ -15490,8 +15491,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Brachinite,
 - Composed of meteoritic iron and silicate inclusions.
 
 - **Source:**
-https://www.mindat.org/min-49851.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB%20complex, 
+https://www.mindat.org/min-49851.html, 
 
 - Concept URI token: etma:1:1:49851:1
 
@@ -15507,8 +15508,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB%20complex,
 - An IAB complex iron meteorite belonging to the main group (MG).
 
 - **Source:**
-https://www.mindat.org/min-49852.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-MG, 
+https://www.mindat.org/min-49852.html, 
 
 - Concept URI token: etma:1:1:49852:0
 
@@ -15525,8 +15526,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-MG,
 the IAB complex.
 
 - **Source:**
-https://www.mindat.org/min-49853.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sLL, 
+https://www.mindat.org/min-49853.html, 
 
 - Concept URI token: etma:1:1:49853:9
 
@@ -15543,8 +15544,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sLL,
 of the IAB complex.
 
 - **Source:**
-https://www.mindat.org/min-49854.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sLM, 
+https://www.mindat.org/min-49854.html, 
 
 - Concept URI token: etma:1:1:49854:8
 
@@ -15560,8 +15561,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sLM,
 - An IAB-sLM iron meteorite that has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49856.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sLM-an, 
+https://www.mindat.org/min-49856.html, 
 
 - Concept URI token: etma:1:1:49856:6
 
@@ -15578,8 +15579,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sLM-an,
 the IAB complex.
 
 - **Source:**
-https://www.mindat.org/min-49857.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sLH, 
+https://www.mindat.org/min-49857.html, 
 
 - Concept URI token: etma:1:1:49857:5
 
@@ -15596,8 +15597,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sLH,
 the IAB complex.
 
 - **Source:**
-https://www.mindat.org/min-49859.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sHL, 
+https://www.mindat.org/min-49859.html, 
 
 - Concept URI token: etma:1:1:49859:3
 
@@ -15617,8 +15618,8 @@ IAB-sHL-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49860.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sHL-an, 
+https://www.mindat.org/min-49860.html, 
 
 - Concept URI token: etma:1:1:49860:9
 
@@ -15635,8 +15636,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sHL-an,
 of the IAB complex.
 
 - **Source:**
-https://www.mindat.org/min-49861.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sHH, 
+https://www.mindat.org/min-49861.html, 
 
 - Concept URI token: etma:1:1:49861:8
 
@@ -15657,8 +15658,8 @@ IAB-ung iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49862.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-ung, 
+https://www.mindat.org/min-49862.html, 
 
 - Concept URI token: etma:1:1:49862:7
 
@@ -15674,8 +15675,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-ung,
 - An IAB complex iron meteorite that has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49863.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-an, 
+https://www.mindat.org/min-49863.html, 
 
 - Concept URI token: etma:1:1:49863:6
 
@@ -15691,8 +15692,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-an,
 - An iron meteorite that may belong to the IAB complex.
 
 - **Source:**
-https://www.mindat.org/min-52393.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB?, 
+https://www.mindat.org/min-52393.html, 
 
 - Concept URI token: etma:1:1:52393:2
 
@@ -15731,8 +15732,8 @@ percent of feldspathic material in addition to typical ureilitic
 components.
 
 - **Source:**
-https://www.mindat.org/min-49866.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Ureilite, 
+https://www.mindat.org/min-49866.html, 
 
 - Concept URI token: etma:1:1:49866:3
 
@@ -15749,8 +15750,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Ureilite,
 properties.
 
 - **Source:**
-https://www.mindat.org/min-49867.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Ureilite-an, 
+https://www.mindat.org/min-49867.html, 
 
 - Concept URI token: etma:1:1:49867:2
 
@@ -15793,8 +15794,8 @@ Winonaites are related to the silicate inclusions found in IAB complex
 irons.
 
 - **Source:**
-https://www.mindat.org/min-49869.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Winonaite, 
+https://www.mindat.org/min-49869.html, 
 
 - Concept URI token: etma:1:1:49869:0
 
@@ -15811,8 +15812,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Winonaite,
 alternative classification category.
 
 - **Source:**
-https://www.mindat.org/min-49960.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron, 
+https://www.mindat.org/min-49960.html, 
 
 - Concept URI token: etma:1:1:49960:8
 
@@ -15830,8 +15831,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,
 rock fragments) and metallic components.
 
 - **Source:**
-https://www.mindat.org/min-49905.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite, 
+https://www.mindat.org/min-49905.html, 
 
 - Concept URI token: etma:1:1:49905:1
 
@@ -15847,8 +15848,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite,
 - A mesosiderite of petrologic class A.
 
 - **Source:**
-https://www.mindat.org/min-49906.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A, 
+https://www.mindat.org/min-49906.html, 
 
 - Concept URI token: etma:1:1:49906:0
 
@@ -15864,8 +15865,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A,
 - A mesosiderite of petrologic class A and metamorphic grade 1.
 
 - **Source:**
-https://www.mindat.org/min-49907.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A1, 
+https://www.mindat.org/min-49907.html, 
 
 - Concept URI token: etma:1:1:49907:9
 
@@ -15881,8 +15882,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A1,
 - A mesosiderite of petrologic class A and metamorphic grade 2.
 
 - **Source:**
-https://www.mindat.org/min-49908.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A2, 
+https://www.mindat.org/min-49908.html, 
 
 - Concept URI token: etma:1:1:49908:8
 
@@ -15898,8 +15899,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A2,
 - A mesosiderite of petrologic class A and metamorphic grade 3.
 
 - **Source:**
-https://www.mindat.org/min-49909.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A3, 
+https://www.mindat.org/min-49909.html, 
 
 - Concept URI token: etma:1:1:49909:7
 
@@ -15916,8 +15917,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A3,
 - A mesosiderite of petrologic class A and metamorphic grade 3 or 4.
 
 - **Source:**
-https://www.mindat.org/min-52225.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A3/4, 
+https://www.mindat.org/min-52225.html, 
 
 - Concept URI token: etma:1:1:52225:2
 
@@ -15933,8 +15934,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A3/4,
 - A mesosiderite of petrologic class A and metamorphic grade 4.
 
 - **Source:**
-https://www.mindat.org/min-49910.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A4, 
+https://www.mindat.org/min-49910.html, 
 
 - Concept URI token: etma:1:1:49910:3
 
@@ -15951,8 +15952,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A4,
 - A mesosiderite of petrologic class A and metamorphic grade 3 or 4.
 
 - **Source:**
-https://www.mindat.org/min-52225.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A3/4, 
+https://www.mindat.org/min-52225.html, 
 
 - Concept URI token: etma:1:1:52225:2
 
@@ -15968,8 +15969,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A3/4,
 - A mesosiderite with anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49911.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-an, 
+https://www.mindat.org/min-49911.html, 
 
 - Concept URI token: etma:1:1:49911:2
 
@@ -15985,8 +15986,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-an,
 - A mesosiderite of petrologic class B.
 
 - **Source:**
-https://www.mindat.org/min-49912.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B, 
+https://www.mindat.org/min-49912.html, 
 
 - Concept URI token: etma:1:1:49912:1
 
@@ -16002,8 +16003,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B,
 - A mesosiderite of petrologic class B and metamorphic grade 1.
 
 - **Source:**
-https://www.mindat.org/min-49913.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B1, 
+https://www.mindat.org/min-49913.html, 
 
 - Concept URI token: etma:1:1:49913:0
 
@@ -16019,8 +16020,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B1,
 - A mesosiderite of petrologic class B and metamorphic grade 2.
 
 - **Source:**
-https://www.mindat.org/min-49914.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B2, 
+https://www.mindat.org/min-49914.html, 
 
 - Concept URI token: etma:1:1:49914:9
 
@@ -16036,8 +16037,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B2,
 - A mesosiderite of petrologic class B and metamorphic grade 3.
 
 - **Source:**
-https://www.mindat.org/min-49915.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B3, 
+https://www.mindat.org/min-49915.html, 
 
 - Concept URI token: etma:1:1:49915:8
 
@@ -16053,8 +16054,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B3,
 - A mesosiderite of petrologic class B and metamorphic grade 4.
 
 - **Source:**
-https://www.mindat.org/min-49916.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B4, 
+https://www.mindat.org/min-49916.html, 
 
 - Concept URI token: etma:1:1:49916:7
 
@@ -16070,8 +16071,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B4,
 - A mesosiderite of petrologic class C.
 
 - **Source:**
-https://www.mindat.org/min-49917.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-C, 
+https://www.mindat.org/min-49917.html, 
 
 - Concept URI token: etma:1:1:49917:6
 
@@ -16087,8 +16088,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-C,
 - A mesosiderite of petrologic class C and metamorphic grade 2.
 
 - **Source:**
-https://www.mindat.org/min-49918.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-C2, 
+https://www.mindat.org/min-49918.html, 
 
 - Concept URI token: etma:1:1:49918:5
 
@@ -16123,8 +16124,8 @@ https://www.mindat.org/min-49919.html
 - An iron group meteorite of chemical group IC.
 
 - **Source:**
-https://www.mindat.org/min-49920.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IC, 
+https://www.mindat.org/min-49920.html, 
 
 - Concept URI token: etma:1:1:49920:0
 
@@ -16144,8 +16145,8 @@ IC-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49921.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IC-an, 
+https://www.mindat.org/min-49921.html, 
 
 - Concept URI token: etma:1:1:49921:9
 
@@ -16162,8 +16163,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IC-an,
 - An iron group meteorite of chemical group IIAB.
 
 - **Source:**
-https://www.mindat.org/min-49922.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIAB, 
+https://www.mindat.org/min-49922.html, 
 
 - Concept URI token: etma:1:1:49922:8
 
@@ -16183,8 +16184,8 @@ IIAB-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49923.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIAB-an, 
+https://www.mindat.org/min-49923.html, 
 
 - Concept URI token: etma:1:1:49923:7
 
@@ -16201,8 +16202,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIAB-an,
 - An iron group meteorite of chemical group IIC.
 
 - **Source:**
-https://www.mindat.org/min-49924.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIC, 
+https://www.mindat.org/min-49924.html, 
 
 - Concept URI token: etma:1:1:49924:6
 
@@ -16219,8 +16220,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIC,
 - An iron group meteorite of chemical group IID.
 
 - **Source:**
-https://www.mindat.org/min-49925.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IID, 
+https://www.mindat.org/min-49925.html, 
 
 - Concept URI token: etma:1:1:49925:5
 
@@ -16236,8 +16237,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IID,
 - An IID iron meteorite with anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49926.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IID-an, 
+https://www.mindat.org/min-49926.html, 
 
 - Concept URI token: etma:1:1:49926:4
 
@@ -16254,8 +16255,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IID-an,
 - An iron group meteorite of chemical group IIE.
 
 - **Source:**
-https://www.mindat.org/min-49927.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIE, 
+https://www.mindat.org/min-49927.html, 
 
 - Concept URI token: etma:1:1:49927:3
 
@@ -16275,8 +16276,8 @@ IIE-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49928.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIE-an, 
+https://www.mindat.org/min-49928.html, 
 
 - Concept URI token: etma:1:1:49928:2
 
@@ -16293,8 +16294,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIE-an,
 - An iron group meteorite of chemical group IIF.
 
 - **Source:**
-https://www.mindat.org/min-49929.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIF, 
+https://www.mindat.org/min-49929.html, 
 
 - Concept URI token: etma:1:1:49929:1
 
@@ -16311,8 +16312,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIF,
 - An iron group meteorite of chemical group IIIAB.
 
 - **Source:**
-https://www.mindat.org/min-49930.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIAB, 
+https://www.mindat.org/min-49930.html, 
 
 - Concept URI token: etma:1:1:49930:7
 
@@ -16332,8 +16333,8 @@ IIIAB-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49931.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIAB-an, 
+https://www.mindat.org/min-49931.html, 
 
 - Concept URI token: etma:1:1:49931:6
 
@@ -16350,8 +16351,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIAB-an,
 - An iron group meteorite of chemical group IIIE.
 
 - **Source:**
-https://www.mindat.org/min-49932.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIE, 
+https://www.mindat.org/min-49932.html, 
 
 - Concept URI token: etma:1:1:49932:5
 
@@ -16371,8 +16372,8 @@ IIIE-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49933.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIE-an, 
+https://www.mindat.org/min-49933.html, 
 
 - Concept URI token: etma:1:1:49933:4
 
@@ -16389,8 +16390,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIE-an,
 - An iron group meteorite of chemical group IIIF.
 
 - **Source:**
-https://www.mindat.org/min-49934.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIF, 
+https://www.mindat.org/min-49934.html, 
 
 - Concept URI token: etma:1:1:49934:3
 
@@ -16407,8 +16408,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIF,
 - An iron group meteorite of chemical group IVA.
 
 - **Source:**
-https://www.mindat.org/min-49935.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IVA, 
+https://www.mindat.org/min-49935.html, 
 
 - Concept URI token: etma:1:1:49935:2
 
@@ -16428,8 +16429,8 @@ IVA-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49936.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IVA-an, 
+https://www.mindat.org/min-49936.html, 
 
 - Concept URI token: etma:1:1:49936:1
 
@@ -16446,8 +16447,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IVA-an,
 - An iron group meteorite of chemical group IVB.
 
 - **Source:**
-https://www.mindat.org/min-49937.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IVB, 
+https://www.mindat.org/min-49937.html, 
 
 - Concept URI token: etma:1:1:49937:0
 
@@ -16463,8 +16464,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IVB,
 - An iron meteorite belonging to chemical group IIG
 
 - **Source:**
-https://www.mindat.org/min-52370.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIG, 
+https://www.mindat.org/min-52370.html, 
 
 - Concept URI token: etma:1:1:52370:1
 
@@ -16498,8 +16499,8 @@ https://www.mindat.org/min-49961.html
 - An iron group meteorite of chemical group IC.
 
 - **Source:**
-https://www.mindat.org/min-49920.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IC, 
+https://www.mindat.org/min-49920.html, 
 
 - Concept URI token: etma:1:1:49920:0
 
@@ -16519,8 +16520,8 @@ IC-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49921.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IC-an, 
+https://www.mindat.org/min-49921.html, 
 
 - Concept URI token: etma:1:1:49921:9
 
@@ -16537,8 +16538,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IC-an,
 - An iron group meteorite of chemical group IIAB.
 
 - **Source:**
-https://www.mindat.org/min-49922.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIAB, 
+https://www.mindat.org/min-49922.html, 
 
 - Concept URI token: etma:1:1:49922:8
 
@@ -16558,8 +16559,8 @@ IIAB-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49923.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIAB-an, 
+https://www.mindat.org/min-49923.html, 
 
 - Concept URI token: etma:1:1:49923:7
 
@@ -16576,8 +16577,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIAB-an,
 - An iron group meteorite of chemical group IIC.
 
 - **Source:**
-https://www.mindat.org/min-49924.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIC, 
+https://www.mindat.org/min-49924.html, 
 
 - Concept URI token: etma:1:1:49924:6
 
@@ -16594,8 +16595,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIC,
 - An iron group meteorite of chemical group IID.
 
 - **Source:**
-https://www.mindat.org/min-49925.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IID, 
+https://www.mindat.org/min-49925.html, 
 
 - Concept URI token: etma:1:1:49925:5
 
@@ -16611,8 +16612,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IID,
 - An IID iron meteorite with anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49926.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IID-an, 
+https://www.mindat.org/min-49926.html, 
 
 - Concept URI token: etma:1:1:49926:4
 
@@ -16629,8 +16630,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IID-an,
 - An iron group meteorite of chemical group IIF.
 
 - **Source:**
-https://www.mindat.org/min-49929.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIF, 
+https://www.mindat.org/min-49929.html, 
 
 - Concept URI token: etma:1:1:49929:1
 
@@ -16647,8 +16648,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIF,
 - An iron group meteorite of chemical group IIIAB.
 
 - **Source:**
-https://www.mindat.org/min-49930.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIAB, 
+https://www.mindat.org/min-49930.html, 
 
 - Concept URI token: etma:1:1:49930:7
 
@@ -16668,8 +16669,8 @@ IIIAB-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49931.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIAB-an, 
+https://www.mindat.org/min-49931.html, 
 
 - Concept URI token: etma:1:1:49931:6
 
@@ -16686,8 +16687,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIAB-an,
 - An iron group meteorite of chemical group IIIE.
 
 - **Source:**
-https://www.mindat.org/min-49932.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIE, 
+https://www.mindat.org/min-49932.html, 
 
 - Concept URI token: etma:1:1:49932:5
 
@@ -16707,8 +16708,8 @@ IIIE-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49933.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIE-an, 
+https://www.mindat.org/min-49933.html, 
 
 - Concept URI token: etma:1:1:49933:4
 
@@ -16725,8 +16726,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIE-an,
 - An iron group meteorite of chemical group IIIF.
 
 - **Source:**
-https://www.mindat.org/min-49934.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIF, 
+https://www.mindat.org/min-49934.html, 
 
 - Concept URI token: etma:1:1:49934:3
 
@@ -16743,8 +16744,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIF,
 - An iron group meteorite of chemical group IVA.
 
 - **Source:**
-https://www.mindat.org/min-49935.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IVA, 
+https://www.mindat.org/min-49935.html, 
 
 - Concept URI token: etma:1:1:49935:2
 
@@ -16764,8 +16765,8 @@ IVA-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49936.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IVA-an, 
+https://www.mindat.org/min-49936.html, 
 
 - Concept URI token: etma:1:1:49936:1
 
@@ -16782,8 +16783,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IVA-an,
 - An iron group meteorite of chemical group IVB.
 
 - **Source:**
-https://www.mindat.org/min-49937.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IVB, 
+https://www.mindat.org/min-49937.html, 
 
 - Concept URI token: etma:1:1:49937:0
 
@@ -16818,8 +16819,8 @@ https://en.wikipedia.org/wiki/Nonmagmatic_meteorite |
 - Composed of meteoritic iron and silicate inclusions.
 
 - **Source:**
-https://www.mindat.org/min-49851.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB%20complex, 
+https://www.mindat.org/min-49851.html, 
 
 - Concept URI token: etma:1:1:49851:1
 
@@ -16835,8 +16836,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB%20complex,
 - An IAB complex iron meteorite belonging to the main group (MG).
 
 - **Source:**
-https://www.mindat.org/min-49852.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-MG, 
+https://www.mindat.org/min-49852.html, 
 
 - Concept URI token: etma:1:1:49852:0
 
@@ -16853,8 +16854,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-MG,
 the IAB complex.
 
 - **Source:**
-https://www.mindat.org/min-49853.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sLL, 
+https://www.mindat.org/min-49853.html, 
 
 - Concept URI token: etma:1:1:49853:9
 
@@ -16871,8 +16872,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sLL,
 of the IAB complex.
 
 - **Source:**
-https://www.mindat.org/min-49854.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sLM, 
+https://www.mindat.org/min-49854.html, 
 
 - Concept URI token: etma:1:1:49854:8
 
@@ -16888,8 +16889,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sLM,
 - An IAB-sLM iron meteorite that has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49856.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sLM-an, 
+https://www.mindat.org/min-49856.html, 
 
 - Concept URI token: etma:1:1:49856:6
 
@@ -16906,8 +16907,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sLM-an,
 the IAB complex.
 
 - **Source:**
-https://www.mindat.org/min-49857.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sLH, 
+https://www.mindat.org/min-49857.html, 
 
 - Concept URI token: etma:1:1:49857:5
 
@@ -16924,8 +16925,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sLH,
 the IAB complex.
 
 - **Source:**
-https://www.mindat.org/min-49859.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sHL, 
+https://www.mindat.org/min-49859.html, 
 
 - Concept URI token: etma:1:1:49859:3
 
@@ -16945,8 +16946,8 @@ IAB-sHL-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49860.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sHL-an, 
+https://www.mindat.org/min-49860.html, 
 
 - Concept URI token: etma:1:1:49860:9
 
@@ -16963,8 +16964,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sHL-an,
 of the IAB complex.
 
 - **Source:**
-https://www.mindat.org/min-49861.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-sHH, 
+https://www.mindat.org/min-49861.html, 
 
 - Concept URI token: etma:1:1:49861:8
 
@@ -16985,8 +16986,8 @@ IAB-ung iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49862.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-ung, 
+https://www.mindat.org/min-49862.html, 
 
 - Concept URI token: etma:1:1:49862:7
 
@@ -17002,8 +17003,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-ung,
 - An IAB complex iron meteorite that has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49863.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-an, 
+https://www.mindat.org/min-49863.html, 
 
 - Concept URI token: etma:1:1:49863:6
 
@@ -17019,8 +17020,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB-an,
 - An iron meteorite that may belong to the IAB complex.
 
 - **Source:**
-https://www.mindat.org/min-52393.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IAB?, 
+https://www.mindat.org/min-52393.html, 
 
 - Concept URI token: etma:1:1:52393:2
 
@@ -17054,8 +17055,8 @@ https://www.mindat.org/min-49864.html
 - An iron group meteorite of chemical group IIE.
 
 - **Source:**
-https://www.mindat.org/min-49927.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIE, 
+https://www.mindat.org/min-49927.html, 
 
 - Concept URI token: etma:1:1:49927:3
 
@@ -17075,8 +17076,8 @@ IIE-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49928.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIE-an, 
+https://www.mindat.org/min-49928.html, 
 
 - Concept URI token: etma:1:1:49928:2
 
@@ -17110,8 +17111,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20ungrouped
 - A possible iron meteorite that has not been classified.
 
 - **Source:**
-https://www.mindat.org/min-52373.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron?, 
+https://www.mindat.org/min-52373.html, 
 
 - Concept URI token: etma:1:1:52373:8
 
@@ -17242,8 +17243,8 @@ and/or mineralogically distinct objects, with Scott (2007) suggesting
 as many as seven.
 
 - **Source:**
-https://www.mindat.org/min-49898.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Pallasite, 
+https://www.mindat.org/min-49898.html, 
 
 - Concept URI token: etma:1:1:49898:2
 
@@ -17285,8 +17286,8 @@ phase (Buseck, 1977). Some PMG are assigned to an anomalous subset
 compositions or appreciably higher olivine Fa contents).
 
 - **Source:**
-https://www.mindat.org/min-49899.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Pallasite,%20PMG, 
+https://www.mindat.org/min-49899.html, 
 
 - Concept URI token: etma:1:1:49899:1
 
@@ -17303,8 +17304,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Pallasite,%20PMG,
 or appreciably higher olivine Fa content).
 
 - **Source:**
-https://www.mindat.org/min-49901.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Pallasite,%20PMG-an, 
+https://www.mindat.org/min-49901.html, 
 
 - Concept URI token: etma:1:1:49901:5
 
@@ -17332,8 +17333,8 @@ separate the Eagle-Station pallasites (PES) and main-group pallasites
 about -4.6 per mil.
 
 - **Source:**
-https://www.mindat.org/min-49902.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Pallasite,%20PES, 
+https://www.mindat.org/min-49902.html, 
 
 - Concept URI token: etma:1:1:49902:4
 
@@ -17368,8 +17369,8 @@ https://www.mindat.org/min-49904.html
 Station grouplet, and is therefore ungrouped.
 
 - **Source:**
-https://www.mindat.org/min-52371.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Pallasite,%20ungrouped, 
+https://www.mindat.org/min-52371.html, 
 
 - Concept URI token: etma:1:1:52371:0
 
@@ -17402,8 +17403,8 @@ https://www.mindat.org/min-50269.html
 - An enstatite-rich achondrite that is ungrouped.
 
 - **Source:**
-https://www.mindat.org/min-49876.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Enst%20achon-ung, 
+https://www.mindat.org/min-49876.html, 
 
 - Concept URI token: etma:1:1:49876:0
 
@@ -17432,8 +17433,8 @@ and/or mineralogically distinct objects, with Scott (2007) suggesting
 as many as seven.
 
 - **Source:**
-https://www.mindat.org/min-49898.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Pallasite, 
+https://www.mindat.org/min-49898.html, 
 
 - Concept URI token: etma:1:1:49898:2
 
@@ -17475,8 +17476,8 @@ phase (Buseck, 1977). Some PMG are assigned to an anomalous subset
 compositions or appreciably higher olivine Fa contents).
 
 - **Source:**
-https://www.mindat.org/min-49899.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Pallasite,%20PMG, 
+https://www.mindat.org/min-49899.html, 
 
 - Concept URI token: etma:1:1:49899:1
 
@@ -17493,8 +17494,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Pallasite,%20PMG,
 or appreciably higher olivine Fa content).
 
 - **Source:**
-https://www.mindat.org/min-49901.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Pallasite,%20PMG-an, 
+https://www.mindat.org/min-49901.html, 
 
 - Concept URI token: etma:1:1:49901:5
 
@@ -17522,8 +17523,8 @@ separate the Eagle-Station pallasites (PES) and main-group pallasites
 about -4.6 per mil.
 
 - **Source:**
-https://www.mindat.org/min-49902.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Pallasite,%20PES, 
+https://www.mindat.org/min-49902.html, 
 
 - Concept URI token: etma:1:1:49902:4
 
@@ -17558,8 +17559,8 @@ https://www.mindat.org/min-49904.html
 Station grouplet, and is therefore ungrouped.
 
 - **Source:**
-https://www.mindat.org/min-52371.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Pallasite,%20ungrouped, 
+https://www.mindat.org/min-52371.html, 
 
 - Concept URI token: etma:1:1:52371:0
 
@@ -17577,8 +17578,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Pallasite,%20ungrouped,
 rock fragments) and metallic components.
 
 - **Source:**
-https://www.mindat.org/min-49905.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite, 
+https://www.mindat.org/min-49905.html, 
 
 - Concept URI token: etma:1:1:49905:1
 
@@ -17594,8 +17595,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite,
 - A mesosiderite of petrologic class A.
 
 - **Source:**
-https://www.mindat.org/min-49906.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A, 
+https://www.mindat.org/min-49906.html, 
 
 - Concept URI token: etma:1:1:49906:0
 
@@ -17611,8 +17612,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A,
 - A mesosiderite of petrologic class A and metamorphic grade 1.
 
 - **Source:**
-https://www.mindat.org/min-49907.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A1, 
+https://www.mindat.org/min-49907.html, 
 
 - Concept URI token: etma:1:1:49907:9
 
@@ -17628,8 +17629,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A1,
 - A mesosiderite of petrologic class A and metamorphic grade 2.
 
 - **Source:**
-https://www.mindat.org/min-49908.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A2, 
+https://www.mindat.org/min-49908.html, 
 
 - Concept URI token: etma:1:1:49908:8
 
@@ -17645,8 +17646,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A2,
 - A mesosiderite of petrologic class A and metamorphic grade 3.
 
 - **Source:**
-https://www.mindat.org/min-49909.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A3, 
+https://www.mindat.org/min-49909.html, 
 
 - Concept URI token: etma:1:1:49909:7
 
@@ -17663,8 +17664,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A3,
 - A mesosiderite of petrologic class A and metamorphic grade 3 or 4.
 
 - **Source:**
-https://www.mindat.org/min-52225.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A3/4, 
+https://www.mindat.org/min-52225.html, 
 
 - Concept URI token: etma:1:1:52225:2
 
@@ -17680,8 +17681,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A3/4,
 - A mesosiderite of petrologic class A and metamorphic grade 4.
 
 - **Source:**
-https://www.mindat.org/min-49910.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A4, 
+https://www.mindat.org/min-49910.html, 
 
 - Concept URI token: etma:1:1:49910:3
 
@@ -17698,8 +17699,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A4,
 - A mesosiderite of petrologic class A and metamorphic grade 3 or 4.
 
 - **Source:**
-https://www.mindat.org/min-52225.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A3/4, 
+https://www.mindat.org/min-52225.html, 
 
 - Concept URI token: etma:1:1:52225:2
 
@@ -17715,8 +17716,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-A3/4,
 - A mesosiderite with anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49911.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-an, 
+https://www.mindat.org/min-49911.html, 
 
 - Concept URI token: etma:1:1:49911:2
 
@@ -17732,8 +17733,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-an,
 - A mesosiderite of petrologic class B.
 
 - **Source:**
-https://www.mindat.org/min-49912.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B, 
+https://www.mindat.org/min-49912.html, 
 
 - Concept URI token: etma:1:1:49912:1
 
@@ -17749,8 +17750,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B,
 - A mesosiderite of petrologic class B and metamorphic grade 1.
 
 - **Source:**
-https://www.mindat.org/min-49913.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B1, 
+https://www.mindat.org/min-49913.html, 
 
 - Concept URI token: etma:1:1:49913:0
 
@@ -17766,8 +17767,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B1,
 - A mesosiderite of petrologic class B and metamorphic grade 2.
 
 - **Source:**
-https://www.mindat.org/min-49914.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B2, 
+https://www.mindat.org/min-49914.html, 
 
 - Concept URI token: etma:1:1:49914:9
 
@@ -17783,8 +17784,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B2,
 - A mesosiderite of petrologic class B and metamorphic grade 3.
 
 - **Source:**
-https://www.mindat.org/min-49915.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B3, 
+https://www.mindat.org/min-49915.html, 
 
 - Concept URI token: etma:1:1:49915:8
 
@@ -17800,8 +17801,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B3,
 - A mesosiderite of petrologic class B and metamorphic grade 4.
 
 - **Source:**
-https://www.mindat.org/min-49916.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B4, 
+https://www.mindat.org/min-49916.html, 
 
 - Concept URI token: etma:1:1:49916:7
 
@@ -17817,8 +17818,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-B4,
 - A mesosiderite of petrologic class C.
 
 - **Source:**
-https://www.mindat.org/min-49917.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-C, 
+https://www.mindat.org/min-49917.html, 
 
 - Concept URI token: etma:1:1:49917:6
 
@@ -17834,8 +17835,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-C,
 - A mesosiderite of petrologic class C and metamorphic grade 2.
 
 - **Source:**
-https://www.mindat.org/min-49918.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Mesosiderite-C2, 
+https://www.mindat.org/min-49918.html, 
 
 - Concept URI token: etma:1:1:49918:5
 
@@ -17870,8 +17871,8 @@ https://www.mindat.org/min-49919.html
 - An iron group meteorite of chemical group IC.
 
 - **Source:**
-https://www.mindat.org/min-49920.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IC, 
+https://www.mindat.org/min-49920.html, 
 
 - Concept URI token: etma:1:1:49920:0
 
@@ -17891,8 +17892,8 @@ IC-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49921.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IC-an, 
+https://www.mindat.org/min-49921.html, 
 
 - Concept URI token: etma:1:1:49921:9
 
@@ -17909,8 +17910,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IC-an,
 - An iron group meteorite of chemical group IIAB.
 
 - **Source:**
-https://www.mindat.org/min-49922.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIAB, 
+https://www.mindat.org/min-49922.html, 
 
 - Concept URI token: etma:1:1:49922:8
 
@@ -17930,8 +17931,8 @@ IIAB-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49923.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIAB-an, 
+https://www.mindat.org/min-49923.html, 
 
 - Concept URI token: etma:1:1:49923:7
 
@@ -17948,8 +17949,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIAB-an,
 - An iron group meteorite of chemical group IIC.
 
 - **Source:**
-https://www.mindat.org/min-49924.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIC, 
+https://www.mindat.org/min-49924.html, 
 
 - Concept URI token: etma:1:1:49924:6
 
@@ -17966,8 +17967,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIC,
 - An iron group meteorite of chemical group IID.
 
 - **Source:**
-https://www.mindat.org/min-49925.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IID, 
+https://www.mindat.org/min-49925.html, 
 
 - Concept URI token: etma:1:1:49925:5
 
@@ -17983,8 +17984,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IID,
 - An IID iron meteorite with anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49926.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IID-an, 
+https://www.mindat.org/min-49926.html, 
 
 - Concept URI token: etma:1:1:49926:4
 
@@ -18001,8 +18002,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IID-an,
 - An iron group meteorite of chemical group IIE.
 
 - **Source:**
-https://www.mindat.org/min-49927.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIE, 
+https://www.mindat.org/min-49927.html, 
 
 - Concept URI token: etma:1:1:49927:3
 
@@ -18022,8 +18023,8 @@ IIE-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49928.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIE-an, 
+https://www.mindat.org/min-49928.html, 
 
 - Concept URI token: etma:1:1:49928:2
 
@@ -18040,8 +18041,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIE-an,
 - An iron group meteorite of chemical group IIF.
 
 - **Source:**
-https://www.mindat.org/min-49929.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIF, 
+https://www.mindat.org/min-49929.html, 
 
 - Concept URI token: etma:1:1:49929:1
 
@@ -18058,8 +18059,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIF,
 - An iron group meteorite of chemical group IIIAB.
 
 - **Source:**
-https://www.mindat.org/min-49930.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIAB, 
+https://www.mindat.org/min-49930.html, 
 
 - Concept URI token: etma:1:1:49930:7
 
@@ -18079,8 +18080,8 @@ IIIAB-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49931.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIAB-an, 
+https://www.mindat.org/min-49931.html, 
 
 - Concept URI token: etma:1:1:49931:6
 
@@ -18097,8 +18098,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIAB-an,
 - An iron group meteorite of chemical group IIIE.
 
 - **Source:**
-https://www.mindat.org/min-49932.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIE, 
+https://www.mindat.org/min-49932.html, 
 
 - Concept URI token: etma:1:1:49932:5
 
@@ -18118,8 +18119,8 @@ IIIE-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49933.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIE-an, 
+https://www.mindat.org/min-49933.html, 
 
 - Concept URI token: etma:1:1:49933:4
 
@@ -18136,8 +18137,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIE-an,
 - An iron group meteorite of chemical group IIIF.
 
 - **Source:**
-https://www.mindat.org/min-49934.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIF, 
+https://www.mindat.org/min-49934.html, 
 
 - Concept URI token: etma:1:1:49934:3
 
@@ -18154,8 +18155,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIIF,
 - An iron group meteorite of chemical group IVA.
 
 - **Source:**
-https://www.mindat.org/min-49935.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IVA, 
+https://www.mindat.org/min-49935.html, 
 
 - Concept URI token: etma:1:1:49935:2
 
@@ -18175,8 +18176,8 @@ IVA-an iron meteorite
 
 
 - **Source:**
-https://www.mindat.org/min-49936.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IVA-an, 
+https://www.mindat.org/min-49936.html, 
 
 - Concept URI token: etma:1:1:49936:1
 
@@ -18193,8 +18194,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IVA-an,
 - An iron group meteorite of chemical group IVB.
 
 - **Source:**
-https://www.mindat.org/min-49937.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IVB, 
+https://www.mindat.org/min-49937.html, 
 
 - Concept URI token: etma:1:1:49937:0
 
@@ -18210,8 +18211,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IVB,
 - An iron meteorite belonging to chemical group IIG
 
 - **Source:**
-https://www.mindat.org/min-52370.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIG, 
+https://www.mindat.org/min-52370.html, 
 
 - Concept URI token: etma:1:1:52370:1
 
@@ -18227,8 +18228,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Iron,%20IIG,
 - A class of achronditic Martian meteorites.
 
 - **Source:**
-https://www.mindat.org/min-49938.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Martian, 
+https://www.mindat.org/min-49938.html, 
 
 - Concept URI token: etma:1:1:49938:9
 
@@ -18263,8 +18264,8 @@ https://www.mindat.org/min-49093.html
 from subalkaline magmas.
 
 - **Source:**
-https://www.mindat.org/min-49939.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Martian%20(shergottite), 
+https://www.mindat.org/min-49939.html, 
 
 - Concept URI token: etma:1:1:49939:8
 
@@ -18328,8 +18329,8 @@ https://www.mindat.org/min-49944.html
 - A clinopyroxenite composition Martian meteorite.
 
 - **Source:**
-https://www.mindat.org/min-49945.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Martian%20(nakhlite), 
+https://www.mindat.org/min-49945.html, 
 
 - Concept URI token: etma:1:1:49945:9
 
@@ -18346,8 +18347,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Martian%20(nakhlite),
 - A dunite composition Martian meteorite.
 
 - **Source:**
-https://www.mindat.org/min-49947.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Martian%20(chassignite), 
+https://www.mindat.org/min-49947.html, 
 
 - Concept URI token: etma:1:1:49947:7
 
@@ -18364,8 +18365,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Martian%20(chassignite),
 not assigned to the shergottite, nakhlite, or chassignite types.
 
 - **Source:**
-https://www.mindat.org/min-52197.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Martian%20(OPX), 
+https://www.mindat.org/min-52197.html, 
 
 - Concept URI token: etma:1:1:52197:0
 
@@ -18383,8 +18384,8 @@ basaltic clasts; this martian meteorite is not assigned to the
 shergottite, nakhlite, or chassignite types.
 
 - **Source:**
-https://www.mindat.org/min-52198.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Martian%20(basaltic%20breccia), 
+https://www.mindat.org/min-52198.html, 
 
 - Concept URI token: etma:1:1:52198:9
 
@@ -18420,8 +18421,8 @@ the parent body might be the Nenetta Asteroid (289 Nenetta). Named
 after Brachina, a meteorite found in Australia in 1974.
 
 - **Source:**
-https://www.mindat.org/min-49850.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Brachinite, 
+https://www.mindat.org/min-49850.html, 
 
 - Concept URI token: etma:1:1:49850:2
 
@@ -18441,8 +18442,8 @@ generally including Al-Ca-Ti-rich pyroxene, Ca-rich plagioclase, and
 Ca-rich olivine that may have exsolved the mineral kirschsteinite.
 
 - **Source:**
-https://www.mindat.org/min-49872.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Angrite, 
+https://www.mindat.org/min-49872.html, 
 
 - Concept URI token: etma:1:1:49872:4
 
@@ -18463,8 +18464,8 @@ do not come from the same parent asteroid as either EH or EL
 chondrites.
 
 - **Source:**
-https://www.mindat.org/min-49873.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Aubrite, 
+https://www.mindat.org/min-49873.html, 
 
 - Concept URI token: etma:1:1:49873:3
 
@@ -18480,8 +18481,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Aubrite,
 - An aubrite with certain anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-52372.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Aubrite-an, 
+https://www.mindat.org/min-52372.html, 
 
 - Concept URI token: etma:1:1:52372:9
 
@@ -18519,8 +18520,8 @@ of howardites are rich in solar-wind noble gases and thus inferred to
 be regolith breccias.
 
 - **Source:**
-https://www.mindat.org/min-49878.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Howardite, 
+https://www.mindat.org/min-49878.html, 
 
 - Concept URI token: etma:1:1:49878:8
 
@@ -18536,8 +18537,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Howardite,
 - An howardite that has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49879.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Howardite-an, 
+https://www.mindat.org/min-49879.html, 
 
 - Concept URI token: etma:1:1:49879:7
 
@@ -18563,8 +18564,8 @@ olivine. An important rock type in the Tertiary complexes of Scotland,
 UK. This term should no longer be used as a rock name.
 
 - **Source:**
-https://www.mindat.org/min-49880.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Eucrite, 
+https://www.mindat.org/min-49880.html, 
 
 - Concept URI token: etma:1:1:49880:3
 
@@ -18580,8 +18581,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Eucrite,
 - An anomalous Eucrite.
 
 - **Source:**
-https://www.mindat.org/min-49881.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Eucrite-an, 
+https://www.mindat.org/min-49881.html, 
 
 - Concept URI token: etma:1:1:49881:2
 
@@ -18597,8 +18598,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Eucrite-an,
 - An achondrite from the eucrite group; the meteorite is brecciated.
 
 - **Source:**
-https://www.mindat.org/min-49882.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Eucrite-br, 
+https://www.mindat.org/min-49882.html, 
 
 - Concept URI token: etma:1:1:49882:1
 
@@ -18615,8 +18616,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Eucrite-br,
 breccia.
 
 - **Source:**
-https://www.mindat.org/min-49886.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Eucrite-mmict, 
+https://www.mindat.org/min-49886.html, 
 
 - Concept URI token: etma:1:1:49886:7
 
@@ -18633,8 +18634,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Eucrite-mmict,
 breccia.
 
 - **Source:**
-https://www.mindat.org/min-49887.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Eucrite-pmict, 
+https://www.mindat.org/min-49887.html, 
 
 - Concept URI token: etma:1:1:49887:6
 
@@ -18651,8 +18652,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Eucrite-pmict,
 eucrite.
 
 - **Source:**
-https://www.mindat.org/min-49883.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Eucrite-cm, 
+https://www.mindat.org/min-49883.html, 
 
 - Concept URI token: etma:1:1:49883:0
 
@@ -18669,8 +18670,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Eucrite-cm,
 and for which the petrologic type has not been determined.
 
 - **Source:**
-https://www.mindat.org/min-49884.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Eucrite-melt%20breccia, 
+https://www.mindat.org/min-49884.html, 
 
 - Concept URI token: etma:1:1:49884:9
 
@@ -18687,8 +18688,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Eucrite-melt%20breccia,
 rich.
 
 - **Source:**
-https://www.mindat.org/min-49885.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Eucrite-Mg%20rich, 
+https://www.mindat.org/min-49885.html, 
 
 - Concept URI token: etma:1:1:49885:8
 
@@ -18704,8 +18705,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Eucrite-Mg%20rich,
 - An achondrite from the eucrite group; the meteorite is unbrecciated.
 
 - **Source:**
-https://www.mindat.org/min-49888.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Eucrite-unbr, 
+https://www.mindat.org/min-49888.html, 
 
 - Concept URI token: etma:1:1:49888:5
 
@@ -18727,8 +18728,8 @@ are collectively known as HED meteorites and may come from asteroid 4
 Vesta.
 
 - **Source:**
-https://www.mindat.org/min-49889.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Diogenite, 
+https://www.mindat.org/min-49889.html, 
 
 - Concept URI token: etma:1:1:49889:4
 
@@ -18744,8 +18745,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Diogenite,
 - A diogenite which is a polymict breccia.
 
 - **Source:**
-https://www.mindat.org/min-49890.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Diogenite-pm, 
+https://www.mindat.org/min-49890.html, 
 
 - Concept URI token: etma:1:1:49890:0
 
@@ -18761,8 +18762,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Diogenite-pm,
 - A diogenite which has anomalous properties.
 
 - **Source:**
-https://www.mindat.org/min-49891.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Diogenite-an, 
+https://www.mindat.org/min-49891.html, 
 
 - Concept URI token: etma:1:1:49891:9
 
@@ -18846,8 +18847,8 @@ https://www.mindat.org/min-49895.html
 olivine
 
 - **Source:**
-https://www.mindat.org/min-49896.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Diogenite-olivine, 
+https://www.mindat.org/min-49896.html, 
 
 - Concept URI token: etma:1:1:49896:4
 
@@ -18880,8 +18881,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar
 - A lunar achondrite meteorite that is primarily anorthositic.
 
 - **Source:**
-https://www.mindat.org/min-49950.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(anorth), 
+https://www.mindat.org/min-49950.html, 
 
 - Concept URI token: etma:1:1:49950:1
 
@@ -18898,8 +18899,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(anorth),
 troctolitic anorthosite.
 
 - **Source:**
-https://www.mindat.org/min-49959.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(troct.%20anorth.), 
+https://www.mindat.org/min-49959.html, 
 
 - Concept URI token: etma:1:1:49959:2
 
@@ -18916,8 +18917,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(troct.%20anorth.),
 feldspathic lithologies.
 
 - **Source:**
-https://www.mindat.org/min-49954.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(feldsp.%20breccia), 
+https://www.mindat.org/min-49954.html, 
 
 - Concept URI token: etma:1:1:49954:7
 
@@ -18933,8 +18934,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(feldsp.%20breccia)
 - A lunar achondrite meteorite that is primarily basaltic.
 
 - **Source:**
-https://www.mindat.org/min-49955.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(basalt), 
+https://www.mindat.org/min-49955.html, 
 
 - Concept URI token: etma:1:1:49955:6
 
@@ -18951,8 +18952,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(basalt),
 lithologies.
 
 - **Source:**
-https://www.mindat.org/min-49951.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(bas.%20breccia), 
+https://www.mindat.org/min-49951.html, 
 
 - Concept URI token: etma:1:1:49951:0
 
@@ -18969,8 +18970,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(bas.%20breccia),
 gabbroic lithologies.
 
 - **Source:**
-https://www.mindat.org/min-49953.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(bas/gab%20brec), 
+https://www.mindat.org/min-49953.html, 
 
 - Concept URI token: etma:1:1:49953:8
 
@@ -18987,8 +18988,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(bas/gab%20brec),
 lithologies.
 
 - **Source:**
-https://www.mindat.org/min-49952.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(bas/anor), 
+https://www.mindat.org/min-49952.html, 
 
 - Concept URI token: etma:1:1:49952:9
 
@@ -19004,8 +19005,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(bas/anor),
 - A lunar achondrite meteorite that is primarily gabbroic.
 
 - **Source:**
-https://www.mindat.org/min-49956.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(gabbro), 
+https://www.mindat.org/min-49956.html, 
 
 - Concept URI token: etma:1:1:49956:5
 
@@ -19022,8 +19023,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(gabbro),
 gabbro.
 
 - **Source:**
-https://www.mindat.org/min-49958.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(olivine%20gabbro), 
+https://www.mindat.org/min-49958.html, 
 
 - Concept URI token: etma:1:1:49958:3
 
@@ -19039,8 +19040,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(olivine%20gabbro),
 - A lunar achondrite meteorite that is primarily noritic.
 
 - **Source:**
-https://www.mindat.org/min-49957.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(norite), 
+https://www.mindat.org/min-49957.html, 
 
 - Concept URI token: etma:1:1:49957:4
 
@@ -19058,8 +19059,8 @@ differentiated parent body, which has been well-enough characterized
 to determine that it does not fit into any of the established groups.
 
 - **Source:**
-https://www.mindat.org/min-52201.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Achondrite-ung, 
+https://www.mindat.org/min-52201.html, 
 
 - Concept URI token: etma:1:1:52201:2
 
@@ -19077,8 +19078,8 @@ These are dominantly (>95 percent ) composed of secondary minerals
 formed from alteration after it landed.
 
 - **Source:**
-https://www.mindat.org/min-52237.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Relict%20meteorite, 
+https://www.mindat.org/min-52237.html, 
 
 - Concept URI token: etma:1:1:52237:7
 
@@ -19094,8 +19095,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Relict%20meteorite,
 - A relict meteorite that originated as an H group ordinary chondrite.
 
 - **Source:**
-https://www.mindat.org/min-52238.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Relict%20H, 
+https://www.mindat.org/min-52238.html, 
 
 - Concept URI token: etma:1:1:52238:6
 
@@ -19111,8 +19112,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Relict%20H,
 - A relict meteorite that originated as an iron meteorite.
 
 - **Source:**
-https://www.mindat.org/min-52239.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Relict%20iron, 
+https://www.mindat.org/min-52239.html, 
 
 - Concept URI token: etma:1:1:52239:5
 
@@ -19128,8 +19129,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Relict%20iron,
 - A relict meteorite that originated as an ordinary chondrite.
 
 - **Source:**
-https://www.mindat.org/min-52240.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Relict%20OC, 
+https://www.mindat.org/min-52240.html, 
 
 - Concept URI token: etma:1:1:52240:1
 
@@ -19145,8 +19146,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Relict%20OC,
 - A relict meteorite that originated as a ureilite.
 
 - **Source:**
-https://www.mindat.org/min-52241.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Relict%20ureilite, 
+https://www.mindat.org/min-52241.html, 
 
 - Concept URI token: etma:1:1:52241:0
 
@@ -19162,8 +19163,8 @@ https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Relict%20ureilite,
 - A stony meteorite that has not yet been classified.
 
 - **Source:**
-https://www.mindat.org/min-52369.html, 
 https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Stone-uncl, 
+https://www.mindat.org/min-52369.html, 
 
 - Concept URI token: etma:1:1:52369:5
 
