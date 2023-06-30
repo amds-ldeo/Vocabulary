@@ -4,7 +4,7 @@
 [Analytical methods for geochemistry](#Analyticalmethodsforgeochemistry)
 
 
-This file generated at: "2023-06-30T07:20:43.258107+00:00"
+This file generated at: "2023-06-30T14:14:03.991172+00:00"
 ---
 comment: | 
   WARNING: This file is generated. Any edits will be lost!
@@ -271,7 +271,6 @@ Namespace:
                     - [Electrothermal absorption spectrometry](#electrothermalabsorptionspectrometry)
                     - [Infrared absorption spectrometry](#infraredabsorptionspectrometry)
                     - [Laser absorption spectrometry](#laserabsorptionspectrometry)
-                - [Colormetric analysis](#colormetricanalysis)
                 - [Emission spectrometry](#emissionspectrometry)
                     - [Fire assay emission spectrometry](#fireassayemissionspectrometry)
                     - [Flame emission spectrometry](#flameemissionspectrometry)
@@ -584,7 +583,6 @@ https://www.gabbrielli.com/en/prodotto/dietrich-fruhling-calcimeter/,
 
 
 - Child of:
- [`opticalspectrometry`](#opticalspectrometry)
  [`wetchemistry`](#wetchemistry)
 
 - A method of chemical analysis in which reagents are added to a
@@ -6653,37 +6651,6 @@ https://w3id.org/geochem/1.0/agent/georoc,
 https://new.abb.com/products/measurement-products/analytical/laser-gas-analyzers, 
 
 - Concept URI token: laserabsorptionspectrometry
-
-
-[]{#colormetricanalysis}
-
-######  Colormetric analysis
-
-
-- Child of:
- [`opticalspectrometry`](#opticalspectrometry)
- [`wetchemistry`](#wetchemistry)
-
-- A method of chemical analysis in which reagents are added to a
-solution to form coloured compounds with specific elements. The
-intensity of the colour, measured on a spectrophotometer, is
-proportional to the concentration of the element. ('colorimetric
-analysis .' A Dictionary of Earth Sciences. Encyclopedia.com. 21 Dec.
-2022 <https://www.encyclopedia.com/science/dictionaries-thesauruses-
-pictures-and-press-releases/colorimetric-analysis>.)
-
-- **Alternate labels:**
-COLORIMETRIC ANALYSIS, 
-COLORIMETRY, 
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/agent/astromat, 
-https://w3id.org/geochem/1.0/agent/georoc, 
-https://w3id.org/geochem/1.0/agent/petdb, 
-https://www.encyclopedia.com/science/dictionaries-thesauruses-pictures-and-press-releases/colorimetric-analysis, 
-
-- Concept URI token: colormetricanalysis
 
 
 []{#emissionspectrometry}
