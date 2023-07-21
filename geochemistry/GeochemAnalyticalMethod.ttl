@@ -3444,6 +3444,29 @@ meth:thermogravimetryanalysis
   skos:notation "TGA" ;
   skos:prefLabel "Thermogravimetry analysis"@en ;
 .
+meth:thermoluminescenceanalysis
+  rdf:type skos:Concept ;
+  dcterm:source """Hasan, F. A., Score, R. and Sears, D. W. G. (1989) : The natural thermoluminescence survey of
+Antarctic meteorites. A discussion of methods for reporting natural TL data. Lunar and
+Planetary XX. Houston, Lunar Planet. Inst., 383-384;  https://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query?bibcode=1989LPI....20..383H&db_key=AST""" ;
+  dcterm:source "MetBase" ;
+  dcterm:source "P.H. Benoit, ,K. Ninagawa, and D.W.G. Sears, 2000, Thermoluminescence sensitivity and thermal history of unequilibrated ordinary chondrites: Review and update: Lunar and Planetary Science XXXI, 1394.pdf; https://dsears.hosted.uark.edu//publications/pub%20by%20year/2000%20papers/benoit%20et%20al%202000c.pdf" ;
+  rdfs:label "Thermoluminescence analysis"@en ;
+  skos:broader meth:analyticalmethod ;
+  skos:definition "Technique used to evaluate the degree of metamorphism for ordinary chondrites, CM, CV, and CO chondrites and eucrites, and to identify meteorites that have experience unusual radiation or thermal history.  Procedure: samples pulverized to 100 mesh powders, metal removed with a hand magnet. Aliquot (typically 4 mg) placed in copper pans, their natural TL emitted light intensity measured while by heating to 500 degree C, annealing any TL effect. Sample is then given a known dose of radiation and induced TL measured by heating to 500 degree C while the intensity of light emitted is measured. Light measured using a photomultiplier (or similar radiometer) equipped with IR and red filters (possibly other filters). Measurements include TL sensitivity - the maximum intensity of light emitted normalized to a standard of Dhajala (H3.8) powder;  Temperature of maximum TL light intensity ('peak temperature'); Peak width of the light intensity vs. temperature curve as full-width at half maximum; ratio of light intensity peak height at low and high temperature (generally 250 and 350 degrees C), 'equivalent dose' - the ratio of natural TL intensity to induced TL intensity (at 250 degree C), multiplied by the excitation dose to induce TL.  Parameters in the experiments include the mass of sample analyzed, temperature range for heating, kind of radiometer and filters used, heating rate (count time at each temperature...), and dose of radiation to the sample after the initial heating and annealing."@en ;
+  skos:prefLabel "Thermoluminescence analysis"@en ;
+.
+meth:thermoluminescencedating
+  rdf:type skos:Concept ;
+  dcterm:source <https://w3id.org/geochem/1.0/agent/astromat> ;
+  dcterm:source "MetBase" ;
+  dcterm:source "https://en.wikipedia.org/wiki/Thermoluminescence_dating" ;
+  rdfs:label "Thermoluminescence dating"@en ;
+  skos:broader meth:geochronology ;
+  skos:definition "the determination of the time elapsed since a sample was either heated or exposed to sunlight. The method is based on three observations. 1. estimation of the ionizing radiation flux in the sample location; 2. estimation of the accumulation rate of trapped exited states in the material lattice per unit of time at a given ionizing radiation flux;  and 3) measurement of emitted thermoluminescent light intensity as the sample is heated. The ionizing radiation flux at the sample site is related to exposure to sunlight (related to depth of burial), cosmic rays, and radiation due to radioactive decay of elements in the enclosing material (mostly related uranium and potassium concentration).  The ionizing radiation in the sample environment creates electronic excited states in the sample that can be trapped. Exposure to light or heat can causes the electrons in these states to decay to a lower-energy state and emit photons. If the sample has been heated at some point (e.g. by firing ceramics), the accumulation of trapped electrons is reset. By measuring the intensity (total energy carried by the photons reaching a unit area) of light emited when the sample is heated, the density of these electronically excited sites can be estimated.  In combination with the ambient radiation flux, and the trapped excited state accumulation rate in the material, the time interval since the sample was reset can be estimated."@en ;
+  skos:inScheme meth:method ;
+  skos:prefLabel "Thermoluminescence dating"@en ;
+.
 meth:titration
   rdf:type skos:Concept ;
   dcterm:source <https://en.wikipedia.org/wiki/Titration> ;
