@@ -66,8 +66,8 @@
   dcterms:modified "2023-06-19" ;
   dcterms:source "https://www.mindat.org/min-49091.html" ;
   rdfs:label "Shock lithified impact regolith"@en ;
-  skos:broader <etma:1:1:49089:2> ;
-  skos:broader <etma:1:1:49509:1> ;
+  skos:broader <etma:1:1:49077:7> ;
+  skos:broader <etma:1:1:49508:2> ;
   skos:definition "Consolidated clastic impact debris."@en ;
   skos:inScheme etma:cscheme ;
   skos:prefLabel "Shock lithified impact regolith"@en ;
@@ -76,6 +76,9 @@
   rdf:type skos:Concept ;
   dcterms:modified "2023-06-19" ;
   rdfs:label "Regolith breccia"@en ;
+  skos:broader <etma:1:1:49504:6> ;
+  skos:broader <etma:1:1:50222:1> ;
+  skos:inScheme etma:cscheme ;
   skos:prefLabel "Regolith breccia"@en ;
 .
 <etma:1:1:49093:5>
@@ -83,8 +86,8 @@
   dcterms:modified "2023-06-19" ;
   dcterms:source "https://www.mindat.org/min-49093.html" ;
   rdfs:label "Martian basaltic breccia"@en ;
-  skos:broader <etma:1:1:49092:6> ;
   skos:broader <etma:1:1:49938:9> ;
+  skos:broader <etma:1:1:50222:1> ;
   skos:definition "Known from meteoriet NWA7034, it is a volcanic breccia with a porphyritic appearance."@en ;
   skos:inScheme etma:cscheme ;
   skos:prefLabel "Martian basaltic breccia"@en ;
@@ -93,10 +96,11 @@
   rdf:type skos:Concept ;
   dcterms:modified "2018-08-26" ;
   dcterms:source "https://www.mindat.org/min-49504.html" ;
-  rdfs:label "Meteorite and other extra-terrestrial rock and sediment"@en ;
+  rdfs:label "Extra-terrestrial rock or sediment"@en ;
   skos:definition "Includes meteorites, Lunar rock and sediment, and rock and sediment from other extraterrestrial bodies."@en ;
+  skos:historyNote "change label from 'Meteorite and other extra-terrestrial rock and sediment' to 'Extra-terrestrial rock or sediment'.  A meteorite is an object defined by genetic origin, not a material type."@en ;
   skos:inScheme etma:cscheme ;
-  skos:prefLabel "Meteorite and other extra-terrestrial rock and sediment"@en ;
+  skos:prefLabel "Extra-terrestrial rock or sediment"@en ;
   skos:topConceptOf etma:cscheme ;
 .
 <etma:1:1:49505:5>
@@ -148,6 +152,7 @@
   dcterms:source "https://www.mindat.org/min-49509.html" ;
   rdfs:label "Lunar breccia"@en ;
   skos:broader <etma:1:1:49508:2> ;
+  skos:broader <etma:1:1:50222:1> ;
   skos:definition "Lunar rocks composed of sharp angular fragments of older rocks, often including reworked fragments of previous lunar breccias."@en ;
   skos:inScheme etma:cscheme ;
   skos:prefLabel "Lunar breccia"@en ;
@@ -205,12 +210,14 @@
 <etma:1:1:49515:2>
   rdf:type skos:Concept ;
   dcterms:modified "2023-06-19" ;
+  dcterms:source "https://en.wikipedia.org/wiki/Chondrite" ;
   dcterms:source "https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Chondrite-uncl" ;
   rdfs:label "Chondrite meteorite"@en ;
   skos:broader <etma:1:1:49514:3> ;
-  skos:definition "A primitive meteorite, usually bearing chondrules, that has not experienced igneous differentiation on its parent body."@en ;
+  skos:definition "A stony (non-metallic) meteorite, usually bearing chondrules, that has not experienced igneous differentiation on its parent body."@en ;
   skos:inScheme etma:cscheme ;
   skos:notation "Chondrite-uncl" ;
+  skos:note "A chondrite consists of a consolidated aggregate of chondrules, refractory inclusions (including Ca–Al inclusions), particles rich in metallic Fe-Ni or verious sulfide mienrals, isolated grains of silicate minerals, fine-grained (micrometre-sized or smaller) dust, which might be present as the matrix of the rock or forming rims around individual chondrules or refractory inclusions. This fine-grained dust might contain presolar grains, refractory mineral particles identified by their abnormal isotopic abundances."@en ;
   skos:prefLabel "Chondrite meteorite"@en ;
 .
 <etma:1:1:49517:0>
@@ -3944,6 +3951,7 @@
   rdfs:label "Primitive achondrite meteorite"@en ;
   skos:broader <etma:1:1:49514:3> ;
   skos:definition "A meteorite that has lost its chondritic texture due to heating and partial melting, but still has nearly chondritic composition."@en ;
+  skos:editorialNote "how is this differentiated from 'Petrologic Type 7 chondrite meteorite'?"@en ;
   skos:inScheme etma:cscheme ;
   skos:notation "Achondrite-prim" ;
   skos:prefLabel "Primitive achondrite meteorite"@en ;
@@ -4961,6 +4969,7 @@
   skos:definition "A class of Martian meteorites comprising basalt and gabbro formed from subalkaline magmas."@en ;
   skos:inScheme etma:cscheme ;
   skos:notation "Martian (shergottite)" ;
+  skos:note "Shergottite is an igneous rocks with mafic to ultramafic lithology. There are three main types, basaltic, olivine-phyric (such as the Tissint group found in Morocco in 2011) and Lherzolitic shergottites, based on their crystal size and mineral content. https://en.wikipedia.org/wiki/Martian_meteorite#Shergottites"@en ;
   skos:prefLabel "Shergottite meteorite"@en ;
 .
 <etma:1:1:49941:3>
@@ -5036,6 +5045,7 @@
   dcterms:source "https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(bas.%20breccia)" ;
   dcterms:source "https://www.mindat.org/min-49951.html" ;
   rdfs:label "Basaltic breccia Lunar meteorite"@en ;
+  skos:broader <etma:1:1:49509:1> ;
   skos:broader <etma:1:1:49955:6> ;
   skos:definition "A lunar achondrite meteorite that is a breccia of primarily basaltic lithologies."@en ;
   skos:inScheme etma:cscheme ;
@@ -5072,6 +5082,7 @@
   dcterms:source "https://www.lpi.usra.edu/meteor/metbullclass.php?sea=Lunar%20(feldsp.%20breccia)" ;
   dcterms:source "https://www.mindat.org/min-49954.html" ;
   rdfs:label "Feldspathic breccia Lunar meteorite"@en ;
+  skos:broader <etma:1:1:49509:1> ;
   skos:broader <etma:1:1:50275:3> ;
   skos:definition "A lunar achondrite meteorite that is a breccia of primarily feldspathic lithologies."@en ;
   skos:inScheme etma:cscheme ;
@@ -5190,11 +5201,13 @@
   rdf:type skos:Concept ;
   dcterms:modified "2017-11-10" ;
   dcterms:source "https://www.mindat.org/min-50269.html" ;
-  rdfs:label "Differentiated achondrite meteorite"@en ;
+  rdfs:label "Achondrite meteorite"@en ;
   skos:broader <etma:1:1:49514:3> ;
   skos:definition "A stony meteorite that lacks chondrules and originated on a differentiated parent body."@en ;
+  skos:historyNote "change label from 'Differentiated achondrite meteorite' to 'Achondrite'. All achondrites are by definintion from a differentiated parent body. MetBull uses achondrite."@en ;
   skos:inScheme etma:cscheme ;
-  skos:prefLabel "Differentiated achondrite meteorite"@en ;
+  skos:note "stony meteorite containing no chondrules. Exclude carbonaceous chondrites which are heavily and any evidence for their having contained chondrules is lost. Similar in appearance to terrestrial igneous rocks that have a low silica content, such as basalts, peridotites, and pyroxenites. (https://www.britannica.com/science/achondrite)"@en ;
+  skos:prefLabel "Achondrite meteorite"@en ;
 .
 <etma:1:1:50270:8>
   rdf:type skos:Concept ;
@@ -5478,7 +5491,7 @@
   dcterms:source "https://www.mindat.org/min-51453.html" ;
   rdfs:label "Shock lithified impact regolith breccia"@en ;
   skos:broader <etma:1:1:49091:7> ;
-  skos:broader <etma:1:1:50222:1> ;
+  skos:broader <etma:1:1:49092:6> ;
   skos:definition "Consolidated clastic impact debris breccia."@en ;
   skos:inScheme etma:cscheme ;
   skos:prefLabel "Shock lithified impact regolith breccia"@en ;
@@ -5502,6 +5515,7 @@
   dcterms:source "https://www.mindat.org/min-52198.html" ;
   rdfs:label "Martian (basaltic breccia) meteorite"@en ;
   skos:broader <etma:1:1:49938:9> ;
+  skos:broader <etma:1:1:50222:1> ;
   skos:definition "A martian meteorite that is a breccia dominantly composed of basaltic clasts; this martian meteorite is not assigned to the shergottite, nakhlite, or chassignite types."@en ;
   skos:inScheme etma:cscheme ;
   skos:notation "Martian (basaltic breccia)" ;
