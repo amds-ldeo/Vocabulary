@@ -1,206 +1,206 @@
-﻿notation,replace,label,notes,finalvalues,,,sorted
-AAS,AA-S,Atomic absorption spectrometry,,AA-S,,,AA-S
-ADS,,Adsorption analysis,,ADS,,,ADS
-AFM,,AFM topography imaging,,AFM,,,AFM
-AFS,F-S,Fluorescence spectrometry,,F-S,,,ALPHA
-ALPHA,,Alpha particle counting,,ALPHA,,,ALPHA-S
-ALPHASPEC,ALPHA-S,Alpha particle spectrometry,,ALPHA-S,,,A-MS
-AMS,A-MS,Accelerator mass spectrometry,,A-MS,,,ANC
-ANC,,Anion chromatography analysis,,ANC,,,APT
-APT,,Atom probe tomography,,APT,,,ARCA
-ARGT,,40Ar-39Ar geochronology,,ARGT,,,ARGT
-ARM,,Angle of repose measurement,,ARM,,,ARM
-ARS,,Gutzeit test,,ARS,,,ARS
-ART,,Alpha recoil track counting,,ART,,,ART
-AUGER,,Auger electron spectroscopy,,AUGER,,,AUGER
-BETA,,Beta counting,,BETA,,,BB-X-S
-BSE,,Backscattered electron imaging,,BSE,,,BETA
-CAPD,,Capacitance dilatometry,,CAPD,,,BSE
-CB,,Carbonate bomb analysis,,CB,,,BSE-GB
-CCOMB,,Catalytic combustion analysis,,CCOMB,,,CAPD
-CFIRMS,CF-IR-MS,Continuous flow isotope ratio mass spectrometry,,CF-IR-MS,,,CB
-CHARM,,Charmograph analysis,,CHARM,,,CCOMB
-CIC,,Combustion Ion Chromatography,,CIC,,,CCR
-CIR,CIR-S,Combustion infrared spectrometry,,CIR-S,,,CF-IR-MS
-COL,,Colormetric analysis,,COL,,,C-GC-IR-MS
-COMB,,Combustion analysis,,COMB,,,CHARM
-COMPT,,Compression test,,COMPT,,,CIC
-COUL,,Coulometrical analysis,,COUL,,,CIR-S
-DCP,DCP-S,Direct current plasma spectrometry,,DCP-S,,,CL
-DCPAES,DC-AE-S,Direct current plasma emission spectrometry,atomic emission?,DC-AE-S,,,COL
-DDA,,Deuteron activation analysis,,DDA,,,COMB
-DESI-Orbitrap MS,DESI-OT-MS,Desorption electrospray ionization orbitrap mass spectrometry,,DESI-OT-MS,,,COMPT
-DFCALC,,Dietrich-Fruhling calcimetry,,DFCALC,,,COUL
-DIIRMS,DI-IR-MS,Dual inlet isotope ratio mass spectrometry,,DI-IR-MS,,,CR
-DSC,,Differential scanning calorimetry,,DSC,,,DC-AE-S
-DSSM,,Direct shear strength measurement,,DSSM,,,DCP-S
-EA,,Elemental analysis,,EA,,,DDA
-EA-IRMS,EA-IR-MS,Elemental analysis isotope ratio mass spectrometry,,EA-IR-MS,,,deprecate
-EAMS,EA-MS,Elemental analysis mass spectrometry,,EA-MS,,,DESI-OT-MS
-EBSD,,Electron backscatter diffraction,,EBSD,,,DFCALC
-EDS,ED-X-S,Energy dispersive X-ray spectrometry,"seems like a really ubiquitous usage, ?don't change?",ED-X-S,,,DI-IR-MS
-EEDS,EI-ED-X-S,Energy Dispersive electron induced X-ray spectrometry,,EI-ED-X-S,,,DSC
-EFTEM,,Energy-filtered transmission electron imaging,,EFTEM,,,DSSM
-EMPA,QEI-X-S,Quantitative analysis electron induced X-ray spectrometry,"EMPA seems like a really ubiquitous usage, ?don't change? Doesn't specify detector like EEDS or EDS, guess includes Wavelength dispersive and EDS detectors",QEI-X-S,,,EA
-ENAA,,Epithermal neutron activation analysis,,ENAA,,,EA-IR-MS
-ES,E-S,Emission spectrometry,,E-S,,,EA-MS
-ESR,,Electron spin resonance age analysis,,ESR,,,EBSD
-ETAAS,ET-AA-S,Electrothermal absorption spectrometry,atomic absorption?,ET-AA-S,,,EC
-EXAFS,,Extended X-ray absorption fine structure,,EXAFS,,,ED-X-S
-FIB-SEM,,Focused ion beam scanning microscopy,,FIB-SEM,,,EFTEM
-FINESSE,,Stepped heating carbon and nitrogen isotopic analysis,,FINESSE,,,EI-ED-X-S
-FISH,,Fluorescent in situ hybridization,,FISH,,,EI-S
-FLES,FL-E-S,Flame emission spectrometry,,FL-E-S,,,EI-WD-X-S
-FNAA,,Fast neutron activation analysis,,FNAA,,,EI-X-S
-FT,,Fission track counting,,FT,,,EL-S
-FTICR-MS,,Fourier transform ion cyclotron resonance mass spectrometry,,FTICR-MS,,,ENAA
-FTIR,FT-IR-S,Fourier transform infrared spectrometry,,FT-IR-S,,,E-S
-GAMMA,GR-S,Gamma ray spectrometry,as suggested by  https://github.com/amds-ldeo/Vocabulary/issues/1,GR-S,,,ESR
-GC,GAMMA,Gamma counting,suggested by https://github.com/amds-ldeo/Vocabulary/issues/1,GAMMA,,,ET-AA-S
-GC,,Gas chromatography analysis,,GC,,,EXAFS
-GC-C-IRMS,C-GC-IR-MS,Combustion gas chromatography isotopic ratio mass spectrometry,,C-GC-IR-MS,,,FA-E-S
-GC-FID,,Gas chromatography flame ionization detection,,GC-FID,,,FIB-SEM
-GC-MS,,Gas chromatography mass spectrometry,,GC-MS,,,FINESSE
-GC-TCD,,Gas chromatography thermal conductivity detection,,GC-TCD,,,FISH
-GDMS,GD-MS,Glow discharge mass spectrometry,,GD-MS,,,FL-E-S
-GIO,,Gradient ion chromatography analysis,,GIO,,,FNAA
-GPYC,,Gas pycnometry,,GPYC,,,F-S
-GRAV,,Gravimetric analysis,,GRAV,,,FT
-HR-CL,CL,Cathodoluminescence imaging,,CL,,,FTICR-MS
-HRICPMS,deprecate,High resolution inductively coupled plasma mass spectrometry,,deprecate,,,FT-IR-S
-IC,,Ion chromatography analysis,,IC,,,GAMMA
-ICP-SFMS,SF-ICP-MS,Sector field inductively coupled plasma mass spectrometry,,SF-ICP-MS,,,GC
-ICPES,ICP-E-S,Inductively coupled plasma emission spectrometry,,ICP-E-S,,,GC-FID
-ICPMS,ICP-MS,Inductively coupled plasma mass spectrometry,,ICP-MS,,,GC-MS
-ICPOES,ICP-OE-S,Inductively coupled plasma optical emission spectrometry,,ICP-OE-S,,,GC-TCD
-IES,EI-S,Electrochemical impedance spectroscopy,,EI-S,,,GD-MS
-IGN,,Loss on ignition analysis ,,IGN,,,GIO
-IH,,Induction heating analysis,,IH,,,GPYC
-INAA,,Instrumental neutron activation analysis ,,INAA,,,GRAV
-IR,IR-S,Infrared spectrometry,,IR-S,,,GR-S
-IRAS,IR-A-S,Infrared absorption spectrometry,,IR-A-S,,,IC
-IRM,,Infrared reflectance,,IRM,,,ICP-E-S
-IRMS,IR-MS,Isotope ratio mass spectrometry,,IR-MS,,,ICP-MS
-IRP,,Infrared photometry,,IRP,,,ICP-MS-MC
-ISE,,Ion sensitive electrode analysis,,ISE,,,ICP-OE-S
-LA-RIMS,LA-RI-MS,Laser ablation resonance ionization mass spectrometry,,LA-RI-MS,,,ICP-Q-MS
-LAICPMS,LA-ICP-MS,Laser ablation inductively coupled plasma mass spectrometry,,LA-ICP-MS,,,IGN
-LAMS,LA-MS,Laser ablation mass spectrometry,,LA-MS,,,IH
-LASS,LA-SS-MS,Laser ablation split stream mass spectrometry ,,LA-SS-MS,,,INAA
-LC-MS,,Liquid chromatography mass spectrometry,,LC-MS,,,IR-A-S
-LC-OCD,,Liquid chromatography organic carbon detection,,LC-OCD,,,IRM
-LECO,,LECO furnace analysis,,LECO,,,IR-MS
-LF,LF-MS,Laser fluorination mass spectrometry,,LF-MS,,,IRP
-LIBS,LIB-S,Laser Induced Breakdown Spectrometry,,LIB-S,,,IR-S
-LIC,LC,Liquid chromatography analysis,,LC,,,IR-T-S
-LIMS,LI-MS,Laser ionization mass spectrometry,,LI-MS,,,ISE
-LWI,L-A-S,Laser absorption spectrometry,,L-A-S,,,LA-ICP-MS
-MANO,,Manometry,,MANO,,,LA-MS
-MBS,MB-S,Mossbauer spectrometry,,MB-S,,,LA-RI-MS
-MC-ICP-MS,ICP-MS-MC,Multi collector inductively coupled plasma mass spectrometry,change order to follow workflow? (view MS as the analyzer),ICP-MS-MC,,,L-A-S
-MCFMS,,Mini cryogen free measurement system for thermal conductivity,,MCFMS,,,LA-SS-MS
-MMMS,MM-MS,Micromass multiprep mass spectrometry,,MM-MS,,,LC
-MS,MS,Mass spectrometry,,MS,,,LC-MS
-NAA,,Neutron activation analysis,,NAA,,,LC-OCD
-NCC,,Neutron counting,,NCC,,,LECO
-NGMS,NG-MS,Noble gas mass spectrometry,,NG-MS,,,LF-MS
-NGS,,Next generation sequencing,,NGS,,,LIB-S
-NI-MI,NIMI,Nanoindentation and microindentation,,NIMI,,,LI-ICP-MS
-NINGMS,NI-NG-MS,Neutron irradiation noble gas mass spectrometry,,NI-NG-MS,,,LI-MS
-NMP,,Nuclear microprobe analysis,,NMP,,,MANO
-NMR,NMR-S,Nuclear magnetic resonance spectrometry,,NMR-S,,,MB-S
-NPTC,,Nuclear particle track counting,,NPTC,,,MCFMS
-NRA,NR-S,Nuclear reaction spectrometry,,NR-S,,,MM-MS
-NSFA-ID,FA-E-S,Fire assay emission spectrometry,,FA-E-S,,,MP-L2-MS
-NTIMS,NTI-MS,Negative ion thermal ionization mass spectrometry,,NTI-MS,,,MS
-OES,OE-S,Optical emission spectrometry,,OE-S,,,M-XF-S
-OSPEC,O-S,Optical spectrometry,,O-S,,,NAA
-OTHER,,Other,,OTHER,,,NCC
-PAA,,Photon activation analysis,,PAA,,,NG-MS
-PC,POC,Point counting,avoid duplicaton with ParticleCounting,POC,,,NGS
-PCD-AFM,,Particle cohesion determination,,PCD-AFM,,,NIMI
-PEN,,Penfield method analysis,,PEN,,,NI-NG-MS
-PES,P-E-S,Plasma emission spectrometry,,P-E-S,,,N-IR-S
-PGNAA,,Prompt gamma neutron activation analysis,,PGNAA,,,NMP
-PHOT,,Photometry,,PHOT,,,NMR-S
-PIGE,,Activation analysis,,PIGE,,,NPTC
-PIXE,PI-X-S,Particle induced X-ray spectrometry,,PI-X-S,,,NR-S
-PIXEA,QPI-X-S,Quantitative analysis particle induced X-ray spectrometry,is this different from PIXE?,QPI-X-S,,,NTI-MS
-POES,P-OE-S,Plasma optical emission spectrometry,,P-OE-S,,,OE-S
-POL,,Polarography,,POL,,,O-S
-POT,,Potentiometry,,POT,,,OTHER
-PSFD,,Particle size distribution analysis ,,PSFD,,,PAA
-PSMS,PS-MS,Plasma source mass spectrometry,,PS-MS,,,PBE
-PTIMS,PTI-MS,Positive ion thermal ionization mass spectrometry,,PTI-MS,,,PC
-Py-GC,PY-GC,Pyrolysis gas chromatography,,PY-GC,,,PCD-AFM
-Py-GC-FID,PY-GC-FID,Pyrolysis gas chromatography flame ionization detection,,PY-GC-FID,,,PEN
-Py-GC-MS,PY-GC-MS,Pyrolysis gas chromatography mass spectrometry,,PY-GC-MS,,,P-E-S
-Q-ICP-MS,ICP-Q-MS,Quadrupole inductively coupled plasma mass spectrometry,,ICP-Q-MS,,,PGNAA
-QRIS,,Quantitative reflectance imaging,,QRIS,,,PHOT
-RAD,,X-ray imaging,,RAD,,,PH-S
-RAMAN,R-S,Raman spectrometry,,R-S,,,PIGE
-RI-TOF-NGMS,RI-TOF-NG-MS,Resonance ionization time of flight noble gas mass spectrometry,,RI-TOF-NG-MS,,,PI-X-S
-RNAA,,Radiochemical neutron activation analysis,,RNAA,,,POC
-S-XRF,S-XF-S,Synchroton X-ray fluorescence spectrometry,,S-XF-S,,,P-OE-S
-SCBTCA,,Spherical cell bulk thermal conductivity analysis,,SCBTCA,,,POL
-SE,,Secondary electron imaging,,SE,,,P-O-S
-SEM,,Electron microscopy imaging,,SEM,,,POT
-SEMEBSDGrainImageMap,BSE-GB,Backscattered electron grain boundary imaging,,BSE-GB,,,P-S
-SHRIMP,,Sensitive high-mass-resolution ion microprobe,"for consistency should be SHR-SI-MS, it is a mass spectrometry method…",SHRIMP,,,PSFD
-SIMS,SI-MS,Secondary ionization mass spectrometry,,SI-MS,,,PS-MS
-SLS,,Structured light scanning,,SLS,,,PTI-MS
-SMA,,Moisture analysis,,SMA,,,PY-GC
-SNICPMS,LI-ICP-MS,Liquid inlet inductively coupled plasma mass spectrometry,,LI-ICP-MS,,,PY-GC-FID
-SNMS,SN-MS,Secondary neutral mass spectrometry,,SN-MS,,,PY-GC-MS
-SOSMS,SOS-MS,Solid source mass spectrometry,,SOS-MS,,,QEI-X-S
-SP-PH,SPH,Spectrophotometry,,SPH,,,QPCR
-SPEC,S,Spectrometry,,S,,,QPI-X-S
-SS-NMR,SS-NMR-S,Solid state nuclear magnetic resonance spectroscopy,"this should be spectrometry, I missed this one…",SS-NMR-S,,,QRIS
-SSMS,SPS-MS,Spark source mass spectrometry,can't use SS (split stream),SPS-MS,,,RAD
-STEM,,Scanning transmission electron imaging,,STEM,,,RI-TOF-NG-MS
-SV-RUEC,SVUEC,Seismic velocity and ultrasonic elastic constant measurement,,SVUEC,,,RNAA
-SXRFTomographicImage,S-XF-T,Synchrotron X-ray fluorescence tomography,,S-XF-T,,,R-S
-TEM,,Transmission electron imaging,,TEM,,,S
-TGA,,Thermogravimetry analysis,,TGA,,,SA
-TIMS,TI-MS,Thermal ionization mass spectrometry,,TI-MS,,,SCBTCA
-TIRS,IR-T-S,Infrared transmission spectrometry,,IR-T-S,,,SE
-TIT,,Titration,,TIT,,,SEM
-TPD,,Temperature programmed desorption electron probe analysis,,TPD,,,SF-ICP-MS
-TXRF,TR-XF-S,Total reflection X-ray fluorescence spectrometry,,TR-XF-S,,,SHRIMP
-UVES,UV-E-S,Ultraviolet emission spectrometry,,UV-E-S,,,SI-MS
-VLM,,Visible light microscopy,,VLM,,,SLS
-VNMIR,,"Visible, near-infrared, and mid-infrared imaging",,VNMIR,,,SMA
-VOLT,,Voltammetry,,VOLT,,,SN-MS
-WDS,EI-WD-X-S,Wavelength dispersive electron induced X-ray Spectrometry,,EI-WD-X-S,,,SOS-MS
-WET,,Wet chemistry,,WET,,,SPH
-XANES,XANE-S,X-ray absorption near edge structure spectrometry,,XANE-S,,,SPS-MS
-XAS,X-A-S,X-ray absorption spectrometry,,X-A-S,,,SS-NMR-S
-XCT,,X-ray computed tomography,,XCT,,,STEM
-XMAP,,X-ray composition map,,XMAP,,,SVUEC
-XPS,,X-ray photoelectron spectrometery,,XPS,,,S-XF-S
-XRBB,BB-X-S,Broad beam X-ray spectrometry,,BB-X-S,,,S-XF-T
-XRD,,X-ray diffraction,,XRD,,,TA
-XRF,XF-S,X-ray fluorescence spectrometry,,XF-S,,,TC
-XRFEDS,XF-ED-S,Energy dispersive X-ray fluorescence spectrometry,,XF-ED-S,,,TEM
-XRM,,Microscopic X-ray imaging,,XRM,,,TGA
-XRPD,,X-ray powder diffraction,,XRPD,,,TI-MS
-XRS,X-S,X-ray spectrometry,,X-S,,,TIT
-microL2MS,MP-L2-MS,Microprobe two step laser mass spectrometry,,MP-L2-MS,,,TPD
-microXRF,M-XF-S,Micro X-ray fluorescence spectrometry,,M-XF-S,,,TR-XF-S
-nanoIR,N-IR-S,Nanoscale infrared spectrometry,,N-IR-S,,,T-S
-qPCR,QPCR,Quantitative polymerase chain reaction,,QPCR,,,UV-E-S
-xARCA,ARCA,Acid reaction carbonate analysis,"I think these are all ones I added, thus the 'x' prefix",ARCA,,,VLM
-xCCR,CCR,Cation chromatography analysis,,CCR,,,VNMIR
-xCR,CR,Chromatography analysis,,CR,,,VOLT
-xEC,EC,Electrochemical techniques,,EC,,,WET
-xEIXS,EI-X-S,Electron induced X-ray spectrometry,,EI-X-S,,,XANE-S
-xESPEC,EL-S,Electron spectrometry,"E-S is emission spectromety, thus EL",EL-S,,,X-A-S
-xPASP,P-S,Particle spectrometry,,P-S,,,XCT
-xPBE,PBE,Particle beam excitation,,PBE,,,XF-ED-S
-xPC,PC,Particle counting,,PC,,,XF-S
-xPHSP,PH-S,Photon spectrometry,,PH-S,,,XMAP
-xPOS,P-O-S,Plasma optical spectrometry,different from plasma optical emission spectrometry?,P-O-S,,,XPS
-xSA,SA,Surface analysis,,SA,,,XRD
-xTA,TA,Thermal analysis,,TA,,,XRM
-xTC,TC,Track counting,,TC,,,XRPD
-xTSPEC,T-S,Transmission spectrometry,,T-S,,,X-S
+﻿notation,replace,label,notes,finalvalues,sorted
+AAS,AA-S,Atomic absorption spectrometry,,AA-S,AA-S
+ADS,,Adsorption analysis,,ADS,ADS
+AFM,,AFM topography imaging,,AFM,AFM
+AFS,F-S,Fluorescence spectrometry,,F-S,ALPHA
+ALPHA,,Alpha particle counting,,ALPHA,ALPHA-S
+ALPHASPEC,ALPHA-S,Alpha particle spectrometry,,ALPHA-S,A-MS
+AMS,A-MS,Accelerator mass spectrometry,,A-MS,ANC
+ANC,,Anion chromatography analysis,,ANC,APT
+APT,,Atom probe tomography,,APT,ARCA
+ARGT,,40Ar-39Ar geochronology,,ARGT,ARGT
+ARM,,Angle of repose measurement,,ARM,ARM
+ARS,,Gutzeit test,,ARS,ARS
+ART,,Alpha recoil track counting,,ART,ART
+AUGER,,Auger electron spectroscopy,,AUGER,AUGER
+BETA,,Beta counting,,BETA,BB-X-S
+BSE,,Backscattered electron imaging,,BSE,BETA
+CAPD,,Capacitance dilatometry,,CAPD,BSE
+CB,,Carbonate bomb analysis,,CB,BSE-GB
+CCOMB,,Catalytic combustion analysis,,CCOMB,CAPD
+CFIRMS,CF-IR-MS,Continuous flow isotope ratio mass spectrometry,,CF-IR-MS,CB
+CHARM,,Charmograph analysis,,CHARM,CCOMB
+CIC,,Combustion Ion Chromatography,,CIC,CCR
+CIR,CIR-S,Combustion infrared spectrometry,,CIR-S,CF-IR-MS
+COL,,Colormetric analysis,,COL,C-GC-IR-MS
+COMB,,Combustion analysis,,COMB,CHARM
+COMPT,,Compression test,,COMPT,CIC
+COUL,,Coulometrical analysis,,COUL,CIR-S
+DCP,DCP-S,Direct current plasma spectrometry,,DCP-S,CL
+DCPAES,DC-AE-S,Direct current plasma emission spectrometry,atomic emission?,DC-AE-S,COL
+DDA,,Deuteron activation analysis,,DDA,COMB
+DESI-Orbitrap MS,DESI-OT-MS,Desorption electrospray ionization orbitrap mass spectrometry,,DESI-OT-MS,COMPT
+DFCALC,,Dietrich-Fruhling calcimetry,,DFCALC,COUL
+DIIRMS,DI-IR-MS,Dual inlet isotope ratio mass spectrometry,,DI-IR-MS,CR
+DSC,,Differential scanning calorimetry,,DSC,DC-AE-S
+DSSM,,Direct shear strength measurement,,DSSM,DCP-S
+EA,,Elemental analysis,,EA,DDA
+EA-IRMS,EA-IR-MS,Elemental analysis isotope ratio mass spectrometry,,EA-IR-MS,deprecate
+EAMS,EA-MS,Elemental analysis mass spectrometry,,EA-MS,DESI-OT-MS
+EBSD,,Electron backscatter diffraction,,EBSD,DFCALC
+EDS,ED-X-S,Energy dispersive X-ray spectrometry,"seems like a really ubiquitous usage, ?don't change?",ED-X-S,DI-IR-MS
+EEDS,EI-ED-X-S,Energy Dispersive electron induced X-ray spectrometry,,EI-ED-X-S,DSC
+EFTEM,,Energy-filtered transmission electron imaging,,EFTEM,DSSM
+EMPA,QEI-X-S,Quantitative analysis electron induced X-ray spectrometry,"EMPA seems like a really ubiquitous usage, ?don't change? Doesn't specify detector like EEDS or EDS, guess includes Wavelength dispersive and EDS detectors",QEI-X-S,EA
+ENAA,,Epithermal neutron activation analysis,,ENAA,EA-IR-MS
+ES,E-S,Emission spectrometry,,E-S,EA-MS
+ESR,,Electron spin resonance age analysis,,ESR,EBSD
+ETAAS,ET-AA-S,Electrothermal absorption spectrometry,atomic absorption?,ET-AA-S,EC
+EXAFS,,Extended X-ray absorption fine structure,,EXAFS,ED-X-S
+FIB-SEM,,Focused ion beam scanning microscopy,,FIB-SEM,EFTEM
+FINESSE,,Stepped heating carbon and nitrogen isotopic analysis,,FINESSE,EI-ED-X-S
+FISH,,Fluorescent in situ hybridization,,FISH,EI-S
+FLES,FL-E-S,Flame emission spectrometry,,FL-E-S,EI-WD-X-S
+FNAA,,Fast neutron activation analysis,,FNAA,EI-X-S
+FT,,Fission track counting,,FT,EL-S
+FTICR-MS,,Fourier transform ion cyclotron resonance mass spectrometry,,FTICR-MS,ENAA
+FTIR,FT-IR-S,Fourier transform infrared spectrometry,,FT-IR-S,E-S
+GAMMA,GR-S,Gamma ray spectrometry,as suggested by  https://github.com/amds-ldeo/Vocabulary/issues/1,GR-S,ESR
+GC,GAMMA,Gamma counting,suggested by https://github.com/amds-ldeo/Vocabulary/issues/1,GAMMA,ET-AA-S
+GC,,Gas chromatography analysis,,GC,EXAFS
+GC-C-IRMS,C-GC-IR-MS,Combustion gas chromatography isotopic ratio mass spectrometry,,C-GC-IR-MS,FA-E-S
+GC-FID,,Gas chromatography flame ionization detection,,GC-FID,FIB-SEM
+GC-MS,,Gas chromatography mass spectrometry,,GC-MS,FINESSE
+GC-TCD,,Gas chromatography thermal conductivity detection,,GC-TCD,FISH
+GDMS,GD-MS,Glow discharge mass spectrometry,,GD-MS,FL-E-S
+GIO,,Gradient ion chromatography analysis,,GIO,FNAA
+GPYC,,Gas pycnometry,,GPYC,F-S
+GRAV,,Gravimetric analysis,,GRAV,FT
+HR-CL,CL,Cathodoluminescence imaging,,CL,FTICR-MS
+HRICPMS,deprecate,High resolution inductively coupled plasma mass spectrometry,,deprecate,FT-IR-S
+IC,,Ion chromatography analysis,,IC,GAMMA
+ICP-SFMS,SF-ICP-MS,Sector field inductively coupled plasma mass spectrometry,,SF-ICP-MS,GC
+ICPES,ICP-E-S,Inductively coupled plasma emission spectrometry,,ICP-E-S,GC-FID
+ICPMS,ICP-MS,Inductively coupled plasma mass spectrometry,,ICP-MS,GC-MS
+ICPOES,ICP-OE-S,Inductively coupled plasma optical emission spectrometry,,ICP-OE-S,GC-TCD
+IES,EI-S,Electrochemical impedance spectroscopy,,EI-S,GD-MS
+IGN,,Loss on ignition analysis ,,IGN,GIO
+IH,,Induction heating analysis,,IH,GPYC
+INAA,,Instrumental neutron activation analysis ,,INAA,GRAV
+IR,IR-S,Infrared spectrometry,,IR-S,GR-S
+IRAS,IR-A-S,Infrared absorption spectrometry,,IR-A-S,IC
+IRM,,Infrared reflectance,,IRM,ICP-E-S
+IRMS,IR-MS,Isotope ratio mass spectrometry,,IR-MS,ICP-MS
+IRP,,Infrared photometry,,IRP,ICP-MS-MC
+ISE,,Ion sensitive electrode analysis,,ISE,ICP-OE-S
+LA-RIMS,LA-RI-MS,Laser ablation resonance ionization mass spectrometry,,LA-RI-MS,ICP-Q-MS
+LAICPMS,LA-ICP-MS,Laser ablation inductively coupled plasma mass spectrometry,,LA-ICP-MS,IGN
+LAMS,LA-MS,Laser ablation mass spectrometry,,LA-MS,IH
+LASS,LA-SS-MS,Laser ablation split stream mass spectrometry ,,LA-SS-MS,INAA
+LC-MS,,Liquid chromatography mass spectrometry,,LC-MS,IR-A-S
+LC-OCD,,Liquid chromatography organic carbon detection,,LC-OCD,IRM
+LECO,,LECO furnace analysis,,LECO,IR-MS
+LF,LF-MS,Laser fluorination mass spectrometry,,LF-MS,IRP
+LIBS,LIB-S,Laser Induced Breakdown Spectrometry,,LIB-S,IR-S
+LIC,LC,Liquid chromatography analysis,,LC,IR-T-S
+LIMS,LI-MS,Laser ionization mass spectrometry,,LI-MS,ISE
+LWI,L-A-S,Laser absorption spectrometry,,L-A-S,LA-ICP-MS
+MANO,,Manometry,,MANO,LA-MS
+MBS,MB-S,Mossbauer spectrometry,,MB-S,LA-RI-MS
+MC-ICP-MS,ICP-MS-MC,Multi collector inductively coupled plasma mass spectrometry,change order to follow workflow? (view MS as the analyzer),ICP-MS-MC,L-A-S
+MCFMS,,Mini cryogen free measurement system for thermal conductivity,,MCFMS,LA-SS-MS
+MMMS,MM-MS,Micromass multiprep mass spectrometry,,MM-MS,LC
+MS,MS,Mass spectrometry,,MS,LC-MS
+NAA,,Neutron activation analysis,,NAA,LC-OCD
+NCC,,Neutron counting,,NCC,LECO
+NGMS,NG-MS,Noble gas mass spectrometry,,NG-MS,LF-MS
+NGS,,Next generation sequencing,,NGS,LIB-S
+NI-MI,NIMI,Nanoindentation and microindentation,,NIMI,LI-ICP-MS
+NINGMS,NI-NG-MS,Neutron irradiation noble gas mass spectrometry,,NI-NG-MS,LI-MS
+NMP,,Nuclear microprobe analysis,,NMP,MANO
+NMR,NMR-S,Nuclear magnetic resonance spectrometry,,NMR-S,MB-S
+NPTC,,Nuclear particle track counting,,NPTC,MCFMS
+NRA,NR-S,Nuclear reaction spectrometry,,NR-S,MM-MS
+NSFA-ID,FA-E-S,Fire assay emission spectrometry,,FA-E-S,MP-L2-MS
+NTIMS,NTI-MS,Negative ion thermal ionization mass spectrometry,,NTI-MS,MS
+OES,OE-S,Optical emission spectrometry,,OE-S,M-XF-S
+OSPEC,O-S,Optical spectrometry,,O-S,NAA
+OTHER,,Other,,OTHER,NCC
+PAA,,Photon activation analysis,,PAA,NG-MS
+PC,POC,Point counting,avoid duplicaton with ParticleCounting,POC,NGS
+PCD-AFM,,Particle cohesion determination,,PCD-AFM,NIMI
+PEN,,Penfield method analysis,,PEN,NI-NG-MS
+PES,P-E-S,Plasma emission spectrometry,,P-E-S,N-IR-S
+PGNAA,,Prompt gamma neutron activation analysis,,PGNAA,NMP
+PHOT,,Photometry,,PHOT,NMR-S
+PIGE,,Activation analysis,,PIGE,NPTC
+PIXE,PI-X-S,Particle induced X-ray spectrometry,,PI-X-S,NR-S
+PIXEA,QPI-X-S,Quantitative analysis particle induced X-ray spectrometry,is this different from PIXE?,QPI-X-S,NTI-MS
+POES,P-OE-S,Plasma optical emission spectrometry,,P-OE-S,OE-S
+POL,,Polarography,,POL,O-S
+POT,,Potentiometry,,POT,OTHER
+PSFD,,Particle size distribution analysis ,,PSFD,PAA
+PSMS,PS-MS,Plasma source mass spectrometry,,PS-MS,PBE
+PTIMS,PTI-MS,Positive ion thermal ionization mass spectrometry,,PTI-MS,PC
+Py-GC,PY-GC,Pyrolysis gas chromatography,,PY-GC,PCD-AFM
+Py-GC-FID,PY-GC-FID,Pyrolysis gas chromatography flame ionization detection,,PY-GC-FID,PEN
+Py-GC-MS,PY-GC-MS,Pyrolysis gas chromatography mass spectrometry,,PY-GC-MS,P-E-S
+Q-ICP-MS,ICP-Q-MS,Quadrupole inductively coupled plasma mass spectrometry,,ICP-Q-MS,PGNAA
+QRIS,,Quantitative reflectance imaging,,QRIS,PHOT
+RAD,,X-ray imaging,,RAD,PH-S
+RAMAN,R-S,Raman spectrometry,,R-S,PIGE
+RI-TOF-NGMS,RI-TOF-NG-MS,Resonance ionization time of flight noble gas mass spectrometry,,RI-TOF-NG-MS,PI-X-S
+RNAA,,Radiochemical neutron activation analysis,,RNAA,POC
+S-XRF,S-XF-S,Synchroton X-ray fluorescence spectrometry,,S-XF-S,P-OE-S
+SCBTCA,,Spherical cell bulk thermal conductivity analysis,,SCBTCA,POL
+SE,,Secondary electron imaging,,SE,P-O-S
+SEM,,Electron microscopy imaging,,SEM,POT
+SEMEBSDGrainImageMap,BSE-GB,Backscattered electron grain boundary imaging,,BSE-GB,P-S
+SHRIMP,,Sensitive high-mass-resolution ion microprobe,"for consistency should be SHR-SI-MS, it is a mass spectrometry method…",SHRIMP,PSFD
+SIMS,SI-MS,Secondary ionization mass spectrometry,,SI-MS,PS-MS
+SLS,,Structured light scanning,,SLS,PTI-MS
+SMA,,Moisture analysis,,SMA,PY-GC
+SNICPMS,LI-ICP-MS,Liquid inlet inductively coupled plasma mass spectrometry,,LI-ICP-MS,PY-GC-FID
+SNMS,SN-MS,Secondary neutral mass spectrometry,,SN-MS,PY-GC-MS
+SOSMS,SOS-MS,Solid source mass spectrometry,,SOS-MS,QEI-X-S
+SP-PH,SPH,Spectrophotometry,,SPH,QPCR
+SPEC,S,Spectrometry,,S,QPI-X-S
+SS-NMR,SS-NMR-S,Solid state nuclear magnetic resonance spectroscopy,"this should be spectrometry, I missed this one…",SS-NMR-S,QRIS
+SSMS,SPS-MS,Spark source mass spectrometry,can't use SS (split stream),SPS-MS,RAD
+STEM,,Scanning transmission electron imaging,,STEM,RI-TOF-NG-MS
+SV-RUEC,SVUEC,Seismic velocity and ultrasonic elastic constant measurement,,SVUEC,RNAA
+SXRFTomographicImage,S-XF-T,Synchrotron X-ray fluorescence tomography,,S-XF-T,R-S
+TEM,,Transmission electron imaging,,TEM,S
+TGA,,Thermogravimetry analysis,,TGA,SA
+TIMS,TI-MS,Thermal ionization mass spectrometry,,TI-MS,SCBTCA
+TIRS,IR-T-S,Infrared transmission spectrometry,,IR-T-S,SE
+TIT,,Titration,,TIT,SEM
+TPD,,Temperature programmed desorption electron probe analysis,,TPD,SF-ICP-MS
+TXRF,TR-XF-S,Total reflection X-ray fluorescence spectrometry,,TR-XF-S,SHRIMP
+UVES,UV-E-S,Ultraviolet emission spectrometry,,UV-E-S,SI-MS
+VLM,,Visible light microscopy,,VLM,SLS
+VNMIR,,"Visible, near-infrared, and mid-infrared imaging",,VNMIR,SMA
+VOLT,,Voltammetry,,VOLT,SN-MS
+WDS,EI-WD-X-S,Wavelength dispersive electron induced X-ray Spectrometry,,EI-WD-X-S,SOS-MS
+WET,,Wet chemistry,,WET,SPH
+XANES,XANE-S,X-ray absorption near edge structure spectrometry,,XANE-S,SPS-MS
+XAS,X-A-S,X-ray absorption spectrometry,,X-A-S,SS-NMR-S
+XCT,,X-ray computed tomography,,XCT,STEM
+XMAP,,X-ray composition map,,XMAP,SVUEC
+XPS,,X-ray photoelectron spectrometery,,XPS,S-XF-S
+XRBB,BB-X-S,Broad beam X-ray spectrometry,,BB-X-S,S-XF-T
+XRD,,X-ray diffraction,,XRD,TA
+XRF,XF-S,X-ray fluorescence spectrometry,,XF-S,TC
+XRFEDS,XF-ED-S,Energy dispersive X-ray fluorescence spectrometry,,XF-ED-S,TEM
+XRM,,Microscopic X-ray imaging,,XRM,TGA
+XRPD,,X-ray powder diffraction,,XRPD,TI-MS
+XRS,X-S,X-ray spectrometry,,X-S,TIT
+microL2MS,MP-L2-MS,Microprobe two step laser mass spectrometry,,MP-L2-MS,TPD
+microXRF,M-XF-S,Micro X-ray fluorescence spectrometry,,M-XF-S,TR-XF-S
+nanoIR,N-IR-S,Nanoscale infrared spectrometry,,N-IR-S,T-S
+qPCR,QPCR,Quantitative polymerase chain reaction,,QPCR,UV-E-S
+xARCA,ARCA,Acid reaction carbonate analysis,"I think these are all ones I added, thus the 'x' prefix",ARCA,VLM
+xCCR,CCR,Cation chromatography analysis,,CCR,VNMIR
+xCR,CR,Chromatography analysis,,CR,VOLT
+xEC,EC,Electrochemical techniques,,EC,WET
+xEIXS,EI-X-S,Electron induced X-ray spectrometry,,EI-X-S,XANE-S
+xESPEC,EL-S,Electron spectrometry,"E-S is emission spectromety, thus EL",EL-S,X-A-S
+xPASP,P-S,Particle spectrometry,,P-S,XCT
+xPBE,PBE,Particle beam excitation,,PBE,XF-ED-S
+xPC,PC,Particle counting,,PC,XF-S
+xPHSP,PH-S,Photon spectrometry,,PH-S,XMAP
+xPOS,P-O-S,Plasma optical spectrometry,different from plasma optical emission spectrometry?,P-O-S,XPS
+xSA,SA,Surface analysis,,SA,XRD
+xTA,TA,Thermal analysis,,TA,XRM
+xTC,TC,Track counting,,TC,XRPD
+xTSPEC,T-S,Transmission spectrometry,,T-S,X-S
