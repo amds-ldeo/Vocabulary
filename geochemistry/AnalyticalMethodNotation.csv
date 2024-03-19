@@ -180,7 +180,7 @@ XMAP,,X-ray composition map,,XMAP,SVUEC
 XPS,,X-ray photoelectron spectrometery,,XPS,S-XF-S
 XRBB,BB-X-S,Broad beam X-ray spectrometry,,BB-X-S,S-XF-T
 XRD,,X-ray diffraction,,XRD,TA
-XRF,X-ray fluorescence spectrometry,stick with xrf because that is a widely used convention,XF-S,TC
+XRF,XF-S,X-ray fluorescence spectrometry,,XF-S,TC
 XRFEDS,XF-ED-S,Energy dispersive X-ray fluorescence spectrometry,,XF-ED-S,TEM
 XRM,,Microscopic X-ray imaging,,XRM,TGA
 XRPD,,X-ray powder diffraction,,XRPD,TI-MS
