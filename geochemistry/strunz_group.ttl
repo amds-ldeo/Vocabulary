@@ -1,0 +1,4012 @@
+# baseURI: https://w3id.org/geochem/mineralgroup/strunzgroup
+
+@prefix gkosg: <https://w3id.org/geochem/mineralgroup/strunzgroup/> .
+@prefix metadata: <http://topbraid.org/metadata#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gsog: <https://w3id.org/gso/1.0/geology/> .
+
+<https://w3id.org/geochem/mineralgroup/strunzgroup>
+  a owl:Ontology ;
+  rdfs:label "Strunz Group" ;
+.
+gsog:Mineral_Material
+  rdf:type owl:Class ;
+  rdfs:comment "An amount of mineral: denotes a single mineral (a unit cell) or an aggregation of single minerals. All subtypes of Mineral currently denote an aggregation, e.g. Quartz denotes an aggregation of quartz unit cells."@en ;
+  rdfs:comment "\"A mineral is an element or chemical compound that is normally crystalline and that has been formed as a result of geological processes.\" Nickel, Ernest H. (1995), The definition of a mineral,  The Canadian Mineralogist. 33 (3): 689-90."@en ;
+  rdfs:label "Mineral"@en ;
+  .
+  
+  
+gkosg:s01
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:strunzid "01" ;
+  rdfs:label "Elements"@en ;
+  rdfs:subClassOf gsog:Mineral_Material ;
+.
+gkosg:s01_A
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metals and Intermetallic Alloys"@en ;
+  gkosg:strunzid "01.A" ;
+  rdfs:label "Element; Metals and Intermetallic Alloys"@en ;
+  rdfs:subClassOf gkosg:s01 ;
+.
+gkosg:s01_AA
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metals and Intermetallic Alloys"@en ;
+  gkosg:strunzid "01.AA" ;
+  gkosg:subGroupLabel "Copper-cupalite family"@en ;
+  rdfs:label "Copper-cupalite family"@en ;
+  rdfs:subClassOf gkosg:s01_A ;
+.
+gkosg:s01_AB
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metals and Intermetallic Alloys"@en ;
+  gkosg:strunzid "01.AB" ;
+  gkosg:subGroupLabel "Zinc-brass family"@en ;
+  rdfs:label "Zinc-brass family"@en ;
+  rdfs:subClassOf gkosg:s01_A ;
+.
+gkosg:s01_AC
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metals and Intermetallic Alloys"@en ;
+  gkosg:strunzid "01.AC" ;
+  gkosg:subGroupLabel "Indium-tin family"@en ;
+  rdfs:label "Indium-tin family"@en ;
+  rdfs:subClassOf gkosg:s01_A ;
+.
+gkosg:s01_AD
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metals and Intermetallic Alloys"@en ;
+  gkosg:strunzid "01.AD" ;
+  gkosg:subGroupLabel "Mercury-amalgam family"@en ;
+  rdfs:label "Mercury-amalgam family"@en ;
+  rdfs:subClassOf gkosg:s01_A ;
+.
+gkosg:s01_AE
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metals and Intermetallic Alloys"@en ;
+  gkosg:strunzid "01.AE" ;
+  gkosg:subGroupLabel "Iron-chromium family"@en ;
+  rdfs:label "Iron-chromium family"@en ;
+  rdfs:subClassOf gkosg:s01_A ;
+.
+gkosg:s01_AF
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metals and Intermetallic Alloys"@en ;
+  gkosg:strunzid "01.AF" ;
+  gkosg:subGroupLabel "Platinum group elements"@en ;
+  rdfs:label "Platinum group elements"@en ;
+  rdfs:subClassOf gkosg:s01_A ;
+.
+gkosg:s01_AG
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metals and Intermetallic Alloys"@en ;
+  gkosg:strunzid "01.AG" ;
+  gkosg:subGroupLabel "PGE-metal alloys"@en ;
+  rdfs:label "PGE-metal alloys"@en ;
+  rdfs:subClassOf gkosg:s01_A ;
+.
+gkosg:s01_AH
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metals and Intermetallic Alloys"@en ;
+  gkosg:strunzid "01.AH" ;
+  gkosg:subGroupLabel "Miscellaneous Elements, alloys"@en ;
+  rdfs:label "Miscellaneous Elements, alloys"@en ;
+  rdfs:subClassOf gkosg:s01_A ;
+.
+gkosg:s01_B
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metallic Carbides, Silicides, Nitrides and Phosphides"@en ;
+  gkosg:strunzid "01.B" ;
+  rdfs:label "Metallic Carbides, Silicides, Nitrides and Phosphides"@en ;
+  rdfs:subClassOf gkosg:s01 ;
+.
+gkosg:s01_BA
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metallic Carbides, Silicides, Nitrides and Phosphides"@en ;
+  gkosg:strunzid "01.BA" ;
+  gkosg:subGroupLabel "Carbides"@en ;
+  rdfs:label "Carbides"@en ;
+  rdfs:subClassOf gkosg:s01_B ;
+.
+gkosg:s01_BB
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metallic Carbides, Silicides, Nitrides and Phosphides"@en ;
+  gkosg:strunzid "01.BB" ;
+  gkosg:subGroupLabel "Silicides"@en ;
+  rdfs:label "Silicides"@en ;
+  rdfs:subClassOf gkosg:s01_B ;
+.
+gkosg:s01_BC
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metallic Carbides, Silicides, Nitrides and Phosphides"@en ;
+  gkosg:strunzid "01.BC" ;
+  gkosg:subGroupLabel "Nitrides"@en ;
+  rdfs:label "Nitrides"@en ;
+  rdfs:subClassOf gkosg:s01_B ;
+.
+gkosg:s01_BD
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metallic Carbides, Silicides, Nitrides and Phosphides"@en ;
+  gkosg:strunzid "01.BD" ;
+  gkosg:subGroupLabel "Phosphides"@en ;
+  rdfs:label "Phosphides"@en ;
+  rdfs:subClassOf gkosg:s01_B ;
+.
+gkosg:s01_C
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metalloids and Nonmetals"@en ;
+  gkosg:strunzid "01.C" ;
+  rdfs:label "Metalloid or Nonmetal"@en ;
+  rdfs:subClassOf gkosg:s01 ;
+.
+gkosg:s01_CA
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metalloids and Nonmetals"@en ;
+  gkosg:strunzid "01.CA" ;
+  gkosg:subGroupLabel "Arsenic group elements"@en ;
+  rdfs:label "Arsenic group element"@en ;
+  rdfs:subClassOf gkosg:s01_C ;
+.
+gkosg:s01_CB
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metalloids and Nonmetals"@en ;
+  gkosg:strunzid "01.CB" ;
+  gkosg:subGroupLabel "Carbon-silicon family"@en ;
+  rdfs:label "Carbon-silicon family"@en ;
+  rdfs:subClassOf gkosg:s01_C ;
+.
+gkosg:s01_CC
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Metalloids and Nonmetals"@en ;
+  gkosg:strunzid "01.CC" ;
+  gkosg:subGroupLabel "Sulfur-selenium-iodine"@en ;
+  rdfs:label "Sulfur-selenium-iodine family"@en ;
+  rdfs:subClassOf gkosg:s01_C ;
+.
+gkosg:s01_D
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Nonmetallic Carbides and Nitrides"@en ;
+  gkosg:strunzid "01.D" ;
+  rdfs:label "Nonmetallic Carbide or Nitride"@en ;
+  rdfs:subClassOf gkosg:s01 ;
+.
+gkosg:s01_DA
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Nonmetallic Carbides and Nitrides"@en ;
+  gkosg:strunzid "01.DA" ;
+  gkosg:subGroupLabel "Nonmetallic carbides"@en ;
+  rdfs:label "Nonmetallic carbide"@en ;
+  rdfs:subClassOf gkosg:s01_D ;
+.
+gkosg:s01_DB
+  a owl:Class ;
+  gkosg:classLabel "elements"@en ;
+  gkosg:groupLabel "Nonmetallic Carbides and Nitrides"@en ;
+  gkosg:strunzid "01.DB" ;
+  gkosg:subGroupLabel "Nonmetallic nitrides"@en ;
+  rdfs:label "Nonmetallic nitride"@en ;
+  rdfs:subClassOf gkosg:s01_D ;
+.
+gkosg:s02
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:notes "contains sulfur, tellurium, selenium, arsenic, antimony, or bismuth in an anion role"@en ;
+  gkosg:strunzid "02" ;
+  rdfs:label "sulfide or sulfosalt"@en ;
+  rdfs:subClassOf gsog:Mineral_Material ;
+.
+gkosg:s02_A
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Alloys"@en ;
+  gkosg:notes "contains arsenic, antimony, or bismuth in anion role"@en ;
+  gkosg:strunzid "02.A" ;
+  rdfs:label "sulfide or sulfosalt alloy"@en ;
+  rdfs:subClassOf gkosg:s02 ;
+.
+gkosg:s02_AA
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Alloys"@en ;
+  gkosg:strunzid "02.AA" ;
+  gkosg:subGroupLabel "Alloys of metalloids with Cu, Ag, Au"@en ;
+  rdfs:label "sulfide or sulfosalt alloy of metalloids with Cu, Ag, Au"@en ;
+  rdfs:subClassOf gkosg:s02_A ;
+.
+gkosg:s02_AB
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Alloys"@en ;
+  gkosg:strunzid "02.AB" ;
+  gkosg:subGroupLabel "Ni-metalloid alloys"@en ;
+  rdfs:label "Ni-metalloid sulfide or sulfosalt alloy"@en ;
+  rdfs:subClassOf gkosg:s02_A ;
+.
+gkosg:s02_AC
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Alloys"@en ;
+  gkosg:strunzid "02.AC" ;
+  gkosg:subGroupLabel "Alloys of metalloids with PGE"@en ;
+  rdfs:label "Sulfide or sulfosalt alloy of metalloids with PGE"@en ;
+  rdfs:subClassOf gkosg:s02_A ;
+.
+gkosg:s02_B
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S > 1: 1 (mainly 2: 1)"@en ;
+  gkosg:notes "M:S > 1:1, mainly 2:1"@en ;
+  gkosg:strunzid "02.B" ;
+  rdfs:label "Metal sulfide M:S > 1:1"@en ;
+  rdfs:subClassOf gkosg:s02 ;
+.
+gkosg:s02_BA
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S > 1: 1 (mainly 2: 1)"@en ;
+  gkosg:strunzid "02.BA" ;
+  gkosg:subGroupLabel "With Cu, Ag, Au"@en ;
+  rdfs:label "Metal sulfide M:S > 1:1 with Cu, Ag, Au"@en ;
+  rdfs:subClassOf gkosg:s02_B ;
+.
+gkosg:s02_BB
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S > 1: 1 (mainly 2: 1)"@en ;
+  gkosg:strunzid "02.BB" ;
+  gkosg:subGroupLabel "With Ni"@en ;
+  rdfs:label "Metal sulfide M:S > 1:1 with Ni"@en ;
+  rdfs:subClassOf gkosg:s02_B ;
+.
+gkosg:s02_BC
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S > 1: 1 (mainly 2: 1)"@en ;
+  gkosg:strunzid "02.BC" ;
+  gkosg:subGroupLabel "With Rh, Pd, Pt, etc."@en ;
+  rdfs:label "Metal sulfide M:S > 1:1 with Rh, Pd, Pt, etc."@en ;
+  rdfs:subClassOf gkosg:s02_B ;
+.
+gkosg:s02_BD
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S > 1: 1 (mainly 2: 1)"@en ;
+  gkosg:strunzid "02.BD" ;
+  gkosg:subGroupLabel "With Hg, Tl"@en ;
+  rdfs:label "Metal sulfide M:S > 1:1 with Hg, Tl"@en ;
+  rdfs:subClassOf gkosg:s02_B ;
+.
+gkosg:s02_BE
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S > 1: 1 (mainly 2: 1)"@en ;
+  gkosg:strunzid "02.BE" ;
+  gkosg:subGroupLabel "With Pb (Bi)"@en ;
+  rdfs:label "Metal sulfide M:S > 1:1 with Pb (Bi)"@en ;
+  rdfs:subClassOf gkosg:s02_B ;
+.
+gkosg:s02_C
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S = 1: 1 (and similar)"@en ;
+  gkosg:strunzid "02.C" ;
+  rdfs:label "Metal sulfide (M = S)"@en ;
+  rdfs:subClassOf gkosg:s02 ;
+.
+gkosg:s02_CA
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S = 1: 1 (and similar)"@en ;
+  gkosg:strunzid "02.CA" ;
+  gkosg:subGroupLabel "With Cu"@en ;
+  rdfs:label "Metal sulfide (M = S) with Cu"@en ;
+  rdfs:subClassOf gkosg:s02_C ;
+.
+gkosg:s02_CB
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S = 1: 1 (and similar)"@en ;
+  gkosg:strunzid "02.CB" ;
+  gkosg:subGroupLabel "With Zn, Fe, Cu, Ag, etc."@en ;
+  rdfs:label "Metal sulfide (M = S) with Zn, Fe, Cu, Ag, etc."@en ;
+  rdfs:subClassOf gkosg:s02_C ;
+.
+gkosg:s02_CC
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S = 1: 1 (and similar)"@en ;
+  gkosg:strunzid "02.CC" ;
+  gkosg:subGroupLabel "With Ni, Fe, Co, PGE, etc."@en ;
+  rdfs:label "Metal sulfide (M = S) with Ni, Fe, Co, PGE, etc."@en ;
+  rdfs:subClassOf gkosg:s02_C ;
+.
+gkosg:s02_CD
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S = 1: 1 (and similar)"@en ;
+  gkosg:strunzid "02.CD" ;
+  gkosg:subGroupLabel "With Sn, Pb, Hg, etc."@en ;
+  rdfs:label "Metal sulfide (M = S) with Sn, Pb, Hg, etc."@en ;
+  rdfs:subClassOf gkosg:s02_C ;
+.
+gkosg:s02_D
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S = 3 :4 and 2:3"@en ;
+  gkosg:notes "M: S = 3 :4 and 2:3"@en ;
+  gkosg:strunzid "02.D" ;
+  rdfs:label "Metal sulfide (M < S)"@en ;
+  rdfs:subClassOf gkosg:s02 ;
+.
+gkosg:s02_DA
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S = 3 :4 and 2:3"@en ;
+  gkosg:notes "M:S = 3:4"@en ;
+  gkosg:strunzid "02.DA" ;
+  gkosg:subGroupLabel "M:S = 3:4"@en ;
+  rdfs:label "Metal sulfide (M:S = 3:4)"@en ;
+  rdfs:subClassOf gkosg:s02_D ;
+.
+gkosg:s02_DB
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S = 3 :4 and 2:3"@en ;
+  gkosg:notes "M:S = 2:3"@en ;
+  gkosg:strunzid "02.DB" ;
+  gkosg:subGroupLabel "M:S = 2:3"@en ;
+  rdfs:label "Metal sulfide (M:S = 2:3)"@en ;
+  rdfs:subClassOf gkosg:s02_D ;
+.
+gkosg:s02_DC
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S = 3 :4 and 2:3"@en ;
+  gkosg:strunzid "02.DC" ;
+  gkosg:subGroupLabel "Variable M:S"@en ;
+  rdfs:label "Metal sulfide (M:S variable)"@en ;
+  rdfs:subClassOf gkosg:s02_D ;
+.
+gkosg:s02_E
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S <= 1:2"@en ;
+  gkosg:strunzid "02.E" ;
+  rdfs:label "Metal sulfide, M: S <= 1:2"@en ;
+  rdfs:subClassOf gkosg:s02 ;
+.
+gkosg:s02_EA
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S <= 1:2"@en ;
+  gkosg:strunzid "02.EA" ;
+  gkosg:subGroupLabel "M:S = 1:2 - With Cu, Ag, Au"@en ;
+  rdfs:label "Metal sulfide, M: S <= 1:2 with Cu, Ag, Au"@en ;
+  rdfs:subClassOf gkosg:s02_E ;
+.
+gkosg:s02_EB
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S <= 1:2"@en ;
+  gkosg:strunzid "02.EB" ;
+  gkosg:subGroupLabel "M:S = 1:2, with Fe, Co, Ni, PGE, etc."@en ;
+  rdfs:label "Metal sulfide, M: S <= 1:2 with Fe, Co, Ni, PGE, etc."@en ;
+  rdfs:subClassOf gkosg:s02_E ;
+.
+gkosg:s02_EC
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Metal Sulfides, M: S <= 1:2"@en ;
+  gkosg:strunzid "02.EC" ;
+  gkosg:subGroupLabel "M:S = 1:>2"@en ;
+  rdfs:label "Metal sulfide, M:S = 1:>2"@en ;
+  rdfs:subClassOf gkosg:s02_E ;
+.
+gkosg:s02_F
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfides of arsenic, alkalies; sulfides with halide, oxide, hydroxide, H2O"@en ;
+  gkosg:notes "Sulfides of arsenic, alkalies; sulfides with halide, oxide, hydroxide, H2O"@en ;
+  gkosg:strunzid "02.F" ;
+  rdfs:label "Other sulfides"@en ;
+  rdfs:subClassOf gkosg:s02 ;
+.
+gkosg:s02_FA
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfides of arsenic, alkalies; sulfides with halide, oxide, hydroxide, H2O"@en ;
+  gkosg:strunzid "02.FA" ;
+  gkosg:subGroupLabel "With As, (Sb), S"@en ;
+  rdfs:label "Other sulfide with As, (Sb), S"@en ;
+  rdfs:subClassOf gkosg:s02_F ;
+.
+gkosg:s02_FB
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfides of arsenic, alkalies; sulfides with halide, oxide, hydroxide, H2O"@en ;
+  gkosg:strunzid "02.FB" ;
+  gkosg:subGroupLabel "With alkalies (without Cl, etc.)"@en ;
+  rdfs:label "Other sulfide with alkalies (without Cl, etc.)"@en ;
+  rdfs:subClassOf gkosg:s02_F ;
+.
+gkosg:s02_FC
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfides of arsenic, alkalies; sulfides with halide, oxide, hydroxide, H2O"@en ;
+  gkosg:strunzid "02.FC" ;
+  gkosg:subGroupLabel "With Cl, Br, I (halide-sulfides)"@en ;
+  rdfs:label "Other sulfide with Cl, Br, I (halide-sulfides)"@en ;
+  rdfs:subClassOf gkosg:s02_F ;
+.
+gkosg:s02_FD
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfides of arsenic, alkalies; sulfides with halide, oxide, hydroxide, H2O"@en ;
+  gkosg:strunzid "02.FD" ;
+  gkosg:subGroupLabel "With O, OH, H2O"@en ;
+  rdfs:label "Other sulfide with O, OH, H2O"@en ;
+  rdfs:subClassOf gkosg:s02_F ;
+.
+gkosg:s02_G
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfarsenites, sulfantimonites, sulfbismuthites"@en ;
+  gkosg:notes "Thioarsenite, also called sulfarsenite, is the trianion AsS33−. It is a pyramidal anion, as is typical of other As(III)X3 compounds."@en ;
+  gkosg:strunzid "02.G" ;
+  rdfs:label "Sulfarsenite, sulfantimonite, or sulfbismuthite"@en ;
+  rdfs:subClassOf gkosg:s02 ;
+.
+gkosg:s02_GA
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfarsenites, sulfantimonites, sulfbismuthites"@en ;
+  gkosg:strunzid "02.GA" ;
+  gkosg:subGroupLabel "Neso-sulfarsenites, etc. without additional S"@en ;
+  rdfs:label "Neso-sulfarsenite without additional S"@en ;
+  rdfs:subClassOf gkosg:s02_G ;
+.
+gkosg:s02_GB
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfarsenites, sulfantimonites, sulfbismuthites"@en ;
+  gkosg:strunzid "02.GB" ;
+  gkosg:subGroupLabel "Neso-sulfarsenites, etc. with additional S"@en ;
+  rdfs:label "Neso-sulfarsenite with additional S"@en ;
+  rdfs:subClassOf gkosg:s02_G ;
+.
+gkosg:s02_GC
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfarsenites, sulfantimonites, sulfbismuthites"@en ;
+  gkosg:strunzid "02.GC" ;
+  gkosg:subGroupLabel "Poly-sulfarsenites"@en ;
+  rdfs:label "Poly-sulfarsenite"@en ;
+  rdfs:subClassOf gkosg:s02_G ;
+.
+gkosg:s02_H
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfosalts of SnS archetype"@en ;
+  gkosg:strunzid "02.H" ;
+  rdfs:label "SnS type sulfosalt"@en ;
+  rdfs:subClassOf gkosg:s02 ;
+.
+gkosg:s02_HA
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfosalts of SnS archetype"@en ;
+  gkosg:strunzid "02.HA" ;
+  gkosg:subGroupLabel "With Cu, Ag, Fe (without Pb)"@en ;
+  rdfs:label "SnS type sulfosalt with Cu, Ag, Fe (without Pb)"@en ;
+  rdfs:subClassOf gkosg:s02_H ;
+.
+gkosg:s02_HB
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfosalts of SnS archetype"@en ;
+  gkosg:strunzid "02.HB" ;
+  gkosg:subGroupLabel "With Cu, Ag, Fe, Sn and Pb"@en ;
+  rdfs:label "SnS type sulfosalt with Cu, Ag, Fe, Sn and Pb"@en ;
+  rdfs:subClassOf gkosg:s02_H ;
+.
+gkosg:s02_HC
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfosalts of SnS archetype"@en ;
+  gkosg:strunzid "02.HC" ;
+  gkosg:subGroupLabel "With only Pb"@en ;
+  rdfs:label "SnS type sulfosalt with only Pb"@en ;
+  rdfs:subClassOf gkosg:s02_H ;
+.
+gkosg:s02_HD
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfosalts of SnS archetype"@en ;
+  gkosg:strunzid "02.HD" ;
+  gkosg:subGroupLabel "With Tl"@en ;
+  rdfs:label "SnS type sulfosalt with Tl"@en ;
+  rdfs:subClassOf gkosg:s02_H ;
+.
+gkosg:s02_HE
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfosalts of SnS archetype"@en ;
+  gkosg:strunzid "02.HE" ;
+  gkosg:subGroupLabel "With alkalies, H2O"@en ;
+  rdfs:label "SnS type sulfosalt with alkalies, H2O"@en ;
+  rdfs:subClassOf gkosg:s02_H ;
+.
+gkosg:s02_HF
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfosalts of SnS archetype"@en ;
+  gkosg:strunzid "02.HF" ;
+  gkosg:subGroupLabel "With SnS and PbS archetype structure units"@en ;
+  rdfs:label "SnS type sulfosalt with SnS and PbS archetype structure units"@en ;
+  rdfs:subClassOf gkosg:s02_H ;
+.
+gkosg:s02_J
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfosalts of PbS archetype"@en ;
+  gkosg:strunzid "02.J" ;
+  rdfs:label "PbS type sulfosalt"@en ;
+  rdfs:subClassOf gkosg:s02 ;
+.
+gkosg:s02_JA
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfosalts of PbS archetype"@en ;
+  gkosg:strunzid "02.JA" ;
+  gkosg:subGroupLabel "Galena derivatives with little or no Pb"@en ;
+  rdfs:label "PbS type sulfosalt with  little or no Pb"@en ;
+  rdfs:subClassOf gkosg:s02_J ;
+.
+gkosg:s02_JB
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfosalts of PbS archetype"@en ;
+  gkosg:strunzid "02.JB" ;
+  gkosg:subGroupLabel "Galena derivatives, with Pb"@en ;
+  rdfs:label "PbS type sulfosalt with Pb"@en ;
+  rdfs:subClassOf gkosg:s02_J ;
+.
+gkosg:s02_JC
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfosalts of PbS archetype"@en ;
+  gkosg:strunzid "02.JC" ;
+  gkosg:subGroupLabel "Galena derivatives, with Tl"@en ;
+  rdfs:label "PbS type sulfosalt with Tl"@en ;
+  rdfs:subClassOf gkosg:s02_J ;
+.
+gkosg:s02_K
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfarsenates, Sulfantimonates"@en ;
+  gkosg:notes "trianion AsS43− or similar for antimony"@en ;
+  gkosg:strunzid "02.K" ;
+  rdfs:label "Sulfarsenate or Sulfantimonate"@en ;
+  rdfs:subClassOf gkosg:s02 ;
+.
+gkosg:s02_KA
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfarsenates, Sulfantimonates"@en ;
+  gkosg:strunzid "02.KA" ;
+  gkosg:subGroupLabel "Sulfarsenates with (As,Sb)S4 tetrahedra"@en ;
+  rdfs:label "Sulfarsenate with (As,Sb)S4 tetrahedra"@en ;
+  rdfs:subClassOf gkosg:s02_K ;
+.
+gkosg:s02_KB
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Sulfarsenates, Sulfantimonates"@en ;
+  gkosg:strunzid "02.KB" ;
+  gkosg:subGroupLabel "Sulfarsenates with additional S"@en ;
+  rdfs:label "Sulfarsenates with additional S"@en ;
+  rdfs:subClassOf gkosg:s02_K ;
+.
+gkosg:s02_L
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Unclassified Sulfosalts"@en ;
+  gkosg:strunzid "02.L" ;
+  rdfs:label "Other sulfosalt"@en ;
+  rdfs:subClassOf gkosg:s02 ;
+.
+gkosg:s02_LA
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Unclassified Sulfosalts"@en ;
+  gkosg:strunzid "02.LA" ;
+  gkosg:subGroupLabel "Without essential Pb"@en ;
+  rdfs:label "Other sulfosalt without essential Pb"@en ;
+  rdfs:subClassOf gkosg:s02_L ;
+.
+gkosg:s02_LB
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Unclassified Sulfosalts"@en ;
+  gkosg:strunzid "02.LB" ;
+  gkosg:subGroupLabel "With essential Pb"@en ;
+  rdfs:label "Other sulfosalt with essential Pb"@en ;
+  rdfs:subClassOf gkosg:s02_L ;
+.
+gkosg:s02_M
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Oxysulfosalts"@en ;
+  gkosg:strunzid "02.M" ;
+  rdfs:label "Oxysulfosalt"@en ;
+  rdfs:subClassOf gkosg:s02 ;
+.
+gkosg:s02_MA
+  a owl:Class ;
+  gkosg:classLabel "sulfides and sulfosalts"@en ;
+  gkosg:groupLabel "Oxysulfosalts"@en ;
+  gkosg:strunzid "02.MA" ;
+  gkosg:subGroupLabel "Oxysulfosalts of Alkalies and Alkali Earths"@en ;
+  rdfs:label "Oxysulfosalt of Alkalies or Alkali Earths"@en ;
+  rdfs:subClassOf gkosg:s02_M ;
+.
+gkosg:s03
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:strunzid "03" ;
+  rdfs:label "Halide"@en ;
+  rdfs:subClassOf gsog:Mineral_Material ;
+.
+gkosg:s03_A
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Simple halides, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "03.A" ;
+  rdfs:label "Simple halides, without H2O"@en ;
+  rdfs:subClassOf gkosg:s03 ;
+.
+gkosg:s03_AA
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Simple halides, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "03.AA" ;
+  gkosg:subGroupLabel "M:X = 1:1, 2:3, 3:5, etc."@en ;
+  rdfs:label "Simple halides, without H2O, M:X 1:<2"@en ;
+  rdfs:subClassOf gkosg:s03_A ;
+.
+gkosg:s03_AB
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Simple halides, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "03.AB" ;
+  gkosg:subGroupLabel "M:X = 1:2"@en ;
+  rdfs:label "Simple halides, without H2O, M:X 1:2"@en ;
+  rdfs:subClassOf gkosg:s03_A ;
+.
+gkosg:s03_AC
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Simple halides, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "03.AC" ;
+  gkosg:subGroupLabel "M:X = 1:3"@en ;
+  rdfs:label "Simple halides, without H2O, M:X 1:3"@en ;
+  rdfs:subClassOf gkosg:s03_A ;
+.
+gkosg:s03_B
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Simple halides, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "03.B" ;
+  rdfs:label "Simple halides, with H2O"@en ;
+  rdfs:subClassOf gkosg:s03 ;
+.
+gkosg:s03_BA
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Simple halides, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "03.BA" ;
+  gkosg:subGroupLabel "M:X = 1:1 and 2:3"@en ;
+  rdfs:label "Simple halides, with H2O, M:X 1:<2"@en ;
+  rdfs:subClassOf gkosg:s03_B ;
+.
+gkosg:s03_BB
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Simple halides, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "03.BB" ;
+  gkosg:subGroupLabel "M:X = 1:2"@en ;
+  rdfs:label "Simple halides, with H2O, M:X 1:2"@en ;
+  rdfs:subClassOf gkosg:s03_B ;
+.
+gkosg:s03_BC
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Simple halides, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "03.BC" ;
+  gkosg:subGroupLabel "M:X = 1:3"@en ;
+  rdfs:label "Simple halides, with H2O, M:X 1:3"@en ;
+  rdfs:subClassOf gkosg:s03_B ;
+.
+gkosg:s03_BD
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Simple halides, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "03.BD" ;
+  gkosg:subGroupLabel "Simple halides with H2O and additional OH"@en ;
+  rdfs:label "Simple halides, with H2O + OH"@en ;
+  rdfs:subClassOf gkosg:s03_B ;
+.
+gkosg:s03_C
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Complex halides"@en ;
+  gkosg:strunzid "03.C" ;
+  rdfs:label "Complex halide"@en ;
+  rdfs:subClassOf gkosg:s03 ;
+.
+gkosg:s03_CA
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Complex halides"@en ;
+  gkosg:strunzid "03.CA" ;
+  gkosg:subGroupLabel "Borofluorides"@en ;
+  rdfs:label "Borofluoride"@en ;
+  rdfs:subClassOf gkosg:s03_C ;
+.
+gkosg:s03_CB
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Complex halides"@en ;
+  gkosg:strunzid "03.CB" ;
+  gkosg:subGroupLabel "Neso-aluminofluorides"@en ;
+  rdfs:label "Neso-aluminofluoride"@en ;
+  rdfs:subClassOf gkosg:s03_C ;
+.
+gkosg:s03_CC
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Complex halides"@en ;
+  gkosg:strunzid "03.CC" ;
+  gkosg:subGroupLabel "Soro-aluminofluorides"@en ;
+  rdfs:label "Soro-aluminofluoride"@en ;
+  rdfs:subClassOf gkosg:s03_C ;
+.
+gkosg:s03_CD
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Complex halides"@en ;
+  gkosg:strunzid "03.CD" ;
+  gkosg:subGroupLabel "Ino-aluminofluorides"@en ;
+  rdfs:label "Ino-aluminofluoride"@en ;
+  rdfs:subClassOf gkosg:s03_C ;
+.
+gkosg:s03_CE
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Complex halides"@en ;
+  gkosg:strunzid "03.CE" ;
+  gkosg:subGroupLabel "Phyllo-aluminofluorides"@en ;
+  rdfs:label "Phyllo-aluminofluoride"@en ;
+  rdfs:subClassOf gkosg:s03_C ;
+.
+gkosg:s03_CF
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Complex halides"@en ;
+  gkosg:strunzid "03.CF" ;
+  gkosg:subGroupLabel "Tekto-aluminofluorides"@en ;
+  rdfs:label "Tekto-aluminofluoride"@en ;
+  rdfs:subClassOf gkosg:s03_C ;
+.
+gkosg:s03_CG
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Complex halides"@en ;
+  gkosg:strunzid "03.CG" ;
+  gkosg:subGroupLabel "Aluminofluorides with CO3, SO4, PO4"@en ;
+  rdfs:label "Aluminofluoride with CO3, SO4, or PO4"@en ;
+  rdfs:subClassOf gkosg:s03_C ;
+.
+gkosg:s03_CH
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Complex halides"@en ;
+  gkosg:strunzid "03.CH" ;
+  gkosg:subGroupLabel "Silicofluorides"@en ;
+  rdfs:label "Silicofluoride"@en ;
+  rdfs:subClassOf gkosg:s03_C ;
+.
+gkosg:s03_CJ
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Complex halides"@en ;
+  gkosg:strunzid "03.CJ" ;
+  gkosg:subGroupLabel "With MX6 complexes; M = Fe, Mn, Cu"@en ;
+  rdfs:label "Complex halide with MX6 complexes"@en ;
+  rdfs:subClassOf gkosg:s03_C ;
+.
+gkosg:s03_CK
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Complex halides"@en ;
+  gkosg:strunzid "03.CK" ;
+  gkosg:subGroupLabel "Halides of Bi, etc."@en ;
+  rdfs:label "Complex halide with Bi"@en ;
+  rdfs:subClassOf gkosg:s03_C ;
+.
+gkosg:s03_D
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Oxyhalides, hydroxyhalides and related double halides"@en ;
+  gkosg:strunzid "03.D" ;
+  rdfs:label "Double halide, Oxyhalide, or Hydroxyhalide"@en ;
+  rdfs:subClassOf gkosg:s03 ;
+.
+gkosg:s03_DA
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Oxyhalides, hydroxyhalides and related double halides"@en ;
+  gkosg:strunzid "03.DA" ;
+  gkosg:subGroupLabel "With Cu, etc., without Pb"@en ;
+  rdfs:label "Double-, Oxy- or Hydroxy- halide with Cu, etc., without Pb"@en ;
+  rdfs:subClassOf gkosg:s03_D ;
+.
+gkosg:s03_DB
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Oxyhalides, hydroxyhalides and related double halides"@en ;
+  gkosg:strunzid "03.DB" ;
+  gkosg:subGroupLabel "With Pb, Cu, etc."@en ;
+  rdfs:label "Double-, Oxy- or Hydroxy-  halide with Pb, Cu, etc."@en ;
+  rdfs:subClassOf gkosg:s03_D ;
+.
+gkosg:s03_DC
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Oxyhalides, hydroxyhalides and related double halides"@en ;
+  gkosg:strunzid "03.DC" ;
+  gkosg:subGroupLabel "With Pb (As,Sb,Bi), without Cu"@en ;
+  rdfs:label "Double-, Oxy- or Hydroxy-  halide with Pb (As,Sb,Bi), without Cu"@en ;
+  rdfs:subClassOf gkosg:s03_D ;
+.
+gkosg:s03_DD
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Oxyhalides, hydroxyhalides and related double halides"@en ;
+  gkosg:strunzid "03.DD" ;
+  gkosg:subGroupLabel "With Hg"@en ;
+  rdfs:label "Double-, Oxy- or Hydroxy-  halide with Hg"@en ;
+  rdfs:subClassOf gkosg:s03_D ;
+.
+gkosg:s03_DE
+  a owl:Class ;
+  gkosg:classLabel "halides"@en ;
+  gkosg:groupLabel "Oxyhalides, hydroxyhalides and related double halides"@en ;
+  gkosg:strunzid "03.DE" ;
+  gkosg:subGroupLabel "With Rare-Earth Elements"@en ;
+  rdfs:label "Oxyhalide with Rare-Earth Elements"@en ;
+  rdfs:subClassOf gkosg:s03_D ;
+.
+gkosg:s04
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:strunzid "04" ;
+  rdfs:label "Oxide, hydroxide or arsenite"@en ;
+  rdfs:subClassOf gsog:Mineral_Material ;
+.
+gkosg:s04_A
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 2:1 and 1:1"@en ;
+  gkosg:strunzid "04.A" ;
+  rdfs:label "Oxide, Metal: Oxygen = 2:1 and 1:1"@en ;
+  rdfs:subClassOf gkosg:s04 ;
+.
+gkosg:s04_AA
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 2:1 and 1:2"@en ;
+  gkosg:strunzid "04.AA" ;
+  gkosg:subGroupLabel "Cation:Anion (M:O) = 2:1 (and 1.8:1)"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 2:1 and 1:2, Cation:Anion (M:O) = 2:1 (and 1.8:1)"@en ;
+  rdfs:subClassOf gkosg:s04_A ;
+.
+gkosg:s04_AB
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 2:1 and 1:3"@en ;
+  gkosg:strunzid "04.AB" ;
+  gkosg:subGroupLabel "M:O = 1:1 (and up to 1:1.25); with small to medium-sized cations only"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 2:1 and 1:3, M:O = 1:1 (and up to 1:1.25); with small to medium-sized cations only"@en ;
+  rdfs:subClassOf gkosg:s04_A ;
+.
+gkosg:s04_AC
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 2:1 and 1:4"@en ;
+  gkosg:strunzid "04.AC" ;
+  gkosg:subGroupLabel "M:O = 1:1 (and up to 1:1.25); with large cations (+- smaller ones)"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 2:1 and 1:4, M:O = 1:1 (and up to 1:1.25); with large cations (+- smaller ones)"@en ;
+  rdfs:subClassOf gkosg:s04_A ;
+.
+gkosg:s04_B
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 3:4 and similar"@en ;
+  gkosg:strunzid "04.B" ;
+  rdfs:label "Oxide, Metal: Oxygen = 3:4 and similar"@en ;
+  rdfs:subClassOf gkosg:s04 ;
+.
+gkosg:s04_BA
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 3:4 and similar"@en ;
+  gkosg:strunzid "04.BA" ;
+  gkosg:subGroupLabel "With small and medium-sized cations"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 3:4 and similar, With small and medium-sized cations"@en ;
+  rdfs:subClassOf gkosg:s04_B ;
+.
+gkosg:s04_BB
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 3:4 and similar"@en ;
+  gkosg:strunzid "04.BB" ;
+  gkosg:subGroupLabel "With only medium-sized cations"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 3:4 and similar, With only medium-sized cations"@en ;
+  rdfs:subClassOf gkosg:s04_B ;
+.
+gkosg:s04_BC
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 3:4 and similar"@en ;
+  gkosg:strunzid "04.BC" ;
+  gkosg:subGroupLabel "With medium-sized and large cations"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 3:4 and similar, With medium-sized and large cations"@en ;
+  rdfs:subClassOf gkosg:s04_B ;
+.
+gkosg:s04_BD
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 3:4 and similar"@en ;
+  gkosg:strunzid "04.BD" ;
+  gkosg:subGroupLabel "With only large cations"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 3:4 and similar, With only large cations"@en ;
+  rdfs:subClassOf gkosg:s04_B ;
+.
+gkosg:s04_C
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 2: 3,3: 5, and similar"@en ;
+  gkosg:strunzid "04.C" ;
+  rdfs:label "Oxide, Metal: Oxygen = 2: 3,3: 5, and similar"@en ;
+  rdfs:subClassOf gkosg:s04 ;
+.
+gkosg:s04_CA
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 2: 3,3: 5, and similar"@en ;
+  gkosg:strunzid "04.CA" ;
+  gkosg:subGroupLabel "With small cations"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 2: 3,3: 5, and similar, With small cations"@en ;
+  rdfs:subClassOf gkosg:s04_C ;
+.
+gkosg:s04_CB
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 2: 3,3: 5, and similar"@en ;
+  gkosg:strunzid "04.CB" ;
+  gkosg:subGroupLabel "With medium-sized cations"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 2: 3,3: 5, and similar, With medium-sized cations"@en ;
+  rdfs:subClassOf gkosg:s04_C ;
+.
+gkosg:s04_CC
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 2: 3,3: 5, and similar"@en ;
+  gkosg:strunzid "04.CC" ;
+  gkosg:subGroupLabel "With large and medium-sized cations"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 2: 3,3: 5, and similar, With large and medium-sized cations"@en ;
+  rdfs:subClassOf gkosg:s04_C ;
+.
+gkosg:s04_D
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 1:2 and similar"@en ;
+  gkosg:strunzid "04.D" ;
+  rdfs:label "Oxide, Metal: Oxygen = 1:2 and similar"@en ;
+  rdfs:subClassOf gkosg:s04 ;
+.
+gkosg:s04_DA
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 1:2 and similar"@en ;
+  gkosg:strunzid "04.DA" ;
+  gkosg:subGroupLabel "With small cations: Silica family"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 1:2 and similar, With small cations: Silica family"@en ;
+  rdfs:subClassOf gkosg:s04_D ;
+.
+gkosg:s04_DB
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 1:2 and similar"@en ;
+  gkosg:strunzid "04.DB" ;
+  gkosg:subGroupLabel "With medium-sized cations; chains of edge-sharing octahedra"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 1:2 and similar, With medium-sized cations; chains of edge-sharing octahedra"@en ;
+  rdfs:subClassOf gkosg:s04_D ;
+.
+gkosg:s04_DC
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 1:2 and similar"@en ;
+  gkosg:strunzid "04.DC" ;
+  gkosg:subGroupLabel "With medium-sized cations; sheets of edge-sharing octahedra"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 1:2 and similar, With medium-sized cations; sheets of edge-sharing octahedra"@en ;
+  rdfs:subClassOf gkosg:s04_D ;
+.
+gkosg:s04_DD
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 1:2 and similar"@en ;
+  gkosg:strunzid "04.DD" ;
+  gkosg:subGroupLabel "With medium-sized cations; frameworks of edge-sharing octahedra"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 1:2 and similar, With medium-sized cations; frameworks of edge-sharing octahedra"@en ;
+  rdfs:subClassOf gkosg:s04_D ;
+.
+gkosg:s04_DE
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 1:2 and similar"@en ;
+  gkosg:strunzid "04.DE" ;
+  gkosg:subGroupLabel "With medium-sized cations; with various polyhedra"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 1:2 and similar, With medium-sized cations; with various polyhedra"@en ;
+  rdfs:subClassOf gkosg:s04_D ;
+.
+gkosg:s04_DF
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 1:2 and similar"@en ;
+  gkosg:strunzid "04.DF" ;
+  gkosg:subGroupLabel "With large (+- medium-sized) cations; dimers and trimers of edgesharing octahedra"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; dimers and trimers of edgesharing octahedra"@en ;
+  rdfs:subClassOf gkosg:s04_D ;
+.
+gkosg:s04_DG
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 1:2 and similar"@en ;
+  gkosg:strunzid "04.DG" ;
+  gkosg:subGroupLabel "With large (+- medium-sized) cations; chains of edge-sharing octahedra"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; chains of edge-sharing octahedra"@en ;
+  rdfs:subClassOf gkosg:s04_D ;
+.
+gkosg:s04_DH
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 1:2 and similar"@en ;
+  gkosg:strunzid "04.DH" ;
+  gkosg:subGroupLabel "With large (+- medium-sized) cations; sheets of edge-sharing octahedra"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; sheets of edge-sharing octahedra"@en ;
+  rdfs:subClassOf gkosg:s04_D ;
+.
+gkosg:s04_DJ
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 1:2 and similar"@en ;
+  gkosg:strunzid "04.DJ" ;
+  gkosg:subGroupLabel "With large (+- medium-sized) cations; polyhedral frameworks"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; polyhedral frameworks"@en ;
+  rdfs:subClassOf gkosg:s04_D ;
+.
+gkosg:s04_DK
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 1:2 and similar"@en ;
+  gkosg:strunzid "04.DK" ;
+  gkosg:subGroupLabel "With large (+- medium-sized) cations; tunnel structures"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; tunnel structures"@en ;
+  rdfs:subClassOf gkosg:s04_D ;
+.
+gkosg:s04_DL
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 1:2 and similar"@en ;
+  gkosg:strunzid "04.DL" ;
+  gkosg:subGroupLabel "With large (+- medium-sized) cations; fluorite-type structures"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; fluorite-type structures"@en ;
+  rdfs:subClassOf gkosg:s04_D ;
+.
+gkosg:s04_DM
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = 1:2 and similar"@en ;
+  gkosg:strunzid "04.DM" ;
+  gkosg:subGroupLabel "With large (+- medium-sized) cations; unclassified"@en ;
+  rdfs:label "Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; unclassified"@en ;
+  rdfs:subClassOf gkosg:s04_D ;
+.
+gkosg:s04_E
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Metal: Oxygen = < 1 :2"@en ;
+  gkosg:strunzid "04.E" ;
+  rdfs:label "Oxide, Metal: Oxygen = < 1 :2"@en ;
+  rdfs:subClassOf gkosg:s04 ;
+.
+gkosg:s04_F
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Hydroxides (without V or U)"@en ;
+  gkosg:strunzid "04.F" ;
+  rdfs:label "Hydroxide (without V or U)"@en ;
+  rdfs:subClassOf gkosg:s04 ;
+.
+gkosg:s04_FA
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Hydroxides (without V or U)"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "04.FA" ;
+  gkosg:subGroupLabel "Hydroxides with OH, without H2O; corner-sharing tetrahedra"@en ;
+  rdfs:label "Hydroxide (without V or U), Hydroxides with OH, without H2O; corner-sharing tetrahedra"@en ;
+  rdfs:subClassOf gkosg:s04_F ;
+.
+gkosg:s04_FB
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Hydroxides (without V or U)"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "04.FB" ;
+  gkosg:subGroupLabel "Hydroxides with OH, without H2O; insular octahedra"@en ;
+  rdfs:label "Hydroxide (without V or U), Hydroxides with OH, without H2O; insular octahedra"@en ;
+  rdfs:subClassOf gkosg:s04_F ;
+.
+gkosg:s04_FC
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Hydroxides (without V or U)"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "04.FC" ;
+  gkosg:subGroupLabel "Hydroxides with OH, without H2O; corner-sharing octahedra"@en ;
+  rdfs:label "Hydroxide (without V or U), Hydroxides with OH, without H2O; corner-sharing octahedra"@en ;
+  rdfs:subClassOf gkosg:s04_F ;
+.
+gkosg:s04_FD
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Hydroxides (without V or U)"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "04.FD" ;
+  gkosg:subGroupLabel "Hydroxides with OH, without H2O; chains of edge-sharing octahedra"@en ;
+  rdfs:label "Hydroxide (without V or U), Hydroxides with OH, without H2O; chains of edge-sharing octahedra"@en ;
+  rdfs:subClassOf gkosg:s04_F ;
+.
+gkosg:s04_FE
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Hydroxides (without V or U)"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "04.FE" ;
+  gkosg:subGroupLabel "Hydroxides with OH, without H2O; sheets of edge-sharing octahedra"@en ;
+  rdfs:label "Hydroxide (without V or U), Hydroxides with OH, without H2O; sheets of edge-sharing octahedra"@en ;
+  rdfs:subClassOf gkosg:s04_F ;
+.
+gkosg:s04_FF
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Hydroxides (without V or U)"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "04.FF" ;
+  gkosg:subGroupLabel "Hydroxides with OH, without H2O; various polyhedra"@en ;
+  rdfs:label "Hydroxide (without V or U), Hydroxides with OH, without H2O; various polyhedra"@en ;
+  rdfs:subClassOf gkosg:s04_F ;
+.
+gkosg:s04_FG
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Hydroxides (without V or U)"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "04.FG" ;
+  gkosg:subGroupLabel "Hydroxides with OH, without H2O; unclassified"@en ;
+  rdfs:label "Hydroxide (without V or U), with OH, without H2O; unclassified"@en ;
+  rdfs:subClassOf gkosg:s04_F ;
+.
+gkosg:s04_FH
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Hydroxides (without V or U)"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "04.FH" ;
+  gkosg:subGroupLabel "Hydroxides with H2O +- (OH); insular octahedra"@en ;
+  rdfs:label "Hydroxide (without V or U), Hydroxides with H2O +- (OH); insular octahedra"@en ;
+  rdfs:subClassOf gkosg:s04_F ;
+.
+gkosg:s04_FJ
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Hydroxides (without V or U)"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "04.FJ" ;
+  gkosg:subGroupLabel "Hydroxides with H2O±(OH); corner-sharing octahedra"@en ;
+  rdfs:label "Hydroxide (without V or U), Hydroxides with H2O±(OH); corner-sharing octahedra"@en ;
+  rdfs:subClassOf gkosg:s04_F ;
+.
+gkosg:s04_FK
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Hydroxides (without V or U)"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "04.FK" ;
+  gkosg:subGroupLabel "Hydroxides with H2O±(OH); chains of edge-sharing octahedra"@en ;
+  rdfs:label "Hydroxide (without V or U), Hydroxides with H2O±(OH); chains of edge-sharing octahedra"@en ;
+  rdfs:subClassOf gkosg:s04_F ;
+.
+gkosg:s04_FL
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Hydroxides (without V or U)"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "04.FL" ;
+  gkosg:subGroupLabel "Hydroxides with H2O±(OH); sheets of edge-sharing octahedra"@en ;
+  rdfs:label "Hydroxide (without V or U), Hydroxides with H2O±(OH); sheets of edge-sharing octahedra"@en ;
+  rdfs:subClassOf gkosg:s04_F ;
+.
+gkosg:s04_FM
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Hydroxides (without V or U)"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "04.FM" ;
+  gkosg:subGroupLabel "Hydroxides with H2O±(OH); unclassified"@en ;
+  rdfs:label "Hydroxide (without V or U), with H2O±(OH); unclassified"@en ;
+  rdfs:subClassOf gkosg:s04_F ;
+.
+gkosg:s04_FN
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Hydroxides (without V or U)"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "04.FN" ;
+  gkosg:subGroupLabel "Hydroxides with H2O±(OH); frameworks of corner and/or face-sharing octahedra"@en ;
+  rdfs:label "Hydroxide (without V or U), Hydroxides with H2O±(OH); frameworks of corner and/or face-sharing octahedra"@en ;
+  rdfs:subClassOf gkosg:s04_F ;
+.
+gkosg:s04_G
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Uranyl Hydroxides"@en ;
+  gkosg:strunzid "04.G" ;
+  rdfs:label "Uranyl hydroxide"@en ;
+  rdfs:subClassOf gkosg:s04 ;
+.
+gkosg:s04_GA
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Uranyl Hydroxides"@en ;
+  gkosg:strunzid "04.GA" ;
+  gkosg:subGroupLabel "Without additional cations"@en ;
+  rdfs:label "Uranyl hydroxide, Without additional cations"@en ;
+  rdfs:subClassOf gkosg:s04_G ;
+.
+gkosg:s04_GB
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Uranyl Hydroxides"@en ;
+  gkosg:strunzid "04.GB" ;
+  gkosg:subGroupLabel "With additional cations (K, Ca, Ba, Pb, etc.); with mainly UO2(O,OH)5 pentagonal polyhedra"@en ;
+  rdfs:label "Uranyl hydroxide, With additional cations (K, Ca, Ba, Pb, etc.); with mainly UO2(O,OH)5 pentagonal polyhedra"@en ;
+  rdfs:subClassOf gkosg:s04_G ;
+.
+gkosg:s04_GC
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Uranyl Hydroxides"@en ;
+  gkosg:strunzid "04.GC" ;
+  gkosg:subGroupLabel "With additional cations; with mainly UO2(O,OH)6 hexagonal polyhedra"@en ;
+  rdfs:label "Uranyl hydroxide, With additional cations; with mainly UO2(O,OH)6 hexagonal polyhedra"@en ;
+  rdfs:subClassOf gkosg:s04_G ;
+.
+gkosg:s04_H
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "V[5,6] Vanadates"@en ;
+  gkosg:strunzid "04.H" ;
+  rdfs:label "V[5,6] Vanadate"@en ;
+  rdfs:subClassOf gkosg:s04 ;
+.
+gkosg:s04_HA
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "V[5,6] Vanadates"@en ;
+  gkosg:strunzid "04.HA" ;
+  gkosg:subGroupLabel "V[>4] Nesovanadates"@en ;
+  rdfs:label "V[5,6] Vanadate, V[>4] Nesovanadates"@en ;
+  rdfs:subClassOf gkosg:s04_H ;
+.
+gkosg:s04_HB
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "V[5,6] Vanadates"@en ;
+  gkosg:strunzid "04.HB" ;
+  gkosg:subGroupLabel "Uranyl Sorovanodates"@en ;
+  rdfs:label "V[5,6] Vanadate, Uranyl Sorovanodates"@en ;
+  rdfs:subClassOf gkosg:s04_H ;
+.
+gkosg:s04_HC
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "V[5,6] Vanadates"@en ;
+  gkosg:strunzid "04.HC" ;
+  gkosg:subGroupLabel "[6]-Sorovanadates"@en ;
+  rdfs:label "V[5,6] Vanadate, [6]-Sorovanadates"@en ;
+  rdfs:subClassOf gkosg:s04_H ;
+.
+gkosg:s04_HD
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "V[5,6] Vanadates"@en ;
+  gkosg:strunzid "04.HD" ;
+  gkosg:subGroupLabel "Inovanadates"@en ;
+  rdfs:label "V[5,6] Vanadate, Inovanadates"@en ;
+  rdfs:subClassOf gkosg:s04_H ;
+.
+gkosg:s04_HE
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "V[5,6] Vanadates"@en ;
+  gkosg:strunzid "04.HE" ;
+  gkosg:subGroupLabel "Phyllovanadates"@en ;
+  rdfs:label "V[5,6] Vanadate, Phyllovanadates"@en ;
+  rdfs:subClassOf gkosg:s04_H ;
+.
+gkosg:s04_HF
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "V[5,6] Vanadates"@en ;
+  gkosg:strunzid "04.HF" ;
+  gkosg:subGroupLabel "Tektovanadates"@en ;
+  rdfs:label "V[5,6] Vanadate, Tektovanadates"@en ;
+  rdfs:subClassOf gkosg:s04_H ;
+.
+gkosg:s04_HG
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "V[5,6] Vanadates"@en ;
+  gkosg:strunzid "04.HG" ;
+  gkosg:subGroupLabel "Unclassified V oxides"@en ;
+  rdfs:label "V oxide, unclassified"@en ;
+  rdfs:subClassOf gkosg:s04_H ;
+.
+gkosg:s04_J
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Arsenites, antimonites, bismuthites, sulfites, selenites, tellurites; iodates"@en ;
+  gkosg:strunzid "04.J" ;
+  rdfs:label "Arsenite, antimonite, bismuthite, sulfite, selenite, tellurite or iodate"@en ;
+  rdfs:subClassOf gkosg:s04 ;
+.
+gkosg:s04_JA
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Arsenites, antimonites, bismuthites, sulfites, selenites, tellurites; iodates"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "04.JA" ;
+  gkosg:subGroupLabel "Arsenites, antimonites, bismuthites; without additional anions, without H2O"@en ;
+  rdfs:label "Arsenite, antimonite, bismuthite; without additional anions, without H2O"@en ;
+  rdfs:subClassOf gkosg:s04_J ;
+.
+gkosg:s04_JB
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Arsenites, antimonites, bismuthites, sulfites, selenites, tellurites; iodates"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "04.JB" ;
+  gkosg:subGroupLabel "Arsenites, antimonites, bismuthites; with additional anions, without H2O"@en ;
+  rdfs:label "Arsenite, antimonite, bismuthite; with additional anions, without H2O"@en ;
+  rdfs:subClassOf gkosg:s04_J ;
+.
+gkosg:s04_JC
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Arsenites, antimonites, bismuthites, sulfites, selenites, tellurites; iodates"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "04.JC" ;
+  gkosg:subGroupLabel "Arsenites, antimonites, bismuthites; without additional anions, with H2O"@en ;
+  rdfs:label "Arsenite, antimonite, bismuthite; without additional anions, with H2O"@en ;
+  rdfs:subClassOf gkosg:s04_J ;
+.
+gkosg:s04_JD
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Arsenites, antimonites, bismuthites, sulfites, selenites, tellurites; iodates"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "04.JD" ;
+  gkosg:subGroupLabel "Arsenites, antimonites, bismuthites; with additional anions, with H2O"@en ;
+  rdfs:label "Arsenite, antimonite, bismuthite; with additional anions and H2O"@en ;
+  rdfs:subClassOf gkosg:s04_J ;
+.
+gkosg:s04_JE
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Arsenites, antimonites, bismuthites, sulfites, selenites, tellurites; iodates"@en ;
+  gkosg:strunzid "04.JE" ;
+  gkosg:subGroupLabel "Sulfites"@en ;
+  rdfs:label "Sulfite"@en ;
+  rdfs:subClassOf gkosg:s04_J ;
+.
+gkosg:s04_JF
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Arsenites, antimonites, bismuthites, sulfites, selenites, tellurites; iodates"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "04.JF" ;
+  gkosg:subGroupLabel "Selenites without additional anions, without H2O"@en ;
+  rdfs:label "Selenite without additional anions, without H2O"@en ;
+  rdfs:subClassOf gkosg:s04_J ;
+.
+gkosg:s04_JG
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Arsenites, antimonites, bismuthites, sulfites, selenites, tellurites; iodates"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "04.JG" ;
+  gkosg:subGroupLabel "Selenites with additional anions, without H2O"@en ;
+  rdfs:label "Selenite with additional anions, without H2O"@en ;
+  rdfs:subClassOf gkosg:s04_J ;
+.
+gkosg:s04_JH
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Arsenites, antimonites, bismuthites, sulfites, selenites, tellurites; iodates"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "04.JH" ;
+  gkosg:subGroupLabel "Selenites without additional anions, with H2O"@en ;
+  rdfs:label "Selenite without additional anions, with H2O"@en ;
+  rdfs:subClassOf gkosg:s04_J ;
+.
+gkosg:s04_JJ
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Arsenites, antimonites, bismuthites, sulfites, selenites, tellurites; iodates"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "04.JJ" ;
+  gkosg:subGroupLabel "Selenites with additional anions, with H2O"@en ;
+  rdfs:label "Selenite with additional anions and H2O"@en ;
+  rdfs:subClassOf gkosg:s04_J ;
+.
+gkosg:s04_JK
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Arsenites, antimonites, bismuthites, sulfites, selenites, tellurites; iodates"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "04.JK" ;
+  gkosg:subGroupLabel "Tellurites without additional anions, without H2O"@en ;
+  rdfs:label "Tellurite without additional anions, without H2O"@en ;
+  rdfs:subClassOf gkosg:s04_J ;
+.
+gkosg:s04_JL
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Arsenites, antimonites, bismuthites, sulfites, selenites, tellurites; iodates"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "04.JL" ;
+  gkosg:subGroupLabel "Tellurites with additional anions, without H2O"@en ;
+  rdfs:label "Tellurite with additional anions, without H2O"@en ;
+  rdfs:subClassOf gkosg:s04_J ;
+.
+gkosg:s04_JM
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Arsenites, antimonites, bismuthites, sulfites, selenites, tellurites; iodates"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "04.JM" ;
+  gkosg:subGroupLabel "Tellurites without additional anions, with H2O"@en ;
+  rdfs:label "Tellurite without additional anions, with H2O"@en ;
+  rdfs:subClassOf gkosg:s04_J ;
+.
+gkosg:s04_JN
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Arsenites, antimonites, bismuthites, sulfites, selenites, tellurites; iodates"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "04.JN" ;
+  gkosg:subGroupLabel "Tellurites with additional anions, with H2O"@en ;
+  rdfs:label "Tellurite with additional anions and H2O"@en ;
+  rdfs:subClassOf gkosg:s04_J ;
+.
+gkosg:s04_K
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Iodates: Trigonal [IO3] pyramids (mostly)."@en ;
+  gkosg:strunzid "04.K" ;
+  rdfs:label "Iodate"@en ;
+  rdfs:subClassOf gkosg:s04 ;
+.
+gkosg:s04_KA
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Iodates: Trigonal [IO3] pyramids (mostly)."@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "04.KA" ;
+  gkosg:subGroupLabel "Iodates without additional anions, without H2O"@en ;
+  rdfs:label "Iodate without additional anions, without H2O"@en ;
+  rdfs:subClassOf gkosg:s04_K ;
+.
+gkosg:s04_KB
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Iodates: Trigonal [IO3] pyramids (mostly)."@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "04.KB" ;
+  gkosg:subGroupLabel "Iodates with additional anions, without H2O"@en ;
+  rdfs:label "Iodate with additional anions, without H2O"@en ;
+  rdfs:subClassOf gkosg:s04_K ;
+.
+gkosg:s04_KC
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Iodates: Trigonal [IO3] pyramids (mostly)."@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "04.KC" ;
+  gkosg:subGroupLabel "Iodates without additional anions, with H2O"@en ;
+  rdfs:label "Iodate without additional anions, with H2O"@en ;
+  rdfs:subClassOf gkosg:s04_K ;
+.
+gkosg:s04_KD
+  a owl:Class ;
+  gkosg:classLabel "oxides, hydroxides and arsenites"@en ;
+  gkosg:groupLabel "Iodates: Trigonal [IO3] pyramids (mostly)."@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "04.KD" ;
+  gkosg:subGroupLabel "Iodates with additional anions, with H2O"@en ;
+  rdfs:label "Iodate with additional anions and H2O"@en ;
+  rdfs:subClassOf gkosg:s04_K ;
+.
+gkosg:s05
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:strunzid "05" ;
+  rdfs:label "Carbonate or nitrate"@en ;
+  rdfs:subClassOf gsog:Mineral_Material ;
+.
+gkosg:s05_A
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates without additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "05.A" ;
+  rdfs:label "Carbonate without additional anions, without H2O"@en ;
+  rdfs:subClassOf gkosg:s05 ;
+.
+gkosg:s05_AA
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates without additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "05.AA" ;
+  gkosg:subGroupLabel "Alkali carbonates"@en ;
+  rdfs:label "Carbonate without additional anions, without H2O, Alkali carbonates"@en ;
+  rdfs:subClassOf gkosg:s05_A ;
+.
+gkosg:s05_AB
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates without additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "05.AB" ;
+  gkosg:subGroupLabel "Alkali-earth (and other M2+) carbonates"@en ;
+  rdfs:label "Carbonate without additional anions, without H2O, Alkali-earth (and other M2+) carbonates"@en ;
+  rdfs:subClassOf gkosg:s05_A ;
+.
+gkosg:s05_AC
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates without additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "05.AC" ;
+  gkosg:subGroupLabel "Alkali and alkali-earth carbonates"@en ;
+  rdfs:label "Carbonate without additional anions, without H2O, Alkali and alkali-earth carbonates"@en ;
+  rdfs:subClassOf gkosg:s05_A ;
+.
+gkosg:s05_AD
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates without additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "05.AD" ;
+  gkosg:subGroupLabel "With rare-earth elements (REE)"@en ;
+  rdfs:label "Carbonate without additional anions, without H2O, With rare-earth elements (REE)"@en ;
+  rdfs:subClassOf gkosg:s05_A ;
+.
+gkosg:s05_B
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "05.B" ;
+  rdfs:label "Carbonate with additional anions, without H2O"@en ;
+  rdfs:subClassOf gkosg:s05 ;
+.
+gkosg:s05_BA
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "05.BA" ;
+  gkosg:subGroupLabel "With Cu, Co, Ni, Zn, Mg, Mn"@en ;
+  rdfs:label "Carbonate with additional anions, without H2O, With Cu, Co, Ni, Zn, Mg, Mn"@en ;
+  rdfs:subClassOf gkosg:s05_B ;
+.
+gkosg:s05_BB
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "05.BB" ;
+  gkosg:subGroupLabel "With alkalies, etc."@en ;
+  rdfs:label "Carbonate with additional anions, without H2O, With alkalies, etc."@en ;
+  rdfs:subClassOf gkosg:s05_B ;
+.
+gkosg:s05_BC
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "05.BC" ;
+  gkosg:subGroupLabel "With alkali-earth cations"@en ;
+  rdfs:label "Carbonate with additional anions, without H2O, With alkali-earth cations"@en ;
+  rdfs:subClassOf gkosg:s05_B ;
+.
+gkosg:s05_BD
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "05.BD" ;
+  gkosg:subGroupLabel "With rare earth elements (REE)"@en ;
+  rdfs:label "Carbonate with additional anions, without H2O, With rare earth elements (REE)"@en ;
+  rdfs:subClassOf gkosg:s05_B ;
+.
+gkosg:s05_BE
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "05.BE" ;
+  gkosg:subGroupLabel "With Pb, Bi"@en ;
+  rdfs:label "Carbonate with additional anions, without H2O, With Pb, Bi"@en ;
+  rdfs:subClassOf gkosg:s05_B ;
+.
+gkosg:s05_BF
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "05.BF" ;
+  gkosg:subGroupLabel "With (Cl), SO4, PO4, TeO3"@en ;
+  rdfs:label "Carbonate with additional anions, without H2O, With (Cl), SO4, PO4, TeO3"@en ;
+  rdfs:subClassOf gkosg:s05_B ;
+.
+gkosg:s05_C
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "05.C" ;
+  rdfs:label "Carbonate without additional anions, with H2O"@en ;
+  rdfs:subClassOf gkosg:s05 ;
+.
+gkosg:s05_CA
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "05.CA" ;
+  gkosg:subGroupLabel "With medium-sized cations"@en ;
+  rdfs:label "Carbonate without additional anions, with H2O, With medium-sized cations"@en ;
+  rdfs:subClassOf gkosg:s05_C ;
+.
+gkosg:s05_CB
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "05.CB" ;
+  gkosg:subGroupLabel "With large cations (alkali and alkali-earth carbonates)"@en ;
+  rdfs:label "Carbonate without additional anions, with H2O, With large cations (alkali and alkali-earth carbonates)"@en ;
+  rdfs:subClassOf gkosg:s05_C ;
+.
+gkosg:s05_CC
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "05.CC" ;
+  gkosg:subGroupLabel "With rare earth elements (REE)"@en ;
+  rdfs:label "Carbonate without additional anions, with H2O, With rare earth elements (REE)"@en ;
+  rdfs:subClassOf gkosg:s05_C ;
+.
+gkosg:s05_D
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "05.D" ;
+  rdfs:label "Carbonate with additional anions and H2O"@en ;
+  rdfs:subClassOf gkosg:s05 ;
+.
+gkosg:s05_DA
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "05.DA" ;
+  gkosg:subGroupLabel "With medium-sized cations"@en ;
+  rdfs:label "Carbonate with additional anions and H2O, With medium-sized cations"@en ;
+  rdfs:subClassOf gkosg:s05_D ;
+.
+gkosg:s05_DB
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "05.DB" ;
+  gkosg:subGroupLabel "With large and medium-sized cations"@en ;
+  rdfs:label "Carbonate with additional anions and H2O, With large and medium-sized cations"@en ;
+  rdfs:subClassOf gkosg:s05_D ;
+.
+gkosg:s05_DC
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Carbonates with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "05.DC" ;
+  gkosg:subGroupLabel "With large cations"@en ;
+  rdfs:label "Carbonate with additional anions and H2O, With large cations"@en ;
+  rdfs:subClassOf gkosg:s05_D ;
+.
+gkosg:s05_E
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Uranyl Carbonates"@en ;
+  gkosg:strunzid "05.E" ;
+  rdfs:label "Uranyl Carbonate"@en ;
+  rdfs:subClassOf gkosg:s05 ;
+.
+gkosg:s05_EA
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Uranyl Carbonates"@en ;
+  gkosg:strunzid "05.EA" ;
+  gkosg:subGroupLabel "UO2:CO3 > 1:1"@en ;
+  rdfs:label "Uranyl Carbonate, UO2:CO3 > 1:1"@en ;
+  rdfs:subClassOf gkosg:s05_E ;
+.
+gkosg:s05_EB
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Uranyl Carbonates"@en ;
+  gkosg:strunzid "05.EB" ;
+  gkosg:subGroupLabel "UO2:CO3 = 1:1"@en ;
+  rdfs:label "Uranyl Carbonate, UO2:CO3 = 1:1"@en ;
+  rdfs:subClassOf gkosg:s05_E ;
+.
+gkosg:s05_EC
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Uranyl Carbonates"@en ;
+  gkosg:strunzid "05.EC" ;
+  gkosg:subGroupLabel "UO2:CO3 < 1:1 - 1:2"@en ;
+  rdfs:label "Uranyl Carbonate, UO2:CO3 < 1:1 - 1:2"@en ;
+  rdfs:subClassOf gkosg:s05_E ;
+.
+gkosg:s05_ED
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Uranyl Carbonates"@en ;
+  gkosg:strunzid "05.ED" ;
+  gkosg:subGroupLabel "UO2:CO3 = 1:3"@en ;
+  rdfs:label "Uranyl Carbonate, UO2:CO3 = 1:3"@en ;
+  rdfs:subClassOf gkosg:s05_E ;
+.
+gkosg:s05_EE
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Uranyl Carbonates"@en ;
+  gkosg:strunzid "05.EE" ;
+  gkosg:subGroupLabel "UO2:CO3= 1:4"@en ;
+  rdfs:label "Uranyl Carbonate, UO2:CO3= 1:4"@en ;
+  rdfs:subClassOf gkosg:s05_E ;
+.
+gkosg:s05_EF
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Uranyl Carbonates"@en ;
+  gkosg:strunzid "05.EF" ;
+  gkosg:subGroupLabel "UO2:CO3 = 1:5"@en ;
+  rdfs:label "Uranyl Carbonate, UO2:CO3 = 1:5"@en ;
+  rdfs:subClassOf gkosg:s05_E ;
+.
+gkosg:s05_EG
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "Uranyl Carbonates"@en ;
+  gkosg:strunzid "05.EG" ;
+  gkosg:subGroupLabel "With SO4 or SiO4"@en ;
+  rdfs:label "Uranyl Carbonate, With SO4 or SiO4"@en ;
+  rdfs:subClassOf gkosg:s05_E ;
+.
+gkosg:s05_N
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "NITRATES"@en ;
+  gkosg:strunzid "05.N" ;
+  rdfs:label "Nitrate"@en ;
+  rdfs:subClassOf gkosg:s05 ;
+.
+gkosg:s05_NA
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "NITRATES"@en ;
+  gkosg:strunzid "05.NA" ;
+  gkosg:subGroupLabel "Without OH or H2O"@en ;
+  rdfs:label "Nitrate, Without OH or H2O"@en ;
+  rdfs:subClassOf gkosg:s05_N ;
+.
+gkosg:s05_NB
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "NITRATES"@en ;
+  gkosg:strunzid "05.NB" ;
+  gkosg:subGroupLabel "With OH"@en ;
+  rdfs:label "Nitrate, With OH"@en ;
+  rdfs:subClassOf gkosg:s05_N ;
+.
+gkosg:s05_NC
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "NITRATES"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "05.NC" ;
+  gkosg:subGroupLabel "With H2O"@en ;
+  rdfs:label "Nitrate, With H2O"@en ;
+  rdfs:subClassOf gkosg:s05_N ;
+.
+gkosg:s05_ND
+  a owl:Class ;
+  gkosg:classLabel "carbonates and nitrates"@en ;
+  gkosg:groupLabel "NITRATES"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "05.ND" ;
+  gkosg:subGroupLabel "With OH (etc.) and H2O"@en ;
+  rdfs:label "Nitrate, With OH (etc.) and H2O"@en ;
+  rdfs:subClassOf gkosg:s05_N ;
+.
+gkosg:s06
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:strunzid "06" ;
+  rdfs:label "Borate"@en ;
+  rdfs:subClassOf gsog:Mineral_Material ;
+.
+gkosg:s06_A
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Monoborates"@en ;
+  gkosg:strunzid "06.A" ;
+  rdfs:label "Monoborate"@en ;
+  rdfs:subClassOf gkosg:s06 ;
+.
+gkosg:s06_AA
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Monoborates"@en ;
+  gkosg:strunzid "06.AA" ;
+  gkosg:subGroupLabel "BO3, without additional anions; 1(D)."@en ;
+  rdfs:label "Monoborate, BO3, without additional anions; 1(D)."@en ;
+  rdfs:subClassOf gkosg:s06_A ;
+.
+gkosg:s06_AB
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Monoborates"@en ;
+  gkosg:strunzid "06.AB" ;
+  gkosg:subGroupLabel "BO3, with additional anions; 1(D) + OH, etc."@en ;
+  rdfs:label "Monoborate, BO3, with additional anions; 1(D) + OH, etc."@en ;
+  rdfs:subClassOf gkosg:s06_A ;
+.
+gkosg:s06_AC
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Monoborates"@en ;
+  gkosg:strunzid "06.AC" ;
+  gkosg:subGroupLabel "B(O,OH)4, without and with additional anions; 1(T), 1(T)+OH, etc"@en ;
+  rdfs:label "Monoborate, B(O,OH)4, without and with additional anions; 1(T), 1(T)+OH, etc"@en ;
+  rdfs:subClassOf gkosg:s06_A ;
+.
+gkosg:s06_B
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Diborates"@en ;
+  gkosg:strunzid "06.B" ;
+  rdfs:label "Diborate"@en ;
+  rdfs:subClassOf gkosg:s06 ;
+.
+gkosg:s06_BA
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Diborates"@en ;
+  gkosg:strunzid "06.BA" ;
+  gkosg:subGroupLabel "Neso-diborates with double triangles B2(O,OH)5; 2(2D); 2(2D) + OH, etc."@en ;
+  rdfs:label "Neso-diborate with double triangles B2(O,OH)5; 2(2D); 2(2D) + OH, etc."@en ;
+  rdfs:subClassOf gkosg:s06_B ;
+.
+gkosg:s06_BB
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Diborates"@en ;
+  gkosg:strunzid "06.BB" ;
+  gkosg:subGroupLabel "Neso-diborates with double tetrahedra B2O(OH)6; 2(2T)"@en ;
+  rdfs:label "Neso-diborate with double tetrahedra B2O(OH)6; 2(2T)"@en ;
+  rdfs:subClassOf gkosg:s06_B ;
+.
+gkosg:s06_BC
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Diborates"@en ;
+  gkosg:strunzid "06.BC" ;
+  gkosg:subGroupLabel "Ino-diborates with triangles and/or tetrahedra"@en ;
+  rdfs:label "Ino-diborate"@en ;
+  rdfs:subClassOf gkosg:s06_B ;
+.
+gkosg:s06_BD
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Diborates"@en ;
+  gkosg:strunzid "06.BD" ;
+  gkosg:subGroupLabel "Tektodiborates with tetrahedra"@en ;
+  rdfs:label "Tektodiborate"@en ;
+  rdfs:subClassOf gkosg:s06_B ;
+.
+gkosg:s06_C
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Triborates"@en ;
+  gkosg:strunzid "06.C" ;
+  rdfs:label "Triborate"@en ;
+  rdfs:subClassOf gkosg:s06 ;
+.
+gkosg:s06_CA
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Triborates"@en ;
+  gkosg:strunzid "06.CA" ;
+  gkosg:subGroupLabel "Neso-triborates"@en ;
+  rdfs:label "Neso-triborate"@en ;
+  rdfs:subClassOf gkosg:s06_C ;
+.
+gkosg:s06_CB
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Triborates"@en ;
+  gkosg:strunzid "06.CB" ;
+  gkosg:subGroupLabel "Ino-triborates"@en ;
+  rdfs:label "Ino-triborate"@en ;
+  rdfs:subClassOf gkosg:s06_C ;
+.
+gkosg:s06_CC
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Triborates"@en ;
+  gkosg:strunzid "06.CC" ;
+  gkosg:subGroupLabel "Phyllo-triborates"@en ;
+  rdfs:label "Phyllo-triborate"@en ;
+  rdfs:subClassOf gkosg:s06_C ;
+.
+gkosg:s06_D
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Tetraborates"@en ;
+  gkosg:strunzid "06.D" ;
+  rdfs:label "Tetraborate"@en ;
+  rdfs:subClassOf gkosg:s06 ;
+.
+gkosg:s06_DA
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Tetraborates"@en ;
+  gkosg:strunzid "06.DA" ;
+  gkosg:subGroupLabel "Neso-tetraborates"@en ;
+  rdfs:label "Neso-tetraborate"@en ;
+  rdfs:subClassOf gkosg:s06_D ;
+.
+gkosg:s06_DB
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Tetraborates"@en ;
+  gkosg:strunzid "06.DB" ;
+  gkosg:subGroupLabel "Ino-tetraborates"@en ;
+  rdfs:label "Ino-tetraborate"@en ;
+  rdfs:subClassOf gkosg:s06_D ;
+.
+gkosg:s06_DC
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Tetraborates"@en ;
+  gkosg:strunzid "06.DC" ;
+  gkosg:subGroupLabel "Phyllo-tetraborates"@en ;
+  rdfs:label "Phyllo-tetraborate"@en ;
+  rdfs:subClassOf gkosg:s06_D ;
+.
+gkosg:s06_DD
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Tetraborates"@en ;
+  gkosg:strunzid "06.DD" ;
+  gkosg:subGroupLabel "Tekto-tetraborates"@en ;
+  rdfs:label "Tekto-tetraborate"@en ;
+  rdfs:subClassOf gkosg:s06_D ;
+.
+gkosg:s06_E
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Pentaborates"@en ;
+  gkosg:strunzid "06.E" ;
+  rdfs:label "Pentaborate"@en ;
+  rdfs:subClassOf gkosg:s06 ;
+.
+gkosg:s06_EA
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Pentaborates"@en ;
+  gkosg:strunzid "06.EA" ;
+  gkosg:subGroupLabel "Neso-pentaborates"@en ;
+  rdfs:label "Neso-pentaborate"@en ;
+  rdfs:subClassOf gkosg:s06_E ;
+.
+gkosg:s06_EB
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Pentaborates"@en ;
+  gkosg:strunzid "06.EB" ;
+  gkosg:subGroupLabel "Ino-pentaborates"@en ;
+  rdfs:label "Ino-pentaborate"@en ;
+  rdfs:subClassOf gkosg:s06_E ;
+.
+gkosg:s06_EC
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Pentaborates"@en ;
+  gkosg:strunzid "06.EC" ;
+  gkosg:subGroupLabel "Phyllo-pentaborates"@en ;
+  rdfs:label "Phyllo-pentaborate"@en ;
+  rdfs:subClassOf gkosg:s06_E ;
+.
+gkosg:s06_ED
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Pentaborates"@en ;
+  gkosg:strunzid "06.ED" ;
+  gkosg:subGroupLabel "Tekto-pentaborates"@en ;
+  rdfs:label "Tekto-pentaborate"@en ;
+  rdfs:subClassOf gkosg:s06_E ;
+.
+gkosg:s06_F
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Hexaborates"@en ;
+  gkosg:strunzid "06.F" ;
+  rdfs:label "Hexaborate"@en ;
+  rdfs:subClassOf gkosg:s06 ;
+.
+gkosg:s06_FA
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Hexaborates"@en ;
+  gkosg:strunzid "06.FA" ;
+  gkosg:subGroupLabel "Neso-hexaborates"@en ;
+  rdfs:label "Neso-hexaborate"@en ;
+  rdfs:subClassOf gkosg:s06_F ;
+.
+gkosg:s06_FB
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Hexaborates"@en ;
+  gkosg:strunzid "06.FB" ;
+  gkosg:subGroupLabel "Ino-hexaborates"@en ;
+  rdfs:label "Ino-hexaborate"@en ;
+  rdfs:subClassOf gkosg:s06_F ;
+.
+gkosg:s06_FC
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Hexaborates"@en ;
+  gkosg:strunzid "06.FC" ;
+  gkosg:subGroupLabel "Phyllo-hexaborates"@en ;
+  rdfs:label "Phyllo-hexaborate"@en ;
+  rdfs:subClassOf gkosg:s06_F ;
+.
+gkosg:s06_G
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Heptaborates and other megaborates"@en ;
+  gkosg:strunzid "06.G" ;
+  gkosg:subGroupLabel "Heptaborates and other megaborates"@en ;
+  rdfs:label "Heptaborate and other megaborate"@en ;
+  rdfs:subClassOf gkosg:s06 ;
+.
+gkosg:s06_GA
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Heptaborates and other megaborates"@en ;
+  gkosg:strunzid "06.GA" ;
+  gkosg:subGroupLabel "Tekto-heptaborates"@en ;
+  rdfs:label "Tekto-heptaborate"@en ;
+  rdfs:subClassOf gkosg:s06_G ;
+.
+gkosg:s06_GB
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Heptaborates and other megaborates"@en ;
+  gkosg:strunzid "06.GB" ;
+  gkosg:subGroupLabel "Phyllo-nonborates, etc."@en ;
+  rdfs:label "Phyllo-nonborate, etc."@en ;
+  rdfs:subClassOf gkosg:s06_G ;
+.
+gkosg:s06_GC
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Heptaborates and other megaborates"@en ;
+  gkosg:strunzid "06.GC" ;
+  gkosg:subGroupLabel "Tekto-dodecaborates"@en ;
+  rdfs:label "Tekto-dodecaborate"@en ;
+  rdfs:subClassOf gkosg:s06_G ;
+.
+gkosg:s06_GD
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Heptaborates and other megaborates"@en ;
+  gkosg:strunzid "06.GD" ;
+  gkosg:subGroupLabel "Mega-tektoborates"@en ;
+  rdfs:label "Mega-tektoborate"@en ;
+  rdfs:subClassOf gkosg:s06_G ;
+.
+gkosg:s06_H
+  a owl:Class ;
+  gkosg:classLabel "borates"@en ;
+  gkosg:groupLabel "Unclassified borates"@en ;
+  gkosg:strunzid "06.H" ;
+  rdfs:label "Borate, unclassified"@en ;
+  rdfs:subClassOf gkosg:s06 ;
+.
+gkosg:s07
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:strunzid "07" ;
+  rdfs:label "sulfate, chromate, molybdate or tungstate"@en ;
+  rdfs:subClassOf gsog:Mineral_Material ;
+.
+gkosg:s07_A
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) without additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "07.A" ;
+  rdfs:label "Sulfate, selenate, etc. without additional anions, without H2O"@en ;
+  rdfs:subClassOf gkosg:s07 ;
+.
+gkosg:s07_AA
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) without additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "07.AA" ;
+  gkosg:subGroupLabel "With small cations"@en ;
+  rdfs:label "Sulfate, selenate, etc. without additional anions, without H2O, With small cations"@en ;
+  rdfs:subClassOf gkosg:s07_A ;
+.
+gkosg:s07_AB
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) without additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "07.AB" ;
+  gkosg:subGroupLabel "With medium-sized cations"@en ;
+  rdfs:label "Sulfate, selenate, etc. without additional anions, without H2O, With medium-sized cations"@en ;
+  rdfs:subClassOf gkosg:s07_A ;
+.
+gkosg:s07_AC
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) without additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "07.AC" ;
+  gkosg:subGroupLabel "With medium-sized and large cations"@en ;
+  rdfs:label "Sulfate, selenate, etc. without additional anions, without H2O, With medium-sized and large cations"@en ;
+  rdfs:subClassOf gkosg:s07_A ;
+.
+gkosg:s07_AD
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) without additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "07.AD" ;
+  gkosg:subGroupLabel "With only large cations"@en ;
+  rdfs:label "Sulfate, selenate, etc. without additional anions, without H2O, With only large cations"@en ;
+  rdfs:subClassOf gkosg:s07_A ;
+.
+gkosg:s07_B
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "07.B" ;
+  rdfs:label "Sulfate, selenate, etc. with additional anions, without H2O"@en ;
+  rdfs:subClassOf gkosg:s07 ;
+.
+gkosg:s07_BA
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "07.BA" ;
+  gkosg:subGroupLabel "With small cations"@en ;
+  rdfs:label "Sulfate, selenate, etc. with additional anions, without H2O, With small cations"@en ;
+  rdfs:subClassOf gkosg:s07_B ;
+.
+gkosg:s07_BB
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "07.BB" ;
+  gkosg:subGroupLabel "With medium-sized cations"@en ;
+  rdfs:label "Sulfate, selenate, etc. with additional anions, without H2O, With medium-sized cations"@en ;
+  rdfs:subClassOf gkosg:s07_B ;
+.
+gkosg:s07_BC
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "07.BC" ;
+  gkosg:subGroupLabel "With medium-sized and large cations"@en ;
+  rdfs:label "Sulfate, selenate, etc. with additional anions, without H2O, With medium-sized and large cations"@en ;
+  rdfs:subClassOf gkosg:s07_B ;
+.
+gkosg:s07_BD
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "07.BD" ;
+  gkosg:subGroupLabel "With only large cations"@en ;
+  rdfs:label "Sulfate, selenate, etc. with additional anions, without H2O, With only large cations"@en ;
+  rdfs:subClassOf gkosg:s07_B ;
+.
+gkosg:s07_C
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "07.C" ;
+  rdfs:label "Sulfate, selenate, etc. without additional anions, with H2O"@en ;
+  rdfs:subClassOf gkosg:s07 ;
+.
+gkosg:s07_CA
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "07.CA" ;
+  gkosg:subGroupLabel "With small cations"@en ;
+  rdfs:label "Sulfate, selenate, etc. without additional anions, with H2O, With small cations"@en ;
+  rdfs:subClassOf gkosg:s07_C ;
+.
+gkosg:s07_CB
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "07.CB" ;
+  gkosg:subGroupLabel "With only medium-sized cations"@en ;
+  rdfs:label "Sulfate, selenate, etc. without additional anions, with H2O, With only medium-sized cations"@en ;
+  rdfs:subClassOf gkosg:s07_C ;
+.
+gkosg:s07_CC
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "07.CC" ;
+  gkosg:subGroupLabel "With medium-sized and large cations"@en ;
+  rdfs:label "Sulfate, selenate, etc. without additional anions, with H2O, With medium-sized and large cations"@en ;
+  rdfs:subClassOf gkosg:s07_C ;
+.
+gkosg:s07_CD
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "07.CD" ;
+  gkosg:subGroupLabel "With only large cations"@en ;
+  rdfs:label "Sulfate, selenate, etc. without additional anions, with H2O, With only large cations"@en ;
+  rdfs:subClassOf gkosg:s07_C ;
+.
+gkosg:s07_D
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "07.D" ;
+  rdfs:label "Sulfate, selenate, etc. with additional anions and H2O"@en ;
+  rdfs:subClassOf gkosg:s07 ;
+.
+gkosg:s07_DA
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "07.DA" ;
+  gkosg:subGroupLabel "With small cations"@en ;
+  rdfs:label "Sulfate, selenate, etc. with additional anions and H2O, With small cations"@en ;
+  rdfs:subClassOf gkosg:s07_D ;
+.
+gkosg:s07_DB
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "07.DB" ;
+  gkosg:subGroupLabel "With only medium-sized cations; insular octahedra and finite units"@en ;
+  rdfs:label "Sulfate, selenate, etc. with additional anions and H2O, With only medium-sized cations; insular octahedra and finite units"@en ;
+  rdfs:subClassOf gkosg:s07_D ;
+.
+gkosg:s07_DC
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "07.DC" ;
+  gkosg:subGroupLabel "With only medium-sized cations; chains of edge-sharing octahedra"@en ;
+  rdfs:label "Sulfate, selenate, etc. with additional anions and H2O, With only medium-sized cations; chains of edge-sharing octahedra"@en ;
+  rdfs:subClassOf gkosg:s07_D ;
+.
+gkosg:s07_DD
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "07.DD" ;
+  gkosg:subGroupLabel "With only medium-sized cations; sheets of edge-sharing octahedra"@en ;
+  rdfs:label "Sulfate, selenate, etc. with additional anions and H2O, With only medium-sized cations; sheets of edge-sharing octahedra"@en ;
+  rdfs:subClassOf gkosg:s07_D ;
+.
+gkosg:s07_DE
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "07.DE" ;
+  gkosg:subGroupLabel "With only medium-sized cations; unclassified"@en ;
+  rdfs:label "Sulfate, selenate, etc. with additional anions and H2O, With only medium-sized cations; unclassified"@en ;
+  rdfs:subClassOf gkosg:s07_D ;
+.
+gkosg:s07_DF
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "07.DF" ;
+  gkosg:subGroupLabel "With large and medium-sized cations"@en ;
+  rdfs:label "Sulfate, selenate, etc. with additional anions and H2O, With large and medium-sized cations"@en ;
+  rdfs:subClassOf gkosg:s07_D ;
+.
+gkosg:s07_DG
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Sulfates (selenates, etc.) with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "07.DG" ;
+  gkosg:subGroupLabel "With large and medium-sized cations; with NO3, CO3, B(OH)4, SiO4 or IO3"@en ;
+  rdfs:label "Sulfate, selenate, etc. with additional anions and H2O, With large and medium-sized cations; with NO3, CO3, B(OH)4, SiO4 or IO3"@en ;
+  rdfs:subClassOf gkosg:s07_D ;
+.
+gkosg:s07_E
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Uranyl sulfates"@en ;
+  gkosg:strunzid "07.E" ;
+  rdfs:label "Uranyl sulfate"@en ;
+  rdfs:subClassOf gkosg:s07 ;
+.
+gkosg:s07_EA
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Uranyl sulfates"@en ;
+  gkosg:strunzid "07.EA" ;
+  gkosg:subGroupLabel "Without cations"@en ;
+  rdfs:label "Uranyl sulfate, Without cations"@en ;
+  rdfs:subClassOf gkosg:s07_E ;
+.
+gkosg:s07_EB
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Uranyl sulfates"@en ;
+  gkosg:strunzid "07.EB" ;
+  gkosg:subGroupLabel "With medium-sized cations"@en ;
+  rdfs:label "Uranyl sulfate, With medium-sized cations"@en ;
+  rdfs:subClassOf gkosg:s07_E ;
+.
+gkosg:s07_EC
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Uranyl sulfates"@en ;
+  gkosg:strunzid "07.EC" ;
+  gkosg:subGroupLabel "With medium-sized and large cations"@en ;
+  rdfs:label "Uranyl sulfate, With medium-sized and large cations"@en ;
+  rdfs:subClassOf gkosg:s07_E ;
+.
+gkosg:s07_F
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Chromates"@en ;
+  gkosg:strunzid "07.F" ;
+  rdfs:label "Chromate"@en ;
+  rdfs:subClassOf gkosg:s07 ;
+.
+gkosg:s07_FA
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Chromates"@en ;
+  gkosg:strunzid "07.FA" ;
+  gkosg:subGroupLabel "Without additional anions"@en ;
+  rdfs:label "Chromate, Without additional anions"@en ;
+  rdfs:subClassOf gkosg:s07_F ;
+.
+gkosg:s07_FB
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Chromates"@en ;
+  gkosg:strunzid "07.FB" ;
+  gkosg:subGroupLabel "With additional O,V, S, Cl"@en ;
+  rdfs:label "Chromate, With additional O,V, S, Cl"@en ;
+  rdfs:subClassOf gkosg:s07_F ;
+.
+gkosg:s07_FC
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Chromates"@en ;
+  gkosg:strunzid "07.FC" ;
+  gkosg:subGroupLabel "With PO4, AsO4, SiO4"@en ;
+  rdfs:label "Chromate, With PO4, AsO4, SiO4"@en ;
+  rdfs:subClassOf gkosg:s07_F ;
+.
+gkosg:s07_FD
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Chromates"@en ;
+  gkosg:strunzid "07.FD" ;
+  gkosg:subGroupLabel "Dichromates"@en ;
+  rdfs:label "Dichromate"@en ;
+  rdfs:subClassOf gkosg:s07_F ;
+.
+gkosg:s07_G
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Molybdates, Wolframates and Niobates"@en ;
+  gkosg:strunzid "07.G" ;
+  rdfs:label "Molybdate, Wolframate or Niobate"@en ;
+  rdfs:subClassOf gkosg:s07 ;
+.
+gkosg:s07_GA
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Molybdates, Wolframates and Niobates"@en ;
+  gkosg:strunzid "07.GA" ;
+  gkosg:subGroupLabel "Without additional anions or H2O"@en ;
+  rdfs:label "Molybdate, Wolframate or Niobate, Without additional anions or H2O"@en ;
+  rdfs:subClassOf gkosg:s07_G ;
+.
+gkosg:s07_GB
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Molybdates, Wolframates and Niobates"@en ;
+  gkosg:strunzid "07.GB" ;
+  gkosg:subGroupLabel "With additional anions and/or H2O"@en ;
+  rdfs:label "Molybdate, Wolframate or Niobate, With additional anions and/or H2O"@en ;
+  rdfs:subClassOf gkosg:s07_G ;
+.
+gkosg:s07_H
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Uranium and uranyl molybdates and wolframates"@en ;
+  gkosg:strunzid "07.H" ;
+  rdfs:label "Uranium or uranyl molybdate or wolframate"@en ;
+  rdfs:subClassOf gkosg:s07 ;
+.
+gkosg:s07_HA
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Uranium and uranyl molybdates and wolframates"@en ;
+  gkosg:strunzid "07.HA" ;
+  gkosg:subGroupLabel "With U4+"@en ;
+  rdfs:label "Uranium or uranyl molybdate or wolframate, With U4+"@en ;
+  rdfs:subClassOf gkosg:s07_H ;
+.
+gkosg:s07_HB
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Uranium and uranyl molybdates and wolframates"@en ;
+  gkosg:strunzid "07.HB" ;
+  gkosg:subGroupLabel "With U6+"@en ;
+  rdfs:label "Uranium or uranyl molybdate or wolframate, With U6+"@en ;
+  rdfs:subClassOf gkosg:s07_H ;
+.
+gkosg:s07_J
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Thiosulfates"@en ;
+  gkosg:strunzid "07.J" ;
+  rdfs:label "Thiosulfate"@en ;
+  rdfs:subClassOf gkosg:s07 ;
+.
+gkosg:s07_JA
+  a owl:Class ;
+  gkosg:classLabel "sulfates, chromates, molybdates and tungstates"@en ;
+  gkosg:groupLabel "Thiosulfates"@en ;
+  gkosg:strunzid "07.JA" ;
+  gkosg:subGroupLabel "Thiosulfates of Pb"@en ;
+  rdfs:label "Thiosulfate of Pb"@en ;
+  rdfs:subClassOf gkosg:s07_J ;
+.
+gkosg:s08
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:strunzid "08" ;
+  rdfs:label "phosphate, arsenate, or vanadate"@en ;
+  rdfs:subClassOf gsog:Mineral_Material ;
+.
+gkosg:s08_A
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. without additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.A" ;
+  rdfs:label "Phosphate, etc. without additional anions, without H2O"@en ;
+  rdfs:subClassOf gkosg:s08 ;
+.
+gkosg:s08_AA
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. without additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.AA" ;
+  gkosg:subGroupLabel "With small cations (some also with larger ones)"@en ;
+  rdfs:label "Phosphate, etc. without additional anions, without H2O, With small cations (some also with larger ones)"@en ;
+  rdfs:subClassOf gkosg:s08_A ;
+.
+gkosg:s08_AB
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. without additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.AB" ;
+  gkosg:subGroupLabel "With medium-sized cations"@en ;
+  rdfs:label "Phosphate, etc. without additional anions, without H2O, With medium-sized cations"@en ;
+  rdfs:subClassOf gkosg:s08_A ;
+.
+gkosg:s08_AC
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. without additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.AC" ;
+  gkosg:subGroupLabel "With medium-sized and large cations"@en ;
+  rdfs:label "Phosphate, etc. without additional anions, without H2O, With medium-sized and large cations"@en ;
+  rdfs:subClassOf gkosg:s08_A ;
+.
+gkosg:s08_AD
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. without additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.AD" ;
+  gkosg:subGroupLabel "With only large cations"@en ;
+  rdfs:label "Phosphate, etc. without additional anions, without H2O, With only large cations"@en ;
+  rdfs:subClassOf gkosg:s08_A ;
+.
+gkosg:s08_B
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc., with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.B" ;
+  rdfs:label "Phosphate, etc. with additional anions, without H2O"@en ;
+  rdfs:subClassOf gkosg:s08 ;
+.
+gkosg:s08_BA
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc., with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.BA" ;
+  gkosg:subGroupLabel "With small and medium-sized cations"@en ;
+  rdfs:label "Phosphate, etc. with additional anions, without H2O, With small and medium-sized cations"@en ;
+  rdfs:subClassOf gkosg:s08_B ;
+.
+gkosg:s08_BB
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc., with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.BB" ;
+  gkosg:subGroupLabel "With only medium-sized cations, (OH, etc.):RO4 about 1:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions, without H2O, With only medium-sized cations, (OH, etc.):RO4 about 1:1"@en ;
+  rdfs:subClassOf gkosg:s08_B ;
+.
+gkosg:s08_BC
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc., with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.BC" ;
+  gkosg:subGroupLabel "With only medium-sized cations, (OH, etc.):RO4 > 1:1 and < 2:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions, without H2O, With only medium-sized cations, (OH, etc.):RO4 > 1:1 and < 2:1"@en ;
+  rdfs:subClassOf gkosg:s08_B ;
+.
+gkosg:s08_BD
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc., with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.BD" ;
+  gkosg:subGroupLabel "With only medium-sized cations, (OH, etc.):RO4= 2:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions, without H2O, With only medium-sized cations, (OH, etc.):RO4= 2:1"@en ;
+  rdfs:subClassOf gkosg:s08_B ;
+.
+gkosg:s08_BE
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc., with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.BE" ;
+  gkosg:subGroupLabel "With only medium-sized cations, (OH, etc.):RO4 > 2:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions, without H2O, With only medium-sized cations, (OH, etc.):RO4 > 2:1"@en ;
+  rdfs:subClassOf gkosg:s08_B ;
+.
+gkosg:s08_BF
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc., with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.BF" ;
+  gkosg:subGroupLabel "With medium-sized and large cations, (OH, etc.):RO4< 0.5:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4< 0.5:1"@en ;
+  rdfs:subClassOf gkosg:s08_B ;
+.
+gkosg:s08_BG
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc., with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.BG" ;
+  gkosg:subGroupLabel "With medium-sized and large cations, (OH, etc.):RO4 = 0.5:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4 = 0.5:1"@en ;
+  rdfs:subClassOf gkosg:s08_B ;
+.
+gkosg:s08_BH
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc., with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.BH" ;
+  gkosg:subGroupLabel "With medium-sized and large cations, (OH,etc.):RO4 = 1:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH,etc.):RO4 = 1:1"@en ;
+  rdfs:subClassOf gkosg:s08_B ;
+.
+gkosg:s08_BJ
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc., with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.BJ" ;
+  gkosg:subGroupLabel "With medium-sized and large cations, (OH, etc.):RO4= 1:5:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4= 1:5:1"@en ;
+  rdfs:subClassOf gkosg:s08_B ;
+.
+gkosg:s08_BK
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc., with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.BK" ;
+  gkosg:subGroupLabel "With medium-sized and large cations, (OH, etc.):RO4 = 2:1, 2.5:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4 = 2:1, 2.5:1"@en ;
+  rdfs:subClassOf gkosg:s08_B ;
+.
+gkosg:s08_BL
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc., with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.BL" ;
+  gkosg:subGroupLabel "With medium-sized and large cations, (OH, etc.):RO4 = 3:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4 = 3:1"@en ;
+  rdfs:subClassOf gkosg:s08_B ;
+.
+gkosg:s08_BM
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc., with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.BM" ;
+  gkosg:subGroupLabel "With medium-sized and large cations, (OH, etc.):RO4 = 4:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4 = 4:1"@en ;
+  rdfs:subClassOf gkosg:s08_B ;
+.
+gkosg:s08_BN
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc., with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.BN" ;
+  gkosg:subGroupLabel "With only large cations, (OH, etc.):RO4 = 0.33:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions, without H2O, With only large cations, (OH, etc.):RO4 = 0.33:1"@en ;
+  rdfs:subClassOf gkosg:s08_B ;
+.
+gkosg:s08_BO
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc., with additional anions, without H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.BO" ;
+  gkosg:subGroupLabel "With only large cations, (OH, etc.):RO4 about 1:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions, without H2O, With only large cations, (OH, etc.):RO4 about 1:1"@en ;
+  rdfs:subClassOf gkosg:s08_B ;
+.
+gkosg:s08_C
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.C" ;
+  rdfs:label "Phosphate, etc. without additional anions, with H2O"@en ;
+  rdfs:subClassOf gkosg:s08 ;
+.
+gkosg:s08_CA
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.CA" ;
+  gkosg:subGroupLabel "With small and large/medium cations"@en ;
+  rdfs:label "Phosphate, etc. without additional anions, with H2O, With small and large/medium cations"@en ;
+  rdfs:subClassOf gkosg:s08_C ;
+.
+gkosg:s08_CB
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.CB" ;
+  gkosg:subGroupLabel "With only medium-sized cations, RO4:H2O = 1:1"@en ;
+  rdfs:label "Phosphate, etc. without additional anions, with H2O, With only medium-sized cations, RO4:H2O = 1:1"@en ;
+  rdfs:subClassOf gkosg:s08_C ;
+.
+gkosg:s08_CC
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.CC" ;
+  gkosg:subGroupLabel "With only medium-sized cations, RO4:H2O = 1:1.5"@en ;
+  rdfs:label "Phosphate, etc. without additional anions, with H2O, With only medium-sized cations, RO4:H2O = 1:1.5"@en ;
+  rdfs:subClassOf gkosg:s08_C ;
+.
+gkosg:s08_CD
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.CD" ;
+  gkosg:subGroupLabel "With only medium-sized cations, RO4:H2O = 1:2"@en ;
+  rdfs:label "Phosphate, etc. without additional anions, with H2O, With only medium-sized cations, RO4:H2O = 1:2"@en ;
+  rdfs:subClassOf gkosg:s08_C ;
+.
+gkosg:s08_CE
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.CE" ;
+  gkosg:subGroupLabel "With only medium-sized cations, RO4:H2O about 1:2.5"@en ;
+  rdfs:label "Phosphate, etc. without additional anions, with H2O, With only medium-sized cations, RO4:H2O about 1:2.5"@en ;
+  rdfs:subClassOf gkosg:s08_C ;
+.
+gkosg:s08_CF
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.CF" ;
+  gkosg:subGroupLabel "With large and medium-sized cations, RO4:H2O > 1:1"@en ;
+  rdfs:label "Phosphate, etc. without additional anions, with H2O, With large and medium-sized cations, RO4:H2O > 1:1"@en ;
+  rdfs:subClassOf gkosg:s08_C ;
+.
+gkosg:s08_CG
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.CG" ;
+  gkosg:subGroupLabel "With large and medium-sized cations, RO4:H2O = 1:1"@en ;
+  rdfs:label "Phosphate, etc. without additional anions, with H2O, With large and medium-sized cations, RO4:H2O = 1:1"@en ;
+  rdfs:subClassOf gkosg:s08_C ;
+.
+gkosg:s08_CH
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.CH" ;
+  gkosg:subGroupLabel "With large and medium-sized cations, RO4:H2O < 1:1"@en ;
+  rdfs:label "Phosphate, etc. without additional anions, with H2O, With large and medium-sized cations, RO4:H2O < 1:1"@en ;
+  rdfs:subClassOf gkosg:s08_C ;
+.
+gkosg:s08_CJ
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates without additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.CJ" ;
+  gkosg:subGroupLabel "With only large cations"@en ;
+  rdfs:label "Phosphate, etc. without additional anions, with H2O, With only large cations"@en ;
+  rdfs:subClassOf gkosg:s08_C ;
+.
+gkosg:s08_D
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.D" ;
+  rdfs:label "Phosphate, etc. with additional anions and H2O"@en ;
+  rdfs:subClassOf gkosg:s08 ;
+.
+gkosg:s08_DA
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.DA" ;
+  gkosg:subGroupLabel "With small (and occasionally larger) cations"@en ;
+  rdfs:label "Phosphate, etc. with additional anions and H2O, With small (and occasionally larger) cations"@en ;
+  rdfs:subClassOf gkosg:s08_D ;
+.
+gkosg:s08_DB
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.DB" ;
+  gkosg:subGroupLabel "With only medium-sized cations, (OH, etc.):RO4< 1:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions and H2O, With only medium-sized cations, (OH, etc.):RO4< 1:1"@en ;
+  rdfs:subClassOf gkosg:s08_D ;
+.
+gkosg:s08_DC
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.DC" ;
+  gkosg:subGroupLabel "With only medium-sized cations, (OH, etc.):RO4 = 1:1 and < 2:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions and H2O, With only medium-sized cations, (OH, etc.):RO4 = 1:1 and < 2:1"@en ;
+  rdfs:subClassOf gkosg:s08_D ;
+.
+gkosg:s08_DD
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.DD" ;
+  gkosg:subGroupLabel "With only medium-sized cations, (OH, etc.):RO4= 2:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions and H2O, With only medium-sized cations, (OH, etc.):RO4= 2:1"@en ;
+  rdfs:subClassOf gkosg:s08_D ;
+.
+gkosg:s08_DE
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.DE" ;
+  gkosg:subGroupLabel "With only medium-sized cations, (OH, etc.):RO4 = 3:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions and H2O, With only medium-sized cations, (OH, etc.):RO4 = 3:1"@en ;
+  rdfs:subClassOf gkosg:s08_D ;
+.
+gkosg:s08_DF
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.DF" ;
+  gkosg:subGroupLabel "With only medium-sized cations, (OH,etc.):RO4 > 3:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions and H2O, With only medium-sized cations, (OH,etc.):RO4 > 3:1"@en ;
+  rdfs:subClassOf gkosg:s08_D ;
+.
+gkosg:s08_DG
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.DG" ;
+  gkosg:subGroupLabel "With large and medium-sized cations, (OH, etc.):RO4< 0.5:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4< 0.5:1"@en ;
+  rdfs:subClassOf gkosg:s08_D ;
+.
+gkosg:s08_DH
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.DH" ;
+  gkosg:subGroupLabel "With large and medium-sized cations, (OH, etc.):RO4 < 1:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4 < 1:1"@en ;
+  rdfs:subClassOf gkosg:s08_D ;
+.
+gkosg:s08_DJ
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.DJ" ;
+  gkosg:subGroupLabel "With large and medium-sized cations, (OH, etc.):RO4 = 1:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4 = 1:1"@en ;
+  rdfs:subClassOf gkosg:s08_D ;
+.
+gkosg:s08_DK
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.DK" ;
+  gkosg:subGroupLabel "With large and medium-sized cations, (OH, etc.):RO4 > 1:1 and < 2:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4 > 1:1 and < 2:1"@en ;
+  rdfs:subClassOf gkosg:s08_D ;
+.
+gkosg:s08_DL
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.DL" ;
+  gkosg:subGroupLabel "With large and medium-sized cations, (OH, etc.):RO4 = 2:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4 = 2:1"@en ;
+  rdfs:subClassOf gkosg:s08_D ;
+.
+gkosg:s08_DM
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.DM" ;
+  gkosg:subGroupLabel "With large and medium-sized cations, (OH, etc.):RO4 > 2:1"@en ;
+  rdfs:label "Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4 > 2:1"@en ;
+  rdfs:subClassOf gkosg:s08_D ;
+.
+gkosg:s08_DN
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.DN" ;
+  gkosg:subGroupLabel "With only large cations"@en ;
+  rdfs:label "Phosphate, etc. with additional anions and H2O, With only large cations"@en ;
+  rdfs:subClassOf gkosg:s08_D ;
+.
+gkosg:s08_DO
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Phosphates, etc. with additional anions, with H2O"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.DO" ;
+  gkosg:subGroupLabel "With CO3, SO4, SiO4"@en ;
+  rdfs:label "Phosphate, etc. with additional anions and H2O, With CO3, SO4, SiO4"@en ;
+  rdfs:subClassOf gkosg:s08_D ;
+.
+gkosg:s08_E
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Uranyl phosphates and arsenates"@en ;
+  gkosg:strunzid "08.E" ;
+  rdfs:label "Uranyl phosphate or arsenate"@en ;
+  rdfs:subClassOf gkosg:s08 ;
+.
+gkosg:s08_EA
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Uranyl phosphates and arsenates"@en ;
+  gkosg:strunzid "08.EA" ;
+  gkosg:subGroupLabel "UO2:RO4 = 1:2"@en ;
+  rdfs:label "Uranyl phosphate or arsenate, UO2:RO4 = 1:2"@en ;
+  rdfs:subClassOf gkosg:s08_E ;
+.
+gkosg:s08_EB
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Uranyl phosphates and arsenates"@en ;
+  gkosg:strunzid "08.EB" ;
+  gkosg:subGroupLabel "UO2:RO4 = 1:1"@en ;
+  rdfs:label "Uranyl phosphate or arsenate, UO2:RO4 = 1:1"@en ;
+  rdfs:subClassOf gkosg:s08_E ;
+.
+gkosg:s08_EC
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Uranyl phosphates and arsenates"@en ;
+  gkosg:strunzid "08.EC" ;
+  gkosg:subGroupLabel "UO2:RO4 = 3:2"@en ;
+  rdfs:label "Uranyl phosphate or arsenate, UO2:RO4 = 3:2"@en ;
+  rdfs:subClassOf gkosg:s08_E ;
+.
+gkosg:s08_ED
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Uranyl phosphates and arsenates"@en ;
+  gkosg:strunzid "08.ED" ;
+  gkosg:subGroupLabel "Unclassified"@en ;
+  rdfs:label "Uranyl phosphate or arsenate, Unclassified"@en ;
+  rdfs:subClassOf gkosg:s08_E ;
+.
+gkosg:s08_F
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Polyphosphates, Polyarsenates, [4]-Polyvanadates"@en ;
+  gkosg:strunzid "08.F" ;
+  rdfs:label "Polyphosphate, Polyarsenate or [4]-Polyvanadate"@en ;
+  rdfs:subClassOf gkosg:s08 ;
+.
+gkosg:s08_FA
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Polyphosphates, Polyarsenates, [4]-Polyvanadates"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "08.FA" ;
+  gkosg:subGroupLabel "Polyphosphates, etc., without OH and H2O; dimers of corner-sharing RO4 tetrahedra."@en ;
+  rdfs:label "Polyphosphate, etc., without OH and H2O; dimers of corner-sharing RO4 tetrahedra."@en ;
+  rdfs:subClassOf gkosg:s08_F ;
+.
+gkosg:s08_FB
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Polyphosphates, Polyarsenates, [4]-Polyvanadates"@en ;
+  gkosg:strunzid "08.FB" ;
+  gkosg:subGroupLabel "Polyphosphates, etc., with OH only"@en ;
+  rdfs:label "Polyphosphate, etc., with OH only"@en ;
+  rdfs:subClassOf gkosg:s08_F ;
+.
+gkosg:s08_FC
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Polyphosphates, Polyarsenates, [4]-Polyvanadates"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.FC" ;
+  gkosg:subGroupLabel "Polyphosphates, etc., with H2O only"@en ;
+  rdfs:label "Polyphosphate, etc., with H2O only"@en ;
+  rdfs:subClassOf gkosg:s08_F ;
+.
+gkosg:s08_FD
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Polyphosphates, Polyarsenates, [4]-Polyvanadates"@en ;
+  gkosg:hydrous "TRUE" ;
+  gkosg:strunzid "08.FD" ;
+  gkosg:subGroupLabel "Polyphosphates, etc., with OH and H2O"@en ;
+  rdfs:label "Polyphosphate, etc., with OH and H2O"@en ;
+  rdfs:subClassOf gkosg:s08_F ;
+.
+gkosg:s08_FE
+  a owl:Class ;
+  gkosg:classLabel "phosphates, arsenates and vanadates"@en ;
+  gkosg:groupLabel "Polyphosphates, Polyarsenates, [4]-Polyvanadates"@en ;
+  gkosg:strunzid "08.FE" ;
+  gkosg:subGroupLabel "Ino-[4]-vanadates"@en ;
+  rdfs:label "Ino-[4]-vanadate"@en ;
+  rdfs:subClassOf gkosg:s08_F ;
+.
+gkosg:s09
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:strunzid "09" ;
+  rdfs:label "silicate"@en ;
+  rdfs:subClassOf gsog:Mineral_Material ;
+.
+gkosg:s09_A
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Nesosilicates"@en ;
+  gkosg:notes "compound with a structure in which independent silicate tetrahedrons (each consisting of a central silicon atom surrounded by four oxygen atoms at the corners of a tetrahedron) are present. https://www.britannica.com/science/nesosilicate"@en ;
+  gkosg:strunzid "09.A" ;
+  rdfs:label "Nesosilicate"@en ;
+  rdfs:subClassOf gkosg:s09 ;
+.
+gkosg:s09_AA
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Nesosilicates"@en ;
+  gkosg:strunzid "09.AA" ;
+  gkosg:subGroupLabel "Nesosilicates without additional anions; cations in tetrahedral [4] coordination"@en ;
+  rdfs:label "Nesosilicate without additional anions; cations in tetrahedral [4] coordination"@en ;
+  rdfs:subClassOf gkosg:s09_A ;
+.
+gkosg:s09_AB
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Nesosilicates"@en ;
+  gkosg:strunzid "09.AB" ;
+  gkosg:subGroupLabel "Nesosilicates without additional anions; cations in [4] and greater coordination"@en ;
+  rdfs:label "Nesosilicate without additional anions; cations in [4] and greater coordination"@en ;
+  rdfs:subClassOf gkosg:s09_A ;
+.
+gkosg:s09_AC
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Nesosilicates"@en ;
+  gkosg:strunzid "09.AC" ;
+  gkosg:subGroupLabel "Nesosilicates without additional anions; cations in octahedral [6] coordination"@en ;
+  rdfs:label "Nesosilicate without additional anions; cations in octahedral [6] coordination"@en ;
+  rdfs:subClassOf gkosg:s09_A ;
+.
+gkosg:s09_AD
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Nesosilicates"@en ;
+  gkosg:strunzid "09.AD" ;
+  gkosg:subGroupLabel "Nesosilicates without additional anions; cations in [6] and/or greater coordination"@en ;
+  rdfs:label "Nesosilicate without additional anions; cations in [6] and/or greater coordination"@en ;
+  rdfs:subClassOf gkosg:s09_A ;
+.
+gkosg:s09_AE
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Nesosilicates"@en ;
+  gkosg:strunzid "09.AE" ;
+  gkosg:subGroupLabel "Nesosilicates with additional anions (O,OH,F,H2O); cations in tetrahedral [4] coordination"@en ;
+  rdfs:label "Nesosilicate with additional anions (O,OH,F,H2O); cations in tetrahedral [4] coordination"@en ;
+  rdfs:subClassOf gkosg:s09_A ;
+.
+gkosg:s09_AF
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Nesosilicates"@en ;
+  gkosg:strunzid "09.AF" ;
+  gkosg:subGroupLabel "Nesosilicates with additional anions; cations in [4], [5] and/or only [6] coordination"@en ;
+  rdfs:label "Nesosilicate with additional anions; cations in [4], [5] and/or only [6] coordination"@en ;
+  rdfs:subClassOf gkosg:s09_A ;
+.
+gkosg:s09_AG
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Nesosilicates"@en ;
+  gkosg:strunzid "09.AG" ;
+  gkosg:subGroupLabel "Nesosilicates with additional anions; cations in > [6] +- [6] coordination"@en ;
+  rdfs:label "Nesosilicate with additional anions; cations in > [6] +- [6] coordination"@en ;
+  rdfs:subClassOf gkosg:s09_A ;
+.
+gkosg:s09_AH
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Nesosilicates"@en ;
+  gkosg:strunzid "09.AH" ;
+  gkosg:subGroupLabel "Nesosilicates with CO3, SO4, PO4, etc."@en ;
+  rdfs:label "Nesosilicate with CO3, SO4, PO4, etc."@en ;
+  rdfs:subClassOf gkosg:s09_A ;
+.
+gkosg:s09_AJ
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Nesosilicates"@en ;
+  gkosg:strunzid "09.AJ" ;
+  gkosg:subGroupLabel "Nesosilicates with BO3 triangles and/or B[4], Be[4] tetrahedra, cornersharing with SiO4"@en ;
+  rdfs:label "Nesosilicate with BO3 triangles and/or B[4], Be[4] tetrahedra, cornersharing with SiO4"@en ;
+  rdfs:subClassOf gkosg:s09_A ;
+.
+gkosg:s09_AK
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Nesosilicates"@en ;
+  gkosg:strunzid "09.AK" ;
+  gkosg:subGroupLabel "Uranyl neso- and polysilicates"@en ;
+  rdfs:label "Uranyl neso- and polysilicate"@en ;
+  rdfs:subClassOf gkosg:s09_A ;
+.
+gkosg:s09_B
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Sorosilicates"@en ;
+  gkosg:notes "Structures that have two silicate tetrahedrons (each consisting of a central silicon atom surrounded by four oxygen atoms at the corners of a tetrahedron) linked together.  formerly called pyrosilicate. https://www.britannica.com/science/sorosilicate"@en ;
+  gkosg:strunzid "09.B" ;
+  rdfs:label "Sorosilicate"@en ;
+  rdfs:subClassOf gkosg:s09 ;
+.
+gkosg:s09_BA
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Sorosilicates"@en ;
+  gkosg:strunzid "09.BA" ;
+  gkosg:subGroupLabel "Si2O7 groups, without non-tetrahedral anions; cations in tetrahedral [4] coordination"@en ;
+  rdfs:label "Sorosilicate: Si2O7 groups, without non-tetrahedral anions; cations in tetrahedral [4] coordination"@en ;
+  rdfs:subClassOf gkosg:s09_B ;
+.
+gkosg:s09_BB
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Sorosilicates"@en ;
+  gkosg:strunzid "09.BB" ;
+  gkosg:subGroupLabel "Si2O7 groups, without non-tetrahedral anions; cations in tetrahedral [4] and greater coordination"@en ;
+  rdfs:label "Sorosilicate: Si2O7 groups, without non-tetrahedral anions; cations in tetrahedral [4] and greater coordination"@en ;
+  rdfs:subClassOf gkosg:s09_B ;
+.
+gkosg:s09_BC
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Sorosilicates"@en ;
+  gkosg:strunzid "09.BC" ;
+  gkosg:subGroupLabel "Si2O7 groups, without non-tetrahedral anions; cations in octahedral [6] and greater coordination"@en ;
+  rdfs:label "Sorosilicate: Si2O7 groups, without non-tetrahedral anions; cations in octahedral [6] and greater coordination"@en ;
+  rdfs:subClassOf gkosg:s09_B ;
+.
+gkosg:s09_BD
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Sorosilicates"@en ;
+  gkosg:strunzid "09.BD" ;
+  gkosg:subGroupLabel "Si2O7 groups, with additional anions; cations in tetrahedral [4] and greater coordination"@en ;
+  rdfs:label "Sorosilicate: Si2O7 groups, with additional anions; cations in tetrahedral [4] and greater coordination"@en ;
+  rdfs:subClassOf gkosg:s09_B ;
+.
+gkosg:s09_BE
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Sorosilicates"@en ;
+  gkosg:strunzid "09.BE" ;
+  gkosg:subGroupLabel "Si2O7 groups, with additional anions; cations in octahedral [6] and greater coordination"@en ;
+  rdfs:label "Sorosilicate: Si2O7 groups, with additional anions; cations in octahedral [6] and greater coordination"@en ;
+  rdfs:subClassOf gkosg:s09_B ;
+.
+gkosg:s09_BF
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Sorosilicates"@en ;
+  gkosg:strunzid "09.BF" ;
+  gkosg:subGroupLabel "Sorosilicates with mixed SiO4 and Si2O7 groups; cations in tetrahedral [4] and greater coordination"@en ;
+  rdfs:label "Sorosilicate with mixed SiO4 and Si2O7 groups; cations in tetrahedral [4] and greater coordination"@en ;
+  rdfs:subClassOf gkosg:s09_B ;
+.
+gkosg:s09_BG
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Sorosilicates"@en ;
+  gkosg:strunzid "09.BG" ;
+  gkosg:subGroupLabel "Sorosilicates with mixed SiO4 and Si2O7 groups; cations in octahedral [6] and greater coordination"@en ;
+  rdfs:label "Sorosilicate with mixed SiO4 and Si2O7 groups; cations in octahedral [6] and greater coordination"@en ;
+  rdfs:subClassOf gkosg:s09_B ;
+.
+gkosg:s09_BH
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Sorosilicates"@en ;
+  gkosg:strunzid "09.BH" ;
+  gkosg:subGroupLabel "Sorosilicates with Si3O10, Si4O11, etc. anions; cations in tetrahedral [4] and greater coordination"@en ;
+  rdfs:label "Sorosilicate with Si3O10, Si4O11, etc. anions; cations in tetrahedral [4] and greater coordination"@en ;
+  rdfs:subClassOf gkosg:s09_B ;
+.
+gkosg:s09_BJ
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Sorosilicates"@en ;
+  gkosg:strunzid "09.BJ" ;
+  gkosg:subGroupLabel "Sorosilicates with Si3O10, Si4O11, etc. anions; cations in octahedral [6] and greater coordination"@en ;
+  rdfs:label "Sorosilicate with Si3O10, Si4O11, etc. anions; cations in octahedral [6] and greater coordination"@en ;
+  rdfs:subClassOf gkosg:s09_B ;
+.
+gkosg:s09_BK
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Sorosilicates"@en ;
+  gkosg:strunzid "09.BK" ;
+  gkosg:subGroupLabel "Unclassified sorosilicates"@en ;
+  rdfs:label "Sorosilicate, unclassified"@en ;
+  rdfs:subClassOf gkosg:s09_B ;
+.
+gkosg:s09_C
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Cyclosilicates"@en ;
+  gkosg:notes "ring silicates which contain rings of linked SiO4 tetrahedra. The Si:O. ratio is 1:3. Three configurations can occur: the Si3O9, the Si4O12 and the Si6O18 rings."@en ;
+  gkosg:strunzid "09.C" ;
+  rdfs:label "Cyclosilicate"@en ;
+  rdfs:subClassOf gkosg:s09 ;
+.
+gkosg:s09_CA
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Cyclosilicates"@en ;
+  gkosg:strunzid "09.CA" ;
+  gkosg:subGroupLabel "[Si3O9]6- 3-membered single rings (dreier-Einfachringe), without insular complex anions"@en ;
+  rdfs:label "Cyclosilicate: [Si3O9]6- 3-membered single rings (dreier-Einfachringe), without insular complex anions"@en ;
+  rdfs:subClassOf gkosg:s09_C ;
+.
+gkosg:s09_CB
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Cyclosilicates"@en ;
+  gkosg:strunzid "09.CB" ;
+  gkosg:subGroupLabel "[Si3O9]6- 3-membered single rings, with insular complex anions"@en ;
+  rdfs:label "Cyclosilicate: [Si3O9]6- 3-membered single rings, with insular complex anions"@en ;
+  rdfs:subClassOf gkosg:s09_C ;
+.
+gkosg:s09_CC
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Cyclosilicates"@en ;
+  gkosg:strunzid "09.CC" ;
+  gkosg:subGroupLabel "[Si3O9]6- - branched 3-membered single rings"@en ;
+  rdfs:label "Cyclosilicate: [Si3O9]6- - branched 3-membered single rings"@en ;
+  rdfs:subClassOf gkosg:s09_C ;
+.
+gkosg:s09_CD
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Cyclosilicates"@en ;
+  gkosg:strunzid "09.CD" ;
+  gkosg:subGroupLabel "[Si3O9]6- 3-membered double rings"@en ;
+  rdfs:label "Cyclosilicate: [Si3O9]6- 3-membered double rings"@en ;
+  rdfs:subClassOf gkosg:s09_C ;
+.
+gkosg:s09_CE
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Cyclosilicates"@en ;
+  gkosg:strunzid "09.CE" ;
+  gkosg:subGroupLabel "[Si4O12]8- 4-membered single rings (vierer-Einfachringe), without insular complex anions"@en ;
+  rdfs:label "Cyclosilicate: [Si4O12]8- 4-membered single rings (vierer-Einfachringe), without insular complex anions"@en ;
+  rdfs:subClassOf gkosg:s09_C ;
+.
+gkosg:s09_CF
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Cyclosilicates"@en ;
+  gkosg:strunzid "09.CF" ;
+  gkosg:subGroupLabel "[Si4O12]8- 4-membered single rings, with insular complex anions"@en ;
+  rdfs:label "Cyclosilicate: [Si4O12]8- 4-membered single rings, with insular complex anions"@en ;
+  rdfs:subClassOf gkosg:s09_C ;
+.
+gkosg:s09_CG
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Cyclosilicates"@en ;
+  gkosg:strunzid "09.CG" ;
+  gkosg:subGroupLabel "[Si4O12]8- branched 4-membered single rings"@en ;
+  rdfs:label "Cyclosilicate: [Si4O12]8- branched 4-membered single rings"@en ;
+  rdfs:subClassOf gkosg:s09_C ;
+.
+gkosg:s09_CH
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Cyclosilicates"@en ;
+  gkosg:strunzid "09.CH" ;
+  gkosg:subGroupLabel "[Si4O12]8- 4-membered double rings"@en ;
+  rdfs:label "Cyclosilicate: [Si4O12]8- 4-membered double rings"@en ;
+  rdfs:subClassOf gkosg:s09_C ;
+.
+gkosg:s09_CJ
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Cyclosilicates"@en ;
+  gkosg:strunzid "09.CJ" ;
+  gkosg:subGroupLabel "[Si6O18]12- 6-membered single rings (sechser-Einfachringe), without insular complex anions"@en ;
+  rdfs:label "Cyclosilicate: [Si6O18]12- 6-membered single rings (sechser-Einfachringe), without insular complex anions"@en ;
+  rdfs:subClassOf gkosg:s09_C ;
+.
+gkosg:s09_CK
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Cyclosilicates"@en ;
+  gkosg:strunzid "09.CK" ;
+  gkosg:subGroupLabel "[Si6O18]12- 6-membered single rings, with insular complex anions"@en ;
+  rdfs:label "Cyclosilicate: [Si6O18]12- 6-membered single rings, with insular complex anions"@en ;
+  rdfs:subClassOf gkosg:s09_C ;
+.
+gkosg:s09_CL
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Cyclosilicates"@en ;
+  gkosg:strunzid "09.CL" ;
+  gkosg:subGroupLabel "[Si6O18]12- branched 6-membered single rings"@en ;
+  rdfs:label "Cyclosilicate: [Si6O18]12- branched 6-membered single rings"@en ;
+  rdfs:subClassOf gkosg:s09_C ;
+.
+gkosg:s09_CM
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Cyclosilicates"@en ;
+  gkosg:strunzid "09.CM" ;
+  gkosg:subGroupLabel "[Si6O18]12- 6-membered double rings (sechser-Doppelringe)"@en ;
+  rdfs:label "Cyclosilicate: [Si6O18]12- 6-membered double rings (sechser-Doppelringe)"@en ;
+  rdfs:subClassOf gkosg:s09_C ;
+.
+gkosg:s09_CN
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Cyclosilicates"@en ;
+  gkosg:strunzid "09.CN" ;
+  gkosg:subGroupLabel "[Si8O24]16- 8-membered rings"@en ;
+  rdfs:label "Cyclosilicate: [Si8O24]16- 8-membered rings"@en ;
+  rdfs:subClassOf gkosg:s09_C ;
+.
+gkosg:s09_CO
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Cyclosilicates"@en ;
+  gkosg:strunzid "09.CO" ;
+  gkosg:subGroupLabel "[Si9O27]18- 9-membered rings"@en ;
+  rdfs:label "Cyclosilicate: [Si9O27]18- 9-membered rings"@en ;
+  rdfs:subClassOf gkosg:s09_C ;
+.
+gkosg:s09_CP
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Cyclosilicates"@en ;
+  gkosg:strunzid "09.CP" ;
+  gkosg:subGroupLabel "12-membered and larger rings"@en ;
+  rdfs:label "Cyclosilicate: 12-membered and larger rings"@en ;
+  rdfs:subClassOf gkosg:s09_C ;
+.
+gkosg:s09_D
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Inosilicates"@en ;
+  gkosg:notes "chain silicates which have interlocking chains of silicate tetrahedra with either SiO3, 1:3 ratio, for single chains or Si4O11, 4:11 ratio, for double chains."@en ;
+  gkosg:strunzid "09.D" ;
+  rdfs:label "Inosilicate"@en ;
+  rdfs:subClassOf gkosg:s09 ;
+.
+gkosg:s09_DA
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Inosilicates"@en ;
+  gkosg:strunzid "09.DA" ;
+  gkosg:subGroupLabel "Inosilicates with 2-periodic single chains, Si2O6; pyroxene family"@en ;
+  rdfs:label "Inosilicate with 2-periodic single chains, Si2O6; pyroxene family"@en ;
+  rdfs:subClassOf gkosg:s09_D ;
+.
+gkosg:s09_DB
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Inosilicates"@en ;
+  gkosg:strunzid "09.DB" ;
+  gkosg:subGroupLabel "Inosilicates with 2-periodic single chains, Si2O6; Pyroxene-related minerals"@en ;
+  rdfs:label "Inosilicate with 2-periodic single chains, Si2O6; Pyroxene-related minerals"@en ;
+  rdfs:subClassOf gkosg:s09_D ;
+.
+gkosg:s09_DC
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Inosilicates"@en ;
+  gkosg:strunzid "09.DC" ;
+  gkosg:subGroupLabel "Inosilicates with branched 2-periodic single chains; Si2O6 + 2SiO3 Si4O12"@en ;
+  rdfs:label "Inosilicate with branched 2-periodic single chains; Si2O6 + 2SiO3 Si4O12"@en ;
+  rdfs:subClassOf gkosg:s09_D ;
+.
+gkosg:s09_DD
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Inosilicates"@en ;
+  gkosg:strunzid "09.DD" ;
+  gkosg:subGroupLabel "Inosilicates with 2-periodic double chains, Si4O11; Orthoamphiboles"@en ;
+  rdfs:label "Inosilicate with 2-periodic double chains, Si4O11; Orthoamphiboles"@en ;
+  rdfs:subClassOf gkosg:s09_D ;
+.
+gkosg:s09_DE
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Inosilicates"@en ;
+  gkosg:strunzid "09.DE" ;
+  gkosg:subGroupLabel "Inosilicates with 2-periodic double chains, Si4O11; Clinoamphiboles"@en ;
+  rdfs:label "Inosilicate with 2-periodic double chains, Si4O11; Clinoamphiboles"@en ;
+  rdfs:subClassOf gkosg:s09_D ;
+.
+gkosg:s09_DF
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Inosilicates"@en ;
+  gkosg:strunzid "09.DF" ;
+  gkosg:subGroupLabel "Inosilicates with 2-periodic multiple chains"@en ;
+  rdfs:label "Inosilicate with 2-periodic multiple chains"@en ;
+  rdfs:subClassOf gkosg:s09_D ;
+.
+gkosg:s09_DG
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Inosilicates"@en ;
+  gkosg:strunzid "09.DG" ;
+  gkosg:subGroupLabel "Inosilicates with 3-periodic single and multiple chains"@en ;
+  rdfs:label "Inosilicate with 3-periodic single and multiple chains"@en ;
+  rdfs:subClassOf gkosg:s09_D ;
+.
+gkosg:s09_DH
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Inosilicates"@en ;
+  gkosg:strunzid "09.DH" ;
+  gkosg:subGroupLabel "Inosilicates with 4-periodic single chains, Si4O12"@en ;
+  rdfs:label "Inosilicate with 4-periodic single chains, Si4O12"@en ;
+  rdfs:subClassOf gkosg:s09_D ;
+.
+gkosg:s09_DJ
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Inosilicates"@en ;
+  gkosg:strunzid "09.DJ" ;
+  gkosg:subGroupLabel "Inosilicates with 4-periodic double and triple chains"@en ;
+  rdfs:label "Inosilicate with 4-periodic double and triple chains"@en ;
+  rdfs:subClassOf gkosg:s09_D ;
+.
+gkosg:s09_DK
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Inosilicates"@en ;
+  gkosg:strunzid "09.DK" ;
+  gkosg:subGroupLabel "Inosilicates with 5-periodic single chains"@en ;
+  rdfs:label "Inosilicate with 5-periodic single chains"@en ;
+  rdfs:subClassOf gkosg:s09_D ;
+.
+gkosg:s09_DL
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Inosilicates"@en ;
+  gkosg:strunzid "09.DL" ;
+  gkosg:subGroupLabel "Inosilicates with 5-periodic double chains, Si10O28"@en ;
+  rdfs:label "Inosilicate with 5-periodic double chains, Si10O28"@en ;
+  rdfs:subClassOf gkosg:s09_D ;
+.
+gkosg:s09_DM
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Inosilicates"@en ;
+  gkosg:strunzid "09.DM" ;
+  gkosg:subGroupLabel "Inosilicates with 6-periodic single chains"@en ;
+  rdfs:label "Inosilicate with 6-periodic single chains"@en ;
+  rdfs:subClassOf gkosg:s09_D ;
+.
+gkosg:s09_DN
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Inosilicates"@en ;
+  gkosg:strunzid "09.DN" ;
+  gkosg:subGroupLabel "Inosilicates with 6-periodic double chains"@en ;
+  rdfs:label "Inosilicate with 6-periodic double chains"@en ;
+  rdfs:subClassOf gkosg:s09_D ;
+.
+gkosg:s09_DO
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Inosilicates"@en ;
+  gkosg:strunzid "09.DO" ;
+  gkosg:subGroupLabel "Inosilicates with 7-, 8-, 10-, 12- and 14-periodic chains"@en ;
+  rdfs:label "Inosilicate with 7-, 8-, 10-, 12- and 14-periodic chains"@en ;
+  rdfs:subClassOf gkosg:s09_D ;
+.
+gkosg:s09_DP
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Inosilicates"@en ;
+  gkosg:strunzid "09.DP" ;
+  gkosg:subGroupLabel "Transitional ino-phyllosilicate structures"@en ;
+  rdfs:label "Sorosilicate transitional ino-phyllosilicate structures"@en ;
+  rdfs:subClassOf gkosg:s09_D ;
+.
+gkosg:s09_DQ
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Inosilicates"@en ;
+  gkosg:strunzid "09.DQ" ;
+  gkosg:subGroupLabel "Modular Inosilicate-Sorosilicate Structures"@en ;
+  rdfs:label "Modular Inosilicate-Sorosilicate Structure"@en ;
+  rdfs:subClassOf gkosg:s09_D ;
+.
+gkosg:s09_E
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Phyllosilicates"@en ;
+  gkosg:strunzid "09.E" ;
+  rdfs:label "Phyllosilicate"@en ;
+  rdfs:subClassOf gkosg:s09 ;
+.
+gkosg:s09_EA
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Phyllosilicates"@en ;
+  gkosg:strunzid "09.EA" ;
+  gkosg:subGroupLabel "Single nets of tetrahedra with 4-, 5-, (6-), and 8-membered rings"@en ;
+  rdfs:label "Phyllosilicate: Single nets of tetrahedra with 4-, 5-, (6-), and 8-membered rings"@en ;
+  rdfs:subClassOf gkosg:s09_E ;
+.
+gkosg:s09_EB
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Phyllosilicates"@en ;
+  gkosg:strunzid "09.EB" ;
+  gkosg:subGroupLabel "Double nets with 4- and 6-membered rings"@en ;
+  rdfs:label "Phyllosilicate: Double nets with 4- and 6-membered rings"@en ;
+  rdfs:subClassOf gkosg:s09_E ;
+.
+gkosg:s09_EC
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Phyllosilicates"@en ;
+  gkosg:strunzid "09.EC" ;
+  gkosg:subGroupLabel "Phyllosilicates with mica sheets, composed of tetrahedral and octahedral nets"@en ;
+  rdfs:label "Phyllosilicate with mica sheets, composed of tetrahedral and octahedral nets"@en ;
+  rdfs:subClassOf gkosg:s09_E ;
+.
+gkosg:s09_ED
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Phyllosilicates"@en ;
+  gkosg:strunzid "09.ED" ;
+  gkosg:subGroupLabel "Phyllosilicates with kaolinite layers composed of tetrahedral and octahedral nets"@en ;
+  rdfs:label "Phyllosilicate with kaolinite layers composed of tetrahedral and octahedral nets"@en ;
+  rdfs:subClassOf gkosg:s09_E ;
+.
+gkosg:s09_EE
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Phyllosilicates"@en ;
+  gkosg:strunzid "09.EE" ;
+  gkosg:subGroupLabel "Single tetrahedral nets of 6-membered rings connected by octahedral nets or octahedral bands"@en ;
+  rdfs:label "Phyllosilicate: Single tetrahedral nets of 6-membered rings connected by octahedral nets or octahedral bands"@en ;
+  rdfs:subClassOf gkosg:s09_E ;
+.
+gkosg:s09_EF
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Phyllosilicates"@en ;
+  gkosg:strunzid "09.EF" ;
+  gkosg:subGroupLabel "Single nets with 6-membered rings, connected by M[4], M[8], etc."@en ;
+  rdfs:label "Phyllosilicate: Single nets with 6-membered rings, connected by M[4], M[8], etc."@en ;
+  rdfs:subClassOf gkosg:s09_E ;
+.
+gkosg:s09_EG
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Phyllosilicates"@en ;
+  gkosg:strunzid "09.EG" ;
+  gkosg:subGroupLabel "Double nets with 6-membered and larger rings"@en ;
+  rdfs:label "Phyllosilicate: Double nets with 6-membered and larger rings"@en ;
+  rdfs:subClassOf gkosg:s09_E ;
+.
+gkosg:s09_EH
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Phyllosilicates"@en ;
+  gkosg:strunzid "09.EH" ;
+  gkosg:subGroupLabel "Transitional structures between phyllosilicate and other silicate units"@en ;
+  rdfs:label "Transitional structure between phyllosilicate and other silicate units"@en ;
+  rdfs:subClassOf gkosg:s09_E ;
+.
+gkosg:s09_EJ
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Phyllosilicates"@en ;
+  gkosg:strunzid "09.EJ" ;
+  gkosg:subGroupLabel "Unclassified phyllosilicates"@en ;
+  rdfs:label "Phyllosilicate, unclassified"@en ;
+  rdfs:subClassOf gkosg:s09_E ;
+.
+gkosg:s09_F
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Tektosilicates without zeolitic H2O"@en ;
+  gkosg:hydrous "FALSE" ;
+  gkosg:strunzid "09.F" ;
+  rdfs:label "Tektosilicate without zeolitic H2O"@en ;
+  rdfs:subClassOf gkosg:s09 ;
+.
+gkosg:s09_FA
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Tektosilicates without zeolitic H2O"@en ;
+  gkosg:strunzid "09.FA" ;
+  gkosg:subGroupLabel "Tektosilicates without additional non-tetrahedral anions"@en ;
+  rdfs:label "Tektosilicate without additional non-tetrahedral anions"@en ;
+  rdfs:subClassOf gkosg:s09_F ;
+.
+gkosg:s09_FB
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Tektosilicates without zeolitic H2O"@en ;
+  gkosg:strunzid "09.FB" ;
+  gkosg:subGroupLabel "Tektosilicates with additional anions"@en ;
+  rdfs:label "Tektosilicate with additional anions"@en ;
+  rdfs:subClassOf gkosg:s09_F ;
+.
+gkosg:s09_G
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Tektosilicates with zeolitic H2O; zeolite family"@en ;
+  gkosg:strunzid "09.G" ;
+  rdfs:label "Tektosilicate with zeolitic H2O; Zeolite family"@en ;
+  rdfs:subClassOf gkosg:s09 ;
+.
+gkosg:s09_GA
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Tektosilicates with zeolitic H2O; zeolite family"@en ;
+  gkosg:strunzid "09.GA" ;
+  gkosg:subGroupLabel "Zeolites with T5O10 Units – The Fibrous Zeolites"@en ;
+  rdfs:label "Zeolite with T5O10 Units – Fibrous Zeolite"@en ;
+  rdfs:subClassOf gkosg:s09_G ;
+.
+gkosg:s09_GB
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Tektosilicates with zeolitic H2O; zeolite family"@en ;
+  gkosg:strunzid "09.GB" ;
+  gkosg:subGroupLabel "Chains of single connected 4-membered rings"@en ;
+  rdfs:label "Zeolite family: Chains of single connected 4-membered rings"@en ;
+  rdfs:subClassOf gkosg:s09_G ;
+.
+gkosg:s09_GC
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Tektosilicates with zeolitic H2O; zeolite family"@en ;
+  gkosg:strunzid "09.GC" ;
+  gkosg:subGroupLabel "Chains of doubly-connected 4-membered rings"@en ;
+  rdfs:label "Zeolite family: Chains of doubly-connected 4-membered rings"@en ;
+  rdfs:subClassOf gkosg:s09_G ;
+.
+gkosg:s09_GD
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Tektosilicates with zeolitic H2O; zeolite family"@en ;
+  gkosg:strunzid "09.GD" ;
+  gkosg:subGroupLabel "Chains of 6-membered rings – tabular zeolites"@en ;
+  rdfs:label "Zeolite family: Chains of 6-membered rings – tabular zeolites"@en ;
+  rdfs:subClassOf gkosg:s09_G ;
+.
+gkosg:s09_GE
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Tektosilicates with zeolitic H2O; zeolite family"@en ;
+  gkosg:strunzid "09.GE" ;
+  gkosg:subGroupLabel "Chains of T10O20 Tetrahedra"@en ;
+  rdfs:label "Zeolite family: Chains of T10O20 Tetrahedra"@en ;
+  rdfs:subClassOf gkosg:s09_G ;
+.
+gkosg:s09_GF
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Tektosilicates with zeolitic H2O; zeolite family"@en ;
+  gkosg:strunzid "09.GF" ;
+  gkosg:subGroupLabel "Other Rare Zeolites"@en ;
+  rdfs:label "Other rare zeolite"@en ;
+  rdfs:subClassOf gkosg:s09_G ;
+.
+gkosg:s09_GG
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Tektosilicates with zeolitic H2O; zeolite family"@en ;
+  gkosg:strunzid "09.GG" ;
+  gkosg:subGroupLabel "Unclassified zeolites"@en ;
+  rdfs:label "Zeolite, unclassified"@en ;
+  rdfs:subClassOf gkosg:s09_G ;
+.
+gkosg:s09_H
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Unclassified silicates"@en ;
+  gkosg:strunzid "09.H" ;
+  rdfs:label "Silicate, unclassified"@en ;
+  rdfs:subClassOf gkosg:s09 ;
+.
+gkosg:s09_HA
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Unclassified silicates"@en ;
+  gkosg:strunzid "09.HA" ;
+  gkosg:subGroupLabel "With Alkali and Alkali-earth Elements"@en ;
+  rdfs:label "Silicate, unclassified: With Alkali and Alkali-earth Elements"@en ;
+  rdfs:subClassOf gkosg:s09_H ;
+.
+gkosg:s09_HB
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Unclassified silicates"@en ;
+  gkosg:strunzid "09.HB" ;
+  gkosg:subGroupLabel "With Ti, V, Cr"@en ;
+  rdfs:label "Silicate, unclassified: With Ti, V, Cr"@en ;
+  rdfs:subClassOf gkosg:s09_H ;
+.
+gkosg:s09_HC
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Unclassified silicates"@en ;
+  gkosg:strunzid "09.HC" ;
+  gkosg:subGroupLabel "With Mn, Fe"@en ;
+  rdfs:label "Silicate, unclassified: With Mn, Fe"@en ;
+  rdfs:subClassOf gkosg:s09_H ;
+.
+gkosg:s09_HD
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Unclassified silicates"@en ;
+  gkosg:strunzid "09.HD" ;
+  gkosg:subGroupLabel "With Co, Ni"@en ;
+  rdfs:label "Silicate, unclassified: With Co, Ni"@en ;
+  rdfs:subClassOf gkosg:s09_H ;
+.
+gkosg:s09_HE
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Unclassified silicates"@en ;
+  gkosg:strunzid "09.HE" ;
+  gkosg:subGroupLabel "With Cu, Zn"@en ;
+  rdfs:label "Silicate, unclassified: With Cu, Zn"@en ;
+  rdfs:subClassOf gkosg:s09_H ;
+.
+gkosg:s09_HF
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Unclassified silicates"@en ;
+  gkosg:strunzid "09.HF" ;
+  gkosg:subGroupLabel "With Nb, Ta, Zr"@en ;
+  rdfs:label "Silicate, unclassified: With Nb, Ta, Zr"@en ;
+  rdfs:subClassOf gkosg:s09_H ;
+.
+gkosg:s09_HG
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Unclassified silicates"@en ;
+  gkosg:strunzid "09.HG" ;
+  gkosg:subGroupLabel "With REE, Th"@en ;
+  rdfs:label "Silicate, unclassified: With REE, Th"@en ;
+  rdfs:subClassOf gkosg:s09_H ;
+.
+gkosg:s09_HH
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Unclassified silicates"@en ;
+  gkosg:strunzid "09.HH" ;
+  gkosg:subGroupLabel "With Pb"@en ;
+  rdfs:label "Silicate, unclassified: With Pb"@en ;
+  rdfs:subClassOf gkosg:s09_H ;
+.
+gkosg:s09_J
+  a owl:Class ;
+  gkosg:classLabel "silicates"@en ;
+  gkosg:groupLabel "Germanates"@en ;
+  gkosg:strunzid "09.J" ;
+  rdfs:label "Germanate"@en ;
+  rdfs:subClassOf gkosg:s09 ;
+.
+gkosg:s10
+  a owl:Class ;
+  gkosg:classLabel "organic compounds"@en ;
+  gkosg:strunzid "10" ;
+  rdfs:label "Organic compound"@en ;
+  rdfs:subClassOf gsog:Mineral_Material ;
+.
+gkosg:s10_A
+  a owl:Class ;
+  gkosg:classLabel "organic compounds"@en ;
+  gkosg:groupLabel "Salts of organic acids"@en ;
+  gkosg:strunzid "10.A" ;
+  rdfs:label "Salt of organic acid"@en ;
+  rdfs:subClassOf gkosg:s10 ;
+.
+gkosg:s10_AA
+  a owl:Class ;
+  gkosg:classLabel "organic compounds"@en ;
+  gkosg:groupLabel "Salts of organic acids"@en ;
+  gkosg:strunzid "10.AA" ;
+  gkosg:subGroupLabel "Formates, Acetates, etc."@en ;
+  rdfs:label "Formate, Acetate, etc."@en ;
+  rdfs:subClassOf gkosg:s10_A ;
+.
+gkosg:s10_AB
+  a owl:Class ;
+  gkosg:classLabel "organic compounds"@en ;
+  gkosg:groupLabel "Salts of organic acids"@en ;
+  gkosg:strunzid "10.AB" ;
+  gkosg:subGroupLabel "Oxalates"@en ;
+  rdfs:label "Oxalate"@en ;
+  rdfs:subClassOf gkosg:s10_A ;
+.
+gkosg:s10_AC
+  a owl:Class ;
+  gkosg:classLabel "organic compounds"@en ;
+  gkosg:groupLabel "Salts of organic acids"@en ;
+  gkosg:strunzid "10.AC" ;
+  gkosg:subGroupLabel "Benzine Salts"@en ;
+  rdfs:label "Benzine Salt"@en ;
+  rdfs:subClassOf gkosg:s10_A ;
+.
+gkosg:s10_AD
+  a owl:Class ;
+  gkosg:classLabel "organic compounds"@en ;
+  gkosg:groupLabel "Salts of organic acids"@en ;
+  gkosg:strunzid "10.AD" ;
+  gkosg:subGroupLabel "Cyanates"@en ;
+  rdfs:label "Cyanate"@en ;
+  rdfs:subClassOf gkosg:s10_A ;
+.
+gkosg:s10_B
+  a owl:Class ;
+  gkosg:classLabel "organic compounds"@en ;
+  gkosg:groupLabel "Hydrocarbons"@en ;
+  gkosg:strunzid "10.B" ;
+  rdfs:label "Hydrocarbon"@en ;
+  rdfs:subClassOf gkosg:s10 ;
+.
+gkosg:s10_BA
+  a owl:Class ;
+  gkosg:classLabel "organic compounds"@en ;
+  gkosg:groupLabel "Hydrocarbons"@en ;
+  gkosg:strunzid "10.BA" ;
+  gkosg:subGroupLabel "Hydrocarbons"@en ;
+  rdfs:label "Hydrocarbon"@en ;
+  rdfs:subClassOf gkosg:s10_B ;
+.
+gkosg:s10_C
+  a owl:Class ;
+  gkosg:classLabel "organic compounds"@en ;
+  gkosg:groupLabel "Miscellaneous Organic Minerals"@en ;
+  gkosg:strunzid "10.C" ;
+  rdfs:label "Miscellaneous Organic Mineral"@en ;
+  rdfs:subClassOf gkosg:s10 ;
+.
+gkosg:s10_CA
+  a owl:Class ;
+  gkosg:classLabel "organic compounds"@en ;
+  gkosg:groupLabel "Miscellaneous Organic Minerals"@en ;
+  gkosg:strunzid "10.CA" ;
+  gkosg:subGroupLabel "Miscellaneous Organic Minerals"@en ;
+  rdfs:label "Miscellaneous Organic Mineral"@en ;
+  rdfs:subClassOf gkosg:s10_C ;
+.
+
