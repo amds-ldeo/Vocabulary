@@ -1,0 +1,4443 @@
+from iterative python code using API. with group ID, count children get drillDownCount
+
+200
+Anorthoclase count: 378
+Hyalophane count: 138
+Rubicline count: 9
+K Feldspar count: 6508
+Ferrisanidine count: 4
+group: 118 , count: 6941
+200
+w(OH, F, Cl)-dominant Amphibole Group count: 0
+w(O)-dominant Amphibole Group count: 0
+Unnamed (F-dominant analogue of Ferri-kaersutite) count: 1
+group: 207 , count: 1
+200
+Britholite Group count: 72
+Apatite Group count: 62
+Belovite Group count: 0
+Hedyphane Group count: 0
+Ellestadite Group count: 1
+Vanackerite count: 1
+group: 274 , count: 135
+200
+Fluorapophyllite-(K) count: 356
+Hydroxyapophyllite-(K) count: 101
+Fluorapophyllite-(Na) count: 12
+Fluorapophyllite-(Cs) count: 1
+Fluorapophyllite-(NH₄) count: 1
+Hydroxymcglassonite-(K) count: 1
+group: 283 , count: 432
+200
+Bastnäsite-(Ce) count: 423
+Bastnäsite-(La) count: 36
+Bastnäsite-(Y) count: 15
+Bastnäsite-(Nd) count: 7
+group: 563 , count: 445
+200
+Annite count: 474
+Phlogopite count: 3179
+Siderophyllite count: 130
+Tetraferriphlogopite count: 74
+Eastonite count: 18
+Tetraferriannite count: 16
+Fluorannite count: 6
+Fluorophlogopite count: 79
+Oxyphlogopite count: 8
+Fluorotetraferriphlogopite count: 4
+group: 677 , count: 3730
+200
+Brewsterite-Ba count: 10
+Brewsterite-Sr count: 10
+group: 766 , count: 15
+200
+Baileychlore count: 22
+Chamosite count: 796
+Clinochlore count: 2278
+Cookeite count: 226
+Franklinfurnaceite count: 1
+Gonyerite count: 15
+Nimite count: 23
+Pennantite count: 33
+Sudoite count: 70
+Donbassite count: 18
+Glagolevite count: 5
+Borocookeite count: 5
+group: 1016 , count: 3188
+200
+Heptaphyllite count: 0
+Mixed-layer clay minerals count: 0
+group: 1062 , count: 0
+200
+Clinoptilolite-Ca count: 49
+Clinoptilolite-K count: 14
+Clinoptilolite-Na count: 26
+group: 1082 , count: 77
+200
+Dachiardite-Ca count: 19
+Dachiardite-Na count: 24
+Dachiardite-K count: 1
+group: 1212 , count: 39
+200
+group: 1367 , count: 0
+200
+Erionite-Ca count: 37
+Erionite-K count: 23
+Erionite-Na count: 13
+group: 1399 , count: 67
+200
+group: 1437 , count: 0
+200
+Ferrierite-K count: 10
+Ferrierite-Mg count: 40
+Ferrierite-Na count: 7
+Ferrierite-NH4 count: 4
+group: 1492 , count: 57
+200
+Clino-ferro-ferri-holmquistite count: 1
+Clino-ferri-holmquistite count: 1
+group: 1513 , count: 1
+200
+Argentotetrahedrite-(Fe) count: 19
+Kenoargentotetrahedrite-(Fe) count: 8
+Argentotetrahedrite-(Zn) count: 13
+Kenoargentotetrahedrite-(Zn) count: 2
+Argentotetrahedrite-(Hg) count: 2
+Argentotetrahedrite-(Cd) count: 1
+group: 1605 , count: 40
+200
+Alkali Feldspar count: 723
+Banalsite count: 27
+Buddingtonite count: 33
+Celsian count: 138
+Paracelsian count: 3
+Reedmergnerite count: 12
+Slawsonite count: 14
+Stronalsite count: 18
+Svyatoslavite count: 1
+Cleavelandite count: 698
+Plagioclase count: 6308
+Filatovite count: 1
+Kokchetavite count: 14
+Kumdykolite count: 12
+Hexacelsian count: 2
+Unnamed (New Ordered Member of the Alkali Feldspar Series) count: 0
+group: 1624 , count: 7523
+200
+Cryolithionite count: 5
+Katoite count: 19
+Yafsoanite count: 10
+Garnet Group count: 8393
+UM1984-37-SiO:CrMn count: 1
+Bitikleite Group count: 0
+Schorlomite Group count: 1
+Henritermierite Group count: 0
+Berzeliite Group count: 0
+Monteneveite count: 1
+Nikmelnikovite count: 1
+Priscillagrewite-(Y) count: 2
+Xuite count: 2
+group: 1651 , count: 8428
+200
+Gmelinite-Ca count: 25
+Gmelinite-K count: 9
+Gmelinite-Na count: 33
+group: 1714 , count: 57
+200
+Heulandite-Ca count: 318
+Heulandite-K count: 33
+Heulandite-Na count: 20
+Heulandite-Sr count: 11
+Heulandite-Ba count: 8
+group: 1889 , count: 360
+200
+group: 2059 , count: 0
+200
+group: 2380 , count: 0
+200
+Uranmicrolite (of Hogarth 1977) count: 64
+Fluornatromicrolite count: 20
+Yttromicrolite (of Hogarth) count: 2
+Fluorcalciomicrolite count: 23
+Oxycalciomicrolite count: 9
+Oxystannomicrolite count: 1
+Kenoplumbomicrolite count: 1
+Oxystibiomicrolite count: 5
+Hydromicrolite count: 3
+Hydroxykenomicrolite count: 9
+Hydrokenomicrolite count: 7
+Hydroxycalciomicrolite count: 18
+Hydroxynatromicrolite count: 4
+Oxybismutomicrolite count: 3
+group: 2705 , count: 132
+200
+Monazite-(Ce) count: 1247
+Monazite-(La) count: 56
+Monazite-(Nd) count: 42
+Monazite-(Sm) count: 7
+group: 2750 , count: 1282
+200
+Harmotome count: 337
+Phillipsite-Ca count: 111
+Phillipsite-K count: 97
+Phillipsite-Na count: 30
+group: 3192 , count: 512
+200
+group: 3231 , count: 0
+200
+Pumpellyite-(Fe2+) count: 35
+Pumpellyite-(Fe3+) count: 7
+Pumpellyite-(Mg) count: 121
+Pumpellyite-(Mn2+) count: 20
+Pumpellyite-(Al) count: 21
+group: 3305 , count: 190
+200
+Hydropyrochlore count: 5
+Fluornatropyrochlore count: 20
+Oxynatropyrochlore count: 7
+Hydroxycalciopyrochlore count: 22
+Fluorcalciopyrochlore count: 35
+Oxycalciopyrochlore count: 17
+Fluorstrontiopyrochlore count: 1
+Oxyplumbopyrochlore count: 1
+Kenoplumbopyrochlore count: 2
+Oxyyttropyrochlore-(Y) count: 1
+Fluorkenopyrochlore count: 5
+Hydroxymanganopyrochlore count: 1
+Fluorplumbopyrochlore count: 1
+Hydroxyplumbopyrochlore count: 3
+Fluorhydropyrochlore count: 0
+Cesiokenopyrochlore count: 1
+Hydrokenopyrochlore count: 2
+Hydroxykenopyrochlore count: 6
+Hydroxynatropyrochlore count: 5
+Unnamed (Sb-analogue of Hydroxymanganopyrochlor) count: 1
+group: 3316 , count: 86
+200
+Hydroxycalcioroméite count: 19
+Cuproroméite count: 102
+Fluorcalcioroméite count: 17
+Oxycalcioroméite count: 10
+Oxyplumboroméite count: 87
+Hydroxyferroroméite count: 4
+group: 3443 , count: 221
+200
+group: 3550 , count: 0
+200
+Barrerite count: 32
+Stellerite count: 235
+Stilbite-Ca count: 349
+Stilbite-Na count: 18
+group: 3785 , count: 569
+200
+Ferro-taramite count: 6
+Ferro-ferri-taramite count: 6
+Ferri-taramite count: 9
+Taramite count: 28
+Fluoro-taramite count: 1
+Potassic-ferro-taramite count: 1
+Potassic-ferri-taramite count: 2
+Potassic-ferro-ferri-taramite count: 5
+group: 3889 , count: 48
+200
+Tennantite-(Zn) count: 55
+Tennantite-(Fe) count: 58
+Tennantite-(Hg) count: 6
+Tennantite-(Cu) count: 15
+Tennantite-(Ni) count: 1
+Tennantite-(Cd) count: 1
+Tennantite-(Mn) count: 1
+group: 3911 , count: 117
+200
+Tetrahedrite-(Zn) count: 135
+Tetrahedrite-(Fe) count: 71
+Tetrahedrite-(Hg) count: 17
+Tetrahedrite-(Ni) count: 1
+Tetrahedrite-(Mn) count: 3
+Tetrahedrite-(Cu) count: 4
+Tetrahedrite-(Cd) count: 3
+group: 3924 , count: 199
+200
+Fluor-buergerite count: 5
+Chromium-dravite count: 9
+Dravite count: 848
+Elbaite count: 654
+Feruvite count: 22
+Foitite count: 114
+Liddicoatite count: 42
+Olenite count: 38
+Povondraite count: 18
+Schorl count: 3291
+Magnesio-foitite count: 40
+Rossmanite count: 43
+Tsilaisite count: 5
+Oxy-vanadium-dravite count: 2
+Oxy-dravite count: 35
+Oxy-rossmanite count: 1
+Fluor-schorl count: 37
+Fluor-elbaite count: 43
+Chromo-alumino-povondraite count: 3
+Fluor-dravite count: 15
+Oxy-schorl count: 19
+Unnamed (Pb-analogue of Fluor-liddicoatite) count: 1
+Fluor-liddicoatite count: 15
+Unnamed (F analogue of feruvite) count: 2
+UM2000-64-SiO:BFeHKMg count: 2
+Oxy-chromium-dravite count: 2
+Darrellhenryite count: 5
+Fluor-tsilaisite count: 1
+Vanadio-oxy-chromium-dravite count: 1
+Fluor-uvite count: 28
+Vanadio-oxy-dravite count: 2
+Adachiite count: 1
+Maruyamaite count: 2
+Bosiite count: 4
+Lucchesiite count: 2
+Oxy-foitite count: 2
+Oxy-uvite count: 0
+Magnesio-lucchesiite count: 6
+Dutrowite count: 2
+Celleriite count: 2
+Uvite count: 18
+UM2008-52-SiO:AlBCaFFeHLiMgNa count: 1
+Princivalleite count: 1
+Alumino-oxy-rossmanite count: 1
+Ferro-bosiite count: 1
+Magnesio-dutrowite count: 1
+group: 4003 , count: 4191
+200
+group: 4126 , count: 0
+200
+Amicite count: 7
+Ammonioleucite count: 4
+Analcime count: 2328
+Bellbergite count: 4
+Bikitaite count: 4
+Boggsite count: 3
+Brewsterite Subgroup count: 18
+Chiavennite count: 27
+Clinoptilolite Subgroup count: 367
+Cowlesite count: 96
+Dachiardite Subgroup count: 18
+Edingtonite count: 34
+Epistilbite count: 167
+Erionite Subgroup count: 204
+Ferrierite Subgroup count: 46
+Gaultite count: 1
+Gmelinite Subgroup count: 134
+Gobbinsite count: 19
+Goosecreekite count: 16
+Heulandite Subgroup count: 1393
+Hsianghualite count: 3
+Laumontite count: 1487
+Lovdarite count: 6
+Maricopaite count: 1
+Merlinoite count: 18
+Montesommaite count: 4
+Mordenite count: 511
+Offretite count: 188
+Pahasapaite count: 1
+Parthéite count: 2
+Perlialite count: 5
+Phillipsite Subgroup count: 814
+Pollucite count: 189
+Roggianite count: 7
+Stilbite Subgroup count: 1858
+Tschernichite count: 9
+Wairakite count: 94
+Weinebeneite count: 1
+Wenkite count: 3
+Willhendersonite count: 17
+Yugawaralite count: 44
+Gottardiite count: 1
+Mutinaite count: 1
+Terranovaite count: 1
+Tschörtnerite count: 1
+Gismondine Subgroup count: 157
+Nabesite count: 3
+Mazzite Subgroup count: 0
+Thomsonite Subgroup count: 524
+Natrolite Subgroup count: 3
+Direnzoite count: 1
+Faujasite Subgroup count: 28
+Chabazite-Levyne Subgroup count: 0
+Alflarsenite count: 1
+Flörkeite count: 9
+Kirchhoffite count: 1
+Ferrochiavennite count: 3
+Garronite Subgroup count: 2
+Martinandresite count: 1
+UM1996-38-SiO:AlCaHNa count: 1
+UM1999-33-SiO:AlHKNa count: 0
+UM2002-40-SiO:AlCaHKMgNa count: 1
+Unnamed (Ca analogue of Merlinoite) count: 1
+Loomisite count: 1
+Paulingite Subgroup count: 6
+group: 4395 , count: 6265
+200
+group: 4419 , count: 0
+200
+Allanite Group count: 1804
+Dollaseite Group count: 0
+Åskagenite Group count: 0
+Epidote Group count: 28
+Unnamed ([Ca-La]+[Al-Al-Mn] member of the Epidote Supergroup) count: 1
+Unnamed ([Ca-Ce]+[Al-Al-Mn] member of the Epidote Supergroup) count: 2
+Unnamed ([Ca-La]+[Fe3-Al-Mn] member of the Epidote Supergroup) count: 1
+Unnamed ([Ca-Ce]+[Fe3-Cr-Fe] member of the Epidote Supergroup) count: 1
+Unnamed ([Mn2-Ce]+[Al-Al-Mn] member of the Epidote Supergroup) count: 1
+Unnamed ([Mn2-Nd]+[Al-Al-Mn] member of the Epidote Supergroup) count: 1
+group: 6662 , count: 1831
+200
+Montdorite count: 3
+Voloshinite count: 2
+Yangzhumingite count: 6
+Luanshiweiite count: 3
+Brittle Mica count: 0
+UM1988-22-SiO:AlCaFFeHKLiMg count: 1
+Dioctahedral mica count: 1
+Trioctahedral mica count: 1
+Fluorluanshiweiite count: 2
+UM2003-27-SiO:AlCsFFeHLi count: 1
+UM2003-28-SiO:AlCsFFeHMg count: 1
+UM2003-30-SiO:AlFLiRb count: 1
+UM2003-31-SiO:AlHFeRb count: 1
+group: 6728 , count: 17
+200
+Parisite-(Ce) count: 166
+Parisite-(Nd) count: 2
+Parisite-(La) count: 2
+group: 7403 , count: 168
+200
+Aegirine count: 1757
+Aegirine-augite count: 787
+Augite count: 2953
+Clinoenstatite count: 109
+Clinoferrosilite count: 26
+Diopside count: 5436
+Esseneite count: 24
+Hedenbergite count: 1023
+Jadeite count: 199
+Jervisite count: 6
+Johannsenite count: 108
+Kanoite count: 9
+Kosmochlor count: 24
+Namansilite count: 10
+Natalyite count: 3
+Omphacite count: 307
+Petedunnite count: 9
+Pigeonite count: 364
+Spodumene count: 867
+Davisite count: 4
+Kushiroite count: 8
+Grossmanite count: 6
+Tissintite count: 6
+Burnettite count: 1
+UM2001-19-SiO:AlCaMgNa count: 1
+UM2003-36-SiO:CaNa count: 0
+Ryabchikovite count: 1
+Colomeraite count: 1
+group: 7630 , count: 10700
+200
+group: 8582 , count: 0
+200
+group: 8583 , count: 0
+200
+group: 8584 , count: 0
+200
+group: 8585 , count: 0
+200
+group: 8586 , count: 0
+200
+group: 8587 , count: 0
+200
+group: 8588 , count: 0
+200
+group: 8589 , count: 0
+200
+group: 8590 , count: 0
+200
+group: 8591 , count: 0
+200
+group: 8594 , count: 0
+200
+group: 8595 , count: 0
+200
+group: 8596 , count: 0
+200
+group: 8597 , count: 0
+200
+group: 8598 , count: 0
+200
+group: 8599 , count: 0
+200
+group: 8600 , count: 0
+200
+group: 8601 , count: 0
+200
+group: 8602 , count: 0
+200
+Arfvedsonite count: 646
+Magnesio-arfvedsonite count: 133
+Magnesio-fluoro-arfvedsonite count: 12
+Potassic-arfvedsonite count: 15
+Potassic-magnesio-fluoro-arfvedsonite count: 9
+Potassic-magnesio-arfvedsonite count: 14
+Fluoro-arfvedsonite count: 6
+group: 8603 , count: 755
+200
+group: 8604 , count: 0
+200
+group: 8605 , count: 0
+200
+group: 8606 , count: 0
+200
+group: 8607 , count: 0
+200
+group: 8608 , count: 0
+200
+group: 8609 , count: 0
+200
+group: 8610 , count: 0
+200
+group: 8612 , count: 0
+200
+group: 8613 , count: 0
+200
+group: 8614 , count: 0
+200
+group: 8615 , count: 0
+200
+group: 8616 , count: 0
+200
+group: 8617 , count: 0
+200
+group: 8618 , count: 0
+200
+group: 8619 , count: 0
+200
+group: 8620 , count: 0
+200
+group: 8621 , count: 0
+200
+group: 8622 , count: 0
+200
+group: 8623 , count: 0
+200
+Ferro-ferri-winchite count: 8
+Ferro-winchite count: 11
+Winchite count: 82
+Ferri-winchite count: 23
+Fluoro-winchite count: 1
+Scandio-winchite count: 1
+group: 8624 , count: 107
+200
+group: 8625 , count: 0
+200
+group: 8626 , count: 0
+200
+group: 8627 , count: 0
+200
+group: 8628 , count: 0
+200
+group: 8629 , count: 0
+200
+group: 8630 , count: 0
+200
+group: 8631 , count: 0
+200
+group: 8632 , count: 0
+200
+group: 8633 , count: 0
+200
+group: 8634 , count: 0
+200
+group: 8635 , count: 0
+200
+group: 8636 , count: 0
+200
+group: 8637 , count: 0
+200
+group: 8638 , count: 0
+200
+group: 8639 , count: 0
+200
+group: 8640 , count: 0
+200
+group: 8641 , count: 0
+200
+group: 8642 , count: 0
+200
+group: 8643 , count: 0
+200
+group: 8645 , count: 0
+200
+group: 8646 , count: 0
+200
+group: 8647 , count: 0
+200
+group: 8648 , count: 0
+200
+group: 8649 , count: 0
+200
+group: 8650 , count: 0
+200
+group: 8651 , count: 0
+200
+group: 8652 , count: 0
+200
+group: 8653 , count: 0
+200
+group: 8654 , count: 0
+200
+group: 8655 , count: 0
+200
+group: 8656 , count: 0
+200
+group: 8657 , count: 0
+200
+group: 8658 , count: 0
+200
+group: 8659 , count: 0
+200
+group: 8660 , count: 0
+200
+group: 8662 , count: 0
+200
+group: 8663 , count: 0
+200
+group: 8664 , count: 0
+200
+group: 8665 , count: 0
+200
+group: 8666 , count: 0
+200
+group: 8667 , count: 0
+200
+group: 8668 , count: 0
+200
+group: 8669 , count: 0
+200
+group: 8670 , count: 0
+200
+group: 8671 , count: 0
+200
+group: 8672 , count: 0
+200
+group: 8673 , count: 0
+200
+group: 8674 , count: 0
+200
+group: 8675 , count: 0
+200
+group: 8676 , count: 0
+200
+group: 8677 , count: 0
+200
+group: 8678 , count: 0
+200
+group: 8679 , count: 0
+200
+group: 8680 , count: 0
+200
+group: 8681 , count: 0
+200
+group: 8682 , count: 0
+200
+group: 8683 , count: 0
+200
+group: 8684 , count: 0
+200
+group: 8685 , count: 0
+200
+group: 8686 , count: 0
+200
+group: 8687 , count: 0
+200
+group: 8688 , count: 0
+200
+group: 8689 , count: 0
+200
+group: 8690 , count: 0
+200
+group: 8691 , count: 0
+200
+group: 8692 , count: 0
+200
+group: 8693 , count: 0
+200
+group: 8694 , count: 0
+200
+group: 8695 , count: 0
+200
+group: 8696 , count: 0
+200
+group: 8697 , count: 0
+200
+Magnesio-riebeckite count: 122
+Riebeckite count: 683
+Fluoro-riebeckite count: 3
+Magnesio-fluoro-riebeckite count: 1
+group: 8698 , count: 774
+200
+Ferro-richterite count: 58
+Richterite count: 249
+Fluoro-richterite count: 27
+Potassic-fluoro-richterite count: 14
+Potassic-richterite count: 39
+Potassic-ferro-richterite count: 3
+group: 8699 , count: 347
+200
+group: 8700 , count: 0
+200
+group: 8701 , count: 0
+200
+group: 8702 , count: 0
+200
+group: 8703 , count: 0
+200
+group: 8705 , count: 0
+200
+group: 8706 , count: 0
+200
+group: 8707 , count: 0
+200
+group: 8710 , count: 0
+200
+group: 8711 , count: 0
+200
+group: 8712 , count: 0
+200
+group: 8713 , count: 0
+200
+group: 8714 , count: 0
+200
+group: 8715 , count: 0
+200
+group: 8716 , count: 0
+200
+group: 8717 , count: 0
+200
+group: 8718 , count: 0
+200
+group: 8719 , count: 0
+200
+group: 8720 , count: 0
+200
+group: 8721 , count: 0
+200
+group: 8722 , count: 0
+200
+group: 8723 , count: 0
+200
+group: 8724 , count: 0
+200
+group: 8725 , count: 0
+200
+group: 8726 , count: 0
+200
+group: 8727 , count: 0
+200
+group: 8728 , count: 0
+200
+group: 8729 , count: 0
+200
+group: 8730 , count: 0
+200
+group: 8731 , count: 0
+200
+group: 8732 , count: 0
+200
+group: 8733 , count: 0
+200
+group: 8734 , count: 0
+200
+group: 8735 , count: 0
+200
+group: 8768 , count: 0
+200
+group: 8769 , count: 0
+200
+group: 8770 , count: 0
+200
+group: 8771 , count: 0
+200
+group: 8772 , count: 0
+200
+group: 8773 , count: 0
+200
+group: 8774 , count: 0
+200
+group: 8775 , count: 0
+200
+group: 8776 , count: 0
+200
+group: 8777 , count: 0
+200
+group: 8778 , count: 0
+200
+group: 8779 , count: 0
+200
+group: 8780 , count: 0
+200
+group: 8781 , count: 0
+200
+group: 8782 , count: 0
+200
+group: 8783 , count: 0
+200
+group: 8784 , count: 0
+200
+group: 8785 , count: 0
+200
+group: 8786 , count: 0
+200
+Sadanagaite count: 19
+Potassic-ferro-ferri-sadanagaite count: 2
+Potassic-sadanagaite count: 3
+Potassic-ferro-sadanagaite count: 4
+Ferro-ferri-sadanagaite count: 4
+Ferro-sadanagaite count: 5
+Potassic-chloro-sadanagaite count: 1
+Potassic-ferro-chloro-sadanagaite count: 1
+Potassic-ferri-sadanagaite count: 2
+Ferro-chloro-sadanagaite count: 1
+group: 8787 , count: 29
+200
+Ferro-hornblende count: 313
+Magnesio-hornblende count: 299
+Magnesio-fluoro-hornblende count: 2
+Magnesio-ferri-hornblende count: 12
+Ferro-ferri-hornblende count: 2
+Magnesio-ferri-fluoro-hornblende count: 2
+group: 8789 , count: 598
+200
+group: 8790 , count: 0
+200
+group: 8791 , count: 0
+200
+group: 8865 , count: 0
+200
+group: 8866 , count: 0
+200
+group: 8867 , count: 0
+200
+group: 8868 , count: 0
+200
+group: 8869 , count: 0
+200
+group: 8937 , count: 0
+200
+group: 8938 , count: 0
+200
+group: 8939 , count: 0
+200
+group: 8940 , count: 0
+200
+group: 8941 , count: 0
+200
+group: 8942 , count: 0
+200
+group: 8943 , count: 0
+200
+group: 8944 , count: 0
+200
+group: 8945 , count: 0
+200
+Ferro-kaersutite count: 14
+Kaersutite count: 340
+Ferri-kaersutite count: 12
+Potassic-ferri-kaersutite count: 1
+group: 8946 , count: 347
+200
+group: 8947 , count: 0
+200
+group: 8948 , count: 0
+200
+group: 8949 , count: 0
+200
+group: 8950 , count: 0
+200
+group: 8951 , count: 0
+200
+group: 8952 , count: 0
+200
+group: 8953 , count: 0
+200
+group: 8954 , count: 0
+200
+group: 8955 , count: 0
+200
+group: 8956 , count: 0
+200
+Holmquistite count: 60
+Ferro-holmquistite count: 2
+Ferro-ferri-holmquistite count: 1
+group: 8958 , count: 61
+200
+group: 8959 , count: 0
+200
+group: 8960 , count: 0
+200
+group: 8961 , count: 0
+200
+Ferro-glaucophane count: 33
+Glaucophane count: 383
+group: 8962 , count: 391
+200
+Ferro-gedrite count: 15
+Gedrite count: 206
+group: 8963 , count: 219
+200
+group: 8964 , count: 0
+200
+group: 8965 , count: 0
+200
+Edenite count: 220
+Ferro-edenite count: 80
+Fluoro-edenite count: 35
+Potassic-ferro-chloro-edenite count: 1
+Ferro-fluoro-edenite count: 2
+group: 8966 , count: 314
+200
+Eckermannite count: 51
+Ferro-eckermannite count: 15
+Mangano-ferri-eckermannite count: 6
+Mangani-eckermannite count: 1
+group: 8967 , count: 69
+200
+group: 8968 , count: 0
+200
+group: 8969 , count: 0
+200
+group: 8970 , count: 0
+200
+group: 8971 , count: 0
+200
+Aurostibite count: 100
+Cattierite count: 48
+Erlichmanite count: 157
+Fukuchilite count: 13
+Geversite count: 58
+Hauerite count: 35
+Insizwaite count: 27
+Krut'aite count: 14
+Laurite count: 342
+Penroseite count: 20
+Pyrite count: 46549
+Sperrylite count: 485
+Trogtalite count: 11
+Vaesite count: 139
+Villamanínite count: 17
+Dzharkenite count: 7
+Gaotaiite count: 1
+group: 9258 , count: 47009
+200
+Briartite count: 17
+Černýite count: 10
+Famatinite count: 220
+Ferrokësterite count: 19
+Hocartite count: 35
+Kësterite  count: 103
+Kuramite count: 16
+Luzonite count: 256
+Permingeatite count: 9
+Petrukite count: 22
+Pirquitasite count: 9
+Stannite count: 823
+Stannoidite count: 106
+Velikite count: 6
+Keutschite count: 2
+Unnamed (Cu-Zn-In Sulphide) count: 3
+Zincobriartite count: 3
+UM1984-30-S:CuFeSn count: 1
+Omariniite count: 2
+Richardsite count: 2
+group: 9259 , count: 1284
+200
+Albite count: 11520
+Anorthite count: 1527
+group: 9264 , count: 12531
+200
+Ferrilotharmeyerite count: 9
+Gartrellite count: 53
+Helmutwinklerite count: 4
+Lotharmeyerite count: 5
+Mawbyite count: 27
+Mounanaite count: 2
+Natrochalcite count: 8
+Thometzekite count: 19
+Tsumcorite count: 37
+Cobaltlotharmeyerite count: 11
+Cabalzarite count: 4
+Zincgartrellite count: 1
+Rappoldite count: 1
+Krettnichite count: 3
+Cobalttsumcorite count: 4
+Phosphogartrellite count: 4
+Nickellotharmeyerite count: 7
+Lukrahnite count: 6
+Manganlotharmeyerite count: 5
+Schneebergite count: 2
+Nickelschneebergite count: 2
+Yancowinnaite count: 3
+Kaliochalcite count: 3
+Nickeltsumcorite count: 2
+Alumolukrahnite count: 1
+group: 9265 , count: 131
+200
+Clino-holmquistite Root Name Group count: 2
+Holmquistite Root Name Group count: 0
+Pedrizite Root Name Group count: 0
+group: 9390 , count: 2
+200
+Orthoclase count: 3155
+group: 9581 , count: 3155
+200
+group: 9585 , count: 0
+200
+group: 9587 , count: 0
+200
+Clinopyroxene Subgroup count: 1830
+Leucaugite count: 2
+Orthopyroxene Subgroup count: 1088
+group: 9767 , count: 2399
+200
+Andradite count: 2046
+Almandine count: 2884
+Calderite count: 24
+Goldmanite count: 37
+Grossular count: 1973
+Knorringite count: 4
+Majorite count: 38
+Morimotoite count: 15
+Pyrope count: 460
+Spessartine count: 1458
+Uvarovite count: 247
+Khoharite count: 1
+Momoiite count: 5
+Eringaite count: 2
+Menzerite-(Y) count: 2
+Blythite count: 0
+Skiagite count: 0
+group: 10272 , count: 7547
+200
+group: 10288 , count: 0
+200
+Gismondine-Ca count: 45
+Gismondine-Ba count: 0
+Gismondine-Sr count: 2
+group: 10315 , count: 47
+200
+group: 10962 , count: 0
+200
+group: 10963 , count: 0
+200
+Donpeacorite count: 5
+Enstatite count: 1216
+Ferrosilite count: 115
+Protoenstatite count: 1
+group: 10967 , count: 1305
+200
+Alluaivite count: 5
+Eudialyte count: 276
+Ferrokentbrooksite count: 17
+Kentbrooksite count: 24
+Khomyakovite count: 1
+Manganokhomyakovite count: 1
+Oneillite count: 3
+Feklichevite count: 1
+Carbokentbrooksite count: 1
+Zirsilite-(Ce) count: 4
+Ikranite count: 2
+Raslakite count: 1
+Taseqite count: 4
+Rastsvetaevite count: 2
+Golyshevite count: 1
+Labyrinthite count: 3
+Johnsenite-(Ce) count: 1
+Mogovidite count: 1
+Georgbarsanovite count: 1
+Aqualite count: 3
+Dualite count: 1
+Andrianovite count: 1
+Voronkovite count: 2
+UM1999-36-SiO:CaCeHMnNaNbSrZr count: 1
+UM2000-66-SiO:CaClFeHMnNaNbSrZr count: 1
+Manganoeudialyte count: 13
+UM1990-78-SiO:CaClFeHKNaZr count: 0
+UM1990-79-SiO:CaClFeHMnNaNbREEZr count: 0
+UM1971-22-SiO:CaClFeHMgMnNaNbZr count: 1
+UM1998-21-SiO:CaCeClHMnNaZr count: 1
+Fengchengite count: 1
+Davinciite count: 1
+Ilyukhinite count: 2
+UM2004-51-SiO:CaClFFeHNaNbTi count: 0
+UM1990-80-SiO:CaFeHMnNaNbREEZr count: 0
+UM2003-39-SiO:CaClFeHHfNaNbSrTaTiZr count: 1
+UM2006-17-SiO:CaClFFeHMnNaZr count: 0
+UM2006-18-SiO:CaClFFeHMnNaZr count: 1
+UM2006-28-SiO:CaHMnNaZr count: 0
+Unnamed (Eudialyte 3248) count: 1
+Hydrorastsvetaevite count: 0
+Unnamed (Hydrated Hydrous Na-Ca-Mn-Fe-Zr-Ti Silicate Chloride) count: 1
+UM2010-06-SiO:CaFeHMnNaNbREETiZr count: 0
+Siudaite count: 1
+Sergevanite count: 1
+UM2000-67-SiO:CaClFeHMnNaNbZr count: 0
+UM2000-80- SiO:CaCeFFeHMnNaNbTiZr count: 0
+UM2005-36-SiO:AlBaCaClFeHKMnNaREESrTiZr count: 0
+UM2005-37-SiO:AlBaCaClFeHKMnNaREESrTiZr count: 0
+UM2005-38-SiO:AlBaCaClFeHKMnNaNbREESrTiYZr count: 0
+UM2005-39-SiO:AlBaCaClFeHKMnNaNbREESrTiYZr count: 0
+UM2005-40-SiO:AlCaClFeHKMnNaNbREESrTiYZr count: 0
+UM2005-41-SiO:BaCaFeHKMgMnNaNbREESrTiYZr count: 0
+Unnamed (M4-vacant Sodium Calcium Manganese Zirconium Iron Silicon Hydroxyl Hydrated Eudialyte Group Species) count: 1
+Odikhinchaite count: 2
+Selsurtite count: 1
+Amableite-(Ce) count: 1
+group: 11021 , count: 301
+200
+group: 11084 , count: 0
+200
+group: 11085 , count: 0
+200
+Beidellite count: 112
+Hectorite count: 31
+Montmorillonite count: 1865
+Nontronite count: 578
+Saliotite count: 2
+Saponite count: 413
+Sauconite count: 73
+Stevensite count: 74
+Swinefordite count: 6
+Vermiculite count: 766
+Volkonskoite count: 31
+Yakhontovite count: 8
+Zincsilite count: 5
+Pimelite count: 43
+Ferrosaponite count: 17
+group: 11119 , count: 3562
+200
+Amesite count: 96
+Antigorite count: 900
+Berthierine count: 72
+Brindleyite count: 7
+Caryopilite count: 96
+Chrysotile count: 1179
+Cronstedtite count: 73
+Fraipontite count: 65
+Kellyite count: 18
+Lizardite count: 495
+Népouite count: 77
+Pecoraite count: 49
+Guidottiite count: 1
+group: 11135 , count: 2331
+200
+Greenalite count: 74
+Manandonite count: 4
+Odinite count: 4
+Serpentine Subgroup count: 3123
+Kaolinite Subgroup count: 19
+group: 11136 , count: 3209
+200
+group: 11325 , count: 0
+200
+group: 11384 , count: 0
+200
+group: 11856 , count: 0
+200
+Mazzite-Mg count: 2
+Mazzite-Na count: 2
+group: 27548 , count: 4
+200
+group: 28887 , count: 0
+200
+Thomsonite-Ca count: 549
+Thomsonite-Sr count: 5
+group: 28896 , count: 551
+200
+Arrojadite-(KFe) count: 63
+Dickinsonite-(KMnNa) count: 34
+Sigismundite count: 7
+Arrojadite-(SrFe) count: 2
+Arrojadite-(KNa) count: 3
+Arrojadite-(PbFe) count: 1
+Fluorarrojadite-(BaFe) count: 2
+Arrojadite-(NaFe) count: 2
+Arrojadite-(BaNa) count: 3
+Arrojadite-(KFeNa) count: 0
+Ferri-arrojadite-(BaNa) count: 0
+Fluorarrojadite-(KNa) count: 0
+Fluorarrojadite-(NaFe) count: 0
+Fluorcarmoite-(BaNa) count: 1
+Fluorarrojadite-(BaNa) count: 2
+Manganoarrojadite-(KNa) count: 1
+group: 28960 , count: 103
+200
+group: 29050 , count: 0
+200
+group: 29084 , count: 0
+200
+group: 29085 , count: 0
+200
+Gonnardite count: 207
+Mesolite count: 534
+Natrolite count: 1575
+Paranatrolite count: 24
+Scolecite count: 481
+group: 29157 , count: 2276
+200
+Calcite count: 34653
+Gaspéite count: 26
+Magnesite count: 1827
+Otavite count: 34
+Rhodochrosite count: 2123
+Siderite count: 7789
+Smithsonite count: 2975
+Spherocobaltite count: 67
+group: 29161 , count: 41314
+200
+Microlite Group count: 584
+Pyrochlore Group count: 983
+Roméite Group count: 69
+Betafite Group count: 16
+Elsmoreite Group count: 6
+Ralstonite Group count: 0
+Coulsellite Group count: 0
+group: 29175 , count: 1536
+200
+Stoichiometric Perovskites Group count: 0
+Non-stoichiometric Perovskites count: 0
+group: 29176 , count: 0
+200
+Oxycalciobetafite count: 11
+Oxyuranobetafite count: 3
+Oxyyttrobetafite-(Y) count: 1
+group: 29178 , count: 15
+200
+Benauite count: 3
+Crandallite count: 385
+Eylettersite count: 3
+Florencite-(Ce) count: 98
+Florencite-(La) count: 13
+Florencite-(Nd) count: 6
+Gorceixite count: 153
+Goyazite count: 229
+Kintoreite count: 61
+Plumbogummite count: 229
+Waylandite count: 39
+Zaïrite count: 6
+Springcreekite count: 1
+Florencite-(Sm) count: 1
+Galloplumbogummite count: 1
+Kintoreite-2c count: 0
+Unnamed (As-analogue of Zaïrite) count: 1
+UM2006-23-PO:AlBiCaFeH count: 1
+group: 29180 , count: 917
+200
+Crichtonite count: 37
+Davidite-(Ce) count: 13
+Davidite-(La) count: 36
+Davidite-(Y) count: 3
+Landauite count: 6
+Lindsleyite count: 13
+Loveringite count: 14
+Mathiasite count: 8
+Senaite count: 39
+Dessauite-(Y) count: 17
+Cleusonite count: 20
+Gramaccioliite-(Y) count: 19
+Unnamed (HBU UK-4) count: 1
+Paseroite count: 1
+Mapiquiroite count: 2
+Almeidaite count: 7
+Mianningite count: 5
+UM1987-03-O:FePbTiU count: 1
+UM2003-08-O:AlCaFeREEScTiV count: 1
+UM2006-05-O:CaFeKMnNaREESrTiZr count: 1
+UM2006-06-O:CaFeKMnNaREESrTiZr count: 1
+UM2006-07-O:CaFeKMnNaREESrTiZr count: 1
+UM2006-08-O:CaFeKMnNaREESrTiZr count: 1
+UM2006-09-O:CaFeMnREESrTiZr count: 1
+Saranovskite count: 1
+Botuobinskite count: 1
+Mirnyite count: 1
+Haitaite-(La) count: 2
+group: 29190 , count: 175
+200
+group: 29199 , count: 0
+200
+Hellandite-(Y) count: 21
+Tadzhikite-(Ce) count: 19
+Mottanaite-(Ce) count: 2
+Ciprianiite count: 3
+Hellandite-(Ce) count: 9
+Ferri-mottanaite-(Ce) count: 1
+Ferri-hellandite-(Ce) count: 1
+group: 29214 , count: 50
+200
+Haüyne count: 276
+Lazurite count: 57
+Nosean count: 126
+Sodalite count: 764
+Tsaregorodtsevite count: 3
+Vladimirivanovite count: 2
+Sapozhnikovite count: 1
+Bolotinaite count: 1
+group: 29220 , count: 996
+200
+group: 29229 , count: 0
+200
+Carrollite Subgroup count: 0
+Linnaeite Subgroup count: 6
+group: 29230 , count: 6
+200
+group: 29231 , count: 0
+200
+Axinite-(Fe) count: 302
+Axinite-(Mg) count: 17
+Axinite-(Mn) count: 111
+Tinzenite count: 30
+group: 29239 , count: 428
+200
+group: 29243 , count: 0
+200
+group: 29249 , count: 0
+200
+group: 29250 , count: 0
+200
+Adelite count: 18
+Arsendescloizite count: 31
+Austinite count: 87
+Čechite count: 8
+Cobaltaustinite count: 14
+Conichalcite count: 463
+Descloizite count: 485
+Duftite count: 273
+Mottramite count: 479
+Nickelaustinite count: 7
+Pyrobelonite count: 35
+Tangeite count: 70
+Vuagnatite count: 19
+Duftite-alpha count: 3
+Gottlobite count: 1
+Hermannroseite count: 1
+Unnamed (Pb-analogue of Nickelaustinite) count: 1
+group: 29251 , count: 1499
+200
+Unnamed (Ca-analogue of Humite) count: 1
+Leucophoenicite Subgroup count: 0
+Humite Subgroup count: 13
+Manganhumite Subgroup count: 0
+Chegemite Subgroup count: 0
+group: 29252 , count: 14
+200
+Arsentsumebite count: 43
+Bearthite count: 11
+Brackebuschite count: 18
+Gamagarite count: 11
+Goedkenite count: 3
+Tsumebite count: 42
+Arsenbrackebuschite count: 27
+Feinglosite count: 3
+Bushmakinite count: 4
+Calderónite count: 35
+Tokyoite count: 11
+Grandaite count: 2
+Ferribushmakinite count: 3
+Canosioite count: 2
+Lombardoite count: 1
+Unnamed (possible ordered As-analogue of Tokyoite) count: 2
+Aldomarinoite count: 2
+group: 29263 , count: 174
+200
+Fayalite count: 566
+Forsterite count: 1631
+Glaucochroite count: 10
+Kirschsteinite count: 48
+Laihunite count: 16
+Liebenbergite count: 5
+Monticellite count: 219
+Tephroite count: 284
+Calcio-olivine count: 10
+group: 29264 , count: 2546
+200
+Surinamite count: 16
+Aenigmatite Group count: 1
+Rhönite Group count: 0
+Sapphirine Group count: 0
+Khesinite count: 7
+Beckettite count: 2
+UM1988-26-SiO:AlMg count: 0
+Devilliersite count: 1
+group: 29265 , count: 26
+200
+Alluaudite count: 114
+Arseniopleite count: 10
+Caryinite count: 5
+Ferroalluaudite count: 16
+Hagendorfite count: 21
+Johillerite count: 7
+Keyite count: 3
+Maghagendorfite count: 5
+Nickenichite count: 4
+O'Danielite count: 1
+Varulite count: 22
+Ferrohagendorfite count: 5
+Bradaczekite count: 4
+Yazganite count: 1
+Alluaudite-Na□ count: 8
+Alluaudite-Ca□ count: 0
+Ferroalluaudite-NaNa count: 3
+Hagendorfite-NaNa count: 1
+Groatite count: 1
+Erikapohlite count: 1
+Hatertite count: 2
+Canutite count: 1
+Unnamed (Na-Mg Arsenate Hydroxyarsenate) count: 0
+Unnamed (Na-Zn-H Arsenate Hydrxyarsenate) count: 0
+Zincobradaczekite count: 1
+Badalovite count: 1
+Magnesiocanutite count: 1
+Zhanghuifenite count: 1
+Calciojohillerite count: 1
+Magnesiohatertite count: 1
+Khrenovite count: 1
+Paraberzeliite count: 1
+Camanchacaite count: 1
+Calciohatertite count: 1
+group: 29266 , count: 175
+200
+Plumbogummite Group count: 16
+Beudantite Group count: 9
+Alunite Group count: 29
+Dussertite Group count: 0
+Unnamed (Ba-Fe Vanadate) count: 2
+group: 29267 , count: 53
+200
+Arsenopyrite count: 10704
+Glaucodot count: 188
+Gudmundite count: 234
+Osarsite count: 36
+Ruarsite count: 44
+group: 29271 , count: 10854
+200
+Astrophyllite Group count: 0
+Kupletskite Group count: 1
+Devitoite Group count: 0
+Heyerdahlite count: 2
+group: 29273 , count: 3
+200
+Autunite count: 1477
+Bassetite count: 67
+Heinrichite count: 24
+Kahlerite count: 19
+Hydronováčekite count: 57
+Sabugalite count: 104
+Saléeite count: 116
+Torbernite count: 1206
+Uranocircite count: 103
+Uranospinite count: 68
+Zeunerite count: 229
+Nováčekite count: 25
+Rauchite count: 2
+group: 29274 , count: 2326
+200
+Beudantite count: 551
+Corkite count: 192
+Hidalgoite count: 91
+Hinsdalite count: 103
+Kemmlitzite count: 10
+Svanbergite count: 135
+Weilerite count: 4
+Woodhouseite count: 76
+Gallobeudantite count: 1
+UM2011-07-POSO:AlBaH count: 1
+Oberwolfachite count: 3
+Unnamed (Fe-analogue of Weilerite and Ba-analogue of Oberwolfachite) count: 1
+Cloudite count: 1
+group: 29276 , count: 922
+200
+Bjarebyite count: 7
+Kulanite count: 17
+Penikisite count: 4
+Perloffite count: 11
+Johntomaite count: 1
+Strontioperloffite count: 1
+Plumboperloffite count: 1
+group: 29277 , count: 34
+200
+Afghanite count: 28
+Bystrite count: 1
+Cancrinite count: 394
+Cancrisilite count: 9
+Davyne count: 27
+Franzinite count: 13
+Giuseppettite count: 5
+Hydroxycancrinite count: 2
+Liottite count: 9
+Microsommite count: 9
+Pitiglianoite count: 10
+Quadridavyne count: 3
+Sacrofanite count: 4
+Tounkite count: 2
+Vishnevite count: 31
+Marinellite count: 5
+Farneseite count: 4
+Alloriite count: 1
+Biachellaite count: 1
+Fantappièite count: 3
+Kyanoxalite count: 3
+Balliranoite count: 4
+Carbobystrite count: 1
+Depmeierite count: 2
+Kircherite count: 1
+Sulfhydrylbystrite count: 1
+UM2004-48-SiO:AlClCaNaS count: 1
+UM2009-23-SiO:AlCCaClHKNaS count: 1
+Steudelite count: 1
+Betzite count: 1
+Slyudyankaite count: 1
+group: 29279 , count: 470
+200
+Cobaltite count: 1227
+Gersdorffite count: 981
+Hollingworthite count: 188
+Irarsite count: 235
+Jolliffeite count: 4
+Maslovite count: 33
+Michenerite count: 168
+Padmaite count: 9
+Platarsite count: 71
+Testibiopalladite count: 23
+Tolovkite count: 19
+Ullmannite count: 388
+Willyamite count: 32
+Changchengite count: 2
+Mayingite count: 3
+Kalungaite count: 1
+Milotaite count: 1
+UM1991-19-Se:AsCo count: 2
+Andrieslombaardite count: 4
+group: 29282 , count: 2353
+200
+Chatkalite count: 10
+Colusite count: 148
+Germanite count: 44
+Germanocolusite count: 8
+Nekrasovite count: 19
+Renierite count: 47
+Stibiocolusite count: 4
+group: 29283 , count: 212
+200
+Aluminocopiapite count: 63
+Calciocopiapite count: 3
+Copiapite count: 464
+Cuprocopiapite count: 15
+Ferricopiapite count: 62
+Magnesiocopiapite count: 71
+Zincocopiapite count: 12
+group: 29284 , count: 564
+200
+Coronadite count: 301
+Cryptomelane count: 704
+Hollandite count: 330
+Manjiroite count: 30
+Strontiomelane count: 3
+Ferrihollandite count: 8
+Ferricoronadite count: 5
+Thalliomelane count: 1
+group: 29285 , count: 1140
+200
+Ankerite count: 3898
+Dolomite count: 11910
+Kutnohorite count: 300
+Minrecordite count: 12
+Norsethite count: 43
+Škáchaite count: 1
+group: 29288 , count: 14297
+200
+Bentorite count: 4
+Charlesite count: 12
+Ettringite count: 128
+Jouravskite count: 6
+Sturmanite count: 7
+Thaumasite count: 222
+Carraraite count: 4
+Micheelsenite count: 4
+Buryatite count: 2
+Hielscherite count: 1
+Kottenheimite count: 3
+Imayoshiite count: 2
+Tatarinovite count: 2
+Siwaqaite count: 1
+Unnamed (possible Mn(IV) analogue of Sturmanite) count: 0
+Chiyokoite count: 1
+UM2008-07-CO:AlBCaHSSi count: 1
+group: 29289 , count: 321
+200
+Cassidyite count: 1
+Collinsite count: 45
+Fairfieldite count: 88
+Gaitite count: 8
+Messelite count: 52
+Parabrandtite count: 2
+Anorthoroselite count: 26
+Talmessite count: 53
+Hillite count: 1
+Nickeltalmessite count: 4
+Unnamed (Fe2+-analogue of Parabrandtite) count: 1
+group: 29290 , count: 220
+200
+Apjohnite count: 36
+Bílinite count: 24
+Dietrichite count: 23
+Halotrichite count: 518
+Pickeringite count: 321
+Redingtonite count: 2
+Wupatkiite count: 8
+group: 29294 , count: 758
+200
+Arsenohauchecornite count: 7
+Bismutohauchecornite count: 8
+Hauchecornite count: 36
+Tellurohauchecornite count: 2
+Tučekite count: 23
+Arsenotučekite count: 1
+Hrabákite count: 1
+group: 29295 , count: 70
+200
+Corundum count: 2202
+Eskolaite count: 41
+Hematite count: 17896
+Karelianite count: 21
+Tistarite count: 7
+group: 29296 , count: 19782
+200
+Desautelsite count: 9
+Hydrotalcite count: 112
+Iowaite count: 29
+Meixnerite count: 7
+Pyroaurite count: 117
+Reevesite count: 59
+Stichtite count: 55
+Takovite count: 22
+Woodallite count: 4
+Droninoite count: 3
+Hydrotalcite-3R count: 0
+UM2002-02-COH:FeNi count: 1
+Kaznakhtite count: 2
+group: 29298 , count: 330
+200
+Dwornikite count: 3
+Gunningite count: 62
+Kieserite count: 101
+Szmikite count: 18
+Szomolnokite count: 173
+Serrabrancaite count: 9
+Cobaltkieserite count: 2
+Ermeloite count: 1
+group: 29300 , count: 334
+200
+Barbosalite count: 48
+Hentschelite count: 23
+Lazulite count: 269
+Scorzalite count: 79
+Wilhelmkleinite count: 1
+group: 29301 , count: 369
+200
+Zirsinalite-Lovozerite Subgroup count: 0
+Koashvite Subgroup count: 0
+Imandrite Subgroup count: 0
+group: 29304 , count: 0
+200
+Yimengite count: 7
+Chihuahuaite count: 1
+UM1994-07-O:BaCrFeMgTi count: 1
+UM1994-08-O:CaFeKMgTi count: 1
+Magnetoplumbite Subgroup count: 0
+Hawthorneite Subgroup count: 0
+Hibonite Subgroup count: 0
+Mizraite-(Ce) count: 1
+group: 29306 , count: 9
+200
+Åkermanite count: 63
+Gehlenite count: 145
+Gugiaite count: 10
+Hardystonite count: 17
+Okayamalite count: 2
+Ferri-gehlenite count: 1
+Alumoåkermanite count: 16
+Hydroxylgugiaite count: 5
+Bennesherite count: 4
+group: 29310 , count: 218
+200
+Abernathyite count: 21
+Chernikovite count: 23
+Lehnerite count: 1
+Meta-ankoleite count: 14
+Meta-autunite count: 459
+Metasaléeite count: 15
+Metauranocircite count: 49
+Metauranospinite count: 20
+Metaheinrichite count: 23
+Metakahlerite count: 21
+Metakirchheimerite count: 7
+Metalodèvite count: 9
+Metanováčekite count: 30
+Metatorbernite count: 527
+Metazeunerite count: 231
+Natrouranospinite count: 19
+Metanatroautunite count: 10
+Trögerite count: 27
+Uramphite count: 1
+Uramarsite count: 4
+Metarauchite count: 8
+group: 29311 , count: 1052
+200
+Agardite-(Nd) count: 22
+Agardite-(Y) count: 110
+Agardite-(Ce) count: 51
+Agardite-(La) count: 47
+Goudeyite count: 28
+Mixite count: 201
+Petersite-(Y) count: 10
+Zálesíite count: 118
+Plumboagardite count: 13
+Calciopetersite count: 3
+Petersite-(Ce) count: 2
+Petersite-(La) count: 1
+group: 29312 , count: 421
+200
+Gasparite-(Ce) count: 28
+Huttonite count: 46
+Monazite count: 2985
+Rooseveltite count: 50
+Cheralite count: 101
+Gasparite-(La) count: 9
+Unnamed (Nd-dominant Gasparite) count: 2
+Monazite-(Gd) count: 2
+group: 29313 , count: 3135
+200
+Calcioferrite count: 11
+Zodacite count: 2
+group: 29314 , count: 13
+200
+Armenite count: 27
+Brannockite count: 4
+Chayesite count: 7
+Darapiosite count: 1
+Eifelite count: 2
+Merrihueite count: 5
+Milarite count: 183
+Osumilite-(Mg) count: 44
+Osumilite count: 31
+Poudretteite count: 5
+Roedderite count: 34
+Sogdianite count: 4
+Sugilite count: 15
+Yagiite count: 3
+Berezanskite count: 1
+Dusmatovite count: 1
+Shibkovite count: 1
+Almarudite count: 1
+Trattnerite count: 2
+Oftedalite count: 1
+Klöchite count: 2
+Friedrichbeckeite count: 1
+Agakhanovite-(Y) count: 5
+UM1990-73-SiO:KMnNaZn count: 1
+Aluminosugilite count: 4
+Laurentthomasite count: 1
+Unnamed (Mn3+-dominant analog of Sugilite) count: 1
+group: 29318 , count: 332
+200
+Manganosegelerite count: 3
+Overite count: 8
+Segelerite count: 3
+Wilhelmvierlingite count: 2
+group: 29319 , count: 15
+200
+Argentopentlandite count: 93
+Cobaltpentlandite count: 105
+Geffroyite count: 14
+Pentlandite count: 1920
+Shadlunite count: 4
+Sugakiite count: 5
+Oberthürite count: 2
+group: 29321 , count: 2009
+200
+Okhotskite count: 8
+Pumpellyite Subgroup count: 523
+Poppiite count: 5
+Julgoldite Subgroup count: 12
+Shuiskite Subgroup count: 2
+group: 29325 , count: 540
+200
+Brandtite count: 29
+Kröhnkite count: 38
+Roselite count: 28
+Wendwilsonite count: 9
+Zincroselite count: 2
+Rruffite count: 5
+Unnamed (Fe2+-analogue of Brandtite) count: 1
+Dobšináite count: 1
+group: 29328 , count: 100
+200
+Aplowite count: 11
+Boyleite count: 31
+Ilesite count: 10
+Rozenite count: 354
+Starkeyite count: 96
+Drobecite count: 1
+group: 29329 , count: 449
+200
+Marialite count: 168
+Meionite count: 217
+Silvialite count: 6
+Scapolite count: 1301
+group: 29331 , count: 1551
+200
+Burtite count: 3
+Jeanbandyite count: 10
+Mushistonite count: 10
+Natanite count: 16
+Schoenfliesite count: 13
+Vismirnovite count: 5
+Wickmanite count: 28
+group: 29332 , count: 65
+200
+Mopungite count: 10
+Stottite count: 1
+Tetrawickmanite count: 11
+group: 29335 , count: 22
+200
+Tapiolite-(Fe) count: 99
+Tapiolite-(Mn) count: 3
+group: 29336 , count: 100
+200
+Hedleyite count: 153
+Ingodite count: 42
+Joséite-B count: 109
+Kawazulite count: 51
+Paraguanajuatite count: 12
+Pilsenite count: 92
+Skippenite count: 11
+Sulphotsumoite count: 21
+Tellurantimony count: 38
+Tellurobismuthite count: 386
+Tetradymite count: 671
+Tsumoite count: 148
+Baksanite count: 9
+Vihorlatite count: 1
+Telluronevskite count: 3
+Hitachiite count: 2
+Ehrigite count: 1
+group: 29337 , count: 1192
+200
+Freibergite Subgroup count: 861
+Tennantite Subgroup count: 2157
+Tetrahedrite Subgroup count: 6424
+Pošepnýite count: 1
+Giraudite Subgroup count: 0
+Goldfieldite Subgroup count: 0
+Hakite Subgroup count: 1
+Rozhdestvenskayaite Subgroup count: 0
+Arsenofreibergite Subgroup count: 0
+Zvěstovite Subgroup count: 0
+Tennantite-(In) count: 2
+Ústalečite Subgroup count: 0
+group: 29338 , count: 7867
+200
+Aheylite count: 6
+Chalcosiderite count: 89
+Faustite count: 29
+Planerite count: 51
+Turquoise count: 621
+UM1981-32-PO:FeH count: 1
+group: 29340 , count: 700
+200
+Mansfieldite count: 57
+Scorodite count: 1435
+Strengite count: 320
+Variscite count: 366
+Yanomamite count: 2
+group: 29341 , count: 1969
+200
+Annabergite count: 532
+Arupite count: 2
+Barićite count: 7
+Erythrite count: 967
+Hörnesite count: 135
+Köttigite count: 77
+Manganohörnesite count: 13
+Parasymplesite count: 148
+Vivianite count: 761
+Pakhomovskyite count: 2
+Babánekite count: 13
+Erythrite-Köttigite Series count: 1
+Monteneroite count: 1
+group: 29342 , count: 2067
+200
+Rittmannite count: 13
+Whiteite-(CaFeMg) count: 12
+Whiteite-(CaMnMg) count: 10
+Whiteite-(MnFeMg) count: 6
+Whiteite-(CaMnMn) count: 2
+Whiteite-(MnMnMg) count: 3
+Whiteite-(CaMgMg) count: 1
+Whiteite-(MnMnMn) count: 2
+Whiteite-(CaMnFe) count: 1
+group: 29343 , count: 37
+200
+group: 29357 , count: 0
+200
+group: 29358 , count: 0
+200
+Joesmithite count: 4
+Sadanagaite Root Name Group count: 1
+Hornblende Root Name Group count: 4304
+Edenite Root Name Group count: 1
+Tremolite Root Name Group count: 0
+Cannilloite Root Name Group count: 0
+Tschermakite Root Name Group count: 1
+Pargasite Root Name Group count: 1
+Hastingsite Root Name Group count: 0
+Actinolite Root Name Group count: 0
+group: 29365 , count: 4311
+200
+Arfvedsonite Root Name Group count: 1
+Riebeckite Root Name Group count: 89
+Glaucophane Root Name Group count: 2
+Eckermannite Root Name Group count: 0
+Nybøite Root Name Group count: 0
+Leakeite Root Name Group count: 2
+group: 29366 , count: 94
+200
+group: 29427 , count: 0
+200
+Gordonite count: 25
+Laueite count: 86
+Mangangordonite count: 8
+Paravauxite count: 23
+Sigloite count: 5
+Stewartite count: 58
+Ushkovite count: 27
+Ferrolaueite count: 7
+Kastningite count: 11
+Kummerite count: 2
+group: 29437 , count: 144
+200
+Nenadkevichite Group count: 2
+Vuoriyarvite Group count: 0
+Gutkovaite Group count: 0
+Paratsepinite Group count: 0
+Lemmleinite Group count: 0
+Labuntsovite Group count: 2
+Kuzmenkoite Group count: 0
+Paralabuntsovite Group count: 0
+Organovaite Group count: 0
+group: 30454 , count: 4
+200
+Carpholite count: 41
+Ferrocarpholite count: 28
+Magnesiocarpholite count: 29
+Potassiccarpholite count: 4
+Vanadiocarpholite count: 3
+group: 30575 , count: 91
+200
+group: 30719 , count: 0
+200
+group: 30792 , count: 0
+200
+group: 30903 , count: 0
+200
+group: 31068 , count: 0
+200
+group: 31221 , count: 0
+200
+group: 31522 , count: 0
+200
+Strontiowhitlockite count: 2
+Whitlockite count: 130
+Wopmayite count: 1
+Hedegaardite count: 2
+group: 31539 , count: 134
+200
+Britholite-(Ce) count: 153
+Britholite-(Y) count: 42
+Fluorbritholite-(Ce) count: 25
+Tritomite-(Ce) count: 26
+Tritomite-(Y) count: 7
+Fluorcalciobritholite count: 8
+Fluorbritholite-(Y) count: 9
+Britholite-(La) count: 6
+Calciobritholite count: 2
+Fluorbritholite-(Nd) count: 2
+group: 31542 , count: 232
+200
+group: 31568 , count: 0
+200
+group: 31812 , count: 0
+200
+Heterosite count: 243
+Lithiophilite count: 193
+Natrophilite count: 7
+Purpurite count: 115
+Simferite count: 5
+Triphylite count: 379
+Karenwebberite count: 2
+group: 31813 , count: 575
+200
+Chernovite-(Y) count: 62
+Wakefieldite-(Ce) count: 13
+Wakefieldite-(Y) count: 10
+Xenotime-(Y) count: 1146
+Pretulite count: 16
+Xenotime-(Yb) count: 5
+Wakefieldite-(La) count: 3
+Wakefieldite-(Nd) count: 2
+Xenotime-(Gd) count: 1
+group: 31871 , count: 1204
+200
+Kolbeckite count: 32
+Metavariscite count: 29
+Phosphosiderite count: 230
+Bonacinaite count: 1
+group: 31966 , count: 278
+200
+Vesuvianite count: 1686
+Wiluite count: 8
+Manganvesuvianite count: 7
+Fluorvesuvianite count: 3
+Cyprine count: 11
+Magnesiovesuvianite count: 3
+Alumovesuvianite count: 2
+Hongheite count: 1
+Milanriederite count: 2
+Manaevite-(Ce) count: 2
+group: 32107 , count: 1696
+200
+group: 32115 , count: 0
+200
+Datolite Subgroup count: 0
+Gadolinite Subgroup count: 1
+group: 32181 , count: 1
+200
+group: 32214 , count: 0
+200
+group: 32227 , count: 0
+200
+group: 32236 , count: 0
+200
+group: 32241 , count: 0
+200
+Adamite count: 324
+Eveite count: 3
+Libethenite count: 297
+Olivenite count: 614
+Zincolibethenite count: 14
+Zincolivenite count: 90
+Auriacusite count: 11
+Unnamed (Sb-analogue of Auriacusite) count: 1
+group: 32261 , count: 1046
+200
+Alforsite count: 9
+Chlorapatite count: 250
+Fluorapatite count: 3491
+Hydroxylapatite count: 505
+Johnbaumite count: 16
+Mimetite count: 1373
+Oxypyromorphite count: 0
+Pyromorphite count: 2034
+Svabite count: 28
+Turneaureite count: 8
+Vanadinite count: 761
+Apatite count: 9352
+Hydroxylpyromorphite count: 7
+Stronadelphite count: 7
+Unnamed (OH-analogue of Mimetite) count: 6
+Pieczkaite count: 3
+Pliniusite count: 5
+Fluorpyromorphite count: 3
+Fluoralforsite count: 2
+group: 32275 , count: 15357
+200
+group: 32349 , count: 0
+200
+group: 32411 , count: 0
+200
+Bariopharmacosiderite count: 200
+Pharmacosiderite count: 524
+Natropharmacosiderite count: 22
+Hydroniumpharmacosiderite count: 7
+Strontiopharmacosiderite count: 2
+Caesiumpharmacosiderite count: 2
+Thalliumpharmacosiderite count: 4
+Plumbopharmacosiderite count: 3
+group: 32475 , count: 673
+200
+group: 32574 , count: 0
+200
+Powellite count: 601
+Raspite count: 32
+Scheelite count: 5768
+Stolzite count: 203
+Wulfenite count: 2022
+Ronpetersonite count: 1
+group: 32622 , count: 7877
+200
+Copper count: 4489
+Gold count: 34300
+Maldonite count: 124
+Silver count: 6153
+group: 32720 , count: 40537
+200
+group: 32722 , count: 0
+200
+group: 32723 , count: 0
+200
+group: 33146 , count: 0
+200
+group: 34343 , count: 0
+200
+group: 34479 , count: 0
+200
+group: 34480 , count: 0
+200
+Preisingerite count: 66
+Petitjeanite count: 19
+Schumacherite count: 13
+group: 34481 , count: 83
+200
+Versiliaite count: 1
+group: 35003 , count: 1
+200
+Paralomonosovite count: 7
+Lomonosovite count: 27
+Murmanite count: 35
+Quadruphite count: 1
+Sobolevite count: 2
+Schüllerite count: 5
+Vigrishinite count: 3
+Kolskyite count: 1
+Calciomurmanite count: 4
+Selivanovaite count: 1
+group: 35035 , count: 58
+200
+UM1992-05-CO:CaCeLaNaSr count: 1
+group: 35065 , count: 1
+200
+Ferrowyllieite count: 8
+Qingheiite count: 5
+Rosemaryite count: 9
+Wyllieite count: 23
+Ferrorosemaryite count: 1
+Ferroqingheiite count: 2
+Fupingqiuite count: 0
+Magnesioqingheiite count: 1
+group: 35105 , count: 33
+200
+Zorite count: 1
+Haineaultite count: 1
+Chivruaiite count: 6
+Escheite count: 1
+group: 35110 , count: 9
+200
+Krautite count: 7
+Yvonite count: 4
+group: 35124 , count: 11
+200
+Faujasite-Ca count: 13
+Faujasite-Mg count: 1
+Faujasite-Na count: 12
+group: 35126 , count: 21
+200
+Eugenite count: 29
+Luanheite count: 19
+Paraschachnerite count: 15
+Schachnerite count: 20
+group: 35460 , count: 63
+200
+Birnessite count: 240
+Ranciéite count: 228
+Takanelite count: 21
+group: 35538 , count: 442
+200
+Chabazite-Ca count: 404
+Chabazite-K count: 48
+Chabazite-Na count: 82
+Chabazite-Sr count: 8
+Lévyne-Ca count: 52
+Lévyne-Na count: 4
+Chabazite-Mg count: 3
+group: 35547 , count: 527
+200
+Baghdadite count: 18
+Burpalite count: 6
+Cuspidine count: 98
+Hiortdahlite count: 50
+Janhaugite count: 2
+Låvenite count: 96
+Niocalite count: 9
+Normandite count: 11
+Wöhlerite count: 139
+Moxuanxueite count: 3
+Madeiraite count: 2
+Pilanesbergite count: 1
+group: 35647 , count: 336
+200
+group: 35959 , count: 0
+200
+group: 35961 , count: 0
+200
+group: 35964 , count: 0
+200
+group: 35965 , count: 0
+200
+group: 36039 , count: 0
+200
+Chladniite count: 9
+Fillowite count: 18
+Johnsomervilleite count: 13
+Galileiite count: 5
+group: 36083 , count: 40
+200
+Tremolite count: 3202
+Fluoro-tremolite count: 12
+group: 36873 , count: 3205
+200
+group: 38727 , count: 0
+200
+group: 38729 , count: 0
+200
+group: 38730 , count: 0
+200
+group: 38781 , count: 0
+200
+group: 38865 , count: 0
+200
+group: 38935 , count: 0
+200
+group: 38941 , count: 0
+200
+group: 38949 , count: 0
+200
+group: 39045 , count: 0
+200
+group: 39046 , count: 0
+200
+group: 39047 , count: 0
+200
+group: 39058 , count: 0
+200
+Argentobaumhauerite count: 2
+Baumhauerite count: 19
+Dufrénoysite count: 40
+Guettardite count: 15
+Liveingite count: 6
+Parapierrotite count: 14
+Pierrotite count: 4
+Rathite count: 4
+Sartorite count: 15
+Twinnite count: 29
+Veenite count: 14
+Boscardinite count: 3
+Barikaite count: 1
+Carducciite count: 1
+Philrothite count: 2
+Bernarlottiite count: 1
+Polloneite count: 1
+Heptasartorite count: 2
+Enneasartorite count: 2
+Hendekasartorite count: 1
+Écrinsite count: 2
+Argentoliveingite count: 1
+Incomsartorite count: 1
+Argentodufrénoysite count: 1
+Hyršlite count: 4
+Dekatriasartorite count: 1
+Interliveingite count: 1
+group: 39077 , count: 113
+200
+Fülöppite count: 68
+Heteromorphite count: 56
+Plagionite count: 118
+Semseyite count: 217
+group: 39078 , count: 343
+200
+group: 39080 , count: 0
+200
+group: 39240 , count: 0
+200
+group: 39258 , count: 0
+200
+group: 39261 , count: 0
+200
+group: 39271 , count: 0
+200
+group: 39286 , count: 0
+200
+Voltaite count: 144
+Zincovoltaite count: 3
+Pertlikite count: 8
+Ammoniomagnesiovoltaite count: 4
+Magnesiovoltaite count: 7
+Ammoniovoltaite count: 1
+group: 39382 , count: 146
+200
+group: 39387 , count: 0
+200
+Ferro-ferri-katophorite count: 10
+Ferro-katophorite count: 51
+Ferri-katophorite count: 14
+Katophorite count: 135
+Potassic-fluoro-katophorite count: 0
+Ferro-ferri-fluoro-katophorite count: 2
+Fluoro-katophorite count: 3
+Potassic-ferri-katophorite count: 4
+Ferri-fluoro-katophorite count: 4
+Potassic-ferro-ferri-katophorite count: 1
+group: 39388 , count: 196
+200
+group: 39389 , count: 0
+200
+group: 39390 , count: 0
+200
+group: 39392 , count: 0
+200
+group: 39393 , count: 0
+200
+Frondelite count: 66
+Rockbridgeite count: 244
+Plimerite count: 12
+Ferrorockbridgeite count: 2
+Ferrirockbridgeite count: 2
+Manganrockbridgeite count: 1
+group: 39395 , count: 262
+200
+group: 39421 , count: 0
+200
+group: 39428 , count: 0
+200
+group: 39429 , count: 0
+200
+group: 39430 , count: 0
+200
+group: 39431 , count: 0
+200
+group: 39432 , count: 0
+200
+Betpakdalite-CaCa count: 19
+Betpakdalite-NaCa count: 3
+Betpakdalite-CaMg count: 8
+Betpakdalite-NaNa count: 1
+Betpakdalite-FeFe count: 1
+group: 39433 , count: 27
+200
+Ancylite-(Ce) count: 136
+Calcioancylite-(Ce) count: 58
+Calcioancylite-(Nd) count: 5
+Gysinite-(Nd) count: 4
+Ancylite-(La) count: 24
+Calcioancylite-(La) count: 4
+Gysinite-(La) count: 2
+Gysinite-(Ce) count: 1
+group: 39436 , count: 182
+200
+Kieftite count: 4
+Nickelskutterudite count: 220
+Skutterudite count: 625
+Ferroskutterudite count: 7
+group: 39437 , count: 716
+200
+group: 39441 , count: 0
+200
+group: 39443 , count: 0
+200
+group: 39444 , count: 0
+200
+group: 39445 , count: 0
+200
+Benjaminite count: 60
+Cupropavonite count: 28
+Makovickyite count: 16
+Mummeite count: 15
+Pavonite count: 102
+Cupromakovickyite count: 5
+Cupromakopavonite count: 3
+Dantopaite count: 6
+Luboržákite count: 1
+group: 39446 , count: 168
+200
+group: 39448 , count: 0
+200
+group: 39488 , count: 0
+200
+group: 39491 , count: 0
+200
+Durangite count: 13
+Isokite count: 24
+Lacroixite count: 28
+Maxwellite count: 4
+Panasqueiraite count: 2
+Tilasite count: 45
+Kononovite count: 1
+Arsenatrotitanite count: 1
+Reznitskyite count: 1
+Tilasite-Isokite Series count: 0
+group: 39494 , count: 111
+200
+Coffinite count: 748
+Hafnon count: 15
+Thorite count: 1337
+Zircon count: 7524
+Reidite count: 21
+Stetindite-(Ce) count: 10
+group: 39501 , count: 8717
+200
+Bernalite count: 14
+Dzhalindite count: 19
+Söhngeite count: 1
+group: 39504 , count: 33
+200
+Julgoldite-(Fe2+) count: 17
+Julgoldite-(Fe3+) count: 8
+Julgoldite-(Mg) count: 1
+group: 39505 , count: 22
+200
+Okanoganite-(Y) count: 5
+Vicanite-(Ce) count: 7
+Hundholmenite-(Y) count: 5
+Proshchenkoite-(Y) count: 1
+Laptevite-(Ce) count: 2
+Arrheniusite-(Ce) count: 1
+group: 39509 , count: 19
+200
+group: 39525 , count: 0
+200
+Calcium-bearing Seidozerite count: 1
+group: 39538 , count: 1
+200
+group: 39539 , count: 0
+200
+Ishikawaite count: 31
+Samarskite-(Y) count: 420
+Srilankite count: 8
+Yttrotantalite-(Y) count: 66
+Calciosamarskite count: 12
+Samarskite-(Yb) count: 3
+Shakhdaraite-(Y) count: 1
+group: 39540 , count: 497
+200
+Bracewellite count: 2
+Diaspore count: 579
+Goethite count: 9294
+Groutite count: 84
+Montroseite count: 162
+Tsumgallite count: 1
+group: 39566 , count: 9930
+200
+Whiteite Subgroup count: 18
+Jahnsite Subgroup count: 9
+group: 39572 , count: 25
+200
+Tobermorite count: 139
+Kenotobermorite count: 2
+group: 39598 , count: 140
+200
+group: 39599 , count: 0
+200
+Chevkinite Subgroup count: 0
+Perrierite Subgroup count: 1
+group: 39614 , count: 1
+200
+group: 39656 , count: 0
+200
+group: 39657 , count: 0
+200
+group: 39689 , count: 0
+200
+Ferrisymplesite count: 26
+Metaköttigite count: 1
+Symplesite count: 111
+group: 39696 , count: 128
+200
+Aleksite count: 34
+Kochkarite count: 12
+Poubaite count: 11
+Rucklidgeite count: 90
+Babkinite count: 4
+Saddlebackite count: 6
+group: 39723 , count: 134
+200
+group: 39732 , count: 0
+200
+group: 39733 , count: 0
+200
+Götzenite count: 38
+Hainite-(Y) count: 15
+Mosandrite-(Ce) count: 72
+Nacareniobsite-(Ce) count: 17
+Rinkite-(Ce) count: 79
+Rosenbuschite count: 66
+Seidozerite count: 8
+Kochite count: 6
+Grenmarite count: 2
+Roumaite count: 1
+Fogoite-(Y) count: 3
+Batievaite-(Y) count: 1
+Rinkite-(Y) count: 3
+Unnamed (Ca-deficient Mosandrite) count: 1
+Nacareniobsite-(Y) count: 1
+group: 39735 , count: 197
+200
+group: 39736 , count: 0
+200
+group: 39737 , count: 0
+200
+group: 39742 , count: 0
+200
+Sarkinite count: 43
+Wagnerite count: 80
+Stanĕkite count: 14
+Joosteite count: 2
+Hydroxylwagnerite count: 2
+Arsenowagnerite count: 1
+Wagnerite-Arsenowagnerite Series count: 0
+group: 39769 , count: 137
+200
+Ferberite count: 640
+Hübnerite count: 567
+Sanmartinite count: 6
+Krasnoselskite count: 3
+Heftetjernite count: 1
+Huanzalaite count: 4
+Rossovskyite count: 2
+Nioboheftetjernite count: 2
+Dmitryvarlamovite count: 1
+group: 39780 , count: 1130
+200
+Haapalaite count: 5
+Tochilinite count: 69
+Valleriite count: 293
+Yushkinite count: 1
+Ferrotochilinite count: 2
+Ferrovalleriite count: 1
+Ekplexite count: 1
+group: 39791 , count: 355
+200
+group: 39805 , count: 0
+200
+Alunite count: 1285
+Ammonioalunite count: 15
+Ammoniojarosite count: 38
+Argentojarosite count: 76
+Beaverite-(Cu) count: 192
+Dorallcharite count: 5
+Huangite count: 8
+Hydroniumjarosite count: 97
+Jarosite count: 2822
+Natroalunite-2c count: 9
+Natroalunite count: 166
+Natrojarosite count: 348
+Osarizawaite count: 82
+Plumbojarosite count: 585
+Schlossmacherite count: 2
+Walthierite count: 5
+Beaverite-(Zn) count: 4
+group: 39819 , count: 4385
+200
+group: 39855 , count: 0
+200
+Manganoneptunite count: 38
+Neptunite count: 58
+Watatsumiite count: 1
+Magnesioneptunite count: 2
+Rotherkopfite count: 1
+group: 39911 , count: 89
+200
+Atacamite count: 689
+Botallackite count: 65
+Clinoatacamite count: 65
+Hibbingite count: 24
+Kempite count: 5
+Paratacamite count: 212
+Herbertsmithite count: 33
+Kapellasite count: 5
+Gillardite count: 5
+Haydeeite count: 4
+Leverettite count: 1
+Paratacamite-(Mg) count: 1
+Paratacamite-(Ni) count: 1
+Tondiite count: 3
+Misakiite count: 2
+Iyoite count: 1
+Unnamed (Cu-Zn Chloride Hydroxide) count: 0
+group: 39924 , count: 846
+200
+Cerite Subgroup count: 0
+Taipingite Subgroup count: 0
+group: 39939 , count: 0
+200
+Akhtenskite count: 8
+Nsutite count: 138
+Paramontroseite count: 45
+Ramsdellite count: 108
+group: 39941 , count: 277
+200
+Unnamed (Co2+-dominant analogue of ferrohögbomite-2N2S) count: 1
+Magnesiohögbomite subgroup count: 1
+Ferrohögbomite subgroup count: 0
+Zincohögbomite subgroup count: 0
+group: 39983 , count: 2
+200
+Ferronigerite subgroup count: 0
+Magnesionigerite subgroup count: 0
+Zinconigerite subgroup count: 1
+group: 39984 , count: 1
+200
+Magnesiotaaffeite subgroup count: 0
+Ferrotaaffeite subgroup count: 0
+group: 39985 , count: 0
+200
+Fedorite count: 10
+Martinite count: 1
+group: 39987 , count: 11
+200
+group: 40054 , count: 0
+200
+Aenigmatite count: 343
+Krinovite count: 4
+Wilkinsonite count: 5
+Kuratite count: 6
+UM1991-29-SiO:FeMgNa count: 0
+group: 40089 , count: 352
+200
+Dorrite count: 16
+Høgtuvaite count: 2
+Makarochkinite count: 2
+Rhönite count: 68
+Serendibite count: 24
+Welshite count: 1
+Leucorhönite count: 4
+group: 40090 , count: 110
+200
+Sapphirine count: 173
+Khmaralite count: 4
+Warkite count: 2
+Addibischoffite count: 1
+UM2002-52-SiO:AlFeMg count: 1
+Louisfuchsite count: 1
+group: 40091 , count: 178
+200
+Danalite count: 86
+Genthelvite count: 87
+Helvine count: 293
+Tugtupite count: 19
+group: 40167 , count: 428
+200
+Fluorite count: 11745
+Frankdicksonite count: 4
+Strontiofluorite count: 4
+Fluorocronite count: 1
+group: 40182 , count: 11747
+200
+group: 40208 , count: 0
+200
+group: 40219 , count: 0
+200
+group: 40226 , count: 0
+200
+group: 40227 , count: 0
+200
+group: 40228 , count: 0
+200
+group: 40229 , count: 0
+200
+group: 40230 , count: 0
+200
+group: 40234 , count: 0
+200
+group: 40235 , count: 0
+200
+group: 40236 , count: 0
+200
+Rhodonite count: 1106
+Ferrorhodonite count: 5
+Vittinkiite count: 17
+group: 40297 , count: 1108
+200
+group: 40309 , count: 0
+200
+Alabandite count: 383
+Altaite count: 666
+Clausthalite count: 387
+Galena count: 28778
+Niningerite count: 31
+Oldhamite count: 71
+group: 40331 , count: 29342
+200
+Hydroplumboelsmoreite count: 6
+Hydrokenoelsmoreite count: 66
+Hydroxykenoelsmoreite count: 2
+group: 40371 , count: 72
+200
+Bazzite count: 60
+Beryl count: 5081
+Stoppaniite count: 2
+Pezzottaite count: 10
+Avdeevite count: 1
+Johnkoivulaite count: 2
+group: 40374 , count: 5120
+200
+Huemulite count: 20
+Hummerite count: 28
+Pascoite count: 96
+Lasalite count: 8
+Magnesiopascoite count: 9
+Rakovanite count: 4
+group: 40375 , count: 124
+200
+Efremovite count: 17
+Langbeinite count: 57
+Manganolangbeinite count: 2
+Calciolangbeinite count: 4
+Ferroefremovite count: 1
+group: 40443 , count: 75
+200
+Benleonardite count: 30
+Pearceite count: 339
+Polybasite count: 947
+Selenopolybasite count: 9
+Cupropearceite count: 11
+Cupropolybasite count: 10
+Argentopearceite count: 5
+Argentopolybasite count: 1
+Argentopolybasite-T2ac count: 4
+group: 40461 , count: 1137
+200
+group: 40517 , count: 0
+200
+Ivanyukite-Na count: 1
+Ivanyukite-K count: 1
+Ivanyukite-Cu count: 1
+Ivanyukite-Na-C count: 1
+group: 40521 , count: 1
+200
+Pharmacosiderite Group count: 5
+Pharmacoalumite Group count: 0
+Ivanyukite Group count: 0
+group: 40522 , count: 5
+200
+group: 40526 , count: 0
+200
+group: 40563 , count: 0
+200
+Ericssonite count: 4
+Ferroericssonite count: 4
+Zinkgruvanite count: 2
+group: 40565 , count: 10
+200
+group: 41567 , count: 0
+200
+Palygorskite count: 374
+Raite count: 7
+Tuperssuatsiaite count: 16
+Yofortierite count: 11
+Windhoekite count: 2
+Unnamed (Na-Ca-Fe-Silicate-Hydrate) count: 1
+Windmountainite count: 2
+group: 41568 , count: 395
+200
+Columbite-(Fe) count: 614
+Tantalite-(Fe) count: 124
+Columbite-(Mn) count: 362
+Tantalite-(Mn) count: 264
+Columbite-(Mg) count: 8
+Qitianlingite count: 10
+Tantalite-(Mg) count: 2
+group: 41586 , count: 1016
+200
+Blatterite count: 4
+Chestermanite count: 1
+Orthopinakiolite count: 2
+Takéuchiite count: 1
+group: 41589 , count: 6
+200
+group: 42032 , count: 0
+200
+group: 42033 , count: 0
+200
+Leonite count: 33
+Mereiterite count: 5
+group: 42039 , count: 38
+200
+Aeschynite-(Ce) count: 58
+Aeschynite-(Nd) count: 11
+Aeschynite-(Y) count: 187
+Nioboaeschynite-(Ce) count: 22
+Nioboaeschynite-(Nd) count: 5
+Rynersonite count: 20
+Tantalaeschynite-(Y) count: 4
+Vigezzite count: 21
+Nioboaeschynite-(Y) count: 7
+UM2001-09-O:CaNbREESiTiY count: 1
+group: 42265 , count: 285
+200
+group: 42375 , count: 0
+200
+Barytolamprophyllite count: 36
+Bornemanite count: 7
+Delindeite count: 5
+Epistolite count: 23
+Innelite count: 3
+Lamprophyllite count: 97
+Polyphite count: 1
+Vuonnemite count: 15
+Shkatulkalite count: 3
+Nabalamprophyllite count: 4
+Phosphoinnelite count: 1
+Nechelyustovite count: 1
+Kazanskyite count: 1
+Lileyite count: 4
+Emmerichite count: 2
+Zvyaginite count: 1
+Saamite count: 1
+Fluorlamprophyllite count: 5
+Fluorbarytolamprophyllite count: 3
+group: 42445 , count: 141
+200
+group: 42524 , count: 0
+200
+Bastnäsite count: 421
+Hydroxylbastnäsite-(Ce) count: 21
+Hydroxylbastnäsite-(Nd) count: 10
+Hydroxylbastnäsite-(La) count: 10
+Thorbastnäsite count: 18
+group: 42527 , count: 460
+200
+group: 42614 , count: 0
+200
+Belovite-(Ce) count: 21
+Fluorstrophite count: 12
+Belovite-(La) count: 4
+Deloneite count: 1
+Fluorcaphite count: 8
+Kuannersuite-(Ce) count: 3
+Carlgieseckeite-(Nd) count: 1
+group: 42671 , count: 42
+200
+Caracolite count: 27
+Cesanite count: 8
+Hedyphane count: 73
+Morelandite count: 1
+Phosphohedyphane count: 110
+Aiolosite count: 1
+Fluorphosphohedyphane count: 8
+Miyahisaite count: 2
+Hydroxylhedyphane count: 1
+Parafiniukite count: 1
+UM2002-53-PO:CaHPb count: 2
+Fluorsigaiite count: 3
+group: 42672 , count: 215
+200
+Chlorellestadite count: 6
+Fluorellestadite count: 51
+Hydroxylellestadite count: 32
+Mattheddleite count: 42
+group: 42673 , count: 115
+200
+group: 42887 , count: 0
+200
+group: 42908 , count: 0
+200
+Cualstibite count: 11
+Zincalstibite count: 8
+Omsite count: 2
+group: 43288 , count: 18
+200
+Brugnatellite count: 38
+Coalingite count: 34
+Muskoxite count: 1
+Karchevskyite count: 1
+Hydrotalcite Group count: 5
+Woodwardite Group count: 5
+Cualstibite Group count: 0
+Quintinite Group count: 0
+Fougèrite Group count: 0
+Glaucocerinite Group count: 0
+Wermlandite Group count: 0
+Hydrocalumite Group count: 1
+UM1987-05-OH:AlCMg count: 0
+Akopovaite count: 1
+Dritsite count: 1
+Carbocalumite count: 1
+Poellmannite count: 1
+Amoraite count: 1
+Mampsisite count: 1
+group: 43290 , count: 79
+200
+Motukoreaite count: 6
+Shigaite count: 12
+Wermlandite count: 3
+Natroglaucocerinite count: 3
+Nikischerite count: 1
+Erssonite count: 1
+group: 43295 , count: 25
+200
+Melkovite count: 5
+Mendozavilite-NaFe count: 5
+Mendozavilite-NaCu count: 2
+Mendozavilite-KCa count: 3
+group: 43313 , count: 10
+200
+group: 43314 , count: 0
+200
+group: 43348 , count: 0
+200
+group: 43384 , count: 0
+200
+Fluoro-cannilloite count: 6
+group: 43386 , count: 6
+200
+Papikeite count: 5
+Ferro-papikeite count: 5
+group: 43389 , count: 10
+200
+Ferri-tschermakite count: 6
+Ferro-tschermakite count: 37
+Tschermakite count: 114
+group: 43418 , count: 153
+200
+Ferro-pargasite count: 87
+Pargasite count: 467
+Potassic-pargasite count: 10
+Ferro-chloro-pargasite count: 4
+Fluoro-pargasite count: 14
+Potassic-chloro-pargasite count: 1
+Potassic-ferro-pargasite count: 6
+Chromio-pargasite count: 3
+Potassic-fluoro-pargasite count: 2
+Vanadio-pargasite count: 1
+Mangani-pargasite count: 1
+group: 43429 , count: 554
+200
+Hastingsite count: 329
+Magnesio-hastingsite count: 107
+Magnesio-fluoro-hastingsite count: 6
+Potassic-fluoro-hastingsite count: 1
+Potassic-chloro-hastingsite count: 13
+Potassic-magnesio-hastingsite count: 7
+Potassic-hastingsite count: 8
+group: 43433 , count: 434
+200
+Barroisite count: 62
+Ferro-ferri-barroisite count: 1
+Ferri-barroisite count: 3
+Ferro-barroisite count: 6
+group: 43476 , count: 70
+200
+Taramite Root Name Group count: 10
+Winchite Root Name Group count: 0
+Richterite Root Name Group count: 0
+Katophorite Root Name Group count: 2
+Barroisite Root Name Group count: 0
+group: 43485 , count: 12
+200
+group: 43495 , count: 0
+200
+Nybøite count: 11
+Ferro-ferri-nybøite count: 6
+Ferri-nybøite count: 3
+Fluoro-nybøite count: 1
+Ferro-nybøite count: 7
+Ferri-fluoro-nybøite count: 1
+group: 43501 , count: 26
+200
+Potassic-mangani-leakeite count: 2
+Ferri-leakeite count: 4
+Ferro-ferri-leakeite count: 2
+Ferro-ferri-fluoro-leakeite count: 4
+Potassic-ferri-leakeite count: 2
+Mangano-ferri-fluoro-leakeite count: 1
+Fluoro-leakeite count: 2
+Ferri-fluoro-leakeite count: 5
+Leakeite count: 5
+Oxo-mangani-leakeite count: 1
+group: 43507 , count: 20
+200
+Ferri-pedrizite count: 1
+Fluoro-pedrizite count: 1
+Ferro-ferri-pedrizite count: 1
+Ferro-pedrizite count: 1
+Ferro-fluoro-pedrizite count: 1
+group: 43514 , count: 4
+200
+Anthophyllite count: 829
+Ferro-anthophyllite count: 6
+Proto-ferro-anthophyllite count: 3
+Sodic-ferro-anthophyllite count: 0
+Proto-anthophyllite count: 4
+group: 43520 , count: 840
+200
+Cummingtonite count: 393
+Grunerite count: 276
+Gedrite Root Name Group count: 0
+Papikeite Root Name Group count: 0
+Anthophyllite Root Name Group count: 0
+Suenoite Root Name Group count: 0
+group: 43524 , count: 613
+200
+Lithium Amphibole Subgroup count: 0
+Calcium Amphibole Subgroup count: 54
+Sodium Amphibole Subgroup count: 13
+Sodium-Calcium Amphibole Subgroup count: 9
+Magnesium-iron-manganese Amphibole Subgroup count: 0
+Sodium-(Magnesium-Iron-Manganese) Amphibole Subgroup count: 0
+Lithium-(Magnesium-Iron-Manganese) Amphibole Subgroup count: 0
+Lithium-Calcium Amphibole Subgroup count: 0
+group: 43525 , count: 65
+200
+Ferri-ghoseite count: 23
+group: 43530 , count: 23
+200
+Ghoseite Root Name Group count: 0
+Hjalmarite Root Name Group count: 0
+group: 43531 , count: 0
+200
+Mangano-mangani-ungarettiite count: 3
+Kaersutite Root Name Group count: 1
+Mangani-dellaventuraite count: 1
+Oxo-magnesio-hastingsite count: 4
+Obertiite Root Name Group count: 7
+Oxo-pargasite count: 1
+Potassic-mangano-mangani-ungarettiite count: 1
+Potassic-jeanlouisite count: 2
+group: 43538 , count: 17
+200
+Coronadite Group count: 8
+Priderite Group count: 0
+group: 43551 , count: 8
+200
+Mannardite count: 19
+Priderite count: 70
+Redledgeite count: 7
+Henrymeyerite count: 13
+UM1994-09-O:CrKTi count: 1
+group: 43553 , count: 104
+200
+Dumortierite Group count: 0
+Holtite Group count: 0
+Szklaryite Group count: 0
+group: 43608 , count: 0
+200
+Chlormayenite count: 26
+Chlorkyuygenite count: 3
+Fluormayenite count: 9
+Fluorkyuygenite count: 7
+group: 43612 , count: 34
+200
+Ferrotychite count: 2
+Manganotychite count: 2
+Northupite count: 43
+Tychite count: 9
+group: 43702 , count: 50
+200
+group: 43714 , count: 0
+200
+Cerchiaraite-(Mn) count: 2
+Cerchiaraite-(Al) count: 6
+Cerchiaraite-(Fe) count: 9
+group: 43739 , count: 12
+200
+Dickite count: 811
+Halloysite count: 783
+Kaolinite count: 6643
+Nacrite count: 154
+group: 43755 , count: 7537
+200
+Anandite count: 6
+Bityite count: 36
+Chernykhite count: 8
+Clintonite count: 101
+Kinoshitalite count: 28
+Margarite count: 202
+Ferrokinoshitalite count: 4
+Ganterite count: 3
+Oxykinoshitalite count: 5
+Fluorokinoshitalite count: 2
+Chloroferrokinoshitalite count: 3
+group: 43757 , count: 383
+200
+Arsenogoyazite count: 25
+Arsenoflorencite-(La) count: 5
+Arsenoflorencite-(Nd) count: 1
+Arsenogorceixite count: 18
+Arsenocrandallite count: 17
+Arsenoflorencite-(Ce) count: 10
+Dussertite count: 40
+Philipsbornite count: 74
+Segnitite count: 194
+Arsenowaylandite count: 2
+Graulichite-(Ce) count: 3
+Graulichite-(La) count: 2
+group: 43765 , count: 300
+200
+Cobaltkoritnigite count: 36
+Koritnigite count: 15
+Magnesiokoritnigite count: 2
+group: 43930 , count: 49
+200
+Hemihedrite count: 14
+Iranite count: 15
+Raygrantite count: 1
+group: 43954 , count: 26
+200
+group: 44005 , count: 0
+200
+group: 44139 , count: 0
+200
+group: 45833 , count: 0
+200
+group: 45927 , count: 0
+200
+group: 46032 , count: 0
+200
+Althupite count: 1
+Bergenite count: 9
+Dewindtite count: 96
+Dumontite count: 27
+Françoisite-(Nd) count: 7
+Hügelite count: 13
+Phosphuranylite count: 216
+Phuralumite count: 3
+Phurcalite count: 36
+Upalite count: 4
+Vanmeersscheite count: 9
+Yingjiangite count: 13
+Françoisite-(Ce) count: 2
+group: 46104 , count: 337
+200
+Jerrygibbsite count: 4
+Leucophoenicite count: 12
+Ribbeite count: 15
+group: 46181 , count: 23
+200
+Chondrodite count: 334
+Clinohumite count: 300
+Humite count: 114
+Norbergite count: 44
+Hydroxylclinohumite count: 36
+Hydroxylchondrodite count: 1
+Unnamed (OH-analogue of humite) count: 1
+group: 46186 , count: 658
+200
+Alleghanyite count: 95
+Manganhumite count: 21
+Sonolite count: 64
+group: 46187 , count: 123
+200
+Reinhardbraunsite count: 12
+Chegemite count: 3
+Kumtyubeite count: 6
+Edgrewite count: 2
+Fluorchegemite count: 3
+Hydroxyledgrewite count: 2
+group: 46188 , count: 16
+200
+group: 46189 , count: 0
+200
+group: 46190 , count: 0
+200
+group: 46191 , count: 0
+200
+group: 46192 , count: 0
+200
+Allanite-(Ce) count: 906
+Allanite-(La) count: 31
+Allanite-(Y) count: 35
+Dissakisite-(Ce) count: 14
+Manganiandrosite-(La) count: 3
+Ferriallanite-(Ce) count: 44
+Manganiandrosite-(Ce) count: 3
+Dissakisite-(La) count: 3
+Vanadoandrosite-(Ce) count: 1
+Uedaite-(Ce) count: 8
+Allanite-(Nd) count: 7
+Unnamed (Mg-analogue of Ferriallanite-(Ce)) count: 1
+Unnamed (Mn3+-analogue of Ferriakasakaite-(Ce)) count: 1
+Ferriallanite-(La) count: 2
+Vanadoallanite-(La) count: 1
+Ferriakasakaite-(La) count: 3
+Ferriandrosite-(La) count: 1
+Androsite-(Ce) count: 3
+Ferriandrosite-(Ce) count: 3
+UM1989-32-SiO:AlCaFeHREE count: 1
+Manganiakasakaite-(La) count: 2
+Ferriakasakaite-(Ce) count: 2
+UM1994-25-SiO:AlCaFeHREEV count: 1
+UM2006-14-SiO:AlCaHMnREE count: 1
+group: 46220 , count: 979
+200
+Dollaseite-(Ce) count: 14
+Khristovite-(Ce) count: 2
+Vielleaureite-(Ce) count: 3
+group: 46224 , count: 18
+200
+Åskagenite-(Nd) count: 1
+group: 46225 , count: 1
+200
+Clinozoisite count: 1326
+Epidote count: 10219
+Hancockite count: 10
+Mukhinite count: 7
+Piemontite count: 315
+Piemontite-(Sr) count: 15
+Tweddillite count: 4
+Niigataite count: 3
+Epidote-(Sr) count: 10
+Piemontite-(Pb) count: 2
+Unnamed (Ga-analogue of Epidote) count: 2
+Unnamed (Fe3+-analogue of Piemontite) count: 1
+Unnamed (Fe3+ analogue of Piemontite-(Pb)) count: 1
+Unnamed (Fe3+-analogue of Piemontite-(Sr)) count: 1
+Heflikite count: 2
+group: 46234 , count: 11006
+200
+group: 46408 , count: 0
+200
+Laueite Group count: 1
+Maghrebite Group count: 0
+group: 46444 , count: 1
+200
+Maghrebite count: 5
+Césarferreiraite count: 2
+group: 46445 , count: 7
+200
+Mangani-obertiite count: 6
+Ferro-ferri-obertiite count: 2
+Ferri-obertiite count: 8
+Unnamed (Possible K-analogue of Ferri-obertiite) count: 0
+group: 46446 , count: 9
+200
+Lindackerite Group count: 2
+Ondrušite Group count: 0
+group: 46452 , count: 2
+200
+Franklinphilite count: 3
+Lennilenapeite count: 6
+Parsettensite count: 48
+Stilpnomelane count: 566
+Chalcodite count: 19
+group: 46595 , count: 624
+200
+group: 46662 , count: 0
+200
+Beraunite count: 202
+Tvrdýite count: 3
+Zincoberaunite count: 5
+Ferroberaunite count: 27
+group: 46668 , count: 204
+200
+Garronite-Ca count: 72
+Garronite-Na count: 2
+group: 46692 , count: 73
+200
+Antimonselite count: 11
+Bismuthinite count: 2380
+Guanajuatite count: 43
+Stibnite count: 4016
+group: 46738 , count: 6150
+200
+Ferrowodginite count: 24
+Lithiotantite count: 5
+Lithiowodginite count: 8
+Titanowodginite count: 10
+Wodginite count: 94
+Ferrotitanowodginite count: 6
+Tantalowodginite count: 4
+Achalaite count: 2
+group: 46759 , count: 114
+200
+group: 46767 , count: 0
+200
+group: 46776 , count: 0
+200
+Cuprosklodowskite count: 72
+Oursinite count: 2
+Sklodowskite count: 76
+group: 46780 , count: 133
+200
+group: 46782 , count: 0
+200
+group: 46808 , count: 0
+200
+Brushite count: 129
+Churchite-(Y) count: 94
+Gypsum count: 8530
+Pharmacolite count: 129
+group: 46846 , count: 8703
+200
+group: 46854 , count: 0
+200
+Curienite count: 16
+Francevillite count: 47
+Fritzscheite count: 4
+Finchite count: 3
+group: 46858 , count: 62
+200
+group: 46867 , count: 0
+200
+Chalcostibite count: 221
+Emplectite count: 310
+Grundmannite count: 3
+Příbramite count: 3
+group: 46873 , count: 521
+200
+Betpakdalite Group count: 3
+Obradovicite Group count: 0
+Mendozavilite Group count: 1
+group: 46876 , count: 4
+200
+group: 46920 , count: 0
+200
+Ardennite-(As) count: 42
+Ardennite-(V) count: 18
+Kannanite count: 1
+Alpeite count: 4
+Ardennite-(Si) count: 3
+group: 46923 , count: 54
+200
+Labuntsovite-Mn count: 24
+Labuntsovite-Mg count: 5
+Labuntsovite-Fe count: 6
+UM2006-16- SiO:BaFeHKMgMnNaNbTi count: 0
+group: 46932 , count: 28
+200
+Clinotobermorite count: 6
+Plombièrite count: 28
+Riversideite count: 7
+Tobermorite Group count: 3
+Paratobermorite count: 1
+group: 46953 , count: 36
+200
+Astrophyllite count: 248
+Hydroastrophyllite count: 7
+Niobophyllite count: 10
+Zircophyllite count: 6
+Nalivkinite count: 1
+Tarbagataite count: 1
+Bulgakite count: 1
+group: 46962 , count: 257
+200
+Fahleite count: 1
+Smolyaninovite count: 13
+group: 47043 , count: 14
+200
+group: 47047 , count: 0
+200
+group: 47048 , count: 0
+200
+group: 47050 , count: 0
+200
+group: 47157 , count: 0
+200
+Euxenite-(Y) count: 662
+Fersmite count: 125
+Kobeite-(Y) count: 11
+Loranskite-(Y) count: 1
+Tanteuxenite-(Y) count: 22
+Uranopolycrase count: 21
+Yttrocrasite-(Y) count: 10
+group: 47564 , count: 794
+200
+group: 47565 , count: 0
+200
+group: 47678 , count: 0
+200
+Aschamalmite count: 19
+Eskimoite count: 24
+Fizélyite count: 66
+Gustavite count: 145
+Lillianite count: 163
+Ourayite count: 32
+Ramdohrite count: 44
+Roshchinite count: 5
+Schirmerite count: 46
+Treasurite count: 20
+Uchucchacuaite count: 8
+Ustarasite count: 11
+Vikingite count: 37
+Xilingolite count: 12
+Heyrovskýite count: 79
+Quatrandorite count: 12
+Senandorite count: 15
+Menchettiite count: 1
+Oscarkempffite count: 3
+Terrywallaceite count: 8
+Jasrouxite count: 1
+Erzwiesite count: 2
+Clino-oscarkempffite count: 1
+Arsenquatrandorite count: 1
+Andreadiniite count: 1
+Staročeskéite count: 5
+Oyonite count: 2
+Holubite count: 1
+Lasmanisite count: 1
+group: 47733 , count: 476
+200
+group: 47816 , count: 0
+200
+group: 47817 , count: 0
+200
+group: 47854 , count: 0
+200
+Kalsilite count: 74
+Leucite count: 434
+Nepheline count: 1725
+Trikalsilite count: 2
+Yoshiokaite count: 1
+Carnegieite count: 0
+Sodalite Group count: 9
+Cancrinite Group count: 16
+Trinepheline count: 1
+Davidsmithite count: 2
+Metaleucite count: 0
+group: 47865 , count: 1961
+200
+group: 47977 , count: 0
+200
+group: 50209 , count: 0
+200
+Bridgmanite count: 5
+Davemaoite count: 2
+group: 50236 , count: 6
+200
+Loparite-(Ce) count: 83
+Lueshite count: 26
+Macedonite count: 6
+Perovskite count: 715
+Tausonite count: 10
+Isolueshite count: 1
+Barioperovskite count: 2
+Lakargiite count: 17
+Megawite count: 1
+Goldschmidtite count: 1
+group: 50237 , count: 807
+200
+group: 50238 , count: 0
+200
+Neighborite count: 20
+Parascandolaite count: 8
+group: 50239 , count: 25
+200
+Chlorocalcite count: 5
+group: 50240 , count: 5
+200
+Cryolite count: 70
+Elpasolite count: 20
+Simmonsite count: 2
+group: 50241 , count: 79
+200
+Latrappite count: 5
+Vapnikite count: 5
+group: 50242 , count: 10
+200
+Brownmillerite count: 31
+Srebrodolskite count: 37
+Shulamitite count: 13
+Sharyginite count: 11
+Nataliakulikite count: 1
+group: 50243 , count: 58
+200
+Oskarssonite count: 5
+Waimirite-(Y) count: 2
+group: 50244 , count: 7
+200
+Cohenite count: 101
+group: 50245 , count: 101
+200
+Auricupride count: 40
+Cuproauride count: 8
+group: 50246 , count: 43
+200
+Diaboleite count: 70
+group: 50247 , count: 70
+200
+Hematophanite count: 4
+group: 50248 , count: 4
+200
+group: 50332 , count: 0
+200
+Hyalotekite count: 4
+Kapitsaite-(Y) count: 1
+Itsiite count: 2
+Khvorovite count: 1
+group: 50340 , count: 6
+200
+Geocronite count: 175
+Gratonite count: 38
+Jordanite count: 141
+Kirkiite count: 4
+Marcobaldiite count: 2
+Arsenmarcobaldiite count: 1
+group: 50343 , count: 288
+200
+Drugmanite count: 5
+group: 50358 , count: 5
+200
+Gadolinite Group count: 8
+Herderite Group count: 0
+group: 50359 , count: 8
+200
+Bergslagite count: 9
+Herderite count: 62
+Hydroxylherderite count: 138
+group: 50360 , count: 175
+200
+Drugmanite Subgroup count: 0
+Herderite Subgroup count: 0
+group: 50361 , count: 0
+200
+Datolite count: 593
+Homilite count: 13
+group: 50362 , count: 605
+200
+Gadolinite-(Ce) count: 46
+Gadolinite-(Y) count: 205
+Hingganite-(Ce) count: 16
+Hingganite-(Y) count: 80
+Hingganite-(Yb) count: 2
+Minasgeraisite-(Y) count: 7
+Calcybeborosilite-(Y) count: 2
+Hingganite-(Nd) count: 5
+Gadolinite-(Nd) count: 3
+Unnamed (OH-analogue of Gadolinite-(Y)) count: 1
+group: 50363 , count: 293
+200
+Murmanite Group count: 0
+Rinkite Group count: 7
+Lamprophyllite Group count: 5
+Bafertisite Group count: 1
+Bortolanite count: 1
+group: 50368 , count: 14
+200
+Bafertisite count: 24
+Hejtmanite count: 13
+Jinshajiangite count: 7
+Perraultite count: 6
+Yoshimuraite count: 6
+Bussenite count: 1
+Cámaraite count: 1
+Bobshannonite count: 1
+group: 50369 , count: 44
+200
+Sulphohalite count: 6
+group: 50396 , count: 6
+200
+Bridgmanite Subgroup count: 0
+Perovskite Subgroup count: 1
+Neighborite Subgroup count: 0
+Chlorocalcite Subgroup count: 0
+Cryolite Subgroup count: 0
+Vapnikite Subgroup count: 0
+Sulphohalite Subgroup count: 0
+group: 50403 , count: 1
+200
+Schoenfliesite Subgroup count: 0
+Stottite Subgroup count: 0
+Skutterudite Subgroup count: 0
+Söhngeite Subgroup count: 0
+Macedonite Subgroup count: 0
+Brownmillerite Subgroup count: 0
+Oskarssonite Subgroup count: 0
+Cohenite Subgroup count: 0
+Auricupride Subgroup count: 0
+Diaboleite Subgroup count: 0
+Hematophanite Subgroup count: 0
+Liguowuite Subgroup count: 0
+group: 50404 , count: 0
+200
+Högbomite Group count: 1
+Nigerite Group count: 0
+Taaffeite Group count: 1
+Magnesiobeltrandoite-2N3S count: 1
+Zincovelesite-6N6S count: 1
+group: 50810 , count: 4
+200
+group: 51379 , count: 0
+200
+Jaskólskiite count: 17
+Meneghinite count: 196
+group: 51380 , count: 206
+200
+Cuprobismutite count: 56
+Hodrušite count: 36
+Kupčíkite count: 14
+group: 51381 , count: 86
+200
+Chevkinite-(Ce) count: 124
+Polyakovite-(Ce) count: 2
+Dingdaohengite-(Ce) count: 7
+Maoniupingite-(Ce) count: 2
+Christofschäferite-(Ce) count: 2
+Chevkinite-(Nd) count: 1
+Delhuyarite-(Ce) count: 2
+group: 51417 , count: 134
+200
+Perrierite-(Ce) count: 61
+Strontiochevkinite count: 4
+Rengeite count: 5
+Matsubaraite count: 2
+Perrierite-(La) count: 3
+Hezuolinite count: 3
+Perrierite-(Nd) count: 1
+group: 51418 , count: 71
+200
+group: 51481 , count: 0
+200
+Beusite count: 44
+Graftonite count: 132
+Graftonite-(Ca) count: 3
+Graftonite-(Mn) count: 3
+Beusite-(Ca) count: 2
+group: 51596 , count: 164
+200
+Bitikleite count: 1
+Usturite count: 2
+Elbrusite count: 5
+Dzhuluite count: 1
+group: 51620 , count: 7
+200
+group: 51660 , count: 0
+200
+Minehillite count: 1
+Reyerite count: 11
+Truscottite count: 15
+Kodamaite count: 3
+group: 51722 , count: 30
+200
+Galkhaite count: 19
+Vorontsovite count: 1
+Ferrovorontsovite count: 1
+group: 51816 , count: 20
+200
+Latiumite count: 10
+Levantite count: 2
+group: 51839 , count: 12
+200
+Hydrokenoralstonite count: 74
+group: 51903 , count: 74
+200
+Fluornatrocoulsellite count: 5
+group: 51904 , count: 5
+200
+Bottinoite count: 22
+Brandholzite count: 7
+group: 51920 , count: 28
+200
+group: 51947 , count: 0
+200
+group: 51948 , count: 0
+200
+group: 51983 , count: 0
+200
+Gatelite-(Ce) count: 4
+Perbøeite-(Ce) count: 6
+Ferriperbøeite-(Ce) count: 4
+Ferriperbøeite-(La) count: 1
+Perbøeite-(La) count: 1
+Unnamed (Fe3+-analogue of Gatelite-(Ce)) count: 1
+group: 51984 , count: 12
+200
+group: 52013 , count: 0
+200
+group: 52021 , count: 0
+200
+Ruizite count: 7
+Taniajacoite count: 1
+Strontioruizite count: 2
+group: 52090 , count: 8
+200
+Franciscanite count: 3
+Örebroite count: 1
+Welinite count: 12
+Barwoodite count: 2
+Scorticoite count: 1
+group: 52151 , count: 18
+200
+Byströmite count: 4
+Ordoñezite count: 10
+Tredouxite count: 1
+group: 52176 , count: 14
+200
+Bertossaite count: 9
+Palermoite count: 7
+Natropalermoite count: 1
+group: 52191 , count: 15
+200
+group: 52232 , count: 0
+200
+Proto-ferro-suenoite count: 4
+Clino-suenoite count: 70
+Clino-ferro-suenoite count: 92
+Suenoite count: 2
+group: 52565 , count: 150
+200
+Schoonerite count: 14
+Wilhelmgümbelite count: 1
+Schmidite count: 1
+Wildenauerite count: 1
+group: 52597 , count: 14
+200
+Gatelite Group count: 0
+Västmanlandite Group count: 0
+Alnaperbøeite Group count: 0
+group: 52598 , count: 0
+200
+Västmanlandite-(Ce) count: 4
+group: 52599 , count: 4
+200
+Alnaperbøeite-(Ce) count: 1
+group: 52600 , count: 1
+200
+Combeite count: 6
+Kazakovite count: 6
+Lovozerite count: 25
+Tisinalite count: 5
+Zirsinalite count: 9
+Litvinskite count: 3
+Kapustinite count: 3
+Townendite count: 2
+group: 52601 , count: 39
+200
+Koashvite count: 3
+group: 52602 , count: 3
+200
+Imandrite count: 3
+group: 52603 , count: 3
+200
+Baddeleyite count: 387
+Akaogiite count: 4
+group: 52658 , count: 390
+200
+group: 52695 , count: 0
+200
+Dixenite count: 1
+Hematolite count: 8
+Kraisslite count: 1
+Mcgovernite count: 1
+Synadelphite count: 5
+Arakiite count: 6
+Turtmannite count: 1
+group: 52719 , count: 13
+200
+Kimzeyite count: 22
+Schorlomite count: 81
+Kerimasite count: 17
+Toturite count: 2
+Irinarassite count: 3
+Hutcheonite count: 1
+group: 52727 , count: 107
+200
+Henritermierite count: 5
+Holtstamite count: 4
+group: 52728 , count: 6
+200
+Berzeliite count: 14
+Manganberzeliite count: 32
+Palenzonaite count: 11
+Schäferite count: 8
+Unnamed (Na-Ca-Ni Vanadate Garnet) count: 1
+Unnamed (Na-Fe Vanadate Garnet) count: 1
+group: 52729 , count: 49
+200
+group: 52760 , count: 0
+200
+group: 52764 , count: 0
+200
+group: 52774 , count: 0
+200
+Thiospinel Group count: 0
+Oxyspinel Group count: 2
+Seleniospinel Group count: 0
+group: 52865 , count: 2
+200
+Ulvöspinel Subgroup count: 0
+Spinel Subgroup count: 56
+Chihmingite count: 1
+group: 52866 , count: 57
+200
+Tyrrellite count: 19
+Bornhardtite Subgroup count: 0
+Nickeltyrrellite count: 1
+group: 52867 , count: 20
+200
+Brunogeierite count: 15
+Filipstadite count: 5
+Qandilite count: 15
+Ringwoodite count: 33
+Ulvöspinel count: 176
+Tegengrenite count: 3
+Ahrensite count: 6
+group: 52868 , count: 240
+200
+Carrollite count: 195
+Cuproiridsite count: 50
+Fletcherite count: 20
+Florensovite count: 1
+Malanite count: 49
+Rhodostannite count: 16
+Toyohaite count: 4
+Cuprokalininite count: 1
+Ezochiite count: 1
+Unnamed (Fe3+-analogue of Fletcherite) count: 1
+group: 52869 , count: 304
+200
+Bornhardtite count: 6
+Trüstedtite count: 5
+group: 52870 , count: 10
+200
+Carlsbergite count: 30
+Osbornite count: 28
+Uakitite count: 1
+group: 52912 , count: 58
+200
+Chromite count: 4547
+Cochromite count: 4
+Coulsonite count: 19
+Cuprospinel count: 6
+Franklinite count: 75
+Gahnite count: 537
+Galaxite count: 54
+Hausmannite count: 424
+Hercynite count: 500
+Hetaerolite count: 119
+Jacobsite-Q count: 12
+Jacobsite count: 219
+Manganochromite count: 7
+Magnesiocoulsonite count: 1
+Magnesiochromite count: 366
+Magnesioferrite count: 148
+Maghemite count: 283
+Magnetite count: 18482
+Nichromite count: 1
+Spinel count: 2576
+Trevorite count: 32
+Vuorelainenite count: 10
+Zincochromite count: 17
+Titanomaghemite count: 7
+Deltalumite count: 3
+Guite count: 1
+Dellagiustaite count: 3
+Thermaerogenite count: 1
+UM1994-06-O:AlCo count: 1
+group: 52933 , count: 24001
+200
+Cuprorhodsite count: 60
+Daubréelite count: 173
+Greigite count: 77
+Indite count: 2
+Kalininite count: 4
+Linnaeite count: 301
+Polydymite count: 177
+Siegenite count: 312
+Violarite count: 478
+Xingzhongite count: 10
+Tarkianite count: 9
+Cadmoindite count: 4
+Joegoldsteinite count: 3
+Grimmite count: 11
+group: 52935 , count: 1335
+200
+Actinolite count: 4298
+Ferro-actinolite count: 169
+Mangano-actinolite count: 1
+group: 52952 , count: 4395
+200
+Jahnsite-(CaMnFe) count: 38
+Jahnsite-(CaMnMg) count: 19
+Jahnsite-(CaMnMn) count: 27
+Keckite count: 11
+Jahnsite-(MnMnMn) count: 8
+Jahnsite-(CaFeFe) count: 1
+Jahnsite-(NaFeMg) count: 4
+Jahnsite-(NaMnMg) count: 3
+Jahnsite-(MnMnMg) count: 2
+Jahnsite-(CaFeMg) count: 2
+Jahnsite-(MnMnFe) count: 2
+Jahnsite-(MnMnZn) count: 1
+Jahnsite-(NaMnMn) count: 1
+Jahnsite-(CaMnZn) count: 1
+group: 53039 , count: 76
+200
+Alluaudite Group count: 6
+Wyllieite Group count: 1
+Bobfergusonite Group count: 0
+Manitobaite Group count: 0
+Johanngeorgenstadtite count: 1
+Manganobadalovite count: 1
+Manganohatertite count: 1
+group: 53044 , count: 9
+200
+Sopcheite count: 45
+Telargpalite count: 32
+Temagamite count: 44
+group: 53066 , count: 91
+200
+Bobfergusonite count: 3
+Ferrobobfergusonite count: 2
+group: 53088 , count: 5
+200
+Giessenite count: 27
+Izoklakeite count: 36
+Kobellite count: 126
+Tintinaite count: 40
+group: 53092 , count: 171
+200
+group: 53134 , count: 0
+200
+group: 53177 , count: 0
+200
+Aravaite count: 1
+Zadovite Group count: 0
+Arctite Group  count: 0
+group: 53194 , count: 1
+200
+Zadovite count: 5
+Aradite count: 3
+Gazeevite count: 5
+Stracherite count: 2
+group: 53195 , count: 11
+200
+Chlorophoenicite count: 5
+Jarosewichite count: 2
+Magnesiochlorophoenicite count: 3
+Mineral E (of Dunn, et. al., 1982) count: 1
+Peterchinite count: 1
+group: 53332 , count: 6
+200
+Selenium count: 173
+Tellurium count: 259
+group: 53339 , count: 420
+200
+Ludlamite count: 77
+Metaswitzerite count: 28
+Sterlinghillite count: 3
+Switzerite count: 31
+group: 53340 , count: 108
+200
+Calomel count: 105
+Kuzminite count: 4
+Moschelite count: 2
+group: 53342 , count: 107
+200
+Celadonite count: 419
+Aluminoceladonite count: 27
+Ferroaluminoceladonite count: 10
+Ferroceladonite count: 13
+Chromceladonite count: 4
+Manganiceladonite count: 1
+Unnamed (V-analogue of Celadonite) count: 1
+group: 53390 , count: 456
+200
+Boromuscovite count: 7
+Glauconite count: 579
+Muscovite count: 21267
+Nanpingite count: 11
+Paragonite count: 396
+Roscoelite count: 286
+Tobelite count: 12
+Chromphyllite count: 6
+Natro-glauconite count: 0
+Celadonite Subgroup count: 0
+group: 53391 , count: 22053
+200
+Biotite count: 12196
+Ephesite count: 24
+Hendricksite count: 12
+Lepidolite count: 950
+Masutomilite count: 15
+Norrishite count: 9
+Polylithionite count: 129
+Preiswerkite count: 17
+Wonesite count: 7
+Zinnwaldite count: 316
+Tainiolite count: 49
+Trilithionite count: 41
+Shirokshinite count: 2
+Shirozulite count: 2
+Sokolovaite count: 7
+Aspidolite count: 16
+Suhailite count: 2
+Orlovite count: 1
+Balestraite count: 1
+Garmite count: 1
+Kreiterite count: 1
+group: 53393 , count: 13094
+200
+group: 53533 , count: 0
+200
+Ktenasite count: 112
+Gobelinite count: 3
+Unnamed (Zn-analogue of Ktenasite) count: 3
+Fehrite count: 2
+Asagiite count: 2
+group: 53540 , count: 118
+200
+group: 53584 , count: 0
+200
+group: 53585 , count: 0
+200
+Calcioferrite Subgroup count: 0
+Montgomeryite Subgroup count: 0
+group: 53587 , count: 0
+200
+Berndtite count: 14
+Kitkaite count: 2
+Melonite count: 259
+Merenskyite count: 211
+Moncheite count: 187
+Shuangfengite count: 5
+Sudovikovite count: 3
+group: 53591 , count: 501
+200
+Canasite count: 7
+Frankamenite count: 5
+Fluorcanasite count: 1
+group: 53600 , count: 11
+200
+Burbankite count: 88
+Calcioburbankite count: 5
+Khanneshite count: 10
+Petersenite-(Ce) count: 4
+Rémondite-(Ce) count: 8
+Rémondite-(La) count: 3
+Sanrománite count: 3
+Lishiite count: 1
+group: 53629 , count: 97
+200
+Calciohilairite count: 11
+Hilairite count: 26
+Komkovite count: 1
+Sazykinaite-(Y) count: 4
+Pyatenkoite-(Y) count: 3
+group: 53630 , count: 34
+200
+group: 53845 , count: 0
+200
+Manitobaite count: 1
+group: 53888 , count: 1
+200
+Hjalmarite count: 3
+group: 53896 , count: 3
+200
+Delhayelite count: 14
+Hydrodelhayelite count: 4
+Monteregianite-(Y) count: 1
+Rhodesite count: 12
+Fivegite count: 1
+Melansonite count: 1
+Natromelansonite count: 1
+group: 54045 , count: 26
+200
+Marokite count: 9
+Xieite count: 3
+Harmunite count: 8
+Wernerkrauseite count: 1
+Chenmingite count: 2
+Tschaunerite count: 1
+Ellinaite count: 4
+group: 54112 , count: 26
+200
+Walentaite Subgroup count: 0
+Halilsarpite Subgroup count: 0
+group: 54371 , count: 0
+200
+Walentaite count: 6
+Natrowalentaite count: 1
+group: 54372 , count: 6
+200
+Halilsarpite count: 1
+group: 54373 , count: 1
+200
+Shuiskite-(Mg) count: 3
+Shuiskite-(Cr) count: 2
+group: 54392 , count: 4
+200
+Chabournéite count: 5
+Dalnegroite count: 3
+Protochabournéite count: 2
+Shimenite count: 1
+Dewitite count: 4
+Vallouiseite count: 1
+group: 54441 , count: 8
+200
+group: 54586 , count: 0
+200
+group: 54660 , count: 0
+200
+group: 54908 , count: 0
+200
+Giraudite-(Zn) count: 10
+group: 54911 , count: 10
+200
+Goldfieldite count: 96
+Stibiogoldfieldite count: 3
+Arsenogoldfieldite count: 2
+group: 54912 , count: 96
+200
+Hakite-(Hg) count: 16
+Hakite-(Zn) count: 2
+Hakite-(Cd) count: 3
+Hakite-(Fe) count: 1
+group: 54913 , count: 17
+200
+Rozhdestvenskayaite-(Zn) count: 5
+UM1992-21-S:AgFeSb count: 1
+Kenorozhdestvenskayaite-(Fe) count: 1
+group: 54914 , count: 7
+200
+Argentotennantite-(Zn) count: 20
+Unnamed (Fe-analogue of Argentotennantite-(Zn)) count: 1
+Kenoargentotennantite-(Fe) count: 1
+group: 54915 , count: 22
+200
+Biraite-(Ce) count: 3
+Alexkuznetsovite-(La) count: 1
+Alexkuznetsovite-(Ce) count: 1
+Biraite-(La) count: 1
+group: 55035 , count: 3
+200
+Margarosanite count: 9
+Walstromite count: 20
+Breyite count: 3
+group: 55046 , count: 31
+200
+group: 55047 , count: 0
+200
+Pascoite Group count: 4
+Lasalite Group count: 0
+group: 55048 , count: 4
+200
+Cerite Group count: 1
+Merrillite Group count: 0
+Karwowskiite count: 1
+Nipeiite-(Ce) count: 2
+group: 55118 , count: 4
+200
+Merrillite count: 264
+Ferromerrillite count: 5
+Matyhite count: 1
+Keplerite count: 5
+group: 55119 , count: 270
+200
+group: 55138 , count: 0
+200
+group: 55146 , count: 0
+200
+Donnayite-(Y) count: 15
+Ewaldite count: 9
+Mckelveyite-(Nd) count: 2
+Mckelveyite-(Y) count: 13
+Weloganite count: 6
+Alicewilsonite-(YCe) count: 3
+Bainbridgeite-(YCe) count: 1
+Alicewilsonite-(YLa) count: 1
+Bainbridgeite-(NdCe) count: 1
+group: 55239 , count: 29
+200
+group: 55264 , count: 0
+200
+group: 55336 , count: 0
+200
+Nordite Group count: 0
+Meieranite count: 1
+group: 55387 , count: 1
+200
+group: 55477 , count: 0
+200
+Zvěstovite-(Zn) count: 2
+Zvěstovite-(Fe) count: 1
+group: 55558 , count: 3
+200
+group: 55584 , count: 0
+200
+Arctite count: 6
+Nabimusaite count: 9
+Dargaite count: 1
+Ariegilatite count: 2
+group: 55634 , count: 16
+200
+group: 55671 , count: 0
+200
+group: 55672 , count: 0
+200
+group: 55673 , count: 0
+200
+Pentlandite Group count: 1
+Kuvaevite Group count: 0
+group: 55679 , count: 1
+200
+Kuvaevite count: 2
+Torryweiserite count: 2
+Tamuraite count: 1
+Ferrotorryweiserite count: 5
+group: 55680 , count: 6
+200
+Markeyite count: 1
+Pseudomarkeyite count: 1
+Natromarkeyite count: 1
+Paramarkeyite count: 1
+group: 55682 , count: 1
+200
+Calzirtite count: 45
+Tazheranite count: 17
+Hiärneite count: 1
+group: 55699 , count: 55
+200
+group: 55701 , count: 0
+200
+group: 55729 , count: 0
+200
+Rhabdoborite-(V) count: 1
+Rhabdoborite-(W) count: 1
+Rhabdoborite-(Mo) count: 1
+group: 55730 , count: 1
+200
+Aphthitalite count: 108
+group: 55731 , count: 108
+200
+group: 55740 , count: 0
+200
+Whitlockite Subgroup count: 1
+Merrillite Subgroup count: 0
+Deynekoite count: 1
+Changesite–(Y) count: 1
+group: 55746 , count: 3
+200
+Kristiansenite count: 9
+Silesiaite count: 3
+Kozłowskiite count: 1
+group: 55753 , count: 10
+200
+Stibioústalečite count: 1
+Arsenoústalečite count: 1
+group: 55770 , count: 1
+200
+group: 55809 , count: 0
+200
+Liguowuite count: 1
+group: 55904 , count: 1
+200
+group: 55907 , count: 0
+200
+Armalcolite count: 48
+Pseudobrookite count: 212
+Ferropseudobrookite count: 7
+Griffinite count: 2
+Sassite count: 1
+group: 55975 , count: 259
+200
+Malhmoodite count: 8
+Zigrasite count: 1
+group: 55995 , count: 9
+200
+Florenskyite count: 2
+Allabogdanite count: 5
+Andreyivanovite count: 4
+Nickolayite count: 2
+Grammatikopoulosite count: 1
+group: 56001 , count: 11
+200
+group: 56008 , count: 0
+200
+group: 56009 , count: 0
+200
+group: 56010 , count: 0
+200
+group: 56011 , count: 0
+200
+Dongchuanite count: 2
+Cuprodongchuanite count: 2
+Cuprozheshengite count: 2
+Zheshengite count: 1
+group: 56017 , count: 3
+200
+Magnesiohögbomite-2N3S count: 5
+Magnesiohögbomite-2N2S count: 1
+Magnesiohögbomite-2N4S count: 1
+Magnesiohögbomite-6N12S count: 2
+group: 56065 , count: 8
+200
+Ferrohögbomite-2N2S count: 12
+Ferrohögbomite-6N12S count: 1
+group: 56066 , count: 13
+200
+Zincohögbomite-2N2S count: 3
+Zincohögbomite-2N6S count: 3
+group: 56067 , count: 6
+200
+Ferronigerite-2N1S count: 20
+Ferronigerite-6N6S count: 4
+group: 56068 , count: 22
+200
+Magnesionigerite-6N6S count: 2
+Magnesionigerite-2N1S count: 1
+group: 56069 , count: 2
+200
+Zinconigerite-2N1S count: 6
+Zinconigerite-6N6S count: 3
+group: 56070 , count: 9
+200
+Magnesiotaaffeite-6N’3S count: 11
+Magnesiotaaffeite-2N’2S count: 20
+Magnesiotaaffeite-2N’2S2 count: 1
+group: 56071 , count: 28
+200
+Ferrotaaffeite-6N'3S count: 1
+Ferrotaaffeite-2N’2S count: 1
+group: 56072 , count: 2
+200
+group: 56073 , count: 0
+200
+group: 56074 , count: 0
+200
+Samarskite Group count: 2
+Wolframite Group count: 2533
+Columbite Group count: 45
+Wodginite Group count: 2
+Ixiolite Group count: 0
+group: 56150 , count: 2577
+200
+Ixiolite-(Fe2+) count: 1
+Ixiolite-(Mn2+) count: 4
+Nioboixiolite-(Mn2+) count: 1
+Nioboixiolite-([]) count: 1
+group: 56151 , count: 6
+200
+Paulingite-Ca count: 2
+Paulingite-K count: 8
+Paulingite-Na count: 1
+group: 470364 , count: 10
+200
+group: 470375 , count: 0
+200
+group: 470517 , count: 0
+200
+Gaidonnayite count: 34
+Plumbogaidonnayite count: 1
+group: 470606 , count: 35
+200
+Akrochordite count: 5
+Guanacoite count: 4
+Vargite count: 1
+group: 470609 , count: 9
+200
+Aliettite count: 9
+Corrensite count: 84
+Rectorite count: 51
+Tosudite count: 40
+Glaucony count: 0
+group: 470677 , count: 179
+200
+Kalistrontite count: 14
+Palmierite count: 16
+group: 470785 , count: 30
+200
+Tuite count: 13
+Gurimite count: 5
+Mazorite count: 2
+group: 470786 , count: 19
+200
+Palmierite Group count: 0
+Tuite Group count: 0
+group: 470787 , count: 0
+200
+Minium count: 309
+Schafarzikite count: 14
+Trippkeite count: 8
+Igelströmite count: 1
+Manganoschafarzikite count: 1
+group: 470788 , count: 331
+200
+Cerite-(CeCa) count: 64
+Ferricerite-(LaCa) count: 5
+Aluminocerite-(CeCa) count: 10
+group: 470790 , count: 69
+200
+Taipingite-(CeCa) count: 1
+Aluminotaipingite-(CeCa) count: 2
+group: 470791 , count: 3
+200
+Mantienneite count: 4
+Paulkerrite count: 9
+Benyacarite count: 11
+Pleysteinite count: 1
+Hochleitnerite count: 1
+Rewitzerite count: 1
+Hydroxylbenyacarite count: 1
+Macraeite count: 1
+group: 470826 , count: 22
+200
+group: 470853 , count: 0
+200
+group: 470860 , count: 0
+200
+group: 470867 , count: 0
+200
+group: 470868 , count: 0
+200
+Sterryite count: 6
+Hayyanite count: 1
+group: 470882 , count: 6
+200
+group: 470905 , count: 0
+200
+Bechererite count: 22
+Guarinoite count: 3
+Namuwite count: 87
+Ramsbeckite count: 82
+Gordaite count: 25
+Thérèsemagnanite count: 3
+Osakaite count: 13
+Lahnsteinite count: 7
+Hodgesmithite count: 1
+Haywoodite count: 1
+Hanahanite count: 2
+Tzeferisite count: 1
+group: 470918 , count: 167
+200
+Lazaraskeite count: 1
+Stanevansite count: 1
+Jimkrieghite count: 1
+Lianbinite count: 1
+Glecklerite count: 1
+group: 470942 , count: 1
+200
+Aluminium count: 36
+Lead count: 257
+Nickel count: 83
+group: 470958 , count: 356
+200
+Kozoite-(Nd) count: 5
+Kozoite-(La) count: 5
+group: 471014 , count: 7
+200
+Ancylite Group count: 9
+Kozoite Group count: 0
+group: 471015 , count: 9
+200
+Lucabindiite count: 4
+Torrecillasite count: 1
+Gajardoite count: 1
+Russoite count: 1
+Cuatrocapaite-(NH₄) count: 1
+Cuatrocapaite-(K) count: 1
+Mauriziodiniite count: 1
+Ermakovite count: 1
+Gajardoite-(NH4) count: 1
+group: 471029 , count: 6
+Done
