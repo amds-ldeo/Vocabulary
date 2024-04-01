@@ -1,0 +1,62 @@
+@prefix test1: <https://w3id.org/isample/vocabulary/test/1/> .
+@prefix test2: <https://w3id.org/isample/vocabulary/test/2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+test1:testvocabulary
+    rdf:type skos:ConceptScheme ;
+    skos:definition "Provides a test vocabulary with 33 statements"@en ;
+    skos:prefLabel "test vocabulary"@en ;
+.
+
+test1:rootterm
+    rdf:type skos:Concept ;
+    skos:definition "The root concept of the test vocabulary"@en ;
+    skos:prefLabel "root"@en ;
+    skos:inScheme test1:testvocabulary ;
+    skos:topConceptOf test1:testvocabulary ;
+.
+
+test1:level1a
+    rdf:type skos:Concept ;
+    skos:inScheme test1:testvocabulary ;
+    skos:definition "A term once removed from root"@en ;
+    skos:prefLabel "level1a"@en ;
+    skos:broader test1:rootterm ;
+.
+
+test1:level1b
+    rdf:type skos:Concept ;
+    skos:inScheme test1:testvocabulary ;
+    skos:definition "A term once removed from root"@en ;
+    skos:prefLabel "level1b"@en ;
+    skos:broader test1:rootterm ;
+.
+
+test1:level2aa
+    rdf:type skos:Concept ;
+    skos:inScheme test1:testvocabulary ;
+    skos:definition "A term twice removed from root"@en ;
+    skos:prefLabel "level2aa"@en ;
+    skos:broader test1:level1a ;
+.
+
+test1:level2ab
+    rdf:type skos:Concept ;
+    skos:inScheme test1:testvocabulary ;
+    skos:definition "A term twice removed from root"@en ;
+    skos:prefLabel "level2ab"@en ;
+    skos:broader test1:level1a ;
+.
+
+test2:level11
+    rdf:type skos:Concept ;
+    skos:inScheme test2:testvocabulary ;
+    skos:definition "A term in another vocabulary referencing test1"@en ;
+    skos:prefLabel "level11"@en ;
+    skos:broader test1:rootterm ;
+.
+
+
