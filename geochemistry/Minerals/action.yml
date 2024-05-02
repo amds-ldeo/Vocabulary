@@ -1,0 +1,40 @@
+# action.yml
+# see https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions
+#  for information on how this works
+
+name: 'Vocabulary Action'
+author: 'Danny Mandel (danny.mandel@gmail.com),
+         Dave Vieglais( https://orcid.org/0000-0002-6513-4996), 
+         Stephen M Richard (https://orcid.org/0000-0001-6041-5302)'
+description: 'creates a docker container to run python routines that 
+       1) load skos (rdf/turtle) vocabularies into an sqlAlchmey
+       2) generate markdown from the skos vocabularies using Quarto markdown'
+inputs:
+  action:  
+    description: 'Which action to run -- defaults to uijson'
+    required: true
+    default: 'uijson'
+  path: 
+    description: 'Path to the output directory for script output'
+    required: true
+  inputttl:
+    description: 'list of skos rdf/turtle files **without** the .ttl extension'
+    required: true
+  inputvocaburi:
+    description: 'list of ConceptScheme URIs for the skos vocabularies in this repo. 
+                   The URIs will be matched with the SKOS files based on order'
+    required: true
+
+runs:   # see https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runs-for-docker-container-actions
+        #   for documentation
+  using: 'docker'
+  image: './Dockerfile'
+  # To access the environment variable in a Docker container action, you must pass
+  #  the input using the args keyword in the action.yml metadata file.
+  #  For more information about the action metadata file for Docker container actions,
+  #  see "Creating a Docker container action."
+  args:
+    - ${{ inputs.action }}
+    - ${{ inputs.path }}
+    - ${{ inputs.inputttl }}
+    - ${{ inputs.inputvocaburi }}
