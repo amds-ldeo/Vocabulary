@@ -47,7 +47,7 @@ logging_config = {
     "handlers": {
         "console": {
             "class": "logging.StreamHandler",
-            "level": "DEBUG",
+            "level": "INFO",
             "formatter": "standard",
             "stream": "ext://sys.stderr",
         },
@@ -84,7 +84,10 @@ NS = {
     "owl": "http://www.w3.org/2002/07/owl#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "obo": "http://purl.obolibrary.org/obo/",
-    "dcterm": "http://purl.org/dc/terms/"
+    "dcterm": "http://purl.org/dc/terms/",
+    "gcmin": "https://w3id.org/geochem/1.0/min/",
+    "grup": "https://w3id.org/geochem/1.0/mingroup/",
+    "strunz": "https://w3id.org/geochem/1.0/strunzgroup/"
 }
 
 PFX = """
@@ -110,6 +113,16 @@ def rdfsT(term):
 
 def dctT(term):
     return rdflib.URIRef(f"{NS['dcterm']}{term}")
+
+def gcminT(term):
+    return rdflib.URIRef(f"{NS['gcmin']}{term}")
+
+def grupT(term):
+    return rdflib.URIRef(f"{NS['grup']}{term}")
+
+def strunzT(term):
+    return rdflib.URIRef(f"{NS['strunz']}{term}")
+
 
 
 def listVocabularies(g):
@@ -154,15 +167,15 @@ def getObjects(g, s, p):
 #        L.debug(f"vocab2md/getObjects: {prefix}: {ns_url}")
     q = rdflib.plugins.sparql.prepareQuery(PFX + """SELECT ?o WHERE {?subject ?predicate ?o .}""")
 #    q = rdflib.plugins.sparql.prepareQuery("SELECT ?o WHERE {?subject ?predicate ?o .}", initNs=test)
-    L.debug(f"getObject prefixes: {PFX}\n")
-    L.debug(f"getObject subject: {s}\n")
-    L.debug(f"getObject predicate: {p}\n")
+    L.debug(f"getObjects prefixes: {PFX}\n")
+    L.debug(f"getObjects subject: {s}\n")
+    L.debug(f"getObjects predicate: {p}\n")
     qres = g.query(q, initBindings={'subject': s, 'predicate': p})
     L.debug(f"length of qres: {len(qres)}\n", )
     L.debug(f"qres: {qres}\n")
     res = []
     for row in qres:
-        L.debug(f"getObject: {row[0]}\n")
+        L.debug(f"getObjects: {row[0]}\n")
         res.append(row[0])
     return res
 
@@ -274,9 +287,24 @@ def describeTerm(g, t, depth=0, level=1):
             res.append(f"{source}{delimiter}")
         res.append("")
 
-    res.append(f"- Concept URI token: {t.split('/')[-1]}")
+#    res.append(f"- Concept URI token: {t.split('/')[-1]}")
+    res.append(f"- Concept URI: {t}")
     res.append("")
 
+#mineral data
+    imachem = getObjects(g, t, gcminT('imachemistry'))
+    rruffchemistry = getObjects(g,t,gcminT('rruffchemistry'))
+
+    if len(imachem) > 0:
+        res.append(f"- IMA chemistry: {str(imachem[0])}")
+        res.append("")
+    elif len(rruffchemistry) > 0:
+        res.append(f"- RRUFF chemistry: {str(rruffchemistry[0])}")
+        res.append("")
+    mdurl = getObjects(g, t, gcminT('mindaturl'))
+    if len(mdurl) > 0:
+        res.append(f"- MinDat URL: {str(mdurl[0])}")
+        res.append("")
     return res
 
 
@@ -437,7 +465,6 @@ def main(source, vocabulary):
             print(line)
     return 0
     
-
 
 if __name__ == "__main__":
     sys.exit(main())
