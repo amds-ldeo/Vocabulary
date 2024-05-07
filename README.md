@@ -27,4 +27,4 @@ Vocabulary of categories of meteorites and lunar materials.
 
 ### Minerals
 Draft vocabulary for mineral species. Information pulled from Wikipedia, RRUFF, and MinDat.  Includes hierarchy from Strunz classes and Mindat mineral groups. 
-- [HTML view of Mineral vocabular]( https://amds-ldeo.github.io/Vocabulary/geochemistry/html/mineralSKOS.html)
+- [HTML view of Mineral vocabulary]( https://amds-ldeo.github.io/Vocabulary/geochemistry/html/mineralSKOS.html).  This is a big file, takes awhile to load. 
