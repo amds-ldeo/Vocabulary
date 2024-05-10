@@ -28,7 +28,6 @@ Namespace:
 **History**
 
 * 2024-03-20 S.M. Richard.  Draft generated, 
-* based on 'Geoscience Ontology, Minerals', Brodaric, B., and Richard, S.M., 2021, The GeoScience Ontology Reference: Geological Survey of Canada Open File 8796, 34 p., https://doi.org/10.4095/328296.  Mineral names from RRUFF, with various properties from RRUFF, also Wikipedia scraped properties and links, joined by name with RRUFF plain string names.  Mindatid numbers are the group identifier tokens. The concept scheme includes the base scheme with mineral species, and includes (via skos:inScheme) a scheme for Strunz mineral classes and a scheme for mineral groups as defined in MinDat.
 * 2024-05-06 update with classes to group solid solution series, especially for complex REE minerals.
 * Initial compliation from 'Geoscience Ontology, Minerals', Brodaric, B., and Richard, S.M., 2021, The GeoScience Ontology Reference: Geological Survey of Canada Open File 8796, 34 p., https://doi.org/10.4095/328296.  Mineral names from RRUFF, with various properties from RRUFF, also Wikipedia scraped properties and links, joined by name with RRUFF plain string names.  Updated from Mindat using API to get groups and missing minerals.  Some minerals with only one reported occurrence have bee left out. Mindatid numbers are the group identifier tokens. The concept scheme includes the base scheme with mineral species, and includes (via skos:inScheme) a scheme for Strunz mineral classes and a scheme for mineral groups as defined in MinDat.
 
@@ -74,22 +73,15 @@ Namespace:
     - [Apatite Supergroup](#274)
         - [Vanackerite](#vanackerite)
         - [Britholite Group](#31542)
-            - [Britholite-(Ce)](#britholite-ce)
-            - [Britholite-(Y)](#britholite-y)
-            - [Calciobritholite](#calciobritholite)
-            - [Fluorbritholite-(Ce)](#fluorbritholite-ce)
-            - [Fluorbritholite-(Nd)](#fluorbritholite-nd)
-            - [Fluorbritholite-(Y)](#fluorbritholite-y)
-            - [Fluorcalciobritholite](#fluorcalciobritholite)
-            - [Tritomite-(Ce)](#tritomite-ce)
-            - [Tritomite-(Y)](#tritomite-y)
             - [Britholite](#britholite)
                 - [Britholite-(Ce)](#britholite-ce)
                 - [Britholite-(Y)](#britholite-y)
+            - [Calciobritholite](#calciobritholite)
             - [Fluorbritholite](#fluorbritholite)
                 - [Fluorbritholite-(Ce)](#fluorbritholite-ce)
                 - [Fluorbritholite-(Nd)](#fluorbritholite-nd)
                 - [Fluorbritholite-(Y)](#fluorbritholite-y)
+            - [Fluorcalciobritholite](#fluorcalciobritholite)
             - [Tritomite](#tritomite)
                 - [Tritomite-(Ce)](#tritomite-ce)
                 - [Tritomite-(Y)](#tritomite-y)
@@ -226,10 +218,11 @@ Namespace:
             - [Benauite](#benauite)
             - [Crandallite](#crandallite)
             - [Eylettersite](#eylettersite)
-            - [Florencite-(Ce)](#florencite-ce)
-            - [Florencite-(La)](#florencite-la)
-            - [Florencite-(Nd)](#florencite-nd)
-            - [Florencite-(Sm)](#florencite-sm)
+            - [Florencite](#florencite)
+                - [Florencite-(Ce)](#florencite-ce)
+                - [Florencite-(La)](#florencite-la)
+                - [Florencite-(Nd)](#florencite-nd)
+                - [Florencite-(Sm)](#florencite-sm)
             - [Galloplumbogummite](#galloplumbogummite)
             - [Gorceixite](#gorceixite)
             - [Goyazite](#goyazite)
@@ -238,11 +231,6 @@ Namespace:
             - [Springcreekite](#springcreekite)
             - [Waylandite](#waylandite)
             - [Zaïrite](#zairite)
-            - [Florencite](#florencite)
-                - [Florencite-(Ce)](#florencite-ce)
-                - [Florencite-(La)](#florencite-la)
-                - [Florencite-(Nd)](#florencite-nd)
-                - [Florencite-(Sm)](#florencite-sm)
         - [Beudantite Group](#29276)
             - [Beudantite](#beudantite)
             - [Corkite](#corkite)
@@ -273,21 +261,17 @@ Namespace:
             - [Walthierite](#walthierite)
         - [Dussertite Group](#43765)
             - [Arsenocrandallite](#arsenocrandallite)
-            - [Arsenoflorencite-(Ce)](#arsenoflorencite-ce)
-            - [Arsenoflorencite-(La)](#arsenoflorencite-la)
-            - [Arsenogorceixite](#arsenogorceixite)
-            - [Arsenogoyazite](#arsenogoyazite)
-            - [Dussertite](#dussertite)
-            - [Graulichite-(Ce)](#graulichite-ce)
-            - [Graulichite-(La)](#graulichite-la)
-            - [Philipsbornite](#philipsbornite)
-            - [Segnitite](#segnitite)
             - [Arsenoflorencite](#arsenoflorencite)
                 - [Arsenoflorencite-(Ce)](#arsenoflorencite-ce)
                 - [Arsenoflorencite-(La)](#arsenoflorencite-la)
+            - [Arsenogorceixite](#arsenogorceixite)
+            - [Arsenogoyazite](#arsenogoyazite)
+            - [Dussertite](#dussertite)
             - [Graulichite](#graulichite)
                 - [Graulichite-(Ce)](#graulichite-ce)
                 - [Graulichite-(La)](#graulichite-la)
+            - [Philipsbornite](#philipsbornite)
+            - [Segnitite](#segnitite)
     - [Copper Group](#32720)
         - [Copper](#copper)
         - [Gold](#gold)
@@ -410,14 +394,6 @@ Namespace:
                 - [Homilite](#homilite)
             - [Gadolinite Subgroup](#50363)
                 - [Calcybeborosilite-(Y)](#calcybeborosilite-y)
-                - [Gadolinite-(Ce)](#gadolinite-ce)
-                - [Gadolinite-(Nd)](#gadolinite-nd)
-                - [Gadolinite-(Y)](#gadolinite-y)
-                - [Hingganite-(Ce)](#hingganite-ce)
-                - [Hingganite-(Nd)](#hingganite-nd)
-                - [Hingganite-(Y)](#hingganite-y)
-                - [Hingganite-(Yb)](#hingganite-yb)
-                - [Minasgeraisite-(Y)](#minasgeraisite-y)
                 - [Gadolinite](#gadolinite)
                     - [Gadolinite-(Ce)](#gadolinite-ce)
                     - [Gadolinite-(Nd)](#gadolinite-nd)
@@ -427,6 +403,7 @@ Namespace:
                     - [Hingganite-(Nd)](#hingganite-nd)
                     - [Hingganite-(Y)](#hingganite-y)
                     - [Hingganite-(Yb)](#hingganite-yb)
+                - [Minasgeraisite-(Y)](#minasgeraisite-y)
         - [Herderite Group](#50361)
             - [Drugmanite Subgroup](#50358)
                 - [Drugmanite](#drugmanite)
@@ -1219,6 +1196,7 @@ Namespace:
                     - [Andrieslombaardite](#andrieslombaardite)
                     - [Changchengite](#changchengite)
                     - [Cobaltite](#cobaltite)
+                    - [Gersdorffite](#gersdorffite)
                     - [Hollingworthite](#hollingworthite)
                     - [Irarsite](#irarsite)
                     - [Jolliffeite](#jolliffeite)
@@ -1232,7 +1210,6 @@ Namespace:
                     - [Tolovkite](#tolovkite)
                     - [Ullmannite](#ullmannite)
                     - [Willyamite](#willyamite)
-                    - [Gersdorffite](#gersdorffite)
                 - [Löllingite Group](#29303)
                     - [Alloclasite](#alloclasite)
                     - [Anduoite](#anduoite)
@@ -1369,30 +1346,19 @@ Namespace:
             - [Strunz 02.GB Neso-sulfarsenite with additional S](#s02_gb)
                 - [Selenostephanite](#selenostephanite)
                 - [Stephanite](#stephanite)
-                - [Freibergite Subgroup](#1605)
-                    - [Argentotetrahedrite-(Fe)](#argentotetrahedrite-fe)
-                    - [Argentotetrahedrite-(Hg)](#argentotetrahedrite-hg)
-                    - [Argentotetrahedrite-(Zn)](#argentotetrahedrite-zn)
-                    - [Kenoargentotetrahedrite-(Fe)](#kenoargentotetrahedrite-fe)
-                    - [Kenoargentotetrahedrite-(Zn)](#kenoargentotetrahedrite-zn)
                 - [Tetrahedrite Group](#29338)
-                    - [Freibergite](#freibergite)
-                    - [Tennantite](#tennantite)
-                    - [Tennantite-(In)](#tennantite-in)
-                    - [Tetrahedrite](#tetrahedrite)
-                    - [Freibergite Subgroup](#1605)
+                    - [Freibergite](#1605)
                         - [Argentotetrahedrite-(Fe)](#argentotetrahedrite-fe)
                         - [Argentotetrahedrite-(Hg)](#argentotetrahedrite-hg)
                         - [Argentotetrahedrite-(Zn)](#argentotetrahedrite-zn)
                         - [Kenoargentotetrahedrite-(Fe)](#kenoargentotetrahedrite-fe)
                         - [Kenoargentotetrahedrite-(Zn)](#kenoargentotetrahedrite-zn)
-                    - [Tennantite Subgroup](#3911)
-                        - [Annivite](#annivite)
+                    - [Tennantite](#3911)
                         - [Tennantite-(Cu)](#tennantite-cu)
                         - [Tennantite-(Fe)](#tennantite-fe)
                         - [Tennantite-(Hg)](#tennantite-hg)
                         - [Tennantite-(Zn)](#tennantite-zn)
-                    - [Tetrahedrite Subgroup](#3924)
+                    - [Tetrahedrite](#3924)
                         - [Argentotetrahedrite](#argentotetrahedrite)
                         - [Tetrahedrite-(Cd)](#tetrahedrite-cd)
                         - [Tetrahedrite-(Cu)](#tetrahedrite-cu)
@@ -1413,24 +1379,10 @@ Namespace:
                     - [Rozhdestvenskayaite Subgroup](#54914)
                         - [Rozhdestvenskayaite-(Zn)](#rozhdestvenskayaite-zn)
                     - [Arsenofreibergite Subgroup](#54915)
-                        - [Argentotennantite](#argentotennantite)
+                        - [Argentotennantite-(Zn)](#argentotennantite-zn)
                     - [Zvěstovite Subgroup](#55558)
                         - [Zvěstovite-(Zn)](#zvestovite-zn)
                     - [Ústalečite Subgroup](#55770)
-                - [Tennantite Subgroup](#3911)
-                    - [Annivite](#annivite)
-                    - [Tennantite-(Cu)](#tennantite-cu)
-                    - [Tennantite-(Fe)](#tennantite-fe)
-                    - [Tennantite-(Hg)](#tennantite-hg)
-                    - [Tennantite-(Zn)](#tennantite-zn)
-                - [Tetrahedrite Subgroup](#3924)
-                    - [Argentotetrahedrite](#argentotetrahedrite)
-                    - [Tetrahedrite-(Cd)](#tetrahedrite-cd)
-                    - [Tetrahedrite-(Cu)](#tetrahedrite-cu)
-                    - [Tetrahedrite-(Fe)](#tetrahedrite-fe)
-                    - [Tetrahedrite-(Hg)](#tetrahedrite-hg)
-                    - [Tetrahedrite-(Mn)](#tetrahedrite-mn)
-                    - [Tetrahedrite-(Zn)](#tetrahedrite-zn)
                 - [Pearceite-Polybasite Group](#40461)
                     - [Argentopearceite](#argentopearceite)
                     - [Benleonardite](#benleonardite)
@@ -1441,22 +1393,6 @@ Namespace:
                     - [Selenopolybasite](#selenopolybasite)
                 - [Galkhaite Group](#51816)
                     - [Galkhaite](#galkhaite)
-                - [Giraudite Subgroup](#54911)
-                    - [Giraudite](#giraudite)
-                - [Goldfieldite Subgroup](#54912)
-                    - [Arsenogoldfieldite](#arsenogoldfieldite)
-                    - [Goldfieldite](#goldfieldite)
-                    - [Stibiogoldfieldite](#stibiogoldfieldite)
-                - [Hakite Subgroup](#54913)
-                    - [Hakite](#hakite)
-                    - [Hakite-(Cd)](#hakite-cd)
-                    - [Hakite-(Zn)](#hakite-zn)
-                - [Rozhdestvenskayaite Subgroup](#54914)
-                    - [Rozhdestvenskayaite-(Zn)](#rozhdestvenskayaite-zn)
-                - [Arsenofreibergite Subgroup](#54915)
-                    - [Argentotennantite](#argentotennantite)
-                - [Zvěstovite Subgroup](#55558)
-                    - [Zvěstovite-(Zn)](#zvestovite-zn)
             - [Strunz 02.GC Poly-sulfarsenite](#s02_gc)
                 - [Debattistiite](#debattistiite)
                 - [Hatchite](#hatchite)
@@ -1791,14 +1727,12 @@ Namespace:
                     - [Frankdicksonite](#frankdicksonite)
                     - [Strontiofluorite](#strontiofluorite)
             - [Strunz 03.AC Simple halides, without H2O, M:X 1:3](#s03_ac)
-                - [Fluocerite-(Ce)](#fluocerite-ce)
-                - [Fluocerite-(La)](#fluocerite-la)
+                - [Fluocerite](#fluocerite)
+                    - [Fluocerite-(Ce)](#fluocerite-ce)
+                    - [Fluocerite-(La)](#fluocerite-la)
                 - [Gananite](#gananite)
                 - [Molysite](#molysite)
                 - [Zharchikhite](#zharchikhite)
-                - [GSO minerals](#fluocerite)
-                    - [Fluocerite-(Ce)](#fluocerite-ce)
-                    - [Fluocerite-(La)](#fluocerite-la)
         - [Strunz 03.B Simple halides, with H2O](#s03_b)
             - [Strunz 03.BA Simple halides, with H2O, M:X 1:<2](#s03_ba)
                 - [Carnallite](#carnallite)
@@ -1988,8 +1922,6 @@ Namespace:
                 - [Terlinguaite](#terlinguaite)
                 - [Vasilyevite](#vasilyevite)
             - [Strunz 03.DE Oxyhalide with Rare-Earth Elements](#s03_de)
-                - [Håleniusite-(Ce)](#haleniusite-ce)
-                - [Håleniusite-(La)](#haleniusite-la)
                 - [Håleniusite](#haleniusite)
                     - [Håleniusite-(Ce)](#haleniusite-ce)
                     - [Håleniusite-(La)](#haleniusite-la)
@@ -2131,6 +2063,9 @@ Namespace:
             - [Strunz 04.BD Oxide, Metal: Oxygen = 3:4 and similar, With only large cations](#s04_bd)
                 - [Minium](#minium)
         - [Strunz 04.C Oxide, Metal: Oxygen = 2: 3,3: 5, and similar](#s04_c)
+            - [Bitikleite Group](#51620)
+                - [Elbrusite](#elbrusite)
+                - [Usturite](#usturite)
             - [Strunz 04.CA Oxide, Metal: Oxygen = 2: 3,3: 5, and similar, With small cations](#s04_ca)
                 - [Byrudite](#byrudite)
             - [Strunz 04.CB Oxide, Metal: Oxygen = 2: 3,3: 5, and similar, With medium-sized cations](#s04_cb)
@@ -2224,8 +2159,9 @@ Namespace:
                     - [Almeidaite](#almeidaite)
                     - [Cleusonite](#cleusonite)
                     - [Crichtonite](#crichtonite)
-                    - [Davidite-(Ce)](#davidite-ce)
-                    - [Davidite-(La)](#davidite-la)
+                    - [Davidite](#davidite)
+                        - [Davidite-(Ce)](#davidite-ce)
+                        - [Davidite-(La)](#davidite-la)
                     - [Dessauite-(Y)](#dessauite-y)
                     - [Gramaccioliite-(Y)](#gramaccioliite-y)
                     - [Haitaite-(La)](#haitaite-la)
@@ -2237,9 +2173,6 @@ Namespace:
                     - [Mianningite](#mianningite)
                     - [Paseroite](#paseroite)
                     - [Senaite](#senaite)
-                    - [Davidite](#davidite)
-                        - [Davidite-(Ce)](#davidite-ce)
-                        - [Davidite-(La)](#davidite-la)
                 - [Magnetoplumbite Group](#29306)
                     - [Yimengite](#yimengite)
                     - [Magnetoplumbite Group](#55418)
@@ -2281,13 +2214,6 @@ Namespace:
                 - [Rutile](#rutile)
                 - [Stishovite](#stishovite)
                 - [Tripuhyite](#tripuhyite)
-            - [Samarskite Group](#39540)
-                - [Calciosamarskite](#calciosamarskite)
-                - [Ishikawaite](#ishikawaite)
-                - [Samarskite-(Y)](#samarskite-y)
-                - [Samarskite-(Yb)](#samarskite-yb)
-                - [Srilankite](#srilankite)
-                - [Yttrotantalite-(Y)](#yttrotantalite-y)
             - [Wodginite Group](#46759)
                 - [Achalaite](#achalaite)
                 - [Ferrotitanowodginite](#ferrotitanowodginite)
@@ -2314,16 +2240,11 @@ Namespace:
                     - [Rossovskyite](#rossovskyite)
                     - [Sanmartinite](#sanmartinite)
                 - [Columbite Group](#41586)
-                    - [Columbite-(Mg)](#columbite-mg)
-                    - [Columbite-(Mn)](#columbite-mn)
-                    - [Qitianlingite](#qitianlingite)
-                    - [Tantalite-(Fe)](#tantalite-fe)
-                    - [Tantalite-(Mg)](#tantalite-mg)
-                    - [Tantalite-(Mn)](#tantalite-mn)
                     - [Columbite](#columbite)
                         - [Columbite-(Fe)](#columbite-fe)
                         - [Columbite-(Mg)](#columbite-mg)
                         - [Columbite-(Mn)](#columbite-mn)
+                    - [Qitianlingite](#qitianlingite)
                     - [Tantalite](#tantalite)
                         - [Tantalite-(Fe)](#tantalite-fe)
                         - [Tantalite-(Mg)](#tantalite-mg)
@@ -2338,7 +2259,6 @@ Namespace:
                     - [Titanowodginite](#titanowodginite)
                     - [Wodginite](#wodginite)
                 - [Ixiolite Group](#56151)
-                    - [Ixiolite-(Mn2+)](#ixiolite-mn2)
                     - [Ixiolite](#ixiolite)
             - [Strunz 04.DA Oxide, Metal: Oxygen = 1:2 and similar, With small cations: Silica family](#s04_da)
                 - [Chibaite](#chibaite)
@@ -2358,17 +2278,16 @@ Namespace:
                 - [Calciosamarskite](#calciosamarskite)
                 - [Carmichaelite](#carmichaelite)
                 - [Cassiterite](#cassiterite)
-                - [Columbite-(Fe)](#columbite-fe)
                 - [Ferrotitanowodginite](#ferrotitanowodginite)
                 - [Ferrowodginite](#ferrowodginite)
                 - [Ishikawaite](#ishikawaite)
-                - [Ixiolite](#ixiolite)
                 - [Lithiotantite](#lithiotantite)
                 - [Lithiowodginite](#lithiowodginite)
                 - [Plattnerite](#plattnerite)
                 - [Pyrolusite](#pyrolusite)
                 - [Rutile](#rutile)
                 - [Samarskite-(Y)](#samarskite-y)
+                - [Samarskite-(Yb)](#samarskite-yb)
                 - [Scrutinyite](#scrutinyite)
                 - [Srilankite](#srilankite)
                 - [Tantalowodginite](#tantalowodginite)
@@ -2379,7 +2298,7 @@ Namespace:
                 - [Varlamoffite](#varlamoffite)
                 - [Wodginite](#wodginite)
                 - [Yttrocolumbite-(Y)](#yttrocolumbite-y)
-                - [Tapiolite Group](#29336)
+                - [Tapiolite](#29336)
                     - [Tapiolite-(Fe)](#tapiolite-fe)
                     - [Tapiolite-(Mn)](#tapiolite-mn)
                 - [Wolframite Group](#39780)
@@ -2396,16 +2315,11 @@ Namespace:
                     - [Paramontroseite](#paramontroseite)
                     - [Ramsdellite](#ramsdellite)
                 - [Columbite Group](#41586)
-                    - [Columbite-(Mg)](#columbite-mg)
-                    - [Columbite-(Mn)](#columbite-mn)
-                    - [Qitianlingite](#qitianlingite)
-                    - [Tantalite-(Fe)](#tantalite-fe)
-                    - [Tantalite-(Mg)](#tantalite-mg)
-                    - [Tantalite-(Mn)](#tantalite-mn)
                     - [Columbite](#columbite)
                         - [Columbite-(Fe)](#columbite-fe)
                         - [Columbite-(Mg)](#columbite-mg)
                         - [Columbite-(Mn)](#columbite-mn)
+                    - [Qitianlingite](#qitianlingite)
                     - [Tantalite](#tantalite)
                         - [Tantalite-(Fe)](#tantalite-fe)
                         - [Tantalite-(Mg)](#tantalite-mg)
@@ -2414,9 +2328,7 @@ Namespace:
                     - [Byströmite](#bystromite)
                     - [Ordoñezite](#ordonezite)
                 - [Ixiolite Group](#56151)
-                    - [Ixiolite-(Mn2+)](#ixiolite-mn2)
                     - [Ixiolite](#ixiolite)
-                - [Samarskite-(Yb)](#samarskite-yb)
             - [Strunz 04.DC Oxide, Metal: Oxygen = 1:2 and similar, With medium-sized cations; sheets of edge-sharing octahedra](#s04_dc)
                 - [Bahianite](#bahianite)
                 - [Simpsonite](#simpsonite)
@@ -2448,14 +2360,6 @@ Namespace:
                 - [Changbaiite](#changbaiite)
                 - [Murataite-(Y)](#murataite-y)
                 - [Aeschynite Group](#42265)
-                    - [Aeschynite-(Ce)](#aeschynite-ce)
-                    - [Aeschynite-(Nd)](#aeschynite-nd)
-                    - [Aeschynite-(Y)](#aeschynite-y)
-                    - [Nioboaeschynite-(Ce)](#nioboaeschynite-ce)
-                    - [Nioboaeschynite-(Y)](#nioboaeschynite-y)
-                    - [Rynersonite](#rynersonite)
-                    - [Tantalaeschynite-(Y)](#tantalaeschynite-y)
-                    - [Vigezzite](#vigezzite)
                     - [Aeschynite](#aeschynite)
                         - [Aeschynite-(Ce)](#aeschynite-ce)
                         - [Aeschynite-(Nd)](#aeschynite-nd)
@@ -2463,10 +2367,14 @@ Namespace:
                     - [Nioboaeschynite](#nioboaeschynite)
                         - [Nioboaeschynite-(Ce)](#nioboaeschynite-ce)
                         - [Nioboaeschynite-(Y)](#nioboaeschynite-y)
+                    - [Rynersonite](#rynersonite)
+                    - [Tantalaeschynite-(Y)](#tantalaeschynite-y)
+                    - [Vigezzite](#vigezzite)
             - [Strunz 04.DG Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; chains of edge-sharing octahedra](#s04_dg)
-                - [Fergusonite-(Ce)-ß](#fergusonite-ce-beta)
-                - [Fergusonite-(Nd)-ß](#fergusonite-nd-beta)
-                - [Fergusonite-(Y)-ß](#fergusonite-y-beta)
+                - [Clinofergusonite](#clinofergusonite)
+                    - [Fergusonite-(Ce)-ß](#fergusonite-ce-beta)
+                    - [Fergusonite-(Nd)-ß](#fergusonite-nd-beta)
+                    - [Fergusonite-(Y)-ß](#fergusonite-y-beta)
                 - [Raspite](#raspite)
                 - [Yttrotantalite-(Y)](#yttrotantalite-y)
                 - [Foordite Group](#46761)
@@ -2481,10 +2389,6 @@ Namespace:
                     - [Tanteuxenite-(Y)](#tanteuxenite-y)
                     - [Uranopolycrase](#uranopolycrase)
                     - [Yttrocrasite-(Y)](#yttrocrasite-y)
-                - [Clinofergusonite](#clinofergusonite)
-                    - [Fergusonite-(Ce)-ß](#fergusonite-ce-beta)
-                    - [Fergusonite-(Nd)-ß](#fergusonite-nd-beta)
-                    - [Fergusonite-(Y)-ß](#fergusonite-y-beta)
             - [Strunz 04.DH Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; sheets of edge-sharing octahedra](#s04_dh)
                 - [Bindheimite](#bindheimite)
                 - [Brannerite](#brannerite)
@@ -2527,7 +2431,7 @@ Namespace:
                         - [Oxystannomicrolite](#oxystannomicrolite)
                     - [Betafite Group](#29178)
                     - [Pyrochlore Group](#3316)
-                        - [Cerite-(Ce)](#cerite-ce)
+                        - [Ceriopyrochlore](#ceriopyrochlore)
                         - [Fluorcalciopyrochlore](#fluorcalciopyrochlore)
                         - [Fluornatropyrochlore](#fluornatropyrochlore)
                         - [Hydrokenopyrochlore](#hydrokenopyrochlore)
@@ -2538,7 +2442,6 @@ Namespace:
                         - [Hydroxynatropyrochlore](#hydroxynatropyrochlore)
                         - [Hydroxyplumbopyrochlore](#hydroxyplumbopyrochlore)
                         - [Oxycalciopyrochlore](#oxycalciopyrochlore)
-                        - [Ceriopyrochlore](#ceriopyrochlore)
                     - [Roméite Group](#3443)
                         - [Bismutostibiconite](#bismutostibiconite)
                         - [Fluorcalcioroméite](#fluorcalcioromeite)
@@ -2611,6 +2514,10 @@ Namespace:
             - [Tantite](#tantite)
         - [Strunz 04.F Hydroxide (without V or U)](#s04_f)
             - [Daubréeite](#daubreeite)
+            - [Yttrotungstite](#yttrotungstite)
+                - [Yttrotungstite-(Ce)](#yttrotungstite-ce)
+                - [Yttrotungstite-(Nd)](#yttrotungstite-nd)
+                - [Yttrotungstite-(Y)](#yttrotungstite-y)
             - [Strunz 04.FA Hydroxide (without V or U), Hydroxides with OH, without H2O; corner-sharing tetrahedra](#s04_fa)
                 - [Ashoverite](#ashoverite)
                 - [Behoite](#behoite)
@@ -2673,9 +2580,6 @@ Namespace:
                     - [Groutite](#groutite)
                     - [Montroseite](#montroseite)
                     - [Tsumgallite](#tsumgallite)
-                - [Yttrotungstite](#yttrotungstite)
-                    - [Yttrotungstite-(Ce)](#yttrotungstite-ce)
-                    - [Yttrotungstite-(Y)](#yttrotungstite-y)
             - [Strunz 04.FE Hydroxide (without V or U), Hydroxides with OH, without H2O; sheets of edge-sharing octahedra](#s04_fe)
                 - [Bayerite](#bayerite)
                 - [Böhmite](#bohmite)
@@ -3103,12 +3007,10 @@ Namespace:
             - [Strunz 05.AD Carbonate without additional anions, without H2O, With rare-earth elements (REE)](#s05_ad)
                 - [Paratooite-(La)](#paratooite-la)
                 - [Petersenite-(Ce)](#petersenite-ce)
-                - [Rémondite-(Ce)](#remondite-ce)
-                - [Rémondite-(La)](#remondite-la)
-                - [Sahamalite-(Ce)](#sahamalite-ce)
-                - [GSO minerals](#remondite)
+                - [Rémondite](#remondite)
                     - [Rémondite-(Ce)](#remondite-ce)
                     - [Rémondite-(La)](#remondite-la)
+                - [Sahamalite-(Ce)](#sahamalite-ce)
         - [Strunz 05.B Carbonate with additional anions, without H2O](#s05_b)
             - [Strunz 05.BA Carbonate with additional anions, without H2O, With Cu, Co, Ni, Zn, Mg, Mn](#s05_ba)
                 - [Aurichalcite](#aurichalcite)
@@ -3139,49 +3041,40 @@ Namespace:
                 - [Podlesnoite](#podlesnoite)
                 - [Rouvilleite](#rouvilleite)
             - [Strunz 05.BD Carbonate with additional anions, without H2O, With rare earth elements (REE)](#s05_bd)
-                - [Arisite-(Ce)](#arisite-ce)
-                - [Arisite-(La)](#arisite-la)
+                - [Arisite](#arisite)
+                    - [Arisite-(Ce)](#arisite-ce)
+                    - [Arisite-(La)](#arisite-la)
                 - [Cebaite-(Ce)](#cebaite-ce)
                 - [Horváthite-(Y)](#horvathite-y)
-                - [Kukharenkoite-(Ce)](#kukharenkoite-ce)
-                - [Kukharenkoite-(La)](#kukharenkoite-la)
+                - [Kukharenkoite](#kukharenkoite)
+                    - [Kukharenkoite-(Ce)](#kukharenkoite-ce)
+                    - [Kukharenkoite-(La)](#kukharenkoite-la)
                 - [Lukechangite-(Ce)](#lukechangite-ce)
                 - [Qaqarssukite-(Ce)](#qaqarssukite-ce)
                 - [Röntgenite-(Ce)](#rontgenite-ce)
                 - [Synchysite Group](#32183)
                     - [Huanghoite-(Ce)](#huanghoite-ce)
                     - [Hydroxylsynchysite-(Ce)](#hydroxylsynchysite-ce)
-                    - [Synchysite-(Ce)](#synchysite-ce)
-                    - [Synchysite-(Nd)](#synchysite-nd)
-                    - [Synchysite-(Y)](#synchysite-y)
                     - [Synchysite](#synchysite)
                         - [Synchysite-(Ce)](#synchysite-ce)
                         - [Synchysite-(Nd)](#synchysite-nd)
                         - [Synchysite-(Y)](#synchysite-y)
                 - [Bastnäsite Group](#42527)
-                    - [Hydroxylbastnäsite-(Ce)](#hydroxylbastnasite-ce)
-                    - [Hydroxylbastnäsite-(Nd)](#hydroxylbastnasite-nd)
+                    - [Hydroxylbastnäsite](#hydroxylbastnasite)
+                        - [Hydroxylbastnäsite-(Ce)](#hydroxylbastnasite-ce)
+                        - [Hydroxylbastnäsite-(Nd)](#hydroxylbastnasite-nd)
                     - [Thorbastnäsite](#thorbastnasite)
                     - [Bastnäsite](#563)
                         - [Bastnäsite-(Ce)](#bastnasite-ce)
                         - [Bastnäsite-(La)](#bastnasite-la)
                         - [Bastnäsite-(Nd)](#bastnasite-nd)
                         - [Bastnäsite-(Y)](#bastnasite-y)
-                    - [Hydroxylbastnäsite](#hydroxylbastnasite)
-                        - [Hydroxylbastnäsite-(Ce)](#hydroxylbastnasite-ce)
-                        - [Hydroxylbastnäsite-(Nd)](#hydroxylbastnasite-nd)
-                - [Cordylite Group](#43732)
+                - [Cordylite](#43732)
                     - [Cordylite-(Ce)](#cordylite-ce)
                     - [Cordylite-(La)](#cordylite-la)
                 - [Parisite](#7403)
                     - [Parisite-(Ce)](#parisite-ce)
                     - [Parisite-(La)](#parisite-la)
-                - [Arisite](#arisite)
-                    - [Arisite-(Ce)](#arisite-ce)
-                    - [Arisite-(La)](#arisite-la)
-                - [Kukharenkoite](#kukharenkoite)
-                    - [Kukharenkoite-(Ce)](#kukharenkoite-ce)
-                    - [Kukharenkoite-(La)](#kukharenkoite-la)
             - [Strunz 05.BE Carbonate with additional anions, without H2O, With Pb, Bi](#s05_be)
                 - [Abellaite](#abellaite)
                 - [Beyerite](#beyerite)
@@ -3232,9 +3125,10 @@ Namespace:
                 - [Calkinsite-(Ce)](#calkinsite-ce)
                 - [Decrespignyite-(Y)](#decrespignyite-y)
                 - [Galgenbergite-(Ce)](#galgenbergite-ce)
-                - [Lanthanite-(Ce)](#lanthanite-ce)
-                - [Lanthanite-(La)](#lanthanite-la)
-                - [Lanthanite-(Nd)](#lanthanite-nd)
+                - [Lanthanite](#lanthanite)
+                    - [Lanthanite-(Ce)](#lanthanite-ce)
+                    - [Lanthanite-(La)](#lanthanite-la)
+                    - [Lanthanite-(Nd)](#lanthanite-nd)
                 - [Lecoqite-(Y)](#lecoqite-y)
                 - [Shomiokite-(Y)](#shomiokite-y)
                 - [Tengerite Group](#42431)
@@ -3248,22 +3142,14 @@ Namespace:
                     - [Ewaldite](#ewaldite)
                     - [Mckelveyite-(Y)](#mckelveyite-y)
                     - [Weloganite](#weloganite)
-                - [Lanthanite](#lanthanite)
-                    - [Lanthanite-(Ce)](#lanthanite-ce)
-                    - [Lanthanite-(La)](#lanthanite-la)
-                    - [Lanthanite-(Nd)](#lanthanite-nd)
         - [Strunz 05.D Carbonate with additional anions and H2O](#s05_d)
             - [Strunz 05.DA Carbonate with additional anions and H2O, With medium-sized cations](#s05_da)
                 - [Artinite](#artinite)
                 - [Brugnatellite](#brugnatellite)
                 - [Callaghanite](#callaghanite)
-                - [Caresite](#caresite)
-                - [Charmarite](#charmarite)
                 - [Chlorartinite](#chlorartinite)
-                - [Chlormagaluminite](#chlormagaluminite)
                 - [Claraite](#claraite)
                 - [Coalingite](#coalingite)
-                - [Comblainite](#comblainite)
                 - [Desautelsite](#desautelsite)
                 - [Dypingite](#dypingite)
                 - [Giorgiosite](#giorgiosite)
@@ -3277,15 +3163,21 @@ Namespace:
                 - [Marklite](#marklite)
                 - [Otwayite](#otwayite)
                 - [Pyroaurite](#pyroaurite)
-                - [Quintinite](#quintinite)
                 - [Reevesite](#reevesite)
                 - [Scarbroite](#scarbroite)
                 - [Šlikite](#slikite)
                 - [Stichtite](#stichtite)
                 - [Takovite](#takovite)
                 - [Widgiemoolthalite](#widgiemoolthalite)
-                - [Zaccagnaite](#zaccagnaite)
                 - [Zaratite](#zaratite)
+                - [Quintinite Group](#43291)
+                    - [Caresite](#caresite)
+                    - [Charmarite](#charmarite)
+                    - [Chlormagaluminite](#chlormagaluminite)
+                    - [Comblainite](#comblainite)
+                    - [Quintinite](#quintinite)
+                    - [Quintinite-1M](#quintinite-1m)
+                    - [Zaccagnaite](#zaccagnaite)
             - [Strunz 05.DB Carbonate with additional anions and H2O, With large and medium-sized cations](#s05_db)
                 - [Lusernaite-(Y)](#lusernaite-y)
                 - [Montroyalite](#montroyalite)
@@ -3317,12 +3209,6 @@ Namespace:
                     - [Kozoite-(Nd)](#kozoite-nd)
                 - [Ancylite Supergroup](#471015)
                     - [Ancylite Group](#39436)
-                        - [Ancylite-(Ce)](#ancylite-ce)
-                        - [Ancylite-(La)](#ancylite-la)
-                        - [Calcioancylite-(La)](#calcioancylite-la)
-                        - [Calcioancylite-(Nd)](#calcioancylite-nd)
-                        - [Gysinite-(La)](#gysinite-la)
-                        - [Gysinite-(Nd)](#gysinite-nd)
                         - [Ancylite](#ancylite)
                             - [Ancylite-(Ce)](#ancylite-ce)
                             - [Ancylite-(La)](#ancylite-la)
@@ -3764,7 +3650,6 @@ Namespace:
             - [Strunz 07.CB Sulfate, selenate, etc. without additional anions, with H2O, With only medium-sized cations](#s07_cb)
                 - [Alunogen](#alunogen)
                 - [Bonattite](#bonattite)
-                - [Coquimbite Group](#coquimbitegroup)
                 - [Cranswickite](#cranswickite)
                 - [Kornelite](#kornelite)
                 - [Lausenite](#lausenite)
@@ -3962,9 +3847,7 @@ Namespace:
                 - [Edwardsite](#edwardsite)
                 - [Felsobányaite](#felsobanyaite)
                 - [Glaucocerinite](#glaucocerinite)
-                - [Honessite](#honessite)
                 - [Hydrohonessite](#hydrohonessite)
-                - [Hydrowoodwardite](#hydrowoodwardite)
                 - [Kobyashevite](#kobyashevite)
                 - [Kyrgyzstanite](#kyrgyzstanite)
                 - [Langite](#langite)
@@ -3983,10 +3866,13 @@ Namespace:
                 - [Spangolite](#spangolite)
                 - [Torreyite](#torreyite)
                 - [Vonbezingite](#vonbezingite)
-                - [Woodwardite](#woodwardite)
                 - [Wroewolfeite](#wroewolfeite)
                 - [Zincaluminite](#zincaluminite)
-                - [Zincowoodwardite](#zincowoodwardite)
+                - [Woodwardite Group](#42543)
+                    - [Honessite](#honessite)
+                    - [Hydrowoodwardite](#hydrowoodwardite)
+                    - [Woodwardite](#woodwardite)
+                    - [Zincowoodwardite](#zincowoodwardite)
                 - [Wermlandite Group](#43295)
                     - [Motukoreaite](#motukoreaite)
                     - [Natroglaucocerinite](#natroglaucocerinite)
@@ -4163,8 +4049,9 @@ Namespace:
                 - [Lópezite](#lopezite)
         - [Strunz 07.G Molybdate, Wolframate or Niobate](#s07_g)
             - [Strunz 07.GA Molybdate, Wolframate or Niobate, Without additional anions or H2O](#s07_ga)
-                - [Fergusonite-(Ce)](#fergusonite-ce)
-                - [Fergusonite-(Y)](#fergusonite-y)
+                - [Fergusonite](#fergusonite)
+                    - [Fergusonite-(Ce)](#fergusonite-ce)
+                    - [Fergusonite-(Y)](#fergusonite-y)
                 - [Formanite-(Y)](#formanite-y)
                 - [Iwashiroite-(Y)](#iwashiroite-y)
                 - [Paraniite-(Y)](#paraniite-y)
@@ -4175,9 +4062,6 @@ Namespace:
                     - [Scheelite](#scheelite)
                     - [Stolzite](#stolzite)
                     - [Wulfenite](#wulfenite)
-                - [Fergusonite](#fergusonite)
-                    - [Fergusonite-(Ce)](#fergusonite-ce)
-                    - [Fergusonite-(Y)](#fergusonite-y)
             - [Strunz 07.GB Molybdate, Wolframate or Niobate, With additional anions and/or H2O](#s07_gb)
                 - [Anthoinite](#anthoinite)
                 - [Cuprotungstite](#cuprotungstite)
@@ -4352,9 +4236,9 @@ Namespace:
                     - [Wyllieite](#wyllieite)
                 - [Fillowite Group](#36083)
                     - [Chladniite](#chladniite)
+                        - [Stornesite-(Y)](#stornesite-y)
                     - [Fillowite](#fillowite)
                     - [Johnsomervilleite](#johnsomervilleite)
-                    - [Stornesite-(Y)](#stornesite-y)
                 - [Howardevansite Group](#46495)
                     - [Howardevansite](#howardevansite)
                 - [Berzeliite Group](#52729)
@@ -4383,14 +4267,10 @@ Namespace:
                 - [Tetrarooseveltite](#tetrarooseveltite)
                 - [Weilite](#weilite)
                 - [Ximengite](#ximengite)
-                - [Monazite](#2750)
-                    - [Monazite-(Ce)](#monazite-ce)
-                    - [Monazite-(La)](#monazite-la)
-                    - [Monazite-(Nd)](#monazite-nd)
-                    - [Monazite-(Sm)](#monazite-sm)
                 - [Monazite Group](#29313)
-                    - [Gasparite-(Ce)](#gasparite-ce)
-                    - [Gasparite-(La)](#gasparite-la)
+                    - [Gasparite](#gasparite)
+                        - [Gasparite-(Ce)](#gasparite-ce)
+                        - [Gasparite-(La)](#gasparite-la)
                     - [Huttonite](#huttonite)
                     - [Monazite-(Gd)](#monazite-gd)
                     - [Rooseveltite](#rooseveltite)
@@ -4399,18 +4279,9 @@ Namespace:
                         - [Monazite-(La)](#monazite-la)
                         - [Monazite-(Nd)](#monazite-nd)
                         - [Monazite-(Sm)](#monazite-sm)
-                    - [Gasparite](#gasparite)
-                        - [Gasparite-(Ce)](#gasparite-ce)
-                        - [Gasparite-(La)](#gasparite-la)
                 - [Xenotime Group](#31871)
                     - [Chernovite-(Y)](#chernovite-y)
                     - [Pretulite](#pretulite)
-                    - [Wakefieldite-(Ce)](#wakefieldite-ce)
-                    - [Wakefieldite-(La)](#wakefieldite-la)
-                    - [Wakefieldite-(Nd)](#wakefieldite-nd)
-                    - [Wakefieldite-(Y)](#wakefieldite-y)
-                    - [Xenotime-(Y)](#xenotime-y)
-                    - [Xenotime-(Yb)](#xenotime-yb)
                     - [Wakefieldite](#wakefieldite)
                         - [Wakefieldite-(Ce)](#wakefieldite-ce)
                         - [Wakefieldite-(La)](#wakefieldite-la)
@@ -4670,10 +4541,11 @@ Namespace:
                     - [Benauite](#benauite)
                     - [Crandallite](#crandallite)
                     - [Eylettersite](#eylettersite)
-                    - [Florencite-(Ce)](#florencite-ce)
-                    - [Florencite-(La)](#florencite-la)
-                    - [Florencite-(Nd)](#florencite-nd)
-                    - [Florencite-(Sm)](#florencite-sm)
+                    - [Florencite](#florencite)
+                        - [Florencite-(Ce)](#florencite-ce)
+                        - [Florencite-(La)](#florencite-la)
+                        - [Florencite-(Nd)](#florencite-nd)
+                        - [Florencite-(Sm)](#florencite-sm)
                     - [Galloplumbogummite](#galloplumbogummite)
                     - [Gorceixite](#gorceixite)
                     - [Goyazite](#goyazite)
@@ -4682,11 +4554,6 @@ Namespace:
                     - [Springcreekite](#springcreekite)
                     - [Waylandite](#waylandite)
                     - [Zaïrite](#zairite)
-                    - [Florencite](#florencite)
-                        - [Florencite-(Ce)](#florencite-ce)
-                        - [Florencite-(La)](#florencite-la)
-                        - [Florencite-(Nd)](#florencite-nd)
-                        - [Florencite-(Sm)](#florencite-sm)
                 - [Beudantite Group](#29276)
                     - [Beudantite](#beudantite)
                     - [Corkite](#corkite)
@@ -4700,21 +4567,17 @@ Namespace:
                     - [Woodhouseite](#woodhouseite)
                 - [Dussertite Group](#43765)
                     - [Arsenocrandallite](#arsenocrandallite)
-                    - [Arsenoflorencite-(Ce)](#arsenoflorencite-ce)
-                    - [Arsenoflorencite-(La)](#arsenoflorencite-la)
-                    - [Arsenogorceixite](#arsenogorceixite)
-                    - [Arsenogoyazite](#arsenogoyazite)
-                    - [Dussertite](#dussertite)
-                    - [Graulichite-(Ce)](#graulichite-ce)
-                    - [Graulichite-(La)](#graulichite-la)
-                    - [Philipsbornite](#philipsbornite)
-                    - [Segnitite](#segnitite)
                     - [Arsenoflorencite](#arsenoflorencite)
                         - [Arsenoflorencite-(Ce)](#arsenoflorencite-ce)
                         - [Arsenoflorencite-(La)](#arsenoflorencite-la)
+                    - [Arsenogorceixite](#arsenogorceixite)
+                    - [Arsenogoyazite](#arsenogoyazite)
+                    - [Dussertite](#dussertite)
                     - [Graulichite](#graulichite)
                         - [Graulichite-(Ce)](#graulichite-ce)
                         - [Graulichite-(La)](#graulichite-la)
+                    - [Philipsbornite](#philipsbornite)
+                    - [Segnitite](#segnitite)
             - [Strunz 08.BM Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4 = 4:1](#s08_bm)
                 - [Betpakdalite-NaNa](#betpakdalite-nana)
                 - [Brendelite](#brendelite)
@@ -5026,16 +4889,12 @@ Namespace:
                 - [Rhabdophane Group](#29326)
                     - [Brockite](#brockite)
                     - [Grayite](#grayite)
-                    - [Rhabdophane-(Ce)](#rhabdophane-ce)
-                    - [Rhabdophane-(La)](#rhabdophane-la)
-                    - [Rhabdophane-(Nd)](#rhabdophane-nd)
-                    - [Rhabdophane-(Y)](#rhabdophane-y)
-                    - [Tristramite](#tristramite)
                     - [Rhabdophane](#rhabdophane)
                         - [Rhabdophane-(Ce)](#rhabdophane-ce)
                         - [Rhabdophane-(La)](#rhabdophane-la)
                         - [Rhabdophane-(Nd)](#rhabdophane-nd)
                         - [Rhabdophane-(Y)](#rhabdophane-y)
+                    - [Tristramite](#tristramite)
         - [Strunz 08.D Phosphate, etc. with additional anions and H2O](#s08_d)
             - [Mejillonesite](#mejillonesite)
             - [Beraunite Group](#46668)
@@ -5222,23 +5081,11 @@ Namespace:
                 - [Rowleyite](#rowleyite)
                 - [Sailaufite](#sailaufite)
                 - [Xanthoxenite](#xanthoxenite)
-                - [Calcioferrite Subgroup](#29314)
-                    - [Calcioferrite](#calcioferrite)
-                    - [Zodacite](#zodacite)
                 - [Overite Group](#29319)
                     - [Manganosegelerite](#manganosegelerite)
                     - [Overite](#overite)
                     - [Segelerite](#segelerite)
                     - [Wilhelmvierlingite](#wilhelmvierlingite)
-                - [Whiteite Subgroup](#29343)
-                    - [Rittmannite](#rittmannite)
-                    - [Whiteite-(CaFeMg)](#whiteite-cafemg)
-                    - [Whiteite-(CaMgMg)](#whiteite-camgmg)
-                    - [Whiteite-(CaMnMg)](#whiteite-camnmg)
-                    - [Whiteite-(CaMnMn)](#whiteite-camnmn)
-                    - [Whiteite-(MnFeMg)](#whiteite-mnfemg)
-                    - [Whiteite-(MnMnMg)](#whiteite-mnmnmg)
-                    - [Whiteite-(MnMnMn)](#whiteite-mnmnmn)
                 - [Leucophosphite Group](#35756)
                     - [Ammoniotinsleyite](#ammoniotinsleyite)
                     - [Leucophosphite](#leucophosphite)
@@ -5274,17 +5121,6 @@ Namespace:
                     - [Benyacarite](#benyacarite)
                     - [Mantienneite](#mantienneite)
                     - [Paulkerrite](#paulkerrite)
-                - [Jahnsite Subgroup](#53039)
-                    - [Jahnsite-(CaFeMg)](#jahnsite-cafemg)
-                    - [Jahnsite-(CaMnFe)](#jahnsite-camnfe)
-                    - [Jahnsite-(CaMnMg)](#jahnsite-camnmg)
-                    - [Jahnsite-(CaMnMn)](#jahnsite-camnmn)
-                    - [Jahnsite-(MnMnFe)](#jahnsite-mnmnfe)
-                    - [Jahnsite-(MnMnMg)](#jahnsite-mnmnmg)
-                    - [Jahnsite-(MnMnMn)](#jahnsite-mnmnmn)
-                    - [Jahnsite-(NaFeMg)](#jahnsite-nafemg)
-                    - [Jahnsite-(NaMnMg)](#jahnsite-namnmg)
-                    - [Keckite](#keckite)
                 - [Calcioferrite Group](#53587)
                     - [Calcioferrite Subgroup](#29314)
                         - [Calcioferrite](#calcioferrite)
@@ -5340,25 +5176,19 @@ Namespace:
                 - [Wallkilldellite](#wallkilldellite)
                 - [Wallkilldellite-(Fe)](#wallkilldellite-fe)
                 - [Mixite Group](#29312)
-                    - [Agardite-(Ce)](#agardite-ce)
-                    - [Agardite-(La)](#agardite-la)
-                    - [Agardite-(Nd)](#agardite-nd)
-                    - [Agardite-(Y)](#agardite-y)
-                    - [Calciopetersite](#calciopetersite)
-                    - [Goudeyite](#goudeyite)
-                    - [Mixite](#mixite)
-                    - [Petersite-(Ce)](#petersite-ce)
-                    - [Petersite-(Y)](#petersite-y)
-                    - [Plumboagardite](#plumboagardite)
-                    - [Zálesíite](#zalesiite)
                     - [Agardite](#agardite)
                         - [Agardite-(Ce)](#agardite-ce)
                         - [Agardite-(La)](#agardite-la)
                         - [Agardite-(Nd)](#agardite-nd)
                         - [Agardite-(Y)](#agardite-y)
+                    - [Calciopetersite](#calciopetersite)
+                    - [Goudeyite](#goudeyite)
+                    - [Mixite](#mixite)
                     - [Petersite](#petersite)
                         - [Petersite-(Ce)](#petersite-ce)
                         - [Petersite-(Y)](#petersite-y)
+                    - [Plumboagardite](#plumboagardite)
+                    - [Zálesíite](#zalesiite)
                 - [Wardite Group](#39676)
                     - [Cyrilovite](#cyrilovite)
                     - [Fluorowardite](#fluorowardite)
@@ -5469,8 +5299,9 @@ Namespace:
                     - [Bergenite](#bergenite)
                     - [Dewindtite](#dewindtite)
                     - [Dumontite](#dumontite)
-                    - [Françoisite-(Ce)](#francoisite-ce)
-                    - [Françoisite-(Nd)](#francoisite-nd)
+                    - [Françoisite](#francoisite)
+                        - [Françoisite-(Ce)](#francoisite-ce)
+                        - [Françoisite-(Nd)](#francoisite-nd)
                     - [Hügelite](#hugelite)
                     - [Phosphuranylite](#phosphuranylite)
                     - [Phuralumite](#phuralumite)
@@ -5478,9 +5309,6 @@ Namespace:
                     - [Upalite](#upalite)
                     - [Vanmeersscheite](#vanmeersscheite)
                     - [Yingjiangite](#yingjiangite)
-                    - [Françoisite](#francoisite)
-                        - [Françoisite-(Ce)](#francoisite-ce)
-                        - [Françoisite-(Nd)](#francoisite-nd)
             - [Strunz 08.ED Uranyl phosphate or arsenate, Unclassified](#s08_ed)
                 - [Asselbornite](#asselbornite)
                 - [Kamitugaite](#kamitugaite)
@@ -5591,40 +5419,39 @@ Namespace:
                 - [Wenkite](#wenkite)
                 - [Willhendersonite](#willhendersonite)
                 - [Yugawaralite](#yugawaralite)
-                - [Gismondine Subgroup](#10315)
-                    - [Gismondine](#gismondine)
-                    - [Gismondine-Sr](#gismondine-sr)
+                - [Gismondine](#10315)
                     - [Gismondine-Ca](#gismondine-ca)
-                - [Clinoptilolite Subgroup](#1082)
+                    - [Gismondine-Sr](#gismondine-sr)
+                - [Clinoptilolite](#1082)
                     - [Clinoptilolite-Ca](#clinoptilolite-ca)
                     - [Clinoptilolite-K](#clinoptilolite-k)
                     - [Clinoptilolite-Na](#clinoptilolite-na)
-                - [Dachiardite Subgroup](#1212)
+                - [Dachiardite](#1212)
                     - [Dachiardite-Ca](#dachiardite-ca)
                     - [Dachiardite-Na](#dachiardite-na)
-                - [Erionite Subgroup](#1399)
+                - [Erionite](#1399)
                     - [Erionite-Ca](#erionite-ca)
                     - [Erionite-K](#erionite-k)
                     - [Erionite-Na](#erionite-na)
-                - [Ferrierite Subgroup](#1492)
+                - [Ferrierite](#1492)
                     - [Ferrierite-K](#ferrierite-k)
                     - [Ferrierite-Mg](#ferrierite-mg)
                     - [Ferrierite-Na](#ferrierite-na)
                     - [Ferrierite-NH4](#ferrierite-nh4)
-                - [Gmelinite Subgroup](#1714)
+                - [Gmelinite](#1714)
                     - [Gmelinite-Ca](#gmelinite-ca)
                     - [Gmelinite-K](#gmelinite-k)
                     - [Gmelinite-Na](#gmelinite-na)
-                - [Heulandite Subgroup](#1889)
+                - [Heulandite](#1889)
                     - [Heulandite-Ba](#heulandite-ba)
                     - [Heulandite-Ca](#heulandite-ca)
                     - [Heulandite-K](#heulandite-k)
                     - [Heulandite-Na](#heulandite-na)
                     - [Heulandite-Sr](#heulandite-sr)
-                - [Mazzite Subgroup](#27548)
+                - [Mazzite](#27548)
                     - [Mazzite-Mg](#mazzite-mg)
                     - [Mazzite-Na](#mazzite-na)
-                - [Thomsonite Subgroup](#28896)
+                - [Thomsonite](#28896)
                     - [Thomsonite-Ca](#thomsonite-ca)
                     - [Thomsonite-Sr](#thomsonite-sr)
                 - [Natrolite Subgroup](#29157)
@@ -5635,25 +5462,15 @@ Namespace:
                     - [Scolecite](#scolecite)
                 - [Phillipsite Subgroup](#3192)
                     - [Harmotome](#harmotome)
-                    - [Phillipsite-Ca](#phillipsite-ca)
-                    - [Phillipsite-K](#phillipsite-k)
-                    - [Phillipsite-Na](#phillipsite-na)
                     - [Phillipsite](#phillipsite)
                         - [Phillipsite-Ca](#phillipsite-ca)
                         - [Phillipsite-K](#phillipsite-k)
                         - [Phillipsite-Na](#phillipsite-na)
-                - [Faujasite Subgroup](#35126)
+                - [Faujasite](#35126)
                     - [Faujasite-Ca](#faujasite-ca)
                     - [Faujasite-Mg](#faujasite-mg)
                     - [Faujasite-Na](#faujasite-na)
                 - [Chabazite-Levyne Subgroup](#35547)
-                    - [Chabazite-Ca](#chabazite-ca)
-                    - [Chabazite-K](#chabazite-k)
-                    - [Chabazite-Mg](#chabazite-mg)
-                    - [Chabazite-Na](#chabazite-na)
-                    - [Chabazite-Sr](#chabazite-sr)
-                    - [Lévyne-Ca](#levyne-ca)
-                    - [Lévyne-Na](#levyne-na)
                     - [Chabazite](#chabazite)
                         - [Chabazite-Ca](#chabazite-ca)
                         - [Chabazite-K](#chabazite-k)
@@ -5666,18 +5483,16 @@ Namespace:
                 - [Stilbite Subgroup](#3785)
                     - [Barrerite](#barrerite)
                     - [Stellerite](#stellerite)
-                    - [Stilbite-Ca](#stilbite-ca)
-                    - [Stilbite-Na](#stilbite-na)
                     - [Stilbite](#stilbite)
                         - [Stilbite-Ca](#stilbite-ca)
                         - [Stilbite-Na](#stilbite-na)
-                - [Garronite Subgroup](#46692)
+                - [Garronite](#46692)
                     - [Garronite-Ca](#garronite-ca)
                     - [Garronite-Na](#garronite-na)
-                - [Paulingite Subgroup](#470364)
+                - [Paulingite](#470364)
                     - [Paulingite-Ca](#paulingite-ca)
                     - [Paulingite-K](#paulingite-k)
-                - [Brewsterite Subgroup](#766)
+                - [Brewsterite](#766)
                     - [Brewsterite-Ba](#brewsterite-ba)
                     - [Brewsterite-Sr](#brewsterite-sr)
             - [Mica Group](#6728)
@@ -6027,8 +5842,9 @@ Namespace:
                 - [Natisite](#natisite)
                 - [Paranatisite](#paranatisite)
                 - [Sitinakite](#sitinakite)
-                - [Törnebohmite-(Ce)](#tornebohmite-ce)
-                - [Törnebohmite-(La)](#tornebohmite-la)
+                - [Törnebohmite](#tornebohmite)
+                    - [Törnebohmite-(Ce)](#tornebohmite-ce)
+                    - [Törnebohmite-(La)](#tornebohmite-la)
                 - [Tranquillityite](#tranquillityite)
                 - [Trimounsite-(Y)](#trimounsite-y)
                 - [Vuagnatite](#vuagnatite)
@@ -6046,20 +5862,14 @@ Namespace:
                     - [Abswurmbachite](#abswurmbachite)
                     - [Braunite](#braunite)
                     - [Neltnerite](#neltnerite)
-                - [Cerite Subgroup](#470790)
-                    - [Aluminocerite-(Ce)](#aluminocerite-ce)
-                    - [Cerite-(CeCa)](#cerite-ceca)
-                    - [Cerite-(La)](#cerite-la)
-                    - [Ferricerite-(LaCa)](#ferricerite-laca)
                 - [Taipingite Subgroup](#470791)
                     - [Aluminotaipingite-(CeCa)](#aluminotaipingite-ceca)
                 - [Cerite Supergroup](#55118)
                     - [Nipeiite-(Ce)](#nipeiite-ce)
                     - [Cerite Group](#39939)
                         - [Cerite Subgroup](#470790)
-                            - [Aluminocerite-(Ce)](#aluminocerite-ce)
+                            - [Aluminocerite-(CeCa)](#aluminocerite-ce)
                             - [Cerite-(CeCa)](#cerite-ceca)
-                            - [Cerite-(La)](#cerite-la)
                             - [Ferricerite-(LaCa)](#ferricerite-laca)
                         - [Taipingite Subgroup](#470791)
                             - [Aluminotaipingite-(CeCa)](#aluminotaipingite-ceca)
@@ -6072,12 +5882,7 @@ Namespace:
                         - [Merrillite Subgroup](#55119)
                             - [Ferromerrillite](#ferromerrillite)
                             - [Keplerite](#keplerite)
-                - [Törnebohmite](#tornebohmite)
-                    - [Törnebohmite-(Ce)](#tornebohmite-ce)
-                    - [Törnebohmite-(La)](#tornebohmite-la)
             - [Strunz 09.AH Nesosilicate with CO3, SO4, PO4, etc.](#s09_ah)
-                - [Britholite-(Ce)](#britholite-ce)
-                - [Britholite-(Y)](#britholite-y)
                 - [Byzantievite](#byzantievite)
                 - [Flamite](#flamite)
                 - [Galuskinite](#galuskinite)
@@ -6092,26 +5897,19 @@ Namespace:
                 - [Tsangpoite](#tsangpoite)
                 - [Zadovite](#zadovite)
                 - [Britholite Group](#31542)
-                    - [Britholite-(Ce)](#britholite-ce)
-                    - [Britholite-(Y)](#britholite-y)
-                    - [Calciobritholite](#calciobritholite)
-                    - [Fluorbritholite-(Ce)](#fluorbritholite-ce)
-                    - [Fluorbritholite-(Nd)](#fluorbritholite-nd)
-                    - [Fluorbritholite-(Y)](#fluorbritholite-y)
-                    - [Fluorcalciobritholite](#fluorcalciobritholite)
-                    - [Tritomite-(Ce)](#tritomite-ce)
-                    - [Tritomite-(Y)](#tritomite-y)
                     - [Britholite](#britholite)
                         - [Britholite-(Ce)](#britholite-ce)
                         - [Britholite-(Y)](#britholite-y)
+                    - [Calciobritholite](#calciobritholite)
                     - [Fluorbritholite](#fluorbritholite)
                         - [Fluorbritholite-(Ce)](#fluorbritholite-ce)
                         - [Fluorbritholite-(Nd)](#fluorbritholite-nd)
                         - [Fluorbritholite-(Y)](#fluorbritholite-y)
+                    - [Fluorcalciobritholite](#fluorcalciobritholite)
                     - [Tritomite](#tritomite)
                         - [Tritomite-(Ce)](#tritomite-ce)
                         - [Tritomite-(Y)](#tritomite-y)
-                - [Tundrite Group](#34945)
+                - [Tundrite](#34945)
                     - [Tundrite-(Ce)](#tundrite-ce)
                     - [Tundrite-(Nd)](#tundrite-nd)
                 - [Ellestadite Group](#42673)
@@ -6137,14 +5935,6 @@ Namespace:
                         - [Homilite](#homilite)
                     - [Gadolinite Subgroup](#50363)
                         - [Calcybeborosilite-(Y)](#calcybeborosilite-y)
-                        - [Gadolinite-(Ce)](#gadolinite-ce)
-                        - [Gadolinite-(Nd)](#gadolinite-nd)
-                        - [Gadolinite-(Y)](#gadolinite-y)
-                        - [Hingganite-(Ce)](#hingganite-ce)
-                        - [Hingganite-(Nd)](#hingganite-nd)
-                        - [Hingganite-(Y)](#hingganite-y)
-                        - [Hingganite-(Yb)](#hingganite-yb)
-                        - [Minasgeraisite-(Y)](#minasgeraisite-y)
                         - [Gadolinite](#gadolinite)
                             - [Gadolinite-(Ce)](#gadolinite-ce)
                             - [Gadolinite-(Nd)](#gadolinite-nd)
@@ -6154,6 +5944,7 @@ Namespace:
                             - [Hingganite-(Nd)](#hingganite-nd)
                             - [Hingganite-(Y)](#hingganite-y)
                             - [Hingganite-(Yb)](#hingganite-yb)
+                        - [Minasgeraisite-(Y)](#minasgeraisite-y)
                 - [Vicanite Group](#39509)
                     - [Hundholmenite-(Y)](#hundholmenite-y)
                     - [Laptevite-(Ce)](#laptevite-ce)
@@ -6163,25 +5954,6 @@ Namespace:
                 - [Datolite Subgroup](#50362)
                     - [Datolite](#datolite)
                     - [Homilite](#homilite)
-                - [Gadolinite Subgroup](#50363)
-                    - [Calcybeborosilite-(Y)](#calcybeborosilite-y)
-                    - [Gadolinite-(Ce)](#gadolinite-ce)
-                    - [Gadolinite-(Nd)](#gadolinite-nd)
-                    - [Gadolinite-(Y)](#gadolinite-y)
-                    - [Hingganite-(Ce)](#hingganite-ce)
-                    - [Hingganite-(Nd)](#hingganite-nd)
-                    - [Hingganite-(Y)](#hingganite-y)
-                    - [Hingganite-(Yb)](#hingganite-yb)
-                    - [Minasgeraisite-(Y)](#minasgeraisite-y)
-                    - [Gadolinite](#gadolinite)
-                        - [Gadolinite-(Ce)](#gadolinite-ce)
-                        - [Gadolinite-(Nd)](#gadolinite-nd)
-                        - [Gadolinite-(Y)](#gadolinite-y)
-                    - [Hingganite](#hingganite)
-                        - [Hingganite-(Ce)](#hingganite-ce)
-                        - [Hingganite-(Nd)](#hingganite-nd)
-                        - [Hingganite-(Y)](#hingganite-y)
-                        - [Hingganite-(Yb)](#hingganite-yb)
             - [Strunz 09.AK Uranyl neso- and polysilicate](#s09_ak)
                 - [Calcioursilite](#calcioursilite)
                 - [Coutinhoite](#coutinhoite)
@@ -6284,15 +6056,6 @@ Namespace:
                 - [Tilleyite](#tilleyite)
                 - [Wadsleyite](#wadsleyite)
                 - [Zinkgruvanite](#zinkgruvanite)
-                - [Murmanite Group](#35035)
-                    - [Betalomonosovite](#betalomonosovite)
-                    - [Calciomurmanite](#calciomurmanite)
-                    - [Lomonosovite](#lomonosovite)
-                    - [Murmanite](#murmanite)
-                    - [Quadruphite](#quadruphite)
-                    - [Schüllerite](#schullerite)
-                    - [Sobolevite](#sobolevite)
-                    - [Vigrishinite](#vigrishinite)
                 - [Wöhlerite Group](#35647)
                     - [Baghdadite](#baghdadite)
                     - [Burpalite](#burpalite)
@@ -6317,29 +6080,11 @@ Namespace:
                     - [Perrierite Subgroup](#51418)
                         - [Hezuolinite](#hezuolinite)
                         - [Matsubaraite](#matsubaraite)
-                        - [Perrierite-(Ce)](#perrierite-ce)
-                        - [Perrierite-(La)](#perrierite-la)
-                        - [Rengeite](#rengeite)
-                        - [Strontiochevkinite](#strontiochevkinite)
                         - [Perrierite](#perrierite)
                             - [Perrierite-(Ce)](#perrierite-ce)
                             - [Perrierite-(La)](#perrierite-la)
-                - [Rinkite Group](#39735)
-                    - [Fogoite-(Y)](#fogoite-y)
-                    - [Götzenite](#gotzenite)
-                    - [Grenmarite](#grenmarite)
-                    - [Hainite-(Y)](#hainite-y)
-                    - [Kochite](#kochite)
-                    - [Mosandrite-(Ce)](#mosandrite-ce)
-                    - [Nacareniobsite-(Ce)](#nacareniobsite-ce)
-                    - [Rinkite-(Ce)](#rinkite-ce)
-                    - [Rinkite-(Y)](#rinkite-y)
-                    - [Rosenbuschite](#rosenbuschite)
-                    - [Roumaite](#roumaite)
-                    - [Seidozerite](#seidozerite)
-                    - [Rinkite](#rinkite)
-                        - [Rinkite-(Ce)](#rinkite-ce)
-                        - [Rinkite-(Y)](#rinkite-y)
+                        - [Rengeite](#rengeite)
+                        - [Strontiochevkinite](#strontiochevkinite)
                 - [Lawsonite Group](#46549)
                     - [Hennomartinite](#hennomartinite)
                     - [Ilvaite](#ilvaite)
@@ -6365,14 +6110,12 @@ Namespace:
                         - [Kochite](#kochite)
                         - [Mosandrite-(Ce)](#mosandrite-ce)
                         - [Nacareniobsite-(Ce)](#nacareniobsite-ce)
-                        - [Rinkite-(Ce)](#rinkite-ce)
-                        - [Rinkite-(Y)](#rinkite-y)
-                        - [Rosenbuschite](#rosenbuschite)
-                        - [Roumaite](#roumaite)
-                        - [Seidozerite](#seidozerite)
                         - [Rinkite](#rinkite)
                             - [Rinkite-(Ce)](#rinkite-ce)
                             - [Rinkite-(Y)](#rinkite-y)
+                        - [Rosenbuschite](#rosenbuschite)
+                        - [Roumaite](#roumaite)
+                        - [Seidozerite](#seidozerite)
                     - [Lamprophyllite Group](#42445)
                         - [Barytolamprophyllite](#barytolamprophyllite)
                         - [Bornemanite](#bornemanite)
@@ -6401,25 +6144,6 @@ Namespace:
                         - [Perraultite](#perraultite)
                         - [Surkhobite](#surkhobite)
                         - [Yoshimuraite](#yoshimuraite)
-                - [Bafertisite Group](#50369)
-                    - [Bafertisite](#bafertisite)
-                    - [Bussenite](#bussenite)
-                    - [Cámaraite](#camaraite)
-                    - [Hejtmanite](#hejtmanite)
-                    - [Jinshajiangite](#jinshajiangite)
-                    - [Perraultite](#perraultite)
-                    - [Surkhobite](#surkhobite)
-                    - [Yoshimuraite](#yoshimuraite)
-                - [Perrierite Subgroup](#51418)
-                    - [Hezuolinite](#hezuolinite)
-                    - [Matsubaraite](#matsubaraite)
-                    - [Perrierite-(Ce)](#perrierite-ce)
-                    - [Perrierite-(La)](#perrierite-la)
-                    - [Rengeite](#rengeite)
-                    - [Strontiochevkinite](#strontiochevkinite)
-                    - [Perrierite](#perrierite)
-                        - [Perrierite-(Ce)](#perrierite-ce)
-                        - [Perrierite-(La)](#perrierite-la)
                 - [Biraite Group](#55035)
                     - [Biraite-(Ce)](#biraite-ce)
             - [Strunz 09.BF Sorosilicate with mixed SiO4 and Si2O7 groups; cations in tetrahedral [4] and greater coordination](#s09_bf)
@@ -6461,16 +6185,6 @@ Namespace:
                     - [Milanriederite](#milanriederite)
                     - [Vesuvianite](#vesuvianite)
                     - [Wiluite](#wiluite)
-                - [Pumpellyite Subgroup](#3305)
-                    - [Pumpellyite-(Al)](#pumpellyite-al)
-                    - [Pumpellyite-(Fe<sup>2+</sup>)](#pumpellyite-fe2)
-                    - [Pumpellyite-(Fe<sup>3+</sup>)](#pumpellyite-fe3)
-                    - [Pumpellyite-(Mg)](#pumpellyite-mg)
-                    - [Pumpellyite-(Mn<sup>2+</sup>)](#pumpellyite-mn2)
-                - [Julgoldite Subgroup](#39505)
-                    - [Julgoldite-(Fe<sup>2+</sup>)](#julgoldite-fe2)
-                    - [Julgoldite-(Fe<sup>3+</sup>)](#julgoldite-fe3)
-                    - [Julgoldite-(Mg)](#julgoldite-mg)
                 - [Dollaseite Group](#46224)
                     - [Dollaseite-(Ce)](#dollaseite-ce)
                     - [Khristovite-(Ce)](#khristovite-ce)
@@ -6489,11 +6203,6 @@ Namespace:
                     - [Piemontite-(Pb)](#piemontite-pb)
                     - [Piemontite-(Sr)](#piemontite-sr)
                     - [Tweddillite](#tweddillite)
-                - [Gatelite Group](#51984)
-                    - [Ferriperbøeite-(Ce)](#ferriperboeite-ce)
-                    - [Gatelite-(Ce)](#gatelite-ce)
-                    - [Perbøeite-(Ce)](#perboeite-ce)
-                    - [Perbøeite-(La)](#perboeite-la)
                 - [Gatelite Supergroup](#52598)
                     - [Gatelite Group](#51984)
                         - [Ferriperbøeite-(Ce)](#ferriperboeite-ce)
@@ -6506,32 +6215,14 @@ Namespace:
                         - [Alnaperbøeite-(Ce)](#alnaperboeite-ce)
                 - [Västmanlandite Group](#52599)
                     - [Västmanlandite-(Ce)](#vastmanlandite-ce)
-                - [Shuiskite Subgroup](#54392)
-                    - [Shuiskite](#shuiskite)
                 - [Epidote Supergroup](#6662)
                     - [Allanite Group](#46220)
-                        - [Allanite-(Ce)](#allanite-ce)
-                        - [Allanite-(La)](#allanite-la)
-                        - [Allanite-(Nd)](#allanite-nd)
-                        - [Allanite-(Y)](#allanite-y)
-                        - [Androsite-(Ce)](#androsite-ce)
-                        - [Dissakisite-(Ce)](#dissakisite-ce)
-                        - [Dissakisite-(La)](#dissakisite-la)
-                        - [Ferriakasakaite-(Ce)](#ferriakasakaite-ce)
-                        - [Ferriakasakaite-(La)](#ferriakasakaite-la)
-                        - [Ferriallanite-(Ce)](#ferriallanite-ce)
-                        - [Ferriallanite-(La)](#ferriallanite-la)
-                        - [Ferriandrosite-(Ce)](#ferriandrosite-ce)
-                        - [Manganiakasakaite-(La)](#manganiakasakaite-la)
-                        - [Manganiandrosite-(Ce)](#manganiandrosite-ce)
-                        - [Manganiandrosite-(La)](#manganiandrosite-la)
-                        - [Uedaite-(Ce)](#uedaite-ce)
-                        - [Vanadoandrosite-(Ce)](#vanadoandrosite-ce)
                         - [Allanite](#allanite)
                             - [Allanite-(Ce)](#allanite-ce)
                             - [Allanite-(La)](#allanite-la)
                             - [Allanite-(Nd)](#allanite-nd)
                             - [Allanite-(Y)](#allanite-y)
+                        - [Androsite-(Ce)](#androsite-ce)
                         - [Dissakisite](#dissakisite)
                             - [Dissakisite-(Ce)](#dissakisite-ce)
                             - [Dissakisite-(La)](#dissakisite-la)
@@ -6541,6 +6232,12 @@ Namespace:
                         - [Ferriallanite](#ferriallanite)
                             - [Ferriallanite-(Ce)](#ferriallanite-ce)
                             - [Ferriallanite-(La)](#ferriallanite-la)
+                        - [Ferriandrosite](#ferriandrosite-ce)
+                        - [Manganiakasakaite-(La)](#manganiakasakaite-la)
+                        - [Manganiandrosite-(Ce)](#manganiandrosite-ce)
+                        - [Manganiandrosite-(La)](#manganiandrosite-la)
+                        - [Uedaite-(Ce)](#uedaite-ce)
+                        - [Vanadoandrosite-(Ce)](#vanadoandrosite-ce)
                     - [Dollaseite Group](#46224)
                         - [Dollaseite-(Ce)](#dollaseite-ce)
                         - [Khristovite-(Ce)](#khristovite-ce)
@@ -6581,9 +6278,6 @@ Namespace:
                 - [Zunyite](#zunyite)
                 - [Ardennite Group](#46923)
                     - [Alpeite](#alpeite)
-                    - [Ardennite-(As)](#ardennite-as)
-                    - [Ardennite-(Si)](#ardennite-si)
-                    - [Ardennite-(V)](#ardennite-v)
                 - [Ruizite Group](#52090)
                     - [Ruizite](#ruizite)
                     - [Strontioruizite](#strontioruizite)
@@ -7108,26 +6802,7 @@ Namespace:
                 - [Papikeite Root Name Group](#43389)
                     - [Ferro-papikeite](#ferro-papikeite)
                     - [Papikeite](#papikeite)
-                - [Anthophyllite Root Name Group](#43520)
-                    - [Anthophyllite](#anthophyllite)
-                    - [Ferro-anthophyllite](#ferro-anthophyllite)
-                    - [Proto-anthophyllite](#proto-anthophyllite)
-                    - [Proto-ferro-anthophyllite](#proto-ferro-anthophyllite)
-                - [Gedrite Root Name Group](#8963)
-                    - [Ferro-gedrite](#ferro-gedrite)
-                    - [Gedrite](#gedrite)
             - [Strunz 09.DE Inosilicate with 2-periodic double chains, Si4O11; Clinoamphiboles](#s09_de)
-                - [Clino-ferro-suenoite](#clino-ferro-suenoite)
-                - [Clino-suenoite](#clino-suenoite)
-                - [Cummingtonite](#cummingtonite)
-                - [Ferri-fluoro-leakeite](#ferri-fluoro-leakeite)
-                - [Ferri-ghoseite](#ferri-ghoseite)
-                - [Ferri-leakeite](#ferri-leakeite)
-                - [Ferro-ferri-fluoro-leakeite](#ferro-ferri-fluoro-leakeite)
-                - [Fluoro-leakeite](#fluoro-leakeite)
-                - [Grunerite](#grunerite)
-                - [Potassic-ferri-leakeite](#potassic-ferri-leakeite)
-                - [Potassic-mangani-leakeite](#potassic-mangani-leakeite)
                 - [Calcium Amphibole Subgroup](#29365)
                     - [Joesmithite](#joesmithite)
                     - [Tremolite Root Name Group](#36873)
@@ -7197,38 +6872,6 @@ Namespace:
                     - [Eckermannite Root Name Group](#8967)
                         - [Eckermannite](#eckermannite)
                         - [Mangano-ferri-eckermannite](#mangano-ferri-eckermannite)
-                - [Tremolite Root Name Group](#36873)
-                    - [Fluoro-tremolite](#fluoro-tremolite)
-                    - [Tremolite](#tremolite)
-                - [Taramite Root Name Group](#3889)
-                    - [Ferro-taramite](#ferro-taramite)
-                    - [Potassic-ferro-ferri-taramite](#potassic-ferro-ferri-taramite)
-                    - [Taramite](#taramite)
-                - [Katophorite Root Name Group](#39388)
-                    - [Ferri-fluoro-katophorite](#ferri-fluoro-katophorite)
-                    - [Ferri-katophorite](#ferri-katophorite)
-                    - [Ferro-ferri-katophorite](#ferro-ferri-katophorite)
-                    - [Ferro-katophorite](#ferro-katophorite)
-                    - [Katophorite](#katophorite)
-                - [Tschermakite Root Name Group](#43418)
-                    - [Ferro-tschermakite](#ferro-tschermakite)
-                    - [Tschermakite](#tschermakite)
-                - [Pargasite Root Name Group](#43429)
-                    - [Chromio-pargasite](#chromio-pargasite)
-                    - [Ferro-pargasite](#ferro-pargasite)
-                    - [Fluoro-pargasite](#fluoro-pargasite)
-                    - [Pargasite](#pargasite)
-                    - [Potassic-ferro-pargasite](#potassic-ferro-pargasite)
-                    - [Potassic-fluoro-pargasite](#potassic-fluoro-pargasite)
-                    - [Potassic-pargasite](#potassic-pargasite)
-                - [Hastingsite Root Name Group](#43433)
-                    - [Hastingsite](#hastingsite)
-                    - [Magnesio-fluoro-hastingsite](#magnesio-fluoro-hastingsite)
-                    - [Magnesio-hastingsite](#magnesio-hastingsite)
-                    - [Potassic-chloro-hastingsite](#potassic-chloro-hastingsite)
-                    - [Potassic-magnesio-hastingsite](#potassic-magnesio-hastingsite)
-                - [Barroisite Root Name Group](#43476)
-                    - [Barroisite](#barroisite)
                 - [Sodium-Calcium Amphibole Subgroup](#43485)
                     - [Taramite Root Name Group](#3889)
                         - [Ferro-taramite](#ferro-taramite)
@@ -7252,9 +6895,6 @@ Namespace:
                         - [Potassic-richterite](#potassic-richterite)
                         - [Potassium richterite](#potassiumrichterite)
                         - [Richterite](#richterite)
-                - [Nybøite Root Name Group](#43501)
-                    - [Ferro-ferri-nybøite](#ferro-ferri-nyboite)
-                    - [Nybøite](#nyboite)
                 - [Pedrizite Root Name Group](#43514)
                     - [Ferro-ferri-pedrizite](#ferro-ferri-pedrizite)
                 - [Sodium-(Magnesium-Iron-Manganese) Amphibole Subgroup](#43531)
@@ -7277,8 +6917,6 @@ Namespace:
                     - [Ferri-obertiite](#ferri-obertiite)
                     - [Ferro-ferri-obertiite](#ferro-ferri-obertiite)
                     - [Mangani-obertiite](#mangani-obertiite)
-                - [Hjalmarite Root Name Group](#53896)
-                    - [Hjalmarite](#hjalmarite)
                 - [Arfvedsonite Root Name Group](#8603)
                     - [Arfvedsonite](#arfvedsonite)
                     - [Magnesio-arfvedsonite](#magnesio-arfvedsonite)
@@ -7286,38 +6924,9 @@ Namespace:
                     - [Potassic-arfvedsonite](#potassic-arfvedsonite)
                     - [Potassic-magnesio-arfvedsonite](#potassic-magnesio-arfvedsonite)
                     - [Potassic-magnesio-fluoro-arfvedsonite](#potassic-magnesio-fluoro-arfvedsonite)
-                - [Winchite Root Name Group](#8624)
-                    - [Ferri-winchite](#ferri-winchite)
-                    - [Winchite](#winchite)
-                - [Riebeckite Root Name Group](#8698)
-                    - [Fluoro-riebeckite](#fluoro-riebeckite)
-                    - [Magnesio-riebeckite](#magnesio-riebeckite)
-                    - [Riebeckite](#riebeckite)
-                - [Richterite Root Name Group](#8699)
-                    - [Ferro-richterite](#ferro-richterite)
-                    - [Fluoro-richterite](#fluoro-richterite)
-                    - [Potassic-fluoro-richterite](#potassic-fluoro-richterite)
-                    - [Potassic-richterite](#potassic-richterite)
-                    - [Potassium richterite](#potassiumrichterite)
-                    - [Richterite](#richterite)
-                - [Sadanagaite Root Name Group](#8787)
-                    - [Potassic-ferro-ferri-sadanagaite](#potassic-ferro-ferri-sadanagaite)
-                    - [Potassic-ferro-sadanagaite](#potassic-ferro-sadanagaite)
-                    - [Potassic-sadanagaite](#potassic-sadanagaite)
-                    - [Sadanagaite](#sadanagaite)
                 - [Kaersutite Root Name Group](#8946)
                     - [Ferri-kaersutite](#ferri-kaersutite)
                     - [Kaersutite](#kaersutite)
-                - [Glaucophane Root Name Group](#8962)
-                    - [Ferro-glaucophane](#ferro-glaucophane)
-                    - [Glaucophane](#glaucophane)
-                - [Edenite Root Name Group](#8966)
-                    - [Edenite](#edenite)
-                    - [Ferro-edenite](#ferro-edenite)
-                    - [Fluoro-edenite](#fluoro-edenite)
-                - [Eckermannite Root Name Group](#8967)
-                    - [Eckermannite](#eckermannite)
-                    - [Mangano-ferri-eckermannite](#mangano-ferri-eckermannite)
             - [Strunz 09.DF Inosilicate with 2-periodic multiple chains](#s09_df)
                 - [Bavenite](#bavenite)
                 - [Bigcreekite](#bigcreekite)
@@ -7436,13 +7045,11 @@ Namespace:
                 - [Scandiobabingtonite](#scandiobabingtonite)
                 - [Hellandite Group](#29214)
                     - [Ciprianiite](#ciprianiite)
-                    - [Hellandite-(Ce)](#hellandite-ce)
-                    - [Hellandite-(Y)](#hellandite-y)
-                    - [Mottanaite-(Ce)](#mottanaite-ce)
-                    - [Tadzhikite-(Ce)](#tadzhikite-ce)
                     - [Hellandite](#hellandite)
                         - [Hellandite-(Ce)](#hellandite-ce)
                         - [Hellandite-(Y)](#hellandite-y)
+                    - [Mottanaite-(Ce)](#mottanaite-ce)
+                    - [Tadzhikite-(Ce)](#tadzhikite-ce)
                 - [Rhodonite Group](#40297)
                     - [Ferrorhodonite](#ferrorhodonite)
                     - [Fowlerite](#fowlerite)
@@ -7548,8 +7155,6 @@ Namespace:
                 - [Dalyite Group](#39518)
                     - [Dalyite](#dalyite)
                     - [Davanite](#davanite)
-                    - [Sazhinite-(Ce)](#sazhinite-ce)
-                    - [Sazhinite-(La)](#sazhinite-la)
                     - [Sazhinite](#sazhinite)
                         - [Sazhinite-(Ce)](#sazhinite-ce)
                         - [Sazhinite-(La)](#sazhinite-la)
@@ -8072,40 +7677,39 @@ Namespace:
                 - [Wenkite](#wenkite)
                 - [Willhendersonite](#willhendersonite)
                 - [Yugawaralite](#yugawaralite)
-                - [Gismondine Subgroup](#10315)
-                    - [Gismondine](#gismondine)
-                    - [Gismondine-Sr](#gismondine-sr)
+                - [Gismondine](#10315)
                     - [Gismondine-Ca](#gismondine-ca)
-                - [Clinoptilolite Subgroup](#1082)
+                    - [Gismondine-Sr](#gismondine-sr)
+                - [Clinoptilolite](#1082)
                     - [Clinoptilolite-Ca](#clinoptilolite-ca)
                     - [Clinoptilolite-K](#clinoptilolite-k)
                     - [Clinoptilolite-Na](#clinoptilolite-na)
-                - [Dachiardite Subgroup](#1212)
+                - [Dachiardite](#1212)
                     - [Dachiardite-Ca](#dachiardite-ca)
                     - [Dachiardite-Na](#dachiardite-na)
-                - [Erionite Subgroup](#1399)
+                - [Erionite](#1399)
                     - [Erionite-Ca](#erionite-ca)
                     - [Erionite-K](#erionite-k)
                     - [Erionite-Na](#erionite-na)
-                - [Ferrierite Subgroup](#1492)
+                - [Ferrierite](#1492)
                     - [Ferrierite-K](#ferrierite-k)
                     - [Ferrierite-Mg](#ferrierite-mg)
                     - [Ferrierite-Na](#ferrierite-na)
                     - [Ferrierite-NH4](#ferrierite-nh4)
-                - [Gmelinite Subgroup](#1714)
+                - [Gmelinite](#1714)
                     - [Gmelinite-Ca](#gmelinite-ca)
                     - [Gmelinite-K](#gmelinite-k)
                     - [Gmelinite-Na](#gmelinite-na)
-                - [Heulandite Subgroup](#1889)
+                - [Heulandite](#1889)
                     - [Heulandite-Ba](#heulandite-ba)
                     - [Heulandite-Ca](#heulandite-ca)
                     - [Heulandite-K](#heulandite-k)
                     - [Heulandite-Na](#heulandite-na)
                     - [Heulandite-Sr](#heulandite-sr)
-                - [Mazzite Subgroup](#27548)
+                - [Mazzite](#27548)
                     - [Mazzite-Mg](#mazzite-mg)
                     - [Mazzite-Na](#mazzite-na)
-                - [Thomsonite Subgroup](#28896)
+                - [Thomsonite](#28896)
                     - [Thomsonite-Ca](#thomsonite-ca)
                     - [Thomsonite-Sr](#thomsonite-sr)
                 - [Natrolite Subgroup](#29157)
@@ -8116,25 +7720,15 @@ Namespace:
                     - [Scolecite](#scolecite)
                 - [Phillipsite Subgroup](#3192)
                     - [Harmotome](#harmotome)
-                    - [Phillipsite-Ca](#phillipsite-ca)
-                    - [Phillipsite-K](#phillipsite-k)
-                    - [Phillipsite-Na](#phillipsite-na)
                     - [Phillipsite](#phillipsite)
                         - [Phillipsite-Ca](#phillipsite-ca)
                         - [Phillipsite-K](#phillipsite-k)
                         - [Phillipsite-Na](#phillipsite-na)
-                - [Faujasite Subgroup](#35126)
+                - [Faujasite](#35126)
                     - [Faujasite-Ca](#faujasite-ca)
                     - [Faujasite-Mg](#faujasite-mg)
                     - [Faujasite-Na](#faujasite-na)
                 - [Chabazite-Levyne Subgroup](#35547)
-                    - [Chabazite-Ca](#chabazite-ca)
-                    - [Chabazite-K](#chabazite-k)
-                    - [Chabazite-Mg](#chabazite-mg)
-                    - [Chabazite-Na](#chabazite-na)
-                    - [Chabazite-Sr](#chabazite-sr)
-                    - [Lévyne-Ca](#levyne-ca)
-                    - [Lévyne-Na](#levyne-na)
                     - [Chabazite](#chabazite)
                         - [Chabazite-Ca](#chabazite-ca)
                         - [Chabazite-K](#chabazite-k)
@@ -8147,25 +7741,23 @@ Namespace:
                 - [Stilbite Subgroup](#3785)
                     - [Barrerite](#barrerite)
                     - [Stellerite](#stellerite)
-                    - [Stilbite-Ca](#stilbite-ca)
-                    - [Stilbite-Na](#stilbite-na)
                     - [Stilbite](#stilbite)
                         - [Stilbite-Ca](#stilbite-ca)
                         - [Stilbite-Na](#stilbite-na)
-                - [Garronite Subgroup](#46692)
+                - [Garronite](#46692)
                     - [Garronite-Ca](#garronite-ca)
                     - [Garronite-Na](#garronite-na)
-                - [Paulingite Subgroup](#470364)
+                - [Paulingite](#470364)
                     - [Paulingite-Ca](#paulingite-ca)
                     - [Paulingite-K](#paulingite-k)
-                - [Brewsterite Subgroup](#766)
+                - [Brewsterite](#766)
                     - [Brewsterite-Ba](#brewsterite-ba)
                     - [Brewsterite-Sr](#brewsterite-sr)
             - [Strunz 09.GA Zeolite with T5O10 Units – Fibrous Zeolite](#s09_ga)
                 - [Edingtonite](#edingtonite)
                 - [Kalborsite](#kalborsite)
                 - [Mésotype](#mesotype)
-                - [Thomsonite Subgroup](#28896)
+                - [Thomsonite](#28896)
                     - [Thomsonite-Ca](#thomsonite-ca)
                     - [Thomsonite-Sr](#thomsonite-sr)
                 - [Natrolite Subgroup](#29157)
@@ -8197,26 +7789,22 @@ Namespace:
                 - [Gobbinsite](#gobbinsite)
                 - [Merlinoite](#merlinoite)
                 - [Perlialite](#perlialite)
-                - [Gismondine Subgroup](#10315)
-                    - [Gismondine](#gismondine)
-                    - [Gismondine-Sr](#gismondine-sr)
+                - [Gismondine](#10315)
                     - [Gismondine-Ca](#gismondine-ca)
-                - [Mazzite Subgroup](#27548)
+                    - [Gismondine-Sr](#gismondine-sr)
+                - [Mazzite](#27548)
                     - [Mazzite-Mg](#mazzite-mg)
                     - [Mazzite-Na](#mazzite-na)
                 - [Phillipsite Subgroup](#3192)
                     - [Harmotome](#harmotome)
-                    - [Phillipsite-Ca](#phillipsite-ca)
-                    - [Phillipsite-K](#phillipsite-k)
-                    - [Phillipsite-Na](#phillipsite-na)
                     - [Phillipsite](#phillipsite)
                         - [Phillipsite-Ca](#phillipsite-ca)
                         - [Phillipsite-K](#phillipsite-k)
                         - [Phillipsite-Na](#phillipsite-na)
-                - [Garronite Subgroup](#46692)
+                - [Garronite](#46692)
                     - [Garronite-Ca](#garronite-ca)
                     - [Garronite-Na](#garronite-na)
-                - [Paulingite Subgroup](#470364)
+                - [Paulingite](#470364)
                     - [Paulingite-Ca](#paulingite-ca)
                     - [Paulingite-K](#paulingite-k)
             - [Strunz 09.GD Zeolite family: Chains of 6-membered rings – tabular zeolites](#s09_gd)
@@ -8228,34 +7816,27 @@ Namespace:
                 - [Offretite](#offretite)
                 - [Wenkite](#wenkite)
                 - [Willhendersonite](#willhendersonite)
-                - [Dachiardite Subgroup](#1212)
+                - [Dachiardite](#1212)
                     - [Dachiardite-Ca](#dachiardite-ca)
                     - [Dachiardite-Na](#dachiardite-na)
-                - [Erionite Subgroup](#1399)
+                - [Erionite](#1399)
                     - [Erionite-Ca](#erionite-ca)
                     - [Erionite-K](#erionite-k)
                     - [Erionite-Na](#erionite-na)
-                - [Ferrierite Subgroup](#1492)
+                - [Ferrierite](#1492)
                     - [Ferrierite-K](#ferrierite-k)
                     - [Ferrierite-Mg](#ferrierite-mg)
                     - [Ferrierite-Na](#ferrierite-na)
                     - [Ferrierite-NH4](#ferrierite-nh4)
-                - [Gmelinite Subgroup](#1714)
+                - [Gmelinite](#1714)
                     - [Gmelinite-Ca](#gmelinite-ca)
                     - [Gmelinite-K](#gmelinite-k)
                     - [Gmelinite-Na](#gmelinite-na)
-                - [Faujasite Subgroup](#35126)
+                - [Faujasite](#35126)
                     - [Faujasite-Ca](#faujasite-ca)
                     - [Faujasite-Mg](#faujasite-mg)
                     - [Faujasite-Na](#faujasite-na)
                 - [Chabazite-Levyne Subgroup](#35547)
-                    - [Chabazite-Ca](#chabazite-ca)
-                    - [Chabazite-K](#chabazite-k)
-                    - [Chabazite-Mg](#chabazite-mg)
-                    - [Chabazite-Na](#chabazite-na)
-                    - [Chabazite-Sr](#chabazite-sr)
-                    - [Lévyne-Ca](#levyne-ca)
-                    - [Lévyne-Na](#levyne-na)
                     - [Chabazite](#chabazite)
                         - [Chabazite-Ca](#chabazite-ca)
                         - [Chabazite-K](#chabazite-k)
@@ -8266,11 +7847,11 @@ Namespace:
                         - [Lévyne-Ca](#levyne-ca)
                         - [Lévyne-Na](#levyne-na)
             - [Strunz 09.GE Zeolite family: Chains of T10O20 Tetrahedra](#s09_ge)
-                - [Clinoptilolite Subgroup](#1082)
+                - [Clinoptilolite](#1082)
                     - [Clinoptilolite-Ca](#clinoptilolite-ca)
                     - [Clinoptilolite-K](#clinoptilolite-k)
                     - [Clinoptilolite-Na](#clinoptilolite-na)
-                - [Heulandite Subgroup](#1889)
+                - [Heulandite](#1889)
                     - [Heulandite-Ba](#heulandite-ba)
                     - [Heulandite-Ca](#heulandite-ca)
                     - [Heulandite-K](#heulandite-k)
@@ -8279,12 +7860,10 @@ Namespace:
                 - [Stilbite Subgroup](#3785)
                     - [Barrerite](#barrerite)
                     - [Stellerite](#stellerite)
-                    - [Stilbite-Ca](#stilbite-ca)
-                    - [Stilbite-Na](#stilbite-na)
                     - [Stilbite](#stilbite)
                         - [Stilbite-Ca](#stilbite-ca)
                         - [Stilbite-Na](#stilbite-na)
-                - [Brewsterite Subgroup](#766)
+                - [Brewsterite](#766)
                     - [Brewsterite-Ba](#brewsterite-ba)
                     - [Brewsterite-Sr](#brewsterite-sr)
             - [Strunz 09.GF Other rare zeolite](#s09_gf)
@@ -8803,6 +8382,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery,
 
 - Child of:
  [`1651`](#1651)
+ [`s04_C`](#s04_C)
 
 -
 
@@ -9129,14 +8709,28 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://mindat.org/min-31542.html
 
 
-[]{#britholite-ce}
+[]{#britholite}
 
-#####  Britholite-(Ce)
+#####  Britholite
 
 
 - Child of:
  [`31542`](#31542)
- [`s09_AH`](#s09_AH)
+
+- synonym for Britholite-(Ce), Britholite-(La), Britholite-(Y)
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/britholite
+
+
+[]{#britholite-ce}
+
+######  Britholite-(Ce)
+
+
+- Child of:
  [`britholite`](#britholite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/britholite-ce
@@ -9148,12 +8742,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#britholite-y}
 
-#####  Britholite-(Y)
+######  Britholite-(Y)
 
 
 - Child of:
- [`31542`](#31542)
- [`s09_AH`](#s09_AH)
  [`britholite`](#britholite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/britholite-y
@@ -9178,161 +8770,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - Concept URI: https://w3id.org/geochem/1.0/min/calciobritholite
 
 - MinDat URL: https://www.mindat.org/min-46769.html
-
-
-[]{#fluorbritholite-ce}
-
-#####  Fluorbritholite-(Ce)
-
-
-- Child of:
- [`31542`](#31542)
- [`fluorbritholite`](#fluorbritholite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fluorbritholite-ce
-
-- IMA chemistry: (Ce,Ca)<sub>5</sub>(SiO<sub>4</sub>)<sub>3</sub>F
-
-- MinDat URL: https://www.mindat.org/min-1574.html
-
-
-[]{#fluorbritholite-nd}
-
-#####  Fluorbritholite-(Nd)
-
-
-- Child of:
- [`31542`](#31542)
- [`fluorbritholite`](#fluorbritholite)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fluorbritholite-nd
-
-- MinDat URL: https://www.mindat.org/min-470770.html
-
-
-[]{#fluorbritholite-y}
-
-#####  Fluorbritholite-(Y)
-
-
-- Child of:
- [`31542`](#31542)
- [`fluorbritholite`](#fluorbritholite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fluorbritholite-y
-
-- IMA chemistry: (Y,Ca)<sub>5</sub>(SiO<sub>4</sub>)<sub>3</sub>F
-
-- MinDat URL: http://www.mindat.org/min-39556.html
-
-
-[]{#fluorcalciobritholite}
-
-#####  Fluorcalciobritholite
-
-
-- Child of:
- [`31542`](#31542)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fluorcalciobritholite
-
-- IMA chemistry: (Ca,REE)<sub>5</sub>(SiO<sub>4</sub>,PO<sub>4</sub>)<sub>3</sub>F
-
-- MinDat URL: http://www.mindat.org/min-29138.html
-
-
-[]{#tritomite-ce}
-
-#####  Tritomite-(Ce)
-
-
-- Child of:
- [`31542`](#31542)
- [`tritomite`](#tritomite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tritomite-ce
-
-- IMA chemistry: Ce<sub>5</sub>(SiO<sub>4</sub>,BO<sub>4</sub>)<sub>3</sub>(OH,O)
-
-- MinDat URL: http://www.mindat.org/min-4026.html
-
-
-[]{#tritomite-y}
-
-#####  Tritomite-(Y)
-
-
-- Child of:
- [`31542`](#31542)
- [`tritomite`](#tritomite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tritomite-y
-
-- IMA chemistry: Y<sub>5</sub>(SiO<sub>4</sub>,BO<sub>4</sub>)<sub>3</sub>(O,OH,F)
-
-- MinDat URL: https://www.mindat.org/min-4027.html
-
-
-[]{#britholite}
-
-#####  Britholite
-
-
-- Child of:
- [`31542`](#31542)
-
-- synonym for Britholite-(Ce), Britholite-(La), Britholite-(Y)
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/britholite
-
-
-[]{#britholite-ce}
-
-######  Britholite-(Ce)
-
-
-- Child of:
- [`31542`](#31542)
- [`s09_AH`](#s09_AH)
- [`britholite`](#britholite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/britholite-ce
-
-- IMA chemistry: (Ce,Ca)<sub>5</sub>(SiO<sub>4</sub>)<sub>3</sub>(OH)
-
-- MinDat URL: http://www.mindat.org/min-775.html
-
-
-[]{#britholite-y}
-
-######  Britholite-(Y)
-
-
-- Child of:
- [`31542`](#31542)
- [`s09_AH`](#s09_AH)
- [`britholite`](#britholite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/britholite-y
-
-- IMA chemistry: (Y,Ca)<sub>5</sub>(SiO<sub>4</sub>)<sub>3</sub>(OH)
-
-- MinDat URL: http://www.mindat.org/min-776.html
 
 
 []{#fluorbritholite}
@@ -9360,7 +8797,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`31542`](#31542)
  [`fluorbritholite`](#fluorbritholite)
 
 
@@ -9380,7 +8816,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`31542`](#31542)
  [`fluorbritholite`](#fluorbritholite)
 
 
@@ -9398,7 +8833,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 
 - Child of:
- [`31542`](#31542)
  [`fluorbritholite`](#fluorbritholite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/fluorbritholite-y
@@ -9406,6 +8840,21 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - IMA chemistry: (Y,Ca)<sub>5</sub>(SiO<sub>4</sub>)<sub>3</sub>F
 
 - MinDat URL: http://www.mindat.org/min-39556.html
+
+
+[]{#fluorcalciobritholite}
+
+#####  Fluorcalciobritholite
+
+
+- Child of:
+ [`31542`](#31542)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/fluorcalciobritholite
+
+- IMA chemistry: (Ca,REE)<sub>5</sub>(SiO<sub>4</sub>,PO<sub>4</sub>)<sub>3</sub>F
+
+- MinDat URL: http://www.mindat.org/min-29138.html
 
 
 []{#tritomite}
@@ -9432,7 +8881,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`31542`](#31542)
  [`tritomite`](#tritomite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tritomite-ce
@@ -9448,7 +8896,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`31542`](#31542)
  [`tritomite`](#tritomite)
 
 
@@ -9693,7 +9140,6 @@ as fibrous crusts; stalactitic; earthy; oolitic. May be rock-forming
 in beds of great extent; as nodular concretions in clays and shales;
 conglomeritic.
 - added by SMR
--
 
 - **Source:**
 https://w3id.org/geochem/1.0/min/SMRadditions, 
@@ -11647,13 +11093,31 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-1430.html
 
 
-[]{#florencite-ce}
+[]{#florencite}
 
-#####  Florencite-(Ce)
+#####  Florencite
 
 
 - Child of:
  [`29180`](#29180)
+
+- Use for Florencite specimen lacking chemical data to categorize as
+one of the species-specific subtypes. {@en}
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/florencite
+
+- MinDat URL: https://www.mindat.org/min-10268.html
+
+
+[]{#florencite-ce}
+
+######  Florencite-(Ce)
+
+
+- Child of:
  [`florencite`](#florencite)
 
 
@@ -11669,11 +11133,10 @@ SMR add missing skos broader
 
 []{#florencite-la}
 
-#####  Florencite-(La)
+######  Florencite-(La)
 
 
 - Child of:
- [`29180`](#29180)
  [`florencite`](#florencite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/florencite-la
@@ -11685,11 +11148,10 @@ SMR add missing skos broader
 
 []{#florencite-nd}
 
-#####  Florencite-(Nd)
+######  Florencite-(Nd)
 
 
 - Child of:
- [`29180`](#29180)
  [`florencite`](#florencite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/florencite-nd
@@ -11701,11 +11163,10 @@ SMR add missing skos broader
 
 []{#florencite-sm}
 
-#####  Florencite-(Sm)
+######  Florencite-(Sm)
 
 
 - Child of:
- [`29180`](#29180)
  [`florencite`](#florencite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/florencite-sm
@@ -11833,93 +11294,6 @@ SMR add missing skos broader
 - IMA chemistry: BiFe<sup>3+</sup><sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
 
 - MinDat URL: http://www.mindat.org/min-4382.html
-
-
-[]{#florencite}
-
-#####  Florencite
-
-
-- Child of:
- [`29180`](#29180)
-
-- Use for Florencite specimen lacking chemical data to categorize as
-one of the species-specific subtypes. {@en}
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/florencite
-
-- MinDat URL: https://www.mindat.org/min-10268.html
-
-
-[]{#florencite-ce}
-
-######  Florencite-(Ce)
-
-
-- Child of:
- [`29180`](#29180)
- [`florencite`](#florencite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/florencite-ce
-
-- IMA chemistry: CeAl<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
-
-- MinDat URL: https://www.mindat.org/min-1560.html
-
-
-[]{#florencite-la}
-
-######  Florencite-(La)
-
-
-- Child of:
- [`29180`](#29180)
- [`florencite`](#florencite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/florencite-la
-
-- IMA chemistry: LaAl<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-1561.html
-
-
-[]{#florencite-nd}
-
-######  Florencite-(Nd)
-
-
-- Child of:
- [`29180`](#29180)
- [`florencite`](#florencite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/florencite-nd
-
-- IMA chemistry: NdAl<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-1562.html
-
-
-[]{#florencite-sm}
-
-######  Florencite-(Sm)
-
-
-- Child of:
- [`29180`](#29180)
- [`florencite`](#florencite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/florencite-sm
-
-- IMA chemistry: SmAl<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-42495.html
 
 
 []{#29276}
@@ -12394,13 +11768,31 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-365.html
 
 
-[]{#arsenoflorencite-ce}
+[]{#arsenoflorencite}
 
-#####  Arsenoflorencite-(Ce)
+#####  Arsenoflorencite
 
 
 - Child of:
  [`43765`](#43765)
+
+- includes Arsenoflorencite-(Ce), Arsenoflorencite-(La),
+Arsenoflorencite-(Nd)
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/arsenoflorencite
+
+- MinDat URL: https://www.mindat.org/min-39863.html
+
+
+[]{#arsenoflorencite-ce}
+
+######  Arsenoflorencite-(Ce)
+
+
+- Child of:
  [`arsenoflorencite`](#arsenoflorencite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/arsenoflorencite-ce
@@ -12412,11 +11804,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#arsenoflorencite-la}
 
-#####  Arsenoflorencite-(La)
+######  Arsenoflorencite-(La)
 
 
 - Child of:
- [`43765`](#43765)
  [`arsenoflorencite`](#arsenoflorencite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/arsenoflorencite-la
@@ -12471,13 +11862,30 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-1334.html
 
 
-[]{#graulichite-ce}
+[]{#graulichite}
 
-#####  Graulichite-(Ce)
+#####  Graulichite
 
 
 - Child of:
  [`43765`](#43765)
+
+- includes Graulichite-(Ce), Graulichite-(La)
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/graulichite
+
+- MinDat URL: https://www.mindat.org/min-56057.html
+
+
+[]{#graulichite-ce}
+
+######  Graulichite-(Ce)
+
+
+- Child of:
  [`graulichite`](#graulichite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/graulichite-ce
@@ -12489,11 +11897,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#graulichite-la}
 
-#####  Graulichite-(La)
+######  Graulichite-(La)
 
 
 - Child of:
- [`43765`](#43765)
  [`graulichite`](#graulichite)
 
 
@@ -12533,109 +11940,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - IMA chemistry: PbFe<sup>3+</sup><sub>3</sub>(AsO<sub>4</sub>)(AsO<sub>3</sub>OH)(OH)<sub>6</sub>
 
 - MinDat URL: http://www.mindat.org/min-3606.html
-
-
-[]{#arsenoflorencite}
-
-#####  Arsenoflorencite
-
-
-- Child of:
- [`43765`](#43765)
-
-- includes Arsenoflorencite-(Ce), Arsenoflorencite-(La),
-Arsenoflorencite-(Nd)
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/arsenoflorencite
-
-- MinDat URL: https://www.mindat.org/min-39863.html
-
-
-[]{#arsenoflorencite-ce}
-
-######  Arsenoflorencite-(Ce)
-
-
-- Child of:
- [`43765`](#43765)
- [`arsenoflorencite`](#arsenoflorencite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/arsenoflorencite-ce
-
-- IMA chemistry: CeAl<sub>3</sub>(AsO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-366.html
-
-
-[]{#arsenoflorencite-la}
-
-######  Arsenoflorencite-(La)
-
-
-- Child of:
- [`43765`](#43765)
- [`arsenoflorencite`](#arsenoflorencite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/arsenoflorencite-la
-
-- IMA chemistry: LaAl<sub>3</sub>(AsO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-295.html
-
-
-[]{#graulichite}
-
-#####  Graulichite
-
-
-- Child of:
- [`43765`](#43765)
-
-- includes Graulichite-(Ce), Graulichite-(La)
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/graulichite
-
-- MinDat URL: https://www.mindat.org/min-56057.html
-
-
-[]{#graulichite-ce}
-
-######  Graulichite-(Ce)
-
-
-- Child of:
- [`43765`](#43765)
- [`graulichite`](#graulichite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/graulichite-ce
-
-- IMA chemistry: CeFe<sup>3+</sup><sub>3</sub>(AsO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-11383.html
-
-
-[]{#graulichite-la}
-
-######  Graulichite-(La)
-
-
-- Child of:
- [`43765`](#43765)
- [`graulichite`](#graulichite)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/graulichite-la
-
-- MinDat URL: https://www.mindat.org/min-55384.html
 
 
 []{#32720}
@@ -12846,6 +12150,7 @@ SMR add missing skos broader
 - Child of:
  [`32475`](#32475)
 
+- A polytype of Bariopharmacosiderite
 
 - **Source:**
 https://w3id.org/geochem/1.0/min/SMRadditions
@@ -13379,6 +12684,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Child of:
  [`43290`](#43290)
+ [`s07_DD`](#s07_DD)
 
 -
 - Concept URI: https://w3id.org/geochem/1.0/mingroup/42543
@@ -13393,7 +12699,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Child of:
  [`42543`](#42543)
- [`s07_DD`](#s07_DD)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/honessite
 
@@ -13409,7 +12714,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Child of:
  [`42543`](#42543)
- [`s07_DD`](#s07_DD)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydrowoodwardite
 
@@ -13425,7 +12729,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Child of:
  [`42543`](#42543)
- [`s07_DD`](#s07_DD)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/woodwardite
 
@@ -13441,7 +12744,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Child of:
  [`42543`](#42543)
- [`s07_DD`](#s07_DD)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/zincowoodwardite
 
@@ -13521,6 +12823,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43290`](#43290)
+ [`s05_DA`](#s05_DA)
 
 -
 - Concept URI: https://w3id.org/geochem/1.0/mingroup/43291
@@ -13535,7 +12838,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43291`](#43291)
- [`s05_DA`](#s05_DA)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/caresite
 
@@ -13551,7 +12853,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43291`](#43291)
- [`s05_DA`](#s05_DA)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/charmarite
 
@@ -13567,7 +12868,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43291`](#43291)
- [`s05_DA`](#s05_DA)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/chlormagaluminite
 
@@ -13583,7 +12883,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43291`](#43291)
- [`s05_DA`](#s05_DA)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/comblainite
 
@@ -13599,7 +12898,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43291`](#43291)
- [`s05_DA`](#s05_DA)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/quintinite
 
@@ -13632,7 +12930,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Child of:
  [`43291`](#43291)
- [`s05_DA`](#s05_DA)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/zaccagnaite
 
@@ -13838,7 +13135,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/motukoreaite
 
-- IMA chemistry: Mg<sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>[Na(H<sub>2</sub>O)<sub>6</sub>](SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
+- IMA chemistry: Mg<sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>[Na(H<sub>2</sub>O)<sub>6</sub>]     (SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-2793.html
 
@@ -13853,7 +13150,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/natroglaucocerinite
 
-- IMA chemistry: Zn<sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>[Na(H<sub>2</sub>O)<sub>6</sub>](SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
+- IMA chemistry: Zn<sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>[Na(H<sub>2</sub>O)<sub>6</sub>]     (SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-10812.html
 
@@ -13868,7 +13165,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/nikischerite
 
-- IMA chemistry: Fe<sup>2+</sup><sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>[Na(H<sub>2</sub>O)<sub>6</sub>](SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
+- IMA chemistry: Fe<sup>2+</sup><sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>[Na(H<sub>2</sub>O)<sub>6</sub>]     (SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-10934.html
 
@@ -13883,7 +13180,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/shigaite
 
-- IMA chemistry: Mn<sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>[Na(H<sub>2</sub>O)<sub>6</sub>](SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
+- IMA chemistry: Mn<sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>[Na(H<sub>2</sub>O)<sub>6</sub>]     (SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-3638.html
 
@@ -13898,7 +13195,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/wermlandite
 
-- IMA chemistry: Mg<sub>7</sub>Al<sub>2</sub>(OH)<sub>18</sub>[Ca(H<sub>2</sub>O)<sub>6</sub>](SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
+- IMA chemistry: Mg<sub>7</sub>Al<sub>2</sub>(OH)<sub>18</sub>[Ca(H<sub>2</sub>O)<sub>6</sub>]     (SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-4271.html
 
@@ -14038,7 +13335,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/holtite
 
-- IMA chemistry: (Ta<sub>0.6</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.4</sub>)Al<sub>6</sub>BSi<sub>3</sub>O<sub>18</sub>
+- IMA chemistry: (Ta<sub>0.6</sub><sub>0.4</sub>)Al<sub>6</sub>BSi<sub>3</sub>O<sub>18</sub>
 
 - MinDat URL: http://www.mindat.org/min-1925.html
 
@@ -14058,7 +13355,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/titanoholtite
 
-- IMA chemistry: (Ti<sub>0.75</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.25</sub>)Al<sub>6</sub>BSi<sub>3</sub>O<sub>18</sub>
+- IMA chemistry: (Ti<sub>0.75</sub><sub>0.25</sub>)Al<sub>6</sub>BSi<sub>3</sub>O<sub>18</sub>
 
 - MinDat URL: https://www.mindat.org/min-43589.html
 
@@ -14607,7 +13904,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`32181`](#32181)
- [`s09_AJ`](#s09_AJ)
 
 -
 
@@ -14632,143 +13928,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - IMA chemistry: (Y,REE,Ca)<sub>2</sub>(B,Be)<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>(OH,O)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-6843.html
-
-
-[]{#gadolinite-ce}
-
-######  Gadolinite-(Ce)
-
-
-- Child of:
- [`50363`](#50363)
- [`gadolinite`](#gadolinite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gadolinite-ce
-
-- IMA chemistry: Ce<sub>2</sub>Fe<sup>2+</sup>Be<sub>2</sub>O<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-1627.html
-
-
-[]{#gadolinite-nd}
-
-######  Gadolinite-(Nd)
-
-
-- Child of:
- [`50363`](#50363)
- [`gadolinite`](#gadolinite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gadolinite-nd
-
-- IMA chemistry: Nd<sub>2</sub>Fe<sup>2+</sup>Be<sub>2</sub>O<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-47913.html
-
-
-[]{#gadolinite-y}
-
-######  Gadolinite-(Y)
-
-
-- Child of:
- [`50363`](#50363)
- [`gadolinite`](#gadolinite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gadolinite-y
-
-- IMA chemistry: Y<sub>2</sub>Fe<sup>2+</sup>Be<sub>2</sub>O<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-1628.html
-
-
-[]{#hingganite-ce}
-
-######  Hingganite-(Ce)
-
-
-- Child of:
- [`50363`](#50363)
- [`hingganite`](#hingganite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hingganite-ce
-
-- IMA chemistry: BeCe(SiO<sub>4</sub>)(OH)
-
-- MinDat URL: https://www.mindat.org/min-1905.html
-
-
-[]{#hingganite-nd}
-
-######  Hingganite-(Nd)
-
-
-- Child of:
- [`50363`](#50363)
- [`hingganite`](#hingganite)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hingganite-nd
-
-- MinDat URL: https://www.mindat.org/min-47711.html
-
-
-[]{#hingganite-y}
-
-######  Hingganite-(Y)
-
-
-- Child of:
- [`50363`](#50363)
- [`hingganite`](#hingganite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hingganite-y
-
-- IMA chemistry: BeY(SiO<sub>4</sub>)(OH)
-
-- MinDat URL: http://www.mindat.org/min-1906.html
-
-
-[]{#hingganite-yb}
-
-######  Hingganite-(Yb)
-
-
-- Child of:
- [`50363`](#50363)
- [`hingganite`](#hingganite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hingganite-yb
-
-- IMA chemistry: BeYb(SiO<sub>4</sub>)(OH)
-
-- MinDat URL: http://www.mindat.org/min-1907.html
-
-
-[]{#minasgeraisite-y}
-
-######  Minasgeraisite-(Y)
-
-
-- Child of:
- [`50363`](#50363)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/minasgeraisite-y
-
-- IMA chemistry: CaBe<sub>2</sub>Y<sub>2</sub>Si<sub>2</sub>O<sub>10</sub>
-
-- MinDat URL: http://www.mindat.org/min-2716.html
 
 
 []{#gadolinite}
@@ -14796,7 +13955,6 @@ one of the species-specific subtypes. {@en}
 
 
 - Child of:
- [`50363`](#50363)
  [`gadolinite`](#gadolinite)
 
 
@@ -14816,7 +13974,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`50363`](#50363)
  [`gadolinite`](#gadolinite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/gadolinite-nd
@@ -14832,7 +13989,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`50363`](#50363)
  [`gadolinite`](#gadolinite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/gadolinite-y
@@ -14867,7 +14023,6 @@ one of the species-specific subtypes. {@en}
 
 
 - Child of:
- [`50363`](#50363)
  [`hingganite`](#hingganite)
 
 
@@ -14887,7 +14042,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`50363`](#50363)
  [`hingganite`](#hingganite)
 
 
@@ -14905,7 +14059,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 
 - Child of:
- [`50363`](#50363)
  [`hingganite`](#hingganite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hingganite-y
@@ -14921,7 +14074,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 
 - Child of:
- [`50363`](#50363)
  [`hingganite`](#hingganite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hingganite-yb
@@ -14929,6 +14081,21 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - IMA chemistry: BeYb(SiO<sub>4</sub>)(OH)
 
 - MinDat URL: http://www.mindat.org/min-1907.html
+
+
+[]{#minasgeraisite-y}
+
+######  Minasgeraisite-(Y)
+
+
+- Child of:
+ [`50363`](#50363)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/minasgeraisite-y
+
+- IMA chemistry: CaBe<sub>2</sub>Y<sub>2</sub>Si<sub>2</sub>O<sub>10</sub>
+
+- MinDat URL: http://www.mindat.org/min-2716.html
 
 
 []{#50361}
@@ -15726,7 +14893,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/deltalumite
 
-- IMA chemistry: (Al<sub>0.67</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.33</sub>)Al<sub>2</sub>O<sub>4</sub>
+- IMA chemistry: (Al<sub>0.67</sub><sub>0.33</sub>)Al<sub>2</sub>O<sub>4</sub>
 
 - MinDat URL: https://www.mindat.org/min-47933.html
 
@@ -15846,7 +15013,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/maghemite
 
-- IMA chemistry: (Fe<sup>3+</sup><sub>0.67</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.33</sub>)Fe<sup>3+</sup><sub>2</sub>O<sub>4</sub>
+- IMA chemistry: (Fe<sup>3+</sup><sub>0.67</sub><sub>0.33</sub>)Fe<sup>3+</sup><sub>2</sub>O<sub>4</sub>
 
 - MinDat URL: http://www.mindat.org/min-2533.html
 
@@ -15951,7 +15118,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/titanomaghemite
 
-- IMA chemistry: (Ti<sub>0.5</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.5</sub>)Fe<sup>3+</sup><sub>2</sub>O<sub>4</sub>
+- IMA chemistry: (Ti<sub>0.5</sub><sub>0.5</sub>)Fe<sup>3+</sup><sub>2</sub>O<sub>4</sub>
 
 - MinDat URL: http://www.mindat.org/min-29152.html
 
@@ -16131,7 +15298,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/aradite
 
-- IMA chemistry: BaCa<sub>6</sub>[(SiO<sub>4</sub>)(VO<sub>4</sub>)](VO<sub>4</sub>)<sub>2</sub>F
+- IMA chemistry: BaCa<sub>6</sub>[(SiO<sub>4</sub>)(VO<sub>4</sub>)]     (VO<sub>4</sub>)<sub>2</sub>F
 
 - MinDat URL: https://www.mindat.org/min-43920.html
 
@@ -16179,7 +15346,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/zadovite
 
-- IMA chemistry: BaCa<sub>6</sub>[(SiO<sub>4</sub>)(PO<sub>4</sub>)](PO<sub>4</sub>)<sub>2</sub>F
+- IMA chemistry: BaCa<sub>6</sub>[(SiO<sub>4</sub>)(PO<sub>4</sub>)]     (PO<sub>4</sub>)<sub>2</sub>F
 
 - MinDat URL: https://www.mindat.org/min-43893.html
 
@@ -16671,7 +15838,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s01_a}
 
 ####  Strunz 01.A Element; Metals and Intermetallic Alloys
-* `Strunz 01.A Element; Metals and Intermetallic Alloys`
 
 
 - Child of:
@@ -16698,7 +15864,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s01_aa}
 
 #####  Strunz 01.AA Copper-cupalite family
-* `Strunz 01.AA Copper-cupalite family`
 
 
 - Child of:
@@ -16968,7 +16133,6 @@ SMR add missing skos broader
 []{#s01_ab}
 
 #####  Strunz 01.AB Zinc-brass family
-* `Strunz 01.AB Zinc-brass family`
 
 
 - Child of:
@@ -17072,7 +16236,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s01_ac}
 
 #####  Strunz 01.AC Indium-tin family
-* `Strunz 01.AC Indium-tin family`
 
 
 - Child of:
@@ -17161,7 +16324,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s01_ad}
 
 #####  Strunz 01.AD Mercury-amalgam family
-* `Strunz 01.AD Mercury-amalgam family`
 
 
 - Child of:
@@ -17371,7 +16533,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s01_ae}
 
 #####  Strunz 01.AE Iron-chromium family
-* `Strunz 01.AE Iron-chromium family`
 
 
 - Child of:
@@ -17596,7 +16757,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s01_af}
 
 #####  Strunz 01.AF Platinum group elements
-* `Strunz 01.AF Platinum group elements`
 
 
 - Child of:
@@ -17713,7 +16873,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s01_ag}
 
 #####  Strunz 01.AG PGE-metal alloys
-* `Strunz 01.AG PGE-metal alloys`
 
 
 - Child of:
@@ -18102,7 +17261,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s01_ah}
 
 #####  Strunz 01.AH Miscellaneous Elements, alloys
-* `Strunz 01.AH Miscellaneous Elements, alloys`
 
 
 - Child of:
@@ -18146,7 +17304,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s01_b}
 
 ####  Strunz 01.B Metallic Carbides, Silicides, Nitrides and Phosphides
-* `Strunz 01.B Metallic Carbides, Silicides, Nitrides and Phosphides`
 
 
 - Child of:
@@ -18205,7 +17362,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s01_ba}
 
 #####  Strunz 01.BA Carbides
-* `Strunz 01.BA Carbides`
 
 
 - Child of:
@@ -18371,7 +17527,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s01_bb}
 
 #####  Strunz 01.BB Silicides
-* `Strunz 01.BB Silicides`
 
 
 - Child of:
@@ -18518,7 +17673,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s01_bc}
 
 #####  Strunz 01.BC Nitrides
-* `Strunz 01.BC Nitrides`
 
 
 - Child of:
@@ -18593,7 +17747,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s01_bd}
 
 #####  Strunz 01.BD Phosphides
-* `Strunz 01.BD Phosphides`
 
 
 - Child of:
@@ -18810,7 +17963,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s01_c}
 
 ####  Strunz 01.C Metalloid or Nonmetal
-* `Strunz 01.C Metalloid or Nonmetal`
 
 
 - Child of:
@@ -18839,7 +17991,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s01_ca}
 
 #####  Strunz 01.CA Arsenic group element
-* `Strunz 01.CA Arsenic group element`
 
 
 - Child of:
@@ -18969,7 +18120,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s01_cb}
 
 #####  Strunz 01.CB Carbon-silicon family
-* `Strunz 01.CB Carbon-silicon family`
 
 
 - Child of:
@@ -19056,7 +18206,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s01_cc}
 
 #####  Strunz 01.CC Sulfur-selenium-iodine family
-* `Strunz 01.CC Sulfur-selenium-iodine family`
 
 
 - Child of:
@@ -19179,7 +18328,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s01_d}
 
 ####  Strunz 01.D Nonmetallic Carbide or Nitride
-* `Strunz 01.D Nonmetallic Carbide or Nitride`
 
 
 - Child of:
@@ -19191,7 +18339,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s01_da}
 
 #####  Strunz 01.DA Nonmetallic carbide
-* `Strunz 01.DA Nonmetallic carbide`
 
 
 - Child of:
@@ -19218,7 +18365,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s01_db}
 
 #####  Strunz 01.DB Nonmetallic nitride
-* `Strunz 01.DB Nonmetallic nitride`
 
 
 - Child of:
@@ -20304,7 +19450,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s02_a}
 
 ####  Strunz 02.A 02.A Sulfide or sulfosalt alloy
-* `Strunz 02.A 02.A Sulfide or sulfosalt alloy`
 
 
 - Child of:
@@ -20316,7 +19461,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s02_aa}
 
 #####  Strunz 02.AA Sulfide or sulfosalt alloy of metalloids with Cu, Ag, Au
-* `Strunz 02.AA Sulfide or sulfosalt alloy of metalloids with Cu, Ag, Au`
 
 
 - Child of:
@@ -20504,6 +19648,10 @@ Domeykite-beta
 - Child of:
  [`s02_AA`](#s02_AA)
 
+- Cu-deficient 'domeykite' with a few extra powder diffraction lines.
+Possibly a new phase here as with Cu-deficient chalcocites and
+covellites. Possibly visually indistinguishable from domeykite.
+(MinDat)
 
 - **Source:**
 https://w3id.org/geochem/1.0/min/SMRadditions
@@ -20531,7 +19679,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s02_ab}
 
 #####  Strunz 02.AB Ni-metalloid sulfide or sulfosalt alloy
-* `Strunz 02.AB Ni-metalloid sulfide or sulfosalt alloy`
 
 
 - Child of:
@@ -20573,7 +19720,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s02_ac}
 
 #####  Strunz 02.AC Sulfide or sulfosalt alloy of metalloids with PGE
-* `Strunz 02.AC Sulfide or sulfosalt alloy of metalloids with PGE`
 
 
 - Child of:
@@ -20958,7 +20104,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s02_b}
 
 ####  Strunz 02.B 02.B Metal sulfide M:S > 1:1
-* `Strunz 02.B 02.B Metal sulfide M:S > 1:1`
 
 
 - Child of:
@@ -20970,7 +20115,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s02_ba}
 
 #####  Strunz 02.BA Metal sulfide M:S > 1:1 with Cu, Ag, Au
-* `Strunz 02.BA Metal sulfide M:S > 1:1 with Cu, Ag, Au`
 
 
 - Child of:
@@ -21670,7 +20814,6 @@ way to label such specimens would be 'acanthite, pseudo-cubic' or
 []{#s02_bb}
 
 #####  Strunz 02.BB Metal sulfide M:S > 1:1 with Ni
-* `Strunz 02.BB Metal sulfide M:S > 1:1 with Ni`
 
 
 - Child of:
@@ -22023,7 +21166,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_bc}
 
 #####  Strunz 02.BC Metal sulfide M:S > 1:1 with Rh, Pd, Pt, etc.
-* `Strunz 02.BC Metal sulfide M:S > 1:1 with Rh, Pd, Pt, etc.`
 
 
 - Child of:
@@ -22387,7 +21529,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_bd}
 
 #####  Strunz 02.BD Metal sulfide M:S > 1:1 with Hg, Tl
-* `Strunz 02.BD Metal sulfide M:S > 1:1 with Hg, Tl`
 
 
 - Child of:
@@ -22623,7 +21764,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_be}
 
 #####  Strunz 02.BE Metal sulfide M:S > 1:1 with Pb (Bi)
-* `Strunz 02.BE Metal sulfide M:S > 1:1 with Pb (Bi)`
 
 
 - Child of:
@@ -22717,7 +21857,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/schlemaite
 
-- IMA chemistry: (Cu,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>6</sub>(Pb,Bi)Se<sub>4</sub>
+- IMA chemistry: (Cu,)<sub>6</sub>(Pb,Bi)Se<sub>4</sub>
 
 - MinDat URL: http://www.mindat.org/min-25688.html
 
@@ -22740,7 +21880,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_c}
 
 ####  Strunz 02.C 02.C Metal sulfide (M = S)
-* `Strunz 02.C 02.C Metal sulfide (M = S)`
 
 
 - Child of:
@@ -22752,7 +21891,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_ca}
 
 #####  Strunz 02.CA Metal sulfide (M = S) with Cu
-* `Strunz 02.CA Metal sulfide (M = S) with Cu`
 
 
 - Child of:
@@ -22887,7 +22025,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s02_cb}
 
 #####  Strunz 02.CB Metal sulfide (M = S) with Zn, Fe, Cu, Ag, etc.
-* `Strunz 02.CB Metal sulfide (M = S) with Zn, Fe, Cu, Ag, etc.`
 
 
 - Child of:
@@ -23988,7 +23125,6 @@ fairly pure end members.
 []{#s02_cc}
 
 #####  Strunz 02.CC Metal sulfide (M = S) with Ni, Fe, Co, PGE, etc.
-* `Strunz 02.CC Metal sulfide (M = S) with Ni, Fe, Co, PGE, etc.`
 
 
 - Child of:
@@ -24540,7 +23676,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s02_cd}
 
 #####  Strunz 02.CD Metal sulfide (M = S) with Sn, Pb, Hg, etc.
-* `Strunz 02.CD Metal sulfide (M = S) with Sn, Pb, Hg, etc.`
 
 
 - Child of:
@@ -24705,7 +23840,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_d}
 
 ####  Strunz 02.D 02.D Metal sulfide (M < S)
-* `Strunz 02.D 02.D Metal sulfide (M < S)`
 
 
 - Child of:
@@ -25386,7 +24520,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s02_da}
 
 #####  Strunz 02.DA Metal sulfide (M:S = 3:4)
-* `Strunz 02.DA Metal sulfide (M:S = 3:4)`
 
 
 - Child of:
@@ -25927,7 +25060,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_db}
 
 #####  Strunz 02.DB Metal sulfide (M:S = 2:3)
-* `Strunz 02.DB Metal sulfide (M:S = 2:3)`
 
 
 - Child of:
@@ -26184,7 +25316,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_dc}
 
 #####  Strunz 02.DC Metal sulfide (M:S variable)
-* `Strunz 02.DC Metal sulfide (M:S variable)`
 
 
 - Child of:
@@ -26514,7 +25645,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_e}
 
 ####  Strunz 02.E 02.E Metal sulfide, M: S <= 1:2
-* `Strunz 02.E 02.E Metal sulfide, M: S <= 1:2`
 
 
 - Child of:
@@ -26526,7 +25656,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_ea}
 
 #####  Strunz 02.EA Metal sulfide, M: S <= 1:2 with Cu, Ag, Au
-* `Strunz 02.EA Metal sulfide, M: S <= 1:2 with Cu, Ag, Au`
 
 
 - Child of:
@@ -26842,7 +25971,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_eb}
 
 #####  Strunz 02.EB Metal sulfide, M: S <= 1:2 with Fe, Co, Ni, PGE, etc.
-* `Strunz 02.EB Metal sulfide, M: S <= 1:2 with Fe, Co, Ni, PGE, etc.`
 
 
 - Child of:
@@ -27131,6 +26259,28 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: http://www.mindat.org/min-1093.html
 
 
+[]{#gersdorffite}
+
+#######  Gersdorffite
+
+
+- Child of:
+ [`29282`](#29282)
+
+- Three polytypes, which are probably temperature-dependent, with P213
+being the low form (gersdorffite), Pca21 (orthogersdorffite) the
+intermediate (metastable?) form, and Pa3 (paragersdorffite) the high
+form. (mindat)
+-
+
+- **Source:**
+
+
+- Concept URI: https://w3id.org/geochem/1.0/min/gersdorffite
+
+- MinDat URL: https://www.mindat.org/min-1683.html
+
+
 []{#hollingworthite}
 
 #######  Hollingworthite
@@ -27324,28 +26474,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - IMA chemistry: CoSbS
 
 - MinDat URL: http://www.mindat.org/min-4295.html
-
-
-[]{#gersdorffite}
-
-#######  Gersdorffite
-
-
-- Child of:
- [`29282`](#29282)
-
-- Three polytypes, which are probably temperature-dependent, with P213
-being the low form (gersdorffite), Pca21 (orthogersdorffite) the
-intermediate (metastable?) form, and Pa3 (paragersdorffite) the high
-form. (mindat)
--
-
-- **Source:**
-
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gersdorffite
-
-- MinDat URL: https://www.mindat.org/min-1683.html
 
 
 []{#29303}
@@ -27929,7 +27057,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_ec}
 
 #####  Strunz 02.EC Metal sulfide, M:S = 1:>2
-* `Strunz 02.EC Metal sulfide, M:S = 1:>2`
 
 
 - Child of:
@@ -28035,7 +27162,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_f}
 
 ####  Strunz 02.F 02.F Other sulfides
-* `Strunz 02.F 02.F Other sulfides`
 
 
 - Child of:
@@ -28047,7 +27173,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_fa}
 
 #####  Strunz 02.FA Other sulfide with As, (Sb), S
-* `Strunz 02.FA Other sulfide with As, (Sb), S`
 
 
 - Child of:
@@ -28254,7 +27379,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_fb}
 
 #####  Strunz 02.FB Other sulfide with alkalies (without Cl, etc.)
-* `Strunz 02.FB Other sulfide with alkalies (without Cl, etc.)`
 
 
 - Child of:
@@ -28341,7 +27465,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_fc}
 
 #####  Strunz 02.FC Other sulfide with Cl, Br, I (halide-sulfides)
-* `Strunz 02.FC Other sulfide with Cl, Br, I (halide-sulfides)`
 
 
 - Child of:
@@ -28641,7 +27764,6 @@ SMR add missing skos broader
 []{#s02_fd}
 
 #####  Strunz 02.FD Other sulfide with O, OH, H2O
-* `Strunz 02.FD Other sulfide with O, OH, H2O`
 
 
 - Child of:
@@ -28881,7 +28003,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_g}
 
 ####  Strunz 02.G 02.G Sulfarsenite, sulfantimonite, or sulfbismuthite
-* `Strunz 02.G 02.G Sulfarsenite, sulfantimonite, or sulfbismuthite`
 
 
 - Child of:
@@ -28893,7 +28014,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_ga}
 
 #####  Strunz 02.GA Neso-sulfarsenite without additional S
-* `Strunz 02.GA Neso-sulfarsenite without additional S`
 
 
 - Child of:
@@ -29334,7 +28454,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_gb}
 
 #####  Strunz 02.GB Neso-sulfarsenite with additional S
-* `Strunz 02.GB Neso-sulfarsenite with additional S`
 
 
 - Child of:
@@ -29373,123 +28492,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-3764.html
 
 
-[]{#1605}
-
-######  Freibergite Subgroup
-* `Freibergite`
-
-
-- Child of:
- [`29338`](#29338)
- [`s02_GB`](#s02_GB)
-
--
-- (Ag6,[Ag6]4+)(Cu4 C2+2)Sb4S12S0-1.    In the A-site, group end-
-members either contain six III(Ag+Cu) cations (where Ag>Cu), or
-alternatively, contain a discrete metal-metal-bonded [Ag6]4+
-polycation cluster. The latter cluster is accompanied by a charge-
-balancing vacancy at the S2Z site.   C2+ = Fe2+, Zn, Cd, Hg and/or
-other species.   Z = S, Se
-
-- **Alternate labels:**
-Freibergite Subgroup
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/1605
-
-- IMA chemistry: Ag<sub>6</sub>[Cu<sub>4</sub>Fe<sub>2</sub>]Sb<sub>4</sub>S<sub>12</sub>
-
-- MinDat URL: https://mindat.org/min-1605.html
-
-
-[]{#argentotetrahedrite-fe}
-
-#######  Argentotetrahedrite-(Fe)
-
-
-- Child of:
- [`1605`](#1605)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/argentotetrahedrite-fe
-
-- MinDat URL: https://www.mindat.org/min-46256.html
-
-
-[]{#argentotetrahedrite-hg}
-
-#######  Argentotetrahedrite-(Hg)
-
-
-- Child of:
- [`1605`](#1605)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/argentotetrahedrite-hg
-
-- MinDat URL: https://www.mindat.org/min-55306.html
-
-
-[]{#argentotetrahedrite-zn}
-
-#######  Argentotetrahedrite-(Zn)
-
-
-- Child of:
- [`1605`](#1605)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/argentotetrahedrite-zn
-
-- MinDat URL: https://www.mindat.org/min-53914.html
-
-
-[]{#kenoargentotetrahedrite-fe}
-
-#######  Kenoargentotetrahedrite-(Fe)
-
-
-- Child of:
- [`1605`](#1605)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/kenoargentotetrahedrite-fe
-
-- MinDat URL: https://www.mindat.org/min-53610.html
-
-
-[]{#kenoargentotetrahedrite-zn}
-
-#######  Kenoargentotetrahedrite-(Zn)
-
-
-- Child of:
- [`1605`](#1605)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/kenoargentotetrahedrite-zn
-
-- MinDat URL: https://www.mindat.org/min-55305.html
-
-
 []{#29338}
 
 ######  Tetrahedrite Group
@@ -29508,7 +28510,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://mindat.org/min-29338.html
 
 
-[]{#freibergite}
+[]{#1605}
 
 #######  Freibergite
 
@@ -29516,71 +28518,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Child of:
  [`29338`](#29338)
 
-- Concept URI: https://w3id.org/geochem/1.0/min/freibergite
-
-- IMA chemistry: Ag<sub>6</sub>[Cu<sub>4</sub>Fe<sub>2</sub>]Sb<sub>4</sub>S<sub>12</sub>
-
-- MinDat URL: http://www.mindat.org/min-1605.html
-
-
-[]{#tennantite}
-
-#######  Tennantite
-
-
-- Child of:
- [`29338`](#29338)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tennantite
-
-- IMA chemistry: Cu<sub>6</sub>[Cu<sub>4</sub>(Fe,Zn)<sub>2</sub>]As<sub>4</sub>S<sub>13</sub>
-
-- MinDat URL: http://www.mindat.org/min-3911.html
-
-
-[]{#tennantite-in}
-
-#######  Tennantite-(In)
-
-
-- Child of:
- [`29338`](#29338)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tennantite-in
-
-- MinDat URL: https://www.mindat.org/min-55711.html
-
-
-[]{#tetrahedrite}
-
-#######  Tetrahedrite
-
-
-- Child of:
- [`29338`](#29338)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tetrahedrite
-
-- IMA chemistry: Cu<sub>6</sub>[Cu<sub>4</sub>(Fe,Zn)<sub>2</sub>]Sb<sub>4</sub>S<sub>13</sub>
-
-- MinDat URL: http://www.mindat.org/min-3924.html
-
-
-[]{#1605}
-
-#######  Freibergite Subgroup
-* `Freibergite`
-
-
-- Child of:
- [`29338`](#29338)
- [`s02_GB`](#s02_GB)
-
--
 - (Ag6,[Ag6]4+)(Cu4 C2+2)Sb4S12S0-1.    In the A-site, group end-
 members either contain six III(Ag+Cu) cations (where Ag>Cu), or
 alternatively, contain a discrete metal-metal-bonded [Ag6]4+
@@ -29689,15 +28626,12 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 []{#3911}
 
-#######  Tennantite Subgroup
-* `Tennantite`
+#######  Tennantite
 
 
 - Child of:
  [`29338`](#29338)
- [`s02_GB`](#s02_GB)
 
--
 - Cu6(Cu4C2+2)As4S12S.    In the A-site, group end-members contain six
 III(Cu+Ag) cations, where Cu>Ag.   C2+ = Fe2+, Zn, Cu, Hg and/or other
 species
@@ -29714,21 +28648,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - IMA chemistry: Cu<sub>6</sub>[Cu<sub>4</sub>(Fe,Zn)<sub>2</sub>]As<sub>4</sub>S<sub>13</sub>
 
 - MinDat URL: http://www.mindat.org/min-3911.html
-
-
-[]{#annivite}
-
-########  Annivite
-
-
-- Child of:
- [`3911`](#3911)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/annivite
-
-- IMA chemistry: Cu<sub>6</sub>[Cu<sub>4</sub>(Fe,Zn)<sub>2</sub>](Bi,Sb,As)<sub>4</sub>S<sub>13</sub>
-
-- MinDat URL: https://www.mindat.org/min-26713.html
 
 
 []{#tennantite-cu}
@@ -29801,15 +28720,12 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 []{#3924}
 
-#######  Tetrahedrite Subgroup
-* `Tetrahedrite`
+#######  Tetrahedrite
 
 
 - Child of:
  [`29338`](#29338)
- [`s02_GB`](#s02_GB)
 
--
 - Cu6(Cu4C2+2)Sb4S12S.    In the A-site, group end-members contain six
 III(Cu+Ag) cations, where Cu>Ag.   C2+ = Fe2+, Zn, Cd, Hg and/or other
 species
@@ -29956,7 +28872,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Child of:
  [`29338`](#29338)
- [`s02_GB`](#s02_GB)
 
 -
 
@@ -29990,7 +28905,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`29338`](#29338)
- [`s02_GB`](#s02_GB)
 
 -
 
@@ -30058,7 +28972,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Child of:
  [`29338`](#29338)
- [`s02_GB`](#s02_GB)
 
 -
 
@@ -30126,7 +29039,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Child of:
  [`29338`](#29338)
- [`s02_GB`](#s02_GB)
 
 -
 
@@ -30164,7 +29076,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Child of:
  [`29338`](#29338)
- [`s02_GB`](#s02_GB)
 
 -
 
@@ -30176,15 +29087,15 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://mindat.org/min-54915.html
 
 
-[]{#argentotennantite}
+[]{#argentotennantite-zn}
 
-########  Argentotennantite
+########  Argentotennantite-(Zn)
 
 
 - Child of:
  [`54915`](#54915)
 
-- Concept URI: https://w3id.org/geochem/1.0/min/argentotennantite
+- Concept URI: https://w3id.org/geochem/1.0/min/argentotennantite-zn
 
 - IMA chemistry: Ag<sub>6</sub>[Cu<sub>4</sub>(Fe,Zn)<sub>2</sub>]As<sub>4</sub>S<sub>13</sub>
 
@@ -30198,7 +29109,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`29338`](#29338)
- [`s02_GB`](#s02_GB)
 
 -
 
@@ -30243,268 +29153,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Concept URI: https://w3id.org/geochem/1.0/mingroup/55770
 
 - MinDat URL: https://mindat.org/min-55770.html
-
-
-[]{#3911}
-
-######  Tennantite Subgroup
-* `Tennantite`
-
-
-- Child of:
- [`29338`](#29338)
- [`s02_GB`](#s02_GB)
-
--
-- Cu6(Cu4C2+2)As4S12S.    In the A-site, group end-members contain six
-III(Cu+Ag) cations, where Cu>Ag.   C2+ = Fe2+, Zn, Cu, Hg and/or other
-species
-
-- **Alternate labels:**
-Tennantite Subgroup
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/3911
-
-- IMA chemistry: Cu<sub>6</sub>[Cu<sub>4</sub>(Fe,Zn)<sub>2</sub>]As<sub>4</sub>S<sub>13</sub>
-
-- MinDat URL: http://www.mindat.org/min-3911.html
-
-
-[]{#annivite}
-
-#######  Annivite
-
-
-- Child of:
- [`3911`](#3911)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/annivite
-
-- IMA chemistry: Cu<sub>6</sub>[Cu<sub>4</sub>(Fe,Zn)<sub>2</sub>](Bi,Sb,As)<sub>4</sub>S<sub>13</sub>
-
-- MinDat URL: https://www.mindat.org/min-26713.html
-
-
-[]{#tennantite-cu}
-
-#######  Tennantite-(Cu)
-
-
-- Child of:
- [`3911`](#3911)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tennantite-cu
-
-- MinDat URL: https://www.mindat.org/min-55386.html
-
-
-[]{#tennantite-fe}
-
-#######  Tennantite-(Fe)
-
-
-- Child of:
- [`3911`](#3911)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tennantite-fe
-
-- MinDat URL: https://www.mindat.org/min-53589.html
-
-
-[]{#tennantite-hg}
-
-#######  Tennantite-(Hg)
-
-
-- Child of:
- [`3911`](#3911)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tennantite-hg
-
-- MinDat URL: https://www.mindat.org/min-55250.html
-
-
-[]{#tennantite-zn}
-
-#######  Tennantite-(Zn)
-
-
-- Child of:
- [`3911`](#3911)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tennantite-zn
-
-- MinDat URL: https://www.mindat.org/min-53582.html
-
-
-[]{#3924}
-
-######  Tetrahedrite Subgroup
-* `Tetrahedrite`
-
-
-- Child of:
- [`29338`](#29338)
- [`s02_GB`](#s02_GB)
-
--
-- Cu6(Cu4C2+2)Sb4S12S.    In the A-site, group end-members contain six
-III(Cu+Ag) cations, where Cu>Ag.   C2+ = Fe2+, Zn, Cd, Hg and/or other
-species
-
-- **Alternate labels:**
-Tetrahedrite Subgroup
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/3924
-
-- IMA chemistry: Cu<sub>6</sub>[Cu<sub>4</sub>(Fe,Zn)<sub>2</sub>]Sb<sub>4</sub>S<sub>13</sub>
-
-- MinDat URL: https://mindat.org/min-3924.html
-
-
-[]{#argentotetrahedrite}
-
-#######  Argentotetrahedrite
-
-
-- Child of:
- [`3924`](#3924)
-
-
-- **Alternate labels:**
-Silver-bearing Tetrahedrite
-
-- Concept URI: https://w3id.org/geochem/1.0/min/argentotetrahedrite
-
-- IMA chemistry: Ag<sub>6</sub>Cu<sub>4</sub>(Fe,Zn)<sub>2</sub>Sb<sub>4</sub>S<sub>13</sub>
-
-- MinDat URL: http://www.mindat.org/min-10677.html
-
-
-[]{#tetrahedrite-cd}
-
-#######  Tetrahedrite-(Cd)
-
-
-- Child of:
- [`3924`](#3924)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tetrahedrite-cd
-
-- MinDat URL: https://www.mindat.org/min-470685.html
-
-
-[]{#tetrahedrite-cu}
-
-#######  Tetrahedrite-(Cu)
-
-
-- Child of:
- [`3924`](#3924)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tetrahedrite-cu
-
-- MinDat URL: https://www.mindat.org/min-470477.html
-
-
-[]{#tetrahedrite-fe}
-
-#######  Tetrahedrite-(Fe)
-
-
-- Child of:
- [`3924`](#3924)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tetrahedrite-fe
-
-- MinDat URL: https://www.mindat.org/min-53590.html
-
-
-[]{#tetrahedrite-hg}
-
-#######  Tetrahedrite-(Hg)
-
-
-- Child of:
- [`3924`](#3924)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tetrahedrite-hg
-
-- MinDat URL: https://www.mindat.org/min-53861.html
-
-
-[]{#tetrahedrite-mn}
-
-#######  Tetrahedrite-(Mn)
-
-
-- Child of:
- [`3924`](#3924)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tetrahedrite-mn
-
-- MinDat URL: https://www.mindat.org/min-55767.html
-
-
-[]{#tetrahedrite-zn}
-
-#######  Tetrahedrite-(Zn)
-
-
-- Child of:
- [`3924`](#3924)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tetrahedrite-zn
-
-- MinDat URL: https://www.mindat.org/min-53583.html
 
 
 []{#40461}
@@ -30666,288 +29314,9 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-1643.html
 
 
-[]{#54911}
-
-######  Giraudite Subgroup
-
-
-- Child of:
- [`29338`](#29338)
- [`s02_GB`](#s02_GB)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/54911
-
-- MinDat URL: https://mindat.org/min-54911.html
-
-
-[]{#giraudite}
-
-#######  Giraudite
-
-
-- Child of:
- [`54911`](#54911)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/giraudite
-
-- IMA chemistry: Cu<sub>6</sub>[Cu<sub>4</sub>(Fe,Zn)<sub>2</sub>]As<sub>4</sub>Se<sub>13</sub>
-
-- MinDat URL: http://www.mindat.org/min-1698.html
-
-
-[]{#54912}
-
-######  Goldfieldite Subgroup
-
-
-- Child of:
- [`29338`](#29338)
- [`s02_GB`](#s02_GB)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/54912
-
-- MinDat URL: https://mindat.org/min-54912.html
-
-
-[]{#arsenogoldfieldite}
-
-#######  Arsenogoldfieldite
-
-
-- Child of:
- [`54912`](#54912)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/arsenogoldfieldite
-
-- MinDat URL: https://www.mindat.org/min-55709.html
-
-
-[]{#goldfieldite}
-
-#######  Goldfieldite
-
-
-- Child of:
- [`54912`](#54912)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/goldfieldite
-
-- IMA chemistry: Cu<sub>10</sub>Te<sub>4</sub>S<sub>13</sub>
-
-- MinDat URL: http://www.mindat.org/min-1721.html
-
-
-[]{#stibiogoldfieldite}
-
-#######  Stibiogoldfieldite
-
-
-- Child of:
- [`54912`](#54912)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/stibiogoldfieldite
-
-- MinDat URL: https://www.mindat.org/min-55444.html
-
-
-[]{#54913}
-
-######  Hakite Subgroup
-
-
-- Child of:
- [`29338`](#29338)
- [`s02_GB`](#s02_GB)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/54913
-
-- MinDat URL: https://mindat.org/min-54913.html
-
-
-[]{#hakite}
-
-#######  Hakite
-
-
-- Child of:
- [`54913`](#54913)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hakite
-
-- IMA chemistry: Cu<sub>6</sub>[Cu<sub>4</sub>Hg<sub>2</sub>]Sb<sub>4</sub>Se<sub>13</sub>
-
-- MinDat URL: http://www.mindat.org/min-1803.html
-
-
-[]{#hakite-cd}
-
-#######  Hakite-(Cd)
-
-
-- Child of:
- [`54913`](#54913)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hakite-cd
-
-- MinDat URL: https://www.mindat.org/min-47055.html
-
-
-[]{#hakite-zn}
-
-#######  Hakite-(Zn)
-
-
-- Child of:
- [`54913`](#54913)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hakite-zn
-
-- MinDat URL: https://www.mindat.org/min-47054.html
-
-
-[]{#54914}
-
-######  Rozhdestvenskayaite Subgroup
-
-
-- Child of:
- [`29338`](#29338)
- [`s02_GB`](#s02_GB)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/54914
-
-- MinDat URL: https://mindat.org/min-54914.html
-
-
-[]{#rozhdestvenskayaite-zn}
-
-#######  Rozhdestvenskayaite-(Zn)
-
-
-- Child of:
- [`54914`](#54914)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/rozhdestvenskayaite-zn
-
-- IMA chemistry: Ag<sub>10</sub>Zn<sub>2</sub>Sb<sub>4</sub>S<sub>13</sub>
-
-- MinDat URL: https://www.mindat.org/min-51471.html
-
-
-[]{#54915}
-
-######  Arsenofreibergite Subgroup
-
-
-- Child of:
- [`29338`](#29338)
- [`s02_GB`](#s02_GB)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/54915
-
-- MinDat URL: https://mindat.org/min-54915.html
-
-
-[]{#argentotennantite}
-
-#######  Argentotennantite
-
-
-- Child of:
- [`54915`](#54915)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/argentotennantite
-
-- IMA chemistry: Ag<sub>6</sub>[Cu<sub>4</sub>(Fe,Zn)<sub>2</sub>]As<sub>4</sub>S<sub>13</sub>
-
-- MinDat URL: http://www.mindat.org/min-319.html
-
-
-[]{#55558}
-
-######  Zvěstovite Subgroup
-
-
-- Child of:
- [`29338`](#29338)
- [`s02_GB`](#s02_GB)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/55558
-
-- MinDat URL: https://mindat.org/min-55558.html
-
-
-[]{#zvestovite-zn}
-
-#######  Zvěstovite-(Zn)
-
-
-- Child of:
- [`55558`](#55558)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/zvestovite-zn
-
-- MinDat URL: https://www.mindat.org/min-55246.html
-
-
 []{#s02_gc}
 
 #####  Strunz 02.GC Poly-sulfarsenite
-* `Strunz 02.GC Poly-sulfarsenite`
 
 
 - Child of:
@@ -31247,7 +29616,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_h}
 
 ####  Strunz 02.H 02.H SnS type sulfosalt
-* `Strunz 02.H 02.H SnS type sulfosalt`
 
 
 - Child of:
@@ -31343,7 +29711,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s02_ha}
 
 #####  Strunz 02.HA SnS type sulfosalt with Cu, Ag, Fe (without Pb)
-* `Strunz 02.HA SnS type sulfosalt with Cu, Ag, Fe (without Pb)`
 
 
 - Child of:
@@ -31553,7 +29920,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_hb}
 
 #####  Strunz 02.HB SnS type sulfosalt with Cu, Ag, Fe, Sn and Pb
-* `Strunz 02.HB SnS type sulfosalt with Cu, Ag, Fe, Sn and Pb`
 
 
 - Child of:
@@ -31815,7 +30181,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/nagyagite
 
-- IMA chemistry: [Pb<sub>3</sub>(Pb,Sb)<sub>3</sub>S<sub>6</sub>](Au,Te)<sub>3</sub>
+- IMA chemistry: [Pb<sub>3</sub>(Pb,Sb)<sub>3</sub>S<sub>6</sub>]     (Au,Te)<sub>3</sub>
 
 - MinDat URL: http://www.mindat.org/min-2830.html
 
@@ -32009,7 +30375,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_hc}
 
 #####  Strunz 02.HC SnS type sulfosalt with only Pb
-* `Strunz 02.HC SnS type sulfosalt with only Pb`
 
 
 - Child of:
@@ -32512,7 +30877,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_hd}
 
 #####  Strunz 02.HD SnS type sulfosalt with Tl
-* `Strunz 02.HD SnS type sulfosalt with Tl`
 
 
 - Child of:
@@ -32819,7 +31183,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s02_he}
 
 #####  Strunz 02.HE SnS type sulfosalt with alkalies, H2O
-* `Strunz 02.HE SnS type sulfosalt with alkalies, H2O`
 
 
 - Child of:
@@ -32861,7 +31224,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s02_hf}
 
 #####  Strunz 02.HF SnS type sulfosalt with SnS and PbS archetype structure units
-* `Strunz 02.HF SnS type sulfosalt with SnS and PbS archetype structure units`
 
 
 - Child of:
@@ -33010,7 +31372,6 @@ original GSO mineral class
 []{#s02_j}
 
 ####  Strunz 02.J 02.J PbS type sulfosalt
-* `Strunz 02.J 02.J PbS type sulfosalt`
 
 
 - Child of:
@@ -33022,7 +31383,6 @@ original GSO mineral class
 []{#s02_ja}
 
 #####  Strunz 02.JA PbS type sulfosalt with  little or no Pb
-* `Strunz 02.JA PbS type sulfosalt with  little or no Pb`
 
 
 - Child of:
@@ -33430,7 +31790,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_jb}
 
 #####  Strunz 02.JB PbS type sulfosalt with Pb
-* `Strunz 02.JB PbS type sulfosalt with Pb`
 
 
 - Child of:
@@ -34294,7 +32653,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_jc}
 
 #####  Strunz 02.JC PbS type sulfosalt with Tl
-* `Strunz 02.JC PbS type sulfosalt with Tl`
 
 
 - Child of:
@@ -34351,7 +32709,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_k}
 
 ####  Strunz 02.K 02.K Sulfarsenate or Sulfantimonate
-* `Strunz 02.K 02.K Sulfarsenate or Sulfantimonate`
 
 
 - Child of:
@@ -34363,7 +32720,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_ka}
 
 #####  Strunz 02.KA Sulfarsenate with (As,Sb)S4 tetrahedra
-* `Strunz 02.KA Sulfarsenate with (As,Sb)S4 tetrahedra`
 
 
 - Child of:
@@ -34532,7 +32888,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_kb}
 
 #####  Strunz 02.KB Sulfarsenates with additional S
-* `Strunz 02.KB Sulfarsenates with additional S`
 
 
 - Child of:
@@ -34559,7 +32914,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_l}
 
 ####  Strunz 02.L 02.L Other sulfosalt
-* `Strunz 02.L 02.L Other sulfosalt`
 
 
 - Child of:
@@ -34571,7 +32925,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_la}
 
 #####  Strunz 02.LA Other sulfosalt without essential Pb
-* `Strunz 02.LA Other sulfosalt without essential Pb`
 
 
 - Child of:
@@ -34764,7 +33117,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_lb}
 
 #####  Strunz 02.LB Other sulfosalt with essential Pb
-* `Strunz 02.LB Other sulfosalt with essential Pb`
 
 
 - Child of:
@@ -34974,7 +33326,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_m}
 
 ####  Strunz 02.M 02.M Oxysulfosalt
-* `Strunz 02.M 02.M Oxysulfosalt`
 
 
 - Child of:
@@ -34986,7 +33337,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s02_ma}
 
 #####  Strunz 02.MA Oxysulfosalt of Alkalies or Alkali Earths
-* `Strunz 02.MA Oxysulfosalt of Alkalies or Alkali Earths`
 
 
 - Child of:
@@ -35123,7 +33473,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s03_a}
 
 ####  Strunz 03.A Simple halides, without H2O
-* `Strunz 03.A Simple halides, without H2O`
 
 
 - Child of:
@@ -35199,7 +33548,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s03_aa}
 
 #####  Strunz 03.AA Simple halides, without H2O, M:X 1:<2
-* `Strunz 03.AA Simple halides, without H2O, M:X 1:<2`
 
 
 - Child of:
@@ -35699,7 +34047,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s03_ab}
 
 #####  Strunz 03.AB Simple halides, without H2O, M:X 1:2
-* `Strunz 03.AB Simple halides, without H2O, M:X 1:2`
 
 
 - Child of:
@@ -35989,7 +34336,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s03_ac}
 
 #####  Strunz 03.AC Simple halides, without H2O, M:X 1:3
-* `Strunz 03.AC Simple halides, without H2O, M:X 1:3`
 
 
 - Child of:
@@ -35998,13 +34344,30 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Concept URI: https://w3id.org/geochem/1.0/strunzgroup/s03_AC
 
 
-[]{#fluocerite-ce}
+[]{#fluocerite}
 
-######  Fluocerite-(Ce)
+######  Fluocerite
 
 
 - Child of:
  [`s03_AC`](#s03_AC)
+
+- includes Fluocerite-(Ce), Fluocerite-(La).
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/fluocerite
+
+- MinDat URL: https://www.mindat.org/min-1569.html
+
+
+[]{#fluocerite-ce}
+
+#######  Fluocerite-(Ce)
+
+
+- Child of:
  [`fluocerite`](#fluocerite)
 
 
@@ -36020,11 +34383,10 @@ SMR add missing skos broader
 
 []{#fluocerite-la}
 
-######  Fluocerite-(La)
+#######  Fluocerite-(La)
 
 
 - Child of:
- [`s03_AC`](#s03_AC)
  [`fluocerite`](#fluocerite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/fluocerite-la
@@ -36079,64 +34441,9 @@ SMR add missing skos broader
 - MinDat URL: http://www.mindat.org/min-4399.html
 
 
-[]{#fluocerite}
-
-######  GSO minerals
-
-
-- Child of:
- [`s03_AC`](#s03_AC)
-
-- includes Fluocerite-(Ce), Fluocerite-(La).
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fluocerite
-
-- MinDat URL: https://www.mindat.org/min-1569.html
-
-
-[]{#fluocerite-ce}
-
-#######  Fluocerite-(Ce)
-
-
-- Child of:
- [`s03_AC`](#s03_AC)
- [`fluocerite`](#fluocerite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fluocerite-ce
-
-- IMA chemistry: CeF<sub>3</sub>
-
-- MinDat URL: https://www.mindat.org/min-1567.html
-
-
-[]{#fluocerite-la}
-
-#######  Fluocerite-(La)
-
-
-- Child of:
- [`s03_AC`](#s03_AC)
- [`fluocerite`](#fluocerite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fluocerite-la
-
-- IMA chemistry: LaF<sub>3</sub>
-
-- MinDat URL: http://www.mindat.org/min-1568.html
-
-
 []{#s03_b}
 
 ####  Strunz 03.B Simple halides, with H2O
-* `Strunz 03.B Simple halides, with H2O`
 
 
 - Child of:
@@ -36148,7 +34455,6 @@ SMR add missing skos broader
 []{#s03_ba}
 
 #####  Strunz 03.BA Simple halides, with H2O, M:X 1:<2
-* `Strunz 03.BA Simple halides, with H2O, M:X 1:<2`
 
 
 - Child of:
@@ -36205,7 +34511,6 @@ SMR add missing skos broader
 []{#s03_bb}
 
 #####  Strunz 03.BB Simple halides, with H2O, M:X 1:2
-* `Strunz 03.BB Simple halides, with H2O, M:X 1:2`
 
 
 - Child of:
@@ -36356,7 +34661,6 @@ SMR add missing skos broader
 []{#s03_bc}
 
 #####  Strunz 03.BC Simple halides, with H2O, M:X 1:3
-* `Strunz 03.BC Simple halides, with H2O, M:X 1:3`
 
 
 - Child of:
@@ -36383,7 +34687,6 @@ SMR add missing skos broader
 []{#s03_bd}
 
 #####  Strunz 03.BD Simple halides, with H2O + OH
-* `Strunz 03.BD Simple halides, with H2O + OH`
 
 
 - Child of:
@@ -36470,7 +34773,6 @@ SMR add missing skos broader
 []{#s03_c}
 
 ####  Strunz 03.C Complex halide
-* `Strunz 03.C Complex halide`
 
 
 - Child of:
@@ -36497,7 +34799,6 @@ SMR add missing skos broader
 []{#s03_ca}
 
 #####  Strunz 03.CA Borofluoride
-* `Strunz 03.CA Borofluoride`
 
 
 - Child of:
@@ -36554,7 +34855,6 @@ SMR add missing skos broader
 []{#s03_cb}
 
 #####  Strunz 03.CB Neso-aluminofluoride
-* `Strunz 03.CB Neso-aluminofluoride`
 
 
 - Child of:
@@ -36811,7 +35111,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s03_cc}
 
 #####  Strunz 03.CC Soro-aluminofluoride
-* `Strunz 03.CC Soro-aluminofluoride`
 
 
 - Child of:
@@ -36860,7 +35159,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/calcjarlite
 
-- IMA chemistry: Na<sub>2</sub>(Ca,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>14</sub>(Mg,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>Al<sub>12</sub>F<sub>64</sub>(OH)<sub>4</sub>
+- IMA chemistry: Na<sub>2</sub>(Ca,)<sub>14</sub>(Mg,)<sub>2</sub>Al<sub>12</sub>F<sub>64</sub>(OH)<sub>4</sub>
 
 - MinDat URL: http://www.mindat.org/min-861.html
 
@@ -36890,7 +35189,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/jarlite
 
-- IMA chemistry: Na<sub>2</sub>(Sr,Na)<sub>14</sub>(Mg,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>Al<sub>12</sub>F<sub>64</sub>(OH)<sub>4</sub>
+- IMA chemistry: Na<sub>2</sub>(Sr,Na)<sub>14</sub>(Mg,)<sub>2</sub>Al<sub>12</sub>F<sub>64</sub>(OH)<sub>4</sub>
 
 - MinDat URL: http://www.mindat.org/min-2076.html
 
@@ -36928,7 +35227,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s03_cd}
 
 #####  Strunz 03.CD Ino-aluminofluoride
-* `Strunz 03.CD Ino-aluminofluoride`
 
 
 - Child of:
@@ -37016,7 +35314,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s03_ce}
 
 #####  Strunz 03.CE Phyllo-aluminofluoride
-* `Strunz 03.CE Phyllo-aluminofluoride`
 
 
 - Child of:
@@ -37043,7 +35340,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s03_cf}
 
 #####  Strunz 03.CF Tekto-aluminofluoride
-* `Strunz 03.CF Tekto-aluminofluoride`
 
 
 - Child of:
@@ -37082,7 +35378,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydrokenoralstonite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span><sub>2</sub>Al<sub>2</sub>F<sub>6</sub>(H<sub>2</sub>O)
+- IMA chemistry: <sub>2</sub>Al<sub>2</sub>F<sub>6</sub>(H<sub>2</sub>O)
 
 - MinDat URL: https://www.mindat.org/min-3354.html
 
@@ -37090,7 +35386,6 @@ SMR add missing skos broader
 []{#s03_cg}
 
 #####  Strunz 03.CG Aluminofluoride with CO3, SO4, or PO4
-* `Strunz 03.CG Aluminofluoride with CO3, SO4, or PO4`
 
 
 - Child of:
@@ -37181,7 +35476,6 @@ SMR add missing skos broader
 []{#s03_ch}
 
 #####  Strunz 03.CH Silicofluoride
-* `Strunz 03.CH Silicofluoride`
 
 
 - Child of:
@@ -37298,7 +35592,6 @@ SMR add missing skos broader
 []{#s03_cj}
 
 #####  Strunz 03.CJ Complex halide with MX6 complexes
-* `Strunz 03.CJ Complex halide with MX6 complexes`
 
 
 - Child of:
@@ -37444,7 +35737,6 @@ SMR add missing skos broader
 []{#s03_ck}
 
 #####  Strunz 03.CK Complex halide with Bi
-* `Strunz 03.CK Complex halide with Bi`
 
 
 - Child of:
@@ -37471,7 +35763,6 @@ SMR add missing skos broader
 []{#s03_d}
 
 ####  Strunz 03.D Double halide, Oxyhalide, or Hydroxyhalide
-* `Strunz 03.D Double halide, Oxyhalide, or Hydroxyhalide`
 
 
 - Child of:
@@ -37483,7 +35774,6 @@ SMR add missing skos broader
 []{#s03_da}
 
 #####  Strunz 03.DA Double-, Oxy- or Hydroxy- halide with Cu, etc., without Pb
-* `Strunz 03.DA Double-, Oxy- or Hydroxy- halide with Cu, etc., without Pb`
 
 
 - Child of:
@@ -37966,7 +36256,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s03_db}
 
 #####  Strunz 03.DB Double-, Oxy- or Hydroxy-  halide with Pb, Cu, etc.
-* `Strunz 03.DB Double-, Oxy- or Hydroxy-  halide with Pb, Cu, etc.`
 
 
 - Child of:
@@ -38120,7 +36409,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/rickturnerite
 
-- IMA chemistry: Pb<sub>7</sub>O<sub>4</sub>[Mg(OH)<sub>4</sub>](OH)Cl<sub>3</sub>
+- IMA chemistry: Pb<sub>7</sub>O<sub>4</sub>[Mg(OH)<sub>4</sub>]     (OH)Cl<sub>3</sub>
 
 - MinDat URL: http://www.mindat.org/min-40290.html
 
@@ -38211,7 +36500,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s03_dc}
 
 #####  Strunz 03.DC Double-, Oxy- or Hydroxy-  halide with Pb (As,Sb,Bi), without Cu
-* `Strunz 03.DC Double-, Oxy- or Hydroxy-  halide with Pb (As,Sb,Bi), without Cu`
 
 
 - Child of:
@@ -38698,7 +36986,6 @@ Yale University 1837-1892, Volume II: 59).
 []{#s03_dd}
 
 #####  Strunz 03.DD Double-, Oxy- or Hydroxy-  halide with Hg
-* `Strunz 03.DD Double-, Oxy- or Hydroxy-  halide with Hg`
 
 
 - Child of:
@@ -38935,47 +37222,12 @@ Yale University 1837-1892, Volume II: 59).
 []{#s03_de}
 
 #####  Strunz 03.DE Oxyhalide with Rare-Earth Elements
-* `Strunz 03.DE Oxyhalide with Rare-Earth Elements`
 
 
 - Child of:
  [`s03_D`](#s03_D)
 
 - Concept URI: https://w3id.org/geochem/1.0/strunzgroup/s03_DE
-
-
-[]{#haleniusite-ce}
-
-######  Håleniusite-(Ce)
-
-
-- Child of:
- [`s03_DE`](#s03_DE)
- [`haleniusite`](#haleniusite)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/haleniusite-ce
-
-- MinDat URL: https://www.mindat.org/min-55595.html
-
-
-[]{#haleniusite-la}
-
-######  Håleniusite-(La)
-
-
-- Child of:
- [`s03_DE`](#s03_DE)
- [`haleniusite`](#haleniusite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/haleniusite-la
-
-- IMA chemistry: LaOF
-
-- MinDat URL: http://www.mindat.org/min-25691.html
 
 
 []{#haleniusite}
@@ -39001,7 +37253,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`s03_DE`](#s03_DE)
  [`haleniusite`](#haleniusite)
 
 
@@ -39019,7 +37270,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 
 - Child of:
- [`s03_DE`](#s03_DE)
  [`haleniusite`](#haleniusite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/haleniusite-la
@@ -39208,7 +37458,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/bismutostibiconite
 
-- IMA chemistry: (Bi,Fe<sup>3+</sup>,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>Sb<sup>5+</sup><sub>2</sub>O<sub>7</sub>
+- IMA chemistry: (Bi,Fe<sup>3+</sup>,)<sub>2</sub>Sb<sup>5+</sup><sub>2</sub>O<sub>7</sub>
 
 - MinDat URL: http://www.mindat.org/min-659.html
 
@@ -39262,7 +37512,7 @@ Lewisite,
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydroxyferroromeite
 
-- IMA chemistry: (Fe<sup>2+</sup><sub>1.5</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.5</sub>)Sb<sup>5+</sup><sub>2</sub>O<sub>6</sub>(OH)
+- IMA chemistry: (Fe<sup>2+</sup><sub>1.5</sub><sub>0.5</sub>)Sb<sup>5+</sup><sub>2</sub>O<sub>6</sub>(OH)
 
 - MinDat URL: https://www.mindat.org/min-47790.html
 
@@ -39879,7 +38129,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_a}
 
 ####  Strunz 04.A Oxide, Metal: Oxygen = 2:1 and 1:1
-* `Strunz 04.A Oxide, Metal: Oxygen = 2:1 and 1:1`
 
 
 - Child of:
@@ -39891,7 +38140,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_aa}
 
 #####  Strunz 04.AA Oxide, Metal: Oxygen = 2:1 and 1:2, Cation:Anion (M:O) = 2:1 (and 1.8:1)
-* `Strunz 04.AA Oxide, Metal: Oxygen = 2:1 and 1:2, Cation:Anion (M:O) = 2:1 (and 1.8:1)`
 
 
 - Child of:
@@ -39965,7 +38213,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_ab}
 
 #####  Strunz 04.AB Oxide, Metal: Oxygen = 2:1 and 1:3, M:O = 1:1 (and up to 1:1.25); with small to medium-sized cations only
-* `Strunz 04.AB Oxide, Metal: Oxygen = 2:1 and 1:3, M:O = 1:1 (and up to 1:1.25); with small to medium-sized cations only`
 
 
 - Child of:
@@ -40206,7 +38453,6 @@ with unusual physical properties.
 []{#s04_ac}
 
 #####  Strunz 04.AC Oxide, Metal: Oxygen = 2:1 and 1:4, M:O = 1:1 (and up to 1:1.25); with large cations (+- smaller ones)
-* `Strunz 04.AC Oxide, Metal: Oxygen = 2:1 and 1:4, M:O = 1:1 (and up to 1:1.25); with large cations (+- smaller ones)`
 
 
 - Child of:
@@ -40372,7 +38618,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_b}
 
 ####  Strunz 04.B Oxide, Metal: Oxygen = 3:4 and similar
-* `Strunz 04.B Oxide, Metal: Oxygen = 3:4 and similar`
 
 
 - Child of:
@@ -40472,7 +38717,6 @@ SMR add missing skos broader
 []{#s04_ba}
 
 #####  Strunz 04.BA Oxide, Metal: Oxygen = 3:4 and similar, With small and medium-sized cations
-* `Strunz 04.BA Oxide, Metal: Oxygen = 3:4 and similar, With small and medium-sized cations`
 
 
 - Child of:
@@ -40514,7 +38758,6 @@ SMR add missing skos broader
 []{#s04_bb}
 
 #####  Strunz 04.BB Oxide, Metal: Oxygen = 3:4 and similar, With only medium-sized cations
-* `Strunz 04.BB Oxide, Metal: Oxygen = 3:4 and similar, With only medium-sized cations`
 
 
 - Child of:
@@ -40791,7 +39034,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/deltalumite
 
-- IMA chemistry: (Al<sub>0.67</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.33</sub>)Al<sub>2</sub>O<sub>4</sub>
+- IMA chemistry: (Al<sub>0.67</sub><sub>0.33</sub>)Al<sub>2</sub>O<sub>4</sub>
 
 - MinDat URL: https://www.mindat.org/min-47933.html
 
@@ -40911,7 +39154,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/maghemite
 
-- IMA chemistry: (Fe<sup>3+</sup><sub>0.67</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.33</sub>)Fe<sup>3+</sup><sub>2</sub>O<sub>4</sub>
+- IMA chemistry: (Fe<sup>3+</sup><sub>0.67</sub><sub>0.33</sub>)Fe<sup>3+</sup><sub>2</sub>O<sub>4</sub>
 
 - MinDat URL: http://www.mindat.org/min-2533.html
 
@@ -41016,7 +39259,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/titanomaghemite
 
-- IMA chemistry: (Ti<sub>0.5</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.5</sub>)Fe<sup>3+</sup><sub>2</sub>O<sub>4</sub>
+- IMA chemistry: (Ti<sub>0.5</sub><sub>0.5</sub>)Fe<sup>3+</sup><sub>2</sub>O<sub>4</sub>
 
 - MinDat URL: http://www.mindat.org/min-29152.html
 
@@ -41069,7 +39312,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_bc}
 
 #####  Strunz 04.BC Oxide, Metal: Oxygen = 3:4 and similar, With medium-sized and large cations
-* `Strunz 04.BC Oxide, Metal: Oxygen = 3:4 and similar, With medium-sized and large cations`
 
 
 - Child of:
@@ -41163,7 +39405,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_bd}
 
 #####  Strunz 04.BD Oxide, Metal: Oxygen = 3:4 and similar, With only large cations
-* `Strunz 04.BD Oxide, Metal: Oxygen = 3:4 and similar, With only large cations`
 
 
 - Child of:
@@ -41191,7 +39432,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_c}
 
 ####  Strunz 04.C Oxide, Metal: Oxygen = 2: 3,3: 5, and similar
-* `Strunz 04.C Oxide, Metal: Oxygen = 2: 3,3: 5, and similar`
 
 
 - Child of:
@@ -41200,10 +39440,68 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - Concept URI: https://w3id.org/geochem/1.0/strunzgroup/s04_C
 
 
+[]{#51620}
+
+#####  Bitikleite Group
+
+
+- Child of:
+ [`1651`](#1651)
+ [`s04_C`](#s04_C)
+
+-
+
+- **Source:**
+https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
+
+- Concept URI: https://w3id.org/geochem/1.0/mingroup/51620
+
+- MinDat URL: https://mindat.org/min-51620.html
+
+
+[]{#elbrusite}
+
+######  Elbrusite
+
+
+- Child of:
+ [`51620`](#51620)
+ [`s04_CC`](#s04_CC)
+
+
+- **Source:**
+SMR add missing skos broader
+
+- Concept URI: https://w3id.org/geochem/1.0/min/elbrusite
+
+- IMA chemistry: Ca<sub>3</sub>(U<sup>6+</sup><sub>0.5</sub>Zr<sub>1.5</sub>)(Fe<sup>3+</sup>O<sub>4</sub>)<sub>3</sub>
+
+- MinDat URL: https://www.mindat.org/min-40055.html
+
+
+[]{#usturite}
+
+######  Usturite
+
+
+- Child of:
+ [`51620`](#51620)
+ [`s04_CC`](#s04_CC)
+
+
+- **Source:**
+SMR add missing skos broader
+
+- Concept URI: https://w3id.org/geochem/1.0/min/usturite
+
+- IMA chemistry: Ca<sub>3</sub>(SbZr)(FeO<sub>4</sub>)<sub>3</sub>
+
+- MinDat URL: https://www.mindat.org/min-40024.html
+
+
 []{#s04_ca}
 
 #####  Strunz 04.CA Oxide, Metal: Oxygen = 2: 3,3: 5, and similar, With small cations
-* `Strunz 04.CA Oxide, Metal: Oxygen = 2: 3,3: 5, and similar, With small cations`
 
 
 - Child of:
@@ -41222,7 +39520,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/byrudite
 
-- IMA chemistry: (Be,<span style="border: 1px solid #333; font-size:7px;"> </span>)(V<sup>3+</sup>,Ti)<sub>3</sub>O<sub>6</sub>
+- IMA chemistry: (Be,)(V<sup>3+</sup>,Ti)<sub>3</sub>O<sub>6</sub>
 
 - MinDat URL: https://www.mindat.org/min-43917.html
 
@@ -41230,7 +39528,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_cb}
 
 #####  Strunz 04.CB Oxide, Metal: Oxygen = 2: 3,3: 5, and similar, With medium-sized cations
-* `Strunz 04.CB Oxide, Metal: Oxygen = 2: 3,3: 5, and similar, With medium-sized cations`
 
 
 - Child of:
@@ -42253,7 +40550,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_cc}
 
 #####  Strunz 04.CC Oxide, Metal: Oxygen = 2: 3,3: 5, and similar, With large and medium-sized cations
-* `Strunz 04.CC Oxide, Metal: Oxygen = 2: 3,3: 5, and similar, With large and medium-sized cations`
 
 
 - Child of:
@@ -42494,7 +40790,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/paseroite
 
-- IMA chemistry: Pb(Mn<sup>2+</sup>,<span style="border: 1px solid #333; font-size:7px;"> </span>)(Fe<sup>3+</sup>,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>(V<sup>5+</sup>,Ti<sup>4+</sup>,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>18</sub>O<sub>38</sub>
+- IMA chemistry: Pb(Mn<sup>2+</sup>,)(Fe<sup>3+</sup>,)<sub>2</sub>(V<sup>5+</sup>,Ti<sup>4+</sup>,)<sub>18</sub>O<sub>38</sub>
 
 - MinDat URL: http://www.mindat.org/min-42381.html
 
@@ -42666,13 +40962,30 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-1153.html
 
 
-[]{#davidite-ce}
+[]{#davidite}
 
-#######  Davidite-(Ce)
+#######  Davidite
 
 
 - Child of:
  [`29190`](#29190)
+
+- includes Davidite-(Ce), Davidite-(La), Davidite-(Y)
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/davidite
+
+- MinDat URL: https://www.mindat.org/min-1232.html
+
+
+[]{#davidite-ce}
+
+########  Davidite-(Ce)
+
+
+- Child of:
  [`davidite`](#davidite)
 
 
@@ -42688,11 +41001,10 @@ SMR add missing skos broader
 
 []{#davidite-la}
 
-#######  Davidite-(La)
+########  Davidite-(La)
 
 
 - Child of:
- [`29190`](#29190)
  [`davidite`](#davidite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/davidite-la
@@ -42834,7 +41146,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/mianningite
 
-- IMA chemistry: (<span style="border: 1px solid #333; font-size:7px;"> </span>,Pb,Ce,Na)(U<sup>4+</sup>,Mn,U<sup>6+</sup>)Fe<sup>3+</sup><sub>2</sub>(Ti,Fe<sup>3+</sup>)<sub>18</sub>O<sub>38</sub>
+- IMA chemistry: (,Pb,Ce,Na)(U<sup>4+</sup>,Mn,U<sup>6+</sup>)Fe<sup>3+</sup><sub>2</sub>(Ti,Fe<sup>3+</sup>)<sub>18</sub>O<sub>38</sub>
 
 - MinDat URL: https://www.mindat.org/min-46512.html
 
@@ -42850,7 +41162,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/paseroite
 
-- IMA chemistry: Pb(Mn<sup>2+</sup>,<span style="border: 1px solid #333; font-size:7px;"> </span>)(Fe<sup>3+</sup>,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>(V<sup>5+</sup>,Ti<sup>4+</sup>,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>18</sub>O<sub>38</sub>
+- IMA chemistry: Pb(Mn<sup>2+</sup>,)(Fe<sup>3+</sup>,)<sub>2</sub>(V<sup>5+</sup>,Ti<sup>4+</sup>,)<sub>18</sub>O<sub>38</sub>
 
 - MinDat URL: http://www.mindat.org/min-42381.html
 
@@ -42868,60 +41180,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - IMA chemistry: Pb(Mn,Y,U)(Fe,Zn)<sub>2</sub>(Ti,Fe,Cr,V)<sub>18</sub>(O,OH)<sub>38</sub>
 
 - MinDat URL: http://www.mindat.org/min-3617.html
-
-
-[]{#davidite}
-
-#######  Davidite
-
-
-- Child of:
- [`29190`](#29190)
-
-- includes Davidite-(Ce), Davidite-(La), Davidite-(Y)
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/davidite
-
-- MinDat URL: https://www.mindat.org/min-1232.html
-
-
-[]{#davidite-ce}
-
-########  Davidite-(Ce)
-
-
-- Child of:
- [`29190`](#29190)
- [`davidite`](#davidite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/davidite-ce
-
-- IMA chemistry: Ce(Y,U)Fe<sub>2</sub>(Ti,Fe,Cr,V)<sub>18</sub>(O,OH,F)<sub>38</sub>
-
-- MinDat URL: https://www.mindat.org/min-1233.html
-
-
-[]{#davidite-la}
-
-########  Davidite-(La)
-
-
-- Child of:
- [`29190`](#29190)
- [`davidite`](#davidite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/davidite-la
-
-- IMA chemistry: La(Y,U)Fe<sub>2</sub>(Ti,Fe,Cr,V)<sub>18</sub>(O,OH,F)<sub>38</sub>
-
-- MinDat URL: http://www.mindat.org/min-1234.html
 
 
 []{#29306}
@@ -43169,7 +41427,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/chlormayenite
 
-- IMA chemistry: Ca<sub>12</sub>Al<sub>14</sub>O<sub>32</sub>[<span style="border: 1px solid #333; font-size:7px;"> </span><sub>4</sub>Cl<sub>2</sub>]
+- IMA chemistry: Ca<sub>12</sub>Al<sub>14</sub>O<sub>32</sub>[<sub>4</sub>Cl<sub>2</sub>]
 
 - MinDat URL: https://www.mindat.org/min-2606.html
 
@@ -43199,7 +41457,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/fluormayenite
 
-- IMA chemistry: Ca<sub>12</sub>Al<sub>14</sub>O<sub>32</sub>[<span style="border: 1px solid #333; font-size:7px;"> </span><sub>4</sub>F<sub>2</sub>]
+- IMA chemistry: Ca<sub>12</sub>Al<sub>14</sub>O<sub>32</sub>[<sub>4</sub>F<sub>2</sub>]
 
 - MinDat URL: https://www.mindat.org/min-43883.html
 
@@ -43410,7 +41668,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_d}
 
 ####  Strunz 04.D Oxide, Metal: Oxygen = 1:2 and similar
-* `Strunz 04.D Oxide, Metal: Oxygen = 1:2 and similar`
 
 
 - Child of:
@@ -43561,132 +41818,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-4024.html
 
 
-[]{#39540}
-
-#####  Samarskite Group
-
-
-- Child of:
- [`56150`](#56150)
- [`s04_D`](#s04_D)
-
--
-- Formula:A3+B3+C5+2O8.         A = Yb, Y, REE (Ln), U, Th, Ca ;    B
-= Fe3+, Mn2+; C = Nb, Ta, Ti.   Nb> Ta and Ti.   Samarskite group
-minerals are ordered A3+C5+O4 minerals. The difference between the
-species of the group lies in the occupancy of the A-site.  Use group
-name when the material has not been analyzed, and could be any of the
-sub classes Calciosamarskite, Ishikawaite, Samarskite-(Yb),
-Samarskite-(Yb), Srilankite, Yttrotantalite-(Y).
-
-- **Alternate labels:**
-Samarskite
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/39540
-
-- MinDat URL: https://mindat.org/min-39540.html
-
-
-[]{#calciosamarskite}
-
-######  Calciosamarskite
-
-
-- Child of:
- [`39540`](#39540)
- [`s04_DB`](#s04_DB)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/calciosamarskite
-
-- IMA chemistry: (Ca,Fe,Y)(Nb,Ta,Ti)O<sub>4</sub>
-
-- MinDat URL: http://www.mindat.org/min-7962.html
-
-
-[]{#ishikawaite}
-
-######  Ishikawaite
-
-
-- Child of:
- [`39540`](#39540)
- [`s04_DB`](#s04_DB)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ishikawaite
-
-- IMA chemistry: (U,Fe,Y)NbO<sub>4</sub>
-
-- MinDat URL: http://www.mindat.org/min-2050.html
-
-
-[]{#samarskite-y}
-
-######  Samarskite-(Y)
-
-
-- Child of:
- [`39540`](#39540)
- [`s04_DB`](#s04_DB)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/samarskite-y
-
-- IMA chemistry: (Y,Ce,U,Fe,Nb)(Nb,Ta,Ti)O<sub>4</sub>
-
-- MinDat URL: https://www.mindat.org/min-3512.html
-
-
-[]{#samarskite-yb}
-
-######  Samarskite-(Yb)
-
-
-- Child of:
- [`39540`](#39540)
- [`s04_DB`](#s04_DB)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/samarskite-yb
-
-- IMA chemistry: YbNbO<sub>4</sub>
-
-- MinDat URL: https://www.mindat.org/min-27449.html
-
-
-[]{#srilankite}
-
-######  Srilankite
-
-
-- Child of:
- [`39540`](#39540)
- [`s04_DB`](#s04_DB)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/srilankite
-
-- IMA chemistry: Ti<sub>2</sub>ZrO<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-3737.html
-
-
-[]{#yttrotantalite-y}
-
-######  Yttrotantalite-(Y)
-
-
-- Child of:
- [`39540`](#39540)
- [`s04_DG`](#s04_DG)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/yttrotantalite-y
-
-- IMA chemistry: (Y,U,Fe<sup>2+</sup>)(Ta,Nb)(O,OH)<sub>4</sub>
-
-- MinDat URL: http://www.mindat.org/min-4373.html
-
-
 []{#46759}
 
 #####  Wodginite Group
@@ -43800,7 +41931,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tantalowodginite
 
-- IMA chemistry: (Mn,<span style="border: 1px solid #333; font-size:7px;"> </span>)TaTa<sub>2</sub>O<sub>8</sub>
+- IMA chemistry: (Mn,)TaTa<sub>2</sub>O<sub>8</sub>
 
 - MinDat URL: https://www.mindat.org/min-7328.html
 
@@ -43862,9 +41993,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`56150`](#56150)
- [`s04_D`](#s04_D)
 
--
 - Formula:A3+B3+C5+2O8.         A = Yb, Y, REE (Ln), U, Th, Ca ;    B
 = Fe3+, Mn2+; C = Nb, Ta, Ti.   Nb> Ta and Ti.   Samarskite group
 minerals are ordered A3+C5+O4 minerals. The difference between the
@@ -44126,101 +42255,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://mindat.org/min-41586.html
 
 
-[]{#columbite-mg}
-
-#######  Columbite-(Mg)
-
-
-- Child of:
- [`41586`](#41586)
- [`Columbite`](#Columbite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/columbite-mg
-
-- IMA chemistry: MgNb<sub>2</sub>O<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-2541.html
-
-
-[]{#columbite-mn}
-
-#######  Columbite-(Mn)
-
-
-- Child of:
- [`41586`](#41586)
- [`Columbite`](#Columbite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/columbite-mn
-
-- IMA chemistry: Mn<sup>2+</sup>Nb<sub>2</sub>O<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-2520.html
-
-
-[]{#qitianlingite}
-
-#######  Qitianlingite
-
-
-- Child of:
- [`41586`](#41586)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/qitianlingite
-
-- IMA chemistry: Fe<sup>2+</sup><sub>2</sub>Nb<sub>2</sub>W<sup>6+</sup>O<sub>10</sub>
-
-- MinDat URL: http://www.mindat.org/min-3334.html
-
-
-[]{#tantalite-fe}
-
-#######  Tantalite-(Fe)
-
-
-- Child of:
- [`41586`](#41586)
- [`tantalite`](#tantalite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tantalite-fe
-
-- IMA chemistry: Fe<sup>2+</sup>Ta<sub>2</sub>O<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-1530.html
-
-
-[]{#tantalite-mg}
-
-#######  Tantalite-(Mg)
-
-
-- Child of:
- [`41586`](#41586)
- [`tantalite`](#tantalite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tantalite-mg
-
-- IMA chemistry: MgTa<sub>2</sub>O<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-11465.html
-
-
-[]{#tantalite-mn}
-
-#######  Tantalite-(Mn)
-
-
-- Child of:
- [`41586`](#41586)
- [`tantalite`](#tantalite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tantalite-mn
-
-- IMA chemistry: Mn<sup>2+</sup>Ta<sub>2</sub>O<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-2522.html
-
-
 []{#columbite}
 
 #######  Columbite
@@ -44247,7 +42281,6 @@ this vocabulary, based on Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS 
 
 
 - Child of:
- [`s04_DB`](#s04_DB)
  [`Columbite`](#Columbite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/columbite-fe
@@ -44263,7 +42296,6 @@ this vocabulary, based on Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS 
 
 
 - Child of:
- [`41586`](#41586)
  [`Columbite`](#Columbite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/columbite-mg
@@ -44279,7 +42311,6 @@ this vocabulary, based on Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS 
 
 
 - Child of:
- [`41586`](#41586)
  [`Columbite`](#Columbite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/columbite-mn
@@ -44287,6 +42318,21 @@ this vocabulary, based on Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS 
 - IMA chemistry: Mn<sup>2+</sup>Nb<sub>2</sub>O<sub>6</sub>
 
 - MinDat URL: http://www.mindat.org/min-2520.html
+
+
+[]{#qitianlingite}
+
+#######  Qitianlingite
+
+
+- Child of:
+ [`41586`](#41586)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/qitianlingite
+
+- IMA chemistry: Fe<sup>2+</sup><sub>2</sub>Nb<sub>2</sub>W<sup>6+</sup>O<sub>10</sub>
+
+- MinDat URL: http://www.mindat.org/min-3334.html
 
 
 []{#tantalite}
@@ -44315,7 +42361,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`41586`](#41586)
  [`tantalite`](#tantalite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tantalite-fe
@@ -44331,7 +42376,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`41586`](#41586)
  [`tantalite`](#tantalite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tantalite-mg
@@ -44347,7 +42391,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`41586`](#41586)
  [`tantalite`](#tantalite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tantalite-mn
@@ -44470,7 +42513,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tantalowodginite
 
-- IMA chemistry: (Mn,<span style="border: 1px solid #333; font-size:7px;"> </span>)TaTa<sub>2</sub>O<sub>8</sub>
+- IMA chemistry: (Mn,)TaTa<sub>2</sub>O<sub>8</sub>
 
 - MinDat URL: https://www.mindat.org/min-7328.html
 
@@ -44516,7 +42559,6 @@ SMR add missing skos broader
  [`56150`](#56150)
  [`s04_DB`](#s04_DB)
 
--
 - Includes series between Ixiolite-(Mn2+) and Ixiolite-(Fe2+),
 Nioboixiolite-(Mn2+), and Nioboixiolite-([])
 
@@ -44528,30 +42570,12 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://mindat.org/min-56151.html
 
 
-[]{#ixiolite-mn2}
-
-#######  Ixiolite-(Mn2+)
-
-
-- Child of:
- [`56151`](#56151)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ixiolite-mn2
-
-- MinDat URL: https://www.mindat.org/min-56148.html
-
-
 []{#ixiolite}
 
 #######  Ixiolite
 
 
 - Child of:
- [`s04_DB`](#s04_DB)
  [`56151`](#56151)
 
 - Ixiolite is a synonym of Ixiolite-(Mn2+)-Ixiolite-(Fe2+) Series.
@@ -44561,15 +42585,14 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ixiolite
 
-- IMA chemistry: (Ta,Mn,Nb)O<sub>2</sub>
+- IMA chemistry: (Ta,Mn,Fe)O<sub>2</sub>
 
-- MinDat URL: http://www.mindat.org/min-2059.html
+- MinDat URL: https://www.mindat.org/min-56149.html
 
 
 []{#s04_da}
 
 #####  Strunz 04.DA Oxide, Metal: Oxygen = 1:2 and similar, With small cations: Silica family
-* `Strunz 04.DA Oxide, Metal: Oxygen = 1:2 and similar, With small cations: Silica family`
 
 
 - Child of:
@@ -44732,7 +42755,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_db}
 
 #####  Strunz 04.DB Oxide, Metal: Oxygen = 1:2 and similar, With medium-sized cations; chains of edge-sharing octahedra
-* `Strunz 04.DB Oxide, Metal: Oxygen = 1:2 and similar, With medium-sized cations; chains of edge-sharing octahedra`
 
 
 - Child of:
@@ -44834,22 +42856,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: http://www.mindat.org/min-917.html
 
 
-[]{#columbite-fe}
-
-######  Columbite-(Fe)
-
-
-- Child of:
- [`s04_DB`](#s04_DB)
- [`Columbite`](#Columbite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/columbite-fe
-
-- IMA chemistry: Fe<sup>2+</sup>Nb<sub>2</sub>O<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-1514.html
-
-
 []{#ferrotitanowodginite}
 
 ######  Ferrotitanowodginite
@@ -44896,27 +42902,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - IMA chemistry: (U,Fe,Y)NbO<sub>4</sub>
 
 - MinDat URL: http://www.mindat.org/min-2050.html
-
-
-[]{#ixiolite}
-
-######  Ixiolite
-
-
-- Child of:
- [`s04_DB`](#s04_DB)
- [`56151`](#56151)
-
-- Ixiolite is a synonym of Ixiolite-(Mn2+)-Ixiolite-(Fe2+) Series.
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ixiolite
-
-- IMA chemistry: (Ta,Mn,Nb)O<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-2059.html
 
 
 []{#lithiotantite}
@@ -45015,6 +43000,22 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: https://www.mindat.org/min-3512.html
 
 
+[]{#samarskite-yb}
+
+######  Samarskite-(Yb)
+
+
+- Child of:
+ [`39540`](#39540)
+ [`s04_DB`](#s04_DB)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/samarskite-yb
+
+- IMA chemistry: YbNbO<sub>4</sub>
+
+- MinDat URL: https://www.mindat.org/min-27449.html
+
+
 []{#scrutinyite}
 
 ######  Scrutinyite
@@ -45061,7 +43062,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tantalowodginite
 
-- IMA chemistry: (Mn,<span style="border: 1px solid #333; font-size:7px;"> </span>)TaTa<sub>2</sub>O<sub>8</sub>
+- IMA chemistry: (Mn,)TaTa<sub>2</sub>O<sub>8</sub>
 
 - MinDat URL: https://www.mindat.org/min-7328.html
 
@@ -45180,14 +43181,12 @@ SMR add missing skos broader
 
 []{#29336}
 
-######  Tapiolite Group
-* `Tapiolite`
+######  Tapiolite
 
 
 - Child of:
  [`s04_DB`](#s04_DB)
 
--
 - Use for Tapiolite specimen lacking chemical data to categorize as
 one of the specie  Tapiolite-(Fe)-Tapiolite-(Mn) Series.
 
@@ -45456,101 +43455,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://mindat.org/min-41586.html
 
 
-[]{#columbite-mg}
-
-#######  Columbite-(Mg)
-
-
-- Child of:
- [`41586`](#41586)
- [`Columbite`](#Columbite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/columbite-mg
-
-- IMA chemistry: MgNb<sub>2</sub>O<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-2541.html
-
-
-[]{#columbite-mn}
-
-#######  Columbite-(Mn)
-
-
-- Child of:
- [`41586`](#41586)
- [`Columbite`](#Columbite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/columbite-mn
-
-- IMA chemistry: Mn<sup>2+</sup>Nb<sub>2</sub>O<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-2520.html
-
-
-[]{#qitianlingite}
-
-#######  Qitianlingite
-
-
-- Child of:
- [`41586`](#41586)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/qitianlingite
-
-- IMA chemistry: Fe<sup>2+</sup><sub>2</sub>Nb<sub>2</sub>W<sup>6+</sup>O<sub>10</sub>
-
-- MinDat URL: http://www.mindat.org/min-3334.html
-
-
-[]{#tantalite-fe}
-
-#######  Tantalite-(Fe)
-
-
-- Child of:
- [`41586`](#41586)
- [`tantalite`](#tantalite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tantalite-fe
-
-- IMA chemistry: Fe<sup>2+</sup>Ta<sub>2</sub>O<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-1530.html
-
-
-[]{#tantalite-mg}
-
-#######  Tantalite-(Mg)
-
-
-- Child of:
- [`41586`](#41586)
- [`tantalite`](#tantalite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tantalite-mg
-
-- IMA chemistry: MgTa<sub>2</sub>O<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-11465.html
-
-
-[]{#tantalite-mn}
-
-#######  Tantalite-(Mn)
-
-
-- Child of:
- [`41586`](#41586)
- [`tantalite`](#tantalite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tantalite-mn
-
-- IMA chemistry: Mn<sup>2+</sup>Ta<sub>2</sub>O<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-2522.html
-
-
 []{#columbite}
 
 #######  Columbite
@@ -45577,7 +43481,6 @@ this vocabulary, based on Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS 
 
 
 - Child of:
- [`s04_DB`](#s04_DB)
  [`Columbite`](#Columbite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/columbite-fe
@@ -45593,7 +43496,6 @@ this vocabulary, based on Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS 
 
 
 - Child of:
- [`41586`](#41586)
  [`Columbite`](#Columbite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/columbite-mg
@@ -45609,7 +43511,6 @@ this vocabulary, based on Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS 
 
 
 - Child of:
- [`41586`](#41586)
  [`Columbite`](#Columbite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/columbite-mn
@@ -45617,6 +43518,21 @@ this vocabulary, based on Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS 
 - IMA chemistry: Mn<sup>2+</sup>Nb<sub>2</sub>O<sub>6</sub>
 
 - MinDat URL: http://www.mindat.org/min-2520.html
+
+
+[]{#qitianlingite}
+
+#######  Qitianlingite
+
+
+- Child of:
+ [`41586`](#41586)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/qitianlingite
+
+- IMA chemistry: Fe<sup>2+</sup><sub>2</sub>Nb<sub>2</sub>W<sup>6+</sup>O<sub>10</sub>
+
+- MinDat URL: http://www.mindat.org/min-3334.html
 
 
 []{#tantalite}
@@ -45645,7 +43561,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`41586`](#41586)
  [`tantalite`](#tantalite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tantalite-fe
@@ -45661,7 +43576,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`41586`](#41586)
  [`tantalite`](#tantalite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tantalite-mg
@@ -45677,7 +43591,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`41586`](#41586)
  [`tantalite`](#tantalite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tantalite-mn
@@ -45744,7 +43657,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
  [`56150`](#56150)
  [`s04_DB`](#s04_DB)
 
--
 - Includes series between Ixiolite-(Mn2+) and Ixiolite-(Fe2+),
 Nioboixiolite-(Mn2+), and Nioboixiolite-([])
 
@@ -45756,30 +43668,12 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://mindat.org/min-56151.html
 
 
-[]{#ixiolite-mn2}
-
-#######  Ixiolite-(Mn2+)
-
-
-- Child of:
- [`56151`](#56151)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ixiolite-mn2
-
-- MinDat URL: https://www.mindat.org/min-56148.html
-
-
 []{#ixiolite}
 
 #######  Ixiolite
 
 
 - Child of:
- [`s04_DB`](#s04_DB)
  [`56151`](#56151)
 
 - Ixiolite is a synonym of Ixiolite-(Mn2+)-Ixiolite-(Fe2+) Series.
@@ -45789,31 +43683,14 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ixiolite
 
-- IMA chemistry: (Ta,Mn,Nb)O<sub>2</sub>
+- IMA chemistry: (Ta,Mn,Fe)O<sub>2</sub>
 
-- MinDat URL: http://www.mindat.org/min-2059.html
-
-
-[]{#samarskite-yb}
-
-######  Samarskite-(Yb)
-
-
-- Child of:
- [`39540`](#39540)
- [`s04_DB`](#s04_DB)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/samarskite-yb
-
-- IMA chemistry: YbNbO<sub>4</sub>
-
-- MinDat URL: https://www.mindat.org/min-27449.html
+- MinDat URL: https://www.mindat.org/min-56149.html
 
 
 []{#s04_dc}
 
 #####  Strunz 04.DC Oxide, Metal: Oxygen = 1:2 and similar, With medium-sized cations; sheets of edge-sharing octahedra
-* `Strunz 04.DC Oxide, Metal: Oxygen = 1:2 and similar, With medium-sized cations; sheets of edge-sharing octahedra`
 
 
 - Child of:
@@ -45855,7 +43732,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_dd}
 
 #####  Strunz 04.DD Oxide, Metal: Oxygen = 1:2 and similar, With medium-sized cations; frameworks of edge-sharing octahedra
-* `Strunz 04.DD Oxide, Metal: Oxygen = 1:2 and similar, With medium-sized cations; frameworks of edge-sharing octahedra`
 
 
 - Child of:
@@ -45897,7 +43773,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_de}
 
 #####  Strunz 04.DE Oxide, Metal: Oxygen = 1:2 and similar, With medium-sized cations; with various polyhedra
-* `Strunz 04.DE Oxide, Metal: Oxygen = 1:2 and similar, With medium-sized cations; with various polyhedra`
 
 
 - Child of:
@@ -46212,7 +44087,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_df}
 
 #####  Strunz 04.DF Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; dimers and trimers of edgesharing octahedra
-* `Strunz 04.DF Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; dimers and trimers of edgesharing octahedra`
 
 
 - Child of:
@@ -46259,7 +44133,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Child of:
  [`s04_DF`](#s04_DF)
 
--
 - The aeschynite group consist of orthorhombic minerals with the
 general formula A2DO6, where the eight-fold coordinated A-site is
 occupied primarily by Y, REE, Ca, U, and Th, and the six-fold
@@ -46273,13 +44146,31 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://mindat.org/min-42265.html
 
 
-[]{#aeschynite-ce}
+[]{#aeschynite}
 
-#######  Aeschynite-(Ce)
+#######  Aeschynite
 
 
 - Child of:
  [`42265`](#42265)
+
+- Synonym of Aeschynite-(Ce), Aeschynite-(Nd), Aeschynite-(Y).
+Narrower than mindat definition, which includes other members of
+Aeschynite group. Use for Aeschynite specimen lacking chemical data to
+categorize as one of the species-specific subtypes.
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/aeschynite
+
+
+[]{#aeschynite-ce}
+
+########  Aeschynite-(Ce)
+
+
+- Child of:
  [`aeschynite`](#aeschynite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/aeschynite-ce
@@ -46291,11 +44182,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#aeschynite-nd}
 
-#######  Aeschynite-(Nd)
+########  Aeschynite-(Nd)
 
 
 - Child of:
- [`42265`](#42265)
  [`aeschynite`](#aeschynite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/aeschynite-nd
@@ -46307,11 +44197,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#aeschynite-y}
 
-#######  Aeschynite-(Y)
+########  Aeschynite-(Y)
 
 
 - Child of:
- [`42265`](#42265)
  [`aeschynite`](#aeschynite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/aeschynite-y
@@ -46321,13 +44210,31 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-39.html
 
 
-[]{#nioboaeschynite-ce}
+[]{#nioboaeschynite}
 
-#######  Nioboaeschynite-(Ce)
+#######  Nioboaeschynite
 
 
 - Child of:
  [`42265`](#42265)
+
+- includes Nioboaeschynite-(Ce), Nioboaeschynite-(Nd),
+Nioboaeschynite-(Y)
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/nioboaeschynite
+
+- MinDat URL: https://www.mindat.org/min-40455.html
+
+
+[]{#nioboaeschynite-ce}
+
+########  Nioboaeschynite-(Ce)
+
+
+- Child of:
  [`nioboaeschynite`](#nioboaeschynite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/nioboaeschynite-ce
@@ -46339,11 +44246,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#nioboaeschynite-y}
 
-#######  Nioboaeschynite-(Y)
+########  Nioboaeschynite-(Y)
 
 
 - Child of:
- [`42265`](#42265)
  [`nioboaeschynite`](#nioboaeschynite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/nioboaeschynite-y
@@ -46398,128 +44304,9 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-4177.html
 
 
-[]{#aeschynite}
-
-#######  Aeschynite
-
-
-- Child of:
- [`42265`](#42265)
-
-- Synonym of Aeschynite-(Ce), Aeschynite-(Nd), Aeschynite-(Y).
-Narrower than mindat definition, which includes other members of
-Aeschynite group. Use for Aeschynite specimen lacking chemical data to
-categorize as one of the species-specific subtypes.
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/aeschynite
-
-
-[]{#aeschynite-ce}
-
-########  Aeschynite-(Ce)
-
-
-- Child of:
- [`42265`](#42265)
- [`aeschynite`](#aeschynite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/aeschynite-ce
-
-- IMA chemistry: (Ce,Ca,Fe,Th)(Ti,Nb)<sub>2</sub>(O,OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-37.html
-
-
-[]{#aeschynite-nd}
-
-########  Aeschynite-(Nd)
-
-
-- Child of:
- [`42265`](#42265)
- [`aeschynite`](#aeschynite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/aeschynite-nd
-
-- IMA chemistry: (Nd,Ln,Ca)(Ti,Nb)<sub>2</sub>(O,OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-38.html
-
-
-[]{#aeschynite-y}
-
-########  Aeschynite-(Y)
-
-
-- Child of:
- [`42265`](#42265)
- [`aeschynite`](#aeschynite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/aeschynite-y
-
-- IMA chemistry: (Y,Ln,Ca,Th)(Ti,Nb)<sub>2</sub>(O,OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-39.html
-
-
-[]{#nioboaeschynite}
-
-#######  Nioboaeschynite
-
-
-- Child of:
- [`42265`](#42265)
-
-- includes Nioboaeschynite-(Ce), Nioboaeschynite-(Nd),
-Nioboaeschynite-(Y)
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/nioboaeschynite
-
-- MinDat URL: https://www.mindat.org/min-40455.html
-
-
-[]{#nioboaeschynite-ce}
-
-########  Nioboaeschynite-(Ce)
-
-
-- Child of:
- [`42265`](#42265)
- [`nioboaeschynite`](#nioboaeschynite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/nioboaeschynite-ce
-
-- IMA chemistry: (Ce,Ca)(Nb,Ti)<sub>2</sub>(O,OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-2908.html
-
-
-[]{#nioboaeschynite-y}
-
-########  Nioboaeschynite-(Y)
-
-
-- Child of:
- [`42265`](#42265)
- [`nioboaeschynite`](#nioboaeschynite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/nioboaeschynite-y
-
-- IMA chemistry: (Y,REE,Ca,Th,Fe)(Nb,Ti,Ta)<sub>2</sub>(O,OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-29550.html
-
-
 []{#s04_dg}
 
 #####  Strunz 04.DG Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; chains of edge-sharing octahedra
-* `Strunz 04.DG Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; chains of edge-sharing octahedra`
 
 
 - Child of:
@@ -46528,13 +44315,33 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 - Concept URI: https://w3id.org/geochem/1.0/strunzgroup/s04_DG
 
 
-[]{#fergusonite-ce-beta}
+[]{#clinofergusonite}
 
-######  Fergusonite-(Ce)-ß
+######  Clinofergusonite
 
 
 - Child of:
  [`s04_DG`](#s04_DG)
+
+- Synonym of Clinofergusonite-(Ce), Clinofergusonite-(Nd),
+Clinofergusonite-(Y)
+
+- **Alternate labels:**
+β-Fergusonite
+
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/clinofergusonite
+
+
+[]{#fergusonite-ce-beta}
+
+#######  Fergusonite-(Ce)-ß
+
+
+- Child of:
  [`clinofergusonite`](#clinofergusonite)
 
 
@@ -46551,11 +44358,10 @@ Fergusonite-(Ce)-beta,
 
 []{#fergusonite-nd-beta}
 
-######  Fergusonite-(Nd)-ß
+#######  Fergusonite-(Nd)-ß
 
 
 - Child of:
- [`s04_DG`](#s04_DG)
  [`clinofergusonite`](#clinofergusonite)
 
 
@@ -46572,11 +44378,10 @@ Fergusonite-(Nd)-beta,
 
 []{#fergusonite-y-beta}
 
-######  Fergusonite-(Y)-ß
+#######  Fergusonite-(Y)-ß
 
 
 - Child of:
- [`s04_DG`](#s04_DG)
  [`clinofergusonite`](#clinofergusonite)
 
 
@@ -46802,92 +44607,9 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-4370.html
 
 
-[]{#clinofergusonite}
-
-######  Clinofergusonite
-
-
-- Child of:
- [`s04_DG`](#s04_DG)
-
-- Synonym of Clinofergusonite-(Ce), Clinofergusonite-(Nd),
-Clinofergusonite-(Y)
-
-- **Alternate labels:**
-β-Fergusonite
-
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/clinofergusonite
-
-
-[]{#fergusonite-ce-beta}
-
-#######  Fergusonite-(Ce)-ß
-
-
-- Child of:
- [`s04_DG`](#s04_DG)
- [`clinofergusonite`](#clinofergusonite)
-
-
-- **Alternate labels:**
-Clinofergusonite-(Ce), 
-Fergusonite-(Ce)-beta, 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fergusonite-ce-beta
-
-- IMA chemistry: CeNbO<sub>4</sub>
-
-- MinDat URL: https://www.mindat.org/min-56090.html
-
-
-[]{#fergusonite-nd-beta}
-
-#######  Fergusonite-(Nd)-ß
-
-
-- Child of:
- [`s04_DG`](#s04_DG)
- [`clinofergusonite`](#clinofergusonite)
-
-
-- **Alternate labels:**
-Clinofergusonite-(Nd), 
-Fergusonite-(Nd)-beta, 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fergusonite-nd-beta
-
-- IMA chemistry: NdNbO<sub>4</sub>
-
-- MinDat URL: https://www.mindat.org/min-56090.html
-
-
-[]{#fergusonite-y-beta}
-
-#######  Fergusonite-(Y)-ß
-
-
-- Child of:
- [`s04_DG`](#s04_DG)
- [`clinofergusonite`](#clinofergusonite)
-
-
-- **Alternate labels:**
-Clinofergusonite-(Y), 
-Fergusonite-(Y)-beta, 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fergusonite-y-beta
-
-- IMA chemistry: YNbO<sub>4</sub>
-
-
 []{#s04_dh}
 
 #####  Strunz 04.DH Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; sheets of edge-sharing octahedra
-* `Strunz 04.DH Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; sheets of edge-sharing octahedra`
 
 
 - Child of:
@@ -47225,7 +44947,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/fluorcalciomicrolite
 
-- IMA chemistry: (Ca,Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>Ta<sub>2</sub>O<sub>6</sub>F
+- IMA chemistry: (Ca,Na,)<sub>2</sub>Ta<sub>2</sub>O<sub>6</sub>F
 
 - MinDat URL: http://www.mindat.org/min-40354.html
 
@@ -47259,7 +44981,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydrokenomicrolite
 
-- IMA chemistry: (<span style="border: 1px solid #333; font-size:7px;"> </span>,H<sub>2</sub>O)<sub>2</sub>Ta<sub>2</sub>(O,OH)<sub>6</sub>(H<sub>2</sub>O)
+- IMA chemistry: (,H<sub>2</sub>O)<sub>2</sub>Ta<sub>2</sub>(O,OH)<sub>6</sub>(H<sub>2</sub>O)
 
 - MinDat URL: https://www.mindat.org/min-40361.html
 
@@ -47293,7 +45015,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydroxykenomicrolite
 
-- IMA chemistry: (<span style="border: 1px solid #333; font-size:7px;"> </span>,Na,Sb<sup>3+</sup>)<sub>2</sub>Ta<sub>2</sub>O<sub>6</sub>(OH)
+- IMA chemistry: (,Na,Sb<sup>3+</sup>)<sub>2</sub>Ta<sub>2</sub>O<sub>6</sub>(OH)
 
 - MinDat URL: http://www.mindat.org/min-40360.html
 
@@ -47400,7 +45122,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/fluorcalciomicrolite
 
-- IMA chemistry: (Ca,Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>Ta<sub>2</sub>O<sub>6</sub>F
+- IMA chemistry: (Ca,Na,)<sub>2</sub>Ta<sub>2</sub>O<sub>6</sub>F
 
 - MinDat URL: http://www.mindat.org/min-40354.html
 
@@ -47434,7 +45156,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydrokenomicrolite
 
-- IMA chemistry: (<span style="border: 1px solid #333; font-size:7px;"> </span>,H<sub>2</sub>O)<sub>2</sub>Ta<sub>2</sub>(O,OH)<sub>6</sub>(H<sub>2</sub>O)
+- IMA chemistry: (,H<sub>2</sub>O)<sub>2</sub>Ta<sub>2</sub>(O,OH)<sub>6</sub>(H<sub>2</sub>O)
 
 - MinDat URL: https://www.mindat.org/min-40361.html
 
@@ -47468,7 +45190,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydroxykenomicrolite
 
-- IMA chemistry: (<span style="border: 1px solid #333; font-size:7px;"> </span>,Na,Sb<sup>3+</sup>)<sub>2</sub>Ta<sub>2</sub>O<sub>6</sub>(OH)
+- IMA chemistry: (,Na,Sb<sup>3+</sup>)<sub>2</sub>Ta<sub>2</sub>O<sub>6</sub>(OH)
 
 - MinDat URL: http://www.mindat.org/min-40360.html
 
@@ -47562,9 +45284,9 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://mindat.org/min-3316.html
 
 
-[]{#cerite-ce}
+[]{#ceriopyrochlore}
 
-########  Cerite-(Ce)
+########  Ceriopyrochlore
 
 
 - Child of:
@@ -47572,9 +45294,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 
 - **Alternate labels:**
-Ceriopyrochlore (of Hogarth 1977)
+Ceriopyrochlore (of Hogarth 1977), 
+Cerite-(Ce), 
 
-- Concept URI: https://w3id.org/geochem/1.0/min/cerite-ce
+- Concept URI: https://w3id.org/geochem/1.0/min/ceriopyrochlore
 
 - IMA chemistry: (Ce,La,Ca)<sub>9</sub>(Mg,Fe<sup>3+</sup>)(SiO<sub>4</sub>)<sub>3</sub>(SiO<sub>3</sub>OH)<sub>4</sub>(OH)<sub>3</sub>
 
@@ -47629,7 +45352,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydrokenopyrochlore
 
-- IMA chemistry: (<span style="border: 1px solid #333; font-size:7px;"> </span>,Sb<sup>3+</sup>,Na)<sub>2</sub>Nb<sup>5+</sup><sub>2</sub>O<sub>6</sub>·H<sub>2</sub>O
+- IMA chemistry: (,Sb<sup>3+</sup>,Na)<sub>2</sub>Nb<sup>5+</sup><sub>2</sub>O<sub>6</sub>·H<sub>2</sub>O
 
 - MinDat URL: https://www.mindat.org/min-51831.html
 
@@ -47644,7 +45367,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydropyrochlore
 
-- IMA chemistry: (H<sub>2</sub>O,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>Nb<sub>2</sub>(O,OH)<sub>6</sub>(H<sub>2</sub>O)
+- IMA chemistry: (H<sub>2</sub>O,)<sub>2</sub>Nb<sub>2</sub>(O,OH)<sub>6</sub>(H<sub>2</sub>O)
 
 - MinDat URL: http://www.mindat.org/min-2140.html
 
@@ -47659,7 +45382,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydroxycalciopyrochlore
 
-- IMA chemistry: (Ca,Na,U,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>(Nb,Ti)<sub>2</sub>O<sub>6</sub>(OH)
+- IMA chemistry: (Ca,Na,U,)<sub>2</sub>(Nb,Ti)<sub>2</sub>O<sub>6</sub>(OH)
 
 - MinDat URL: http://www.mindat.org/min-40340.html
 
@@ -47674,7 +45397,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydroxykenopyrochlore
 
-- IMA chemistry: (<span style="border: 1px solid #333; font-size:7px;"> </span>,Ce,Ba)<sub>2</sub>(Nb,Ti)<sub>2</sub>O<sub>6</sub>(OH,F)
+- IMA chemistry: (,Ce,Ba)<sub>2</sub>(Nb,Ti)<sub>2</sub>O<sub>6</sub>(OH,F)
 
 - MinDat URL: https://www.mindat.org/min-52173.html
 
@@ -47741,26 +45464,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: http://www.mindat.org/min-40342.html
 
 
-[]{#ceriopyrochlore}
-
-########  Ceriopyrochlore
-
-
-- Child of:
- [`3316`](#3316)
-
-
-- **Alternate labels:**
-Ceriopyrochlore (of Hogarth 1977), 
-Cerite-(Ce), 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ceriopyrochlore
-
-- IMA chemistry: (Ce,La,Ca)<sub>9</sub>(Mg,Fe<sup>3+</sup>)(SiO<sub>4</sub>)<sub>3</sub>(SiO<sub>3</sub>OH)<sub>4</sub>(OH)<sub>3</sub>
-
-- MinDat URL: http://www.mindat.org/min-930.html
-
-
 []{#3443}
 
 #######  Roméite Group
@@ -47790,7 +45493,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/bismutostibiconite
 
-- IMA chemistry: (Bi,Fe<sup>3+</sup>,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>Sb<sup>5+</sup><sub>2</sub>O<sub>7</sub>
+- IMA chemistry: (Bi,Fe<sup>3+</sup>,)<sub>2</sub>Sb<sup>5+</sup><sub>2</sub>O<sub>7</sub>
 
 - MinDat URL: http://www.mindat.org/min-659.html
 
@@ -47844,7 +45547,7 @@ Lewisite,
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydroxyferroromeite
 
-- IMA chemistry: (Fe<sup>2+</sup><sub>1.5</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.5</sub>)Sb<sup>5+</sup><sub>2</sub>O<sub>6</sub>(OH)
+- IMA chemistry: (Fe<sup>2+</sup><sub>1.5</sub><sub>0.5</sub>)Sb<sup>5+</sup><sub>2</sub>O<sub>6</sub>(OH)
 
 - MinDat URL: https://www.mindat.org/min-47790.html
 
@@ -47908,7 +45611,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydrokenoelsmoreite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span><sub>2</sub>W<sub>2</sub>O<sub>6</sub>(H<sub>2</sub>O)
+- IMA chemistry: <sub>2</sub>W<sub>2</sub>O<sub>6</sub>(H<sub>2</sub>O)
 
 - MinDat URL: http://www.mindat.org/min-27428.html
 
@@ -47923,7 +45626,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydroxykenoelsmoreite
 
-- IMA chemistry: (<span style="border: 1px solid #333; font-size:7px;"> </span>,Pb)<sub>2</sub>(W,Fe<sup>3+</sup>,Al)<sub>2</sub>(O,OH)<sub>6</sub>(OH)
+- IMA chemistry: (,Pb)<sub>2</sub>(W,Fe<sup>3+</sup>,Al)<sub>2</sub>(O,OH)<sub>6</sub>(OH)
 
 - MinDat URL: https://www.mindat.org/min-50353.html
 
@@ -47961,7 +45664,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydrokenoralstonite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span><sub>2</sub>Al<sub>2</sub>F<sub>6</sub>(H<sub>2</sub>O)
+- IMA chemistry: <sub>2</sub>Al<sub>2</sub>F<sub>6</sub>(H<sub>2</sub>O)
 
 - MinDat URL: https://www.mindat.org/min-3354.html
 
@@ -48033,7 +45736,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydrokenoelsmoreite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span><sub>2</sub>W<sub>2</sub>O<sub>6</sub>(H<sub>2</sub>O)
+- IMA chemistry: <sub>2</sub>W<sub>2</sub>O<sub>6</sub>(H<sub>2</sub>O)
 
 - MinDat URL: http://www.mindat.org/min-27428.html
 
@@ -48048,7 +45751,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydroxykenoelsmoreite
 
-- IMA chemistry: (<span style="border: 1px solid #333; font-size:7px;"> </span>,Pb)<sub>2</sub>(W,Fe<sup>3+</sup>,Al)<sub>2</sub>(O,OH)<sub>6</sub>(OH)
+- IMA chemistry: (,Pb)<sub>2</sub>(W,Fe<sup>3+</sup>,Al)<sub>2</sub>(O,OH)<sub>6</sub>(OH)
 
 - MinDat URL: https://www.mindat.org/min-50353.html
 
@@ -48056,7 +45759,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_dj}
 
 #####  Strunz 04.DJ Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; polyhedral frameworks
-* `Strunz 04.DJ Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; polyhedral frameworks`
 
 
 - Child of:
@@ -48127,7 +45829,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_dk}
 
 #####  Strunz 04.DK Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; tunnel structures
-* `Strunz 04.DK Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; tunnel structures`
 
 
 - Child of:
@@ -48484,7 +46185,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_dl}
 
 #####  Strunz 04.DL Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; fluorite-type structures
-* `Strunz 04.DL Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; fluorite-type structures`
 
 
 - Child of:
@@ -48643,7 +46343,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tazheranite
 
-- IMA chemistry: (Zr,Ti,Ca)(O,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>
+- IMA chemistry: (Zr,Ti,Ca)(O,)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-3897.html
 
@@ -48651,7 +46351,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_dm}
 
 #####  Strunz 04.DM Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; unclassified
-* `Strunz 04.DM Oxide, Metal: Oxygen = 1:2 and similar, With large (+- medium-sized) cations; unclassified`
 
 
 - Child of:
@@ -48798,7 +46497,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_e}
 
 ####  Strunz 04.E Oxide, Metal: Oxygen = < 1 :2
-* `Strunz 04.E Oxide, Metal: Oxygen = < 1 :2`
 
 
 - Child of:
@@ -48858,7 +46556,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_f}
 
 ####  Strunz 04.F Hydroxide (without V or U)
-* `Strunz 04.F Hydroxide (without V or U)`
 
 
 - Child of:
@@ -48883,10 +46580,76 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: http://www.mindat.org/min-1229.html
 
 
+[]{#yttrotungstite}
+
+#####  Yttrotungstite
+
+
+- Child of:
+ [`s04_F`](#s04_F)
+
+- includes Yttrotungstite-(Ce), Yttrotungstite-(Nd),
+Yttrotungstite-(Y) No mindat class.
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/yttrotungstite
+
+
+[]{#yttrotungstite-ce}
+
+######  Yttrotungstite-(Ce)
+
+
+- Child of:
+ [`yttrotungstite`](#yttrotungstite)
+ [`s04_FD`](#s04_FD)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/yttrotungstite-ce
+
+- IMA chemistry: CeW<sub>2</sub>O<sub>6</sub>(OH)<sub>3</sub>
+
+- MinDat URL: http://www.mindat.org/min-7380.html
+
+
+[]{#yttrotungstite-nd}
+
+######  Yttrotungstite-(Nd)
+
+
+- Child of:
+ [`yttrotungstite`](#yttrotungstite)
+ [`s04_FM`](#s04_FM)
+
+
+- **Source:**
+https://w3id.org/geochem/1.0/min/SMRadditions
+
+- Concept URI: https://w3id.org/geochem/1.0/min/yttrotungstite-nd
+
+- MinDat URL: https://www.mindat.org/min-470937.html
+
+
+[]{#yttrotungstite-y}
+
+######  Yttrotungstite-(Y)
+
+
+- Child of:
+ [`yttrotungstite`](#yttrotungstite)
+ [`s04_FD`](#s04_FD)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/yttrotungstite-y
+
+- IMA chemistry: Y(W,Fe,Si,Al,Ti)<sub>2</sub>(O,OH,H<sub>2</sub>O)<sub>9</sub>
+
+- MinDat URL: http://www.mindat.org/min-4374.html
+
+
 []{#s04_fa}
 
 #####  Strunz 04.FA Hydroxide (without V or U), Hydroxides with OH, without H2O; corner-sharing tetrahedra
-* `Strunz 04.FA Hydroxide (without V or U), Hydroxides with OH, without H2O; corner-sharing tetrahedra`
 
 
 - Child of:
@@ -48973,7 +46736,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_fb}
 
 #####  Strunz 04.FB Hydroxide (without V or U), Hydroxides with OH, without H2O; insular octahedra
-* `Strunz 04.FB Hydroxide (without V or U), Hydroxides with OH, without H2O; insular octahedra`
 
 
 - Child of:
@@ -49064,7 +46826,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_fc}
 
 #####  Strunz 04.FC Hydroxide (without V or U), Hydroxides with OH, without H2O; corner-sharing octahedra
-* `Strunz 04.FC Hydroxide (without V or U), Hydroxides with OH, without H2O; corner-sharing octahedra`
 
 
 - Child of:
@@ -49623,7 +47384,6 @@ SMR add missing skos broader
 []{#s04_fd}
 
 #####  Strunz 04.FD Hydroxide (without V or U), Hydroxides with OH, without H2O; chains of edge-sharing octahedra
-* `Strunz 04.FD Hydroxide (without V or U), Hydroxides with OH, without H2O; chains of edge-sharing octahedra`
 
 
 - Child of:
@@ -49728,8 +47488,8 @@ SMR add missing skos broader
 
 
 - Child of:
- [`s04_FD`](#s04_FD)
  [`yttrotungstite`](#yttrotungstite)
+ [`s04_FD`](#s04_FD)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/yttrotungstite-ce
 
@@ -49744,8 +47504,8 @@ SMR add missing skos broader
 
 
 - Child of:
- [`s04_FD`](#s04_FD)
  [`yttrotungstite`](#yttrotungstite)
+ [`s04_FD`](#s04_FD)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/yttrotungstite-y
 
@@ -49862,59 +47622,9 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-11481.html
 
 
-[]{#yttrotungstite}
-
-######  Yttrotungstite
-
-
-- Child of:
- [`s04_FD`](#s04_FD)
-
-- includes Yttrotungstite-(Ce), Yttrotungstite-(Nd),
-Yttrotungstite-(Y) No mindat class.
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/yttrotungstite
-
-
-[]{#yttrotungstite-ce}
-
-#######  Yttrotungstite-(Ce)
-
-
-- Child of:
- [`s04_FD`](#s04_FD)
- [`yttrotungstite`](#yttrotungstite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/yttrotungstite-ce
-
-- IMA chemistry: CeW<sub>2</sub>O<sub>6</sub>(OH)<sub>3</sub>
-
-- MinDat URL: http://www.mindat.org/min-7380.html
-
-
-[]{#yttrotungstite-y}
-
-#######  Yttrotungstite-(Y)
-
-
-- Child of:
- [`s04_FD`](#s04_FD)
- [`yttrotungstite`](#yttrotungstite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/yttrotungstite-y
-
-- IMA chemistry: Y(W,Fe,Si,Al,Ti)<sub>2</sub>(O,OH,H<sub>2</sub>O)<sub>9</sub>
-
-- MinDat URL: http://www.mindat.org/min-4374.html
-
-
 []{#s04_fe}
 
 #####  Strunz 04.FE Hydroxide (without V or U), Hydroxides with OH, without H2O; sheets of edge-sharing octahedra
-* `Strunz 04.FE Hydroxide (without V or U), Hydroxides with OH, without H2O; sheets of edge-sharing octahedra`
 
 
 - Child of:
@@ -50143,7 +47853,7 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 - Concept URI: https://w3id.org/geochem/1.0/min/quetzalcoatlite
 
-- IMA chemistry: Cu<sup>2+</sup><sub>3</sub>Zn<sub>6</sub>Te<sup>6+</sup><sub>2</sub>O<sub>12</sub>(OH)<sub>6</sub>·(Ag,Pb,<span style="border: 1px solid #333; font-size:7px;"> </span>)Cl
+- IMA chemistry: Cu<sup>2+</sup><sub>3</sub>Zn<sub>6</sub>Te<sup>6+</sup><sub>2</sub>O<sub>12</sub>(OH)<sub>6</sub>·(Ag,Pb,)Cl
 
 - MinDat URL: http://www.mindat.org/min-3343.html
 
@@ -50254,7 +47964,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 []{#s04_ff}
 
 #####  Strunz 04.FF Hydroxide (without V or U), Hydroxides with OH, without H2O; various polyhedra
-* `Strunz 04.FF Hydroxide (without V or U), Hydroxides with OH, without H2O; various polyhedra`
 
 
 - Child of:
@@ -50297,7 +48006,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 []{#s04_fg}
 
 #####  Strunz 04.FG Hydroxide (without V or U), with OH, without H2O; unclassified
-* `Strunz 04.FG Hydroxide (without V or U), with OH, without H2O; unclassified`
 
 
 - Child of:
@@ -50369,7 +48077,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 []{#s04_fh}
 
 #####  Strunz 04.FH Hydroxide (without V or U), Hydroxides with H2O +- (OH); insular octahedra
-* `Strunz 04.FH Hydroxide (without V or U), Hydroxides with H2O +- (OH); insular octahedra`
 
 
 - Child of:
@@ -50429,7 +48136,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_fj}
 
 #####  Strunz 04.FJ Hydroxide (without V or U), Hydroxides with H2O±(OH); corner-sharing octahedra
-* `Strunz 04.FJ Hydroxide (without V or U), Hydroxides with H2O±(OH); corner-sharing octahedra`
 
 
 - Child of:
@@ -50533,7 +48239,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_fk}
 
 #####  Strunz 04.FK Hydroxide (without V or U), Hydroxides with H2O±(OH); chains of edge-sharing octahedra
-* `Strunz 04.FK Hydroxide (without V or U), Hydroxides with H2O±(OH); chains of edge-sharing octahedra`
 
 
 - Child of:
@@ -50560,7 +48265,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_fl}
 
 #####  Strunz 04.FL Hydroxide (without V or U), Hydroxides with H2O±(OH); sheets of edge-sharing octahedra
-* `Strunz 04.FL Hydroxide (without V or U), Hydroxides with H2O±(OH); sheets of edge-sharing octahedra`
 
 
 - Child of:
@@ -51041,7 +48745,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_fm}
 
 #####  Strunz 04.FM Hydroxide (without V or U), with H2O±(OH); unclassified
-* `Strunz 04.FM Hydroxide (without V or U), with H2O±(OH); unclassified`
 
 
 - Child of:
@@ -51131,6 +48834,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 
 - Child of:
+ [`yttrotungstite`](#yttrotungstite)
  [`s04_FM`](#s04_FM)
 
 
@@ -51203,7 +48907,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_fn}
 
 #####  Strunz 04.FN Hydroxide (without V or U), Hydroxides with H2O±(OH); frameworks of corner and/or face-sharing octahedra
-* `Strunz 04.FN Hydroxide (without V or U), Hydroxides with H2O±(OH); frameworks of corner and/or face-sharing octahedra`
 
 
 - Child of:
@@ -51222,7 +48925,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/aspedamite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span><sub>12</sub>(Fe<sup>3+</sup>,Fe<sup>2+</sup>)<sub>3</sub>Nb<sub>4</sub>[Th(Nb,Fe<sup>3+</sup>)<sub>12</sub>O<sub>42</sub>][(H<sub>2</sub>O),(OH)]<sub>12</sub>
+- IMA chemistry: <sub>12</sub>(Fe<sup>3+</sup>,Fe<sup>2+</sup>)<sub>3</sub>Nb<sub>4</sub>[Th(Nb,Fe<sup>3+</sup>)<sub>12</sub>O<sub>42</sub>][(H<sub>2</sub>O),(OH)]<sub>12</sub>
 
 - MinDat URL: http://www.mindat.org/min-42356.html
 
@@ -51245,7 +48948,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_g}
 
 ####  Strunz 04.G Uranyl hydroxide
-* `Strunz 04.G Uranyl hydroxide`
 
 
 - Child of:
@@ -51257,7 +48959,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_ga}
 
 #####  Strunz 04.GA Uranyl hydroxide, Without additional cations
-* `Strunz 04.GA Uranyl hydroxide, Without additional cations`
 
 
 - Child of:
@@ -51403,7 +49104,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_gb}
 
 #####  Strunz 04.GB Uranyl hydroxide, With additional cations (K, Ca, Ba, Pb, etc.); with mainly UO2(O,OH)5 pentagonal polyhedra
-* `Strunz 04.GB Uranyl hydroxide, With additional cations (K, Ca, Ba, Pb, etc.); with mainly UO2(O,OH)5 pentagonal polyhedra`
 
 
 - Child of:
@@ -51775,7 +49475,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_gc}
 
 #####  Strunz 04.GC Uranyl hydroxide, With additional cations; with mainly UO2(O,OH)6 hexagonal polyhedra
-* `Strunz 04.GC Uranyl hydroxide, With additional cations; with mainly UO2(O,OH)6 hexagonal polyhedra`
 
 
 - Child of:
@@ -51832,7 +49531,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_h}
 
 ####  Strunz 04.H V[5,6] Vanadate
-* `Strunz 04.H V[5,6] Vanadate`
 
 
 - Child of:
@@ -52228,7 +49926,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_ha}
 
 #####  Strunz 04.HA V[5,6] Vanadate, V[>4] Nesovanadates
-* `Strunz 04.HA V[5,6] Vanadate, V[>4] Nesovanadates`
 
 
 - Child of:
@@ -52240,7 +49937,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_hb}
 
 #####  Strunz 04.HB V[5,6] Vanadate, Uranyl Sorovanodates
-* `Strunz 04.HB V[5,6] Vanadate, Uranyl Sorovanodates`
 
 
 - Child of:
@@ -52494,7 +50190,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_hc}
 
 #####  Strunz 04.HC V[5,6] Vanadate, [6]-Sorovanadates
-* `Strunz 04.HC V[5,6] Vanadate, [6]-Sorovanadates`
 
 
 - Child of:
@@ -52767,7 +50462,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/wernerbaurite
 
-- IMA chemistry: {(NH<sub>4</sub>)<sub>2</sub>[Ca<sub>2</sub>(H<sub>2</sub>O)<sub>14</sub>](H<sub>2</sub>O)<sub>2</sub>}{V<sub>10</sub>O<sub>28</sub>}
+- IMA chemistry: {(NH<sub>4</sub>)<sub>2</sub>[Ca<sub>2</sub>(H<sub>2</sub>O)<sub>14</sub>]     (H<sub>2</sub>O)<sub>2</sub>}{V<sub>10</sub>O<sub>28</sub>}
 
 - MinDat URL: http://www.mindat.org/min-43585.html
 
@@ -52775,7 +50470,6 @@ SMR add missing skos broader
 []{#s04_hd}
 
 #####  Strunz 04.HD V[5,6] Vanadate, Inovanadates
-* `Strunz 04.HD V[5,6] Vanadate, Inovanadates`
 
 
 - Child of:
@@ -52877,7 +50571,6 @@ SMR add missing skos broader
 []{#s04_he}
 
 #####  Strunz 04.HE V[5,6] Vanadate, Phyllovanadates
-* `Strunz 04.HE V[5,6] Vanadate, Phyllovanadates`
 
 
 - Child of:
@@ -53108,7 +50801,6 @@ the group members are seemingly non-stoichiometric (Evans and Hughes,
 []{#s04_hf}
 
 #####  Strunz 04.HF V[5,6] Vanadate, Tektovanadates
-* `Strunz 04.HF V[5,6] Vanadate, Tektovanadates`
 
 
 - Child of:
@@ -53135,7 +50827,6 @@ the group members are seemingly non-stoichiometric (Evans and Hughes,
 []{#s04_hg}
 
 #####  Strunz 04.HG V oxide, unclassified
-* `Strunz 04.HG V oxide, unclassified`
 
 
 - Child of:
@@ -53361,7 +51052,6 @@ the group members are seemingly non-stoichiometric (Evans and Hughes,
 []{#s04_j}
 
 ####  Strunz 04.J Arsenite, antimonite, bismuthite, sulfite, selenite, tellurite or iodate
-* `Strunz 04.J Arsenite, antimonite, bismuthite, sulfite, selenite, tellurite or iodate`
 
 
 - Child of:
@@ -53373,7 +51063,6 @@ the group members are seemingly non-stoichiometric (Evans and Hughes,
 []{#s04_ja}
 
 #####  Strunz 04.JA Arsenite, antimonite, bismuthite; without additional anions, without H2O
-* `Strunz 04.JA Arsenite, antimonite, bismuthite; without additional anions, without H2O`
 
 
 - Child of:
@@ -53615,7 +51304,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_jb}
 
 #####  Strunz 04.JB Arsenite, antimonite, bismuthite; with additional anions, without H2O
-* `Strunz 04.JB Arsenite, antimonite, bismuthite; with additional anions, without H2O`
 
 
 - Child of:
@@ -53882,7 +51570,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_jc}
 
 #####  Strunz 04.JC Arsenite, antimonite, bismuthite; without additional anions, with H2O
-* `Strunz 04.JC Arsenite, antimonite, bismuthite; without additional anions, with H2O`
 
 
 - Child of:
@@ -53901,7 +51588,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/cafarsite
 
-- IMA chemistry: (Ca,Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>19</sub>Ti<sub>8</sub>Fe<sup>3+</sup><sub>4</sub>Fe<sup>2+</sup><sub>4</sub>(AsO<sub>3</sub>)<sub>28</sub>F
+- IMA chemistry: (Ca,Na,)<sub>19</sub>Ti<sub>8</sub>Fe<sup>3+</sup><sub>4</sub>Fe<sup>2+</sup><sub>4</sub>(AsO<sub>3</sub>)<sub>28</sub>F
 
 - MinDat URL: http://www.mindat.org/min-849.html
 
@@ -53954,7 +51641,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_jd}
 
 #####  Strunz 04.JD Arsenite, antimonite, bismuthite; with additional anions and H2O
-* `Strunz 04.JD Arsenite, antimonite, bismuthite; with additional anions and H2O`
 
 
 - Child of:
@@ -54026,7 +51712,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_je}
 
 #####  Strunz 04.JE Sulfite
-* `Strunz 04.JE Sulfite`
 
 
 - Child of:
@@ -54098,7 +51783,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_jf}
 
 #####  Strunz 04.JF Selenite without additional anions, without H2O
-* `Strunz 04.JF Selenite without additional anions, without H2O`
 
 
 - Child of:
@@ -54125,7 +51809,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_jg}
 
 #####  Strunz 04.JG Selenite with additional anions, without H2O
-* `Strunz 04.JG Selenite with additional anions, without H2O`
 
 
 - Child of:
@@ -54317,7 +52000,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_jh}
 
 #####  Strunz 04.JH Selenite without additional anions, with H2O
-* `Strunz 04.JH Selenite without additional anions, with H2O`
 
 
 - Child of:
@@ -54434,7 +52116,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s04_jj}
 
 #####  Strunz 04.JJ Selenite with additional anions and H2O
-* `Strunz 04.JJ Selenite with additional anions and H2O`
 
 
 - Child of:
@@ -54538,7 +52219,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s04_jk}
 
 #####  Strunz 04.JK Tellurite without additional anions, without H2O
-* `Strunz 04.JK Tellurite without additional anions, without H2O`
 
 
 - Child of:
@@ -54826,7 +52506,6 @@ structure but different composition.
 []{#s04_jl}
 
 #####  Strunz 04.JL Tellurite with additional anions, without H2O
-* `Strunz 04.JL Tellurite with additional anions, without H2O`
 
 
 - Child of:
@@ -54928,7 +52607,6 @@ structure but different composition.
 []{#s04_jm}
 
 #####  Strunz 04.JM Tellurite without additional anions, with H2O
-* `Strunz 04.JM Tellurite without additional anions, with H2O`
 
 
 - Child of:
@@ -55073,7 +52751,6 @@ structure but different composition.
 []{#s04_jn}
 
 #####  Strunz 04.JN Tellurite with additional anions and H2O
-* `Strunz 04.JN Tellurite with additional anions and H2O`
 
 
 - Child of:
@@ -55150,6 +52827,7 @@ structure but different composition.
 - Child of:
  [`s04_JN`](#s04_JN)
 
+- mixture of two or more distinct mineral species (Mindat)
 - Concept URI: https://w3id.org/geochem/1.0/min/oboyerite
 
 - IMA chemistry: H<sub>6</sub>Pb<sub>6</sub>(Te<sup>4+</sup>O<sub>3</sub>)<sub>3</sub>(Te<sup>6+</sup>O<sub>6</sub>)<sub>2</sub>·2H<sub>2</sub>O
@@ -55190,7 +52868,6 @@ structure but different composition.
 []{#s04_k}
 
 ####  Strunz 04.K Iodate
-* `Strunz 04.K Iodate`
 
 
 - Child of:
@@ -55202,7 +52879,6 @@ structure but different composition.
 []{#s04_ka}
 
 #####  Strunz 04.KA Iodate without additional anions, without H2O
-* `Strunz 04.KA Iodate without additional anions, without H2O`
 
 
 - Child of:
@@ -55229,7 +52905,6 @@ structure but different composition.
 []{#s04_kb}
 
 #####  Strunz 04.KB Iodate with additional anions, without H2O
-* `Strunz 04.KB Iodate with additional anions, without H2O`
 
 
 - Child of:
@@ -55286,7 +52961,6 @@ structure but different composition.
 []{#s04_kc}
 
 #####  Strunz 04.KC Iodate without additional anions, with H2O
-* `Strunz 04.KC Iodate without additional anions, with H2O`
 
 
 - Child of:
@@ -55328,7 +53002,6 @@ structure but different composition.
 []{#s04_kd}
 
 #####  Strunz 04.KD Iodate with additional anions and H2O
-* `Strunz 04.KD Iodate with additional anions and H2O`
 
 
 - Child of:
@@ -55381,7 +53054,6 @@ structure but different composition.
 []{#s05_a}
 
 ####  Strunz 05.A Carbonate without additional anions, without H2O
-* `Strunz 05.A Carbonate without additional anions, without H2O`
 
 
 - Child of:
@@ -55478,9 +53150,8 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 
 - Child of:
- [`53629`](#53629)
- [`s05_AD`](#s05_AD)
  [`remondite`](#remondite)
+ [`53629`](#53629)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/remondite-ce
 
@@ -55495,9 +53166,8 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 
 - Child of:
- [`53629`](#53629)
- [`s05_AD`](#s05_AD)
  [`remondite`](#remondite)
+ [`53629`](#53629)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/remondite-la
 
@@ -55525,7 +53195,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_aa}
 
 #####  Strunz 05.AA Carbonate without additional anions, without H2O, Alkali carbonates
-* `Strunz 05.AA Carbonate without additional anions, without H2O, Alkali carbonates`
 
 
 - Child of:
@@ -55642,7 +53311,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_ab}
 
 #####  Strunz 05.AB Carbonate without additional anions, without H2O, Alkali-earth (and other M2+) carbonates
-* `Strunz 05.AB Carbonate without additional anions, without H2O, Alkali-earth (and other M2+) carbonates`
 
 
 - Child of:
@@ -56093,7 +53761,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_ac}
 
 #####  Strunz 05.AC Carbonate without additional anions, without H2O, Alkali and alkali-earth carbonates
-* `Strunz 05.AC Carbonate without additional anions, without H2O, Alkali and alkali-earth carbonates`
 
 
 - Child of:
@@ -56259,7 +53926,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_ad}
 
 #####  Strunz 05.AD Carbonate without additional anions, without H2O, With rare-earth elements (REE)
-* `Strunz 05.AD Carbonate without additional anions, without H2O, With rare-earth elements (REE)`
 
 
 - Child of:
@@ -56299,15 +53965,32 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-3174.html
 
 
-[]{#remondite-ce}
+[]{#remondite}
 
-######  Rémondite-(Ce)
+######  Rémondite
 
 
 - Child of:
- [`53629`](#53629)
  [`s05_AD`](#s05_AD)
+
+- includes Rémondite-(Ce), Rémondite-(La)
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/remondite
+
+- MinDat URL: https://www.mindat.org/min-40473.html
+
+
+[]{#remondite-ce}
+
+#######  Rémondite-(Ce)
+
+
+- Child of:
  [`remondite`](#remondite)
+ [`53629`](#53629)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/remondite-ce
 
@@ -56318,13 +54001,12 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#remondite-la}
 
-######  Rémondite-(La)
+#######  Rémondite-(La)
 
 
 - Child of:
- [`53629`](#53629)
- [`s05_AD`](#s05_AD)
  [`remondite`](#remondite)
+ [`53629`](#53629)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/remondite-la
 
@@ -56348,62 +54030,9 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-3501.html
 
 
-[]{#remondite}
-
-######  GSO minerals
-
-
-- Child of:
- [`s05_AD`](#s05_AD)
-
-- includes Rémondite-(Ce), Rémondite-(La)
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/remondite
-
-- MinDat URL: https://www.mindat.org/min-40473.html
-
-
-[]{#remondite-ce}
-
-#######  Rémondite-(Ce)
-
-
-- Child of:
- [`53629`](#53629)
- [`s05_AD`](#s05_AD)
- [`remondite`](#remondite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/remondite-ce
-
-- IMA chemistry: Na<sub>3</sub>(Ce,La,Ca,Na,Sr)<sub>3</sub>(CO<sub>3</sub>)<sub>5</sub>
-
-- MinDat URL: http://www.mindat.org/min-3388.html
-
-
-[]{#remondite-la}
-
-#######  Rémondite-(La)
-
-
-- Child of:
- [`53629`](#53629)
- [`s05_AD`](#s05_AD)
- [`remondite`](#remondite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/remondite-la
-
-- IMA chemistry: Na<sub>3</sub>(La,Ce,Ca)<sub>3</sub>(CO<sub>3</sub>)<sub>5</sub>
-
-- MinDat URL: http://www.mindat.org/min-11012.html
-
-
 []{#s05_b}
 
 ####  Strunz 05.B Carbonate with additional anions, without H2O
-* `Strunz 05.B Carbonate with additional anions, without H2O`
 
 
 - Child of:
@@ -56415,7 +54044,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 []{#s05_ba}
 
 #####  Strunz 05.BA Carbonate with additional anions, without H2O, With Cu, Co, Ni, Zn, Mg, Mn
-* `Strunz 05.BA Carbonate with additional anions, without H2O, With Cu, Co, Ni, Zn, Mg, Mn`
 
 
 - Child of:
@@ -56697,7 +54325,6 @@ related to malachite.
 []{#s05_bb}
 
 #####  Strunz 05.BB Carbonate with additional anions, without H2O, With alkalies, etc.
-* `Strunz 05.BB Carbonate with additional anions, without H2O, With alkalies, etc.`
 
 
 - Child of:
@@ -56769,7 +54396,6 @@ related to malachite.
 []{#s05_bc}
 
 #####  Strunz 05.BC Carbonate with additional anions, without H2O, With alkali-earth cations
-* `Strunz 05.BC Carbonate with additional anions, without H2O, With alkali-earth cations`
 
 
 - Child of:
@@ -56826,7 +54452,6 @@ related to malachite.
 []{#s05_bd}
 
 #####  Strunz 05.BD Carbonate with additional anions, without H2O, With rare earth elements (REE)
-* `Strunz 05.BD Carbonate with additional anions, without H2O, With rare earth elements (REE)`
 
 
 - Child of:
@@ -56835,13 +54460,30 @@ related to malachite.
 - Concept URI: https://w3id.org/geochem/1.0/strunzgroup/s05_BD
 
 
-[]{#arisite-ce}
+[]{#arisite}
 
-######  Arisite-(Ce)
+######  Arisite
 
 
 - Child of:
  [`s05_BD`](#s05_BD)
+
+- Includes Arisite-(Ce), Arisite-(La)
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/arisite
+
+- MinDat URL: https://www.mindat.org/min-39587.html
+
+
+[]{#arisite-ce}
+
+#######  Arisite-(Ce)
+
+
+- Child of:
  [`arisite`](#arisite)
 
 
@@ -56857,11 +54499,10 @@ SMR add missing skos broader
 
 []{#arisite-la}
 
-######  Arisite-(La)
+#######  Arisite-(La)
 
 
 - Child of:
- [`s05_BD`](#s05_BD)
  [`arisite`](#arisite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/arisite-la
@@ -56901,13 +54542,30 @@ SMR add missing skos broader
 - MinDat URL: http://www.mindat.org/min-6999.html
 
 
-[]{#kukharenkoite-ce}
+[]{#kukharenkoite}
 
-######  Kukharenkoite-(Ce)
+######  Kukharenkoite
 
 
 - Child of:
  [`s05_BD`](#s05_BD)
+
+- Use for Kukharenkoite specimen lacking chemical data to categorize
+as one of the species-specific subtypes. Includes Kukharenkoite-Ce and
+Kukharenkoite-La. No mindat equivalent.
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions.
+
+- Concept URI: https://w3id.org/geochem/1.0/min/kukharenkoite
+
+
+[]{#kukharenkoite-ce}
+
+#######  Kukharenkoite-(Ce)
+
+
+- Child of:
  [`kukharenkoite`](#kukharenkoite)
 
 
@@ -56923,11 +54581,10 @@ SMR add missing skos broader
 
 []{#kukharenkoite-la}
 
-######  Kukharenkoite-(La)
+#######  Kukharenkoite-(La)
 
 
 - Child of:
- [`s05_BD`](#s05_BD)
  [`kukharenkoite`](#kukharenkoite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/kukharenkoite-la
@@ -57028,66 +54685,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: https://www.mindat.org/min-46768.html
 
 
-[]{#synchysite-ce}
-
-#######  Synchysite-(Ce)
-
-
-- Child of:
- [`32183`](#32183)
- [`synchysite`](#synchysite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/synchysite-ce
-
-- IMA chemistry: CaCe(CO<sub>3</sub>)<sub>2</sub>F
-
-- MinDat URL: https://www.mindat.org/min-3853.html
-
-
-[]{#synchysite-nd}
-
-#######  Synchysite-(Nd)
-
-
-- Child of:
- [`32183`](#32183)
- [`synchysite`](#synchysite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/synchysite-nd
-
-- IMA chemistry: CaNd(CO<sub>3</sub>)<sub>2</sub>F
-
-- MinDat URL: https://www.mindat.org/min-3854.html
-
-
-[]{#synchysite-y}
-
-#######  Synchysite-(Y)
-
-
-- Child of:
- [`32183`](#32183)
- [`synchysite`](#synchysite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/synchysite-y
-
-- IMA chemistry: CaY(CO<sub>3</sub>)<sub>2</sub>F
-
-- MinDat URL: https://www.mindat.org/min-3855.html
-
-
 []{#synchysite}
 
 #######  Synchysite
@@ -57111,7 +54708,6 @@ this vocabulary, based on Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS 
 
 
 - Child of:
- [`32183`](#32183)
  [`synchysite`](#synchysite)
 
 
@@ -57131,7 +54727,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`32183`](#32183)
  [`synchysite`](#synchysite)
 
 
@@ -57151,7 +54746,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`32183`](#32183)
  [`synchysite`](#synchysite)
 
 
@@ -57187,13 +54781,31 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://mindat.org/min-42527.html
 
 
-[]{#hydroxylbastnasite-ce}
+[]{#hydroxylbastnasite}
 
-#######  Hydroxylbastnäsite-(Ce)
+#######  Hydroxylbastnäsite
 
 
 - Child of:
  [`42527`](#42527)
+
+- Synonym of  Hydroxylbastnäsite-(Ce), Hydroxylbastnäsite-(La),
+Hydroxylbastnäsite-(Nd)
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions.
+
+- Concept URI: https://w3id.org/geochem/1.0/min/hydroxylbastnasite
+
+- MinDat URL: https://www.mindat.org/min-40960.html
+
+
+[]{#hydroxylbastnasite-ce}
+
+########  Hydroxylbastnäsite-(Ce)
+
+
+- Child of:
  [`hydroxylbastnasite`](#hydroxylbastnasite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydroxylbastnasite-ce
@@ -57205,11 +54817,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#hydroxylbastnasite-nd}
 
-#######  Hydroxylbastnäsite-(Nd)
+########  Hydroxylbastnäsite-(Nd)
 
 
 - Child of:
- [`42527`](#42527)
  [`hydroxylbastnasite`](#hydroxylbastnasite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydroxylbastnasite-nd
@@ -57242,7 +54853,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Child of:
  [`42527`](#42527)
 
--
 - Name used for F-dominant members of the Bastnäsite Group for which
 the dominant REE element is not known; Bastnäsite-(Ce) is the most
 common member.
@@ -57315,61 +54925,9 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-562.html
 
 
-[]{#hydroxylbastnasite}
-
-#######  Hydroxylbastnäsite
-
-
-- Child of:
- [`42527`](#42527)
-
-- Synonym of  Hydroxylbastnäsite-(Ce), Hydroxylbastnäsite-(La),
-Hydroxylbastnäsite-(Nd)
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions.
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hydroxylbastnasite
-
-- MinDat URL: https://www.mindat.org/min-40960.html
-
-
-[]{#hydroxylbastnasite-ce}
-
-########  Hydroxylbastnäsite-(Ce)
-
-
-- Child of:
- [`42527`](#42527)
- [`hydroxylbastnasite`](#hydroxylbastnasite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hydroxylbastnasite-ce
-
-- IMA chemistry: Ce(CO<sub>3</sub>)(OH)
-
-- MinDat URL: http://www.mindat.org/min-1956.html
-
-
-[]{#hydroxylbastnasite-nd}
-
-########  Hydroxylbastnäsite-(Nd)
-
-
-- Child of:
- [`42527`](#42527)
- [`hydroxylbastnasite`](#hydroxylbastnasite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hydroxylbastnasite-nd
-
-- IMA chemistry: Nd(CO<sub>3</sub>)(OH)
-
-- MinDat URL: http://www.mindat.org/min-1957.html
-
-
 []{#43732}
 
-######  Cordylite Group
-* `Cordylite`
+######  Cordylite
 
 
 - Child of:
@@ -57403,7 +54961,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/cordylite-ce
 
-- IMA chemistry: (Na,Ca,<span style="border: 1px solid #333; font-size:7px;"> </span>)BaCe<sub>2</sub>(CO<sub>3</sub>)<sub>4</sub>(F,O)
+- IMA chemistry: (Na,Ca,)BaCe<sub>2</sub>(CO<sub>3</sub>)<sub>4</sub>(F,O)
 
 - MinDat URL: https://www.mindat.org/min-1129.html
 
@@ -57435,7 +54993,6 @@ SMR add missing skos broader
 - Child of:
  [`s05_BD`](#s05_BD)
 
--
 - Use for Parisite specimen lacking chemical data to categorize as one
 of the species-specific subtypes
 
@@ -57477,118 +55034,9 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://www.mindat.org/min-47935.html
 
 
-[]{#arisite}
-
-######  Arisite
-
-
-- Child of:
- [`s05_BD`](#s05_BD)
-
-- Includes Arisite-(Ce), Arisite-(La)
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/arisite
-
-- MinDat URL: https://www.mindat.org/min-39587.html
-
-
-[]{#arisite-ce}
-
-#######  Arisite-(Ce)
-
-
-- Child of:
- [`s05_BD`](#s05_BD)
- [`arisite`](#arisite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/arisite-ce
-
-- IMA chemistry: NaCe<sub>2</sub>(CO<sub>3</sub>)<sub>2</sub>[F<sub>2x</sub>(CO<sub>3</sub>)<sub>1-x</sub>]F
-
-- MinDat URL: https://www.mindat.org/min-39483.html
-
-
-[]{#arisite-la}
-
-#######  Arisite-(La)
-
-
-- Child of:
- [`s05_BD`](#s05_BD)
- [`arisite`](#arisite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/arisite-la
-
-- IMA chemistry: NaLa<sub>2</sub>(CO<sub>3</sub>)<sub>2</sub>[F<sub>2x</sub>(CO<sub>3</sub>)<sub>1-x</sub>]F
-
-- MinDat URL: http://www.mindat.org/min-39549.html
-
-
-[]{#kukharenkoite}
-
-######  Kukharenkoite
-
-
-- Child of:
- [`s05_BD`](#s05_BD)
-
-- Use for Kukharenkoite specimen lacking chemical data to categorize
-as one of the species-specific subtypes. Includes Kukharenkoite-Ce and
-Kukharenkoite-La. No mindat equivalent.
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions.
-
-- Concept URI: https://w3id.org/geochem/1.0/min/kukharenkoite
-
-
-[]{#kukharenkoite-ce}
-
-#######  Kukharenkoite-(Ce)
-
-
-- Child of:
- [`s05_BD`](#s05_BD)
- [`kukharenkoite`](#kukharenkoite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/kukharenkoite-ce
-
-- IMA chemistry: Ba<sub>2</sub>Ce(CO<sub>3</sub>)<sub>3</sub>F
-
-- MinDat URL: https://www.mindat.org/min-7146.html
-
-
-[]{#kukharenkoite-la}
-
-#######  Kukharenkoite-(La)
-
-
-- Child of:
- [`s05_BD`](#s05_BD)
- [`kukharenkoite`](#kukharenkoite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/kukharenkoite-la
-
-- IMA chemistry: Ba<sub>2</sub>La(CO<sub>3</sub>)<sub>3</sub>F
-
-- MinDat URL: http://www.mindat.org/min-25586.html
-
-
 []{#s05_be}
 
 #####  Strunz 05.BE Carbonate with additional anions, without H2O, With Pb, Bi
-* `Strunz 05.BE Carbonate with additional anions, without H2O, With Pb, Bi`
 
 
 - Child of:
@@ -57720,7 +55168,6 @@ SMR add missing skos broader
 []{#s05_bf}
 
 #####  Strunz 05.BF Carbonate with additional anions, without H2O, With (Cl), SO4, PO4, TeO3
-* `Strunz 05.BF Carbonate with additional anions, without H2O, With (Cl), SO4, PO4, TeO3`
 
 
 - Child of:
@@ -58020,7 +55467,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_c}
 
 ####  Strunz 05.C Carbonate without additional anions, with H2O
-* `Strunz 05.C Carbonate without additional anions, with H2O`
 
 
 - Child of:
@@ -58032,7 +55478,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_ca}
 
 #####  Strunz 05.CA Carbonate without additional anions, with H2O, With medium-sized cations
-* `Strunz 05.CA Carbonate without additional anions, with H2O, With medium-sized cations`
 
 
 - Child of:
@@ -58089,7 +55534,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_cb}
 
 #####  Strunz 05.CB Carbonate without additional anions, with H2O, With large cations (alkali and alkali-earth carbonates)
-* `Strunz 05.CB Carbonate without additional anions, with H2O, With large cations (alkali and alkali-earth carbonates)`
 
 
 - Child of:
@@ -58251,7 +55695,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_cc}
 
 #####  Strunz 05.CC Carbonate without additional anions, with H2O, With rare earth elements (REE)
-* `Strunz 05.CC Carbonate without additional anions, with H2O, With rare earth elements (REE)`
 
 
 - Child of:
@@ -58320,13 +55763,30 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-11209.html
 
 
-[]{#lanthanite-ce}
+[]{#lanthanite}
 
-######  Lanthanite-(Ce)
+######  Lanthanite
 
 
 - Child of:
  [`s05_CC`](#s05_CC)
+
+- includes Lanthanite-(Ce), Lanthanite-(La), Lanthanite-(Nd)
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/lanthanite
+
+- MinDat URL: https://www.mindat.org/min-10974.html
+
+
+[]{#lanthanite-ce}
+
+#######  Lanthanite-(Ce)
+
+
+- Child of:
  [`lanthanite`](#lanthanite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/lanthanite-ce
@@ -58338,11 +55798,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#lanthanite-la}
 
-######  Lanthanite-(La)
+#######  Lanthanite-(La)
 
 
 - Child of:
- [`s05_CC`](#s05_CC)
  [`lanthanite`](#lanthanite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/lanthanite-la
@@ -58354,11 +55813,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#lanthanite-nd}
 
-######  Lanthanite-(Nd)
+#######  Lanthanite-(Nd)
 
 
 - Child of:
- [`s05_CC`](#s05_CC)
  [`lanthanite`](#lanthanite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/lanthanite-nd
@@ -58567,76 +56025,9 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: http://www.mindat.org/min-4266.html
 
 
-[]{#lanthanite}
-
-######  Lanthanite
-
-
-- Child of:
- [`s05_CC`](#s05_CC)
-
-- includes Lanthanite-(Ce), Lanthanite-(La), Lanthanite-(Nd)
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/lanthanite
-
-- MinDat URL: https://www.mindat.org/min-10974.html
-
-
-[]{#lanthanite-ce}
-
-#######  Lanthanite-(Ce)
-
-
-- Child of:
- [`s05_CC`](#s05_CC)
- [`lanthanite`](#lanthanite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/lanthanite-ce
-
-- IMA chemistry: Ce<sub>2</sub>(CO<sub>3</sub>)<sub>3</sub>·8H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-2325.html
-
-
-[]{#lanthanite-la}
-
-#######  Lanthanite-(La)
-
-
-- Child of:
- [`s05_CC`](#s05_CC)
- [`lanthanite`](#lanthanite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/lanthanite-la
-
-- IMA chemistry: La<sub>2</sub>(CO<sub>3</sub>)<sub>3</sub>·8H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-2326.html
-
-
-[]{#lanthanite-nd}
-
-#######  Lanthanite-(Nd)
-
-
-- Child of:
- [`s05_CC`](#s05_CC)
- [`lanthanite`](#lanthanite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/lanthanite-nd
-
-- IMA chemistry: Nd<sub>2</sub>(CO<sub>3</sub>)<sub>3</sub>·8H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-2327.html
-
-
 []{#s05_d}
 
 ####  Strunz 05.D Carbonate with additional anions and H2O
-* `Strunz 05.D Carbonate with additional anions and H2O`
 
 
 - Child of:
@@ -58648,7 +56039,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 []{#s05_da}
 
 #####  Strunz 05.DA Carbonate with additional anions and H2O, With medium-sized cations
-* `Strunz 05.DA Carbonate with additional anions and H2O, With medium-sized cations`
 
 
 - Child of:
@@ -58703,38 +56093,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 - MinDat URL: http://www.mindat.org/min-868.html
 
 
-[]{#caresite}
-
-######  Caresite
-
-
-- Child of:
- [`43291`](#43291)
- [`s05_DA`](#s05_DA)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/caresite
-
-- IMA chemistry: Fe<sup>2+</sup><sub>4</sub>Al<sub>2</sub>(OH)<sub>12</sub>(CO<sub>3</sub>)·3H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-6848.html
-
-
-[]{#charmarite}
-
-######  Charmarite
-
-
-- Child of:
- [`43291`](#43291)
- [`s05_DA`](#s05_DA)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/charmarite
-
-- IMA chemistry: Mn<sub>4</sub>Al<sub>2</sub>(OH)<sub>12</sub>(CO<sub>3</sub>)·3H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-7582.html
-
-
 []{#chlorartinite}
 
 ######  Chlorartinite
@@ -58748,22 +56106,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 - IMA chemistry: Mg<sub>2</sub>(CO<sub>3</sub>)Cl(OH)·2.5H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-6868.html
-
-
-[]{#chlormagaluminite}
-
-######  Chlormagaluminite
-
-
-- Child of:
- [`43291`](#43291)
- [`s05_DA`](#s05_DA)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/chlormagaluminite
-
-- IMA chemistry: Mg<sub>4</sub>Al<sub>2</sub>(OH)<sub>12</sub>Cl<sub>2</sub>·2H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-1018.html
 
 
 []{#claraite}
@@ -58795,22 +56137,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 - IMA chemistry: Mg<sub>10</sub>Fe<sup>3+</sup><sub>2</sub>(CO<sub>3</sub>)(OH)<sub>24</sub>·2H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-1095.html
-
-
-[]{#comblainite}
-
-######  Comblainite
-
-
-- Child of:
- [`43291`](#43291)
- [`s05_DA`](#s05_DA)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/comblainite
-
-- IMA chemistry: Ni<sub>4</sub>Co<sup>3+</sup><sub>2</sub>(CO<sub>3</sub>)(OH)<sub>12</sub>·3H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-1116.html
 
 
 []{#desautelsite}
@@ -59015,22 +56341,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: http://www.mindat.org/min-3330.html
 
 
-[]{#quintinite}
-
-######  Quintinite
-
-
-- Child of:
- [`43291`](#43291)
- [`s05_DA`](#s05_DA)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/quintinite
-
-- IMA chemistry: Mg<sub>4</sub>Al<sub>2</sub>(OH)<sub>12</sub>(CO<sub>3</sub>)·3H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-7265.html
-
-
 []{#reevesite}
 
 ######  Reevesite
@@ -59124,22 +56434,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: http://www.mindat.org/min-4286.html
 
 
-[]{#zaccagnaite}
-
-######  Zaccagnaite
-
-
-- Child of:
- [`43291`](#43291)
- [`s05_DA`](#s05_DA)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/zaccagnaite
-
-- IMA chemistry: Zn<sub>4</sub>Al<sub>2</sub>(OH)<sub>12</sub>(CO<sub>3</sub>)·3H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-10810.html
-
-
 []{#zaratite}
 
 ######  Zaratite
@@ -59155,10 +56449,131 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: http://www.mindat.org/min-4388.html
 
 
+[]{#43291}
+
+######  Quintinite Group
+
+
+- Child of:
+ [`43290`](#43290)
+ [`s05_DA`](#s05_DA)
+
+-
+- Concept URI: https://w3id.org/geochem/1.0/mingroup/43291
+
+- MinDat URL: https://mindat.org/min-43291.html
+
+
+[]{#caresite}
+
+#######  Caresite
+
+
+- Child of:
+ [`43291`](#43291)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/caresite
+
+- IMA chemistry: Fe<sup>2+</sup><sub>4</sub>Al<sub>2</sub>(OH)<sub>12</sub>(CO<sub>3</sub>)·3H<sub>2</sub>O
+
+- MinDat URL: http://www.mindat.org/min-6848.html
+
+
+[]{#charmarite}
+
+#######  Charmarite
+
+
+- Child of:
+ [`43291`](#43291)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/charmarite
+
+- IMA chemistry: Mn<sub>4</sub>Al<sub>2</sub>(OH)<sub>12</sub>(CO<sub>3</sub>)·3H<sub>2</sub>O
+
+- MinDat URL: http://www.mindat.org/min-7582.html
+
+
+[]{#chlormagaluminite}
+
+#######  Chlormagaluminite
+
+
+- Child of:
+ [`43291`](#43291)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/chlormagaluminite
+
+- IMA chemistry: Mg<sub>4</sub>Al<sub>2</sub>(OH)<sub>12</sub>Cl<sub>2</sub>·2H<sub>2</sub>O
+
+- MinDat URL: http://www.mindat.org/min-1018.html
+
+
+[]{#comblainite}
+
+#######  Comblainite
+
+
+- Child of:
+ [`43291`](#43291)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/comblainite
+
+- IMA chemistry: Ni<sub>4</sub>Co<sup>3+</sup><sub>2</sub>(CO<sub>3</sub>)(OH)<sub>12</sub>·3H<sub>2</sub>O
+
+- MinDat URL: http://www.mindat.org/min-1116.html
+
+
+[]{#quintinite}
+
+#######  Quintinite
+
+
+- Child of:
+ [`43291`](#43291)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/quintinite
+
+- IMA chemistry: Mg<sub>4</sub>Al<sub>2</sub>(OH)<sub>12</sub>(CO<sub>3</sub>)·3H<sub>2</sub>O
+
+- MinDat URL: http://www.mindat.org/min-7265.html
+
+
+[]{#quintinite-1m}
+
+#######  Quintinite-1M
+
+
+- Child of:
+ [`43291`](#43291)
+
+
+- **Source:**
+https://w3id.org/geochem/1.0/min/SMRadditions
+
+- Concept URI: https://w3id.org/geochem/1.0/min/quintinite-1m
+
+- MinDat URL: https://www.mindat.org/min-43822.html
+
+
+[]{#zaccagnaite}
+
+#######  Zaccagnaite
+
+
+- Child of:
+ [`43291`](#43291)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/zaccagnaite
+
+- IMA chemistry: Zn<sub>4</sub>Al<sub>2</sub>(OH)<sub>12</sub>(CO<sub>3</sub>)·3H<sub>2</sub>O
+
+- MinDat URL: http://www.mindat.org/min-10810.html
+
+
 []{#s05_db}
 
 #####  Strunz 05.DB Carbonate with additional anions and H2O, With large and medium-sized cations
-* `Strunz 05.DB Carbonate with additional anions and H2O, With large and medium-sized cations`
 
 
 - Child of:
@@ -59426,7 +56841,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s05_dc}
 
 #####  Strunz 05.DC Carbonate with additional anions and H2O, With large cations
-* `Strunz 05.DC Carbonate with additional anions and H2O, With large cations`
 
 
 - Child of:
@@ -59625,106 +57039,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://mindat.org/min-39436.html
 
 
-[]{#ancylite-ce}
-
-########  Ancylite-(Ce)
-
-
-- Child of:
- [`39436`](#39436)
- [`ancylite`](#ancylite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ancylite-ce
-
-- IMA chemistry: CeSr(CO<sub>3</sub>)<sub>2</sub>(OH)·H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-216.html
-
-
-[]{#ancylite-la}
-
-########  Ancylite-(La)
-
-
-- Child of:
- [`39436`](#39436)
- [`ancylite`](#ancylite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ancylite-la
-
-- IMA chemistry: LaSr(CO<sub>3</sub>)<sub>2</sub>(OH)·H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-6800.html
-
-
-[]{#calcioancylite-la}
-
-########  Calcioancylite-(La)
-
-
-- Child of:
- [`39436`](#39436)
- [`calcioancylite`](#calcioancylite)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/calcioancylite-la
-
-- MinDat URL: https://www.mindat.org/min-55761.html
-
-
-[]{#calcioancylite-nd}
-
-########  Calcioancylite-(Nd)
-
-
-- Child of:
- [`39436`](#39436)
- [`calcioancylite`](#calcioancylite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/calcioancylite-nd
-
-- IMA chemistry: Nd<sub>2.8</sub>Ca<sub>1.2</sub>(CO<sub>3</sub>)<sub>4</sub>(OH)<sub>3</sub>·H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-856.html
-
-
-[]{#gysinite-la}
-
-########  Gysinite-(La)
-
-
-- Child of:
- [`39436`](#39436)
- [`gysinite`](#gysinite)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gysinite-la
-
-- MinDat URL: https://www.mindat.org/min-56019.html
-
-
-[]{#gysinite-nd}
-
-########  Gysinite-(Nd)
-
-
-- Child of:
- [`39436`](#39436)
- [`gysinite`](#gysinite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gysinite-nd
-
-- IMA chemistry: PbNd(CO<sub>3</sub>)<sub>2</sub>(OH)·H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-1786.html
-
-
 []{#ancylite}
 
 ########  Ancylite
@@ -59751,7 +57065,6 @@ Add with ima symbol, based on Gerhard Wörner, Leander Kallas, Lucia Profeta (DI
 
 
 - Child of:
- [`39436`](#39436)
  [`ancylite`](#ancylite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ancylite-ce
@@ -59767,7 +57080,6 @@ Add with ima symbol, based on Gerhard Wörner, Leander Kallas, Lucia Profeta (DI
 
 
 - Child of:
- [`39436`](#39436)
  [`ancylite`](#ancylite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ancylite-la
@@ -59801,7 +57113,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`39436`](#39436)
  [`calcioancylite`](#calcioancylite)
 
 
@@ -59819,7 +57130,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 
 - Child of:
- [`39436`](#39436)
  [`calcioancylite`](#calcioancylite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/calcioancylite-nd
@@ -59853,7 +57163,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`39436`](#39436)
  [`gysinite`](#gysinite)
 
 
@@ -59871,7 +57180,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 
 - Child of:
- [`39436`](#39436)
  [`gysinite`](#gysinite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/gysinite-nd
@@ -59933,7 +57241,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_e}
 
 ####  Strunz 05.E Uranyl Carbonate
-* `Strunz 05.E Uranyl Carbonate`
 
 
 - Child of:
@@ -59945,7 +57252,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_ea}
 
 #####  Strunz 05.EA Uranyl Carbonate, UO2:CO3 > 1:1
-* `Strunz 05.EA Uranyl Carbonate, UO2:CO3 > 1:1`
 
 
 - Child of:
@@ -60047,7 +57353,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_eb}
 
 #####  Strunz 05.EB Uranyl Carbonate, UO2:CO3 = 1:1
-* `Strunz 05.EB Uranyl Carbonate, UO2:CO3 = 1:1`
 
 
 - Child of:
@@ -60119,7 +57424,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_ec}
 
 #####  Strunz 05.EC Uranyl Carbonate, UO2:CO3 < 1:1 - 1:2
-* `Strunz 05.EC Uranyl Carbonate, UO2:CO3 < 1:1 - 1:2`
 
 
 - Child of:
@@ -60191,7 +57495,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_ed}
 
 #####  Strunz 05.ED Uranyl Carbonate, UO2:CO3 = 1:3
-* `Strunz 05.ED Uranyl Carbonate, UO2:CO3 = 1:3`
 
 
 - Child of:
@@ -60413,7 +57716,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_ee}
 
 #####  Strunz 05.EE Uranyl Carbonate, UO2:CO3= 1:4
-* `Strunz 05.EE Uranyl Carbonate, UO2:CO3= 1:4`
 
 
 - Child of:
@@ -60455,7 +57757,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_ef}
 
 #####  Strunz 05.EF Uranyl Carbonate, UO2:CO3 = 1:5
-* `Strunz 05.EF Uranyl Carbonate, UO2:CO3 = 1:5`
 
 
 - Child of:
@@ -60482,7 +57783,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_eg}
 
 #####  Strunz 05.EG Uranyl Carbonate, With SO4 or SiO4
-* `Strunz 05.EG Uranyl Carbonate, With SO4 or SiO4`
 
 
 - Child of:
@@ -60524,7 +57824,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_n}
 
 ####  Strunz 05.N Nitrate
-* `Strunz 05.N Nitrate`
 
 
 - Child of:
@@ -60536,7 +57835,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_na}
 
 #####  Strunz 05.NA Nitrate, Without OH or H2O
-* `Strunz 05.NA Nitrate, Without OH or H2O`
 
 
 - Child of:
@@ -60608,7 +57906,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_nb}
 
 #####  Strunz 05.NB Nitrate, With OH
-* `Strunz 05.NB Nitrate, With OH`
 
 
 - Child of:
@@ -60650,7 +57947,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_nc}
 
 #####  Strunz 05.NC Nitrate, With H2O
-* `Strunz 05.NC Nitrate, With H2O`
 
 
 - Child of:
@@ -60692,7 +57988,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s05_nd}
 
 #####  Strunz 05.ND Nitrate, With OH (etc.) and H2O
-* `Strunz 05.ND Nitrate, With OH (etc.) and H2O`
 
 
 - Child of:
@@ -60807,7 +58102,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_a}
 
 ####  Strunz 06.A Monoborate
-* `Strunz 06.A Monoborate`
 
 
 - Child of:
@@ -60819,7 +58113,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_aa}
 
 #####  Strunz 06.AA Monoborate, BO3, without additional anions; 1(D).
-* `Strunz 06.AA Monoborate, BO3, without additional anions; 1(D).`
 
 
 - Child of:
@@ -60921,7 +58214,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_ab}
 
 #####  Strunz 06.AB Monoborate, BO3, with additional anions; 1(D) + OH, etc.
-* `Strunz 06.AB Monoborate, BO3, with additional anions; 1(D) + OH, etc.`
 
 
 - Child of:
@@ -61075,7 +58367,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/karlite
 
-- IMA chemistry: (Mg,Al)<sub>6.5</sub>(BO<sub>3</sub>)<sub>3</sub>(OH)<sub>4</sub>(<span style="border: 1px solid #333; font-size:7px;"> </span>,Cl)<sub>0.5</sub>
+- IMA chemistry: (Mg,Al)<sub>6.5</sub>(BO<sub>3</sub>)<sub>3</sub>(OH)<sub>4</sub>(,Cl)<sub>0.5</sub>
 
 - MinDat URL: http://www.mindat.org/min-2160.html
 
@@ -61458,7 +58750,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_ac}
 
 #####  Strunz 06.AC Monoborate, B(O,OH)4, without and with additional anions; 1(T), 1(T)+OH, etc
-* `Strunz 06.AC Monoborate, B(O,OH)4, without and with additional anions; 1(T), 1(T)+OH, etc`
 
 
 - Child of:
@@ -61695,7 +58986,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_b}
 
 ####  Strunz 06.B Diborate
-* `Strunz 06.B Diborate`
 
 
 - Child of:
@@ -61707,7 +58997,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_ba}
 
 #####  Strunz 06.BA Neso-diborate with double triangles B2(O,OH)5; 2(2D); 2(2D) + OH, etc.
-* `Strunz 06.BA Neso-diborate with double triangles B2(O,OH)5; 2(2D); 2(2D) + OH, etc.`
 
 
 - Child of:
@@ -61809,7 +59098,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_bb}
 
 #####  Strunz 06.BB Neso-diborate with double tetrahedra B2O(OH)6; 2(2T)
-* `Strunz 06.BB Neso-diborate with double tetrahedra B2O(OH)6; 2(2T)`
 
 
 - Child of:
@@ -61851,7 +59139,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_bc}
 
 #####  Strunz 06.BC Ino-diborate
-* `Strunz 06.BC Ino-diborate`
 
 
 - Child of:
@@ -61938,7 +59225,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_bd}
 
 #####  Strunz 06.BD Tektodiborate
-* `Strunz 06.BD Tektodiborate`
 
 
 - Child of:
@@ -61965,7 +59251,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_c}
 
 ####  Strunz 06.C Triborate
-* `Strunz 06.C Triborate`
 
 
 - Child of:
@@ -61977,7 +59262,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_ca}
 
 #####  Strunz 06.CA Neso-triborate
-* `Strunz 06.CA Neso-triborate`
 
 
 - Child of:
@@ -62153,7 +59437,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_cb}
 
 #####  Strunz 06.CB Ino-triborate
-* `Strunz 06.CB Ino-triborate`
 
 
 - Child of:
@@ -62225,7 +59508,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_cc}
 
 #####  Strunz 06.CC Phyllo-triborate
-* `Strunz 06.CC Phyllo-triborate`
 
 
 - Child of:
@@ -62252,7 +59534,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_d}
 
 ####  Strunz 06.D Tetraborate
-* `Strunz 06.D Tetraborate`
 
 
 - Child of:
@@ -62279,7 +59560,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_da}
 
 #####  Strunz 06.DA Neso-tetraborate
-* `Strunz 06.DA Neso-tetraborate`
 
 
 - Child of:
@@ -62426,7 +59706,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_db}
 
 #####  Strunz 06.DB Ino-tetraborate
-* `Strunz 06.DB Ino-tetraborate`
 
 
 - Child of:
@@ -62453,7 +59732,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_dc}
 
 #####  Strunz 06.DC Phyllo-tetraborate
-* `Strunz 06.DC Phyllo-tetraborate`
 
 
 - Child of:
@@ -62465,7 +59743,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_dd}
 
 #####  Strunz 06.DD Tekto-tetraborate
-* `Strunz 06.DD Tekto-tetraborate`
 
 
 - Child of:
@@ -62477,7 +59754,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_e}
 
 ####  Strunz 06.E Pentaborate
-* `Strunz 06.E Pentaborate`
 
 
 - Child of:
@@ -62564,7 +59840,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_ea}
 
 #####  Strunz 06.EA Neso-pentaborate
-* `Strunz 06.EA Neso-pentaborate`
 
 
 - Child of:
@@ -62696,7 +59971,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_eb}
 
 #####  Strunz 06.EB Ino-pentaborate
-* `Strunz 06.EB Ino-pentaborate`
 
 
 - Child of:
@@ -62783,7 +60057,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_ec}
 
 #####  Strunz 06.EC Phyllo-pentaborate
-* `Strunz 06.EC Phyllo-pentaborate`
 
 
 - Child of:
@@ -62915,7 +60188,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_ed}
 
 #####  Strunz 06.ED Tekto-pentaborate
-* `Strunz 06.ED Tekto-pentaborate`
 
 
 - Child of:
@@ -62975,7 +60247,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_f}
 
 ####  Strunz 06.F Hexaborate
-* `Strunz 06.F Hexaborate`
 
 
 - Child of:
@@ -62987,7 +60258,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_fa}
 
 #####  Strunz 06.FA Neso-hexaborate
-* `Strunz 06.FA Neso-hexaborate`
 
 
 - Child of:
@@ -63074,7 +60344,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_fb}
 
 #####  Strunz 06.FB Ino-hexaborate
-* `Strunz 06.FB Ino-hexaborate`
 
 
 - Child of:
@@ -63116,7 +60385,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_fc}
 
 #####  Strunz 06.FC Phyllo-hexaborate
-* `Strunz 06.FC Phyllo-hexaborate`
 
 
 - Child of:
@@ -63203,7 +60471,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_g}
 
 ####  Strunz 06.G Heptaborate and other megaborate
-* `Strunz 06.G Heptaborate and other megaborate`
 
 
 - Child of:
@@ -63215,7 +60482,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_ga}
 
 #####  Strunz 06.GA Tekto-heptaborate
-* `Strunz 06.GA Tekto-heptaborate`
 
 
 - Child of:
@@ -63331,7 +60597,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_gb}
 
 #####  Strunz 06.GB Phyllo-nonborate, etc.
-* `Strunz 06.GB Phyllo-nonborate, etc.`
 
 
 - Child of:
@@ -63403,7 +60668,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_gc}
 
 #####  Strunz 06.GC Tekto-dodecaborate
-* `Strunz 06.GC Tekto-dodecaborate`
 
 
 - Child of:
@@ -63445,7 +60709,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_gd}
 
 #####  Strunz 06.GD Mega-tektoborate
-* `Strunz 06.GD Mega-tektoborate`
 
 
 - Child of:
@@ -63518,7 +60781,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s06_h}
 
 ####  Strunz 06.H Borate, unclassified
-* `Strunz 06.H Borate, unclassified`
 
 
 - Child of:
@@ -63642,7 +60904,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/satimolite
 
-- IMA chemistry: KNa<sub>2</sub>(Al<sub>5</sub>Mg<sub>2</sub>)[B<sub>12</sub>O<sub>18</sub>(OH)<sub>12</sub>](OH)<sub>6</sub>Cl<sub>4</sub>·4H<sub>2</sub>O
+- IMA chemistry: KNa<sub>2</sub>(Al<sub>5</sub>Mg<sub>2</sub>)[B<sub>12</sub>O<sub>18</sub>(OH)<sub>12</sub>]     (OH)<sub>6</sub>Cl<sub>4</sub>·4H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-3541.html
 
@@ -63768,7 +61030,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_a}
 
 ####  Strunz 07.A Sulfate, selenate, etc. without additional anions, without H2O
-* `Strunz 07.A Sulfate, selenate, etc. without additional anions, without H2O`
 
 
 - Child of:
@@ -63862,7 +61123,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_aa}
 
 #####  Strunz 07.AA Sulfate, selenate, etc. without additional anions, without H2O, With small cations
-* `Strunz 07.AA Sulfate, selenate, etc. without additional anions, without H2O, With small cations`
 
 
 - Child of:
@@ -63874,7 +61134,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_ab}
 
 #####  Strunz 07.AB Sulfate, selenate, etc. without additional anions, without H2O, With medium-sized cations
-* `Strunz 07.AB Sulfate, selenate, etc. without additional anions, without H2O, With medium-sized cations`
 
 
 - Child of:
@@ -64038,7 +61297,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s07_ac}
 
 #####  Strunz 07.AC Sulfate, selenate, etc. without additional anions, without H2O, With medium-sized and large cations
-* `Strunz 07.AC Sulfate, selenate, etc. without additional anions, without H2O, With medium-sized and large cations`
 
 
 - Child of:
@@ -64310,7 +61568,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_ad}
 
 #####  Strunz 07.AD Sulfate, selenate, etc. without additional anions, without H2O, With only large cations
-* `Strunz 07.AD Sulfate, selenate, etc. without additional anions, without H2O, With only large cations`
 
 
 - Child of:
@@ -64634,7 +61891,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_b}
 
 ####  Strunz 07.B Sulfate, selenate, etc. with additional anions, without H2O
-* `Strunz 07.B Sulfate, selenate, etc. with additional anions, without H2O`
 
 
 - Child of:
@@ -64646,7 +61902,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_ba}
 
 #####  Strunz 07.BA Sulfate, selenate, etc. with additional anions, without H2O, With small cations
-* `Strunz 07.BA Sulfate, selenate, etc. with additional anions, without H2O, With small cations`
 
 
 - Child of:
@@ -64658,7 +61913,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_bb}
 
 #####  Strunz 07.BB Sulfate, selenate, etc. with additional anions, without H2O, With medium-sized cations
-* `Strunz 07.BB Sulfate, selenate, etc. with additional anions, without H2O, With medium-sized cations`
 
 
 - Child of:
@@ -64782,7 +62036,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/mojaveite
 
-- IMA chemistry: Cu<sub>6</sub>[Te<sup>6+</sup>O<sub>4</sub>(OH)<sub>2</sub>](OH)<sub>7</sub>Cl
+- IMA chemistry: Cu<sub>6</sub>[Te<sup>6+</sup>O<sub>4</sub>(OH)<sub>2</sub>]     (OH)<sub>7</sub>Cl
 
 - MinDat URL: https://www.mindat.org/min-46069.html
 
@@ -64938,7 +62192,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_bc}
 
 #####  Strunz 07.BC Sulfate, selenate, etc. with additional anions, without H2O, With medium-sized and large cations
-* `Strunz 07.BC Sulfate, selenate, etc. with additional anions, without H2O, With medium-sized and large cations`
 
 
 - Child of:
@@ -65751,7 +63004,6 @@ SMR add missing skos broader
 []{#s07_bd}
 
 #####  Strunz 07.BD Sulfate, selenate, etc. with additional anions, without H2O, With only large cations
-* `Strunz 07.BD Sulfate, selenate, etc. with additional anions, without H2O, With only large cations`
 
 
 - Child of:
@@ -66074,7 +63326,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_c}
 
 ####  Strunz 07.C Sulfate, selenate, etc. without additional anions, with H2O
-* `Strunz 07.C Sulfate, selenate, etc. without additional anions, with H2O`
 
 
 - Child of:
@@ -66201,7 +63452,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_ca}
 
 #####  Strunz 07.CA Sulfate, selenate, etc. without additional anions, with H2O, With small cations
-* `Strunz 07.CA Sulfate, selenate, etc. without additional anions, with H2O, With small cations`
 
 
 - Child of:
@@ -66213,7 +63463,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_cb}
 
 #####  Strunz 07.CB Sulfate, selenate, etc. without additional anions, with H2O, With only medium-sized cations
-* `Strunz 07.CB Sulfate, selenate, etc. without additional anions, with H2O, With only medium-sized cations`
 
 
 - Child of:
@@ -66250,23 +63499,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - IMA chemistry: Cu(SO<sub>4</sub>)·3H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-718.html
-
-
-[]{#coquimbitegroup}
-
-######  Coquimbite Group
-
-
-- Child of:
- [`s07_CB`](#s07_CB)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/coquimbitegroup
-
-- MinDat URL: https://www.mindat.org/min-43979.html
 
 
 []{#cranswickite}
@@ -67306,7 +64538,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s07_cc}
 
 #####  Strunz 07.CC Sulfate, selenate, etc. without additional anions, with H2O, With medium-sized and large cations
-* `Strunz 07.CC Sulfate, selenate, etc. without additional anions, with H2O, With medium-sized and large cations`
 
 
 - Child of:
@@ -68011,7 +65242,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_cd}
 
 #####  Strunz 07.CD Sulfate, selenate, etc. without additional anions, with H2O, With only large cations
-* `Strunz 07.CD Sulfate, selenate, etc. without additional anions, with H2O, With only large cations`
 
 
 - Child of:
@@ -68296,7 +65526,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s07_d}
 
 ####  Strunz 07.D Sulfate, selenate, etc. with additional anions and H2O
-* `Strunz 07.D Sulfate, selenate, etc. with additional anions and H2O`
 
 
 - Child of:
@@ -68573,7 +65802,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s07_da}
 
 #####  Strunz 07.DA Sulfate, selenate, etc. with additional anions and H2O, With small cations
-* `Strunz 07.DA Sulfate, selenate, etc. with additional anions and H2O, With small cations`
 
 
 - Child of:
@@ -68585,7 +65813,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s07_db}
 
 #####  Strunz 07.DB Sulfate, selenate, etc. with additional anions and H2O, With only medium-sized cations; insular octahedra and finite units
-* `Strunz 07.DB Sulfate, selenate, etc. with additional anions and H2O, With only medium-sized cations; insular octahedra and finite units`
 
 
 - Child of:
@@ -68932,7 +66159,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_dc}
 
 #####  Strunz 07.DC Sulfate, selenate, etc. with additional anions and H2O, With only medium-sized cations; chains of edge-sharing octahedra
-* `Strunz 07.DC Sulfate, selenate, etc. with additional anions and H2O, With only medium-sized cations; chains of edge-sharing octahedra`
 
 
 - Child of:
@@ -69124,7 +66350,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_dd}
 
 #####  Strunz 07.DD Sulfate, selenate, etc. with additional anions and H2O, With only medium-sized cations; sheets of edge-sharing octahedra
-* `Strunz 07.DD Sulfate, selenate, etc. with additional anions and H2O, With only medium-sized cations; sheets of edge-sharing octahedra`
 
 
 - Child of:
@@ -69258,22 +66483,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-1707.html
 
 
-[]{#honessite}
-
-######  Honessite
-
-
-- Child of:
- [`42543`](#42543)
- [`s07_DD`](#s07_DD)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/honessite
-
-- IMA chemistry: (Ni<sub>1-x</sub>Fe<sup>3+</sup><sub>x</sub>)(SO<sub>4</sub>)<sub>x/2</sub>(OH)<sub>2</sub>·nH<sub>2</sub>O (x < 0.5, n < 3x/2)
-
-- MinDat URL: http://www.mindat.org/min-1927.html
-
-
 []{#hydrohonessite}
 
 ######  Hydrohonessite
@@ -69288,22 +66497,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - IMA chemistry: (Ni<sub>1-x</sub>Fe<sup>3+</sup><sub>x</sub>)(SO<sub>4</sub>)<sub>x/2</sub>(OH)<sub>2</sub>·nH<sub>2</sub>O (x < 0.5, n > 3x/2)
 
 - MinDat URL: http://www.mindat.org/min-1978.html
-
-
-[]{#hydrowoodwardite}
-
-######  Hydrowoodwardite
-
-
-- Child of:
- [`42543`](#42543)
- [`s07_DD`](#s07_DD)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hydrowoodwardite
-
-- IMA chemistry: (Cu<sub>1-x</sub>Al<sub>x</sub>)(SO<sub>4</sub>)<sub>x/2</sub>(OH)<sub>2</sub>·nH<sub>2</sub>O (x < 0.5, n > 3x/2)
-
-- MinDat URL: http://www.mindat.org/min-7004.html
 
 
 []{#kobyashevite}
@@ -69583,22 +66776,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: http://www.mindat.org/min-4206.html
 
 
-[]{#woodwardite}
-
-######  Woodwardite
-
-
-- Child of:
- [`42543`](#42543)
- [`s07_DD`](#s07_DD)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/woodwardite
-
-- IMA chemistry: (Cu<sub>1-x</sub>Al<sub>x</sub>)(SO<sub>4</sub>)<sub>x/2</sub>(OH)<sub>2</sub>·nH<sub>2</sub>O (x < 0.5, n < 3x/2)
-
-- MinDat URL: http://www.mindat.org/min-4314.html
-
-
 []{#wroewolfeite}
 
 ######  Wroewolfeite
@@ -69630,14 +66807,73 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: http://www.mindat.org/min-4409.html
 
 
-[]{#zincowoodwardite}
+[]{#42543}
 
-######  Zincowoodwardite
+######  Woodwardite Group
+
+
+- Child of:
+ [`43290`](#43290)
+ [`s07_DD`](#s07_DD)
+
+-
+- Concept URI: https://w3id.org/geochem/1.0/mingroup/42543
+
+- MinDat URL: https://mindat.org/min-42543.html
+
+
+[]{#honessite}
+
+#######  Honessite
 
 
 - Child of:
  [`42543`](#42543)
- [`s07_DD`](#s07_DD)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/honessite
+
+- IMA chemistry: (Ni<sub>1-x</sub>Fe<sup>3+</sup><sub>x</sub>)(SO<sub>4</sub>)<sub>x/2</sub>(OH)<sub>2</sub>·nH<sub>2</sub>O (x < 0.5, n < 3x/2)
+
+- MinDat URL: http://www.mindat.org/min-1927.html
+
+
+[]{#hydrowoodwardite}
+
+#######  Hydrowoodwardite
+
+
+- Child of:
+ [`42543`](#42543)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/hydrowoodwardite
+
+- IMA chemistry: (Cu<sub>1-x</sub>Al<sub>x</sub>)(SO<sub>4</sub>)<sub>x/2</sub>(OH)<sub>2</sub>·nH<sub>2</sub>O (x < 0.5, n > 3x/2)
+
+- MinDat URL: http://www.mindat.org/min-7004.html
+
+
+[]{#woodwardite}
+
+#######  Woodwardite
+
+
+- Child of:
+ [`42543`](#42543)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/woodwardite
+
+- IMA chemistry: (Cu<sub>1-x</sub>Al<sub>x</sub>)(SO<sub>4</sub>)<sub>x/2</sub>(OH)<sub>2</sub>·nH<sub>2</sub>O (x < 0.5, n < 3x/2)
+
+- MinDat URL: http://www.mindat.org/min-4314.html
+
+
+[]{#zincowoodwardite}
+
+#######  Zincowoodwardite
+
+
+- Child of:
+ [`42543`](#42543)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/zincowoodwardite
 
@@ -69675,7 +66911,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/motukoreaite
 
-- IMA chemistry: Mg<sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>[Na(H<sub>2</sub>O)<sub>6</sub>](SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
+- IMA chemistry: Mg<sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>[Na(H<sub>2</sub>O)<sub>6</sub>]     (SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-2793.html
 
@@ -69690,7 +66926,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/natroglaucocerinite
 
-- IMA chemistry: Zn<sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>[Na(H<sub>2</sub>O)<sub>6</sub>](SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
+- IMA chemistry: Zn<sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>[Na(H<sub>2</sub>O)<sub>6</sub>]     (SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-10812.html
 
@@ -69705,7 +66941,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/nikischerite
 
-- IMA chemistry: Fe<sup>2+</sup><sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>[Na(H<sub>2</sub>O)<sub>6</sub>](SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
+- IMA chemistry: Fe<sup>2+</sup><sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>[Na(H<sub>2</sub>O)<sub>6</sub>]     (SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-10934.html
 
@@ -69720,7 +66956,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/shigaite
 
-- IMA chemistry: Mn<sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>[Na(H<sub>2</sub>O)<sub>6</sub>](SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
+- IMA chemistry: Mn<sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>[Na(H<sub>2</sub>O)<sub>6</sub>]     (SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-3638.html
 
@@ -69735,7 +66971,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/wermlandite
 
-- IMA chemistry: Mg<sub>7</sub>Al<sub>2</sub>(OH)<sub>18</sub>[Ca(H<sub>2</sub>O)<sub>6</sub>](SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
+- IMA chemistry: Mg<sub>7</sub>Al<sub>2</sub>(OH)<sub>18</sub>[Ca(H<sub>2</sub>O)<sub>6</sub>]     (SO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-4271.html
 
@@ -69970,7 +67206,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s07_de}
 
 #####  Strunz 07.DE Sulfate, selenate, etc. with additional anions and H2O, With only medium-sized cations; unclassified
-* `Strunz 07.DE Sulfate, selenate, etc. with additional anions and H2O, With only medium-sized cations; unclassified`
 
 
 - Child of:
@@ -70004,7 +67239,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/barrotite
 
-- IMA chemistry: Cu<sub>9</sub>Al(HSiO<sub>4</sub>)<sub>2</sub>[(SO<sub>4</sub>)(HAsO<sub>4</sub>)<sub>0.5</sub>](OH)<sub>12</sub>·8H<sub>2</sub>O
+- IMA chemistry: Cu<sub>9</sub>Al(HSiO<sub>4</sub>)<sub>2</sub>[(SO<sub>4</sub>)(HAsO<sub>4</sub>)<sub>0.5</sub>]     (OH)<sub>12</sub>·8H<sub>2</sub>O
 
 - MinDat URL: https://www.mindat.org/min-43860.html
 
@@ -70034,7 +67269,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/camerolaite
 
-- IMA chemistry: Cu<sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>(H<sub>2</sub>O)<sub>2</sub>[Sb(OH)<sub>6</sub>](SO<sub>4</sub>)
+- IMA chemistry: Cu<sub>6</sub>Al<sub>3</sub>(OH)<sub>18</sub>(H<sub>2</sub>O)<sub>2</sub>[Sb(OH)<sub>6</sub>]     (SO<sub>4</sub>)
 
 - MinDat URL: http://www.mindat.org/min-872.html
 
@@ -70079,7 +67314,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/cossaite
 
-- IMA chemistry: (Mg<sub>0.5</sub>,<span style="border: 1px solid #333; font-size:7px;"> </span>)Al<sub>6</sub>(SO<sub>4</sub>)<sub>6</sub>(HSO<sub>4</sub>)F<sub>6</sub>·36H<sub>2</sub>O
+- IMA chemistry: (Mg<sub>0.5</sub>,)Al<sub>6</sub>(SO<sub>4</sub>)<sub>6</sub>(HSO<sub>4</sub>)F<sub>6</sub>·36H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-39568.html
 
@@ -70287,7 +67522,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s07_df}
 
 #####  Strunz 07.DF Sulfate, selenate, etc. with additional anions and H2O, With large and medium-sized cations
-* `Strunz 07.DF Sulfate, selenate, etc. with additional anions and H2O, With large and medium-sized cations`
 
 
 - Child of:
@@ -70803,7 +68037,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s07_dg}
 
 #####  Strunz 07.DG Sulfate, selenate, etc. with additional anions and H2O, With large and medium-sized cations; with NO3, CO3, B(OH)4, SiO4 or IO3
-* `Strunz 07.DG Sulfate, selenate, etc. with additional anions and H2O, With large and medium-sized cations; with NO3, CO3, B(OH)4, SiO4 or IO3`
 
 
 - Child of:
@@ -71125,7 +68358,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/imayoshiite
 
-- IMA chemistry: Ca<sub>3</sub>Al(CO<sub>3</sub>)[B(OH)<sub>4</sub>](OH)<sub>6</sub>·12H<sub>2</sub>O
+- IMA chemistry: Ca<sub>3</sub>Al(CO<sub>3</sub>)[B(OH)<sub>4</sub>]     (OH)<sub>6</sub>·12H<sub>2</sub>O
 
 - MinDat URL: https://www.mindat.org/min-44007.html
 
@@ -71186,7 +68419,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/sturmanite
 
-- IMA chemistry: Ca<sub>6</sub>Fe<sup>3+</sup><sub>2</sub>(SO<sub>4</sub>)<sub>2.5</sub>[B(OH)<sub>4</sub>](OH)<sub>12</sub>·25H<sub>2</sub>O
+- IMA chemistry: Ca<sub>6</sub>Fe<sup>3+</sup><sub>2</sub>(SO<sub>4</sub>)<sub>2.5</sub>[B(OH)<sub>4</sub>]     (OH)<sub>12</sub>·25H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-3817.html
 
@@ -71201,7 +68434,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tatarinovite
 
-- IMA chemistry: Ca<sub>3</sub>Al(SO<sub>4</sub>)[B(OH)<sub>4</sub>](OH)<sub>6</sub>·12H<sub>2</sub>O
+- IMA chemistry: Ca<sub>3</sub>Al(SO<sub>4</sub>)[B(OH)<sub>4</sub>]     (OH)<sub>6</sub>·12H<sub>2</sub>O
 
 - MinDat URL: https://www.mindat.org/min-46816.html
 
@@ -71224,7 +68457,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_e}
 
 ####  Strunz 07.E Uranyl sulfate
-* `Strunz 07.E Uranyl sulfate`
 
 
 - Child of:
@@ -71251,7 +68483,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_ea}
 
 #####  Strunz 07.EA Uranyl sulfate, Without cations
-* `Strunz 07.EA Uranyl sulfate, Without cations`
 
 
 - Child of:
@@ -71344,7 +68575,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s07_eb}
 
 #####  Strunz 07.EB Uranyl sulfate, With medium-sized cations
-* `Strunz 07.EB Uranyl sulfate, With medium-sized cations`
 
 
 - Child of:
@@ -71546,7 +68776,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s07_ec}
 
 #####  Strunz 07.EC Uranyl sulfate, With medium-sized and large cations
-* `Strunz 07.EC Uranyl sulfate, With medium-sized and large cations`
 
 
 - Child of:
@@ -71734,7 +68963,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/rabejacite
 
-- IMA chemistry: Ca<sub>2</sub>[(UO<sub>2</sub>)<sub>4</sub>O<sub>4</sub>(SO<sub>4</sub>)<sub>2</sub>](H<sub>2</sub>O)<sub>8</sub>
+- IMA chemistry: Ca<sub>2</sub>[(UO<sub>2</sub>)<sub>4</sub>O<sub>4</sub>(SO<sub>4</sub>)<sub>2</sub>]     (H<sub>2</sub>O)<sub>8</sub>
 
 - MinDat URL: http://www.mindat.org/min-3348.html
 
@@ -71749,7 +68978,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/redcanyonite
 
-- IMA chemistry: (NH<sub>4</sub>)<sub>2</sub>Mn[(UO<sub>2</sub>)<sub>4</sub>O<sub>4</sub>(SO<sub>4</sub>)<sub>2</sub>](H<sub>2</sub>O)<sub>4</sub>
+- IMA chemistry: (NH<sub>4</sub>)<sub>2</sub>Mn[(UO<sub>2</sub>)<sub>4</sub>O<sub>4</sub>(SO<sub>4</sub>)<sub>2</sub>]     (H<sub>2</sub>O)<sub>4</sub>
 
 - MinDat URL: https://www.mindat.org/min-50786.html
 
@@ -71920,7 +69149,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s07_f}
 
 ####  Strunz 07.F Chromate
-* `Strunz 07.F Chromate`
 
 
 - Child of:
@@ -71932,7 +69160,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s07_fa}
 
 #####  Strunz 07.FA Chromate, Without additional anions
-* `Strunz 07.FA Chromate, Without additional anions`
 
 
 - Child of:
@@ -72005,7 +69232,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s07_fb}
 
 #####  Strunz 07.FB Chromate, With additional O,V, S, Cl
-* `Strunz 07.FB Chromate, With additional O,V, S, Cl`
 
 
 - Child of:
@@ -72122,7 +69348,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s07_fc}
 
 #####  Strunz 07.FC Chromate, With PO4, AsO4, SiO4
-* `Strunz 07.FC Chromate, With PO4, AsO4, SiO4`
 
 
 - Child of:
@@ -72257,7 +69482,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_fd}
 
 #####  Strunz 07.FD Dichromate
-* `Strunz 07.FD Dichromate`
 
 
 - Child of:
@@ -72284,7 +69508,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_g}
 
 ####  Strunz 07.G Molybdate, Wolframate or Niobate
-* `Strunz 07.G Molybdate, Wolframate or Niobate`
 
 
 - Child of:
@@ -72296,7 +69519,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s07_ga}
 
 #####  Strunz 07.GA Molybdate, Wolframate or Niobate, Without additional anions or H2O
-* `Strunz 07.GA Molybdate, Wolframate or Niobate, Without additional anions or H2O`
 
 
 - Child of:
@@ -72305,13 +69527,30 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Concept URI: https://w3id.org/geochem/1.0/strunzgroup/s07_GA
 
 
-[]{#fergusonite-ce}
+[]{#fergusonite}
 
-######  Fergusonite-(Ce)
+######  Fergusonite
 
 
 - Child of:
  [`s07_GA`](#s07_GA)
+
+- Synonym of Fergusonite-(Ce), Fergusonite-(Nd), Fergusonite-(Y)
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/fergusonite
+
+- MinDat URL: https://www.mindat.org/min-10930.html
+
+
+[]{#fergusonite-ce}
+
+#######  Fergusonite-(Ce)
+
+
+- Child of:
  [`fergusonite`](#fergusonite)
 
 
@@ -72327,11 +69566,10 @@ SMR add missing skos broader
 
 []{#fergusonite-y}
 
-######  Fergusonite-(Y)
+#######  Fergusonite-(Y)
 
 
 - Child of:
- [`s07_GA`](#s07_GA)
  [`fergusonite`](#fergusonite)
 
 - Dimorph of Clinofergusonite-(Y)
@@ -72496,65 +69734,9 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-4322.html
 
 
-[]{#fergusonite}
-
-######  Fergusonite
-
-
-- Child of:
- [`s07_GA`](#s07_GA)
-
-- Synonym of Fergusonite-(Ce), Fergusonite-(Nd), Fergusonite-(Y)
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fergusonite
-
-- MinDat URL: https://www.mindat.org/min-10930.html
-
-
-[]{#fergusonite-ce}
-
-#######  Fergusonite-(Ce)
-
-
-- Child of:
- [`s07_GA`](#s07_GA)
- [`fergusonite`](#fergusonite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fergusonite-ce
-
-- IMA chemistry: CeNbO<sub>4</sub>·0.3H<sub>2</sub>O
-
-- MinDat URL: https://www.mindat.org/min-1478.html
-
-
-[]{#fergusonite-y}
-
-#######  Fergusonite-(Y)
-
-
-- Child of:
- [`s07_GA`](#s07_GA)
- [`fergusonite`](#fergusonite)
-
-- Dimorph of Clinofergusonite-(Y)
-- Concept URI: https://w3id.org/geochem/1.0/min/fergusonite-y
-
-- IMA chemistry: YNbO<sub>4</sub>
-
-- MinDat URL: http://www.mindat.org/min-1480.html
-
-
 []{#s07_gb}
 
 #####  Strunz 07.GB Molybdate, Wolframate or Niobate, With additional anions and/or H2O
-* `Strunz 07.GB Molybdate, Wolframate or Niobate, With additional anions and/or H2O`
 
 
 - Child of:
@@ -72895,7 +70077,6 @@ SMR add missing skos broader
 []{#s07_h}
 
 ####  Strunz 07.H Uranium or uranyl molybdate or wolframate
-* `Strunz 07.H Uranium or uranyl molybdate or wolframate`
 
 
 - Child of:
@@ -72907,7 +70088,6 @@ SMR add missing skos broader
 []{#s07_ha}
 
 #####  Strunz 07.HA Uranium or uranyl molybdate or wolframate, With U4+
-* `Strunz 07.HA Uranium or uranyl molybdate or wolframate, With U4+`
 
 
 - Child of:
@@ -72964,7 +70144,6 @@ SMR add missing skos broader
 []{#s07_hb}
 
 #####  Strunz 07.HB Uranium or uranyl molybdate or wolframate, With U6+
-* `Strunz 07.HB Uranium or uranyl molybdate or wolframate, With U6+`
 
 
 - Child of:
@@ -73021,7 +70200,6 @@ SMR add missing skos broader
 []{#s07_j}
 
 ####  Strunz 07.J Thiosulfate
-* `Strunz 07.J Thiosulfate`
 
 
 - Child of:
@@ -73033,7 +70211,6 @@ SMR add missing skos broader
 []{#s07_ja}
 
 #####  Strunz 07.JA Thiosulfate of Pb
-* `Strunz 07.JA Thiosulfate of Pb`
 
 
 - Child of:
@@ -73099,7 +70276,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/steverustite
 
-- IMA chemistry: Pb<sup>2+</sup><sub>5</sub>(OH)<sub>5</sub>[Cu<sup>1+</sup>(S<sup>6+</sup>O<sub>3</sub>S<sup>2-</sup>)<sub>3</sub>](H<sub>2</sub>O)<sub>2</sub>
+- IMA chemistry: Pb<sup>2+</sup><sub>5</sub>(OH)<sub>5</sub>[Cu<sup>1+</sup>(S<sup>6+</sup>O<sub>3</sub>S<sup>2-</sup>)<sub>3</sub>]     (H<sub>2</sub>O)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-38699.html
 
@@ -73162,6 +70339,7 @@ SMR add missing skos broader
 - Child of:
  [`32475`](#32475)
 
+- A polytype of Bariopharmacosiderite
 
 - **Source:**
 https://w3id.org/geochem/1.0/min/SMRadditions
@@ -73717,7 +70895,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/maghagendorfite
 
-- IMA chemistry: (Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)MgMn<sup>2+</sup>(Fe<sup>2+</sup>,Fe<sup>3+</sup>)<sub>2</sub>(PO<sub>4</sub>)<sub>3</sub>
+- IMA chemistry: (Na,)MgMn<sup>2+</sup>(Fe<sup>2+</sup>,Fe<sup>3+</sup>)<sub>2</sub>(PO<sub>4</sub>)<sub>3</sub>
 
 - MinDat URL: http://www.mindat.org/min-2532.html
 
@@ -73815,7 +70993,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferrorosemaryite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>NaFe<sup>2+</sup>Fe<sup>3+</sup>Al(PO<sub>4</sub>)<sub>3</sub>
+- IMA chemistry: NaFe<sup>2+</sup>Fe<sup>3+</sup>Al(PO<sub>4</sub>)<sub>3</sub>
 
 - MinDat URL: http://www.mindat.org/min-27542.html
 
@@ -73890,7 +71068,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/wyllieite
 
-- IMA chemistry: (Na,Ca,Mn<sup>2+</sup>,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>Mn<sup>2+</sup><sub>2</sub>Al(PO<sub>4</sub>)<sub>3</sub>
+- IMA chemistry: (Na,Ca,Mn<sup>2+</sup>,)<sub>2</sub>Mn<sup>2+</sup><sub>2</sub>Al(PO<sub>4</sub>)<sub>3</sub>
 
 - MinDat URL: http://www.mindat.org/min-4321.html
 
@@ -73981,7 +71159,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_a}
 
 ####  Strunz 08.A Phosphate, etc. without additional anions, without H2O
-* `Strunz 08.A Phosphate, etc. without additional anions, without H2O`
 
 
 - Child of:
@@ -73993,7 +71170,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_aa}
 
 #####  Strunz 08.AA Phosphate, etc. without additional anions, without H2O, With small cations (some also with larger ones)
-* `Strunz 08.AA Phosphate, etc. without additional anions, without H2O, With small cations (some also with larger ones)`
 
 
 - Child of:
@@ -74110,7 +71286,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_ab}
 
 #####  Strunz 08.AB Phosphate, etc. without additional anions, without H2O, With medium-sized cations
-* `Strunz 08.AB Phosphate, etc. without additional anions, without H2O, With medium-sized cations`
 
 
 - Child of:
@@ -74370,6 +71545,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Child of:
  [`31813`](#31813)
 
+- variety of Lithiophilite
 - Concept URI: https://w3id.org/geochem/1.0/min/sicklerite
 
 - IMA chemistry: LiMn<sup>2+</sup>(PO<sub>4</sub>)
@@ -74562,7 +71738,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_ac}
 
 #####  Strunz 08.AC Phosphate, etc. without additional anions, without H2O, With medium-sized and large cations
-* `Strunz 08.AC Phosphate, etc. without additional anions, without H2O, With medium-sized and large cations`
 
 
 - Child of:
@@ -74876,7 +72051,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/maghagendorfite
 
-- IMA chemistry: (Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)MgMn<sup>2+</sup>(Fe<sup>2+</sup>,Fe<sup>3+</sup>)<sub>2</sub>(PO<sub>4</sub>)<sub>3</sub>
+- IMA chemistry: (Na,)MgMn<sup>2+</sup>(Fe<sup>2+</sup>,Fe<sup>3+</sup>)<sub>2</sub>(PO<sub>4</sub>)<sub>3</sub>
 
 - MinDat URL: http://www.mindat.org/min-2532.html
 
@@ -75110,7 +72285,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/wopmayite
 
-- IMA chemistry: Ca<sub>6</sub>Na<sub>3</sub><span style="border: 1px solid #333; font-size:7px;"> </span>Mn(PO<sub>4</sub>)<sub>3</sub>(PO<sub>3</sub>OH)<sub>4</sub>
+- IMA chemistry: Ca<sub>6</sub>Na<sub>3</sub>Mn(PO<sub>4</sub>)<sub>3</sub>(PO<sub>3</sub>OH)<sub>4</sub>
 
 - MinDat URL: http://www.mindat.org/min-42881.html
 
@@ -75144,7 +72319,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferrorosemaryite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>NaFe<sup>2+</sup>Fe<sup>3+</sup>Al(PO<sub>4</sub>)<sub>3</sub>
+- IMA chemistry: NaFe<sup>2+</sup>Fe<sup>3+</sup>Al(PO<sub>4</sub>)<sub>3</sub>
 
 - MinDat URL: http://www.mindat.org/min-27542.html
 
@@ -75219,7 +72394,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/wyllieite
 
-- IMA chemistry: (Na,Ca,Mn<sup>2+</sup>,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>Mn<sup>2+</sup><sub>2</sub>Al(PO<sub>4</sub>)<sub>3</sub>
+- IMA chemistry: (Na,Ca,Mn<sup>2+</sup>,)<sub>2</sub>Mn<sup>2+</sup><sub>2</sub>Al(PO<sub>4</sub>)<sub>3</sub>
 
 - MinDat URL: http://www.mindat.org/min-4321.html
 
@@ -75257,6 +72432,22 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-1008.html
 
 
+[]{#stornesite-y}
+
+########  Stornesite-(Y)
+
+
+- Child of:
+ [`chladniite`](#chladniite)
+
+- variety of Chladniite
+- Concept URI: https://w3id.org/geochem/1.0/min/stornesite-y
+
+- IMA chemistry: Na<sub>6</sub>(Ca<sub>5</sub>Na<sub>3</sub>)YMg<sub>43</sub>(PO<sub>4</sub>)<sub>36</sub>
+
+- MinDat URL: http://www.mindat.org/min-28918.html
+
+
 []{#fillowite}
 
 #######  Fillowite
@@ -75285,21 +72476,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - IMA chemistry: Na<sub>10</sub>Ca<sub>6</sub>Mg<sub>18</sub>Fe<sup>2+</sup><sub>25</sub>(PO<sub>4</sub>)<sub>36</sub>
 
 - MinDat URL: http://www.mindat.org/min-2107.html
-
-
-[]{#stornesite-y}
-
-#######  Stornesite-(Y)
-
-
-- Child of:
- [`36083`](#36083)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/stornesite-y
-
-- IMA chemistry: Na<sub>6</sub>(Ca<sub>5</sub>Na<sub>3</sub>)YMg<sub>43</sub>(PO<sub>4</sub>)<sub>36</sub>
-
-- MinDat URL: http://www.mindat.org/min-28918.html
 
 
 []{#46495}
@@ -75495,7 +72671,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_ad}
 
 #####  Strunz 08.AD Phosphate, etc. without additional anions, without H2O, With only large cations
-* `Strunz 08.AD Phosphate, etc. without additional anions, without H2O, With only large cations`
 
 
 - Child of:
@@ -75730,91 +72905,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-4337.html
 
 
-[]{#2750}
-
-######  Monazite
-
-
-- Child of:
- [`29313`](#29313)
- [`s08_AD`](#s08_AD)
-
--
-- The name monazite, without a elemental suffix, was the accepted name
-for all material in this group, regardless of the REE-bearing
-components' relative abundance. The suffixes were added when the
-naming convention for all REE-bearing members was devised and
-implemented. The great majority of "monazite" is monazite-(Ce), the
-La-, Nd-, Sm- and Gd-dominant members are all very rare. (mindat)
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/2750
-
-- MinDat URL: https://mindat.org/min-2750.html
-
-
-[]{#monazite-ce}
-
-#######  Monazite-(Ce)
-
-
-- Child of:
- [`2750`](#2750)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/monazite-ce
-
-- IMA chemistry: Ce(PO<sub>4</sub>)
-
-- MinDat URL: http://www.mindat.org/min-2751.html
-
-
-[]{#monazite-la}
-
-#######  Monazite-(La)
-
-
-- Child of:
- [`2750`](#2750)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/monazite-la
-
-- IMA chemistry: La(PO<sub>4</sub>)
-
-- MinDat URL: http://www.mindat.org/min-2752.html
-
-
-[]{#monazite-nd}
-
-#######  Monazite-(Nd)
-
-
-- Child of:
- [`2750`](#2750)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/monazite-nd
-
-- IMA chemistry: Nd(PO<sub>4</sub>)
-
-- MinDat URL: http://www.mindat.org/min-2753.html
-
-
-[]{#monazite-sm}
-
-#######  Monazite-(Sm)
-
-
-- Child of:
- [`2750`](#2750)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/monazite-sm
-
-- IMA chemistry: Sm(PO<sub>4</sub>)
-
-- MinDat URL: http://www.mindat.org/min-11438.html
-
-
 []{#29313}
 
 ######  Monazite Group
@@ -75833,13 +72923,32 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://mindat.org/min-29313.html
 
 
-[]{#gasparite-ce}
+[]{#gasparite}
 
-#######  Gasparite-(Ce)
+#######  Gasparite
 
 
 - Child of:
  [`29313`](#29313)
+
+- Use for Gasparite specimen lacking chemical data to categorize as
+one of the species-specific subtypes: Gasparite-(Ce), Gasparite-(La),
+Unnamed (Nd-dominant Gasparite). {@en}
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/gasparite
+
+- MinDat URL: https://www.mindat.org/min-55164.html
+
+
+[]{#gasparite-ce}
+
+########  Gasparite-(Ce)
+
+
+- Child of:
  [`gasparite`](#gasparite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/gasparite-ce
@@ -75851,11 +72960,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#gasparite-la}
 
-#######  Gasparite-(La)
+########  Gasparite-(La)
 
 
 - Child of:
- [`29313`](#29313)
  [`gasparite`](#gasparite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/gasparite-la
@@ -75920,9 +73028,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Child of:
  [`29313`](#29313)
- [`s08_AD`](#s08_AD)
 
--
 - The name monazite, without a elemental suffix, was the accepted name
 for all material in this group, regardless of the REE-bearing
 components' relative abundance. The suffixes were added when the
@@ -75998,58 +73104,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-11438.html
 
 
-[]{#gasparite}
-
-#######  Gasparite
-
-
-- Child of:
- [`29313`](#29313)
-
-- Use for Gasparite specimen lacking chemical data to categorize as
-one of the species-specific subtypes: Gasparite-(Ce), Gasparite-(La),
-Unnamed (Nd-dominant Gasparite). {@en}
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gasparite
-
-- MinDat URL: https://www.mindat.org/min-55164.html
-
-
-[]{#gasparite-ce}
-
-########  Gasparite-(Ce)
-
-
-- Child of:
- [`29313`](#29313)
- [`gasparite`](#gasparite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gasparite-ce
-
-- IMA chemistry: Ce(AsO<sub>4</sub>)
-
-- MinDat URL: http://www.mindat.org/min-1656.html
-
-
-[]{#gasparite-la}
-
-########  Gasparite-(La)
-
-
-- Child of:
- [`29313`](#29313)
- [`gasparite`](#gasparite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gasparite-la
-
-- IMA chemistry: LaAsO<sub>4</sub>
-
-- MinDat URL: https://www.mindat.org/min-53197.html
-
-
 []{#31871}
 
 ######  Xenotime Group
@@ -76098,102 +73152,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-7251.html
 
 
-[]{#wakefieldite-ce}
-
-#######  Wakefieldite-(Ce)
-
-
-- Child of:
- [`31871`](#31871)
- [`wakefieldite`](#wakefieldite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/wakefieldite-ce
-
-- IMA chemistry: CeVO<sub>4</sub>
-
-- MinDat URL: http://www.mindat.org/min-4233.html
-
-
-[]{#wakefieldite-la}
-
-#######  Wakefieldite-(La)
-
-
-- Child of:
- [`31871`](#31871)
- [`wakefieldite`](#wakefieldite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/wakefieldite-la
-
-- IMA chemistry: LaVO<sub>4</sub>
-
-- MinDat URL: http://www.mindat.org/min-35901.html
-
-
-[]{#wakefieldite-nd}
-
-#######  Wakefieldite-(Nd)
-
-
-- Child of:
- [`31871`](#31871)
- [`wakefieldite`](#wakefieldite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/wakefieldite-nd
-
-- IMA chemistry: NdVO<sub>4</sub>
-
-- MinDat URL: http://www.mindat.org/min-38894.html
-
-
-[]{#wakefieldite-y}
-
-#######  Wakefieldite-(Y)
-
-
-- Child of:
- [`31871`](#31871)
- [`wakefieldite`](#wakefieldite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/wakefieldite-y
-
-- IMA chemistry: YVO<sub>4</sub>
-
-- MinDat URL: http://www.mindat.org/min-4234.html
-
-
-[]{#xenotime-y}
-
-#######  Xenotime-(Y)
-
-
-- Child of:
- [`31871`](#31871)
- [`xenotime`](#xenotime)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/xenotime-y
-
-- IMA chemistry: Y(PO<sub>4</sub>)
-
-- MinDat URL: http://www.mindat.org/min-4333.html
-
-
-[]{#xenotime-yb}
-
-#######  Xenotime-(Yb)
-
-
-- Child of:
- [`31871`](#31871)
- [`xenotime`](#xenotime)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/xenotime-yb
-
-- IMA chemistry: Yb(PO<sub>4</sub>)
-
-- MinDat URL: http://www.mindat.org/min-7374.html
-
-
 []{#wakefieldite}
 
 #######  Wakefieldite
@@ -76219,7 +73177,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`31871`](#31871)
  [`wakefieldite`](#wakefieldite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/wakefieldite-ce
@@ -76235,7 +73192,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`31871`](#31871)
  [`wakefieldite`](#wakefieldite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/wakefieldite-la
@@ -76251,7 +73207,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`31871`](#31871)
  [`wakefieldite`](#wakefieldite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/wakefieldite-nd
@@ -76267,7 +73222,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`31871`](#31871)
  [`wakefieldite`](#wakefieldite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/wakefieldite-y
@@ -76303,7 +73257,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`31871`](#31871)
  [`xenotime`](#xenotime)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/xenotime-y
@@ -76319,7 +73272,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`31871`](#31871)
  [`xenotime`](#xenotime)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/xenotime-yb
@@ -76439,7 +73391,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s08_b}
 
 ####  Strunz 08.B Phosphate, etc. with additional anions, without H2O
-* `Strunz 08.B Phosphate, etc. with additional anions, without H2O`
 
 
 - Child of:
@@ -76757,7 +73708,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s08_ba}
 
 #####  Strunz 08.BA Phosphate, etc. with additional anions, without H2O, With small and medium-sized cations
-* `Strunz 08.BA Phosphate, etc. with additional anions, without H2O, With small and medium-sized cations`
 
 
 - Child of:
@@ -76980,7 +73930,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_bb}
 
 #####  Strunz 08.BB Phosphate, etc. with additional anions, without H2O, With only medium-sized cations, (OH, etc.):RO4 about 1:1
-* `Strunz 08.BB Phosphate, etc. with additional anions, without H2O, With only medium-sized cations, (OH, etc.):RO4 about 1:1`
 
 
 - Child of:
@@ -76999,7 +73948,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/althausite
 
-- IMA chemistry: Mg<sub>4</sub>(PO<sub>4</sub>)<sub>2</sub>(OH,O)(F,<span style="border: 1px solid #333; font-size:7px;"> </span>)
+- IMA chemistry: Mg<sub>4</sub>(PO<sub>4</sub>)<sub>2</sub>(OH,O)(F,)
 
 - MinDat URL: http://www.mindat.org/min-148.html
 
@@ -77121,7 +74070,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/phosphoellenbergerite
 
-- IMA chemistry: (Mg,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>Mg<sub>12</sub>(PO<sub>4</sub>,PO<sub>3</sub>OH)<sub>6</sub>(PO<sub>3</sub>OH,CO<sub>3</sub>)<sub>2</sub>(OH)<sub>6</sub>
+- IMA chemistry: (Mg,)<sub>2</sub>Mg<sub>12</sub>(PO<sub>4</sub>,PO<sub>3</sub>OH)<sub>6</sub>(PO<sub>3</sub>OH,CO<sub>3</sub>)<sub>2</sub>(OH)<sub>6</sub>
 
 - MinDat URL: http://www.mindat.org/min-7232.html
 
@@ -77762,7 +74711,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_bc}
 
 #####  Strunz 08.BC Phosphate, etc. with additional anions, without H2O, With only medium-sized cations, (OH, etc.):RO4 > 1:1 and < 2:1
-* `Strunz 08.BC Phosphate, etc. with additional anions, without H2O, With only medium-sized cations, (OH, etc.):RO4 > 1:1 and < 2:1`
 
 
 - Child of:
@@ -77829,7 +74777,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferrirockbridgeite
 
-- IMA chemistry: (Fe<sup>3+</sup><sub>0.67</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.33</sub>)<sub>2</sub>(Fe<sup>3+</sup>)<sub>3</sub>(PO<sub>4</sub>)<sub>3</sub>(OH)<sub>4</sub>(H<sub>2</sub>O)
+- IMA chemistry: (Fe<sup>3+</sup><sub>0.67</sub><sub>0.33</sub>)<sub>2</sub>(Fe<sup>3+</sup>)<sub>3</sub>(PO<sub>4</sub>)<sub>3</sub>(OH)<sub>4</sub>(H<sub>2</sub>O)
 
 - MinDat URL: https://www.mindat.org/min-53168.html
 
@@ -77897,7 +74845,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_bd}
 
 #####  Strunz 08.BD Phosphate, etc. with additional anions, without H2O, With only medium-sized cations, (OH, etc.):RO4= 2:1
-* `Strunz 08.BD Phosphate, etc. with additional anions, without H2O, With only medium-sized cations, (OH, etc.):RO4= 2:1`
 
 
 - Child of:
@@ -78044,7 +74991,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_be}
 
 #####  Strunz 08.BE Phosphate, etc. with additional anions, without H2O, With only medium-sized cations, (OH, etc.):RO4 > 2:1
-* `Strunz 08.BE Phosphate, etc. with additional anions, without H2O, With only medium-sized cations, (OH, etc.):RO4 > 2:1`
 
 
 - Child of:
@@ -78526,7 +75472,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_bf}
 
 #####  Strunz 08.BF Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4< 0.5:1
-* `Strunz 08.BF Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4< 0.5:1`
 
 
 - Child of:
@@ -78776,7 +75721,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s08_bg}
 
 #####  Strunz 08.BG Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4 = 0.5:1
-* `Strunz 08.BG Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4 = 0.5:1`
 
 
 - Child of:
@@ -79099,7 +76043,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s08_bh}
 
 #####  Strunz 08.BH Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH,etc.):RO4 = 1:1
-* `Strunz 08.BH Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH,etc.):RO4 = 1:1`
 
 
 - Child of:
@@ -79243,7 +76186,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/khorixasite
 
-- IMA chemistry: (Bi<sub>0.67</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.33</sub>)Cu(VO<sub>4</sub>)(OH)
+- IMA chemistry: (Bi<sub>0.67</sub><sub>0.33</sub>)Cu(VO<sub>4</sub>)(OH)
 
 - MinDat URL: https://www.mindat.org/min-50346.html
 
@@ -79950,7 +76893,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_bj}
 
 #####  Strunz 08.BJ Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4= 1:5:1
-* `Strunz 08.BJ Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4= 1:5:1`
 
 
 - Child of:
@@ -79962,7 +76904,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_bk}
 
 #####  Strunz 08.BK Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4 = 2:1, 2.5:1
-* `Strunz 08.BK Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4 = 2:1, 2.5:1`
 
 
 - Child of:
@@ -80094,7 +77035,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_bl}
 
 #####  Strunz 08.BL Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4 = 3:1
-* `Strunz 08.BL Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4 = 3:1`
 
 
 - Child of:
@@ -80197,13 +77137,31 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-1430.html
 
 
-[]{#florencite-ce}
+[]{#florencite}
 
-#######  Florencite-(Ce)
+#######  Florencite
 
 
 - Child of:
  [`29180`](#29180)
+
+- Use for Florencite specimen lacking chemical data to categorize as
+one of the species-specific subtypes. {@en}
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/florencite
+
+- MinDat URL: https://www.mindat.org/min-10268.html
+
+
+[]{#florencite-ce}
+
+########  Florencite-(Ce)
+
+
+- Child of:
  [`florencite`](#florencite)
 
 
@@ -80219,11 +77177,10 @@ SMR add missing skos broader
 
 []{#florencite-la}
 
-#######  Florencite-(La)
+########  Florencite-(La)
 
 
 - Child of:
- [`29180`](#29180)
  [`florencite`](#florencite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/florencite-la
@@ -80235,11 +77192,10 @@ SMR add missing skos broader
 
 []{#florencite-nd}
 
-#######  Florencite-(Nd)
+########  Florencite-(Nd)
 
 
 - Child of:
- [`29180`](#29180)
  [`florencite`](#florencite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/florencite-nd
@@ -80251,11 +77207,10 @@ SMR add missing skos broader
 
 []{#florencite-sm}
 
-#######  Florencite-(Sm)
+########  Florencite-(Sm)
 
 
 - Child of:
- [`29180`](#29180)
  [`florencite`](#florencite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/florencite-sm
@@ -80383,93 +77338,6 @@ SMR add missing skos broader
 - IMA chemistry: BiFe<sup>3+</sup><sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
 
 - MinDat URL: http://www.mindat.org/min-4382.html
-
-
-[]{#florencite}
-
-#######  Florencite
-
-
-- Child of:
- [`29180`](#29180)
-
-- Use for Florencite specimen lacking chemical data to categorize as
-one of the species-specific subtypes. {@en}
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/florencite
-
-- MinDat URL: https://www.mindat.org/min-10268.html
-
-
-[]{#florencite-ce}
-
-########  Florencite-(Ce)
-
-
-- Child of:
- [`29180`](#29180)
- [`florencite`](#florencite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/florencite-ce
-
-- IMA chemistry: CeAl<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
-
-- MinDat URL: https://www.mindat.org/min-1560.html
-
-
-[]{#florencite-la}
-
-########  Florencite-(La)
-
-
-- Child of:
- [`29180`](#29180)
- [`florencite`](#florencite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/florencite-la
-
-- IMA chemistry: LaAl<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-1561.html
-
-
-[]{#florencite-nd}
-
-########  Florencite-(Nd)
-
-
-- Child of:
- [`29180`](#29180)
- [`florencite`](#florencite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/florencite-nd
-
-- IMA chemistry: NdAl<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-1562.html
-
-
-[]{#florencite-sm}
-
-########  Florencite-(Sm)
-
-
-- Child of:
- [`29180`](#29180)
- [`florencite`](#florencite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/florencite-sm
-
-- IMA chemistry: SmAl<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-42495.html
 
 
 []{#29276}
@@ -80677,13 +77545,31 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-365.html
 
 
-[]{#arsenoflorencite-ce}
+[]{#arsenoflorencite}
 
-#######  Arsenoflorencite-(Ce)
+#######  Arsenoflorencite
 
 
 - Child of:
  [`43765`](#43765)
+
+- includes Arsenoflorencite-(Ce), Arsenoflorencite-(La),
+Arsenoflorencite-(Nd)
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/arsenoflorencite
+
+- MinDat URL: https://www.mindat.org/min-39863.html
+
+
+[]{#arsenoflorencite-ce}
+
+########  Arsenoflorencite-(Ce)
+
+
+- Child of:
  [`arsenoflorencite`](#arsenoflorencite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/arsenoflorencite-ce
@@ -80695,11 +77581,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#arsenoflorencite-la}
 
-#######  Arsenoflorencite-(La)
+########  Arsenoflorencite-(La)
 
 
 - Child of:
- [`43765`](#43765)
  [`arsenoflorencite`](#arsenoflorencite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/arsenoflorencite-la
@@ -80754,13 +77639,30 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-1334.html
 
 
-[]{#graulichite-ce}
+[]{#graulichite}
 
-#######  Graulichite-(Ce)
+#######  Graulichite
 
 
 - Child of:
  [`43765`](#43765)
+
+- includes Graulichite-(Ce), Graulichite-(La)
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/graulichite
+
+- MinDat URL: https://www.mindat.org/min-56057.html
+
+
+[]{#graulichite-ce}
+
+########  Graulichite-(Ce)
+
+
+- Child of:
  [`graulichite`](#graulichite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/graulichite-ce
@@ -80772,11 +77674,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#graulichite-la}
 
-#######  Graulichite-(La)
+########  Graulichite-(La)
 
 
 - Child of:
- [`43765`](#43765)
  [`graulichite`](#graulichite)
 
 
@@ -80818,113 +77719,9 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: http://www.mindat.org/min-3606.html
 
 
-[]{#arsenoflorencite}
-
-#######  Arsenoflorencite
-
-
-- Child of:
- [`43765`](#43765)
-
-- includes Arsenoflorencite-(Ce), Arsenoflorencite-(La),
-Arsenoflorencite-(Nd)
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/arsenoflorencite
-
-- MinDat URL: https://www.mindat.org/min-39863.html
-
-
-[]{#arsenoflorencite-ce}
-
-########  Arsenoflorencite-(Ce)
-
-
-- Child of:
- [`43765`](#43765)
- [`arsenoflorencite`](#arsenoflorencite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/arsenoflorencite-ce
-
-- IMA chemistry: CeAl<sub>3</sub>(AsO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-366.html
-
-
-[]{#arsenoflorencite-la}
-
-########  Arsenoflorencite-(La)
-
-
-- Child of:
- [`43765`](#43765)
- [`arsenoflorencite`](#arsenoflorencite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/arsenoflorencite-la
-
-- IMA chemistry: LaAl<sub>3</sub>(AsO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-295.html
-
-
-[]{#graulichite}
-
-#######  Graulichite
-
-
-- Child of:
- [`43765`](#43765)
-
-- includes Graulichite-(Ce), Graulichite-(La)
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/graulichite
-
-- MinDat URL: https://www.mindat.org/min-56057.html
-
-
-[]{#graulichite-ce}
-
-########  Graulichite-(Ce)
-
-
-- Child of:
- [`43765`](#43765)
- [`graulichite`](#graulichite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/graulichite-ce
-
-- IMA chemistry: CeFe<sup>3+</sup><sub>3</sub>(AsO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-11383.html
-
-
-[]{#graulichite-la}
-
-########  Graulichite-(La)
-
-
-- Child of:
- [`43765`](#43765)
- [`graulichite`](#graulichite)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/graulichite-la
-
-- MinDat URL: https://www.mindat.org/min-55384.html
-
-
 []{#s08_bm}
 
 #####  Strunz 08.BM Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4 = 4:1
-* `Strunz 08.BM Phosphate, etc. with additional anions, without H2O, With medium-sized and large cations, (OH, etc.):RO4 = 4:1`
 
 
 - Child of:
@@ -80974,7 +77771,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/kolitschite
 
-- IMA chemistry: Pb[Zn<sub>0.5</sub>,<span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.5</sub>]Fe<sub>3</sub>(AsO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
+- IMA chemistry: Pb[Zn<sub>0.5</sub>,<sub>0.5</sub>]Fe<sub>3</sub>(AsO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>
 
 - MinDat URL: http://www.mindat.org/min-38994.html
 
@@ -81057,7 +77854,6 @@ manganese, with the general formula indicated.
 []{#s08_bn}
 
 #####  Strunz 08.BN Phosphate, etc. with additional anions, without H2O, With only large cations, (OH, etc.):RO4 = 0.33:1
-* `Strunz 08.BN Phosphate, etc. with additional anions, without H2O, With only large cations, (OH, etc.):RO4 = 0.33:1`
 
 
 - Child of:
@@ -81077,7 +77873,7 @@ manganese, with the general formula indicated.
 
 - Concept URI: https://w3id.org/geochem/1.0/min/aradite
 
-- IMA chemistry: BaCa<sub>6</sub>[(SiO<sub>4</sub>)(VO<sub>4</sub>)](VO<sub>4</sub>)<sub>2</sub>F
+- IMA chemistry: BaCa<sub>6</sub>[(SiO<sub>4</sub>)(VO<sub>4</sub>)]     (VO<sub>4</sub>)<sub>2</sub>F
 
 - MinDat URL: https://www.mindat.org/min-43920.html
 
@@ -81570,7 +78366,6 @@ as fibrous crusts; stalactitic; earthy; oolitic. May be rock-forming
 in beds of great extent; as nodular concretions in clays and shales;
 conglomeritic.
 - added by SMR
--
 
 - **Source:**
 https://w3id.org/geochem/1.0/min/SMRadditions, 
@@ -81631,7 +78426,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery,
 []{#s08_bo}
 
 #####  Strunz 08.BO Phosphate, etc. with additional anions, without H2O, With only large cations, (OH, etc.):RO4 about 1:1
-* `Strunz 08.BO Phosphate, etc. with additional anions, without H2O, With only large cations, (OH, etc.):RO4 about 1:1`
 
 
 - Child of:
@@ -81696,7 +78490,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery,
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hereroite
 
-- IMA chemistry: [Pb<sub>32</sub>(O,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>21</sub>](AsO<sub>4</sub>)<sub>2</sub>[(Si,As,V,Mo)O<sub>4</sub>]<sub>2</sub>Cl<sub>10</sub>
+- IMA chemistry: [Pb<sub>32</sub>(O,)<sub>21</sub>]     (AsO<sub>4</sub>)<sub>2</sub>[(Si,As,V,Mo)O<sub>4</sub>]<sub>2</sub>Cl<sub>10</sub>
 
 - MinDat URL: http://www.mindat.org/min-42825.html
 
@@ -81916,7 +78710,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_c}
 
 ####  Strunz 08.C Phosphate, etc. without additional anions, with H2O
-* `Strunz 08.C Phosphate, etc. without additional anions, with H2O`
 
 
 - Child of:
@@ -82140,7 +78933,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_ca}
 
 #####  Strunz 08.CA Phosphate, etc. without additional anions, with H2O, With small and large/medium cations
-* `Strunz 08.CA Phosphate, etc. without additional anions, with H2O, With small and large/medium cations`
 
 
 - Child of:
@@ -82548,7 +79340,6 @@ SMR add missing skos broader
 []{#s08_cb}
 
 #####  Strunz 08.CB Phosphate, etc. without additional anions, with H2O, With only medium-sized cations, RO4:H2O = 1:1
-* `Strunz 08.CB Phosphate, etc. without additional anions, with H2O, With only medium-sized cations, RO4:H2O = 1:1`
 
 
 - Child of:
@@ -82872,7 +79663,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_cc}
 
 #####  Strunz 08.CC Phosphate, etc. without additional anions, with H2O, With only medium-sized cations, RO4:H2O = 1:1.5
-* `Strunz 08.CC Phosphate, etc. without additional anions, with H2O, With only medium-sized cations, RO4:H2O = 1:1.5`
 
 
 - Child of:
@@ -83018,7 +79808,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_cd}
 
 #####  Strunz 08.CD Phosphate, etc. without additional anions, with H2O, With only medium-sized cations, RO4:H2O = 1:2
-* `Strunz 08.CD Phosphate, etc. without additional anions, with H2O, With only medium-sized cations, RO4:H2O = 1:2`
 
 
 - Child of:
@@ -83293,7 +80082,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_ce}
 
 #####  Strunz 08.CE Phosphate, etc. without additional anions, with H2O, With only medium-sized cations, RO4:H2O about 1:2.5
-* `Strunz 08.CE Phosphate, etc. without additional anions, with H2O, With only medium-sized cations, RO4:H2O about 1:2.5`
 
 
 - Child of:
@@ -84010,7 +80798,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_cf}
 
 #####  Strunz 08.CF Phosphate, etc. without additional anions, with H2O, With large and medium-sized cations, RO4:H2O > 1:1
-* `Strunz 08.CF Phosphate, etc. without additional anions, with H2O, With large and medium-sized cations, RO4:H2O > 1:1`
 
 
 - Child of:
@@ -84135,7 +80922,7 @@ phosphates.
 
 - Concept URI: https://w3id.org/geochem/1.0/min/maneckiite
 
-- IMA chemistry: (Na<span style="border: 1px solid #333; font-size:7px;"> </span>)Ca<sub>2</sub>Fe<sup>2+</sup><sub>2</sub>(Fe<sup>3+</sup>Mg)Mn<sub>2</sub>(PO<sub>4</sub>)<sub>6</sub>·2H<sub>2</sub>O
+- IMA chemistry: (Na)Ca<sub>2</sub>Fe<sup>2+</sup><sub>2</sub>(Fe<sup>3+</sup>Mg)Mn<sub>2</sub>(PO<sub>4</sub>)<sub>6</sub>·2H<sub>2</sub>O
 
 - MinDat URL: https://www.mindat.org/min-46818.html
 
@@ -84173,7 +80960,6 @@ phosphates.
 []{#s08_cg}
 
 #####  Strunz 08.CG Phosphate, etc. without additional anions, with H2O, With large and medium-sized cations, RO4:H2O = 1:1
-* `Strunz 08.CG Phosphate, etc. without additional anions, with H2O, With large and medium-sized cations, RO4:H2O = 1:1`
 
 
 - Child of:
@@ -84832,7 +81618,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_ch}
 
 #####  Strunz 08.CH Phosphate, etc. without additional anions, with H2O, With large and medium-sized cations, RO4:H2O < 1:1
-* `Strunz 08.CH Phosphate, etc. without additional anions, with H2O, With large and medium-sized cations, RO4:H2O < 1:1`
 
 
 - Child of:
@@ -85243,7 +82028,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_cj}
 
 #####  Strunz 08.CJ Phosphate, etc. without additional anions, with H2O, With only large cations
-* `Strunz 08.CJ Phosphate, etc. without additional anions, with H2O, With only large cations`
 
 
 - Child of:
@@ -85727,85 +82511,6 @@ SMR add missing skos broader
 - MinDat URL: http://www.mindat.org/min-1743.html
 
 
-[]{#rhabdophane-ce}
-
-#######  Rhabdophane-(Ce)
-
-
-- Child of:
- [`29326`](#29326)
- [`rhabdophane`](#rhabdophane)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/rhabdophane-ce
-
-- IMA chemistry: Ce(PO<sub>4</sub>)·H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-3397.html
-
-
-[]{#rhabdophane-la}
-
-#######  Rhabdophane-(La)
-
-
-- Child of:
- [`29326`](#29326)
- [`rhabdophane`](#rhabdophane)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/rhabdophane-la
-
-- IMA chemistry: La(PO<sub>4</sub>)·H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-3398.html
-
-
-[]{#rhabdophane-nd}
-
-#######  Rhabdophane-(Nd)
-
-
-- Child of:
- [`29326`](#29326)
- [`rhabdophane`](#rhabdophane)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/rhabdophane-nd
-
-- IMA chemistry: Nd(PO<sub>4</sub>)·H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-3399.html
-
-
-[]{#rhabdophane-y}
-
-#######  Rhabdophane-(Y)
-
-
-- Child of:
- [`29326`](#29326)
- [`rhabdophane`](#rhabdophane)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/rhabdophane-y
-
-- IMA chemistry: Y(PO<sub>4</sub>)·H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-42532.html
-
-
-[]{#tristramite}
-
-#######  Tristramite
-
-
-- Child of:
- [`29326`](#29326)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tristramite
-
-- IMA chemistry: (Ca,U<sup>4+</sup>,Fe<sup>3+</sup>)(PO<sub>4</sub>,SO<sub>4</sub>)·2H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-4025.html
-
-
 []{#rhabdophane}
 
 #######  Rhabdophane
@@ -85832,7 +82537,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`29326`](#29326)
  [`rhabdophane`](#rhabdophane)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/rhabdophane-ce
@@ -85848,7 +82552,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`29326`](#29326)
  [`rhabdophane`](#rhabdophane)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/rhabdophane-la
@@ -85864,7 +82567,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`29326`](#29326)
  [`rhabdophane`](#rhabdophane)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/rhabdophane-nd
@@ -85880,7 +82582,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`29326`](#29326)
  [`rhabdophane`](#rhabdophane)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/rhabdophane-y
@@ -85890,10 +82591,24 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 - MinDat URL: http://www.mindat.org/min-42532.html
 
 
+[]{#tristramite}
+
+#######  Tristramite
+
+
+- Child of:
+ [`29326`](#29326)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/tristramite
+
+- IMA chemistry: (Ca,U<sup>4+</sup>,Fe<sup>3+</sup>)(PO<sub>4</sub>,SO<sub>4</sub>)·2H<sub>2</sub>O
+
+- MinDat URL: http://www.mindat.org/min-4025.html
+
+
 []{#s08_d}
 
 ####  Strunz 08.D Phosphate, etc. with additional anions and H2O
-* `Strunz 08.D Phosphate, etc. with additional anions and H2O`
 
 
 - Child of:
@@ -86012,7 +82727,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s08_da}
 
 #####  Strunz 08.DA Phosphate, etc. with additional anions and H2O, With small (and occasionally larger) cations
-* `Strunz 08.DA Phosphate, etc. with additional anions and H2O, With small (and occasionally larger) cations`
 
 
 - Child of:
@@ -86231,7 +82945,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ruifrancoite
 
-- IMA chemistry: Ca<sub>2</sub>(<span style="border: 1px solid #333; font-size:7px;"> </span>,Mn)<sub>2</sub>(Fe<sup>3+</sup>,Mn,Mg)<sub>4</sub>Be<sub>4</sub>(PO<sub>4</sub>)<sub>6</sub>(OH)<sub>6</sub>·4H<sub>2</sub>O
+- IMA chemistry: Ca<sub>2</sub>(,Mn)<sub>2</sub>(Fe<sup>3+</sup>,Mn,Mg)<sub>4</sub>Be<sub>4</sub>(PO<sub>4</sub>)<sub>6</sub>(OH)<sub>6</sub>·4H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-29066.html
 
@@ -86254,7 +82968,6 @@ SMR add missing skos broader
 []{#s08_db}
 
 #####  Strunz 08.DB Phosphate, etc. with additional anions and H2O, With only medium-sized cations, (OH, etc.):RO4< 1:1
-* `Strunz 08.DB Phosphate, etc. with additional anions and H2O, With only medium-sized cations, (OH, etc.):RO4< 1:1`
 
 
 - Child of:
@@ -86634,7 +83347,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_dc}
 
 #####  Strunz 08.DC Phosphate, etc. with additional anions and H2O, With only medium-sized cations, (OH, etc.):RO4 = 1:1 and < 2:1
-* `Strunz 08.DC Phosphate, etc. with additional anions and H2O, With only medium-sized cations, (OH, etc.):RO4 = 1:1 and < 2:1`
 
 
 - Child of:
@@ -86971,7 +83683,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/nevadaite
 
-- IMA chemistry: (Cu<sup>2+</sup>,<span style="border: 1px solid #333; font-size:7px;"> </span>,Al,V<sup>3+</sup>)<sub>6</sub>Al<sub>8</sub>(PO<sub>4</sub>)<sub>8</sub>F<sub>8</sub>(OH)<sub>2</sub>·22H<sub>2</sub>O
+- IMA chemistry: (Cu<sup>2+</sup>,,Al,V<sup>3+</sup>)<sub>6</sub>Al<sub>8</sub>(PO<sub>4</sub>)<sub>8</sub>F<sub>8</sub>(OH)<sub>2</sub>·22H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-25696.html
 
@@ -87703,7 +84415,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_dd}
 
 #####  Strunz 08.DD Phosphate, etc. with additional anions and H2O, With only medium-sized cations, (OH, etc.):RO4= 2:1
-* `Strunz 08.DD Phosphate, etc. with additional anions and H2O, With only medium-sized cations, (OH, etc.):RO4= 2:1`
 
 
 - Child of:
@@ -87993,7 +84704,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_de}
 
 #####  Strunz 08.DE Phosphate, etc. with additional anions and H2O, With only medium-sized cations, (OH, etc.):RO4 = 3:1
-* `Strunz 08.DE Phosphate, etc. with additional anions and H2O, With only medium-sized cations, (OH, etc.):RO4 = 3:1`
 
 
 - Child of:
@@ -88173,7 +84883,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s08_df}
 
 #####  Strunz 08.DF Phosphate, etc. with additional anions and H2O, With only medium-sized cations, (OH,etc.):RO4 > 3:1
-* `Strunz 08.DF Phosphate, etc. with additional anions and H2O, With only medium-sized cations, (OH,etc.):RO4 > 3:1`
 
 
 - Child of:
@@ -88365,7 +85074,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s08_dg}
 
 #####  Strunz 08.DG Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4< 0.5:1
-* `Strunz 08.DG Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4< 0.5:1`
 
 
 - Child of:
@@ -88466,7 +85174,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s08_dh}
 
 #####  Strunz 08.DH Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4 < 1:1
-* `Strunz 08.DH Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4 < 1:1`
 
 
 - Child of:
@@ -88699,7 +85406,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/sailaufite
 
-- IMA chemistry: (Ca,Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>Mn<sup>3+</sup><sub>3</sub>O<sub>2</sub>(AsO<sub>4</sub>)<sub>2</sub>(CO<sub>3</sub>)·3H<sub>2</sub>O
+- IMA chemistry: (Ca,Na,)<sub>2</sub>Mn<sup>3+</sup><sub>3</sub>O<sub>2</sub>(AsO<sub>4</sub>)<sub>2</sub>(CO<sub>3</sub>)·3H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-27258.html
 
@@ -88717,55 +85424,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - IMA chemistry: Ca<sub>4</sub>Fe<sup>3+</sup><sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>2</sub>·3H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-4347.html
-
-
-[]{#29314}
-
-######  Calcioferrite Subgroup
-
-
-- Child of:
- [`53587`](#53587)
- [`s08_DH`](#s08_DH)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/29314
-
-- MinDat URL: https://mindat.org/min-29314.html
-
-
-[]{#calcioferrite}
-
-#######  Calcioferrite
-
-
-- Child of:
- [`29314`](#29314)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/calcioferrite
-
-- IMA chemistry: Ca<sub>4</sub>MgFe<sup>3+</sup><sub>4</sub>(PO<sub>4</sub>)<sub>6</sub>(OH)<sub>4</sub>·12H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-832.html
-
-
-[]{#zodacite}
-
-#######  Zodacite
-
-
-- Child of:
- [`29314`](#29314)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/zodacite
-
-- IMA chemistry: Ca<sub>4</sub>Mn<sup>2+</sup>Fe<sup>3+</sup><sub>4</sub>(PO<sub>4</sub>)<sub>6</sub>(OH)<sub>4</sub>·12H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-4429.html
 
 
 []{#29319}
@@ -88844,151 +85502,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - IMA chemistry: CaMn<sup>2+</sup>Fe<sup>3+</sup>(PO<sub>4</sub>)<sub>2</sub>(OH)·2H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-4289.html
-
-
-[]{#29343}
-
-######  Whiteite Subgroup
-
-
-- Child of:
- [`39572`](#39572)
- [`s08_DH`](#s08_DH)
-
-- A subgroup of the Jahnsite Group, which includes chemically complex,
-monoclinic phosphates.  The suffix in the names of the minerals in
-this group indicates sequentially the dominant atom in the X, M1, and
-M2 structural positions; the M3 position is always Al-dominant
-(Al>Fe3+).
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/29343
-
-- MinDat URL: https://mindat.org/min-29343.html
-
-
-[]{#rittmannite}
-
-#######  Rittmannite
-
-
-- Child of:
- [`29343`](#29343)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/rittmannite
-
-- IMA chemistry: (Mn<sup>2+</sup>,Ca)Mn<sup>2+</sup>(Fe<sup>2+</sup>,Mn<sup>2+</sup>,Mg)<sub>2</sub>(Al,Fe<sup>3+</sup>)<sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>2</sub>·8H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-3425.html
-
-
-[]{#whiteite-cafemg}
-
-#######  Whiteite-(CaFeMg)
-
-
-- Child of:
- [`29343`](#29343)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/whiteite-cafemg
-
-- IMA chemistry: CaFe<sup>2+</sup>Mg<sub>2</sub>Al<sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>2</sub>·8H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-4277.html
-
-
-[]{#whiteite-camgmg}
-
-#######  Whiteite-(CaMgMg)
-
-
-- Child of:
- [`29343`](#29343)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/whiteite-camgmg
-
-- IMA chemistry: CaMg<sub>3</sub>Al<sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>2</sub>·8H<sub>2</sub>O
-
-- MinDat URL: https://www.mindat.org/min-47786.html
-
-
-[]{#whiteite-camnmg}
-
-#######  Whiteite-(CaMnMg)
-
-
-- Child of:
- [`29343`](#29343)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/whiteite-camnmg
-
-- IMA chemistry: CaMn<sup>2+</sup>Mg<sub>2</sub>Al<sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>2</sub>·8H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-4278.html
-
-
-[]{#whiteite-camnmn}
-
-#######  Whiteite-(CaMnMn)
-
-
-- Child of:
- [`29343`](#29343)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/whiteite-camnmn
-
-- IMA chemistry: CaMn<sup>2+</sup>Mn<sup>2+</sup><sub>2</sub>Al<sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>2</sub>·8H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-40435.html
-
-
-[]{#whiteite-mnfemg}
-
-#######  Whiteite-(MnFeMg)
-
-
-- Child of:
- [`29343`](#29343)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/whiteite-mnfemg
-
-- IMA chemistry: Mn<sup>2+</sup>Fe<sup>2+</sup>Mg<sub>2</sub>Al<sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>2</sub>·8H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-4279.html
-
-
-[]{#whiteite-mnmnmg}
-
-#######  Whiteite-(MnMnMg)
-
-
-- Child of:
- [`29343`](#29343)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/whiteite-mnmnmg
-
-- IMA chemistry: Mn<sup>2+</sup>Mn<sup>2+</sup>Mg<sub>2</sub>Al<sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>2</sub>·8H<sub>2</sub>O
-
-- MinDat URL: https://www.mindat.org/min-43540.html
-
-
-[]{#whiteite-mnmnmn}
-
-#######  Whiteite-(MnMnMn)
-
-
-- Child of:
- [`29343`](#29343)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/whiteite-mnmnmn
-
-- MinDat URL: https://www.mindat.org/min-55599.html
 
 
 []{#35756}
@@ -89092,7 +85605,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`39572`](#39572)
- [`s08_DH`](#s08_DH)
 
 - A subgroup of the Jahnsite Group, which includes chemically complex,
 monoclinic phosphates.  The suffix in the names of the minerals in
@@ -89237,7 +85749,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Child of:
  [`39572`](#39572)
- [`s08_DH`](#s08_DH)
 
 -
 
@@ -89541,179 +86052,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-3134.html
 
 
-[]{#53039}
-
-######  Jahnsite Subgroup
-
-
-- Child of:
- [`39572`](#39572)
- [`s08_DH`](#s08_DH)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/53039
-
-- MinDat URL: https://mindat.org/min-53039.html
-
-
-[]{#jahnsite-cafemg}
-
-#######  Jahnsite-(CaFeMg)
-
-
-- Child of:
- [`53039`](#53039)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/jahnsite-cafemg
-
-- IMA chemistry: CaFe<sup>2+</sup>Mg<sub>2</sub>Fe<sup>3+</sup><sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>2</sub>·8H<sub>2</sub>O
-
-- MinDat URL: https://www.mindat.org/min-46052.html
-
-
-[]{#jahnsite-camnfe}
-
-#######  Jahnsite-(CaMnFe)
-
-
-- Child of:
- [`53039`](#53039)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/jahnsite-camnfe
-
-- IMA chemistry: CaMn<sup>2+</sup>Fe<sup>2+</sup><sub>2</sub>Fe<sup>3+</sup><sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>2</sub>·8H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-2066.html
-
-
-[]{#jahnsite-camnmg}
-
-#######  Jahnsite-(CaMnMg)
-
-
-- Child of:
- [`53039`](#53039)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/jahnsite-camnmg
-
-- IMA chemistry: CaMn<sup>2+</sup>Mg<sub>2</sub>Fe<sup>3+</sup><sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>2</sub>·8H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-2067.html
-
-
-[]{#jahnsite-camnmn}
-
-#######  Jahnsite-(CaMnMn)
-
-
-- Child of:
- [`53039`](#53039)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/jahnsite-camnmn
-
-- IMA chemistry: CaMn<sup>2+</sup>Mn<sup>2+</sup><sub>2</sub>Fe<sup>3+</sup><sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>2</sub>·8H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-2068.html
-
-
-[]{#jahnsite-mnmnfe}
-
-#######  Jahnsite-(MnMnFe)
-
-
-- Child of:
- [`53039`](#53039)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/jahnsite-mnmnfe
-
-- IMA chemistry: Mn<sup>2+</sup>Mn<sup>2+</sup>Fe<sup>2+</sup><sub>2</sub>Fe<sup>3+</sup><sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>2</sub>·8H<sub>2</sub>O
-
-- MinDat URL: https://www.mindat.org/min-46117.html
-
-
-[]{#jahnsite-mnmnmg}
-
-#######  Jahnsite-(MnMnMg)
-
-
-- Child of:
- [`53039`](#53039)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/jahnsite-mnmnmg
-
-- IMA chemistry: Mn<sup>2+</sup>Mn<sup>2+</sup>Mg<sub>2</sub>Fe<sup>3+</sup><sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>2</sub>·8H<sub>2</sub>O
-
-- MinDat URL: https://www.mindat.org/min-43541.html
-
-
-[]{#jahnsite-mnmnmn}
-
-#######  Jahnsite-(MnMnMn)
-
-
-- Child of:
- [`53039`](#53039)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/jahnsite-mnmnmn
-
-- IMA chemistry: Mn<sup>2+</sup>Mn<sup>2+</sup>Mn<sup>2+</sup><sub>2</sub>Fe<sup>3+</sup><sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>2</sub>·8H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-7118.html
-
-
-[]{#jahnsite-nafemg}
-
-#######  Jahnsite-(NaFeMg)
-
-
-- Child of:
- [`53039`](#53039)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/jahnsite-nafemg
-
-- IMA chemistry: NaFe<sup>3+</sup>Mg<sub>2</sub>Fe<sup>3+</sup><sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>2</sub>·8H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-31994.html
-
-
-[]{#jahnsite-namnmg}
-
-#######  Jahnsite-(NaMnMg)
-
-
-- Child of:
- [`53039`](#53039)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/jahnsite-namnmg
-
-- IMA chemistry: (Na,Ca)(Mn<sup>2+</sup>,Fe<sup>3+</sup>)(Mg,Fe<sup>3+</sup>)<sub>2</sub>Fe<sup>3+</sup><sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>2</sub>(H<sub>2</sub>O)<sub>8</sub>
-
-- MinDat URL: http://www.mindat.org/min-35967.html
-
-
-[]{#keckite}
-
-#######  Keckite
-
-
-- Child of:
- [`53039`](#53039)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/keckite
-
-- IMA chemistry: CaMn(Fe<sup>3+</sup>,Mn)<sub>2</sub>Fe<sup>3+</sup><sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>(OH)<sub>3</sub>·7H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-2174.html
-
-
 []{#53587}
 
 ######  Calcioferrite Group
@@ -89739,7 +86077,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`53587`](#53587)
- [`s08_DH`](#s08_DH)
 
 -
 
@@ -89842,7 +86179,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_dj}
 
 #####  Strunz 08.DJ Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4 = 1:1
-* `Strunz 08.DJ Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4 = 1:1`
 
 
 - Child of:
@@ -90038,7 +86374,6 @@ SMR add missing skos broader
 []{#s08_dk}
 
 #####  Strunz 08.DK Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4 > 1:1 and < 2:1
-* `Strunz 08.DK Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4 > 1:1 and < 2:1`
 
 
 - Child of:
@@ -90413,7 +86748,6 @@ Dufrenite Group
 []{#s08_dl}
 
 #####  Strunz 08.DL Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4 = 2:1
-* `Strunz 08.DL Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4 = 2:1`
 
 
 - Child of:
@@ -90563,13 +86897,31 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://mindat.org/min-29312.html
 
 
-[]{#agardite-ce}
+[]{#agardite}
 
-#######  Agardite-(Ce)
+#######  Agardite
 
 
 - Child of:
  [`29312`](#29312)
+
+- 'Agardite' minerals are rare-earth rich members of the Mixite Group.
+They form a complete series with Mixite. (mindat)
+
+- **Source:**
+Extensions based on request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. Added by SMR
+
+- Concept URI: https://w3id.org/geochem/1.0/min/agardite
+
+- MinDat URL: https://www.mindat.org/min-46.html
+
+
+[]{#agardite-ce}
+
+########  Agardite-(Ce)
+
+
+- Child of:
  [`agardite`](#agardite)
 
 
@@ -90585,11 +86937,10 @@ SMR add missing skos broader
 
 []{#agardite-la}
 
-#######  Agardite-(La)
+########  Agardite-(La)
 
 
 - Child of:
- [`29312`](#29312)
  [`agardite`](#agardite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/agardite-la
@@ -90601,11 +86952,10 @@ SMR add missing skos broader
 
 []{#agardite-nd}
 
-#######  Agardite-(Nd)
+########  Agardite-(Nd)
 
 
 - Child of:
- [`29312`](#29312)
  [`agardite`](#agardite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/agardite-nd
@@ -90617,11 +86967,10 @@ SMR add missing skos broader
 
 []{#agardite-y}
 
-#######  Agardite-(Y)
+########  Agardite-(Y)
 
 
 - Child of:
- [`29312`](#29312)
  [`agardite`](#agardite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/agardite-y
@@ -90676,13 +87025,30 @@ SMR add missing skos broader
 - MinDat URL: http://www.mindat.org/min-2730.html
 
 
-[]{#petersite-ce}
+[]{#petersite}
 
-#######  Petersite-(Ce)
+#######  Petersite
 
 
 - Child of:
  [`29312`](#29312)
+
+- includes Petersite-(Ce), Petersite-(La), Petersite-(Y)
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/petersite
+
+- MinDat URL: https://www.mindat.org/min-6013.html
+
+
+[]{#petersite-ce}
+
+########  Petersite-(Ce)
+
+
+- Child of:
  [`petersite`](#petersite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/petersite-ce
@@ -90694,11 +87060,10 @@ SMR add missing skos broader
 
 []{#petersite-y}
 
-#######  Petersite-(Y)
+########  Petersite-(Y)
 
 
 - Child of:
- [`29312`](#29312)
  [`petersite`](#petersite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/petersite-y
@@ -90736,143 +87101,6 @@ SMR add missing skos broader
 - IMA chemistry: CaCu<sub>6</sub>(AsO<sub>4</sub>)<sub>2</sub>(AsO<sub>3</sub>OH)(OH)<sub>6</sub>·3H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-7026.html
-
-
-[]{#agardite}
-
-#######  Agardite
-
-
-- Child of:
- [`29312`](#29312)
-
-- 'Agardite' minerals are rare-earth rich members of the Mixite Group.
-They form a complete series with Mixite. (mindat)
-
-- **Source:**
-Extensions based on request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. Added by SMR
-
-- Concept URI: https://w3id.org/geochem/1.0/min/agardite
-
-- MinDat URL: https://www.mindat.org/min-46.html
-
-
-[]{#agardite-ce}
-
-########  Agardite-(Ce)
-
-
-- Child of:
- [`29312`](#29312)
- [`agardite`](#agardite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/agardite-ce
-
-- IMA chemistry: CeCu<sup>2+</sup><sub>6</sub>(AsO<sub>4</sub>)<sub>3</sub>(OH)<sub>6</sub>·3H<sub>2</sub>O
-
-- MinDat URL: https://www.mindat.org/min-48.html
-
-
-[]{#agardite-la}
-
-########  Agardite-(La)
-
-
-- Child of:
- [`29312`](#29312)
- [`agardite`](#agardite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/agardite-la
-
-- IMA chemistry: LaCu<sup>2+</sup><sub>6</sub>(AsO<sub>4</sub>)<sub>3</sub>(OH)<sub>6</sub>·3H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-50.html
-
-
-[]{#agardite-nd}
-
-########  Agardite-(Nd)
-
-
-- Child of:
- [`29312`](#29312)
- [`agardite`](#agardite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/agardite-nd
-
-- IMA chemistry: NdCu<sup>2+</sup><sub>6</sub>(AsO<sub>4</sub>)<sub>3</sub>(OH)<sub>6</sub>·3H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-43.html
-
-
-[]{#agardite-y}
-
-########  Agardite-(Y)
-
-
-- Child of:
- [`29312`](#29312)
- [`agardite`](#agardite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/agardite-y
-
-- IMA chemistry: YCu<sup>2+</sup><sub>6</sub>(AsO<sub>4</sub>)<sub>3</sub>(OH)<sub>6</sub>·3H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-44.html
-
-
-[]{#petersite}
-
-#######  Petersite
-
-
-- Child of:
- [`29312`](#29312)
-
-- includes Petersite-(Ce), Petersite-(La), Petersite-(Y)
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/petersite
-
-- MinDat URL: https://www.mindat.org/min-6013.html
-
-
-[]{#petersite-ce}
-
-########  Petersite-(Ce)
-
-
-- Child of:
- [`29312`](#29312)
- [`petersite`](#petersite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/petersite-ce
-
-- IMA chemistry: Cu<sub>6</sub>Ce(PO<sub>4</sub>)<sub>3</sub>(OH)<sub>6</sub>·3H<sub>2</sub>O
-
-- MinDat URL: https://www.mindat.org/min-46097.html
-
-
-[]{#petersite-y}
-
-########  Petersite-(Y)
-
-
-- Child of:
- [`29312`](#29312)
- [`petersite`](#petersite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/petersite-y
-
-- IMA chemistry: Cu<sub>6</sub>Y(PO<sub>4</sub>)<sub>3</sub>(OH)<sub>6</sub>·3H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-3175.html
 
 
 []{#39676}
@@ -90952,7 +87180,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 []{#s08_dm}
 
 #####  Strunz 08.DM Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4 > 2:1
-* `Strunz 08.DM Phosphate, etc. with additional anions and H2O, With large and medium-sized cations, (OH, etc.):RO4 > 2:1`
 
 
 - Child of:
@@ -91282,7 +87509,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_dn}
 
 #####  Strunz 08.DN Phosphate, etc. with additional anions and H2O, With only large cations
-* `Strunz 08.DN Phosphate, etc. with additional anions and H2O, With only large cations`
 
 
 - Child of:
@@ -91354,7 +87580,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_do}
 
 #####  Strunz 08.DO Phosphate, etc. with additional anions and H2O, With CO3, SO4, SiO4
-* `Strunz 08.DO Phosphate, etc. with additional anions and H2O, With CO3, SO4, SiO4`
 
 
 - Child of:
@@ -91373,7 +87598,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/girvasite
 
-- IMA chemistry: NaCa<sub>2</sub>Mg<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>[PO<sub>2</sub>(OH)<sub>2</sub>](CO<sub>3</sub>)(OH)<sub>2</sub>·4H<sub>2</sub>O
+- IMA chemistry: NaCa<sub>2</sub>Mg<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>[PO<sub>2</sub>(OH)<sub>2</sub>]     (CO<sub>3</sub>)(OH)<sub>2</sub>·4H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-1700.html
 
@@ -91531,7 +87756,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_e}
 
 ####  Strunz 08.E Uranyl phosphate or arsenate
-* `Strunz 08.E Uranyl phosphate or arsenate`
 
 
 - Child of:
@@ -91558,7 +87782,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_ea}
 
 #####  Strunz 08.EA Uranyl phosphate or arsenate, UO2:RO4 = 1:2
-* `Strunz 08.EA Uranyl phosphate or arsenate, UO2:RO4 = 1:2`
 
 
 - Child of:
@@ -91689,7 +87912,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_eb}
 
 #####  Strunz 08.EB Uranyl phosphate or arsenate, UO2:RO4 = 1:1
-* `Strunz 08.EB Uranyl phosphate or arsenate, UO2:RO4 = 1:1`
 
 
 - Child of:
@@ -91828,7 +88050,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/uranospathite
 
-- IMA chemistry: (Al,<span style="border: 1px solid #333; font-size:7px;"> </span>)(UO<sub>2</sub>)<sub>2</sub>F(PO<sub>4</sub>)<sub>2</sub>·20H<sub>2</sub>O
+- IMA chemistry: (Al,)(UO<sub>2</sub>)<sub>2</sub>F(PO<sub>4</sub>)<sub>2</sub>·20H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-4111.html
 
@@ -92383,7 +88605,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s08_ec}
 
 #####  Strunz 08.EC Uranyl phosphate or arsenate, UO2:RO4 = 3:2
-* `Strunz 08.EC Uranyl phosphate or arsenate, UO2:RO4 = 3:2`
 
 
 - Child of:
@@ -92534,13 +88755,34 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-1328.html
 
 
-[]{#francoisite-ce}
+[]{#francoisite}
 
-#######  Françoisite-(Ce)
+#######  Françoisite
 
 
 - Child of:
  [`46104`](#46104)
+
+- includes Françoisite-(Ce), Françoisite-(Nd)
+
+- **Alternate labels:**
+Francoisite
+
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/francoisite
+
+- MinDat URL: https://www.mindat.org/min-39915.html
+
+
+[]{#francoisite-ce}
+
+########  Françoisite-(Ce)
+
+
+- Child of:
  [`francoisite`](#francoisite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/francoisite-ce
@@ -92552,11 +88794,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#francoisite-nd}
 
-#######  Françoisite-(Nd)
+########  Françoisite-(Nd)
 
 
 - Child of:
- [`46104`](#46104)
  [`francoisite`](#francoisite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/francoisite-nd
@@ -92606,7 +88847,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/phuralumite
 
-- IMA chemistry: Al<sub>2</sub>[(UO<sub>2</sub>)<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>O(OH)](OH)<sub>3</sub>(H<sub>2</sub>O)<sub>9
+- IMA chemistry: Al<sub>2</sub>[(UO<sub>2</sub>)<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>O(OH)&#93; &nbsp;   (OH)<sub>3</sub>(H<sub>2</sub>O)<sub>9
 
 - MinDat URL: http://www.mindat.org/min-3201.html
 
@@ -92671,64 +88912,9 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-4362.html
 
 
-[]{#francoisite}
-
-#######  Françoisite
-
-
-- Child of:
- [`46104`](#46104)
-
-- includes Françoisite-(Ce), Françoisite-(Nd)
-
-- **Alternate labels:**
-Francoisite
-
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/francoisite
-
-- MinDat URL: https://www.mindat.org/min-39915.html
-
-
-[]{#francoisite-ce}
-
-########  Françoisite-(Ce)
-
-
-- Child of:
- [`46104`](#46104)
- [`francoisite`](#francoisite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/francoisite-ce
-
-- IMA chemistry: Ce(UO<sub>2</sub>)<sub>3</sub>O(OH)(PO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-27480.html
-
-
-[]{#francoisite-nd}
-
-########  Françoisite-(Nd)
-
-
-- Child of:
- [`46104`](#46104)
- [`francoisite`](#francoisite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/francoisite-nd
-
-- IMA chemistry: Nd(UO<sub>2</sub>)<sub>3</sub>O(OH)(PO<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-1594.html
-
-
 []{#s08_ed}
 
 #####  Strunz 08.ED Uranyl phosphate or arsenate, Unclassified
-* `Strunz 08.ED Uranyl phosphate or arsenate, Unclassified`
 
 
 - Child of:
@@ -92808,7 +88994,7 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 - Concept URI: https://w3id.org/geochem/1.0/min/nielsbohrite
 
-- IMA chemistry: (K,U,<span style="border: 1px solid #333; font-size:7px;"> </span>)(UO<sub>2</sub>)<sub>3</sub>(AsO<sub>4</sub>)(OH)<sub>4</sub>·H<sub>2</sub>O
+- IMA chemistry: (K,U,)(UO<sub>2</sub>)<sub>3</sub>(AsO<sub>4</sub>)(OH)<sub>4</sub>·H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-32208.html
 
@@ -92831,7 +89017,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 []{#s08_f}
 
 ####  Strunz 08.F Polyphosphate, Polyarsenate or [4]-Polyvanadate
-* `Strunz 08.F Polyphosphate, Polyarsenate or [4]-Polyvanadate`
 
 
 - Child of:
@@ -92858,7 +89043,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 []{#s08_fa}
 
 #####  Strunz 08.FA Polyphosphate, etc., without OH and H2O; dimers of corner-sharing RO4 tetrahedra.
-* `Strunz 08.FA Polyphosphate, etc., without OH and H2O; dimers of corner-sharing RO4 tetrahedra.`
 
 
 - Child of:
@@ -92930,7 +89114,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 []{#s08_fb}
 
 #####  Strunz 08.FB Polyphosphate, etc., with OH only
-* `Strunz 08.FB Polyphosphate, etc., with OH only`
 
 
 - Child of:
@@ -92942,7 +89125,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 []{#s08_fc}
 
 #####  Strunz 08.FC Polyphosphate, etc., with H2O only
-* `Strunz 08.FC Polyphosphate, etc., with H2O only`
 
 
 - Child of:
@@ -93059,7 +89241,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 []{#s08_fd}
 
 #####  Strunz 08.FD Polyphosphate, etc., with OH and H2O
-* `Strunz 08.FD Polyphosphate, etc., with OH and H2O`
 
 
 - Child of:
@@ -93115,7 +89296,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 []{#s08_fe}
 
 #####  Strunz 08.FE Ino-[4]-vanadate
-* `Strunz 08.FE Ino-[4]-vanadate`
 
 
 - Child of:
@@ -94501,8 +90681,7 @@ SMR add missing skos broader
 
 []{#10315}
 
-######  Gismondine Subgroup
-* `Gismondine`
+######  Gismondine
 
 
 - Child of:
@@ -94523,15 +90702,15 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://mindat.org/min-10315.html
 
 
-[]{#gismondine}
+[]{#gismondine-ca}
 
-#######  Gismondine
+#######  Gismondine-Ca
 
 
 - Child of:
  [`10315`](#10315)
 
-- Concept URI: https://w3id.org/geochem/1.0/min/gismondine
+- Concept URI: https://w3id.org/geochem/1.0/min/gismondine-ca
 
 - IMA chemistry: Ca<sub>2</sub>(Si<sub>4</sub>Al<sub>4</sub>)O<sub>16</sub>·8H<sub>2</sub>O
 
@@ -94555,32 +90734,15 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: https://www.mindat.org/min-55600.html
 
 
-[]{#gismondine-ca}
-
-#######  Gismondine-Ca
-
-
-- Child of:
- [`10315`](#10315)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gismondine-ca
-
-- IMA chemistry: Ca<sub>2</sub>(Si<sub>4</sub>Al<sub>4</sub>)O<sub>16</sub>·8H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-1701.html
-
-
 []{#1082}
 
-######  Clinoptilolite Subgroup
-* `Clinoptilolite`
+######  Clinoptilolite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GE`](#s09_GE)
 
--
 - Clinoptilolite is the name applied to specimens with unknown
 dominance of the extra-framework cations. It comprises clinoptilolite-
 Ca, clinoptilolite-K and clinoptilolite-Na.
@@ -94644,15 +90806,13 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#1212}
 
-######  Dachiardite Subgroup
-* `Dachiardite`
+######  Dachiardite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Name for unspecified member within the compositional space between
 dachiardite-Ca, dachiardite-Na and dachiardite-K
 
@@ -94700,15 +90860,13 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#1399}
 
-######  Erionite Subgroup
-* `Erionite`
+######  Erionite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Formula  M2[Al4Si14O36] · 15H2OM=Ca, K2 or Na2
 
 - **Alternate labels:**
@@ -94770,15 +90928,13 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#1492}
 
-######  Ferrierite Subgroup
-* `Ferrierite`
+######  Ferrierite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Use for ferrierite specimen lacking chemical data to categorize as
 one of Ferrierite-K, Ferrierite-Mg, Ferrierite-Na or Ferrierite-NH4.
 
@@ -94819,7 +90975,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferrierite-mg
 
-- IMA chemistry: [Mg<sub>2</sub>(K,Na)<sub>2</sub>Ca<sub>0.5</sub>](Si<sub>29</sub>Al<sub>7</sub>)O<sub>72</sub>·18H<sub>2</sub>O
+- IMA chemistry: [Mg<sub>2</sub>(K,Na)<sub>2</sub>Ca<sub>0.5</sub>]     (Si<sub>29</sub>Al<sub>7</sub>)O<sub>72</sub>·18H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-6931.html
 
@@ -94842,7 +90998,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#ferrierite-nh4}
 
 #######  Ferrierite-NH4
-* `Ferrierite-NH<sub>4</sub>`
 
 
 - Child of:
@@ -94857,15 +91012,13 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#1714}
 
-######  Gmelinite Subgroup
-* `Gmelinite`
+######  Gmelinite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Use for gmelinite specimen lacking chemical data to categorize as
 one of the species-specific subtypes.
 
@@ -94932,15 +91085,13 @@ SMR add missing skos broader
 
 []{#1889}
 
-######  Heulandite Subgroup
-* `Heulandite`
+######  Heulandite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GE`](#s09_GE)
 
--
 - heulandite specimens with unknown dominance of the extra-framework
 cations; includes heulandite-K, heulandite-Na, heulandite-Ca,
 heulandite-Ba and heulandite-Sr.
@@ -95038,8 +91189,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#27548}
 
-######  Mazzite Subgroup
-* `Mazzite`
+######  Mazzite
 
 
 - Child of:
@@ -95096,8 +91246,7 @@ SMR add missing skos broader
 
 []{#28896}
 
-######  Thomsonite Subgroup
-* `Thomsonite`
+######  Thomsonite
 
 
 - Child of:
@@ -95280,58 +91429,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-1820.html
 
 
-[]{#phillipsite-ca}
-
-#######  Phillipsite-Ca
-
-
-- Child of:
- [`3192`](#3192)
- [`phillipsite`](#phillipsite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/phillipsite-ca
-
-- IMA chemistry: Ca<sub>3</sub>(Si<sub>10</sub>Al<sub>6</sub>)O<sub>32</sub>·12H<sub>2</sub>O
-
-- MinDat URL: https://www.mindat.org/min-7227.html
-
-
-[]{#phillipsite-k}
-
-#######  Phillipsite-K
-
-
-- Child of:
- [`3192`](#3192)
- [`phillipsite`](#phillipsite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/phillipsite-k
-
-- IMA chemistry: K<sub>6</sub>(Si<sub>10</sub>Al<sub>6</sub>)O<sub>32</sub>·12H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-7228.html
-
-
-[]{#phillipsite-na}
-
-#######  Phillipsite-Na
-
-
-- Child of:
- [`3192`](#3192)
- [`phillipsite`](#phillipsite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/phillipsite-na
-
-- IMA chemistry: Na<sub>6</sub>(Si<sub>10</sub>Al<sub>6</sub>)O<sub>32</sub>·12H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-7229.html
-
-
 []{#phillipsite}
 
 #######  Phillipsite
@@ -95357,7 +91454,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`3192`](#3192)
  [`phillipsite`](#phillipsite)
 
 
@@ -95377,7 +91473,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`3192`](#3192)
  [`phillipsite`](#phillipsite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/phillipsite-k
@@ -95393,7 +91488,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`3192`](#3192)
  [`phillipsite`](#phillipsite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/phillipsite-na
@@ -95405,15 +91499,13 @@ SMR add missing skos broader
 
 []{#35126}
 
-######  Faujasite Subgroup
-* `Faujasite`
+######  Faujasite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Formula   M3.5[Al7Si17O48] · 32H2O     M = Ca, Na2, K2, Mg or Sr
 
 - **Alternate labels:**
@@ -95482,7 +91574,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Formula  M[Al2Si4O12] · 6H2O.             M = Ca, Na2,K2,Mg,Sr
 
 - **Source:**
@@ -95491,122 +91582,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Concept URI: https://w3id.org/geochem/1.0/mingroup/35547
 
 - MinDat URL: https://mindat.org/min-35547.html
-
-
-[]{#chabazite-ca}
-
-#######  Chabazite-Ca
-
-
-- Child of:
- [`35547`](#35547)
- [`chabazite`](#chabazite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/chabazite-ca
-
-- IMA chemistry: Ca<sub>2</sub>[Al<sub>4</sub>Si<sub>8</sub>O<sub>24</sub>]·13H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-6854.html
-
-
-[]{#chabazite-k}
-
-#######  Chabazite-K
-
-
-- Child of:
- [`35547`](#35547)
- [`chabazite`](#chabazite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/chabazite-k
-
-- IMA chemistry: (K<sub>2</sub>NaCa<sub>0.5</sub>)[Al<sub>4</sub>Si<sub>8</sub>O<sub>24</sub>]·11H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-6855.html
-
-
-[]{#chabazite-mg}
-
-#######  Chabazite-Mg
-
-
-- Child of:
- [`35547`](#35547)
- [`chabazite`](#chabazite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/chabazite-mg
-
-- IMA chemistry: (Mg<sub>0.7</sub>K<sub>0.5</sub>Ca<sub>0.5</sub>Na<sub>0.1</sub>)[Al<sub>3</sub>Si<sub>9</sub>O<sub>24</sub>]·10H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-40012.html
-
-
-[]{#chabazite-na}
-
-#######  Chabazite-Na
-
-
-- Child of:
- [`35547`](#35547)
- [`chabazite`](#chabazite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/chabazite-na
-
-- IMA chemistry: (Na<sub>3</sub>K)[Al<sub>4</sub>Si<sub>8</sub>O<sub>24</sub>]·11H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-6856.html
-
-
-[]{#chabazite-sr}
-
-#######  Chabazite-Sr
-
-
-- Child of:
- [`35547`](#35547)
- [`chabazite`](#chabazite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/chabazite-sr
-
-- IMA chemistry: (Sr,Ca)<sub>2</sub>[Al<sub>4</sub>Si<sub>8</sub>O<sub>24</sub>]·11H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-6857.html
-
-
-[]{#levyne-ca}
-
-#######  Lévyne-Ca
-
-
-- Child of:
- [`35547`](#35547)
- [`levyne`](#levyne)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/levyne-ca
-
-- IMA chemistry: Ca<sub>3</sub>(Si<sub>12</sub>Al<sub>6</sub>)O<sub>36</sub>·18H<sub>2</sub>O
-
-- MinDat URL: https://www.mindat.org/min-7154.html
-
-
-[]{#levyne-na}
-
-#######  Lévyne-Na
-
-
-- Child of:
- [`35547`](#35547)
- [`levyne`](#levyne)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/levyne-na
-
-- IMA chemistry: Na<sub>6</sub>(Si<sub>12</sub>Al<sub>6</sub>)O<sub>36</sub>·18H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-7155.html
 
 
 []{#chabazite}
@@ -95636,7 +91611,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`chabazite`](#chabazite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/chabazite-ca
@@ -95652,7 +91626,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`chabazite`](#chabazite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/chabazite-k
@@ -95668,7 +91641,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`chabazite`](#chabazite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/chabazite-mg
@@ -95684,7 +91656,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`chabazite`](#chabazite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/chabazite-na
@@ -95700,7 +91671,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`chabazite`](#chabazite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/chabazite-sr
@@ -95738,7 +91708,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`levyne`](#levyne)
 
 
@@ -95758,7 +91727,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`35547`](#35547)
  [`levyne`](#levyne)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/levyne-na
@@ -95817,42 +91785,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-3760.html
 
 
-[]{#stilbite-ca}
-
-#######  Stilbite-Ca
-
-
-- Child of:
- [`3785`](#3785)
- [`stilbite`](#stilbite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/stilbite-ca
-
-- IMA chemistry: NaCa<sub>4</sub>(Si<sub>27</sub>Al<sub>9</sub>)O<sub>72</sub>·28H<sub>2</sub>O
-
-- MinDat URL: https://www.mindat.org/min-7313.html
-
-
-[]{#stilbite-na}
-
-#######  Stilbite-Na
-
-
-- Child of:
- [`3785`](#3785)
- [`stilbite`](#stilbite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/stilbite-na
-
-- IMA chemistry: Na<sub>9</sub>(Si<sub>27</sub>Al<sub>9</sub>)O<sub>72</sub>·28H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-7314.html
-
-
 []{#stilbite}
 
 #######  Stilbite
@@ -95881,7 +91813,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`3785`](#3785)
  [`stilbite`](#stilbite)
 
 
@@ -95901,7 +91832,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`3785`](#3785)
  [`stilbite`](#stilbite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/stilbite-na
@@ -95913,15 +91843,13 @@ SMR add missing skos broader
 
 []{#46692}
 
-######  Garronite Subgroup
-* `Garronite`
+######  Garronite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GC`](#s09_GC)
 
--
 - Use for garronite specimen lacking chemical data to categorize as
 one of the species-specific subtypes. {@en}
 
@@ -95973,8 +91901,7 @@ SMR add missing skos broader
 
 []{#470364}
 
-######  Paulingite Subgroup
-* `Paulingite`
+######  Paulingite
 
 
 - Child of:
@@ -96009,7 +91936,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/paulingite-ca
 
-- IMA chemistry: (Ca,K,Na,Ba,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>10</sub>(Si,Al)<sub>42</sub>O<sub>84</sub>·34H<sub>2</sub>O
+- IMA chemistry: (Ca,K,Na,Ba,)<sub>10</sub>(Si,Al)<sub>42</sub>O<sub>84</sub>·34H<sub>2</sub>O
 
 - MinDat URL: https://www.mindat.org/min-7218.html
 
@@ -96024,22 +91951,20 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/paulingite-k
 
-- IMA chemistry: (K,Ca,Na,Ba,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>10</sub>(Si,Al)<sub>42</sub>O<sub>84</sub>·34H<sub>2</sub>O
+- IMA chemistry: (K,Ca,Na,Ba,)<sub>10</sub>(Si,Al)<sub>42</sub>O<sub>84</sub>·34H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-7219.html
 
 
 []{#766}
 
-######  Brewsterite Subgroup
-* `Brewsterite`
+######  Brewsterite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GE`](#s09_GE)
 
--
 - series of minerals, brewsterite-Ba and brewsterite-Sr, being the
 barium and strontium end-members of the brewsterite family. Most
 brewsterite will be the strontium end-member.
@@ -96193,7 +92118,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/voloshinite
 
-- IMA chemistry: Rb(LiAl<sub>1.5</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.5</sub>)(Al<sub>0.5</sub>Si<sub>3.5</sub>)O<sub>10</sub>F<sub>2</sub>
+- IMA chemistry: Rb(LiAl<sub>1.5</sub><sub>0.5</sub>)(Al<sub>0.5</sub>Si<sub>3.5</sub>)O<sub>10</sub>F<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-35831.html
 
@@ -96939,7 +92864,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/wonesite
 
-- IMA chemistry: (Na,K,<span style="border: 1px solid #333; font-size:7px;"> </span>)(Mg,Fe,Al)<sub>6</sub>(Si,Al)<sub>8</sub>O<sub>20</sub>(OH,F)<sub>4</sub>
+- IMA chemistry: (Na,K,)(Mg,Fe,Al)<sub>6</sub>(Si,Al)<sub>8</sub>O<sub>20</sub>(OH,F)<sub>4</sub>
 
 - MinDat URL: http://www.mindat.org/min-4309.html
 
@@ -97162,7 +93087,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery,
 
 - Concept URI: https://w3id.org/geochem/1.0/min/oxyphlogopite
 
-- IMA chemistry: K(Mg,Ti,Fe)<sub>3</sub>[(Si,Al)<sub>4</sub>O<sub>10</sub>](O,F)<sub>2</sub>
+- IMA chemistry: K(Mg,Ti,Fe)<sub>3</sub>[(Si,Al)<sub>4</sub>O<sub>10</sub>]     (O,F)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-39713.html
 
@@ -97261,7 +93186,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/actinolite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Mg<sub>4.5-2.5</sub>Fe<sup>2+</sup><sub>0.5-2.5</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Mg<sub>4.5-2.5</sub>Fe<sup>2+</sup><sub>0.5-2.5</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-18.html
 
@@ -97453,7 +93378,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tremolite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Mg<sub>5.0-4.5</sub>Fe<sup>2+</sup><sub>0.0-0.5</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Mg<sub>5.0-4.5</sub>Fe<sup>2+</sup><sub>0.0-0.5</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-4011.html
 
@@ -97612,7 +93537,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/manaevite-ce
 
-- IMA chemistry: Ca<sub>11</sub>(Ce,H<sub>2</sub>O,Ca)<sub>8</sub>Mg(Al,Fe)<sub>4</sub>(Mg,Ti,Fe<sup>3+</sup>)<sub>8</sub>[Si<sub>2</sub>O<sub>7</sub>]<sub>4</sub>[(SiO<sub>4</sub>)<sub>8</sub>(H<sub>4</sub>O<sub>4</sub>)<sub>2</sub>](OH)<sub>9</sub>
+- IMA chemistry: Ca<sub>11</sub>(Ce,H<sub>2</sub>O,Ca)<sub>8</sub>Mg(Al,Fe)<sub>4</sub>(Mg,Ti,Fe<sup>3+</sup>)<sub>8</sub>[Si<sub>2</sub>O<sub>7</sub>]<sub>4</sub>[(SiO<sub>4</sub>)<sub>8</sub>(H<sub>4</sub>O<sub>4</sub>)<sub>2</sub>] (OH)<sub>9</sub>
 
 - MinDat URL: https://www.mindat.org/min-53139.html
 
@@ -97672,7 +93597,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/wiluite
 
-- IMA chemistry: Ca<sub>19</sub>(Al,Mg)<sub>13</sub>(B,<span style="border: 1px solid #333; font-size:7px;"> </span>,Al)<sub>5</sub>(SiO<sub>4</sub>)<sub>10</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>4</sub>(O,OH)<sub>10</sub>
+- IMA chemistry: Ca<sub>19</sub>(Al,Mg)<sub>13</sub>(B,,Al)<sub>5</sub>(SiO<sub>4</sub>)<sub>10</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>4</sub>(O,OH)<sub>10</sub>
 
 - MinDat URL: http://www.mindat.org/min-7367.html
 
@@ -97685,9 +93610,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Child of:
  [`calc-silicatemineral`](#calc-silicatemineral)
  [`29325`](#29325)
- [`s09_BG`](#s09_BG)
 
--
 - An Al-rich subgroup or root name group of the Pumpellyite group.
 
 - **Alternate labels:**
@@ -97881,7 +93804,6 @@ Carboirite.
 - Child of:
  [`s09`](#s09)
 
--
 - {@en}
 
 - **Source:**
@@ -98127,7 +94049,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/davidsmithite
 
-- IMA chemistry: (Ca,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>Na<sub>6</sub>Al<sub>8</sub>Si<sub>8</sub>O<sub>32</sub>
+- IMA chemistry: (Ca,)<sub>2</sub>Na<sub>6</sub>Al<sub>8</sub>Si<sub>8</sub>O<sub>32</sub>
 
 - MinDat URL: https://www.mindat.org/min-50778.html
 
@@ -98300,7 +94222,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/vladimirivanovite
 
-- IMA chemistry: Na<sub>6</sub>Ca<sub>2</sub>[Al<sub>6</sub>Si<sub>6</sub>O<sub>24</sub>](SO<sub>4</sub>,S<sub>3</sub>,S<sub>2</sub>,Cl)<sub>2</sub>·H<sub>2</sub>O
+- IMA chemistry: Na<sub>6</sub>Ca<sub>2</sub>[Al<sub>6</sub>Si<sub>6</sub>O<sub>24</sub>]     (SO<sub>4</sub>,S<sub>3</sub>,S<sub>2</sub>,Cl)<sub>2</sub>·H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-41155.html
 
@@ -98410,7 +94332,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/cancrinite
 
-- IMA chemistry: (Na,Ca,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>8</sub>(Al<sub>6</sub>Si<sub>6</sub>)O<sub>24</sub>(CO<sub>3</sub>,SO<sub>4</sub>)<sub>2</sub>·2H<sub>2</sub>O
+- IMA chemistry: (Na,Ca,)<sub>8</sub>(Al<sub>6</sub>Si<sub>6</sub>)O<sub>24</sub>(CO<sub>3</sub>,SO<sub>4</sub>)<sub>2</sub>·2H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-880.html
 
@@ -98470,7 +94392,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/depmeierite
 
-- IMA chemistry: Na<sub>8</sub>[Al<sub>6</sub>Si<sub>6</sub>O<sub>24</sub>](PO<sub>4</sub>,CO<sub>3</sub>)<sub>1-x</sub>·3H<sub>2</sub>O (x< 0.5)
+- IMA chemistry: Na<sub>8</sub>[Al<sub>6</sub>Si<sub>6</sub>O<sub>24</sub>&#93; &nbsp;   (PO<sub>4</sub>,CO<sub>3</sub>)<sub>1-x</sub>·3H<sub>2</sub>O (x< 0.5)
 
 - MinDat URL: http://www.mindat.org/min-39787.html
 
@@ -98560,7 +94482,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/kircherite
 
-- IMA chemistry: [Na<sub>5</sub>Ca<sub>2</sub>K](Si<sub>6</sub>Al<sub>6</sub>O<sub>24</sub>)(SO<sub>4</sub>)<sub>2</sub>·0.33H<sub>2</sub>O
+- IMA chemistry: [Na<sub>5</sub>Ca<sub>2</sub>K]     (Si<sub>6</sub>Al<sub>6</sub>O<sub>24</sub>)(SO<sub>4</sub>)<sub>2</sub>·0.33H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-39877.html
 
@@ -98703,7 +94625,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_a}
 
 ####  Strunz 09.A Nesosilicate
-* `Strunz 09.A Nesosilicate`
 
 
 - Child of:
@@ -99238,7 +95159,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/laihunite
 
-- IMA chemistry: (Fe<sup>3+</sup>,Fe<sup>2+</sup>,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>(SiO<sub>4</sub>)
+- IMA chemistry: (Fe<sup>3+</sup>,Fe<sup>2+</sup>,)<sub>2</sub>(SiO<sub>4</sub>)
 
 - MinDat URL: http://www.mindat.org/min-2312.html
 
@@ -99409,7 +95330,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_aa}
 
 #####  Strunz 09.AA Nesosilicate without additional anions; cations in tetrahedral [4] coordination
-* `Strunz 09.AA Nesosilicate without additional anions; cations in tetrahedral [4] coordination`
 
 
 - Child of:
@@ -99495,7 +95415,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_ab}
 
 #####  Strunz 09.AB Nesosilicate without additional anions; cations in [4] and greater coordination
-* `Strunz 09.AB Nesosilicate without additional anions; cations in [4] and greater coordination`
 
 
 - Child of:
@@ -99567,7 +95486,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_ac}
 
 #####  Strunz 09.AC Nesosilicate without additional anions; cations in octahedral [6] coordination
-* `Strunz 09.AC Nesosilicate without additional anions; cations in octahedral [6] coordination`
 
 
 - Child of:
@@ -99700,7 +95618,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/laihunite
 
-- IMA chemistry: (Fe<sup>3+</sup>,Fe<sup>2+</sup>,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>(SiO<sub>4</sub>)
+- IMA chemistry: (Fe<sup>3+</sup>,Fe<sup>2+</sup>,)<sub>2</sub>(SiO<sub>4</sub>)
 
 - MinDat URL: http://www.mindat.org/min-2312.html
 
@@ -99789,7 +95707,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_ad}
 
 #####  Strunz 09.AD Nesosilicate without additional anions; cations in [6] and/or greater coordination
-* `Strunz 09.AD Nesosilicate without additional anions; cations in [6] and/or greater coordination`
 
 
 - Child of:
@@ -100483,7 +96400,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_ae}
 
 #####  Strunz 09.AE Nesosilicate with additional anions (O,OH,F,H2O); cations in tetrahedral [4] coordination
-* `Strunz 09.AE Nesosilicate with additional anions (O,OH,F,H2O); cations in tetrahedral [4] coordination`
 
 
 - Child of:
@@ -100645,7 +96561,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_af}
 
 #####  Strunz 09.AF Nesosilicate with additional anions; cations in [4], [5] and/or only [6] coordination
-* `Strunz 09.AF Nesosilicate with additional anions; cations in [4], [5] and/or only [6] coordination`
 
 
 - Child of:
@@ -100727,7 +96642,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ellenbergerite
 
-- IMA chemistry: Mg<sub>6</sub>(Mg,Ti,Zr,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>(Al,Mg)<sub>6</sub>Si<sub>8</sub>O<sub>28</sub>(OH)<sub>10</sub>
+- IMA chemistry: Mg<sub>6</sub>(Mg,Ti,Zr,)<sub>2</sub>(Al,Mg)<sub>6</sub>Si<sub>8</sub>O<sub>28</sub>(OH)<sub>10</sub>
 
 - MinDat URL: http://www.mindat.org/min-1366.html
 
@@ -100852,7 +96767,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/olmiite
 
-- IMA chemistry: CaMn[SiO<sub>3</sub>(OH)](OH)
+- IMA chemistry: CaMn[SiO<sub>3</sub>(OH)]  (OH)
 
 - MinDat URL: http://www.mindat.org/min-30762.html
 
@@ -101289,7 +97204,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/barwoodite
 
-- IMA chemistry: Mn<sup>2+</sup><sub>6</sub>(Nb<sup>5+</sup>,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>(O,OH)<sub>6</sub>
+- IMA chemistry: Mn<sup>2+</sup><sub>6</sub>(Nb<sup>5+</sup>,)<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>(O,OH)<sub>6</sub>
 
 - MinDat URL: https://www.mindat.org/min-52148.html
 
@@ -101304,7 +97219,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/franciscanite
 
-- IMA chemistry: Mn<sup>2+</sup><sub>6</sub>(V<sup>5+</sup><span style="border: 1px solid #333; font-size:7px;"> </span>)(SiO<sub>4</sub>)<sub>2</sub>O<sub>3</sub>(OH)<sub>3</sub>
+- IMA chemistry: Mn<sup>2+</sup><sub>6</sub>(V<sup>5+</sup>)(SiO<sub>4</sub>)<sub>2</sub>O<sub>3</sub>(OH)<sub>3</sub>
 
 - MinDat URL: http://www.mindat.org/min-1590.html
 
@@ -101334,7 +97249,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/welinite
 
-- IMA chemistry: Mn<sup>2+</sup><sub>6</sub>(W<sup>6+</sup><span style="border: 1px solid #333; font-size:7px;"> </span>)(SiO<sub>4</sub>)<sub>2</sub>O<sub>4</sub>(OH)<sub>2</sub>
+- IMA chemistry: Mn<sup>2+</sup><sub>6</sub>(W<sup>6+</sup>)(SiO<sub>4</sub>)<sub>2</sub>O<sub>4</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-4264.html
 
@@ -101342,7 +97257,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_ag}
 
 #####  Strunz 09.AG Nesosilicate with additional anions; cations in > [6] +- [6] coordination
-* `Strunz 09.AG Nesosilicate with additional anions; cations in > [6] +- [6] coordination`
 
 
 - Child of:
@@ -101563,13 +97477,30 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-3677.html
 
 
-[]{#tornebohmite-ce}
+[]{#tornebohmite}
 
-######  Törnebohmite-(Ce)
+######  Törnebohmite
 
 
 - Child of:
  [`s09_AG`](#s09_AG)
+
+- includes örnebohmite-(Ce), Törnebohmite-(La)
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/tornebohmite
+
+- MinDat URL: https://www.mindat.org/min-31543.html
+
+
+[]{#tornebohmite-ce}
+
+#######  Törnebohmite-(Ce)
+
+
+- Child of:
  [`tornebohmite`](#tornebohmite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tornebohmite-ce
@@ -101581,11 +97512,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#tornebohmite-la}
 
-######  Törnebohmite-(La)
+#######  Törnebohmite-(La)
 
 
 - Child of:
- [`s09_AG`](#s09_AG)
  [`tornebohmite`](#tornebohmite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tornebohmite-la
@@ -101853,84 +97783,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-2875.html
 
 
-[]{#470790}
-
-######  Cerite Subgroup
-
-
-- Child of:
- [`39939`](#39939)
- [`s09_AG`](#s09_AG)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/470790
-
-- MinDat URL: https://mindat.org/min-470790.html
-
-
-[]{#aluminocerite-ce}
-
-#######  Aluminocerite-(Ce)
-* `Aluminocerite-(CeCa)`
-
-
-- Child of:
- [`470790`](#470790)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/aluminocerite-ce
-
-- IMA chemistry: (Ce,REE,Ca)<sub>9</sub>(Al,Fe<sup>3+</sup>)(SiO<sub>4</sub>)<sub>3</sub>[SiO<sub>3</sub>(OH)]<sub>4</sub>(OH)<sub>3</sub>
-
-- MinDat URL: http://www.mindat.org/min-38991.html
-
-
-[]{#cerite-ceca}
-
-#######  Cerite-(CeCa)
-
-
-- Child of:
- [`470790`](#470790)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/cerite-ceca
-
-- MinDat URL: http://www.mindat.org/min-931.html
-
-
-[]{#cerite-la}
-
-#######  Cerite-(La)
-
-
-- Child of:
- [`470790`](#470790)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/cerite-la
-
-- IMA chemistry: (La,Ce,Ca)<sub>9</sub>(Fe<sup>3+</sup>,Ca,Mg)(SiO<sub>4</sub>)<sub>3</sub>(SiO<sub>3</sub>OH)<sub>4</sub>(OH)<sub>3</sub>
-
-- MinDat URL: http://www.mindat.org/min-26408.html
-
-
-[]{#ferricerite-laca}
-
-#######  Ferricerite-(LaCa)
-
-
-- Child of:
- [`470790`](#470790)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferricerite-laca
-
-- IMA chemistry: (La,Ce,Ca)<sub>9</sub>(Fe<sup>3+</sup>,Ca,Mg)(SiO<sub>4</sub>)<sub>3</sub>(SiO<sub>3</sub>OH)<sub>4</sub>(OH)<sub>3</sub>
-
-- MinDat URL: http://www.mindat.org/min-26408.html
-
-
 []{#470791}
 
 ######  Taipingite Subgroup
@@ -102027,7 +97879,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`39939`](#39939)
- [`s09_AG`](#s09_AG)
 
 -
 
@@ -102041,8 +97892,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#aluminocerite-ce}
 
-#########  Aluminocerite-(Ce)
-* `Aluminocerite-(CeCa)`
+#########  Aluminocerite-(CeCa)
 
 
 - Child of:
@@ -102066,21 +97916,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Concept URI: https://w3id.org/geochem/1.0/min/cerite-ceca
 
 - MinDat URL: http://www.mindat.org/min-931.html
-
-
-[]{#cerite-la}
-
-#########  Cerite-(La)
-
-
-- Child of:
- [`470790`](#470790)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/cerite-la
-
-- IMA chemistry: (La,Ce,Ca)<sub>9</sub>(Fe<sup>3+</sup>,Ca,Mg)(SiO<sub>4</sub>)<sub>3</sub>(SiO<sub>3</sub>OH)<sub>4</sub>(OH)<sub>3</sub>
-
-- MinDat URL: http://www.mindat.org/min-26408.html
 
 
 []{#ferricerite-laca}
@@ -102226,7 +98061,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/wopmayite
 
-- IMA chemistry: Ca<sub>6</sub>Na<sub>3</sub><span style="border: 1px solid #333; font-size:7px;"> </span>Mn(PO<sub>4</sub>)<sub>3</sub>(PO<sub>3</sub>OH)<sub>4</sub>
+- IMA chemistry: Ca<sub>6</sub>Na<sub>3</sub>Mn(PO<sub>4</sub>)<sub>3</sub>(PO<sub>3</sub>OH)<sub>4</sub>
 
 - MinDat URL: http://www.mindat.org/min-42881.html
 
@@ -102287,100 +98122,15 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: https://www.mindat.org/min-54347.html
 
 
-[]{#tornebohmite}
-
-######  Törnebohmite
-
-
-- Child of:
- [`s09_AG`](#s09_AG)
-
-- includes örnebohmite-(Ce), Törnebohmite-(La)
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tornebohmite
-
-- MinDat URL: https://www.mindat.org/min-31543.html
-
-
-[]{#tornebohmite-ce}
-
-#######  Törnebohmite-(Ce)
-
-
-- Child of:
- [`s09_AG`](#s09_AG)
- [`tornebohmite`](#tornebohmite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tornebohmite-ce
-
-- IMA chemistry: Ce<sub>2</sub>Al(SiO<sub>4</sub>)<sub>2</sub>(OH)
-
-- MinDat URL: http://www.mindat.org/min-3998.html
-
-
-[]{#tornebohmite-la}
-
-#######  Törnebohmite-(La)
-
-
-- Child of:
- [`s09_AG`](#s09_AG)
- [`tornebohmite`](#tornebohmite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tornebohmite-la
-
-- IMA chemistry: La<sub>2</sub>Al(SiO<sub>4</sub>)<sub>2</sub>(OH)
-
-- MinDat URL: http://www.mindat.org/min-3999.html
-
-
 []{#s09_ah}
 
 #####  Strunz 09.AH Nesosilicate with CO3, SO4, PO4, etc.
-* `Strunz 09.AH Nesosilicate with CO3, SO4, PO4, etc.`
 
 
 - Child of:
  [`s09_A`](#s09_A)
 
 - Concept URI: https://w3id.org/geochem/1.0/strunzgroup/s09_AH
-
-
-[]{#britholite-ce}
-
-######  Britholite-(Ce)
-
-
-- Child of:
- [`31542`](#31542)
- [`s09_AH`](#s09_AH)
- [`britholite`](#britholite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/britholite-ce
-
-- IMA chemistry: (Ce,Ca)<sub>5</sub>(SiO<sub>4</sub>)<sub>3</sub>(OH)
-
-- MinDat URL: http://www.mindat.org/min-775.html
-
-
-[]{#britholite-y}
-
-######  Britholite-(Y)
-
-
-- Child of:
- [`31542`](#31542)
- [`s09_AH`](#s09_AH)
- [`britholite`](#britholite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/britholite-y
-
-- IMA chemistry: (Y,Ca)<sub>5</sub>(SiO<sub>4</sub>)<sub>3</sub>(OH)
-
-- MinDat URL: http://www.mindat.org/min-776.html
 
 
 []{#byzantievite}
@@ -102508,7 +98258,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/silicocarnotite
 
-- IMA chemistry: Ca<sub>5</sub>[(PO<sub>4</sub>)(SiO<sub>4</sub>)](PO<sub>4</sub>)
+- IMA chemistry: Ca<sub>5</sub>[(PO<sub>4</sub>)(SiO<sub>4</sub>)]     (PO<sub>4</sub>)
 
 - MinDat URL: https://www.mindat.org/min-9647.html
 
@@ -102585,7 +98335,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/zadovite
 
-- IMA chemistry: BaCa<sub>6</sub>[(SiO<sub>4</sub>)(PO<sub>4</sub>)](PO<sub>4</sub>)<sub>2</sub>F
+- IMA chemistry: BaCa<sub>6</sub>[(SiO<sub>4</sub>)(PO<sub>4</sub>)]     (PO<sub>4</sub>)<sub>2</sub>F
 
 - MinDat URL: https://www.mindat.org/min-43893.html
 
@@ -102607,162 +98357,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Concept URI: https://w3id.org/geochem/1.0/mingroup/31542
 
 - MinDat URL: https://mindat.org/min-31542.html
-
-
-[]{#britholite-ce}
-
-#######  Britholite-(Ce)
-
-
-- Child of:
- [`31542`](#31542)
- [`s09_AH`](#s09_AH)
- [`britholite`](#britholite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/britholite-ce
-
-- IMA chemistry: (Ce,Ca)<sub>5</sub>(SiO<sub>4</sub>)<sub>3</sub>(OH)
-
-- MinDat URL: http://www.mindat.org/min-775.html
-
-
-[]{#britholite-y}
-
-#######  Britholite-(Y)
-
-
-- Child of:
- [`31542`](#31542)
- [`s09_AH`](#s09_AH)
- [`britholite`](#britholite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/britholite-y
-
-- IMA chemistry: (Y,Ca)<sub>5</sub>(SiO<sub>4</sub>)<sub>3</sub>(OH)
-
-- MinDat URL: http://www.mindat.org/min-776.html
-
-
-[]{#calciobritholite}
-
-#######  Calciobritholite
-
-
-- Child of:
- [`31542`](#31542)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/calciobritholite
-
-- MinDat URL: https://www.mindat.org/min-46769.html
-
-
-[]{#fluorbritholite-ce}
-
-#######  Fluorbritholite-(Ce)
-
-
-- Child of:
- [`31542`](#31542)
- [`fluorbritholite`](#fluorbritholite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fluorbritholite-ce
-
-- IMA chemistry: (Ce,Ca)<sub>5</sub>(SiO<sub>4</sub>)<sub>3</sub>F
-
-- MinDat URL: https://www.mindat.org/min-1574.html
-
-
-[]{#fluorbritholite-nd}
-
-#######  Fluorbritholite-(Nd)
-
-
-- Child of:
- [`31542`](#31542)
- [`fluorbritholite`](#fluorbritholite)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fluorbritholite-nd
-
-- MinDat URL: https://www.mindat.org/min-470770.html
-
-
-[]{#fluorbritholite-y}
-
-#######  Fluorbritholite-(Y)
-
-
-- Child of:
- [`31542`](#31542)
- [`fluorbritholite`](#fluorbritholite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fluorbritholite-y
-
-- IMA chemistry: (Y,Ca)<sub>5</sub>(SiO<sub>4</sub>)<sub>3</sub>F
-
-- MinDat URL: http://www.mindat.org/min-39556.html
-
-
-[]{#fluorcalciobritholite}
-
-#######  Fluorcalciobritholite
-
-
-- Child of:
- [`31542`](#31542)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fluorcalciobritholite
-
-- IMA chemistry: (Ca,REE)<sub>5</sub>(SiO<sub>4</sub>,PO<sub>4</sub>)<sub>3</sub>F
-
-- MinDat URL: http://www.mindat.org/min-29138.html
-
-
-[]{#tritomite-ce}
-
-#######  Tritomite-(Ce)
-
-
-- Child of:
- [`31542`](#31542)
- [`tritomite`](#tritomite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tritomite-ce
-
-- IMA chemistry: Ce<sub>5</sub>(SiO<sub>4</sub>,BO<sub>4</sub>)<sub>3</sub>(OH,O)
-
-- MinDat URL: http://www.mindat.org/min-4026.html
-
-
-[]{#tritomite-y}
-
-#######  Tritomite-(Y)
-
-
-- Child of:
- [`31542`](#31542)
- [`tritomite`](#tritomite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tritomite-y
-
-- IMA chemistry: Y<sub>5</sub>(SiO<sub>4</sub>,BO<sub>4</sub>)<sub>3</sub>(O,OH,F)
-
-- MinDat URL: https://www.mindat.org/min-4027.html
 
 
 []{#britholite}
@@ -102787,8 +98381,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`31542`](#31542)
- [`s09_AH`](#s09_AH)
  [`britholite`](#britholite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/britholite-ce
@@ -102804,8 +98396,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`31542`](#31542)
- [`s09_AH`](#s09_AH)
  [`britholite`](#britholite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/britholite-y
@@ -102813,6 +98403,23 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 - IMA chemistry: (Y,Ca)<sub>5</sub>(SiO<sub>4</sub>)<sub>3</sub>(OH)
 
 - MinDat URL: http://www.mindat.org/min-776.html
+
+
+[]{#calciobritholite}
+
+#######  Calciobritholite
+
+
+- Child of:
+ [`31542`](#31542)
+
+
+- **Source:**
+https://w3id.org/geochem/1.0/min/SMRadditions
+
+- Concept URI: https://w3id.org/geochem/1.0/min/calciobritholite
+
+- MinDat URL: https://www.mindat.org/min-46769.html
 
 
 []{#fluorbritholite}
@@ -102840,7 +98447,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`31542`](#31542)
  [`fluorbritholite`](#fluorbritholite)
 
 
@@ -102860,7 +98466,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`31542`](#31542)
  [`fluorbritholite`](#fluorbritholite)
 
 
@@ -102878,7 +98483,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 
 - Child of:
- [`31542`](#31542)
  [`fluorbritholite`](#fluorbritholite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/fluorbritholite-y
@@ -102886,6 +98490,21 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - IMA chemistry: (Y,Ca)<sub>5</sub>(SiO<sub>4</sub>)<sub>3</sub>F
 
 - MinDat URL: http://www.mindat.org/min-39556.html
+
+
+[]{#fluorcalciobritholite}
+
+#######  Fluorcalciobritholite
+
+
+- Child of:
+ [`31542`](#31542)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/fluorcalciobritholite
+
+- IMA chemistry: (Ca,REE)<sub>5</sub>(SiO<sub>4</sub>,PO<sub>4</sub>)<sub>3</sub>F
+
+- MinDat URL: http://www.mindat.org/min-29138.html
 
 
 []{#tritomite}
@@ -102912,7 +98531,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`31542`](#31542)
  [`tritomite`](#tritomite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tritomite-ce
@@ -102928,7 +98546,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`31542`](#31542)
  [`tritomite`](#tritomite)
 
 
@@ -102944,14 +98561,12 @@ SMR add missing skos broader
 
 []{#34945}
 
-######  Tundrite Group
-* `Tundrite`
+######  Tundrite
 
 
 - Child of:
  [`s09_AH`](#s09_AH)
 
--
 - includes Tundrite-(Ce), Tundrite-(Nd)
 - Concept URI: https://w3id.org/geochem/1.0/mingroup/34945
 
@@ -103074,7 +98689,6 @@ SMR add missing skos broader
 []{#s09_aj}
 
 #####  Strunz 09.AJ Nesosilicate with BO3 triangles and/or B[4], Be[4] tetrahedra, cornersharing with SiO4
-* `Strunz 09.AJ Nesosilicate with BO3 triangles and/or B[4], Be[4] tetrahedra, cornersharing with SiO4`
 
 
 - Child of:
@@ -103155,7 +98769,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/holtite
 
-- IMA chemistry: (Ta<sub>0.6</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.4</sub>)Al<sub>6</sub>BSi<sub>3</sub>O<sub>18</sub>
+- IMA chemistry: (Ta<sub>0.6</sub><sub>0.4</sub>)Al<sub>6</sub>BSi<sub>3</sub>O<sub>18</sub>
 
 - MinDat URL: http://www.mindat.org/min-1925.html
 
@@ -103251,7 +98865,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/titanoholtite
 
-- IMA chemistry: (Ti<sub>0.75</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.25</sub>)Al<sub>6</sub>BSi<sub>3</sub>O<sub>18</sub>
+- IMA chemistry: (Ti<sub>0.75</sub><sub>0.25</sub>)Al<sub>6</sub>BSi<sub>3</sub>O<sub>18</sub>
 
 - MinDat URL: https://www.mindat.org/min-43589.html
 
@@ -103331,7 +98945,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`32181`](#32181)
- [`s09_AJ`](#s09_AJ)
 
 -
 
@@ -103356,143 +98969,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - IMA chemistry: (Y,REE,Ca)<sub>2</sub>(B,Be)<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>(OH,O)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-6843.html
-
-
-[]{#gadolinite-ce}
-
-########  Gadolinite-(Ce)
-
-
-- Child of:
- [`50363`](#50363)
- [`gadolinite`](#gadolinite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gadolinite-ce
-
-- IMA chemistry: Ce<sub>2</sub>Fe<sup>2+</sup>Be<sub>2</sub>O<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-1627.html
-
-
-[]{#gadolinite-nd}
-
-########  Gadolinite-(Nd)
-
-
-- Child of:
- [`50363`](#50363)
- [`gadolinite`](#gadolinite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gadolinite-nd
-
-- IMA chemistry: Nd<sub>2</sub>Fe<sup>2+</sup>Be<sub>2</sub>O<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-47913.html
-
-
-[]{#gadolinite-y}
-
-########  Gadolinite-(Y)
-
-
-- Child of:
- [`50363`](#50363)
- [`gadolinite`](#gadolinite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gadolinite-y
-
-- IMA chemistry: Y<sub>2</sub>Fe<sup>2+</sup>Be<sub>2</sub>O<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-1628.html
-
-
-[]{#hingganite-ce}
-
-########  Hingganite-(Ce)
-
-
-- Child of:
- [`50363`](#50363)
- [`hingganite`](#hingganite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hingganite-ce
-
-- IMA chemistry: BeCe(SiO<sub>4</sub>)(OH)
-
-- MinDat URL: https://www.mindat.org/min-1905.html
-
-
-[]{#hingganite-nd}
-
-########  Hingganite-(Nd)
-
-
-- Child of:
- [`50363`](#50363)
- [`hingganite`](#hingganite)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hingganite-nd
-
-- MinDat URL: https://www.mindat.org/min-47711.html
-
-
-[]{#hingganite-y}
-
-########  Hingganite-(Y)
-
-
-- Child of:
- [`50363`](#50363)
- [`hingganite`](#hingganite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hingganite-y
-
-- IMA chemistry: BeY(SiO<sub>4</sub>)(OH)
-
-- MinDat URL: http://www.mindat.org/min-1906.html
-
-
-[]{#hingganite-yb}
-
-########  Hingganite-(Yb)
-
-
-- Child of:
- [`50363`](#50363)
- [`hingganite`](#hingganite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hingganite-yb
-
-- IMA chemistry: BeYb(SiO<sub>4</sub>)(OH)
-
-- MinDat URL: http://www.mindat.org/min-1907.html
-
-
-[]{#minasgeraisite-y}
-
-########  Minasgeraisite-(Y)
-
-
-- Child of:
- [`50363`](#50363)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/minasgeraisite-y
-
-- IMA chemistry: CaBe<sub>2</sub>Y<sub>2</sub>Si<sub>2</sub>O<sub>10</sub>
-
-- MinDat URL: http://www.mindat.org/min-2716.html
 
 
 []{#gadolinite}
@@ -103520,7 +98996,6 @@ one of the species-specific subtypes. {@en}
 
 
 - Child of:
- [`50363`](#50363)
  [`gadolinite`](#gadolinite)
 
 
@@ -103540,7 +99015,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`50363`](#50363)
  [`gadolinite`](#gadolinite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/gadolinite-nd
@@ -103556,7 +99030,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`50363`](#50363)
  [`gadolinite`](#gadolinite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/gadolinite-y
@@ -103591,7 +99064,6 @@ one of the species-specific subtypes. {@en}
 
 
 - Child of:
- [`50363`](#50363)
  [`hingganite`](#hingganite)
 
 
@@ -103611,7 +99083,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`50363`](#50363)
  [`hingganite`](#hingganite)
 
 
@@ -103629,7 +99100,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 
 - Child of:
- [`50363`](#50363)
  [`hingganite`](#hingganite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hingganite-y
@@ -103645,7 +99115,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 
 - Child of:
- [`50363`](#50363)
  [`hingganite`](#hingganite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hingganite-yb
@@ -103653,6 +99122,21 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - IMA chemistry: BeYb(SiO<sub>4</sub>)(OH)
 
 - MinDat URL: http://www.mindat.org/min-1907.html
+
+
+[]{#minasgeraisite-y}
+
+########  Minasgeraisite-(Y)
+
+
+- Child of:
+ [`50363`](#50363)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/minasgeraisite-y
+
+- IMA chemistry: CaBe<sub>2</sub>Y<sub>2</sub>Si<sub>2</sub>O<sub>10</sub>
+
+- MinDat URL: http://www.mindat.org/min-2716.html
 
 
 []{#39509}
@@ -103797,341 +99281,9 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-1926.html
 
 
-[]{#50363}
-
-######  Gadolinite Subgroup
-
-
-- Child of:
- [`32181`](#32181)
- [`s09_AJ`](#s09_AJ)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/50363
-
-- MinDat URL: https://mindat.org/min-50363.html
-
-
-[]{#calcybeborosilite-y}
-
-#######  Calcybeborosilite-(Y)
-
-
-- Child of:
- [`50363`](#50363)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/calcybeborosilite-y
-
-- IMA chemistry: (Y,REE,Ca)<sub>2</sub>(B,Be)<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>(OH,O)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-6843.html
-
-
-[]{#gadolinite-ce}
-
-#######  Gadolinite-(Ce)
-
-
-- Child of:
- [`50363`](#50363)
- [`gadolinite`](#gadolinite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gadolinite-ce
-
-- IMA chemistry: Ce<sub>2</sub>Fe<sup>2+</sup>Be<sub>2</sub>O<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-1627.html
-
-
-[]{#gadolinite-nd}
-
-#######  Gadolinite-(Nd)
-
-
-- Child of:
- [`50363`](#50363)
- [`gadolinite`](#gadolinite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gadolinite-nd
-
-- IMA chemistry: Nd<sub>2</sub>Fe<sup>2+</sup>Be<sub>2</sub>O<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-47913.html
-
-
-[]{#gadolinite-y}
-
-#######  Gadolinite-(Y)
-
-
-- Child of:
- [`50363`](#50363)
- [`gadolinite`](#gadolinite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gadolinite-y
-
-- IMA chemistry: Y<sub>2</sub>Fe<sup>2+</sup>Be<sub>2</sub>O<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-1628.html
-
-
-[]{#hingganite-ce}
-
-#######  Hingganite-(Ce)
-
-
-- Child of:
- [`50363`](#50363)
- [`hingganite`](#hingganite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hingganite-ce
-
-- IMA chemistry: BeCe(SiO<sub>4</sub>)(OH)
-
-- MinDat URL: https://www.mindat.org/min-1905.html
-
-
-[]{#hingganite-nd}
-
-#######  Hingganite-(Nd)
-
-
-- Child of:
- [`50363`](#50363)
- [`hingganite`](#hingganite)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hingganite-nd
-
-- MinDat URL: https://www.mindat.org/min-47711.html
-
-
-[]{#hingganite-y}
-
-#######  Hingganite-(Y)
-
-
-- Child of:
- [`50363`](#50363)
- [`hingganite`](#hingganite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hingganite-y
-
-- IMA chemistry: BeY(SiO<sub>4</sub>)(OH)
-
-- MinDat URL: http://www.mindat.org/min-1906.html
-
-
-[]{#hingganite-yb}
-
-#######  Hingganite-(Yb)
-
-
-- Child of:
- [`50363`](#50363)
- [`hingganite`](#hingganite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hingganite-yb
-
-- IMA chemistry: BeYb(SiO<sub>4</sub>)(OH)
-
-- MinDat URL: http://www.mindat.org/min-1907.html
-
-
-[]{#minasgeraisite-y}
-
-#######  Minasgeraisite-(Y)
-
-
-- Child of:
- [`50363`](#50363)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/minasgeraisite-y
-
-- IMA chemistry: CaBe<sub>2</sub>Y<sub>2</sub>Si<sub>2</sub>O<sub>10</sub>
-
-- MinDat URL: http://www.mindat.org/min-2716.html
-
-
-[]{#gadolinite}
-
-#######  Gadolinite
-
-
-- Child of:
- [`50363`](#50363)
-
-- Use for Gadolinite specimen lacking chemical data to categorize as
-one of the species-specific subtypes. {@en}
-
-- **Source:**
-
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gadolinite
-
-- MinDat URL: https://www.mindat.org/min-10344.html
-
-
-[]{#gadolinite-ce}
-
-########  Gadolinite-(Ce)
-
-
-- Child of:
- [`50363`](#50363)
- [`gadolinite`](#gadolinite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gadolinite-ce
-
-- IMA chemistry: Ce<sub>2</sub>Fe<sup>2+</sup>Be<sub>2</sub>O<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-1627.html
-
-
-[]{#gadolinite-nd}
-
-########  Gadolinite-(Nd)
-
-
-- Child of:
- [`50363`](#50363)
- [`gadolinite`](#gadolinite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gadolinite-nd
-
-- IMA chemistry: Nd<sub>2</sub>Fe<sup>2+</sup>Be<sub>2</sub>O<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-47913.html
-
-
-[]{#gadolinite-y}
-
-########  Gadolinite-(Y)
-
-
-- Child of:
- [`50363`](#50363)
- [`gadolinite`](#gadolinite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gadolinite-y
-
-- IMA chemistry: Y<sub>2</sub>Fe<sup>2+</sup>Be<sub>2</sub>O<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-1628.html
-
-
-[]{#hingganite}
-
-#######  Hingganite
-
-
-- Child of:
- [`50363`](#50363)
-
-- Use for Hingganite specimen lacking chemical data to categorize as
-one of the species-specific subtypes. {@en}
-
-- **Source:**
-
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hingganite
-
-- MinDat URL: https://www.mindat.org/min-39916.html
-
-
-[]{#hingganite-ce}
-
-########  Hingganite-(Ce)
-
-
-- Child of:
- [`50363`](#50363)
- [`hingganite`](#hingganite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hingganite-ce
-
-- IMA chemistry: BeCe(SiO<sub>4</sub>)(OH)
-
-- MinDat URL: https://www.mindat.org/min-1905.html
-
-
-[]{#hingganite-nd}
-
-########  Hingganite-(Nd)
-
-
-- Child of:
- [`50363`](#50363)
- [`hingganite`](#hingganite)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hingganite-nd
-
-- MinDat URL: https://www.mindat.org/min-47711.html
-
-
-[]{#hingganite-y}
-
-########  Hingganite-(Y)
-
-
-- Child of:
- [`50363`](#50363)
- [`hingganite`](#hingganite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hingganite-y
-
-- IMA chemistry: BeY(SiO<sub>4</sub>)(OH)
-
-- MinDat URL: http://www.mindat.org/min-1906.html
-
-
-[]{#hingganite-yb}
-
-########  Hingganite-(Yb)
-
-
-- Child of:
- [`50363`](#50363)
- [`hingganite`](#hingganite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hingganite-yb
-
-- IMA chemistry: BeYb(SiO<sub>4</sub>)(OH)
-
-- MinDat URL: http://www.mindat.org/min-1907.html
-
-
 []{#s09_ak}
 
 #####  Strunz 09.AK Uranyl neso- and polysilicate
-* `Strunz 09.AK Uranyl neso- and polysilicate`
 
 
 - Child of:
@@ -104259,7 +99411,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/swamboite-nd
 
-- IMA chemistry: Nd<sub>0.333</sub>[(UO<sub>2</sub>)(SiO<sub>3</sub>OH)](H<sub>2</sub>O)<sub>~2.5</sub>
+- IMA chemistry: Nd<sub>0.333</sub>[(UO<sub>2</sub>)(SiO<sub>3</sub>OH)]     (H<sub>2</sub>O)<sub>~2.5</sub>
 
 - MinDat URL: https://www.mindat.org/min-3843.html
 
@@ -104434,7 +99586,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_b}
 
 ####  Strunz 09.B Sorosilicate
-* `Strunz 09.B Sorosilicate`
 
 
 - Child of:
@@ -104534,7 +99685,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
  [`39614`](#39614)
  [`s09_B`](#s09_B)
 
--
 - members of Chevkinite Group with a monoclinic angle beta of ~100°,
 
 - **Source:**
@@ -104585,7 +99735,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/delhuyarite-ce
 
-- IMA chemistry: Ce<sub>4</sub>Mg(Fe<sup>3+</sup><sub>2</sub>W)<span style="border: 1px solid #333; font-size:7px;"> </span>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>6</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ce<sub>4</sub>Mg(Fe<sup>3+</sup><sub>2</sub>W)(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>6</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-51415.html
 
@@ -104615,7 +99765,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/maoniupingite-ce
 
-- IMA chemistry: (Ce,Ca)<sub>4</sub>(Fe<sup>3+</sup>,Ti,Fe<sup>2+</sup>,<span style="border: 1px solid #333; font-size:7px;"> </span>)(Ti,Fe<sup>3+</sup>,Fe<sup>2+</sup>,Nb)<sub>4</sub>Si<sub>4</sub>O<sub>22</sub>
+- IMA chemistry: (Ce,Ca)<sub>4</sub>(Fe<sup>3+</sup>,Ti,Fe<sup>2+</sup>,)(Ti,Fe<sup>3+</sup>,Fe<sup>2+</sup>,Nb)<sub>4</sub>Si<sub>4</sub>O<sub>22</sub>
 
 - MinDat URL: http://www.mindat.org/min-27512.html
 
@@ -104638,7 +99788,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_ba}
 
 #####  Strunz 09.BA Sorosilicate: Si2O7 groups, without non-tetrahedral anions; cations in tetrahedral [4] coordination
-* `Strunz 09.BA Sorosilicate: Si2O7 groups, without non-tetrahedral anions; cations in tetrahedral [4] coordination`
 
 
 - Child of:
@@ -104650,7 +99799,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_bb}
 
 #####  Strunz 09.BB Sorosilicate: Si2O7 groups, without non-tetrahedral anions; cations in tetrahedral [4] and greater coordination
-* `Strunz 09.BB Sorosilicate: Si2O7 groups, without non-tetrahedral anions; cations in tetrahedral [4] and greater coordination`
 
 
 - Child of:
@@ -104839,7 +99987,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hydroxylgugiaite
 
-- IMA chemistry: (Ca<sub>3</sub><span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>S4</sub>(Si<sub>3.5</sub>Be<sub>2.5</sub>)<sub>S6</sub>O<sub>11</sub>(OH)<sub>3</sub>
+- IMA chemistry: (Ca<sub>3</sub>)<sub>S4</sub>(Si<sub>3.5</sub>Be<sub>2.5</sub>)<sub>S6</sub>O<sub>11</sub>(OH)<sub>3</sub>
 
 - MinDat URL: https://www.mindat.org/min-47040.html
 
@@ -104862,7 +100010,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_bc}
 
 #####  Strunz 09.BC Sorosilicate: Si2O7 groups, without non-tetrahedral anions; cations in octahedral [6] and greater coordination
-* `Strunz 09.BC Sorosilicate: Si2O7 groups, without non-tetrahedral anions; cations in octahedral [6] and greater coordination`
 
 
 - Child of:
@@ -105159,7 +100306,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_bd}
 
 #####  Strunz 09.BD Sorosilicate: Si2O7 groups, with additional anions; cations in tetrahedral [4] and greater coordination
-* `Strunz 09.BD Sorosilicate: Si2O7 groups, with additional anions; cations in tetrahedral [4] and greater coordination`
 
 
 - Child of:
@@ -105178,7 +100324,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/axinite-fe
 
-- IMA chemistry: Ca<sub>4</sub>Fe<sup>2+</sup><sub>2</sub>Al<sub>4</sub>[B<sub>2</sub>Si<sub>8</sub>O<sub>30</sub>](OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>4</sub>Fe<sup>2+</sup><sub>2</sub>Al<sub>4</sub>[B<sub>2</sub>Si<sub>8</sub>O<sub>30</sub>]     (OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-1459.html
 
@@ -105302,7 +100448,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/axinite-mg
 
-- IMA chemistry: Ca<sub>4</sub>Mg<sub>2</sub>Al<sub>4</sub>[B<sub>2</sub>Si<sub>8</sub>O<sub>30</sub>](OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>4</sub>Mg<sub>2</sub>Al<sub>4</sub>[B<sub>2</sub>Si<sub>8</sub>O<sub>30</sub>]     (OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-2490.html
 
@@ -105317,7 +100463,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/axinite-mn
 
-- IMA chemistry: Ca<sub>4</sub>Mn<sup>2+</sup><sub>2</sub>Al<sub>4</sub>[B<sub>2</sub>Si<sub>8</sub>O<sub>30</sub>](OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>4</sub>Mn<sup>2+</sup><sub>2</sub>Al<sub>4</sub>[B<sub>2</sub>Si<sub>8</sub>O<sub>30</sub>]     (OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-2502.html
 
@@ -105332,7 +100478,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tinzenite
 
-- IMA chemistry: Ca<sub>2</sub>Mn<sup>2+</sup><sub>4</sub>Al<sub>4</sub>[B<sub>2</sub>Si<sub>8</sub>O<sub>30</sub>](OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>Mn<sup>2+</sup><sub>4</sub>Al<sub>4</sub>[B<sub>2</sub>Si<sub>8</sub>O<sub>30</sub>]     (OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-3972.html
 
@@ -105340,7 +100486,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_be}
 
 #####  Strunz 09.BE Sorosilicate: Si2O7 groups, with additional anions; cations in octahedral [6] and greater coordination
-* `Strunz 09.BE Sorosilicate: Si2O7 groups, with additional anions; cations in octahedral [6] and greater coordination`
 
 
 - Child of:
@@ -105687,145 +100832,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: https://www.mindat.org/min-55043.html
 
 
-[]{#35035}
-
-######  Murmanite Group
-
-
-- Child of:
- [`50368`](#50368)
- [`s09_BE`](#s09_BE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/35035
-
-- MinDat URL: https://mindat.org/min-35035.html
-
-
-[]{#betalomonosovite}
-
-#######  Betalomonosovite
-
-
-- Child of:
- [`35035`](#35035)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/betalomonosovite
-
-- IMA chemistry: Na<sub>5+x</sub>Ti<sub>4</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>[PO<sub>3</sub>(OH)]<sub>2-y</sub>[PO<sub>2</sub>(OH)<sub>2</sub>]<sub>y</sub>O<sub>2</sub>[(OH,F)<sub>2-x</sub>O<sub>z</sub>], [0 < x < 2, 0 < y < 1, 0 < z < 1]
-
-- MinDat URL: http://www.mindat.org/min-647.html
-
-
-[]{#calciomurmanite}
-
-#######  Calciomurmanite
-
-
-- Child of:
- [`35035`](#35035)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/calciomurmanite
-
-- IMA chemistry: (Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>Ca(Ti,Mg,Nb)<sub>4</sub>[Si<sub>2</sub>O<sub>7</sub>]<sub>2</sub>O<sub>2</sub>(OH,O)<sub>2</sub>(H<sub>2</sub>O)<sub>4</sub>
-
-- MinDat URL: https://www.mindat.org/min-46606.html
-
-
-[]{#lomonosovite}
-
-#######  Lomonosovite
-
-
-- Child of:
- [`35035`](#35035)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/lomonosovite
-
-- IMA chemistry: Na<sub>6</sub>Na<sub>2</sub>Ti<sub>2</sub>Na<sub>2</sub>Ti<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(PO<sub>4</sub>)<sub>2</sub>O<sub>4</sub>
-
-- MinDat URL: http://www.mindat.org/min-2428.html
-
-
-[]{#murmanite}
-
-#######  Murmanite
-
-
-- Child of:
- [`35035`](#35035)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/murmanite
-
-- IMA chemistry: Na<sub>2</sub>Ti<sub>2</sub>Na<sub>2</sub>Ti<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>4</sub>(H<sub>2</sub>O)<sub>4</sub>
-
-- MinDat URL: http://www.mindat.org/min-2813.html
-
-
-[]{#quadruphite}
-
-#######  Quadruphite
-
-
-- Child of:
- [`35035`](#35035)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/quadruphite
-
-- IMA chemistry: Na<sub>6</sub>Na<sub>2</sub>(CaNa)<sub>2</sub>Na<sub>2</sub>Ti<sub>2</sub>Na<sub>2</sub>Ti<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>O<sub>4</sub>F<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-3336.html
-
-
-[]{#schullerite}
-
-#######  Schüllerite
-
-
-- Child of:
- [`35035`](#35035)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/schullerite
-
-- IMA chemistry: Ba<sub>2</sub>Ti<sub>2</sub>Na<sub>2</sub>Mg<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>2</sub>F<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-40293.html
-
-
-[]{#sobolevite}
-
-#######  Sobolevite
-
-
-- Child of:
- [`35035`](#35035)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/sobolevite
-
-- IMA chemistry: Na<sub>6</sub>(Na<sub>2</sub>Ca)(NaCaMn)Na<sub>2</sub>Ti<sub>2</sub>Na<sub>2</sub>(TiMn)(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(PO<sub>4</sub>)<sub>4</sub>O<sub>2</sub>(OF)F<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-3699.html
-
-
-[]{#vigrishinite}
-
-#######  Vigrishinite
-
-
-- Child of:
- [`35035`](#35035)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/vigrishinite
-
-- IMA chemistry: NaZnTi<sub>4</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>3</sub>(OH)(H<sub>2</sub>O)<sub>4</sub>
-
-- MinDat URL: http://www.mindat.org/min-42852.html
-
-
 []{#35647}
 
 ######  Wöhlerite Group
@@ -106055,7 +101061,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
  [`39614`](#39614)
  [`s09_B`](#s09_B)
 
--
 - members of Chevkinite Group with a monoclinic angle beta of ~100°,
 
 - **Source:**
@@ -106106,7 +101111,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/delhuyarite-ce
 
-- IMA chemistry: Ce<sub>4</sub>Mg(Fe<sup>3+</sup><sub>2</sub>W)<span style="border: 1px solid #333; font-size:7px;"> </span>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>6</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ce<sub>4</sub>Mg(Fe<sup>3+</sup><sub>2</sub>W)(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>6</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-51415.html
 
@@ -106136,7 +101141,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/maoniupingite-ce
 
-- IMA chemistry: (Ce,Ca)<sub>4</sub>(Fe<sup>3+</sup>,Ti,Fe<sup>2+</sup>,<span style="border: 1px solid #333; font-size:7px;"> </span>)(Ti,Fe<sup>3+</sup>,Fe<sup>2+</sup>,Nb)<sub>4</sub>Si<sub>4</sub>O<sub>22</sub>
+- IMA chemistry: (Ce,Ca)<sub>4</sub>(Fe<sup>3+</sup>,Ti,Fe<sup>2+</sup>,)(Ti,Fe<sup>3+</sup>,Fe<sup>2+</sup>,Nb)<sub>4</sub>Si<sub>4</sub>O<sub>22</sub>
 
 - MinDat URL: http://www.mindat.org/min-27512.html
 
@@ -106163,7 +101168,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`39614`](#39614)
- [`s09_BE`](#s09_BE)
 
 -
 
@@ -106205,13 +101209,30 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-11158.html
 
 
-[]{#perrierite-ce}
+[]{#perrierite}
 
-########  Perrierite-(Ce)
+########  Perrierite
 
 
 - Child of:
  [`51418`](#51418)
+
+- Use for Perrierite specimen lacking chemical data to categorize as
+one of Perrierite-(Ce), Perrierite-(La), Perrierite-(Nd). No Mindat
+class.
+
+- **Source:**
+this vocabulary
+
+- Concept URI: https://w3id.org/geochem/1.0/min/perrierite
+
+
+[]{#perrierite-ce}
+
+#########  Perrierite-(Ce)
+
+
+- Child of:
  [`perrierite`](#perrierite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/perrierite-ce
@@ -106223,11 +101244,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#perrierite-la}
 
-########  Perrierite-(La)
+#########  Perrierite-(La)
 
 
 - Child of:
- [`51418`](#51418)
  [`perrierite`](#perrierite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/perrierite-la
@@ -106265,322 +101285,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - IMA chemistry: (Sr,Ce,La)<sub>4</sub>Fe<sup>2+</sup>(Ti,Zr)<sub>4</sub>O<sub>8</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-3808.html
-
-
-[]{#perrierite}
-
-########  Perrierite
-
-
-- Child of:
- [`51418`](#51418)
-
-- Use for Perrierite specimen lacking chemical data to categorize as
-one of Perrierite-(Ce), Perrierite-(La), Perrierite-(Nd). No Mindat
-class.
-
-- **Source:**
-this vocabulary
-
-- Concept URI: https://w3id.org/geochem/1.0/min/perrierite
-
-
-[]{#perrierite-ce}
-
-#########  Perrierite-(Ce)
-
-
-- Child of:
- [`51418`](#51418)
- [`perrierite`](#perrierite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/perrierite-ce
-
-- IMA chemistry: Ce<sub>4</sub>MgFe<sup>3+</sup><sub>2</sub>Ti<sub>2</sub>O<sub>8</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-3168.html
-
-
-[]{#perrierite-la}
-
-#########  Perrierite-(La)
-
-
-- Child of:
- [`51418`](#51418)
- [`perrierite`](#perrierite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/perrierite-la
-
-- IMA chemistry: (La,Ce,Ca)<sub>4</sub>(Fe<sup>2+</sup>,Mn)(Ti,Fe<sup>3+</sup>,Al)<sub>4</sub>[(Si<sub>2</sub>O<sub>7</sub>)O<sub>4</sub>]<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-29144.html
-
-
-[]{#39735}
-
-######  Rinkite Group
-
-
-- Child of:
- [`50368`](#50368)
- [`s09_BE`](#s09_BE)
-
--
-- closely related Na-Ca-REE-Ti-Nb silicates
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/39735
-
-- MinDat URL: https://mindat.org/min-39735.html
-
-
-[]{#fogoite-y}
-
-#######  Fogoite-(Y)
-
-
-- Child of:
- [`39735`](#39735)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fogoite-y
-
-- IMA chemistry: Ca<sub>2</sub>Y<sub>2</sub>Na<sub>3</sub>Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(OF)F<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-46576.html
-
-
-[]{#gotzenite}
-
-#######  Götzenite
-
-
-- Child of:
- [`39735`](#39735)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gotzenite
-
-- IMA chemistry: Ca<sub>4</sub>NaCa<sub>2</sub>Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(OF)F<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-1760.html
-
-
-[]{#grenmarite}
-
-#######  Grenmarite
-
-
-- Child of:
- [`39735`](#39735)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/grenmarite
-
-- IMA chemistry: Na<sub>2</sub>Zr<sub>2</sub>Na<sub>2</sub>MnZr(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>2</sub>F<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-27516.html
-
-
-[]{#hainite-y}
-
-#######  Hainite-(Y)
-
-
-- Child of:
- [`39735`](#39735)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hainite-y
-
-- IMA chemistry: (Ca<sub>3</sub>Y)Na(NaCa)Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(OF)F<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-1798.html
-
-
-[]{#kochite}
-
-#######  Kochite
-
-
-- Child of:
- [`39735`](#39735)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/kochite
-
-- IMA chemistry: Ca<sub>2</sub>MnZrNa<sub>3</sub>Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(OF)F<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-25598.html
-
-
-[]{#mosandrite-ce}
-
-#######  Mosandrite-(Ce)
-
-
-- Child of:
- [`39735`](#39735)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/mosandrite-ce
-
-- IMA chemistry: (Ca<sub>3</sub>REE)[(H<sub>2</sub>O)<sub>2</sub>Ca<sub>0.5</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.5</sub>]Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(OH)<sub>2</sub>(H<sub>2</sub>O)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-2787.html
-
-
-[]{#nacareniobsite-ce}
-
-#######  Nacareniobsite-(Ce)
-
-
-- Child of:
- [`39735`](#39735)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/nacareniobsite-ce
-
-- IMA chemistry: (Ca<sub>3</sub>REE)Na<sub>3</sub>Nb(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(OF)F<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-2825.html
-
-
-[]{#rinkite-ce}
-
-#######  Rinkite-(Ce)
-
-
-- Child of:
- [`39735`](#39735)
- [`rinkite`](#rinkite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/rinkite-ce
-
-- IMA chemistry: (Ca<sub>3</sub>REE)Na(NaCa)Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(OF)F<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-3422.html
-
-
-[]{#rinkite-y}
-
-#######  Rinkite-(Y)
-
-
-- Child of:
- [`39735`](#39735)
- [`rinkite`](#rinkite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/rinkite-y
-
-- IMA chemistry: Na<sub>2</sub>Ca<sub>4</sub>YTi(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>OF<sub>3</sub>
-
-- MinDat URL: https://www.mindat.org/min-52144.html
-
-
-[]{#rosenbuschite}
-
-#######  Rosenbuschite
-
-
-- Child of:
- [`39735`](#39735)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/rosenbuschite
-
-- IMA chemistry: Ca<sub>6</sub>Zr<sub>2</sub>Na<sub>6</sub>ZrTi(Si<sub>2</sub>O<sub>7</sub>)<sub>4</sub>(OF)<sub>2</sub>F<sub>4</sub>
-
-- MinDat URL: http://www.mindat.org/min-3454.html
-
-
-[]{#roumaite}
-
-#######  Roumaite
-
-
-- Child of:
- [`39735`](#39735)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/roumaite
-
-- IMA chemistry: (Nb,Ti)(Ca,Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>3</sub>(Ca,REE)<sub>4</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(OH)F<sub>3</sub>
-
-- MinDat URL: http://www.mindat.org/min-38702.html
-
-
-[]{#seidozerite}
-
-#######  Seidozerite
-
-
-- Child of:
- [`39735`](#39735)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/seidozerite
-
-- IMA chemistry: Na<sub>2</sub>Zr<sub>2</sub>Na<sub>2</sub>MnTi(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>2</sub>F<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-3607.html
-
-
-[]{#rinkite}
-
-#######  Rinkite
-
-
-- Child of:
- [`39735`](#39735)
-
-- synonym for Rinkite-(Ce), Rinkite-(Y)
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/rinkite
-
-
-[]{#rinkite-ce}
-
-########  Rinkite-(Ce)
-
-
-- Child of:
- [`39735`](#39735)
- [`rinkite`](#rinkite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/rinkite-ce
-
-- IMA chemistry: (Ca<sub>3</sub>REE)Na(NaCa)Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(OF)F<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-3422.html
-
-
-[]{#rinkite-y}
-
-########  Rinkite-(Y)
-
-
-- Child of:
- [`39735`](#39735)
- [`rinkite`](#rinkite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/rinkite-y
-
-- IMA chemistry: Na<sub>2</sub>Ca<sub>4</sub>YTi(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>OF<sub>3</sub>
-
-- MinDat URL: https://www.mindat.org/min-52144.html
 
 
 []{#46549}
@@ -106711,7 +101415,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`50368`](#50368)
- [`s09_BE`](#s09_BE)
 
 -
 
@@ -106748,7 +101451,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/calciomurmanite
 
-- IMA chemistry: (Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>Ca(Ti,Mg,Nb)<sub>4</sub>[Si<sub>2</sub>O<sub>7</sub>]<sub>2</sub>O<sub>2</sub>(OH,O)<sub>2</sub>(H<sub>2</sub>O)<sub>4</sub>
+- IMA chemistry: (Na,)<sub>2</sub>Ca(Ti,Mg,Nb)<sub>4</sub>[Si<sub>2</sub>O<sub>7</sub>]<sub>2</sub>O<sub>2</sub>(OH,O)<sub>2</sub>(H<sub>2</sub>O)<sub>4</sub>
 
 - MinDat URL: https://www.mindat.org/min-46606.html
 
@@ -106850,9 +101553,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`50368`](#50368)
- [`s09_BE`](#s09_BE)
 
--
 - closely related Na-Ca-REE-Ti-Nb silicates
 
 - **Source:**
@@ -106956,7 +101657,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/mosandrite-ce
 
-- IMA chemistry: (Ca<sub>3</sub>REE)[(H<sub>2</sub>O)<sub>2</sub>Ca<sub>0.5</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.5</sub>]Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(OH)<sub>2</sub>(H<sub>2</sub>O)<sub>2</sub>
+- IMA chemistry: (Ca<sub>3</sub>REE)[(H<sub>2</sub>O)<sub>2</sub>Ca<sub>0.5</sub><sub>0.5</sub>]Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(OH)<sub>2</sub>(H<sub>2</sub>O)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-2787.html
 
@@ -106976,13 +101677,28 @@ SMR add missing skos broader
 - MinDat URL: http://www.mindat.org/min-2825.html
 
 
-[]{#rinkite-ce}
+[]{#rinkite}
 
-########  Rinkite-(Ce)
+########  Rinkite
 
 
 - Child of:
  [`39735`](#39735)
+
+- synonym for Rinkite-(Ce), Rinkite-(Y)
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/rinkite
+
+
+[]{#rinkite-ce}
+
+#########  Rinkite-(Ce)
+
+
+- Child of:
  [`rinkite`](#rinkite)
 
 
@@ -106998,11 +101714,10 @@ SMR add missing skos broader
 
 []{#rinkite-y}
 
-########  Rinkite-(Y)
+#########  Rinkite-(Y)
 
 
 - Child of:
- [`39735`](#39735)
  [`rinkite`](#rinkite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/rinkite-y
@@ -107037,7 +101752,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/roumaite
 
-- IMA chemistry: (Nb,Ti)(Ca,Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>3</sub>(Ca,REE)<sub>4</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(OH)F<sub>3</sub>
+- IMA chemistry: (Nb,Ti)(Ca,Na,)<sub>3</sub>(Ca,REE)<sub>4</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(OH)F<sub>3</sub>
 
 - MinDat URL: http://www.mindat.org/min-38702.html
 
@@ -107055,58 +101770,6 @@ SMR add missing skos broader
 - IMA chemistry: Na<sub>2</sub>Zr<sub>2</sub>Na<sub>2</sub>MnTi(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>2</sub>F<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-3607.html
-
-
-[]{#rinkite}
-
-########  Rinkite
-
-
-- Child of:
- [`39735`](#39735)
-
-- synonym for Rinkite-(Ce), Rinkite-(Y)
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/rinkite
-
-
-[]{#rinkite-ce}
-
-#########  Rinkite-(Ce)
-
-
-- Child of:
- [`39735`](#39735)
- [`rinkite`](#rinkite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/rinkite-ce
-
-- IMA chemistry: (Ca<sub>3</sub>REE)Na(NaCa)Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(OF)F<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-3422.html
-
-
-[]{#rinkite-y}
-
-#########  Rinkite-(Y)
-
-
-- Child of:
- [`39735`](#39735)
- [`rinkite`](#rinkite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/rinkite-y
-
-- IMA chemistry: Na<sub>2</sub>Ca<sub>4</sub>YTi(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>OF<sub>3</sub>
-
-- MinDat URL: https://www.mindat.org/min-52144.html
 
 
 []{#42445}
@@ -107152,7 +101815,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/bornemanite
 
-- IMA chemistry: Na<sub>6</sub>(Na<span style="border: 1px solid #333; font-size:7px;"> </span>)Ba<sub>2</sub>Ti<sub>2</sub>Nb<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>4</sub>(PO<sub>4</sub>)<sub>2</sub>O<sub>4</sub>(OH)<sub>2</sub>F<sub>2</sub>
+- IMA chemistry: Na<sub>6</sub>(Na)Ba<sub>2</sub>Ti<sub>2</sub>Nb<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>4</sub>(PO<sub>4</sub>)<sub>2</sub>O<sub>4</sub>(OH)<sub>2</sub>F<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-725.html
 
@@ -107167,7 +101830,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/delindeite
 
-- IMA chemistry: Ba<sub>2</sub>Ti<sub>2</sub>(Na<sub>2</sub><span style="border: 1px solid #333; font-size:7px;"> </span>)Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(OH)<sub>2</sub>(H<sub>2</sub>O)<sub>2</sub>O<sub>2</sub>
+- IMA chemistry: Ba<sub>2</sub>Ti<sub>2</sub>(Na<sub>2</sub>)Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(OH)<sub>2</sub>(H<sub>2</sub>O)<sub>2</sub>O<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-1252.html
 
@@ -107197,7 +101860,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/epistolite
 
-- IMA chemistry: (Na<span style="border: 1px solid #333; font-size:7px;"> </span>)Nb<sub>2</sub>Na<sub>3</sub>Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>2</sub>(OH)<sub>2</sub>(H<sub>2</sub>O)<sub>4</sub>
+- IMA chemistry: (Na)Nb<sub>2</sub>Na<sub>3</sub>Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>2</sub>(OH)<sub>2</sub>(H<sub>2</sub>O)<sub>4</sub>
 
 - MinDat URL: http://www.mindat.org/min-1392.html
 
@@ -107257,7 +101920,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/kazanskyite
 
-- IMA chemistry: Ba<span style="border: 1px solid #333; font-size:7px;"> </span>TiNbNa<sub>3</sub>Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>2</sub>(OH)<sub>2</sub>(H<sub>2</sub>O)<sub>2</sub>
+- IMA chemistry: BaTiNbNa<sub>3</sub>Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>2</sub>(OH)<sub>2</sub>(H<sub>2</sub>O)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-41605.html
 
@@ -107317,7 +101980,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/nechelyustovite
 
-- IMA chemistry: (Na<span style="border: 1px solid #333; font-size:7px;"> </span>)<span style="border: 1px solid #333; font-size:7px;"> </span><sub>2</sub>Ba<sub>4</sub>Ti<sub>4</sub>Nb<sub>4</sub>(Na<sub>11</sub><span style="border: 1px solid #333; font-size:7px;"> </span>)Ti<sub>4</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>8</sub>O<sub>8</sub>(OH)<sub>8</sub>(H<sub>2</sub>O)<sub>12</sub>
+- IMA chemistry: (Na)<sub>2</sub>Ba<sub>4</sub>Ti<sub>4</sub>Nb<sub>4</sub>(Na<sub>11</sub>)Ti<sub>4</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>8</sub>O<sub>8</sub>(OH)<sub>8</sub>(H<sub>2</sub>O)<sub>12</sub>
 
 - MinDat URL: http://www.mindat.org/min-29548.html
 
@@ -107404,7 +102067,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`50368`](#50368)
- [`s09_BE`](#s09_BE)
 
 -
 
@@ -107441,7 +102103,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/bussenite
 
-- IMA chemistry: Ba<sub>4</sub>(Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>(Fe<sup>2+</sup>,Na)<sub>2</sub>Ti<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(CO<sub>3</sub>)<sub>2</sub>O<sub>2</sub>(OH)<sub>2</sub>(H<sub>2</sub>O)<sub>2</sub>F<sub>2</sub>
+- IMA chemistry: Ba<sub>4</sub>(Na,)<sub>2</sub>(Fe<sup>2+</sup>,Na)<sub>2</sub>Ti<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(CO<sub>3</sub>)<sub>2</sub>O<sub>2</sub>(OH)<sub>2</sub>(H<sub>2</sub>O)<sub>2</sub>F<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-11187.html
 
@@ -107514,6 +102176,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Child of:
  [`50369`](#50369)
 
+- synonym of Perraultite
 - Concept URI: https://w3id.org/geochem/1.0/min/surkhobite
 
 - IMA chemistry: KBa<sub>3</sub>Ca<sub>2</sub>Na<sub>2</sub>Mn<sub>16</sub>Ti<sub>8</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>8</sub>O<sub>8</sub>(OH)<sub>4</sub>(F,O,OH)<sub>8</sub>
@@ -107534,306 +102197,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - IMA chemistry: Ba<sub>4</sub>Mn<sup>2+</sup><sub>4</sub>Ti<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(PO<sub>4</sub>)<sub>2</sub>O<sub>2</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-4365.html
-
-
-[]{#50369}
-
-######  Bafertisite Group
-
-
-- Child of:
- [`50368`](#50368)
- [`s09_BE`](#s09_BE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/50369
-
-- MinDat URL: https://mindat.org/min-50369.html
-
-
-[]{#bafertisite}
-
-#######  Bafertisite
-
-
-- Child of:
- [`50369`](#50369)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/bafertisite
-
-- IMA chemistry: Ba<sub>2</sub>Fe<sup>2+</sup><sub>4</sub>Ti<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>2</sub>(OH)<sub>2</sub>F<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-482.html
-
-
-[]{#bussenite}
-
-#######  Bussenite
-
-
-- Child of:
- [`50369`](#50369)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/bussenite
-
-- IMA chemistry: Ba<sub>4</sub>(Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>(Fe<sup>2+</sup>,Na)<sub>2</sub>Ti<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(CO<sub>3</sub>)<sub>2</sub>O<sub>2</sub>(OH)<sub>2</sub>(H<sub>2</sub>O)<sub>2</sub>F<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-11187.html
-
-
-[]{#camaraite}
-
-#######  Cámaraite
-
-
-- Child of:
- [`50369`](#50369)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/camaraite
-
-- IMA chemistry: Ba<sub>3</sub>NaFe<sup>2+</sup><sub>8</sub>Ti<sub>4</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>4</sub>O<sub>4</sub>(OH)<sub>4</sub>F<sub>3</sub>
-
-- MinDat URL: http://www.mindat.org/min-39451.html
-
-
-[]{#hejtmanite}
-
-#######  Hejtmanite
-
-
-- Child of:
- [`50369`](#50369)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hejtmanite
-
-- IMA chemistry: Ba<sub>2</sub>Mn<sup>2+</sup><sub>4</sub>Ti<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>2</sub>(OH)<sub>2</sub>F<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-1849.html
-
-
-[]{#jinshajiangite}
-
-#######  Jinshajiangite
-
-
-- Child of:
- [`50369`](#50369)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/jinshajiangite
-
-- IMA chemistry: BaNaFe<sup>2+</sup><sub>4</sub>Ti<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>2</sub>(OH)<sub>2</sub>F
-
-- MinDat URL: http://www.mindat.org/min-2097.html
-
-
-[]{#perraultite}
-
-#######  Perraultite
-
-
-- Child of:
- [`50369`](#50369)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/perraultite
-
-- IMA chemistry: BaNaMn<sub>4</sub>Ti<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>O<sub>2</sub>(OH)<sub>2</sub>F
-
-- MinDat URL: http://www.mindat.org/min-3167.html
-
-
-[]{#surkhobite}
-
-#######  Surkhobite
-
-
-- Child of:
- [`50369`](#50369)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/surkhobite
-
-- IMA chemistry: KBa<sub>3</sub>Ca<sub>2</sub>Na<sub>2</sub>Mn<sub>16</sub>Ti<sub>8</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>8</sub>O<sub>8</sub>(OH)<sub>4</sub>(F,O,OH)<sub>8</sub>
-
-- MinDat URL: http://www.mindat.org/min-11524.html
-
-
-[]{#yoshimuraite}
-
-#######  Yoshimuraite
-
-
-- Child of:
- [`50369`](#50369)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/yoshimuraite
-
-- IMA chemistry: Ba<sub>4</sub>Mn<sup>2+</sup><sub>4</sub>Ti<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(PO<sub>4</sub>)<sub>2</sub>O<sub>2</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-4365.html
-
-
-[]{#51418}
-
-######  Perrierite Subgroup
-
-
-- Child of:
- [`39614`](#39614)
- [`s09_BE`](#s09_BE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/51418
-
-- MinDat URL: https://mindat.org/min-51418.html
-
-
-[]{#hezuolinite}
-
-#######  Hezuolinite
-
-
-- Child of:
- [`51418`](#51418)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hezuolinite
-
-- IMA chemistry: (Sr,REE)<sub>4</sub>Zr(Ti,Fe<sup>3+</sup>,Fe<sup>2+</sup>)<sub>2</sub>Ti<sub>2</sub>O<sub>8</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-41142.html
-
-
-[]{#matsubaraite}
-
-#######  Matsubaraite
-
-
-- Child of:
- [`51418`](#51418)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/matsubaraite
-
-- IMA chemistry: Sr<sub>4</sub>Ti<sub>5</sub>O<sub>8</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-11158.html
-
-
-[]{#perrierite-ce}
-
-#######  Perrierite-(Ce)
-
-
-- Child of:
- [`51418`](#51418)
- [`perrierite`](#perrierite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/perrierite-ce
-
-- IMA chemistry: Ce<sub>4</sub>MgFe<sup>3+</sup><sub>2</sub>Ti<sub>2</sub>O<sub>8</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-3168.html
-
-
-[]{#perrierite-la}
-
-#######  Perrierite-(La)
-
-
-- Child of:
- [`51418`](#51418)
- [`perrierite`](#perrierite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/perrierite-la
-
-- IMA chemistry: (La,Ce,Ca)<sub>4</sub>(Fe<sup>2+</sup>,Mn)(Ti,Fe<sup>3+</sup>,Al)<sub>4</sub>[(Si<sub>2</sub>O<sub>7</sub>)O<sub>4</sub>]<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-29144.html
-
-
-[]{#rengeite}
-
-#######  Rengeite
-
-
-- Child of:
- [`51418`](#51418)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/rengeite
-
-- IMA chemistry: Sr<sub>4</sub>Ti<sub>4</sub>ZrO<sub>8</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-7063.html
-
-
-[]{#strontiochevkinite}
-
-#######  Strontiochevkinite
-
-
-- Child of:
- [`51418`](#51418)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/strontiochevkinite
-
-- IMA chemistry: (Sr,Ce,La)<sub>4</sub>Fe<sup>2+</sup>(Ti,Zr)<sub>4</sub>O<sub>8</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-3808.html
-
-
-[]{#perrierite}
-
-#######  Perrierite
-
-
-- Child of:
- [`51418`](#51418)
-
-- Use for Perrierite specimen lacking chemical data to categorize as
-one of Perrierite-(Ce), Perrierite-(La), Perrierite-(Nd). No Mindat
-class.
-
-- **Source:**
-this vocabulary
-
-- Concept URI: https://w3id.org/geochem/1.0/min/perrierite
-
-
-[]{#perrierite-ce}
-
-########  Perrierite-(Ce)
-
-
-- Child of:
- [`51418`](#51418)
- [`perrierite`](#perrierite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/perrierite-ce
-
-- IMA chemistry: Ce<sub>4</sub>MgFe<sup>3+</sup><sub>2</sub>Ti<sub>2</sub>O<sub>8</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-3168.html
-
-
-[]{#perrierite-la}
-
-########  Perrierite-(La)
-
-
-- Child of:
- [`51418`](#51418)
- [`perrierite`](#perrierite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/perrierite-la
-
-- IMA chemistry: (La,Ce,Ca)<sub>4</sub>(Fe<sup>2+</sup>,Mn)(Ti,Fe<sup>3+</sup>,Al)<sub>4</sub>[(Si<sub>2</sub>O<sub>7</sub>)O<sub>4</sub>]<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-29144.html
 
 
 []{#55035}
@@ -107872,7 +102235,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_bf}
 
 #####  Strunz 09.BF Sorosilicate with mixed SiO4 and Si2O7 groups; cations in tetrahedral [4] and greater coordination
-* `Strunz 09.BF Sorosilicate with mixed SiO4 and Si2O7 groups; cations in tetrahedral [4] and greater coordination`
 
 
 - Child of:
@@ -107944,7 +102306,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_bg}
 
 #####  Strunz 09.BG Sorosilicate with mixed SiO4 and Si2O7 groups; cations in octahedral [6] and greater coordination
-* `Strunz 09.BG Sorosilicate with mixed SiO4 and Si2O7 groups; cations in octahedral [6] and greater coordination`
 
 
 - Child of:
@@ -108130,9 +102491,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Child of:
  [`calc-silicatemineral`](#calc-silicatemineral)
  [`29325`](#29325)
- [`s09_BG`](#s09_BG)
 
--
 - An Al-rich subgroup or root name group of the Pumpellyite group.
 
 - **Alternate labels:**
@@ -108229,7 +102588,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`29325`](#29325)
- [`s09_BG`](#s09_BG)
 
 -
 
@@ -108293,7 +102651,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`29325`](#29325)
- [`s09_BG`](#s09_BG)
 
 -
 
@@ -108409,7 +102766,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/manaevite-ce
 
-- IMA chemistry: Ca<sub>11</sub>(Ce,H<sub>2</sub>O,Ca)<sub>8</sub>Mg(Al,Fe)<sub>4</sub>(Mg,Ti,Fe<sup>3+</sup>)<sub>8</sub>[Si<sub>2</sub>O<sub>7</sub>]<sub>4</sub>[(SiO<sub>4</sub>)<sub>8</sub>(H<sub>4</sub>O<sub>4</sub>)<sub>2</sub>](OH)<sub>9</sub>
+- IMA chemistry: Ca<sub>11</sub>(Ce,H<sub>2</sub>O,Ca)<sub>8</sub>Mg(Al,Fe)<sub>4</sub>(Mg,Ti,Fe<sup>3+</sup>)<sub>8</sub>[Si<sub>2</sub>O<sub>7</sub>]<sub>4</sub>[(SiO<sub>4</sub>)<sub>8</sub>(H<sub>4</sub>O<sub>4</sub>)<sub>2</sub>] (OH)<sub>9</sub>
 
 - MinDat URL: https://www.mindat.org/min-53139.html
 
@@ -108469,173 +102826,9 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/wiluite
 
-- IMA chemistry: Ca<sub>19</sub>(Al,Mg)<sub>13</sub>(B,<span style="border: 1px solid #333; font-size:7px;"> </span>,Al)<sub>5</sub>(SiO<sub>4</sub>)<sub>10</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>4</sub>(O,OH)<sub>10</sub>
+- IMA chemistry: Ca<sub>19</sub>(Al,Mg)<sub>13</sub>(B,,Al)<sub>5</sub>(SiO<sub>4</sub>)<sub>10</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>4</sub>(O,OH)<sub>10</sub>
 
 - MinDat URL: http://www.mindat.org/min-7367.html
-
-
-[]{#3305}
-
-######  Pumpellyite Subgroup
-
-
-- Child of:
- [`calc-silicatemineral`](#calc-silicatemineral)
- [`29325`](#29325)
- [`s09_BG`](#s09_BG)
-
--
-- An Al-rich subgroup or root name group of the Pumpellyite group.
-
-- **Alternate labels:**
-Pumpellyite
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/3305
-
-- MinDat URL: https://mindat.org/min-3305.html
-
-
-[]{#pumpellyite-al}
-
-#######  Pumpellyite-(Al)
-
-
-- Child of:
- [`3305`](#3305)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/pumpellyite-al
-
-- IMA chemistry: Ca<sub>2</sub>Al<sub>3</sub>(Si<sub>2</sub>O<sub>7</sub>)(SiO<sub>4</sub>)(OH,O)<sub>2</sub>·H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-27439.html
-
-
-[]{#pumpellyite-fe2}
-
-#######  Pumpellyite-(Fe<sup>2+</sup>)
-
-
-- Child of:
- [`3305`](#3305)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/pumpellyite-fe2
-
-- IMA chemistry: Ca<sub>2</sub>Fe<sup>2+</sup>Al<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)(SiO<sub>4</sub>)(OH,O)<sub>2</sub>·H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-3307.html
-
-
-[]{#pumpellyite-fe3}
-
-#######  Pumpellyite-(Fe<sup>3+</sup>)
-
-
-- Child of:
- [`3305`](#3305)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/pumpellyite-fe3
-
-- IMA chemistry: Ca<sub>2</sub>(Fe<sup>3+</sup>,Mg)Al<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)(SiO<sub>4</sub>)(OH,O)<sub>2</sub>·H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-3308.html
-
-
-[]{#pumpellyite-mg}
-
-#######  Pumpellyite-(Mg)
-
-
-- Child of:
- [`3305`](#3305)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/pumpellyite-mg
-
-- IMA chemistry: Ca<sub>2</sub>MgAl<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)(SiO<sub>4</sub>)(OH)<sub>2</sub>·H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-3309.html
-
-
-[]{#pumpellyite-mn2}
-
-#######  Pumpellyite-(Mn<sup>2+</sup>)
-
-
-- Child of:
- [`3305`](#3305)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/pumpellyite-mn2
-
-- IMA chemistry: Ca<sub>2</sub>Mn<sup>2+</sup>Al<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)(SiO<sub>4</sub>)(OH)<sub>2</sub>·H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-3310.html
-
-
-[]{#39505}
-
-######  Julgoldite Subgroup
-
-
-- Child of:
- [`29325`](#29325)
- [`s09_BG`](#s09_BG)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/39505
-
-- MinDat URL: https://mindat.org/min-39505.html
-
-
-[]{#julgoldite-fe2}
-
-#######  Julgoldite-(Fe<sup>2+</sup>)
-
-
-- Child of:
- [`39505`](#39505)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/julgoldite-fe2
-
-- IMA chemistry: Ca<sub>2</sub>Fe<sup>2+</sup>Fe<sup>3+</sup><sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)(SiO<sub>4</sub>)(OH)<sub>2</sub>·H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-2120.html
-
-
-[]{#julgoldite-fe3}
-
-#######  Julgoldite-(Fe<sup>3+</sup>)
-
-
-- Child of:
- [`39505`](#39505)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/julgoldite-fe3
-
-- IMA chemistry: Ca<sub>2</sub>Fe<sup>3+</sup>Fe<sup>3+</sup><sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)(SiO<sub>4</sub>)O(OH)·H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-7125.html
-
-
-[]{#julgoldite-mg}
-
-#######  Julgoldite-(Mg)
-
-
-- Child of:
- [`39505`](#39505)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/julgoldite-mg
-
-- IMA chemistry: Ca<sub>2</sub>MgFe<sup>3+</sup><sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)(SiO<sub>4</sub>)(OH)<sub>2</sub>·H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-29090.html
 
 
 []{#46224}
@@ -108938,85 +103131,6 @@ SMR add missing skos broader
 - MinDat URL: https://www.mindat.org/min-11118.html
 
 
-[]{#51984}
-
-######  Gatelite Group
-
-
-- Child of:
- [`52598`](#52598)
- [`s09_BG`](#s09_BG)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/51984
-
-- MinDat URL: https://mindat.org/min-51984.html
-
-
-[]{#ferriperboeite-ce}
-
-#######  Ferriperbøeite-(Ce)
-
-
-- Child of:
- [`51984`](#51984)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferriperboeite-ce
-
-- IMA chemistry: (CaCe<sub>3</sub>)(Fe<sup>3+</sup>Al<sub>2</sub>Fe<sup>2+</sup>)(Si<sub>2</sub>O<sub>7</sub>)(SiO<sub>4</sub>)<sub>3</sub>O(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-51981.html
-
-
-[]{#gatelite-ce}
-
-#######  Gatelite-(Ce)
-
-
-- Child of:
- [`51984`](#51984)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gatelite-ce
-
-- IMA chemistry: (Ca,Ce)<sub>4</sub>(Al,Mg,Fe)<sub>4</sub>(Si<sub>2</sub>O<sub>7</sub>)(SiO<sub>4</sub>)<sub>3</sub>(O,F,OH)<sub>3</sub>
-
-- MinDat URL: http://www.mindat.org/min-27350.html
-
-
-[]{#perboeite-ce}
-
-#######  Perbøeite-(Ce)
-
-
-- Child of:
- [`51984`](#51984)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/perboeite-ce
-
-- IMA chemistry: (CaCe<sub>3</sub>)(Al<sub>3</sub>Fe<sup>2+</sup>)(Si<sub>2</sub>O<sub>7</sub>)(SiO<sub>4</sub>)<sub>3</sub>O(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-42352.html
-
-
-[]{#perboeite-la}
-
-#######  Perbøeite-(La)
-
-
-- Child of:
- [`51984`](#51984)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/perboeite-la
-
-- IMA chemistry: (CaLa<sub>3</sub>)(Al<sub>3</sub>Fe<sup>2+</sup>)[Si<sub>2</sub>O<sub>7</sub>][SiO<sub>4</sub>]<sub>3</sub>O(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-53352.html
-
-
 []{#52598}
 
 ######  Gatelite Supergroup
@@ -109042,7 +103156,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`52598`](#52598)
- [`s09_BG`](#s09_BG)
 
 -
 
@@ -109223,40 +103336,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-26372.html
 
 
-[]{#54392}
-
-######  Shuiskite Subgroup
-
-
-- Child of:
- [`29325`](#29325)
- [`s09_BG`](#s09_BG)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/54392
-
-- MinDat URL: https://mindat.org/min-54392.html
-
-
-[]{#shuiskite}
-
-#######  Shuiskite
-
-
-- Child of:
- [`54392`](#54392)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/shuiskite
-
-- IMA chemistry: Ca<sub>2</sub>MgCr<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)(SiO<sub>4</sub>)(OH)<sub>2</sub>·H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-3642.html
-
-
 []{#6662}
 
 ######  Epidote Supergroup
@@ -109293,13 +103372,31 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://mindat.org/min-46220.html
 
 
-[]{#allanite-ce}
+[]{#allanite}
 
-########  Allanite-(Ce)
+########  Allanite
 
 
 - Child of:
  [`46220`](#46220)
+
+- Members of the allanite group with cations of form
+(CaREE3+)(AlAlFe2+). Includes Ce,La,Nd,Sm,Y rich subtypes. Use for
+Columbite specimen lacking chemical data to categorize as one of the
+species-specific subtypes
+
+- **Source:**
+this vocabulary, based on Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) request.
+
+- Concept URI: https://w3id.org/geochem/1.0/min/Allanite
+
+
+[]{#allanite-ce}
+
+#########  Allanite-(Ce)
+
+
+- Child of:
  [`Allanite`](#Allanite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/allanite-ce
@@ -109311,11 +103408,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#allanite-la}
 
-########  Allanite-(La)
+#########  Allanite-(La)
 
 
 - Child of:
- [`46220`](#46220)
  [`Allanite`](#Allanite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/allanite-la
@@ -109327,11 +103423,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#allanite-nd}
 
-########  Allanite-(Nd)
+#########  Allanite-(Nd)
 
 
 - Child of:
- [`46220`](#46220)
  [`Allanite`](#Allanite)
 
 
@@ -109347,11 +103442,10 @@ SMR add missing skos broader
 
 []{#allanite-y}
 
-########  Allanite-(Y)
+#########  Allanite-(Y)
 
 
 - Child of:
- [`46220`](#46220)
  [`Allanite`](#Allanite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/allanite-y
@@ -109378,13 +103472,31 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: https://www.mindat.org/min-46245.html
 
 
-[]{#dissakisite-ce}
+[]{#dissakisite}
 
-########  Dissakisite-(Ce)
+########  Dissakisite
 
 
 - Child of:
  [`46220`](#46220)
+
+- Use for Dissakisite specimen lacking chemical data to categorize as
+one of the species-specific subtypes. {@en}
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/dissakisite
+
+- MinDat URL: https://www.mindat.org/min-39661.html
+
+
+[]{#dissakisite-ce}
+
+#########  Dissakisite-(Ce)
+
+
+- Child of:
  [`dissakisite`](#dissakisite)
 
 
@@ -109400,11 +103512,10 @@ SMR add missing skos broader
 
 []{#dissakisite-la}
 
-########  Dissakisite-(La)
+#########  Dissakisite-(La)
 
 
 - Child of:
- [`46220`](#46220)
  [`dissakisite`](#dissakisite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/dissakisite-la
@@ -109414,13 +103525,29 @@ SMR add missing skos broader
 - MinDat URL: http://www.mindat.org/min-27401.html
 
 
-[]{#ferriakasakaite-ce}
+[]{#ferriakasakaite}
 
-########  Ferriakasakaite-(Ce)
+########  Ferriakasakaite
 
 
 - Child of:
  [`46220`](#46220)
+
+- Use for Ferriakasakaite specimen lacking chemical data to categorize
+as one of the species-specific subtypes. {@en}
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/ferriakasakaite
+
+
+[]{#ferriakasakaite-ce}
+
+#########  Ferriakasakaite-(Ce)
+
+
+- Child of:
  [`ferriakasakaite`](#ferriakasakaite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferriakasakaite-ce
@@ -109432,11 +103559,10 @@ SMR add missing skos broader
 
 []{#ferriakasakaite-la}
 
-########  Ferriakasakaite-(La)
+#########  Ferriakasakaite-(La)
 
 
 - Child of:
- [`46220`](#46220)
  [`ferriakasakaite`](#ferriakasakaite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferriakasakaite-la
@@ -109446,13 +103572,31 @@ SMR add missing skos broader
 - MinDat URL: https://www.mindat.org/min-45983.html
 
 
-[]{#ferriallanite-ce}
+[]{#ferriallanite}
 
-########  Ferriallanite-(Ce)
+########  Ferriallanite
 
 
 - Child of:
  [`46220`](#46220)
+
+- Use for Ferriallanite specimen lacking chemical data to categorize
+as one of the species-specific subtypes. {@en}
+
+- **Source:**
+Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
+
+- Concept URI: https://w3id.org/geochem/1.0/min/ferriallanite
+
+- MinDat URL: https://www.mindat.org/min-42488.html
+
+
+[]{#ferriallanite-ce}
+
+#########  Ferriallanite-(Ce)
+
+
+- Child of:
  [`ferriallanite`](#ferriallanite)
 
 
@@ -109468,11 +103612,10 @@ SMR add missing skos broader
 
 []{#ferriallanite-la}
 
-########  Ferriallanite-(La)
+#########  Ferriallanite-(La)
 
 
 - Child of:
- [`46220`](#46220)
  [`ferriallanite`](#ferriallanite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferriallanite-la
@@ -109484,8 +103627,7 @@ SMR add missing skos broader
 
 []{#ferriandrosite-ce}
 
-########  Ferriandrosite-(Ce)
-* `Ferriandrosite`
+########  Ferriandrosite
 
 
 - Child of:
@@ -109499,8 +103641,6 @@ and Ferriandrosite-(La)
 https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferriandrosite-ce
-
-- MinDat URL: https://www.mindat.org/min-46246.html
 
 
 []{#manganiakasakaite-la}
@@ -109580,252 +103720,6 @@ SMR add missing skos broader
 - IMA chemistry: MnCe(V<sup>3+</sup>AlMn<sup>2+</sup>)[Si<sub>2</sub>O<sub>7</sub>][SiO<sub>4</sub>]O(OH)
 
 - MinDat URL: http://www.mindat.org/min-27466.html
-
-
-[]{#allanite}
-
-########  Allanite
-
-
-- Child of:
- [`46220`](#46220)
-
-- Members of the allanite group with cations of form
-(CaREE3+)(AlAlFe2+). Includes Ce,La,Nd,Sm,Y rich subtypes. Use for
-Columbite specimen lacking chemical data to categorize as one of the
-species-specific subtypes
-
-- **Source:**
-this vocabulary, based on Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) request.
-
-- Concept URI: https://w3id.org/geochem/1.0/min/Allanite
-
-
-[]{#allanite-ce}
-
-#########  Allanite-(Ce)
-
-
-- Child of:
- [`46220`](#46220)
- [`Allanite`](#Allanite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/allanite-ce
-
-- IMA chemistry: CaCe(Al<sub>2</sub>Fe<sup>2+</sup>)[Si<sub>2</sub>O<sub>7</sub>][SiO<sub>4</sub>]O(OH)
-
-- MinDat URL: http://www.mindat.org/min-125.html
-
-
-[]{#allanite-la}
-
-#########  Allanite-(La)
-
-
-- Child of:
- [`46220`](#46220)
- [`Allanite`](#Allanite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/allanite-la
-
-- IMA chemistry: CaLa(Al<sub>2</sub>Fe<sup>2+</sup>)[Si<sub>2</sub>O<sub>7</sub>][SiO<sub>4</sub>]O(OH)
-
-- MinDat URL: http://www.mindat.org/min-126.html
-
-
-[]{#allanite-nd}
-
-#########  Allanite-(Nd)
-
-
-- Child of:
- [`46220`](#46220)
- [`Allanite`](#Allanite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/allanite-nd
-
-- IMA chemistry: CaNd(Al<sub>2</sub>Fe<sup>2+</sup>)[Si<sub>2</sub>O<sub>7</sub>][SiO<sub>4</sub>]O(OH)
-
-- MinDat URL: https://www.mindat.org/min-36831.html
-
-
-[]{#allanite-y}
-
-#########  Allanite-(Y)
-
-
-- Child of:
- [`46220`](#46220)
- [`Allanite`](#Allanite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/allanite-y
-
-- IMA chemistry: CaY(Al<sub>2</sub>Fe<sup>2+</sup>)[Si<sub>2</sub>O<sub>7</sub>][SiO<sub>4</sub>]O(OH)
-
-- MinDat URL: http://www.mindat.org/min-127.html
-
-
-[]{#dissakisite}
-
-########  Dissakisite
-
-
-- Child of:
- [`46220`](#46220)
-
-- Use for Dissakisite specimen lacking chemical data to categorize as
-one of the species-specific subtypes. {@en}
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/dissakisite
-
-- MinDat URL: https://www.mindat.org/min-39661.html
-
-
-[]{#dissakisite-ce}
-
-#########  Dissakisite-(Ce)
-
-
-- Child of:
- [`46220`](#46220)
- [`dissakisite`](#dissakisite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/dissakisite-ce
-
-- IMA chemistry: CaCe(Al<sub>2</sub>Mg)[Si<sub>2</sub>O<sub>7</sub>][SiO<sub>4</sub>]O(OH)
-
-- MinDat URL: https://www.mindat.org/min-1296.html
-
-
-[]{#dissakisite-la}
-
-#########  Dissakisite-(La)
-
-
-- Child of:
- [`46220`](#46220)
- [`dissakisite`](#dissakisite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/dissakisite-la
-
-- IMA chemistry: CaLa(Al<sub>2</sub>Mg)[Si<sub>2</sub>O<sub>7</sub>][SiO<sub>4</sub>]O(OH)
-
-- MinDat URL: http://www.mindat.org/min-27401.html
-
-
-[]{#ferriakasakaite}
-
-########  Ferriakasakaite
-
-
-- Child of:
- [`46220`](#46220)
-
-- Use for Ferriakasakaite specimen lacking chemical data to categorize
-as one of the species-specific subtypes. {@en}
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferriakasakaite
-
-
-[]{#ferriakasakaite-ce}
-
-#########  Ferriakasakaite-(Ce)
-
-
-- Child of:
- [`46220`](#46220)
- [`ferriakasakaite`](#ferriakasakaite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferriakasakaite-ce
-
-- IMA chemistry: CaCeFe<sup>3+</sup>AlMn<sup>2+</sup>(Si<sub>2</sub>O<sub>7</sub>)(SiO<sub>4</sub>)O(OH)
-
-- MinDat URL: https://www.mindat.org/min-53213.html
-
-
-[]{#ferriakasakaite-la}
-
-#########  Ferriakasakaite-(La)
-
-
-- Child of:
- [`46220`](#46220)
- [`ferriakasakaite`](#ferriakasakaite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferriakasakaite-la
-
-- IMA chemistry: CaLaFe<sup>3+</sup>AlMn<sup>2+</sup>(Si<sub>2</sub>O<sub>7</sub>)(SiO<sub>4</sub>)O(OH)
-
-- MinDat URL: https://www.mindat.org/min-45983.html
-
-
-[]{#ferriallanite}
-
-########  Ferriallanite
-
-
-- Child of:
- [`46220`](#46220)
-
-- Use for Ferriallanite specimen lacking chemical data to categorize
-as one of the species-specific subtypes. {@en}
-
-- **Source:**
-Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0, EarthChem, PetDB) to add generic mineral class for REE minerals with lots of substitutions. 
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferriallanite
-
-- MinDat URL: https://www.mindat.org/min-42488.html
-
-
-[]{#ferriallanite-ce}
-
-#########  Ferriallanite-(Ce)
-
-
-- Child of:
- [`46220`](#46220)
- [`ferriallanite`](#ferriallanite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferriallanite-ce
-
-- IMA chemistry: CaCe(Fe<sup>3+</sup>AlFe<sup>2+</sup>)[Si<sub>2</sub>O<sub>7</sub>][SiO<sub>4</sub>]O(OH)
-
-- MinDat URL: https://www.mindat.org/min-11433.html
-
-
-[]{#ferriallanite-la}
-
-#########  Ferriallanite-(La)
-
-
-- Child of:
- [`46220`](#46220)
- [`ferriallanite`](#ferriallanite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferriallanite-la
-
-- IMA chemistry: CaLa(Fe<sup>3+</sup>AlFe<sup>2+</sup>)[Si<sub>2</sub>O<sub>7</sub>][SiO<sub>4</sub>]O(OH)
-
-- MinDat URL: http://www.mindat.org/min-39528.html
 
 
 []{#46224}
@@ -110131,7 +104025,6 @@ SMR add missing skos broader
 []{#s09_bh}
 
 #####  Strunz 09.BH Sorosilicate with Si3O10, Si4O11, etc. anions; cations in tetrahedral [4] and greater coordination
-* `Strunz 09.BH Sorosilicate with Si3O10, Si4O11, etc. anions; cations in tetrahedral [4] and greater coordination`
 
 
 - Child of:
@@ -110203,7 +104096,6 @@ SMR add missing skos broader
 []{#s09_bj}
 
 #####  Strunz 09.BJ Sorosilicate with Si3O10, Si4O11, etc. anions; cations in octahedral [6] and greater coordination
-* `Strunz 09.BJ Sorosilicate with Si3O10, Si4O11, etc. anions; cations in octahedral [6] and greater coordination`
 
 
 - Child of:
@@ -110282,7 +104174,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/kornerupine
 
-- IMA chemistry: (Mg,Fe<sup>2+</sup>,Al,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>10</sub>(Si,Al,B)<sub>5</sub>O<sub>21</sub>(OH,F)<sub>2</sub>
+- IMA chemistry: (Mg,Fe<sup>2+</sup>,Al,)<sub>10</sub>(Si,Al,B)<sub>5</sub>O<sub>21</sub>(OH,F)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-2254.html
 
@@ -110402,7 +104294,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/trabzonite
 
-- IMA chemistry: Ca<sub>4</sub>[Si<sub>3</sub>O<sub>9</sub>(OH)](OH)
+- IMA chemistry: Ca<sub>4</sub>[Si<sub>3</sub>O<sub>9</sub>(OH)]     (OH)
 
 - MinDat URL: http://www.mindat.org/min-4005.html
 
@@ -110453,53 +104345,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - IMA chemistry: Ca<sub>4</sub>Mn<sup>3+</sup><sub>2</sub>Al<sub>2</sub>(Mn<sup>3+</sup>Mg)(SiO<sub>4</sub>)<sub>2</sub>(Si<sub>3</sub>O<sub>10</sub>)(VO<sub>4</sub>)(OH)<sub>6</sub>
 
 - MinDat URL: https://www.mindat.org/min-50779.html
-
-
-[]{#ardennite-as}
-
-#######  Ardennite-(As)
-
-
-- Child of:
- [`46923`](#46923)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ardennite-as
-
-- IMA chemistry: Mn<sup>2+</sup><sub>4</sub>Al<sub>4</sub>(AlMg)(AsO<sub>4</sub>)(SiO<sub>4</sub>)<sub>2</sub>(Si<sub>3</sub>O<sub>10</sub>)(OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-322.html
-
-
-[]{#ardennite-si}
-
-#######  Ardennite-(Si)
-
-
-- Child of:
- [`46923`](#46923)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ardennite-si
-
-- MinDat URL: https://www.mindat.org/min-53843.html
-
-
-[]{#ardennite-v}
-
-#######  Ardennite-(V)
-
-
-- Child of:
- [`46923`](#46923)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ardennite-v
-
-- IMA chemistry: Mn<sup>2+</sup><sub>4</sub>Al<sub>4</sub>(AlMg)(VO<sub>4</sub>)(SiO<sub>4</sub>)<sub>2</sub>(Si<sub>3</sub>O<sub>10</sub>)(OH)<sub>6</sub>
-
-- MinDat URL: http://www.mindat.org/min-28893.html
 
 
 []{#52090}
@@ -110553,7 +104398,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_bk}
 
 #####  Strunz 09.BK Sorosilicate, unclassified
-* `Strunz 09.BK Sorosilicate, unclassified`
 
 
 - Child of:
@@ -110565,7 +104409,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_c}
 
 ####  Strunz 09.C Cyclosilicate
-* `Strunz 09.C Cyclosilicate`
 
 
 - Child of:
@@ -110592,7 +104435,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_ca}
 
 #####  Strunz 09.CA Cyclosilicate: [Si3O9]6- 3-membered single rings (dreier-Einfachringe), without insular complex anions
-* `Strunz 09.CA Cyclosilicate: [Si3O9]6- 3-membered single rings (dreier-Einfachringe), without insular complex anions`
 
 
 - Child of:
@@ -110830,7 +104672,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_cb}
 
 #####  Strunz 09.CB Cyclosilicate: [Si3O9]6- 3-membered single rings, with insular complex anions
-* `Strunz 09.CB Cyclosilicate: [Si3O9]6- 3-membered single rings, with insular complex anions`
 
 
 - Child of:
@@ -110887,7 +104728,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_cc}
 
 #####  Strunz 09.CC Cyclosilicate: [Si3O9]6- - branched 3-membered single rings
-* `Strunz 09.CC Cyclosilicate: [Si3O9]6- - branched 3-membered single rings`
 
 
 - Child of:
@@ -110899,7 +104739,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_cd}
 
 #####  Strunz 09.CD Cyclosilicate: [Si3O9]6- 3-membered double rings
-* `Strunz 09.CD Cyclosilicate: [Si3O9]6- 3-membered double rings`
 
 
 - Child of:
@@ -110926,7 +104765,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_ce}
 
 #####  Strunz 09.CE Cyclosilicate: [Si4O12]8- 4-membered single rings (vierer-Einfachringe), without insular complex anions
-* `Strunz 09.CE Cyclosilicate: [Si4O12]8- 4-membered single rings (vierer-Einfachringe), without insular complex anions`
 
 
 - Child of:
@@ -111217,7 +105055,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/korobitsynite
 
-- IMA chemistry: (Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>4</sub>Ti<sub>2</sub>(Si<sub>4</sub>O<sub>12</sub>)(O,OH)<sub>2</sub>·4H<sub>2</sub>O
+- IMA chemistry: (Na,)<sub>4</sub>Ti<sub>2</sub>(Si<sub>4</sub>O<sub>12</sub>)(O,OH)<sub>2</sub>·4H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-7141.html
 
@@ -111232,7 +105070,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/nenadkevichite
 
-- IMA chemistry: (Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>8</sub>Nb<sub>4</sub>(Si<sub>4</sub>O<sub>12</sub>)<sub>2</sub>(O,OH)<sub>4</sub>·8H<sub>2</sub>O
+- IMA chemistry: (Na,)<sub>8</sub>Nb<sub>4</sub>(Si<sub>4</sub>O<sub>12</sub>)<sub>2</sub>(O,OH)<sub>4</sub>·8H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-2877.html
 
@@ -111581,7 +105419,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tsepinite-na
 
-- IMA chemistry: (Na,H<sub>3</sub>O,K,Sr,Ba,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>(Ti,Nb)<sub>2</sub>(Si<sub>4</sub>O<sub>12</sub>)(OH,O)<sub>2</sub>·3H<sub>2</sub>O
+- IMA chemistry: (Na,H<sub>3</sub>O,K,Sr,Ba,)<sub>2</sub>(Ti,Nb)<sub>2</sub>(Si<sub>4</sub>O<sub>12</sub>)(OH,O)<sub>2</sub>·3H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-11013.html
 
@@ -111611,7 +105449,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/vuoriyarvite-k
 
-- IMA chemistry: (K,Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>12</sub>Nb<sub>8</sub>(Si<sub>4</sub>O<sub>12</sub>)<sub>4</sub>O<sub>8</sub>·12-16H<sub>2</sub>O
+- IMA chemistry: (K,Na,)<sub>12</sub>Nb<sub>8</sub>(Si<sub>4</sub>O<sub>12</sub>)<sub>4</sub>O<sub>8</sub>·12-16H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-7359.html
 
@@ -111827,7 +105665,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_cf}
 
 #####  Strunz 09.CF Cyclosilicate: [Si4O12]8- 4-membered single rings, with insular complex anions
-* `Strunz 09.CF Cyclosilicate: [Si4O12]8- 4-membered single rings, with insular complex anions`
 
 
 - Child of:
@@ -111996,7 +105833,6 @@ SMR add missing skos broader
 []{#s09_cg}
 
 #####  Strunz 09.CG Cyclosilicate: [Si4O12]8- branched 4-membered single rings
-* `Strunz 09.CG Cyclosilicate: [Si4O12]8- branched 4-membered single rings`
 
 
 - Child of:
@@ -112023,7 +105859,6 @@ SMR add missing skos broader
 []{#s09_ch}
 
 #####  Strunz 09.CH Cyclosilicate: [Si4O12]8- 4-membered double rings
-* `Strunz 09.CH Cyclosilicate: [Si4O12]8- 4-membered double rings`
 
 
 - Child of:
@@ -112056,7 +105891,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/arapovite
 
-- IMA chemistry: (K<sub>1-x</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>x</sub>)(Ca,Na)<sub>2</sub>U<sup>4+</sup>Si<sub>8</sub>O<sub>20</sub> [x ˜ 0.5]
+- IMA chemistry: (K<sub>1-x</sub><sub>x</sub>)(Ca,Na)<sub>2</sub>U<sup>4+</sup>Si<sub>8</sub>O<sub>20</sub> [x ˜ 0.5]
 
 - MinDat URL: http://www.mindat.org/min-27530.html
 
@@ -112101,7 +105936,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/turkestanite
 
-- IMA chemistry: (K,<span style="border: 1px solid #333; font-size:7px;"> </span>)(Ca,Na)<sub>2</sub>ThSi<sub>8</sub>O<sub>20</sub>·nH<sub>2</sub>O
+- IMA chemistry: (K,)(Ca,Na)<sub>2</sub>ThSi<sub>8</sub>O<sub>20</sub>·nH<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-7345.html
 
@@ -112172,7 +106007,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_cj}
 
 #####  Strunz 09.CJ Cyclosilicate: [Si6O18]12- 6-membered single rings (sechser-Einfachringe), without insular complex anions
-* `Strunz 09.CJ Cyclosilicate: [Si6O18]12- 6-membered single rings (sechser-Einfachringe), without insular complex anions`
 
 
 - Child of:
@@ -112266,7 +106100,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/gerenite-y
 
-- IMA chemistry: (Ca,Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>Y<sub>3</sub>Si<sub>6</sub>O<sub>18</sub>·2H<sub>2</sub>O
+- IMA chemistry: (Ca,Na,)<sub>2</sub>Y<sub>3</sub>Si<sub>6</sub>O<sub>18</sub>·2H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-6969.html
 
@@ -112906,7 +106740,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_ck}
 
 #####  Strunz 09.CK Cyclosilicate: [Si6O18]12- 6-membered single rings, with insular complex anions
-* `Strunz 09.CK Cyclosilicate: [Si6O18]12- 6-membered single rings, with insular complex anions`
 
 
 - Child of:
@@ -112944,7 +106777,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/luinaite-oh
 
-- IMA chemistry: (Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)(Fe<sup>2+</sup>,Mg)<sub>3</sub>Al<sub>6</sub>(BO<sub>3</sub>)<sub>3</sub>Si<sub>6</sub>O<sub>18</sub>(OH)<sub>4</sub>
+- IMA chemistry: (Na,)(Fe<sup>2+</sup>,Mg)<sub>3</sub>Al<sub>6</sub>(BO<sub>3</sub>)<sub>3</sub>Si<sub>6</sub>O<sub>18</sub>(OH)<sub>4</sub>
 
 - MinDat URL: https://www.mindat.org/min-39672.html
 
@@ -113280,7 +107113,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/foitite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>(Fe<sup>2+</sup><sub>2</sub>Al)Al<sub>6</sub>(Si<sub>6</sub>O<sub>18</sub>)(BO<sub>3</sub>)<sub>3</sub>(OH)<sub>3</sub>(OH)
+- IMA chemistry: (Fe<sup>2+</sup><sub>2</sub>Al)Al<sub>6</sub>(Si<sub>6</sub>O<sub>18</sub>)(BO<sub>3</sub>)<sub>3</sub>(OH)<sub>3</sub>(OH)
 
 - MinDat URL: http://www.mindat.org/min-1579.html
 
@@ -113314,7 +107147,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/magnesio-foitite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>(Mg<sub>2</sub>Al)Al<sub>6</sub>(Si<sub>6</sub>O<sub>18</sub>)(BO<sub>3</sub>)<sub>3</sub>(OH)<sub>3</sub>(OH)
+- IMA chemistry: (Mg<sub>2</sub>Al)Al<sub>6</sub>(Si<sub>6</sub>O<sub>18</sub>)(BO<sub>3</sub>)<sub>3</sub>(OH)<sub>3</sub>(OH)
 
 - MinDat URL: https://www.mindat.org/min-7162.html
 
@@ -113406,7 +107239,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/oxy-foitite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>(Fe<sup>2+</sup>Al<sub>2</sub>)Al<sub>6</sub>(Si<sub>6</sub>O<sub>18</sub>)(BO<sub>3</sub>)<sub>3</sub>(OH)<sub>3</sub>O
+- IMA chemistry: (Fe<sup>2+</sup>Al<sub>2</sub>)Al<sub>6</sub>(Si<sub>6</sub>O<sub>18</sub>)(BO<sub>3</sub>)<sub>3</sub>(OH)<sub>3</sub>O
 
 - MinDat URL: https://www.mindat.org/min-50777.html
 
@@ -113466,7 +107299,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/rossmanite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>(Al<sub>2</sub>Li)Al<sub>6</sub>(Si<sub>6</sub>O<sub>18</sub>)(BO<sub>3</sub>)<sub>3</sub>(OH)<sub>3</sub>(OH)
+- IMA chemistry: (Al<sub>2</sub>Li)Al<sub>6</sub>(Si<sub>6</sub>O<sub>18</sub>)(BO<sub>3</sub>)<sub>3</sub>(OH)<sub>3</sub>(OH)
 
 - MinDat URL: http://www.mindat.org/min-7275.html
 
@@ -113551,7 +107384,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_cl}
 
 #####  Strunz 09.CL Cyclosilicate: [Si6O18]12- branched 6-membered single rings
-* `Strunz 09.CL Cyclosilicate: [Si6O18]12- branched 6-membered single rings`
 
 
 - Child of:
@@ -113570,7 +107402,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tienshanite
 
-- IMA chemistry: K(Na,K,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>9</sub>Ca<sub>2</sub>Ba<sub>6</sub>Mn<sup>2+</sup><sub>6</sub>Ti<sub>6</sub>B<sub>12</sub>Si<sub>36</sub>O<sub>114</sub>(O,OH,F)<sub>11</sub>
+- IMA chemistry: K(Na,K,)<sub>9</sub>Ca<sub>2</sub>Ba<sub>6</sub>Mn<sup>2+</sup><sub>6</sub>Ti<sub>6</sub>B<sub>12</sub>Si<sub>36</sub>O<sub>114</sub>(O,OH,F)<sub>11</sub>
 
 - MinDat URL: http://www.mindat.org/min-3958.html
 
@@ -113578,7 +107410,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_cm}
 
 #####  Strunz 09.CM Cyclosilicate: [Si6O18]12- 6-membered double rings (sechser-Doppelringe)
-* `Strunz 09.CM Cyclosilicate: [Si6O18]12- 6-membered double rings (sechser-Doppelringe)`
 
 
 - Child of:
@@ -113630,7 +107461,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/agakhanovite-y
 
-- IMA chemistry: YCa<span style="border: 1px solid #333; font-size:7px;"> </span><sub>2</sub>KBe<sub>3</sub>Si<sub>12</sub>O<sub>30</sub>
+- IMA chemistry: YCa<sub>2</sub>KBe<sub>3</sub>Si<sub>12</sub>O<sub>30</sub>
 
 - MinDat URL: https://www.mindat.org/min-45953.html
 
@@ -113645,7 +107476,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/almarudite
 
-- IMA chemistry: K(<span style="border: 1px solid #333; font-size:7px;"> </span>,Na)<sub>2</sub>(Mn,Fe,Mg)<sub>2</sub>[(Be,Al)<sub>3</sub>Si<sub>12</sub>]O<sub>30</sub>
+- IMA chemistry: K(,Na)<sub>2</sub>(Mn,Fe,Mg)<sub>2</sub>[(Be,Al)<sub>3</sub>Si<sub>12</sub>]O<sub>30</sub>
 
 - MinDat URL: http://www.mindat.org/min-25681.html
 
@@ -113767,7 +107598,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/friedrichbeckeite
 
-- IMA chemistry: K(<span style="border: 1px solid #333; font-size:7px;"> </span>Na)Mg<sub>2</sub>(Be<sub>2</sub>Mg)Si<sub>12</sub>O<sub>30</sub>
+- IMA chemistry: K(Na)Mg<sub>2</sub>(Be<sub>2</sub>Mg)Si<sub>12</sub>O<sub>30</sub>
 
 - MinDat URL: http://www.mindat.org/min-38698.html
 
@@ -113782,7 +107613,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/klochite
 
-- IMA chemistry: (Fe<sup>2+</sup>Fe<sup>3+</sup>)<span style="border: 1px solid #333; font-size:7px;"> </span><sub>2</sub>KZn<sub>3</sub>(Si<sub>12</sub>O<sub>30</sub>)
+- IMA chemistry: (Fe<sup>2+</sup>Fe<sup>3+</sup>)<sub>2</sub>KZn<sub>3</sub>(Si<sub>12</sub>O<sub>30</sub>)
 
 - MinDat URL: http://www.mindat.org/min-35832.html
 
@@ -113827,7 +107658,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/oftedalite
 
-- IMA chemistry: KSc<sub>2</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>2</sub>Be<sub>3</sub>Si<sub>12</sub>O<sub>30</sub>
+- IMA chemistry: KSc<sub>2</sub><sub>2</sub>Be<sub>3</sub>Si<sub>12</sub>O<sub>30</sub>
 
 - MinDat URL: http://www.mindat.org/min-27498.html
 
@@ -113955,7 +107786,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_cn}
 
 #####  Strunz 09.CN Cyclosilicate: [Si8O24]16- 8-membered rings
-* `Strunz 09.CN Cyclosilicate: [Si8O24]16- 8-membered rings`
 
 
 - Child of:
@@ -113982,7 +107812,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_co}
 
 #####  Strunz 09.CO Cyclosilicate: [Si9O27]18- 9-membered rings
-* `Strunz 09.CO Cyclosilicate: [Si9O27]18- 9-membered rings`
 
 
 - Child of:
@@ -114064,7 +107893,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/carbokentbrooksite
 
-- IMA chemistry: (Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>12</sub>(Na,Ce)<sub>3</sub>Ca<sub>6</sub>Mn<sub>3</sub>Zr<sub>3</sub>NbSi<sub>25</sub>O<sub>73</sub>(OH)<sub>3</sub>(CO<sub>3</sub>)·H<sub>2</sub>O
+- IMA chemistry: (Na,)<sub>12</sub>(Na,Ce)<sub>3</sub>Ca<sub>6</sub>Mn<sub>3</sub>Zr<sub>3</sub>NbSi<sub>25</sub>O<sub>73</sub>(OH)<sub>3</sub>(CO<sub>3</sub>)·H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-25674.html
 
@@ -114139,7 +107968,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/fengchengite
 
-- IMA chemistry: Na<sub>12</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>3</sub>Ca<sub>6</sub>Fe<sup>3+</sup><sub>3</sub>Zr<sub>3</sub>Si(Si<sub>25</sub>O<sub>73</sub>)(H<sub>2</sub>O)<sub>3</sub>(OH)<sub>2</sub>
+- IMA chemistry: Na<sub>12</sub><sub>3</sub>Ca<sub>6</sub>Fe<sup>3+</sup><sub>3</sub>Zr<sub>3</sub>Si(Si<sub>25</sub>O<sub>73</sub>)(H<sub>2</sub>O)<sub>3</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-42378.html
 
@@ -114289,7 +108118,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/manganoeudialyte
 
-- IMA chemistry: Na<sub>14</sub>Ca<sub>6</sub>Mn<sub>3</sub>Zr<sub>3</sub>[Si<sub>26</sub>O<sub>72</sub>(OH)<sub>2</sub>](H<sub>2</sub>O,Cl,O,OH)<sub>6</sub>
+- IMA chemistry: Na<sub>14</sub>Ca<sub>6</sub>Mn<sub>3</sub>Zr<sub>3</sub>[Si<sub>26</sub>O<sub>72</sub>(OH)<sub>2</sub>]   (H<sub>2</sub>O,Cl,O,OH)<sub>6</sub>
 
 - MinDat URL: http://www.mindat.org/min-39640.html
 
@@ -114426,7 +108255,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/zirsilite-ce
 
-- IMA chemistry: (Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>12</sub>(Ce,Na)<sub>3</sub>Ca<sub>6</sub>Mn<sub>3</sub>Zr<sub>3</sub>NbSi<sub>25</sub>O<sub>73</sub>(OH)<sub>3</sub>(CO<sub>3</sub>)·H<sub>2</sub>O
+- IMA chemistry: (Na,)<sub>12</sub>(Ce,Na)<sub>3</sub>Ca<sub>6</sub>Mn<sub>3</sub>Zr<sub>3</sub>NbSi<sub>25</sub>O<sub>73</sub>(OH)<sub>3</sub>(CO<sub>3</sub>)·H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-25675.html
 
@@ -114434,7 +108263,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_cp}
 
 #####  Strunz 09.CP Cyclosilicate: 12-membered and larger rings
-* `Strunz 09.CP Cyclosilicate: 12-membered and larger rings`
 
 
 - Child of:
@@ -114491,7 +108319,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_d}
 
 ####  Strunz 09.D Inosilicate
-* `Strunz 09.D Inosilicate`
 
 
 - Child of:
@@ -114597,7 +108424,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`29365`](#29365)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -114623,7 +108449,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/fluoro-tremolite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>F<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>F<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-31324.html
 
@@ -114639,7 +108465,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tremolite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Mg<sub>5.0-4.5</sub>Fe<sup>2+</sup><sub>0.0-0.5</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Mg<sub>5.0-4.5</sub>Fe<sup>2+</sup><sub>0.0-0.5</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-4011.html
 
@@ -114688,7 +108514,6 @@ SMR add missing skos broader
 
 - Child of:
  [`29365`](#29365)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -114714,7 +108539,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferro-tschermakite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-1532.html
 
@@ -114729,7 +108554,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tschermakite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-4035.html
 
@@ -114741,7 +108566,6 @@ SMR add missing skos broader
 
 - Child of:
  [`29365`](#29365)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -114889,7 +108713,6 @@ SMR add missing skos broader
 
 - Child of:
  [`29365`](#29365)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -115021,7 +108844,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/actinolite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Mg<sub>4.5-2.5</sub>Fe<sup>2+</sup><sub>0.5-2.5</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Mg<sub>4.5-2.5</sub>Fe<sup>2+</sup><sub>0.5-2.5</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-18.html
 
@@ -115036,7 +108859,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferro-actinolite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Mg<sub>2.5-0.0</sub>Fe<sup>2+</sup><sub>2.5-5.0</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Mg<sub>2.5-0.0</sub>Fe<sup>2+</sup><sub>2.5-5.0</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-1505.html
 
@@ -115048,7 +108871,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`29365`](#29365)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -115160,7 +108982,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferro-ferri-hornblende
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Fe<sup>2+</sup><sub>4</sub>Fe<sup>3+</sup>)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Fe<sup>2+</sup><sub>4</sub>Fe<sup>3+</sup>)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-43379.html
 
@@ -115179,7 +109001,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferro-hornblende
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Fe<sup>2+</sup><sub>4</sub>Al)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Fe<sup>2+</sup><sub>4</sub>Al)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-1519.html
 
@@ -115198,7 +109020,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/magnesio-ferri-fluoro-hornblende
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Mg<sub>4</sub>Fe<sup>3+</sup>)(Si<sub>7</sub>Al)O<sub>22</sub>F<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Mg<sub>4</sub>Fe<sup>3+</sup>)(Si<sub>7</sub>Al)O<sub>22</sub>F<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-43393.html
 
@@ -115217,7 +109039,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/magnesio-hornblende
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Mg<sub>4</sub>Al)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Mg<sub>4</sub>Al)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-2524.html
 
@@ -115229,7 +109051,6 @@ SMR add missing skos broader
 
 - Child of:
  [`29365`](#29365)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -115312,7 +109133,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`29366`](#29366)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -115379,7 +109199,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43507`](#43507)
- [`s09_DE`](#s09_DE)
 
 
 - **Source:**
@@ -115399,7 +109218,6 @@ SMR add missing skos broader
 
 - Child of:
  [`43507`](#43507)
- [`s09_DE`](#s09_DE)
 
 
 - **Source:**
@@ -115419,7 +109237,6 @@ SMR add missing skos broader
 
 - Child of:
  [`43507`](#43507)
- [`s09_DE`](#s09_DE)
 
 
 - **Source:**
@@ -115439,7 +109256,6 @@ SMR add missing skos broader
 
 - Child of:
  [`43507`](#43507)
- [`s09_DE`](#s09_DE)
 
 
 - **Source:**
@@ -115459,7 +109275,6 @@ SMR add missing skos broader
 
 - Child of:
  [`43507`](#43507)
- [`s09_DE`](#s09_DE)
 
 
 - **Source:**
@@ -115479,7 +109294,6 @@ SMR add missing skos broader
 
 - Child of:
  [`43507`](#43507)
- [`s09_DE`](#s09_DE)
 
 
 - **Source:**
@@ -115624,7 +109438,6 @@ SMR add missing skos broader
 
 - Child of:
  [`29366`](#29366)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -115650,7 +109463,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/fluoro-riebeckite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Na<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>F<sub>2</sub>
+- IMA chemistry: Na<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>F<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-43487.html
 
@@ -115669,7 +109482,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/magnesio-riebeckite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Na<sub>2</sub>(Mg<sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Na<sub>2</sub>(Mg<sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-2518.html
 
@@ -115684,7 +109497,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/riebeckite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Na<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Na<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-3418.html
 
@@ -115696,7 +109509,6 @@ SMR add missing skos broader
 
 - Child of:
  [`29366`](#29366)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -115722,7 +109534,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferro-glaucophane
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Na<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Na<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-1516.html
 
@@ -115737,7 +109549,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/glaucophane
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Na<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Na<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-1704.html
 
@@ -115749,7 +109561,6 @@ SMR add missing skos broader
 
 - Child of:
  [`29366`](#29366)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -115821,7 +109632,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43485`](#43485)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -115885,7 +109695,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43485`](#43485)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -115995,7 +109804,6 @@ SMR add missing skos broader
 
 - Child of:
  [`43485`](#43485)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -116017,7 +109825,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/barroisite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>(NaCa)(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: (NaCa)(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-539.html
 
@@ -116029,7 +109837,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43485`](#43485)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -116055,7 +109862,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferri-winchite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>(NaCa)(Mg<sub>4</sub>Fe<sup>3+</sup>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: (NaCa)(Mg<sub>4</sub>Fe<sup>3+</sup>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-27483.html
 
@@ -116070,7 +109877,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/winchite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>(NaCa)(Mg<sub>4</sub>Al)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: (NaCa)(Mg<sub>4</sub>Al)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-4296.html
 
@@ -116082,7 +109889,6 @@ SMR add missing skos broader
 
 - Child of:
  [`43485`](#43485)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -116227,11 +110033,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43524`](#43524)
- [`s09_DE`](#s09_DE)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/cummingtonite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Mg<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Mg<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-1170.html
 
@@ -116243,11 +110048,10 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43524`](#43524)
- [`s09_DE`](#s09_DE)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/grunerite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Fe<sup>2+</sup><sub>2</sub>Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Fe<sup>2+</sup><sub>2</sub>Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-1758.html
 
@@ -116314,7 +110118,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - Child of:
  [`orthoamphibole`](#orthoamphibole)
  [`43524`](#43524)
- [`s09_DD`](#s09_DD)
 
 -
 
@@ -116336,7 +110139,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/anthophyllite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Mg<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Mg<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-254.html
 
@@ -116351,7 +110154,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferro-anthophyllite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Fe<sup>2+</sup><sub>2</sub>Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Fe<sup>2+</sup><sub>2</sub>Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-1464.html
 
@@ -116370,7 +110173,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/proto-anthophyllite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Mg<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Mg<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-11477.html
 
@@ -116389,7 +110192,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/proto-ferro-anthophyllite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Fe<sup>2+</sup><sub>2</sub>Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Fe<sup>2+</sup><sub>2</sub>Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-7254.html
 
@@ -116419,7 +110222,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`52565`](#52565)
- [`s09_DE`](#s09_DE)
 
 
 - **Source:**
@@ -116437,11 +110239,10 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Child of:
  [`52565`](#52565)
- [`s09_DE`](#s09_DE)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/clino-suenoite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Mn<sup>2+</sup><sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Mn<sup>2+</sup><sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-51589.html
 
@@ -116457,7 +110258,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/proto-ferro-suenoite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Mn<sup>2+</sup><sub>2</sub>Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Mn<sup>2+</sup><sub>2</sub>Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-7256.html
 
@@ -116488,7 +110289,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - Child of:
  [`orthoamphibole`](#orthoamphibole)
  [`43524`](#43524)
- [`s09_DD`](#s09_DD)
 
 -
 
@@ -116510,7 +110310,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferro-gedrite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Fe<sup>2+</sup><sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Fe<sup>2+</sup><sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
 
 
 []{#gedrite}
@@ -116523,7 +110323,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/gedrite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Mg<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Mg<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-1665.html
 
@@ -116572,7 +110372,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43530`](#43530)
- [`s09_DE`](#s09_DE)
 
 
 - **Source:**
@@ -116580,7 +110379,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferri-ghoseite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>(NaMn<sup>2+</sup>)(Mg<sub>4</sub>Fe<sup>3+</sup>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: (NaMn<sup>2+</sup>)(Mg<sub>4</sub>Fe<sup>3+</sup>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-25680.html
 
@@ -116592,7 +110391,6 @@ SMR add missing skos broader
 
 - Child of:
  [`43531`](#43531)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -116647,7 +110445,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/clino-ferro-ferri-holmquistite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Li<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Li<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 
 []{#1513}
@@ -116678,7 +110476,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/clino-ferri-holmquistite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Li<sub>2</sub>(Mg<sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Li<sub>2</sub>(Mg<sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 
 []{#43514}
@@ -116754,7 +110552,7 @@ both ferro-holmquistite and holmquistite are often referred to as
 holmquistite.
 - Concept URI: https://w3id.org/geochem/1.0/min/ferro-holmquistite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Li<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Li<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 
 []{#holmquistite}
@@ -116767,7 +110565,7 @@ holmquistite.
 
 - Concept URI: https://w3id.org/geochem/1.0/min/holmquistite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Li<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Li<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-1923.html
 
@@ -116968,7 +110766,6 @@ SMR add missing skos broader
 []{#s09_da}
 
 #####  Strunz 09.DA Inosilicate with 2-periodic single chains, Si2O6; pyroxene family
-* `Strunz 09.DA Inosilicate with 2-periodic single chains, Si2O6; pyroxene family`
 
 
 - Child of:
@@ -117106,6 +110903,8 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Child of:
  [`7630`](#7630)
 
+- A petrological name for the sodium-rich pyroxenes aegirine and
+aegirine-augite. (Mindat)
 
 - **Source:**
 https://w3id.org/geochem/1.0/min/SMRadditions
@@ -117648,6 +111447,8 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Child of:
  [`7630`](#7630)
 
+- A petrological name for the sodium-rich pyroxenes aegirine and
+aegirine-augite. (Mindat)
 
 - **Source:**
 https://w3id.org/geochem/1.0/min/SMRadditions
@@ -117957,7 +111758,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_db}
 
 #####  Strunz 09.DB Inosilicate with 2-periodic single chains, Si2O6; Pyroxene-related minerals
-* `Strunz 09.DB Inosilicate with 2-periodic single chains, Si2O6; Pyroxene-related minerals`
 
 
 - Child of:
@@ -118111,7 +111911,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/paravinogradovite
 
-- IMA chemistry: (Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>(Ti<sup>4+</sup>,Fe<sup>3+</sup>)<sub>4</sub>(Si<sub>2</sub>O<sub>6</sub>)<sub>2</sub>(Si<sub>3</sub>AlO<sub>10</sub>)(OH)<sub>4</sub>·H<sub>2</sub>O
+- IMA chemistry: (Na,)<sub>2</sub>(Ti<sup>4+</sup>,Fe<sup>3+</sup>)<sub>4</sub>(Si<sub>2</sub>O<sub>6</sub>)<sub>2</sub>(Si<sub>3</sub>AlO<sub>10</sub>)(OH)<sub>4</sub>·H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-25599.html
 
@@ -118276,7 +112076,6 @@ SMR add missing skos broader
 []{#s09_dc}
 
 #####  Strunz 09.DC Inosilicate with branched 2-periodic single chains; Si2O6 + 2SiO3 Si4O12
-* `Strunz 09.DC Inosilicate with branched 2-periodic single chains; Si2O6 + 2SiO3 Si4O12`
 
 
 - Child of:
@@ -118391,7 +112190,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tarbagataite
 
-- IMA chemistry: (K<span style="border: 1px solid #333; font-size:7px;"> </span>)Ca(Fe<sup>2+</sup>,Mn)<sub>7</sub>Ti<sub>2</sub>(Si<sub>4</sub>O<sub>12</sub>)<sub>2</sub>O<sub>2</sub>(OH)<sub>5</sub>
+- IMA chemistry: (K)Ca(Fe<sup>2+</sup>,Mn)<sub>7</sub>Ti<sub>2</sub>(Si<sub>4</sub>O<sub>12</sub>)<sub>2</sub>O<sub>2</sub>(OH)<sub>5</sub>
 
 - MinDat URL: http://www.mindat.org/min-41103.html
 
@@ -118515,7 +112314,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_dd}
 
 #####  Strunz 09.DD Inosilicate with 2-periodic double chains, Si4O11; Orthoamphiboles
-* `Strunz 09.DD Inosilicate with 2-periodic double chains, Si4O11; Orthoamphiboles`
 
 
 - Child of:
@@ -118567,7 +112365,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/proto-ferro-suenoite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Mn<sup>2+</sup><sub>2</sub>Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Mn<sup>2+</sup><sub>2</sub>Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-7256.html
 
@@ -118652,7 +112450,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - Child of:
  [`orthoamphibole`](#orthoamphibole)
  [`43524`](#43524)
- [`s09_DD`](#s09_DD)
 
 -
 
@@ -118674,7 +112471,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/anthophyllite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Mg<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Mg<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-254.html
 
@@ -118689,7 +112486,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferro-anthophyllite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Fe<sup>2+</sup><sub>2</sub>Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Fe<sup>2+</sup><sub>2</sub>Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-1464.html
 
@@ -118708,7 +112505,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/proto-anthophyllite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Mg<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Mg<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-11477.html
 
@@ -118727,7 +112524,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/proto-ferro-anthophyllite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Fe<sup>2+</sup><sub>2</sub>Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Fe<sup>2+</sup><sub>2</sub>Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-7254.html
 
@@ -118771,7 +112568,7 @@ both ferro-holmquistite and holmquistite are often referred to as
 holmquistite.
 - Concept URI: https://w3id.org/geochem/1.0/min/ferro-holmquistite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Li<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Li<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 
 []{#holmquistite}
@@ -118784,7 +112581,7 @@ holmquistite.
 
 - Concept URI: https://w3id.org/geochem/1.0/min/holmquistite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Li<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Li<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-1923.html
 
@@ -118797,7 +112594,6 @@ holmquistite.
 - Child of:
  [`orthoamphibole`](#orthoamphibole)
  [`43524`](#43524)
- [`s09_DD`](#s09_DD)
 
 -
 
@@ -118819,7 +112615,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferro-gedrite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Fe<sup>2+</sup><sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Fe<sup>2+</sup><sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
 
 
 []{#gedrite}
@@ -118832,7 +112628,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/gedrite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Mg<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Mg<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-1665.html
 
@@ -118891,358 +112687,15 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: https://www.mindat.org/min-43390.html
 
 
-[]{#43520}
-
-######  Anthophyllite Root Name Group
-
-
-- Child of:
- [`orthoamphibole`](#orthoamphibole)
- [`43524`](#43524)
- [`s09_DD`](#s09_DD)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/43520
-
-- MinDat URL: https://mindat.org/min-43520.html
-
-
-[]{#anthophyllite}
-
-#######  Anthophyllite
-
-
-- Child of:
- [`43520`](#43520)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/anthophyllite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Mg<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-254.html
-
-
-[]{#ferro-anthophyllite}
-
-#######  Ferro-anthophyllite
-
-
-- Child of:
- [`43520`](#43520)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferro-anthophyllite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Fe<sup>2+</sup><sub>2</sub>Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-1464.html
-
-
-[]{#proto-anthophyllite}
-
-#######  Proto-anthophyllite
-
-
-- Child of:
- [`43520`](#43520)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/proto-anthophyllite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Mg<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-11477.html
-
-
-[]{#proto-ferro-anthophyllite}
-
-#######  Proto-ferro-anthophyllite
-
-
-- Child of:
- [`43520`](#43520)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/proto-ferro-anthophyllite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Fe<sup>2+</sup><sub>2</sub>Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-7254.html
-
-
-[]{#8963}
-
-######  Gedrite Root Name Group
-
-
-- Child of:
- [`orthoamphibole`](#orthoamphibole)
- [`43524`](#43524)
- [`s09_DD`](#s09_DD)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/8963
-
-- MinDat URL: https://mindat.org/min-8963.html
-
-
-[]{#ferro-gedrite}
-
-#######  Ferro-gedrite
-
-
-- Child of:
- [`8963`](#8963)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferro-gedrite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Fe<sup>2+</sup><sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-
-[]{#gedrite}
-
-#######  Gedrite
-
-
-- Child of:
- [`8963`](#8963)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gedrite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Mg<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-1665.html
-
-
 []{#s09_de}
 
 #####  Strunz 09.DE Inosilicate with 2-periodic double chains, Si4O11; Clinoamphiboles
-* `Strunz 09.DE Inosilicate with 2-periodic double chains, Si4O11; Clinoamphiboles`
 
 
 - Child of:
  [`s09_D`](#s09_D)
 
 - Concept URI: https://w3id.org/geochem/1.0/strunzgroup/s09_DE
-
-
-[]{#clino-ferro-suenoite}
-
-######  Clino-ferro-suenoite
-
-
-- Child of:
- [`52565`](#52565)
- [`s09_DE`](#s09_DE)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/clino-ferro-suenoite
-
-- MinDat URL: https://www.mindat.org/min-52566.html
-
-
-[]{#clino-suenoite}
-
-######  Clino-suenoite
-
-
-- Child of:
- [`52565`](#52565)
- [`s09_DE`](#s09_DE)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/clino-suenoite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Mn<sup>2+</sup><sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-51589.html
-
-
-[]{#cummingtonite}
-
-######  Cummingtonite
-
-
-- Child of:
- [`43524`](#43524)
- [`s09_DE`](#s09_DE)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/cummingtonite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Mg<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-1170.html
-
-
-[]{#ferri-fluoro-leakeite}
-
-######  Ferri-fluoro-leakeite
-
-
-- Child of:
- [`43507`](#43507)
- [`s09_DE`](#s09_DE)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferri-fluoro-leakeite
-
-- IMA chemistry: NaNa<sub>2</sub>(Mg<sub>2</sub>Fe<sup>3+</sup><sub>2</sub>Li)Si<sub>8</sub>O<sub>22</sub>F<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-39878.html
-
-
-[]{#ferri-ghoseite}
-
-######  Ferri-ghoseite
-
-
-- Child of:
- [`43530`](#43530)
- [`s09_DE`](#s09_DE)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferri-ghoseite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>(NaMn<sup>2+</sup>)(Mg<sub>4</sub>Fe<sup>3+</sup>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-25680.html
-
-
-[]{#ferri-leakeite}
-
-######  Ferri-leakeite
-
-
-- Child of:
- [`43507`](#43507)
- [`s09_DE`](#s09_DE)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferri-leakeite
-
-- IMA chemistry: NaNa<sub>2</sub>(Mg<sub>2</sub>Fe<sup>3+</sup><sub>2</sub>Li)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-2362.html
-
-
-[]{#ferro-ferri-fluoro-leakeite}
-
-######  Ferro-ferri-fluoro-leakeite
-
-
-- Child of:
- [`43507`](#43507)
- [`s09_DE`](#s09_DE)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferro-ferri-fluoro-leakeite
-
-- IMA chemistry: NaNa<sub>2</sub>(Fe<sup>2+</sup><sub>2</sub>Fe<sup>3+</sup><sub>2</sub>Li)Si<sub>8</sub>O<sub>22</sub>F<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-6951.html
-
-
-[]{#fluoro-leakeite}
-
-######  Fluoro-leakeite
-
-
-- Child of:
- [`43507`](#43507)
- [`s09_DE`](#s09_DE)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fluoro-leakeite
-
-- IMA chemistry: NaNa<sub>2</sub>(Mg<sub>2</sub>Al<sub>2</sub>Li)Si<sub>8</sub>O<sub>22</sub>F<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-39547.html
-
-
-[]{#grunerite}
-
-######  Grunerite
-
-
-- Child of:
- [`43524`](#43524)
- [`s09_DE`](#s09_DE)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/grunerite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Fe<sup>2+</sup><sub>2</sub>Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-1758.html
-
-
-[]{#potassic-ferri-leakeite}
-
-######  Potassic-ferri-leakeite
-
-
-- Child of:
- [`43507`](#43507)
- [`s09_DE`](#s09_DE)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/potassic-ferri-leakeite
-
-- IMA chemistry: KNa<sub>2</sub>(Mg<sub>2</sub>Fe<sup>3+</sup><sub>2</sub>Li)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-11434.html
-
-
-[]{#potassic-mangani-leakeite}
-
-######  Potassic-mangani-leakeite
-
-
-- Child of:
- [`43507`](#43507)
- [`s09_DE`](#s09_DE)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/potassic-mangani-leakeite
-
-- IMA chemistry: KNa<sub>2</sub>(Mg<sub>2</sub>Mn<sup>3+</sup><sub>2</sub>Li)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-2255.html
 
 
 []{#29365}
@@ -119286,7 +112739,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`29365`](#29365)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -119312,7 +112764,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/fluoro-tremolite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>F<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>F<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-31324.html
 
@@ -119328,7 +112780,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tremolite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Mg<sub>5.0-4.5</sub>Fe<sup>2+</sup><sub>0.0-0.5</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Mg<sub>5.0-4.5</sub>Fe<sup>2+</sup><sub>0.0-0.5</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-4011.html
 
@@ -119377,7 +112829,6 @@ SMR add missing skos broader
 
 - Child of:
  [`29365`](#29365)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -119403,7 +112854,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferro-tschermakite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-1532.html
 
@@ -119418,7 +112869,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/tschermakite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-4035.html
 
@@ -119430,7 +112881,6 @@ SMR add missing skos broader
 
 - Child of:
  [`29365`](#29365)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -119578,7 +113028,6 @@ SMR add missing skos broader
 
 - Child of:
  [`29365`](#29365)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -119710,7 +113159,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/actinolite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Mg<sub>4.5-2.5</sub>Fe<sup>2+</sup><sub>0.5-2.5</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Mg<sub>4.5-2.5</sub>Fe<sup>2+</sup><sub>0.5-2.5</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-18.html
 
@@ -119725,7 +113174,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferro-actinolite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Mg<sub>2.5-0.0</sub>Fe<sup>2+</sup><sub>2.5-5.0</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Mg<sub>2.5-0.0</sub>Fe<sup>2+</sup><sub>2.5-5.0</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-1505.html
 
@@ -119737,7 +113186,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`29365`](#29365)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -119849,7 +113297,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferro-ferri-hornblende
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Fe<sup>2+</sup><sub>4</sub>Fe<sup>3+</sup>)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Fe<sup>2+</sup><sub>4</sub>Fe<sup>3+</sup>)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-43379.html
 
@@ -119868,7 +113316,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferro-hornblende
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Fe<sup>2+</sup><sub>4</sub>Al)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Fe<sup>2+</sup><sub>4</sub>Al)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-1519.html
 
@@ -119887,7 +113335,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/magnesio-ferri-fluoro-hornblende
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Mg<sub>4</sub>Fe<sup>3+</sup>)(Si<sub>7</sub>Al)O<sub>22</sub>F<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Mg<sub>4</sub>Fe<sup>3+</sup>)(Si<sub>7</sub>Al)O<sub>22</sub>F<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-43393.html
 
@@ -119906,7 +113354,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/magnesio-hornblende
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Mg<sub>4</sub>Al)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>2</sub>(Mg<sub>4</sub>Al)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-2524.html
 
@@ -119918,7 +113366,6 @@ SMR add missing skos broader
 
 - Child of:
  [`29365`](#29365)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -120001,7 +113448,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`29366`](#29366)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -120068,7 +113514,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43507`](#43507)
- [`s09_DE`](#s09_DE)
 
 
 - **Source:**
@@ -120088,7 +113533,6 @@ SMR add missing skos broader
 
 - Child of:
  [`43507`](#43507)
- [`s09_DE`](#s09_DE)
 
 
 - **Source:**
@@ -120108,7 +113552,6 @@ SMR add missing skos broader
 
 - Child of:
  [`43507`](#43507)
- [`s09_DE`](#s09_DE)
 
 
 - **Source:**
@@ -120128,7 +113571,6 @@ SMR add missing skos broader
 
 - Child of:
  [`43507`](#43507)
- [`s09_DE`](#s09_DE)
 
 
 - **Source:**
@@ -120148,7 +113590,6 @@ SMR add missing skos broader
 
 - Child of:
  [`43507`](#43507)
- [`s09_DE`](#s09_DE)
 
 
 - **Source:**
@@ -120168,7 +113609,6 @@ SMR add missing skos broader
 
 - Child of:
  [`43507`](#43507)
- [`s09_DE`](#s09_DE)
 
 
 - **Source:**
@@ -120313,7 +113753,6 @@ SMR add missing skos broader
 
 - Child of:
  [`29366`](#29366)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -120339,7 +113778,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/fluoro-riebeckite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Na<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>F<sub>2</sub>
+- IMA chemistry: Na<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>F<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-43487.html
 
@@ -120358,7 +113797,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/magnesio-riebeckite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Na<sub>2</sub>(Mg<sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Na<sub>2</sub>(Mg<sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-2518.html
 
@@ -120373,7 +113812,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/riebeckite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Na<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Na<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-3418.html
 
@@ -120385,7 +113824,6 @@ SMR add missing skos broader
 
 - Child of:
  [`29366`](#29366)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -120411,7 +113849,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferro-glaucophane
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Na<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Na<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-1516.html
 
@@ -120426,7 +113864,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/glaucophane
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Na<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: Na<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-1704.html
 
@@ -120438,7 +113876,6 @@ SMR add missing skos broader
 
 - Child of:
  [`29366`](#29366)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -120484,579 +113921,6 @@ SMR add missing skos broader
 - MinDat URL: https://www.mindat.org/min-2267.html
 
 
-[]{#36873}
-
-######  Tremolite Root Name Group
-
-
-- Child of:
- [`29365`](#29365)
- [`s09_DE`](#s09_DE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/36873
-
-- MinDat URL: https://mindat.org/min-36873.html
-
-
-[]{#fluoro-tremolite}
-
-#######  Fluoro-tremolite
-
-
-- Child of:
- [`36873`](#36873)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fluoro-tremolite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>F<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-31324.html
-
-
-[]{#tremolite}
-
-#######  Tremolite
-
-
-- Child of:
- [`calc-silicatemineral`](#calc-silicatemineral)
- [`36873`](#36873)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tremolite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Mg<sub>5.0-4.5</sub>Fe<sup>2+</sup><sub>0.0-0.5</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-4011.html
-
-
-[]{#3889}
-
-######  Taramite Root Name Group
-
-
-- Child of:
- [`43485`](#43485)
- [`s09_DE`](#s09_DE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/3889
-
-- MinDat URL: https://mindat.org/min-3889.html
-
-
-[]{#ferro-taramite}
-
-#######  Ferro-taramite
-
-
-- Child of:
- [`3889`](#3889)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferro-taramite
-
-- IMA chemistry: Na(NaCa)(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-106.html
-
-
-[]{#potassic-ferro-ferri-taramite}
-
-#######  Potassic-ferro-ferri-taramite
-
-
-- Child of:
- [`3889`](#3889)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/potassic-ferro-ferri-taramite
-
-- IMA chemistry: K(NaCa)(Fe<sup>2+</sup><sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-46123.html
-
-
-[]{#taramite}
-
-#######  Taramite
-
-
-- Child of:
- [`3889`](#3889)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/taramite
-
-- IMA chemistry: Na(NaCa)(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-6798.html
-
-
-[]{#39388}
-
-######  Katophorite Root Name Group
-
-
-- Child of:
- [`43485`](#43485)
- [`s09_DE`](#s09_DE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/39388
-
-- MinDat URL: https://mindat.org/min-39388.html
-
-
-[]{#ferri-fluoro-katophorite}
-
-#######  Ferri-fluoro-katophorite
-
-
-- Child of:
- [`39388`](#39388)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferri-fluoro-katophorite
-
-- IMA chemistry: Na(NaCa)(Mg<sub>4</sub>Fe<sup>3+</sup>)(Si<sub>7</sub>Al)O<sub>22</sub>F<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-39442.html
-
-
-[]{#ferri-katophorite}
-
-#######  Ferri-katophorite
-
-
-- Child of:
- [`39388`](#39388)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferri-katophorite
-
-- IMA chemistry: Na(NaCa)(Mg<sub>4</sub>Fe<sup>3+</sup>)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-2477.html
-
-
-[]{#ferro-ferri-katophorite}
-
-#######  Ferro-ferri-katophorite
-
-
-- Child of:
- [`39388`](#39388)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferro-ferri-katophorite
-
-- IMA chemistry: Na(NaCa)(Fe<sup>2+</sup><sub>4</sub>Fe<sup>3+</sup>)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-1494.html
-
-
-[]{#ferro-katophorite}
-
-#######  Ferro-katophorite
-
-
-- Child of:
- [`39388`](#39388)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferro-katophorite
-
-- IMA chemistry: Na(NaCa)(Fe<sup>2+</sup><sub>4</sub>Al)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-2168.html
-
-
-[]{#katophorite}
-
-#######  Katophorite
-
-
-- Child of:
- [`39388`](#39388)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/katophorite
-
-- IMA chemistry: Na(NaCa)(Mg<sub>4</sub>Al)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-7163.html
-
-
-[]{#43418}
-
-######  Tschermakite Root Name Group
-
-
-- Child of:
- [`29365`](#29365)
- [`s09_DE`](#s09_DE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/43418
-
-- MinDat URL: https://mindat.org/min-43418.html
-
-
-[]{#ferro-tschermakite}
-
-#######  Ferro-tschermakite
-
-
-- Child of:
- [`43418`](#43418)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferro-tschermakite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-1532.html
-
-
-[]{#tschermakite}
-
-#######  Tschermakite
-
-
-- Child of:
- [`43418`](#43418)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tschermakite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Ca<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-4035.html
-
-
-[]{#43429}
-
-######  Pargasite Root Name Group
-
-
-- Child of:
- [`29365`](#29365)
- [`s09_DE`](#s09_DE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/43429
-
-- MinDat URL: https://mindat.org/min-43429.html
-
-
-[]{#chromio-pargasite}
-
-#######  Chromio-pargasite
-
-
-- Child of:
- [`43429`](#43429)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/chromio-pargasite
-
-- IMA chemistry: NaCa<sub>2</sub>(Mg<sub>4</sub>Cr)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-41970.html
-
-
-[]{#ferro-pargasite}
-
-#######  Ferro-pargasite
-
-
-- Child of:
- [`43429`](#43429)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferro-pargasite
-
-- IMA chemistry: NaCa<sub>2</sub>(Fe<sup>2+</sup><sub>4</sub>Al)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-1524.html
-
-
-[]{#fluoro-pargasite}
-
-#######  Fluoro-pargasite
-
-
-- Child of:
- [`43429`](#43429)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fluoro-pargasite
-
-- IMA chemistry: NaCa<sub>2</sub>(Mg<sub>4</sub>Al)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>F<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-27537.html
-
-
-[]{#pargasite}
-
-#######  Pargasite
-
-
-- Child of:
- [`43429`](#43429)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/pargasite
-
-- IMA chemistry: NaCa<sub>2</sub>(Mg<sub>4</sub>Al)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-3119.html
-
-
-[]{#potassic-ferro-pargasite}
-
-#######  Potassic-ferro-pargasite
-
-
-- Child of:
- [`43429`](#43429)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/potassic-ferro-pargasite
-
-- IMA chemistry: KCa<sub>2</sub>(Fe<sup>2+</sup><sub>4</sub>Al)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-35789.html
-
-
-[]{#potassic-fluoro-pargasite}
-
-#######  Potassic-fluoro-pargasite
-
-
-- Child of:
- [`43429`](#43429)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/potassic-fluoro-pargasite
-
-- IMA chemistry: KCa<sub>2</sub>(Mg<sub>4</sub>Al)Si<sub>6</sub>Al<sub>2</sub>O<sub>22</sub>F<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-42094.html
-
-
-[]{#potassic-pargasite}
-
-#######  Potassic-pargasite
-
-
-- Child of:
- [`43429`](#43429)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/potassic-pargasite
-
-- IMA chemistry: KCa<sub>2</sub>(Mg<sub>4</sub>Al)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-7246.html
-
-
-[]{#43433}
-
-######  Hastingsite Root Name Group
-
-
-- Child of:
- [`29365`](#29365)
- [`s09_DE`](#s09_DE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/43433
-
-- MinDat URL: https://mindat.org/min-43433.html
-
-
-[]{#hastingsite}
-
-#######  Hastingsite
-
-
-- Child of:
- [`43433`](#43433)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hastingsite
-
-- IMA chemistry: NaCa<sub>2</sub>(Fe<sup>2+</sup><sub>4</sub>Fe<sup>3+</sup>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-1824.html
-
-
-[]{#magnesio-fluoro-hastingsite}
-
-#######  Magnesio-fluoro-hastingsite
-
-
-- Child of:
- [`43433`](#43433)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/magnesio-fluoro-hastingsite
-
-- IMA chemistry: NaCa<sub>2</sub>(Mg<sub>4</sub>Fe<sup>3+</sup>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>F<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-27442.html
-
-
-[]{#magnesio-hastingsite}
-
-#######  Magnesio-hastingsite
-
-
-- Child of:
- [`43433`](#43433)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/magnesio-hastingsite
-
-- IMA chemistry: NaCa<sub>2</sub>(Mg<sub>4</sub>Fe<sup>3+</sup>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-2483.html
-
-
-[]{#potassic-chloro-hastingsite}
-
-#######  Potassic-chloro-hastingsite
-
-
-- Child of:
- [`43433`](#43433)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/potassic-chloro-hastingsite
-
-- IMA chemistry: KCa<sub>2</sub>(Fe<sup>2+</sup><sub>4</sub>Fe<sup>3+</sup>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>Cl<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-27445.html
-
-
-[]{#potassic-magnesio-hastingsite}
-
-#######  Potassic-magnesio-hastingsite
-
-
-- Child of:
- [`43433`](#43433)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/potassic-magnesio-hastingsite
-
-- IMA chemistry: KCa<sub>2</sub>(Mg<sub>4</sub>Fe<sup>3+</sup>)(Si<sub>6</sub>Al<sub>2</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-30935.html
-
-
-[]{#43476}
-
-######  Barroisite Root Name Group
-
-
-- Child of:
- [`43485`](#43485)
- [`s09_DE`](#s09_DE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/43476
-
-- MinDat URL: https://mindat.org/min-43476.html
-
-
-[]{#barroisite}
-
-#######  Barroisite
-
-
-- Child of:
- [`43476`](#43476)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/barroisite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>(NaCa)(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-539.html
-
-
 []{#43485}
 
 ######  Sodium-Calcium Amphibole Subgroup
@@ -121083,7 +113947,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43485`](#43485)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -121147,7 +114010,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43485`](#43485)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -121257,7 +114119,6 @@ SMR add missing skos broader
 
 - Child of:
  [`43485`](#43485)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -121279,7 +114140,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/barroisite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>(NaCa)(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: (NaCa)(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-539.html
 
@@ -121291,7 +114152,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43485`](#43485)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -121317,7 +114177,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferri-winchite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>(NaCa)(Mg<sub>4</sub>Fe<sup>3+</sup>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: (NaCa)(Mg<sub>4</sub>Fe<sup>3+</sup>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-27483.html
 
@@ -121332,7 +114192,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/winchite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>(NaCa)(Mg<sub>4</sub>Al)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: (NaCa)(Mg<sub>4</sub>Al)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-4296.html
 
@@ -121344,7 +114204,6 @@ SMR add missing skos broader
 
 - Child of:
  [`43485`](#43485)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -121464,55 +114323,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: http://www.mindat.org/min-3416.html
 
 
-[]{#43501}
-
-######  Nybøite Root Name Group
-
-
-- Child of:
- [`29366`](#29366)
- [`s09_DE`](#s09_DE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/43501
-
-- MinDat URL: https://mindat.org/min-43501.html
-
-
-[]{#ferro-ferri-nyboite}
-
-#######  Ferro-ferri-nybøite
-
-
-- Child of:
- [`43501`](#43501)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferro-ferri-nyboite
-
-- IMA chemistry: NaNa<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-6926.html
-
-
-[]{#nyboite}
-
-#######  Nybøite
-
-
-- Child of:
- [`43501`](#43501)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/nyboite
-
-- IMA chemistry: NaNa<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-2944.html
-
-
 []{#43514}
 
 ######  Pedrizite Root Name Group
@@ -121591,7 +114401,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Child of:
  [`43530`](#43530)
- [`s09_DE`](#s09_DE)
 
 
 - **Source:**
@@ -121599,7 +114408,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferri-ghoseite
 
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>(NaMn<sup>2+</sup>)(Mg<sub>4</sub>Fe<sup>3+</sup>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
+- IMA chemistry: (NaMn<sup>2+</sup>)(Mg<sub>4</sub>Fe<sup>3+</sup>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-25680.html
 
@@ -121611,7 +114420,6 @@ SMR add missing skos broader
 
 - Child of:
  [`43531`](#43531)
- [`s09_DE`](#s09_DE)
 
 -
 
@@ -121903,40 +114711,6 @@ SMR add missing skos broader
 - MinDat URL: https://www.mindat.org/min-27572.html
 
 
-[]{#53896}
-
-######  Hjalmarite Root Name Group
-
-
-- Child of:
- [`43531`](#43531)
- [`s09_DE`](#s09_DE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/53896
-
-- MinDat URL: https://mindat.org/min-53896.html
-
-
-[]{#hjalmarite}
-
-#######  Hjalmarite
-
-
-- Child of:
- [`53896`](#53896)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hjalmarite
-
-- IMA chemistry: Na(NaMn)Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-52578.html
-
-
 []{#8603}
 
 ######  Arfvedsonite Root Name Group
@@ -122062,345 +114836,6 @@ SMR add missing skos broader
 - MinDat URL: https://www.mindat.org/min-29104.html
 
 
-[]{#8624}
-
-######  Winchite Root Name Group
-
-
-- Child of:
- [`43485`](#43485)
- [`s09_DE`](#s09_DE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/8624
-
-- MinDat URL: https://mindat.org/min-8624.html
-
-
-[]{#ferri-winchite}
-
-#######  Ferri-winchite
-
-
-- Child of:
- [`8624`](#8624)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferri-winchite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>(NaCa)(Mg<sub>4</sub>Fe<sup>3+</sup>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-27483.html
-
-
-[]{#winchite}
-
-#######  Winchite
-
-
-- Child of:
- [`8624`](#8624)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/winchite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>(NaCa)(Mg<sub>4</sub>Al)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-4296.html
-
-
-[]{#8698}
-
-######  Riebeckite Root Name Group
-
-
-- Child of:
- [`29366`](#29366)
- [`s09_DE`](#s09_DE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/8698
-
-- MinDat URL: https://mindat.org/min-8698.html
-
-
-[]{#fluoro-riebeckite}
-
-#######  Fluoro-riebeckite
-
-
-- Child of:
- [`8698`](#8698)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fluoro-riebeckite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Na<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>F<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-43487.html
-
-
-[]{#magnesio-riebeckite}
-
-#######  Magnesio-riebeckite
-
-
-- Child of:
- [`8698`](#8698)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/magnesio-riebeckite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Na<sub>2</sub>(Mg<sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-2518.html
-
-
-[]{#riebeckite}
-
-#######  Riebeckite
-
-
-- Child of:
- [`8698`](#8698)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/riebeckite
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Na<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-3418.html
-
-
-[]{#8699}
-
-######  Richterite Root Name Group
-
-
-- Child of:
- [`43485`](#43485)
- [`s09_DE`](#s09_DE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/8699
-
-- MinDat URL: https://mindat.org/min-8699.html
-
-
-[]{#ferro-richterite}
-
-#######  Ferro-richterite
-
-
-- Child of:
- [`8699`](#8699)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferro-richterite
-
-- IMA chemistry: Na(NaCa)Fe<sup>2+</sup><sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-1526.html
-
-
-[]{#fluoro-richterite}
-
-#######  Fluoro-richterite
-
-
-- Child of:
- [`8699`](#8699)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fluoro-richterite
-
-- IMA chemistry: Na(NaCa)Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>F<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-6952.html
-
-
-[]{#potassic-fluoro-richterite}
-
-#######  Potassic-fluoro-richterite
-
-
-- Child of:
- [`8699`](#8699)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/potassic-fluoro-richterite
-
-- IMA chemistry: K(NaCa)Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>F<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-7244.html
-
-
-[]{#potassic-richterite}
-
-#######  Potassic-richterite
-
-
-- Child of:
- [`8699`](#8699)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/potassic-richterite
-
-- IMA chemistry: K(NaCa)Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-7247.html
-
-
-[]{#potassiumrichterite}
-
-#######  Potassium richterite
-
-
-- Child of:
- [`8699`](#8699)
-
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/SMRadditions
-
-- Concept URI: https://w3id.org/geochem/1.0/min/potassiumrichterite
-
-- MinDat URL: https://www.mindat.org/min-47873.html
-
-
-[]{#richterite}
-
-#######  Richterite
-
-
-- Child of:
- [`8699`](#8699)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/richterite
-
-- IMA chemistry: Na(NaCa)Mg<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-3416.html
-
-
-[]{#8787}
-
-######  Sadanagaite Root Name Group
-
-
-- Child of:
- [`29365`](#29365)
- [`s09_DE`](#s09_DE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/8787
-
-- MinDat URL: https://mindat.org/min-8787.html
-
-
-[]{#potassic-ferro-ferri-sadanagaite}
-
-#######  Potassic-ferro-ferri-sadanagaite
-
-
-- Child of:
- [`8787`](#8787)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/potassic-ferro-ferri-sadanagaite
-
-- IMA chemistry: KCa<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Fe<sup>3+</sup><sub>2</sub>)(Si<sub>5</sub>Al<sub>3</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-7033.html
-
-
-[]{#potassic-ferro-sadanagaite}
-
-#######  Potassic-ferro-sadanagaite
-
-
-- Child of:
- [`8787`](#8787)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/potassic-ferro-sadanagaite
-
-- IMA chemistry: KCa<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)(Si<sub>5</sub>Al<sub>3</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-7248.html
-
-
-[]{#potassic-sadanagaite}
-
-#######  Potassic-sadanagaite
-
-
-- Child of:
- [`8787`](#8787)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/potassic-sadanagaite
-
-- IMA chemistry: KCa<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>5</sub>Al<sub>3</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-7245.html
-
-
-[]{#sadanagaite}
-
-#######  Sadanagaite
-
-
-- Child of:
- [`8787`](#8787)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/sadanagaite
-
-- IMA chemistry: NaCa<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)(Si<sub>5</sub>Al<sub>3</sub>)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-3499.html
-
-
 []{#8946}
 
 ######  Kaersutite Root Name Group
@@ -122454,180 +114889,9 @@ SMR add missing skos broader
 - MinDat URL: http://www.mindat.org/min-2129.html
 
 
-[]{#8962}
-
-######  Glaucophane Root Name Group
-
-
-- Child of:
- [`29366`](#29366)
- [`s09_DE`](#s09_DE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/8962
-
-- MinDat URL: https://mindat.org/min-8962.html
-
-
-[]{#ferro-glaucophane}
-
-#######  Ferro-glaucophane
-
-
-- Child of:
- [`8962`](#8962)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferro-glaucophane
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Na<sub>2</sub>(Fe<sup>2+</sup><sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-1516.html
-
-
-[]{#glaucophane}
-
-#######  Glaucophane
-
-
-- Child of:
- [`8962`](#8962)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/glaucophane
-
-- IMA chemistry: <span style="border: 1px solid #333; font-size:7px;"> </span>Na<sub>2</sub>(Mg<sub>3</sub>Al<sub>2</sub>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-1704.html
-
-
-[]{#8966}
-
-######  Edenite Root Name Group
-
-
-- Child of:
- [`29365`](#29365)
- [`s09_DE`](#s09_DE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/8966
-
-- MinDat URL: https://mindat.org/min-8966.html
-
-
-[]{#edenite}
-
-#######  Edenite
-
-
-- Child of:
- [`8966`](#8966)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/edenite
-
-- IMA chemistry: NaCa<sub>2</sub>Mg<sub>5</sub>(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-1351.html
-
-
-[]{#ferro-edenite}
-
-#######  Ferro-edenite
-
-
-- Child of:
- [`8966`](#8966)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/ferro-edenite
-
-- IMA chemistry: NaCa<sub>2</sub>Fe<sup>2+</sup><sub>5</sub>(Si<sub>7</sub>Al)O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-1472.html
-
-
-[]{#fluoro-edenite}
-
-#######  Fluoro-edenite
-
-
-- Child of:
- [`8966`](#8966)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/fluoro-edenite
-
-- IMA chemistry: NaCa<sub>2</sub>Mg<sub>5</sub>(Si<sub>7</sub>Al)O<sub>22</sub>F<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-6950.html
-
-
-[]{#8967}
-
-######  Eckermannite Root Name Group
-
-
-- Child of:
- [`29366`](#29366)
- [`s09_DE`](#s09_DE)
-
--
-
-- **Source:**
-https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
-
-- Concept URI: https://w3id.org/geochem/1.0/mingroup/8967
-
-- MinDat URL: https://mindat.org/min-8967.html
-
-
-[]{#eckermannite}
-
-#######  Eckermannite
-
-
-- Child of:
- [`8967`](#8967)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/eckermannite
-
-- IMA chemistry: NaNa<sub>2</sub>(Mg<sub>4</sub>Al)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-1348.html
-
-
-[]{#mangano-ferri-eckermannite}
-
-#######  Mangano-ferri-eckermannite
-
-
-- Child of:
- [`8967`](#8967)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/mangano-ferri-eckermannite
-
-- IMA chemistry: NaNa<sub>2</sub>(Mn<sup>2+</sup><sub>4</sub>Fe<sup>3+</sup>)Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-2267.html
-
-
 []{#s09_df}
 
 #####  Strunz 09.DF Inosilicate with 2-periodic multiple chains
-* `Strunz 09.DF Inosilicate with 2-periodic multiple chains`
 
 
 - Child of:
@@ -122774,7 +115038,6 @@ SMR add missing skos broader
 []{#s09_dg}
 
 #####  Strunz 09.DG Inosilicate with 3-periodic single and multiple chains
-* `Strunz 09.DG Inosilicate with 3-periodic single and multiple chains`
 
 
 - Child of:
@@ -122825,7 +115088,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/charoite
 
-- IMA chemistry: (K,Sr,Ba,Mn)<sub>15-16</sub>(Ca,Na)<sub>32</sub>[Si<sub>70</sub>(O,OH)<sub>180</sub>](OH,F)<sub>4</sub>·nH<sub>2</sub>O
+- IMA chemistry: (K,Sr,Ba,Mn)<sub>15-16</sub>(Ca,Na)<sub>32</sub>[Si<sub>70</sub>(O,OH)<sub>180</sub>]     (OH,F)<sub>4</sub>·nH<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-972.html
 
@@ -122977,7 +115240,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/miserite
 
-- IMA chemistry: K<sub>1.5-x</sub>(Ca,Y,REE)<sub>5</sub>[Si<sub>6</sub>O<sub>15</sub>][Si<sub>2</sub>O<sub>7</sub>](OH,F)<sub>2</sub>·yH<sub>2</sub>O
+- IMA chemistry: K<sub>1.5-x</sub>(Ca,Y,REE)<sub>5</sub>[Si<sub>6</sub>O<sub>15</sub>][Si<sub>2</sub>O<sub>7</sub>]     (OH,F)<sub>2</sub>·yH<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-2727.html
 
@@ -123147,7 +115410,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/whelanite
 
-- IMA chemistry: Cu<sub>2</sub>Ca<sub>6</sub>[Si<sub>6</sub>O<sub>17</sub>(OH)](CO<sub>3</sub>)(OH)<sub>3</sub>(H<sub>2</sub>O)<sub>2</sub>
+- IMA chemistry: Cu<sub>2</sub>Ca<sub>6</sub>[Si<sub>6</sub>O<sub>17</sub>(OH)]     (CO<sub>3</sub>)(OH)<sub>3</sub>(H<sub>2</sub>O)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-11215.html
 
@@ -123195,7 +115458,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/yuksporite
 
-- IMA chemistry: K<sub>4</sub>(Ca,Na)<sub>14</sub>(Sr,Ba)<sub>2</sub>(<span style="border: 1px solid #333; font-size:7px;"> </span>,Mn,Fe)(Ti,Nb)<sub>4</sub>(O,OH)<sub>4</sub>(Si<sub>6</sub>O<sub>17</sub>)<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>3</sub>(H<sub>2</sub>O,OH)<sub>3</sub>
+- IMA chemistry: K<sub>4</sub>(Ca,Na)<sub>14</sub>(Sr,Ba)<sub>2</sub>(,Mn,Fe)(Ti,Nb)<sub>4</sub>(O,OH)<sub>4</sub>(Si<sub>6</sub>O<sub>17</sub>)<sub>2</sub>(Si<sub>2</sub>O<sub>7</sub>)<sub>3</sub>(H<sub>2</sub>O,OH)<sub>3</sub>
 
 - MinDat URL: http://www.mindat.org/min-4378.html
 
@@ -123612,7 +115875,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_dh}
 
 #####  Strunz 09.DH Inosilicate with 4-periodic single chains, Si4O12
-* `Strunz 09.DH Inosilicate with 4-periodic single chains, Si4O12`
 
 
 - Child of:
@@ -124145,7 +116407,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_dj}
 
 #####  Strunz 09.DJ Inosilicate with 4-periodic double and triple chains
-* `Strunz 09.DJ Inosilicate with 4-periodic double and triple chains`
 
 
 - Child of:
@@ -124247,7 +116508,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_dk}
 
 #####  Strunz 09.DK Inosilicate with 5-periodic single chains
-* `Strunz 09.DK Inosilicate with 5-periodic single chains`
 
 
 - Child of:
@@ -124356,7 +116616,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/saneroite
 
-- IMA chemistry: NaMn<sup>2+</sup><sub>5</sub>[Si<sub>5</sub>O<sub>14</sub>(OH)](VO<sub>3</sub>)(OH)
+- IMA chemistry: NaMn<sup>2+</sup><sub>5</sub>[Si<sub>5</sub>O<sub>14</sub>(OH)]     (VO<sub>3</sub>)(OH)
 
 - MinDat URL: http://www.mindat.org/min-3520.html
 
@@ -124419,75 +116679,9 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ciprianiite
 
-- IMA chemistry: Ca<sub>4</sub>[(Th,U)Ca]<sub>S2</sub>Al(Be<sub>0.5</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>1.5</sub>)<sub>S2</sub>[B<sub>4</sub>Si<sub>4</sub>O<sub>22</sub>](OH)<sub>2</sub>
+- IMA chemistry: Ca<sub>4</sub>[(Th,U)Ca]<sub>S2</sub>Al(Be<sub>0.5</sub><sub>1.5</sub>)<sub>S2</sub>[B<sub>4</sub>Si<sub>4</sub>O<sub>22</sub>]     (OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-10799.html
-
-
-[]{#hellandite-ce}
-
-#######  Hellandite-(Ce)
-
-
-- Child of:
- [`29214`](#29214)
- [`hellandite`](#hellandite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hellandite-ce
-
-- IMA chemistry: (Ca,REE)<sub>4</sub>Ce<sub>2</sub>Al<span style="border: 1px solid #333; font-size:7px;"> </span><sub>2</sub>(B<sub>4</sub>Si<sub>4</sub>O<sub>22</sub>)(OH)<sub>2</sub>
-
-- MinDat URL: https://www.mindat.org/min-27087.html
-
-
-[]{#hellandite-y}
-
-#######  Hellandite-(Y)
-
-
-- Child of:
- [`29214`](#29214)
- [`hellandite`](#hellandite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/hellandite-y
-
-- IMA chemistry: (Ca,REE)<sub>4</sub>Y<sub>2</sub>Al<span style="border: 1px solid #333; font-size:7px;"> </span><sub>2</sub>(B<sub>4</sub>Si<sub>4</sub>O<sub>22</sub>)(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-1852.html
-
-
-[]{#mottanaite-ce}
-
-#######  Mottanaite-(Ce)
-
-
-- Child of:
- [`29214`](#29214)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/mottanaite-ce
-
-- IMA chemistry: Ca<sub>4</sub>Ce<sub>2</sub>Al(Be<sub>1.5</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.5</sub>)<sub>S2</sub>[B<sub>4</sub>Si<sub>4</sub>O<sub>22</sub>]O<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-10798.html
-
-
-[]{#tadzhikite-ce}
-
-#######  Tadzhikite-(Ce)
-
-
-- Child of:
- [`29214`](#29214)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/tadzhikite-ce
-
-- IMA chemistry: Ca<sub>4</sub>Ce<sub>2</sub>Ti<span style="border: 1px solid #333; font-size:7px;"> </span>(B<sub>4</sub>Si<sub>4</sub>O<sub>22</sub>)(OH)<sub>2</sub>
-
-- MinDat URL: http://www.mindat.org/min-3866.html
 
 
 []{#hellandite}
@@ -124514,7 +116708,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`29214`](#29214)
  [`hellandite`](#hellandite)
 
 
@@ -124523,7 +116716,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hellandite-ce
 
-- IMA chemistry: (Ca,REE)<sub>4</sub>Ce<sub>2</sub>Al<span style="border: 1px solid #333; font-size:7px;"> </span><sub>2</sub>(B<sub>4</sub>Si<sub>4</sub>O<sub>22</sub>)(OH)<sub>2</sub>
+- IMA chemistry: (Ca,REE)<sub>4</sub>Ce<sub>2</sub>Al<sub>2</sub>(B<sub>4</sub>Si<sub>4</sub>O<sub>22</sub>)(OH)<sub>2</sub>
 
 - MinDat URL: https://www.mindat.org/min-27087.html
 
@@ -124534,14 +116727,43 @@ SMR add missing skos broader
 
 
 - Child of:
- [`29214`](#29214)
  [`hellandite`](#hellandite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hellandite-y
 
-- IMA chemistry: (Ca,REE)<sub>4</sub>Y<sub>2</sub>Al<span style="border: 1px solid #333; font-size:7px;"> </span><sub>2</sub>(B<sub>4</sub>Si<sub>4</sub>O<sub>22</sub>)(OH)<sub>2</sub>
+- IMA chemistry: (Ca,REE)<sub>4</sub>Y<sub>2</sub>Al<sub>2</sub>(B<sub>4</sub>Si<sub>4</sub>O<sub>22</sub>)(OH)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-1852.html
+
+
+[]{#mottanaite-ce}
+
+#######  Mottanaite-(Ce)
+
+
+- Child of:
+ [`29214`](#29214)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/mottanaite-ce
+
+- IMA chemistry: Ca<sub>4</sub>Ce<sub>2</sub>Al(Be<sub>1.5</sub><sub>0.5</sub>)<sub>S2</sub>[B<sub>4</sub>Si<sub>4</sub>O<sub>22</sub>]O<sub>2</sub>
+
+- MinDat URL: http://www.mindat.org/min-10798.html
+
+
+[]{#tadzhikite-ce}
+
+#######  Tadzhikite-(Ce)
+
+
+- Child of:
+ [`29214`](#29214)
+
+- Concept URI: https://w3id.org/geochem/1.0/min/tadzhikite-ce
+
+- IMA chemistry: Ca<sub>4</sub>Ce<sub>2</sub>Ti(B<sub>4</sub>Si<sub>4</sub>O<sub>22</sub>)(OH)<sub>2</sub>
+
+- MinDat URL: http://www.mindat.org/min-3866.html
 
 
 []{#40297}
@@ -124631,7 +116853,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_dl}
 
 #####  Strunz 09.DL Inosilicate with 5-periodic double chains, Si10O28
-* `Strunz 09.DL Inosilicate with 5-periodic double chains, Si10O28`
 
 
 - Child of:
@@ -124673,7 +116894,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_dm}
 
 #####  Strunz 09.DM Inosilicate with 6-periodic single chains
-* `Strunz 09.DM Inosilicate with 6-periodic single chains`
 
 
 - Child of:
@@ -124931,7 +117151,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_dn}
 
 #####  Strunz 09.DN Inosilicate with 6-periodic double chains
-* `Strunz 09.DN Inosilicate with 6-periodic double chains`
 
 
 - Child of:
@@ -125033,7 +117252,6 @@ Group.
 []{#s09_do}
 
 #####  Strunz 09.DO Inosilicate with 7-, 8-, 10-, 12- and 14-periodic chains
-* `Strunz 09.DO Inosilicate with 7-, 8-, 10-, 12- and 14-periodic chains`
 
 
 - Child of:
@@ -125067,7 +117285,7 @@ Group.
 
 - Concept URI: https://w3id.org/geochem/1.0/min/braccoite
 
-- IMA chemistry: NaMn<sup>2+</sup><sub>5</sub>[Si<sub>5</sub>O<sub>14</sub>(OH)](AsO<sub>3</sub>)(OH)
+- IMA chemistry: NaMn<sup>2+</sup><sub>5</sub>[Si<sub>5</sub>O<sub>14</sub>(OH)]     (AsO<sub>3</sub>)(OH)
 
 - MinDat URL: https://www.mindat.org/min-46006.html
 
@@ -125265,7 +117483,6 @@ SMR add missing skos broader
 []{#s09_dp}
 
 #####  Strunz 09.DP Sorosilicate transitional ino-phyllosilicate structures
-* `Strunz 09.DP Sorosilicate transitional ino-phyllosilicate structures`
 
 
 - Child of:
@@ -125299,7 +117516,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/amstallite
 
-- IMA chemistry: CaAl[(Al,Si)<sub>4</sub>O<sub>8</sub>(OH)<sub>2</sub>](OH)<sub>2</sub>·(H<sub>2</sub>O,Cl)
+- IMA chemistry: CaAl[(Al,Si)<sub>4</sub>O<sub>8</sub>(OH)<sub>2</sub>]     (OH)<sub>2</sub>·(H<sub>2</sub>O,Cl)
 
 - MinDat URL: http://www.mindat.org/min-208.html
 
@@ -125428,7 +117645,6 @@ SMR add missing skos broader
 []{#s09_dq}
 
 #####  Strunz 09.DQ Modular Inosilicate-Sorosilicate Structure
-* `Strunz 09.DQ Modular Inosilicate-Sorosilicate Structure`
 
 
 - Child of:
@@ -125455,7 +117671,6 @@ SMR add missing skos broader
 []{#s09_e}
 
 ####  Strunz 09.E Phyllosilicate
-* `Strunz 09.E Phyllosilicate`
 
 
 - Child of:
@@ -125787,7 +118002,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferrisepiolite
 
-- IMA chemistry: (Fe<sup>3+</sup>,Fe<sup>2+</sup>,Mg)<sub>4</sub>[(Si,Fe<sup>3+</sup>)<sub>6</sub>O<sub>15</sub>](O,OH)<sub>2</sub>·6H<sub>2</sub>O
+- IMA chemistry: (Fe<sup>3+</sup>,Fe<sup>2+</sup>,Mg)<sub>4</sub>[(Si,Fe<sup>3+</sup>)<sub>6</sub>O<sub>15</sub>]     (O,OH)<sub>2</sub>·6H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-41139.html
 
@@ -125827,7 +118042,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_ea}
 
 #####  Strunz 09.EA Phyllosilicate: Single nets of tetrahedra with 4-, 5-, (6-), and 8-membered rings
-* `Strunz 09.EA Phyllosilicate: Single nets of tetrahedra with 4-, 5-, (6-), and 8-membered rings`
 
 
 - Child of:
@@ -126197,38 +118411,6 @@ SMR add missing skos broader
 - MinDat URL: http://www.mindat.org/min-1231.html
 
 
-[]{#sazhinite-ce}
-
-#######  Sazhinite-(Ce)
-
-
-- Child of:
- [`39518`](#39518)
- [`sazhinite`](#sazhinite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/sazhinite-ce
-
-- IMA chemistry: Na<sub>3</sub>CeSi<sub>6</sub>O<sub>15</sub>·2H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-3546.html
-
-
-[]{#sazhinite-la}
-
-#######  Sazhinite-(La)
-
-
-- Child of:
- [`39518`](#39518)
- [`sazhinite`](#sazhinite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/sazhinite-la
-
-- IMA chemistry: Na<sub>3</sub>LaSi<sub>6</sub>O<sub>15</sub>·2H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-27499.html
-
-
 []{#sazhinite}
 
 #######  Sazhinite
@@ -126253,7 +118435,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`39518`](#39518)
  [`sazhinite`](#sazhinite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/sazhinite-ce
@@ -126269,7 +118450,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`39518`](#39518)
  [`sazhinite`](#sazhinite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/sazhinite-la
@@ -126355,7 +118535,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 []{#s09_eb}
 
 #####  Strunz 09.EB Phyllosilicate: Double nets with 4- and 6-membered rings
-* `Strunz 09.EB Phyllosilicate: Double nets with 4- and 6-membered rings`
 
 
 - Child of:
@@ -126406,7 +118585,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/gunterblassite
 
-- IMA chemistry: (K,Ca,Ba,Na,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>3</sub>Fe[(Si,Al)<sub>13</sub>O<sub>25</sub>(OH,O)<sub>4</sub>]·7H<sub>2</sub>O
+- IMA chemistry: (K,Ca,Ba,Na,)<sub>3</sub>Fe[(Si,Al)<sub>13</sub>O<sub>25</sub>(OH,O)<sub>4</sub>]·7H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-41771.html
 
@@ -126421,7 +118600,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 - Concept URI: https://w3id.org/geochem/1.0/min/hillesheimite
 
-- IMA chemistry: (K,Ca,Ba,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>(Mg,Fe,Ca,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>[(Si,Al)<sub>13</sub>O<sub>23</sub>(OH)<sub>6</sub>](OH)·8H<sub>2</sub>O
+- IMA chemistry: (K,Ca,Ba,)<sub>2</sub>(Mg,Fe,Ca,)<sub>2</sub>[(Si,Al)<sub>13</sub>O<sub>23</sub>(OH)<sub>6</sub>]     (OH)·8H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-42862.html
 
@@ -126552,7 +118731,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_ec}
 
 #####  Strunz 09.EC Phyllosilicate with mica sheets, composed of tetrahedral and octahedral nets
-* `Strunz 09.EC Phyllosilicate with mica sheets, composed of tetrahedral and octahedral nets`
 
 
 - Child of:
@@ -128322,7 +120500,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/wonesite
 
-- IMA chemistry: (Na,K,<span style="border: 1px solid #333; font-size:7px;"> </span>)(Mg,Fe,Al)<sub>6</sub>(Si,Al)<sub>8</sub>O<sub>20</sub>(OH,F)<sub>4</sub>
+- IMA chemistry: (Na,K,)(Mg,Fe,Al)<sub>6</sub>(Si,Al)<sub>8</sub>O<sub>20</sub>(OH,F)<sub>4</sub>
 
 - MinDat URL: http://www.mindat.org/min-4309.html
 
@@ -128545,7 +120723,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery,
 
 - Concept URI: https://w3id.org/geochem/1.0/min/oxyphlogopite
 
-- IMA chemistry: K(Mg,Ti,Fe)<sub>3</sub>[(Si,Al)<sub>4</sub>O<sub>10</sub>](O,F)<sub>2</sub>
+- IMA chemistry: K(Mg,Ti,Fe)<sub>3</sub>[(Si,Al)<sub>4</sub>O<sub>10</sub>]     (O,F)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-39713.html
 
@@ -128718,7 +120896,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/voloshinite
 
-- IMA chemistry: Rb(LiAl<sub>1.5</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>0.5</sub>)(Al<sub>0.5</sub>Si<sub>3.5</sub>)O<sub>10</sub>F<sub>2</sub>
+- IMA chemistry: Rb(LiAl<sub>1.5</sub><sub>0.5</sub>)(Al<sub>0.5</sub>Si<sub>3.5</sub>)O<sub>10</sub>F<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-35831.html
 
@@ -129464,7 +121642,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/wonesite
 
-- IMA chemistry: (Na,K,<span style="border: 1px solid #333; font-size:7px;"> </span>)(Mg,Fe,Al)<sub>6</sub>(Si,Al)<sub>8</sub>O<sub>20</sub>(OH,F)<sub>4</sub>
+- IMA chemistry: (Na,K,)(Mg,Fe,Al)<sub>6</sub>(Si,Al)<sub>8</sub>O<sub>20</sub>(OH,F)<sub>4</sub>
 
 - MinDat URL: http://www.mindat.org/min-4309.html
 
@@ -129687,7 +121865,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery,
 
 - Concept URI: https://w3id.org/geochem/1.0/min/oxyphlogopite
 
-- IMA chemistry: K(Mg,Ti,Fe)<sub>3</sub>[(Si,Al)<sub>4</sub>O<sub>10</sub>](O,F)<sub>2</sub>
+- IMA chemistry: K(Mg,Ti,Fe)<sub>3</sub>[(Si,Al)<sub>4</sub>O<sub>10</sub>]     (O,F)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-39713.html
 
@@ -129868,7 +122046,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery,
 
 - Concept URI: https://w3id.org/geochem/1.0/min/oxyphlogopite
 
-- IMA chemistry: K(Mg,Ti,Fe)<sub>3</sub>[(Si,Al)<sub>4</sub>O<sub>10</sub>](O,F)<sub>2</sub>
+- IMA chemistry: K(Mg,Ti,Fe)<sub>3</sub>[(Si,Al)<sub>4</sub>O<sub>10</sub>]     (O,F)<sub>2</sub>
 
 - MinDat URL: http://www.mindat.org/min-39713.html
 
@@ -129937,7 +122115,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery,
 []{#s09_ed}
 
 #####  Strunz 09.ED Phyllosilicate with kaolinite layers composed of tetrahedral and octahedral nets
-* `Strunz 09.ED Phyllosilicate with kaolinite layers composed of tetrahedral and octahedral nets`
 
 
 - Child of:
@@ -130730,7 +122907,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_ee}
 
 #####  Strunz 09.EE Phyllosilicate: Single tetrahedral nets of 6-membered rings connected by octahedral nets or octahedral bands
-* `Strunz 09.EE Phyllosilicate: Single tetrahedral nets of 6-membered rings connected by octahedral nets or octahedral bands`
 
 
 - Child of:
@@ -130917,7 +123093,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/shafranovskite
 
-- IMA chemistry: Na<sub>3</sub>K<sub>2</sub>(Mn,Fe,Na)<sub>4</sub>[Si<sub>9</sub>(O,OH)<sub>27</sub>](OH)<sub>2</sub>·nH<sub>2</sub>O
+- IMA chemistry: Na<sub>3</sub>K<sub>2</sub>(Mn,Fe,Na)<sub>4</sub>[Si<sub>9</sub>(O,OH)<sub>27</sub>]     (OH)<sub>2</sub>·nH<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-3629.html
 
@@ -131174,7 +123350,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/martinite
 
-- IMA chemistry: (Na,<span style="border: 1px solid #333; font-size:7px;"> </span>,Ca)<sub>12</sub>Ca<sub>4</sub>(Si,S,B)<sub>14</sub>B<sub>2</sub>O<sub>38</sub>(OH,Cl)<sub>2</sub>F<sub>2</sub>·4H<sub>2</sub>O
+- IMA chemistry: (Na,,Ca)<sub>12</sub>Ca<sub>4</sub>(Si,S,B)<sub>14</sub>B<sub>2</sub>O<sub>38</sub>(OH,Cl)<sub>2</sub>F<sub>2</sub>·4H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-26345.html
 
@@ -131252,7 +123428,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/windhoekite
 
-- IMA chemistry: Ca<sub>2</sub>Fe<sup>3+</sup><sub>3-x</sub>[Si<sub>8</sub>O<sub>20</sub>](OH)<sub>4</sub>·10H<sub>2</sub>O
+- IMA chemistry: Ca<sub>2</sub>Fe<sup>3+</sup><sub>3-x</sub>[Si<sub>8</sub>O<sub>20</sub>]     (OH)<sub>4</sub>·10H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-41574.html
 
@@ -131372,7 +123548,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_ef}
 
 #####  Strunz 09.EF Phyllosilicate: Single nets with 6-membered rings, connected by M[4], M[8], etc.
-* `Strunz 09.EF Phyllosilicate: Single nets with 6-membered rings, connected by M[4], M[8], etc.`
 
 
 - Child of:
@@ -131474,7 +123649,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_eg}
 
 #####  Strunz 09.EG Phyllosilicate: Double nets with 6-membered and larger rings
-* `Strunz 09.EG Phyllosilicate: Double nets with 6-membered and larger rings`
 
 
 - Child of:
@@ -131928,7 +124102,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_eh}
 
 #####  Strunz 09.EH Transitional structure between phyllosilicate and other silicate units
-* `Strunz 09.EH Transitional structure between phyllosilicate and other silicate units`
 
 
 - Child of:
@@ -132007,7 +124180,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/veblenite
 
-- IMA chemistry: K<sub>2</sub><span style="border: 1px solid #333; font-size:7px;"> </span><sub>2</sub>Na(Fe<sup>2+</sup><sub>5</sub>Fe<sup>3+</sup><sub>4</sub>Mn<sub>7</sub><span style="border: 1px solid #333; font-size:7px;"> </span>)Nb<sub>3</sub>Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(Si<sub>8</sub>O<sub>22</sub>)<sub>2</sub>O<sub>6</sub>(OH)<sub>10</sub>(H<sub>2</sub>O)<sub>3</sub>
+- IMA chemistry: K<sub>2</sub><sub>2</sub>Na(Fe<sup>2+</sup><sub>5</sub>Fe<sup>3+</sup><sub>4</sub>Mn<sub>7</sub>)Nb<sub>3</sub>Ti(Si<sub>2</sub>O<sub>7</sub>)<sub>2</sub>(Si<sub>8</sub>O<sub>22</sub>)<sub>2</sub>O<sub>6</sub>(OH)<sub>10</sub>(H<sub>2</sub>O)<sub>3</sub>
 
 - MinDat URL: http://www.mindat.org/min-41133.html
 
@@ -132152,7 +124325,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_ej}
 
 #####  Strunz 09.EJ Phyllosilicate, unclassified
-* `Strunz 09.EJ Phyllosilicate, unclassified`
 
 
 - Child of:
@@ -132194,7 +124366,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_f}
 
 ####  Strunz 09.F Tektosilicate without zeolitic H2O
-* `Strunz 09.F Tektosilicate without zeolitic H2O`
 
 
 - Child of:
@@ -132206,7 +124377,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_fa}
 
 #####  Strunz 09.FA Tektosilicate without additional non-tetrahedral anions
-* `Strunz 09.FA Tektosilicate without additional non-tetrahedral anions`
 
 
 - Child of:
@@ -132241,7 +124411,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/davidsmithite
 
-- IMA chemistry: (Ca,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>2</sub>Na<sub>6</sub>Al<sub>8</sub>Si<sub>8</sub>O<sub>32</sub>
+- IMA chemistry: (Ca,)<sub>2</sub>Na<sub>6</sub>Al<sub>8</sub>Si<sub>8</sub>O<sub>32</sub>
 
 - MinDat URL: https://www.mindat.org/min-50778.html
 
@@ -133040,7 +125210,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_fb}
 
 #####  Strunz 09.FB Tektosilicate with additional anions
-* `Strunz 09.FB Tektosilicate with additional anions`
 
 
 - Child of:
@@ -133199,7 +125368,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/vladimirivanovite
 
-- IMA chemistry: Na<sub>6</sub>Ca<sub>2</sub>[Al<sub>6</sub>Si<sub>6</sub>O<sub>24</sub>](SO<sub>4</sub>,S<sub>3</sub>,S<sub>2</sub>,Cl)<sub>2</sub>·H<sub>2</sub>O
+- IMA chemistry: Na<sub>6</sub>Ca<sub>2</sub>[Al<sub>6</sub>Si<sub>6</sub>O<sub>24</sub>]     (SO<sub>4</sub>,S<sub>3</sub>,S<sub>2</sub>,Cl)<sub>2</sub>·H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-41155.html
 
@@ -133309,7 +125478,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/cancrinite
 
-- IMA chemistry: (Na,Ca,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>8</sub>(Al<sub>6</sub>Si<sub>6</sub>)O<sub>24</sub>(CO<sub>3</sub>,SO<sub>4</sub>)<sub>2</sub>·2H<sub>2</sub>O
+- IMA chemistry: (Na,Ca,)<sub>8</sub>(Al<sub>6</sub>Si<sub>6</sub>)O<sub>24</sub>(CO<sub>3</sub>,SO<sub>4</sub>)<sub>2</sub>·2H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-880.html
 
@@ -133369,7 +125538,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/depmeierite
 
-- IMA chemistry: Na<sub>8</sub>[Al<sub>6</sub>Si<sub>6</sub>O<sub>24</sub>](PO<sub>4</sub>,CO<sub>3</sub>)<sub>1-x</sub>·3H<sub>2</sub>O (x< 0.5)
+- IMA chemistry: Na<sub>8</sub>[Al<sub>6</sub>Si<sub>6</sub>O<sub>24</sub>&#93; &nbsp;   (PO<sub>4</sub>,CO<sub>3</sub>)<sub>1-x</sub>·3H<sub>2</sub>O (x< 0.5)
 
 - MinDat URL: http://www.mindat.org/min-39787.html
 
@@ -133459,7 +125628,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/kircherite
 
-- IMA chemistry: [Na<sub>5</sub>Ca<sub>2</sub>K](Si<sub>6</sub>Al<sub>6</sub>O<sub>24</sub>)(SO<sub>4</sub>)<sub>2</sub>·0.33H<sub>2</sub>O
+- IMA chemistry: [Na<sub>5</sub>Ca<sub>2</sub>K]     (Si<sub>6</sub>Al<sub>6</sub>O<sub>24</sub>)(SO<sub>4</sub>)<sub>2</sub>·0.33H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-39877.html
 
@@ -133770,7 +125939,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_g}
 
 ####  Strunz 09.G Tektosilicate with zeolitic H2O; Zeolite family
-* `Strunz 09.G Tektosilicate with zeolitic H2O; Zeolite family`
 
 
 - Child of:
@@ -134475,8 +126643,7 @@ SMR add missing skos broader
 
 []{#10315}
 
-######  Gismondine Subgroup
-* `Gismondine`
+######  Gismondine
 
 
 - Child of:
@@ -134497,15 +126664,15 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://mindat.org/min-10315.html
 
 
-[]{#gismondine}
+[]{#gismondine-ca}
 
-#######  Gismondine
+#######  Gismondine-Ca
 
 
 - Child of:
  [`10315`](#10315)
 
-- Concept URI: https://w3id.org/geochem/1.0/min/gismondine
+- Concept URI: https://w3id.org/geochem/1.0/min/gismondine-ca
 
 - IMA chemistry: Ca<sub>2</sub>(Si<sub>4</sub>Al<sub>4</sub>)O<sub>16</sub>·8H<sub>2</sub>O
 
@@ -134529,32 +126696,15 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: https://www.mindat.org/min-55600.html
 
 
-[]{#gismondine-ca}
-
-#######  Gismondine-Ca
-
-
-- Child of:
- [`10315`](#10315)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gismondine-ca
-
-- IMA chemistry: Ca<sub>2</sub>(Si<sub>4</sub>Al<sub>4</sub>)O<sub>16</sub>·8H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-1701.html
-
-
 []{#1082}
 
-######  Clinoptilolite Subgroup
-* `Clinoptilolite`
+######  Clinoptilolite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GE`](#s09_GE)
 
--
 - Clinoptilolite is the name applied to specimens with unknown
 dominance of the extra-framework cations. It comprises clinoptilolite-
 Ca, clinoptilolite-K and clinoptilolite-Na.
@@ -134618,15 +126768,13 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#1212}
 
-######  Dachiardite Subgroup
-* `Dachiardite`
+######  Dachiardite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Name for unspecified member within the compositional space between
 dachiardite-Ca, dachiardite-Na and dachiardite-K
 
@@ -134674,15 +126822,13 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#1399}
 
-######  Erionite Subgroup
-* `Erionite`
+######  Erionite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Formula  M2[Al4Si14O36] · 15H2OM=Ca, K2 or Na2
 
 - **Alternate labels:**
@@ -134744,15 +126890,13 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#1492}
 
-######  Ferrierite Subgroup
-* `Ferrierite`
+######  Ferrierite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Use for ferrierite specimen lacking chemical data to categorize as
 one of Ferrierite-K, Ferrierite-Mg, Ferrierite-Na or Ferrierite-NH4.
 
@@ -134793,7 +126937,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferrierite-mg
 
-- IMA chemistry: [Mg<sub>2</sub>(K,Na)<sub>2</sub>Ca<sub>0.5</sub>](Si<sub>29</sub>Al<sub>7</sub>)O<sub>72</sub>·18H<sub>2</sub>O
+- IMA chemistry: [Mg<sub>2</sub>(K,Na)<sub>2</sub>Ca<sub>0.5</sub>]     (Si<sub>29</sub>Al<sub>7</sub>)O<sub>72</sub>·18H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-6931.html
 
@@ -134816,7 +126960,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#ferrierite-nh4}
 
 #######  Ferrierite-NH4
-* `Ferrierite-NH<sub>4</sub>`
 
 
 - Child of:
@@ -134831,15 +126974,13 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#1714}
 
-######  Gmelinite Subgroup
-* `Gmelinite`
+######  Gmelinite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Use for gmelinite specimen lacking chemical data to categorize as
 one of the species-specific subtypes.
 
@@ -134906,15 +127047,13 @@ SMR add missing skos broader
 
 []{#1889}
 
-######  Heulandite Subgroup
-* `Heulandite`
+######  Heulandite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GE`](#s09_GE)
 
--
 - heulandite specimens with unknown dominance of the extra-framework
 cations; includes heulandite-K, heulandite-Na, heulandite-Ca,
 heulandite-Ba and heulandite-Sr.
@@ -135012,8 +127151,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#27548}
 
-######  Mazzite Subgroup
-* `Mazzite`
+######  Mazzite
 
 
 - Child of:
@@ -135070,8 +127208,7 @@ SMR add missing skos broader
 
 []{#28896}
 
-######  Thomsonite Subgroup
-* `Thomsonite`
+######  Thomsonite
 
 
 - Child of:
@@ -135254,58 +127391,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-1820.html
 
 
-[]{#phillipsite-ca}
-
-#######  Phillipsite-Ca
-
-
-- Child of:
- [`3192`](#3192)
- [`phillipsite`](#phillipsite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/phillipsite-ca
-
-- IMA chemistry: Ca<sub>3</sub>(Si<sub>10</sub>Al<sub>6</sub>)O<sub>32</sub>·12H<sub>2</sub>O
-
-- MinDat URL: https://www.mindat.org/min-7227.html
-
-
-[]{#phillipsite-k}
-
-#######  Phillipsite-K
-
-
-- Child of:
- [`3192`](#3192)
- [`phillipsite`](#phillipsite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/phillipsite-k
-
-- IMA chemistry: K<sub>6</sub>(Si<sub>10</sub>Al<sub>6</sub>)O<sub>32</sub>·12H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-7228.html
-
-
-[]{#phillipsite-na}
-
-#######  Phillipsite-Na
-
-
-- Child of:
- [`3192`](#3192)
- [`phillipsite`](#phillipsite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/phillipsite-na
-
-- IMA chemistry: Na<sub>6</sub>(Si<sub>10</sub>Al<sub>6</sub>)O<sub>32</sub>·12H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-7229.html
-
-
 []{#phillipsite}
 
 #######  Phillipsite
@@ -135331,7 +127416,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`3192`](#3192)
  [`phillipsite`](#phillipsite)
 
 
@@ -135351,7 +127435,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`3192`](#3192)
  [`phillipsite`](#phillipsite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/phillipsite-k
@@ -135367,7 +127450,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`3192`](#3192)
  [`phillipsite`](#phillipsite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/phillipsite-na
@@ -135379,15 +127461,13 @@ SMR add missing skos broader
 
 []{#35126}
 
-######  Faujasite Subgroup
-* `Faujasite`
+######  Faujasite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Formula   M3.5[Al7Si17O48] · 32H2O     M = Ca, Na2, K2, Mg or Sr
 
 - **Alternate labels:**
@@ -135456,7 +127536,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Formula  M[Al2Si4O12] · 6H2O.             M = Ca, Na2,K2,Mg,Sr
 
 - **Source:**
@@ -135465,122 +127544,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Concept URI: https://w3id.org/geochem/1.0/mingroup/35547
 
 - MinDat URL: https://mindat.org/min-35547.html
-
-
-[]{#chabazite-ca}
-
-#######  Chabazite-Ca
-
-
-- Child of:
- [`35547`](#35547)
- [`chabazite`](#chabazite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/chabazite-ca
-
-- IMA chemistry: Ca<sub>2</sub>[Al<sub>4</sub>Si<sub>8</sub>O<sub>24</sub>]·13H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-6854.html
-
-
-[]{#chabazite-k}
-
-#######  Chabazite-K
-
-
-- Child of:
- [`35547`](#35547)
- [`chabazite`](#chabazite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/chabazite-k
-
-- IMA chemistry: (K<sub>2</sub>NaCa<sub>0.5</sub>)[Al<sub>4</sub>Si<sub>8</sub>O<sub>24</sub>]·11H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-6855.html
-
-
-[]{#chabazite-mg}
-
-#######  Chabazite-Mg
-
-
-- Child of:
- [`35547`](#35547)
- [`chabazite`](#chabazite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/chabazite-mg
-
-- IMA chemistry: (Mg<sub>0.7</sub>K<sub>0.5</sub>Ca<sub>0.5</sub>Na<sub>0.1</sub>)[Al<sub>3</sub>Si<sub>9</sub>O<sub>24</sub>]·10H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-40012.html
-
-
-[]{#chabazite-na}
-
-#######  Chabazite-Na
-
-
-- Child of:
- [`35547`](#35547)
- [`chabazite`](#chabazite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/chabazite-na
-
-- IMA chemistry: (Na<sub>3</sub>K)[Al<sub>4</sub>Si<sub>8</sub>O<sub>24</sub>]·11H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-6856.html
-
-
-[]{#chabazite-sr}
-
-#######  Chabazite-Sr
-
-
-- Child of:
- [`35547`](#35547)
- [`chabazite`](#chabazite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/chabazite-sr
-
-- IMA chemistry: (Sr,Ca)<sub>2</sub>[Al<sub>4</sub>Si<sub>8</sub>O<sub>24</sub>]·11H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-6857.html
-
-
-[]{#levyne-ca}
-
-#######  Lévyne-Ca
-
-
-- Child of:
- [`35547`](#35547)
- [`levyne`](#levyne)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/levyne-ca
-
-- IMA chemistry: Ca<sub>3</sub>(Si<sub>12</sub>Al<sub>6</sub>)O<sub>36</sub>·18H<sub>2</sub>O
-
-- MinDat URL: https://www.mindat.org/min-7154.html
-
-
-[]{#levyne-na}
-
-#######  Lévyne-Na
-
-
-- Child of:
- [`35547`](#35547)
- [`levyne`](#levyne)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/levyne-na
-
-- IMA chemistry: Na<sub>6</sub>(Si<sub>12</sub>Al<sub>6</sub>)O<sub>36</sub>·18H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-7155.html
 
 
 []{#chabazite}
@@ -135610,7 +127573,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`chabazite`](#chabazite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/chabazite-ca
@@ -135626,7 +127588,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`chabazite`](#chabazite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/chabazite-k
@@ -135642,7 +127603,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`chabazite`](#chabazite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/chabazite-mg
@@ -135658,7 +127618,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`chabazite`](#chabazite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/chabazite-na
@@ -135674,7 +127633,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`chabazite`](#chabazite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/chabazite-sr
@@ -135712,7 +127670,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`levyne`](#levyne)
 
 
@@ -135732,7 +127689,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`35547`](#35547)
  [`levyne`](#levyne)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/levyne-na
@@ -135791,42 +127747,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-3760.html
 
 
-[]{#stilbite-ca}
-
-#######  Stilbite-Ca
-
-
-- Child of:
- [`3785`](#3785)
- [`stilbite`](#stilbite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/stilbite-ca
-
-- IMA chemistry: NaCa<sub>4</sub>(Si<sub>27</sub>Al<sub>9</sub>)O<sub>72</sub>·28H<sub>2</sub>O
-
-- MinDat URL: https://www.mindat.org/min-7313.html
-
-
-[]{#stilbite-na}
-
-#######  Stilbite-Na
-
-
-- Child of:
- [`3785`](#3785)
- [`stilbite`](#stilbite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/stilbite-na
-
-- IMA chemistry: Na<sub>9</sub>(Si<sub>27</sub>Al<sub>9</sub>)O<sub>72</sub>·28H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-7314.html
-
-
 []{#stilbite}
 
 #######  Stilbite
@@ -135855,7 +127775,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`3785`](#3785)
  [`stilbite`](#stilbite)
 
 
@@ -135875,7 +127794,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`3785`](#3785)
  [`stilbite`](#stilbite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/stilbite-na
@@ -135887,15 +127805,13 @@ SMR add missing skos broader
 
 []{#46692}
 
-######  Garronite Subgroup
-* `Garronite`
+######  Garronite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GC`](#s09_GC)
 
--
 - Use for garronite specimen lacking chemical data to categorize as
 one of the species-specific subtypes. {@en}
 
@@ -135947,8 +127863,7 @@ SMR add missing skos broader
 
 []{#470364}
 
-######  Paulingite Subgroup
-* `Paulingite`
+######  Paulingite
 
 
 - Child of:
@@ -135983,7 +127898,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/paulingite-ca
 
-- IMA chemistry: (Ca,K,Na,Ba,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>10</sub>(Si,Al)<sub>42</sub>O<sub>84</sub>·34H<sub>2</sub>O
+- IMA chemistry: (Ca,K,Na,Ba,)<sub>10</sub>(Si,Al)<sub>42</sub>O<sub>84</sub>·34H<sub>2</sub>O
 
 - MinDat URL: https://www.mindat.org/min-7218.html
 
@@ -135998,22 +127913,20 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/paulingite-k
 
-- IMA chemistry: (K,Ca,Na,Ba,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>10</sub>(Si,Al)<sub>42</sub>O<sub>84</sub>·34H<sub>2</sub>O
+- IMA chemistry: (K,Ca,Na,Ba,)<sub>10</sub>(Si,Al)<sub>42</sub>O<sub>84</sub>·34H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-7219.html
 
 
 []{#766}
 
-######  Brewsterite Subgroup
-* `Brewsterite`
+######  Brewsterite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GE`](#s09_GE)
 
--
 - series of minerals, brewsterite-Ba and brewsterite-Sr, being the
 barium and strontium end-members of the brewsterite family. Most
 brewsterite will be the strontium end-member.
@@ -136063,7 +127976,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_ga}
 
 #####  Strunz 09.GA Zeolite with T5O10 Units – Fibrous Zeolite
-* `Strunz 09.GA Zeolite with T5O10 Units – Fibrous Zeolite`
 
 
 - Child of:
@@ -136111,6 +128023,8 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Child of:
  [`s09_GA`](#s09_GA)
 
+- Name used historically to describe natrolite, scolecite or mesolite.
+MinDat
 
 - **Source:**
 https://w3id.org/geochem/1.0/min/SMRadditions
@@ -136122,8 +128036,7 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 
 []{#28896}
 
-######  Thomsonite Subgroup
-* `Thomsonite`
+######  Thomsonite
 
 
 - Child of:
@@ -136275,7 +128188,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_gb}
 
 #####  Strunz 09.GB Zeolite family: Chains of single connected 4-membered rings
-* `Strunz 09.GB Zeolite family: Chains of single connected 4-membered rings`
 
 
 - Child of:
@@ -136525,7 +128437,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_gc}
 
 #####  Strunz 09.GC Zeolite family: Chains of doubly-connected 4-membered rings
-* `Strunz 09.GC Zeolite family: Chains of doubly-connected 4-membered rings`
 
 
 - Child of:
@@ -136632,8 +128543,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#10315}
 
-######  Gismondine Subgroup
-* `Gismondine`
+######  Gismondine
 
 
 - Child of:
@@ -136654,15 +128564,15 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: https://mindat.org/min-10315.html
 
 
-[]{#gismondine}
+[]{#gismondine-ca}
 
-#######  Gismondine
+#######  Gismondine-Ca
 
 
 - Child of:
  [`10315`](#10315)
 
-- Concept URI: https://w3id.org/geochem/1.0/min/gismondine
+- Concept URI: https://w3id.org/geochem/1.0/min/gismondine-ca
 
 - IMA chemistry: Ca<sub>2</sub>(Si<sub>4</sub>Al<sub>4</sub>)O<sub>16</sub>·8H<sub>2</sub>O
 
@@ -136686,25 +128596,9 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - MinDat URL: https://www.mindat.org/min-55600.html
 
 
-[]{#gismondine-ca}
-
-#######  Gismondine-Ca
-
-
-- Child of:
- [`10315`](#10315)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/gismondine-ca
-
-- IMA chemistry: Ca<sub>2</sub>(Si<sub>4</sub>Al<sub>4</sub>)O<sub>16</sub>·8H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-1701.html
-
-
 []{#27548}
 
-######  Mazzite Subgroup
-* `Mazzite`
+######  Mazzite
 
 
 - Child of:
@@ -136793,58 +128687,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-1820.html
 
 
-[]{#phillipsite-ca}
-
-#######  Phillipsite-Ca
-
-
-- Child of:
- [`3192`](#3192)
- [`phillipsite`](#phillipsite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/phillipsite-ca
-
-- IMA chemistry: Ca<sub>3</sub>(Si<sub>10</sub>Al<sub>6</sub>)O<sub>32</sub>·12H<sub>2</sub>O
-
-- MinDat URL: https://www.mindat.org/min-7227.html
-
-
-[]{#phillipsite-k}
-
-#######  Phillipsite-K
-
-
-- Child of:
- [`3192`](#3192)
- [`phillipsite`](#phillipsite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/phillipsite-k
-
-- IMA chemistry: K<sub>6</sub>(Si<sub>10</sub>Al<sub>6</sub>)O<sub>32</sub>·12H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-7228.html
-
-
-[]{#phillipsite-na}
-
-#######  Phillipsite-Na
-
-
-- Child of:
- [`3192`](#3192)
- [`phillipsite`](#phillipsite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/phillipsite-na
-
-- IMA chemistry: Na<sub>6</sub>(Si<sub>10</sub>Al<sub>6</sub>)O<sub>32</sub>·12H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-7229.html
-
-
 []{#phillipsite}
 
 #######  Phillipsite
@@ -136870,7 +128712,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`3192`](#3192)
  [`phillipsite`](#phillipsite)
 
 
@@ -136890,7 +128731,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`3192`](#3192)
  [`phillipsite`](#phillipsite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/phillipsite-k
@@ -136906,7 +128746,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`3192`](#3192)
  [`phillipsite`](#phillipsite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/phillipsite-na
@@ -136918,15 +128757,13 @@ SMR add missing skos broader
 
 []{#46692}
 
-######  Garronite Subgroup
-* `Garronite`
+######  Garronite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GC`](#s09_GC)
 
--
 - Use for garronite specimen lacking chemical data to categorize as
 one of the species-specific subtypes. {@en}
 
@@ -136978,8 +128815,7 @@ SMR add missing skos broader
 
 []{#470364}
 
-######  Paulingite Subgroup
-* `Paulingite`
+######  Paulingite
 
 
 - Child of:
@@ -137014,7 +128850,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/paulingite-ca
 
-- IMA chemistry: (Ca,K,Na,Ba,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>10</sub>(Si,Al)<sub>42</sub>O<sub>84</sub>·34H<sub>2</sub>O
+- IMA chemistry: (Ca,K,Na,Ba,)<sub>10</sub>(Si,Al)<sub>42</sub>O<sub>84</sub>·34H<sub>2</sub>O
 
 - MinDat URL: https://www.mindat.org/min-7218.html
 
@@ -137029,7 +128865,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/paulingite-k
 
-- IMA chemistry: (K,Ca,Na,Ba,<span style="border: 1px solid #333; font-size:7px;"> </span>)<sub>10</sub>(Si,Al)<sub>42</sub>O<sub>84</sub>·34H<sub>2</sub>O
+- IMA chemistry: (K,Ca,Na,Ba,)<sub>10</sub>(Si,Al)<sub>42</sub>O<sub>84</sub>·34H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-7219.html
 
@@ -137037,7 +128873,6 @@ SMR add missing skos broader
 []{#s09_gd}
 
 #####  Strunz 09.GD Zeolite family: Chains of 6-membered rings – tabular zeolites
-* `Strunz 09.GD Zeolite family: Chains of 6-membered rings – tabular zeolites`
 
 
 - Child of:
@@ -137176,15 +129011,13 @@ SMR add missing skos broader
 
 []{#1212}
 
-######  Dachiardite Subgroup
-* `Dachiardite`
+######  Dachiardite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Name for unspecified member within the compositional space between
 dachiardite-Ca, dachiardite-Na and dachiardite-K
 
@@ -137232,15 +129065,13 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#1399}
 
-######  Erionite Subgroup
-* `Erionite`
+######  Erionite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Formula  M2[Al4Si14O36] · 15H2OM=Ca, K2 or Na2
 
 - **Alternate labels:**
@@ -137302,15 +129133,13 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#1492}
 
-######  Ferrierite Subgroup
-* `Ferrierite`
+######  Ferrierite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Use for ferrierite specimen lacking chemical data to categorize as
 one of Ferrierite-K, Ferrierite-Mg, Ferrierite-Na or Ferrierite-NH4.
 
@@ -137351,7 +129180,7 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 - Concept URI: https://w3id.org/geochem/1.0/min/ferrierite-mg
 
-- IMA chemistry: [Mg<sub>2</sub>(K,Na)<sub>2</sub>Ca<sub>0.5</sub>](Si<sub>29</sub>Al<sub>7</sub>)O<sub>72</sub>·18H<sub>2</sub>O
+- IMA chemistry: [Mg<sub>2</sub>(K,Na)<sub>2</sub>Ca<sub>0.5</sub>]     (Si<sub>29</sub>Al<sub>7</sub>)O<sub>72</sub>·18H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-6931.html
 
@@ -137374,7 +129203,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#ferrierite-nh4}
 
 #######  Ferrierite-NH4
-* `Ferrierite-NH<sub>4</sub>`
 
 
 - Child of:
@@ -137389,15 +129217,13 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#1714}
 
-######  Gmelinite Subgroup
-* `Gmelinite`
+######  Gmelinite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Use for gmelinite specimen lacking chemical data to categorize as
 one of the species-specific subtypes.
 
@@ -137464,15 +129290,13 @@ SMR add missing skos broader
 
 []{#35126}
 
-######  Faujasite Subgroup
-* `Faujasite`
+######  Faujasite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Formula   M3.5[Al7Si17O48] · 32H2O     M = Ca, Na2, K2, Mg or Sr
 
 - **Alternate labels:**
@@ -137541,7 +129365,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
  [`4395`](#4395)
  [`s09_GD`](#s09_GD)
 
--
 - Formula  M[Al2Si4O12] · 6H2O.             M = Ca, Na2,K2,Mg,Sr
 
 - **Source:**
@@ -137550,122 +129373,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - Concept URI: https://w3id.org/geochem/1.0/mingroup/35547
 
 - MinDat URL: https://mindat.org/min-35547.html
-
-
-[]{#chabazite-ca}
-
-#######  Chabazite-Ca
-
-
-- Child of:
- [`35547`](#35547)
- [`chabazite`](#chabazite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/chabazite-ca
-
-- IMA chemistry: Ca<sub>2</sub>[Al<sub>4</sub>Si<sub>8</sub>O<sub>24</sub>]·13H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-6854.html
-
-
-[]{#chabazite-k}
-
-#######  Chabazite-K
-
-
-- Child of:
- [`35547`](#35547)
- [`chabazite`](#chabazite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/chabazite-k
-
-- IMA chemistry: (K<sub>2</sub>NaCa<sub>0.5</sub>)[Al<sub>4</sub>Si<sub>8</sub>O<sub>24</sub>]·11H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-6855.html
-
-
-[]{#chabazite-mg}
-
-#######  Chabazite-Mg
-
-
-- Child of:
- [`35547`](#35547)
- [`chabazite`](#chabazite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/chabazite-mg
-
-- IMA chemistry: (Mg<sub>0.7</sub>K<sub>0.5</sub>Ca<sub>0.5</sub>Na<sub>0.1</sub>)[Al<sub>3</sub>Si<sub>9</sub>O<sub>24</sub>]·10H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-40012.html
-
-
-[]{#chabazite-na}
-
-#######  Chabazite-Na
-
-
-- Child of:
- [`35547`](#35547)
- [`chabazite`](#chabazite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/chabazite-na
-
-- IMA chemistry: (Na<sub>3</sub>K)[Al<sub>4</sub>Si<sub>8</sub>O<sub>24</sub>]·11H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-6856.html
-
-
-[]{#chabazite-sr}
-
-#######  Chabazite-Sr
-
-
-- Child of:
- [`35547`](#35547)
- [`chabazite`](#chabazite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/chabazite-sr
-
-- IMA chemistry: (Sr,Ca)<sub>2</sub>[Al<sub>4</sub>Si<sub>8</sub>O<sub>24</sub>]·11H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-6857.html
-
-
-[]{#levyne-ca}
-
-#######  Lévyne-Ca
-
-
-- Child of:
- [`35547`](#35547)
- [`levyne`](#levyne)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/levyne-ca
-
-- IMA chemistry: Ca<sub>3</sub>(Si<sub>12</sub>Al<sub>6</sub>)O<sub>36</sub>·18H<sub>2</sub>O
-
-- MinDat URL: https://www.mindat.org/min-7154.html
-
-
-[]{#levyne-na}
-
-#######  Lévyne-Na
-
-
-- Child of:
- [`35547`](#35547)
- [`levyne`](#levyne)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/levyne-na
-
-- IMA chemistry: Na<sub>6</sub>(Si<sub>12</sub>Al<sub>6</sub>)O<sub>36</sub>·18H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-7155.html
 
 
 []{#chabazite}
@@ -137695,7 +129402,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`chabazite`](#chabazite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/chabazite-ca
@@ -137711,7 +129417,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`chabazite`](#chabazite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/chabazite-k
@@ -137727,7 +129432,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`chabazite`](#chabazite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/chabazite-mg
@@ -137743,7 +129447,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`chabazite`](#chabazite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/chabazite-na
@@ -137759,7 +129462,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`chabazite`](#chabazite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/chabazite-sr
@@ -137797,7 +129499,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`35547`](#35547)
  [`levyne`](#levyne)
 
 
@@ -137817,7 +129518,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`35547`](#35547)
  [`levyne`](#levyne)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/levyne-na
@@ -137830,7 +129530,6 @@ SMR add missing skos broader
 []{#s09_ge}
 
 #####  Strunz 09.GE Zeolite family: Chains of T10O20 Tetrahedra
-* `Strunz 09.GE Zeolite family: Chains of T10O20 Tetrahedra`
 
 
 - Child of:
@@ -137841,15 +129540,13 @@ SMR add missing skos broader
 
 []{#1082}
 
-######  Clinoptilolite Subgroup
-* `Clinoptilolite`
+######  Clinoptilolite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GE`](#s09_GE)
 
--
 - Clinoptilolite is the name applied to specimens with unknown
 dominance of the extra-framework cations. It comprises clinoptilolite-
 Ca, clinoptilolite-K and clinoptilolite-Na.
@@ -137913,15 +129610,13 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 
 []{#1889}
 
-######  Heulandite Subgroup
-* `Heulandite`
+######  Heulandite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GE`](#s09_GE)
 
--
 - heulandite specimens with unknown dominance of the extra-framework
 cations; includes heulandite-K, heulandite-Na, heulandite-Ca,
 heulandite-Ba and heulandite-Sr.
@@ -138066,42 +129761,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 - MinDat URL: http://www.mindat.org/min-3760.html
 
 
-[]{#stilbite-ca}
-
-#######  Stilbite-Ca
-
-
-- Child of:
- [`3785`](#3785)
- [`stilbite`](#stilbite)
-
-
-- **Source:**
-SMR add missing skos broader
-
-- Concept URI: https://w3id.org/geochem/1.0/min/stilbite-ca
-
-- IMA chemistry: NaCa<sub>4</sub>(Si<sub>27</sub>Al<sub>9</sub>)O<sub>72</sub>·28H<sub>2</sub>O
-
-- MinDat URL: https://www.mindat.org/min-7313.html
-
-
-[]{#stilbite-na}
-
-#######  Stilbite-Na
-
-
-- Child of:
- [`3785`](#3785)
- [`stilbite`](#stilbite)
-
-- Concept URI: https://w3id.org/geochem/1.0/min/stilbite-na
-
-- IMA chemistry: Na<sub>9</sub>(Si<sub>27</sub>Al<sub>9</sub>)O<sub>72</sub>·28H<sub>2</sub>O
-
-- MinDat URL: http://www.mindat.org/min-7314.html
-
-
 []{#stilbite}
 
 #######  Stilbite
@@ -138130,7 +129789,6 @@ Request from Gerhard Wörner, Leander Kallas, Lucia Profeta (DIGIS - GEOROC 2.0,
 
 
 - Child of:
- [`3785`](#3785)
  [`stilbite`](#stilbite)
 
 
@@ -138150,7 +129808,6 @@ SMR add missing skos broader
 
 
 - Child of:
- [`3785`](#3785)
  [`stilbite`](#stilbite)
 
 - Concept URI: https://w3id.org/geochem/1.0/min/stilbite-na
@@ -138162,15 +129819,13 @@ SMR add missing skos broader
 
 []{#766}
 
-######  Brewsterite Subgroup
-* `Brewsterite`
+######  Brewsterite
 
 
 - Child of:
  [`4395`](#4395)
  [`s09_GE`](#s09_GE)
 
--
 - series of minerals, brewsterite-Ba and brewsterite-Sr, being the
 barium and strontium end-members of the brewsterite family. Most
 brewsterite will be the strontium end-member.
@@ -138220,7 +129875,6 @@ https://w3id.org/geochem/1.0/min/smrMindatGroupQuery
 []{#s09_gf}
 
 #####  Strunz 09.GF Other rare zeolite
-* `Strunz 09.GF Other rare zeolite`
 
 
 - Child of:
@@ -138426,7 +130080,6 @@ SMR add missing skos broader
 []{#s09_gg}
 
 #####  Strunz 09.GG Zeolite, unclassified
-* `Strunz 09.GG Zeolite, unclassified`
 
 
 - Child of:
@@ -138469,7 +130122,6 @@ SMR add missing skos broader
 []{#s09_h}
 
 ####  Strunz 09.H Silicate, unclassified
-* `Strunz 09.H Silicate, unclassified`
 
 
 - Child of:
@@ -138488,7 +130140,7 @@ SMR add missing skos broader
 
 - Concept URI: https://w3id.org/geochem/1.0/min/aklimaite
 
-- IMA chemistry: Ca<sub>4</sub>[Si<sub>2</sub>O<sub>5</sub>(OH)<sub>2</sub>](OH)<sub>4</sub>·5H<sub>2</sub>O
+- IMA chemistry: Ca<sub>4</sub>[Si<sub>2</sub>O<sub>5</sub>(OH)<sub>2</sub>]     (OH)<sub>4</sub>·5H<sub>2</sub>O
 
 - MinDat URL: http://www.mindat.org/min-42244.html
 
@@ -138549,7 +130201,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_ha}
 
 #####  Strunz 09.HA Silicate, unclassified: With Alkali and Alkali-earth Elements
-* `Strunz 09.HA Silicate, unclassified: With Alkali and Alkali-earth Elements`
 
 
 - Child of:
@@ -138790,7 +130441,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_hb}
 
 #####  Strunz 09.HB Silicate, unclassified: With Ti, V, Cr
-* `Strunz 09.HB Silicate, unclassified: With Ti, V, Cr`
 
 
 - Child of:
@@ -138832,7 +130482,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_hc}
 
 #####  Strunz 09.HC Silicate, unclassified: With Mn, Fe
-* `Strunz 09.HC Silicate, unclassified: With Mn, Fe`
 
 
 - Child of:
@@ -138874,7 +130523,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_hd}
 
 #####  Strunz 09.HD Silicate, unclassified: With Co, Ni
-* `Strunz 09.HD Silicate, unclassified: With Co, Ni`
 
 
 - Child of:
@@ -138886,7 +130534,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_he}
 
 #####  Strunz 09.HE Silicate, unclassified: With Cu, Zn
-* `Strunz 09.HE Silicate, unclassified: With Cu, Zn`
 
 
 - Child of:
@@ -138928,7 +130575,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_hf}
 
 #####  Strunz 09.HF Silicate, unclassified: With Nb, Ta, Zr
-* `Strunz 09.HF Silicate, unclassified: With Nb, Ta, Zr`
 
 
 - Child of:
@@ -138970,7 +130616,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_hg}
 
 #####  Strunz 09.HG Silicate, unclassified: With REE, Th
-* `Strunz 09.HG Silicate, unclassified: With REE, Th`
 
 
 - Child of:
@@ -139027,7 +130672,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_hh}
 
 #####  Strunz 09.HH Silicate, unclassified: With Pb
-* `Strunz 09.HH Silicate, unclassified: With Pb`
 
 
 - Child of:
@@ -139114,7 +130758,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s09_j}
 
 ####  Strunz 09.J Germanate
-* `Strunz 09.J Germanate`
 
 
 - Child of:
@@ -139198,7 +130841,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s10_a}
 
 ####  Strunz 10.A Salt of organic acid
-* `Strunz 10.A Salt of organic acid`
 
 
 - Child of:
@@ -139210,7 +130852,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s10_aa}
 
 #####  Strunz 10.AA Formate, Acetate, etc.
-* `Strunz 10.AA Formate, Acetate, etc.`
 
 
 - Child of:
@@ -139312,7 +130953,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s10_ab}
 
 #####  Strunz 10.AB Oxalate
-* `Strunz 10.AB Oxalate`
 
 
 - Child of:
@@ -139703,7 +131343,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s10_ac}
 
 #####  Strunz 10.AC Benzine Salt
-* `Strunz 10.AC Benzine Salt`
 
 
 - Child of:
@@ -139764,7 +131403,6 @@ SMR add missing skos broader
 []{#s10_ad}
 
 #####  Strunz 10.AD Cyanate
-* `Strunz 10.AD Cyanate`
 
 
 - Child of:
@@ -139791,7 +131429,6 @@ SMR add missing skos broader
 []{#s10_b}
 
 ####  Strunz 10.B Hydrocarbon
-* `Strunz 10.B Hydrocarbon`
 
 
 - Child of:
@@ -139820,7 +131457,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s10_ba}
 
 #####  Strunz 10.BA Hydrocarbon
-* `Strunz 10.BA Hydrocarbon`
 
 
 - Child of:
@@ -139967,7 +131603,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s10_c}
 
 ####  Strunz 10.C Miscellaneous Organic Mineral
-* `Strunz 10.C Miscellaneous Organic Mineral`
 
 
 - Child of:
@@ -139979,7 +131614,6 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 []{#s10_ca}
 
 #####  Strunz 10.CA Miscellaneous Organic Mineral
-* `Strunz 10.CA Miscellaneous Organic Mineral`
 
 
 - Child of:
@@ -140133,6 +131767,10 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - Child of:
  [`s10_CA`](#s10_CA)
 
+- A group of heteropolymer organic molecules formed by solar
+ultraviolet irradiation on methane, ethane and other simple organic
+compounds. They are found on many of the ice worlds of the outer solar
+system and are a strong reddish colour. (Mindat)
 
 - **Source:**
 https://w3id.org/geochem/1.0/min/SMRadditions
@@ -140204,6 +131842,8 @@ https://w3id.org/geochem/1.0/min/SMRadditions
 - Child of:
  [`Mineraloid_Material`](#Mineraloid_Material)
 
+- A pale-yellow to dark reddish brown, sulfur-bearing fossil resin
+found in brown coal. (AGI glossary, Neuendorf et al., 2005)
 
 - **Source:**
 https://w3id.org/geochem/1.0/min/SMRadditions
