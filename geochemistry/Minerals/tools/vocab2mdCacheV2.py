@@ -47,7 +47,7 @@ logging_config = {
     "handlers": {
         "console": {
             "class": "logging.StreamHandler",
-            "level": "INFO",
+            "level": "DEBUG",
             "formatter": "standard",
             "stream": "ext://sys.stderr",
         },
@@ -57,7 +57,7 @@ logging_config = {
             "handlers": [
                 "console",
             ],
-            "level": "INFO",
+            "level": "DEBUG",
             "propogate": False,
         },
     },
@@ -167,15 +167,15 @@ def getObjects(g, s, p):
 #        L.debug(f"vocab2md/getObjects: {prefix}: {ns_url}")
     q = rdflib.plugins.sparql.prepareQuery(PFX + """SELECT ?o WHERE {?subject ?predicate ?o .}""")
 #    q = rdflib.plugins.sparql.prepareQuery("SELECT ?o WHERE {?subject ?predicate ?o .}", initNs=test)
-    L.debug(f"getObjects prefixes: {PFX}\n")
+#    L.debug(f"getObjects prefixes: {PFX}\n")
     L.debug(f"getObjects subject: {s}\n")
     L.debug(f"getObjects predicate: {p}\n")
     qres = g.query(q, initBindings={'subject': s, 'predicate': p})
-    L.debug(f"length of qres: {len(qres)}\n", )
-    L.debug(f"qres: {qres}\n")
+#    L.debug(f"length of qres: {len(qres)}\n", )
+#    L.debug(f"qres: {qres}\n")
     res = []
     for row in qres:
-        L.debug(f"getObjects: {row[0]}\n")
+        L.debug(f"getObjects[0]: {row[0]}\n")
         res.append(row[0])
     return res
 
@@ -294,13 +294,17 @@ def describeTerm(g, t, depth=0, level=1):
 #mineral data
     imachem = getObjects(g, t, gcminT('imachemistry'))
     rruffchemistry = getObjects(g,t,gcminT('rruffchemistry'))
+    # print(f"- Concept URI: {t}")
+    try :
+        if len(imachem) > 0:
+            res.append(f"- IMA chemistry: {str(imachem[0])}")
+            res.append("")
+        elif len(rruffchemistry) > 0:
+            res.append(f"- RRUFF chemistry: {str(rruffchemistry[0])}")
+            res.append("")
+    except:
+        print("Error:  imachem:", imachem, "  rruffchemistry:", rruffchemistry)
 
-    if len(imachem) > 0:
-        res.append(f"- IMA chemistry: {str(imachem[0])}")
-        res.append("")
-    elif len(rruffchemistry) > 0:
-        res.append(f"- RRUFF chemistry: {str(rruffchemistry[0])}")
-        res.append("")
     mdurl = getObjects(g, t, gcminT('mindaturl'))
     if len(mdurl) > 0:
         res.append(f"- MinDat URL: {str(mdurl[0])}")

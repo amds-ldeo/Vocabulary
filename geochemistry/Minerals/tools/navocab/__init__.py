@@ -21,6 +21,10 @@ NS = {
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "obo": "http://purl.obolibrary.org/obo/",
     "geosciml": "http://resource.geosciml.org/classifier/cgi/lithology",
+    "dcterm": "http://purl.org/dc/terms/",
+    "gcmin": "https://w3id.org/geochem/1.0/min/",
+    "grup": "https://w3id.org/geochem/1.0/mingroup/",
+    "strunz": "https://w3id.org/geochem/1.0/strunzgroup/"
 }
 def getLogger():
     return logging.getLogger("navocab")

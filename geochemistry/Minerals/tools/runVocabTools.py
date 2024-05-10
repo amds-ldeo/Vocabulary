@@ -66,15 +66,15 @@ def main(command, path):
     index = 0
     print(f"input markdown file: {inputttl[index]}, vocab uri: {inputvocaburi[index]}")
 #    for inputf in inputttl:
-#       result = load_cachedb(sourcevocabdir + "/" + inputf + ".ttl", cachepath)
-#     while index < len(inputttl):
-#         result = load_cachedb(sourcevocabdir + "/" + inputttl[index] + ".ttl",cachepath,inputvocaburi[index])
-#         if (result == 0):
-#             print(f"load_cachedb call successful for: {inputttl[index]}")
-#         else:
-#             print(f"load_cachedb had problem processing: {inputttl[index]}")
-#         index += 1
-#         # ***********************
+#      result = load_cachedb(sourcevocabdir + "/" + inputf + ".ttl", cachepath)
+    while index < len(inputttl):
+        result = load_cachedb(sourcevocabdir + "/" + inputttl[index] + ".ttl",cachepath,inputvocaburi[index])
+        if (result == 0):
+            print(f"load_cachedb call successful for: {inputttl[index]}")
+        else:
+            print(f"load_cachedb had problem processing: {inputttl[index]}")
+        index += 1
+        # ***********************
 
     #  essfrole_earthenv_sampled_feature_role  spec_earthenv_specimen_type
     if command == "uijson":
