@@ -307,7 +307,8 @@ def describeTerm(g, t, depth=0, level=1):
 
     mdurl = getObjects(g, t, gcminT('mindaturl'))
     if len(mdurl) > 0:
-        res.append(f"- MinDat URL: {str(mdurl[0])}")
+        #[{label[0]}](#{llabel})"]
+        res.append(f"- MinDat URL: [{str(mdurl[0])}]({str(mdurl[0])})")
         res.append("")
     return res
 
