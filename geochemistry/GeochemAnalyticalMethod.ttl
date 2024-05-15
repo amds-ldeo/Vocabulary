@@ -554,6 +554,7 @@ meth:atomicforcemicroscopy
   rdfs:label "Atomic force microscopy "@en ;
   skos:broader meth:physicalpropertymeasurement ;
   skos:definition "a high-resolution, non-optical imaging technique that uses a cantilever with a sharp tip to scan over a sample surface. AFM can be used to image almost any type of surface, including polymers, ceramics, composites, glass, and biological samples. AFM can also be used to measure and localize many different forces, including adhesion strength, magnetic forces, and mechanical properties."@en ;
+  skos:inScheme meth:method ;
   skos:notation "AFM" ;
   skos:prefLabel "Atomic force microscopy"@en ;
 .
@@ -717,6 +718,7 @@ meth:cavityenhancedabsorptionspectrometry
   rdfs:label "Cavity enhanced absorption spectrometry"@en ;
   skos:broader meth:laserabsorptionspectrometry ;
   skos:definition "technique to increase sensitivity of laser absorption spectrometry by placing analyzed gas in a cavity with mirrors such that the light bounces back and forth, increasing the interaction length between the light and the sample."@en ;
+  skos:inScheme meth:method ;
   skos:notation "CE-A-S" ;
   skos:prefLabel "Cavity enhanced absorption spectrometry"@en ;
 .
@@ -728,6 +730,7 @@ meth:cavityringdownspectrometry
   rdfs:label "Cavity ring-down spectrometry"@en ;
   skos:broader meth:cavityenhancedabsorptionspectrometry ;
   skos:definition "In CRDS, the beam from a single-frequency laser diode enters a cavity defined by two or more high reflectivity mirrors. When the laser is on, the cavity quickly fills with circulating laser light. A fast photodetector senses the small amount of light leaking through one of the mirrors to produce a signal that is directly proportional to the intensity in the cavity. When the photodetector signal reaches a threshold level (in a few tens of microseconds), the continuous wave (CW) laser is abruptly turned off. The light already within the cavity continues to bounce between the mirrors (about 100,000 times), but because the mirrors have slightly less than 100% reflectivity (99.999%), the light intensity inside the cavity steadily leaks out and decays to zero in an exponential fashion. This decay, or \"ring down\", is measured in real-time by the photodetector, and the amount of time it takes for the ring down to happen is determined solely by the reflectivity of the mirrors (for an empty cavity). When a gas species that absorbs the laser light is introduced into the cavity, a second loss mechanism  (absorption) is introduced, which accelerates the ring down time. Analysis of the ring down time of the cavity with and without absorption due to the target gas species can be used to calculate the concentration of the absorbing substance in the gas mixture in the cavity. Comparison of the ring down time of the cavity with and without any absorbing gas is accomplished by tuning the laser first to a wavelength where the gas absorbs light, and then to a wavelength where the gas does not absorb light."@en ;
+  skos:inScheme meth:method ;
   skos:notation "CRD-S" ;
   skos:prefLabel "Cavity ring-down spectrometry"@en ;
 .
@@ -3463,6 +3466,7 @@ Planetary XX. Houston, Lunar Planet. Inst., 383-384;  https://articles.adsabs.ha
   rdfs:label "Thermoluminescence analysis"@en ;
   skos:broader meth:analyticalmethod ;
   skos:definition "Technique used to evaluate the degree of metamorphism for ordinary chondrites, CM, CV, and CO chondrites and eucrites, and to identify meteorites that have experience unusual radiation or thermal history.  Procedure: samples pulverized to 100 mesh powders, metal removed with a hand magnet. Aliquot (typically 4 mg) placed in copper pans, their natural TL emitted light intensity measured while by heating to 500 degree C, annealing any TL effect. Sample is then given a known dose of radiation and induced TL measured by heating to 500 degree C while the intensity of light emitted is measured. Light measured using a photomultiplier (or similar radiometer) equipped with IR and red filters (possibly other filters). Measurements include TL sensitivity - the maximum intensity of light emitted normalized to a standard of Dhajala (H3.8) powder;  Temperature of maximum TL light intensity ('peak temperature'); Peak width of the light intensity vs. temperature curve as full-width at half maximum; ratio of light intensity peak height at low and high temperature (generally 250 and 350 degrees C), 'equivalent dose' - the ratio of natural TL intensity to induced TL intensity (at 250 degree C), multiplied by the excitation dose to induce TL.  Parameters in the experiments include the mass of sample analyzed, temperature range for heating, kind of radiometer and filters used, heating rate (count time at each temperature...), and dose of radiation to the sample after the initial heating and annealing."@en ;
+  skos:inScheme meth:method ;
   skos:notation "TLA" ;
   skos:prefLabel "Thermoluminescence analysis"@en ;
 .
@@ -3626,6 +3630,7 @@ meth:wavelengthmodulationspectrometry
   skos:altLabel "Wavelength-modulation spectroscopy"@en ;
   skos:broader meth:laserabsorptionspectrometry ;
   skos:definition "Laser-absorption spectroscopy (LAS) technique in which excitation laser wavelength is modulated to embed discrete frequencies in the detector signal while the nominal wavelength of the laser is scanned across a molecules absorption transition. The modulation shifts absorption information to harmonics the excitation frequency,  extracted via digital lock-in filters during post-processing, and the wavelength scanning enables spectra of WMS signals to be measured. The WMS signals are then used to calculate gas conditions using calibration-free WMS models."@en ;
+  skos:inScheme meth:method ;
   skos:notation "WM-S" ;
   skos:prefLabel "Wavelength-modulation spectrometry"@en ;
 .
