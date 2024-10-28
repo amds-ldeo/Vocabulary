@@ -14,332 +14,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.w3.org/2004/02/skos/core>
-  rdf:type owl:Ontology ;
-  dcterm:contributor "Dave Beckett" ;
-  dcterm:contributor "Nikki Rogers" ;
-  dcterm:contributor "Participants in W3C's Semantic Web Deployment Working Group." ;
-  dcterm:creator "Alistair Miles" ;
-  dcterm:creator "Sean Bechhofer" ;
-  dcterm:description "An RDF vocabulary for describing the basic structure and content of concept schemes such as thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', other types of controlled vocabulary, and also concept schemes embedded in glossaries and terminologies."@en ;
-  dcterm:title "SKOS Vocabulary"@en ;
-  rdfs:label "SKOS Core RDF vocabulary" ;
-  rdfs:seeAlso <http://www.w3.org/TR/skos-reference/> ;
-  owl:versionInfo "Modified by TopQuadrant to assert three rdfs:subClassOf owl:Thing triples." ;
-.
-skos:Collection
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "Collection"@en ;
-  rdfs:subClassOf owl:Thing ;
-  owl:disjointWith skos:Concept ;
-  owl:disjointWith skos:ConceptScheme ;
-  skos:definition "A meaningful collection of concepts."@en ;
-  skos:scopeNote "Labelled collections can be used where you would like a set of concepts to be displayed under a 'node label' in the hierarchy."@en ;
-.
-skos:Concept
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "Concept"@en ;
-  rdfs:subClassOf owl:Thing ;
-  skos:definition "An idea or notion; a unit of thought."@en ;
-.
-skos:ConceptScheme
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "Concept Scheme"@en ;
-  rdfs:subClassOf owl:Thing ;
-  owl:disjointWith skos:Concept ;
-  skos:definition "A set of concepts, optionally including statements about semantic relationships between those concepts."@en ;
-  skos:example "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies."@en ;
-  skos:scopeNote "A concept scheme may be defined to include concepts from different sources."@en ;
-.
-skos:OrderedCollection
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "Ordered Collection"@en ;
-  rdfs:subClassOf skos:Collection ;
-  skos:definition "An ordered collection of concepts, where both the grouping and the ordering are meaningful."@en ;
-  skos:scopeNote "Ordered collections can be used where you would like a set of concepts to be displayed in a specific order, and optionally under a 'node label'."@en ;
-.
-skos:altLabel
-  rdf:type rdf:Property ;
-  rdf:type owl:AnnotationProperty ;
-  rdfs:comment "The range of skos:altLabel is the class of RDF plain literals."@en ;
-  rdfs:comment "skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties."@en ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "alternative label"@en ;
-  rdfs:subPropertyOf rdfs:label ;
-  skos:definition "An alternative lexical label for a resource."@en ;
-  skos:example "Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel)."@en ;
-.
-skos:broadMatch
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "has broader match"@en ;
-  rdfs:subPropertyOf skos:broader ;
-  rdfs:subPropertyOf skos:mappingRelation ;
-  owl:inverseOf skos:narrowMatch ;
-  skos:definition "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ;
-.
-skos:broader
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdfs:comment "Broader concepts are typically rendered as parents in a concept hierarchy (tree)."@en ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "has broader"@en ;
-  rdfs:subPropertyOf skos:broaderTransitive ;
-  owl:inverseOf skos:narrower ;
-  skos:definition "Relates a concept to a concept that is more general in meaning."@en ;
-  skos:scopeNote "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en ;
-.
-skos:broaderTransitive
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdf:type owl:TransitiveProperty ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "has broader transitive"@en ;
-  rdfs:subPropertyOf skos:semanticRelation ;
-  owl:inverseOf skos:narrowerTransitive ;
-  skos:definition "skos:broaderTransitive is a transitive superproperty of skos:broader." ;
-  skos:scopeNote "By convention, skos:broaderTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application."@en ;
-.
-skos:changeNote
-  rdf:type rdf:Property ;
-  rdf:type owl:AnnotationProperty ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "change note"@en ;
-  rdfs:subPropertyOf skos:note ;
-  skos:definition "A note about a modification to a concept."@en ;
-.
-skos:closeMatch
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdf:type owl:SymmetricProperty ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "has close match"@en ;
-  rdfs:subPropertyOf skos:mappingRelation ;
-  skos:definition "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property."@en ;
-.
-skos:definition
-  rdf:type rdf:Property ;
-  rdf:type owl:AnnotationProperty ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "definition"@en ;
-  rdfs:subPropertyOf skos:note ;
-  skos:definition "A statement or formal explanation of the meaning of a concept."@en ;
-.
-skos:editorialNote
-  rdf:type rdf:Property ;
-  rdf:type owl:AnnotationProperty ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "editorial note"@en ;
-  rdfs:subPropertyOf skos:note ;
-  skos:definition "A note for an editor, translator or maintainer of the vocabulary."@en ;
-.
-skos:exactMatch
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdf:type owl:SymmetricProperty ;
-  rdf:type owl:TransitiveProperty ;
-  rdfs:comment "skos:exactMatch is disjoint with each of the properties skos:broadMatch and skos:relatedMatch."@en ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "has exact match"@en ;
-  rdfs:subPropertyOf skos:closeMatch ;
-  skos:definition "skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch."@en ;
-.
-skos:example
-  rdf:type rdf:Property ;
-  rdf:type owl:AnnotationProperty ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "example"@en ;
-  rdfs:subPropertyOf skos:note ;
-  skos:definition "An example of the use of a concept."@en ;
-.
-skos:hasTopConcept
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain skos:ConceptScheme ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "has top concept"@en ;
-  rdfs:range skos:Concept ;
-  owl:inverseOf skos:topConceptOf ;
-  skos:definition "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies."@en ;
-.
-skos:hiddenLabel
-  rdf:type rdf:Property ;
-  rdf:type owl:AnnotationProperty ;
-  rdfs:comment "The range of skos:hiddenLabel is the class of RDF plain literals."@en ;
-  rdfs:comment "skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties."@en ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "hidden label"@en ;
-  rdfs:subPropertyOf rdfs:label ;
-  skos:definition "A lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations."@en ;
-.
-skos:historyNote
-  rdf:type rdf:Property ;
-  rdf:type owl:AnnotationProperty ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "history note"@en ;
-  rdfs:subPropertyOf skos:note ;
-  skos:definition "A note about the past state/use/meaning of a concept."@en ;
-.
-skos:inScheme
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "is in scheme"@en ;
-  rdfs:range skos:ConceptScheme ;
-  rdfs:subPropertyOf skos:member ;
-  skos:definition "Relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
-  skos:scopeNote "A concept may be a member of more than one concept scheme."@en ;
-.
-skos:mappingRelation
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdfs:comment "These concept mapping relations mirror semantic relations, and the data model defined below is similar (with the exception of skos:exactMatch) to the data model defined for semantic relations. A distinct vocabulary is provided for concept mapping relations, to provide a convenient way to differentiate links within a concept scheme from links between concept schemes. However, this pattern of usage is not a formal requirement of the SKOS data model, and relies on informal definitions of best practice."@en ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "is in mapping relation with"@en ;
-  rdfs:subPropertyOf skos:semanticRelation ;
-  skos:definition "Relates two concepts coming, by convention, from different schemes, and that have comparable meanings"@en ;
-.
-skos:member
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain skos:Collection ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "has member"@en ;
-  rdfs:range [
-      rdf:type owl:Class ;
-      owl:unionOf (
-          skos:Concept
-          skos:Collection
-        ) ;
-    ] ;
-  skos:definition "Relates a collection to one of its members."@en ;
-.
-skos:memberList
-  rdf:type rdf:Property ;
-  rdf:type owl:FunctionalProperty ;
-  rdf:type owl:ObjectProperty ;
-  rdfs:comment """For any resource, every item in the list given as the value of the
-      skos:memberList property is also a value of the skos:member property."""@en ;
-  rdfs:domain skos:OrderedCollection ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "has member list"@en ;
-  rdfs:range rdf:List ;
-  skos:definition "Relates an ordered collection to the RDF list containing its members."@en ;
-.
-skos:narrowMatch
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "has narrower match"@en ;
-  rdfs:subPropertyOf skos:mappingRelation ;
-  rdfs:subPropertyOf skos:narrower ;
-  owl:inverseOf skos:broadMatch ;
-  skos:definition "skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en ;
-.
-skos:narrower
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdfs:comment "Narrower concepts are typically rendered as children in a concept hierarchy (tree)."@en ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "has narrower"@en ;
-  rdfs:subPropertyOf skos:narrowerTransitive ;
-  owl:inverseOf skos:broader ;
-  skos:definition "Relates a concept to a concept that is more specific in meaning."@en ;
-  skos:scopeNote "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en ;
-.
-skos:narrowerTransitive
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdf:type owl:TransitiveProperty ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "has narrower transitive"@en ;
-  rdfs:subPropertyOf skos:semanticRelation ;
-  owl:inverseOf skos:broaderTransitive ;
-  skos:definition "skos:narrowerTransitive is a transitive superproperty of skos:narrower." ;
-  skos:scopeNote "By convention, skos:narrowerTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application."@en ;
-.
-skos:notation
-  rdf:type rdf:Property ;
-  rdf:type owl:DatatypeProperty ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "notation"@en ;
-  skos:definition "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."@en ;
-  skos:scopeNote "By convention, skos:notation is used with a typed literal in the object position of the triple."@en ;
-.
-skos:note
-  rdf:type rdf:Property ;
-  rdf:type owl:AnnotationProperty ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "note"@en ;
-  skos:definition "A general note, for any purpose."@en ;
-  skos:scopeNote "This property may be used directly, or as a super-property for more specific note types."@en ;
-.
-skos:prefLabel
-  rdf:type rdf:Property ;
-  rdf:type owl:AnnotationProperty ;
-  rdfs:comment "A resource has no more than one value of skos:prefLabel per language tag."@en ;
-  rdfs:comment "The range of skos:prefLabel is the class of RDF plain literals."@en ;
-  rdfs:comment """skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise
-      disjoint properties."""@en ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "preferred label"@en ;
-  rdfs:subPropertyOf rdfs:label ;
-  skos:definition "The preferred lexical label for a resource, in a given language."@en ;
-.
-skos:related
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdf:type owl:SymmetricProperty ;
-  rdfs:comment "skos:related is disjoint with skos:broaderTransitive"@en ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "has related"@en ;
-  rdfs:subPropertyOf skos:semanticRelation ;
-  skos:definition "Relates a concept to a concept with which there is an associative semantic relationship."@en ;
-.
-skos:relatedMatch
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdf:type owl:SymmetricProperty ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "has related match"@en ;
-  rdfs:subPropertyOf skos:mappingRelation ;
-  rdfs:subPropertyOf skos:related ;
-  skos:definition "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes."@en ;
-.
-skos:scopeNote
-  rdf:type rdf:Property ;
-  rdf:type owl:AnnotationProperty ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "scope note"@en ;
-  rdfs:subPropertyOf skos:note ;
-  skos:definition "A note that helps to clarify the meaning and/or the use of a concept."@en ;
-.
-skos:semanticRelation
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain skos:Concept ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "is in semantic relation with"@en ;
-  rdfs:range skos:Concept ;
-  skos:definition "Links a concept to a concept related by meaning."@en ;
-  skos:scopeNote "This property should not be used directly, but as a super-property for all properties denoting a relationship of meaning between concepts."@en ;
-.
-skos:topConceptOf
-  rdf:type rdf:Property ;
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain skos:Concept ;
-  rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-  rdfs:label "is top concept in scheme"@en ;
-  rdfs:range skos:ConceptScheme ;
-  rdfs:subPropertyOf skos:inScheme ;
-  owl:inverseOf skos:hasTopConcept ;
-  skos:definition "Relates a concept to the concept scheme that it is a top level concept of."@en ;
-.
+
 <https://w3id.org/geochem/1.0/agent/astromat>
   rdf:type dcterm:Agent ;
   dcterm:contributor <https://orcid.org/0000-0001-7036-1977> ;
@@ -401,7 +76,7 @@ meth:acceleratormassspectrometry
   skos:broader meth:massspectrometry ;
   skos:definition "In this technique, the target element is first chemically separated from the sample before it is placed in a sample holder in the AMS instrument. The sample element is then bombarded by cesium ions to sputter the analyte element from the sample as negative ions. The analyte ions are then accelerated down a beam tube by a positive potential difference of several million volts, passed through an electron stripper to convert them to positive ions, and accelerated back down the beam tube toward common potential where ion velocities approach a few percent of the speed of light. Using a series of magnetic and electrostatic mass filters, the ion beam containing all isotopes of the analyte element is then separated into separate beams containing the (usually unstable) isotope of interest and other isotopes, and each of the isotopes is counted by a separate detector. (Skoog, Holler & Crouch, p. 271). Components: 1) sample preparation: chemical concentration of analyte; 2) ionization: ion beam; 3) mass analyzer: accelerator Mass spectrometer; 4) detector: not specified."@en ;
   skos:inScheme meth:method ;
-  skos:notation "AMS" ;
+  skos:notation "A-MS" ;
   skos:prefLabel "Accelerator mass spectrometry"@en ;
 .
 meth:acidreactioncarbonateanalysis
@@ -412,7 +87,7 @@ meth:acidreactioncarbonateanalysis
   skos:broader meth:wetchemistry ;
   skos:definition "Determination of calcium carbonate content by reaction with an acid and determining the quantity of CO2 produced. Different techniques use different acids and CO2 production measurement approaches."@en ;
   skos:inScheme meth:method ;
-  skos:notation "xARCA" ;
+  skos:notation "ARCA" ;
   skos:prefLabel "Acid reaction carbonate analysis"@en ;
 .
 meth:adsorptionanalysis
@@ -439,7 +114,7 @@ meth:afmtopographyimaging
   skos:broader meth:surfaceanalysis ;
   skos:definition "a sharp probe tip mounted on a microcantilever scans over the specimen line by line, whereby the topographic image of the sample surface is generated by 'feeling' rather than 'looking.' (https://doi.org/10.1007/978-3-642-16712-6_496).  As the tip approaches the surface, the close-range, attractive forces between the surface and the tip causes the cantilever to deflect towards the surface. However, as the cantilever is brought even closer to the surface, until the tip makes contact with it, increasingly repulsive forces takes over and causes the cantilever to deflect away from the surface. (https://lnf-wiki.eecs.umich.edu/wiki/Atomic_force_microscopy)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "AFM" ;
+  skos:notation "AFMT" ;
   skos:prefLabel "AFM topography imaging"@en ;
 .
 meth:alphaparticlecounting
@@ -470,7 +145,7 @@ meth:alphaparticlespectrometry
   skos:broader meth:particlespectrometry ;
   skos:definition "Analysis of the energy of alpha particles emitted by a radioactive nuclide that is an alpha emitter. As emitted alpha particles are mono-energetic (i.e. not emitted with a spectrum of energies, such as beta decay) with energies often distinct to the decay they can be used to identify which radionuclide they originated from. (https://en.wikipedia.org/wiki/Alpha-particle_spectroscopy)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "ALPHASPEC" ;
+  skos:notation "ALPHA-S" ;
   skos:prefLabel "Alpha particle spectrometry"@en ;
 .
 meth:alpharecoiltrackcounting
@@ -496,6 +171,7 @@ meth:amperometry
   skos:broader meth:electrochemicaltechniques ;
   skos:definition "Technique based on measurement of current at a controlled applied potential. Application: monitoring of carbon monoxide in air, dissolved oxygen in water (Clark electrode), glucose in blood (glucose electrode). (Source: IUPAC;  https://doi.org/10.1515/pac-2018-0109). "@en ;
   skos:inScheme meth:method ;
+  skos:notation "AMP" ;
   skos:prefLabel "Amperometry"@en ;
 .
 meth:analyticalmethod
@@ -545,7 +221,6 @@ meth:atomicabsorptionspectrometry
   rdfs:isDefinedBy meth:method ;
   rdfs:label "Atomic absorption spectrometry"@en ;
   skos:altLabel "ATOMIC ABSORPTION"@en ;
-  skos:altLabel "Atomic absorption spectrophotometry" ;
   skos:altLabel "Atomic absorption spectrophotometry"@en ;
   skos:altLabel "Atomic absorption spectroscopy"@en ;
   skos:altLabel "MICROABSORPTION ANALYSIS"@en ;
@@ -553,7 +228,7 @@ meth:atomicabsorptionspectrometry
   skos:broader meth:opticalspectrometry ;
   skos:definition "Analytical technique used to measure a wide range of elements in materials such as metals, pottery and glass, based on absorption of light by free metallic ions. The sample is accurately weighed and then dissolved, often using strong acids. The resulting solution is sprayed into the flame of the instrument and atomized. Light of a suitable wavelength for a particular element is shone through the flame, and some of this light is absorbed by the atoms of the sample. Individual elements will absorb wavelengths differently, and these absorbances are measured against standards. The amount of light absorbed is proportional to the concentration of the element in the solution, and hence in the original object. Measurements are made separately for each element of interest in turn to achieve a complete analysis of an object, and thus the technique is relatively slow to use. However, it is very sensitive and it can measure trace elements down to the part per million level, as well as being able to measure elements present in minor and major amounts. The method requires standards with known analyte content to establish the relation between the measured absorbance and the analyte concentration. (https://en.wikipedia.org/wiki/Atomic_absorption_spectroscopy; (https://www.thermofisher.com/us/en/home/industrial/spectroscopy-elemental-isotope-analysis/spectroscopy-elemental-isotope-analysis-learning-center/trace-elemental-analysis-tea-information/atomic-absorption-aa-information.html)).  Although it is a destructive technique (unlike ED-XRF), the sample size needed is very small (typically about 10 milligrams - i.e. one hundredth of a gram) and its removal causes little damage.  Additional information available at http://www.thebritishmuseum.ac.uk/science/text/techniques/sr-tech-aas-t.html"@en ;
   skos:inScheme meth:method ;
-  skos:notation "AAS" ;
+  skos:notation "AA-S" ;
   skos:prefLabel "Atomic absorption spectrometry"@en ;
 .
 meth:atomicforcemicroscopy
@@ -562,7 +237,9 @@ meth:atomicforcemicroscopy
   dcterm:source "https://en.wikipedia.org/wiki/Atomic_force_microscopy" ;
   rdfs:label "Atomic force microscopy "@en ;
   skos:broader meth:physicalpropertymeasurement ;
-  skos:definition "a high-resolution, non-optical imaging technique that uses a cantilever with a sharp tip to scan over a sample surface. AFM can be used to image almost any type of surface, including polymers, ceramics, composites, glass, and biological samples. AFM can also be used to measure and localize many different forces, including adhesion strength, magnetic forces, and mechanical properties  (see Nanoindentation and Microindentation)."@en ;
+  skos:definition "a high-resolution, non-optical imaging technique that uses a cantilever with a sharp tip to scan over a sample surface. AFM can be used to image almost any type of surface, including polymers, ceramics, composites, glass, and biological samples. AFM can also be used to measure and localize many different forces, including adhesion strength, magnetic forces, and mechanical properties."@en ;
+  skos:inScheme meth:method ;
+  skos:notation "AFM" ;
   skos:prefLabel "Atomic force microscopy"@en ;
 .
 meth:atomprobetomography
@@ -596,7 +273,7 @@ meth:backscatteredelectrongrainboundarymap
   skos:broader meth:electronmicroscopyimaging ;
   skos:definition "Image showing grain boundaries generated by detecting crytallographic orientation changes in a raster of backscattered electron diffraction data points."@en ;
   skos:inScheme meth:method ;
-  skos:notation "SEMEBSDGrainImageMap" ;
+  skos:notation "BSE-GB" ;
   skos:prefLabel "Backscattered electron grain boundary imaging"@en ;
 .
 meth:backscatteredelectronimaging
@@ -655,7 +332,7 @@ meth:broadbeamxrayspectrometry
   skos:broader meth:xrayspectrometry ;
   skos:definition "Technique to induce X-ray emission using a broad (large diameter) ion or electron beam as the excitation. [inferred from https://inis.iaea.org/collection/NCLCollectionStore/_Public/30/060/30060365.pdf, but not really clear what is meant here...]"@en ;
   skos:inScheme meth:method ;
-  skos:notation "XRBB" ;
+  skos:notation "BB-X-S" ;
   skos:prefLabel "Broad beam X-ray spectrometry"@en ;
 .
 meth:capacitancedilatometry
@@ -687,7 +364,7 @@ meth:catalyticcombustionanalysis
   dcterm:source <https://w3id.org/geochem/1.0/agent/georoc> ;
   rdfs:isDefinedBy meth:method ;
   rdfs:label "Catalytic combustion analysis"@en ;
-  skos:broader meth:infraredopticalspectrometry ;
+  skos:broader meth:combustioninfraredspectrometry ;
   skos:definition "[might be:] The 680 degree C combustion catalytic oxidation method achieves total combustion of samples by heating them to 680 degree C in an oxygen-rich environment inside TC combustion tubes filled with a platinum catalyst. Since this utilizes the simple principle of oxidation through heating and combustion, pretreatment and post-treatment using oxidizing agents are unnecessary, which enhances operability. The carbon dioxide generated by oxidation is detected using an infrared gas analyzer (NDIR). (https://www.shimadzu.eu.com/680-%C2%B0c-combustion-catalytic-oxidation-method-measurement-principles; https://www.sciencedirect.com/science/article/abs/pii/0304420388900436)"@en ;
   skos:inScheme meth:method ;
   skos:notation "CCOMB" ;
@@ -703,7 +380,7 @@ meth:cathodoluminescenceimaging
   skos:broader meth:imagingtechniques ;
   skos:definition "In a vacuum chamber containing the sample of interest, an electron beam is focused on the sample, causing cathodoluminescence (CL), the generation of electromagnetic radiation ranging from the ultraviolet (UV) to the near-infrared (NIR) regime of the electromagnetic spectrum. The light is collected with a collection optic (e.g. mirror or objective) and directed to a light detection unit, or directly captured by a detector in the chamber. This detector output is used to characterize various aspects of the light signal such as its intensity, color, and more.  Many trace elements or dopants can be sensitively detected with CL because they have different optical transitions than the bulk materials they are embedded in. It is possible to look at crystal defects as these can alter the local optical properties of the material.  CL  can also image optical resonances and guided modes in a range of (resonant) photonic and plasmonic systems. (https://www.delmic.com/en/techniques/cathodoluminescence)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "HR-CL" ;
+  skos:notation "CL" ;
   skos:prefLabel "Cathodoluminescence imaging"@en ;
 .
 meth:cationchromatographyanalysis
@@ -716,8 +393,30 @@ meth:cationchromatographyanalysis
   skos:broader meth:ionchromatographyanalysis ;
   skos:definition "Cation-exchange chromatography is used when the molecule of interest is positively charged. The molecule is positively charged because the pH for chromatography is less than the pI (a/k/a pH(I)). In this type of chromatography, the stationary phase is negatively charged and positively charged molecules are loaded to be attracted to it. (https://en.wikipedia.org/wiki/Ion_chromatography)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "xCCR" ;
+  skos:notation "CCR" ;
   skos:prefLabel "Cation chromatography analysis"@en ;
+.
+meth:cavityenhancedabsorptionspectrometry
+  rdf:type skos:Concept ;
+  dcterm:source "https://en.wikipedia.org/w/index.php?title=Laser_absorption_spectrometry&section=4" ;
+  rdfs:label "Cavity enhanced absorption spectrometry"@en ;
+  skos:broader meth:laserabsorptionspectrometry ;
+  skos:definition "technique to increase sensitivity of laser absorption spectrometry by placing analyzed gas in a cavity with mirrors such that the light bounces back and forth, increasing the interaction length between the light and the sample."@en ;
+  skos:inScheme meth:method ;
+  skos:notation "CE-A-S" ;
+  skos:prefLabel "Cavity enhanced absorption spectrometry"@en ;
+.
+meth:cavityringdownspectrometry
+  rdf:type skos:Concept ;
+  dcterm:source <https://w3id.org/geochem/1.0/agent/geox> ;
+  dcterm:source "https://en.wikipedia.org/wiki/Cavity_ring-down_spectroscopy" ;
+  dcterm:source "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/all/9a61fcbd-c75f-4940-939f-6e4c7d84d643" ;
+  rdfs:label "Cavity ring-down spectrometry"@en ;
+  skos:broader meth:cavityenhancedabsorptionspectrometry ;
+  skos:definition "In CRDS, the beam from a single-frequency laser diode enters a cavity defined by two or more high reflectivity mirrors. When the laser is on, the cavity quickly fills with circulating laser light. A fast photodetector senses the small amount of light leaking through one of the mirrors to produce a signal that is directly proportional to the intensity in the cavity. When the photodetector signal reaches a threshold level (in a few tens of microseconds), the continuous wave (CW) laser is abruptly turned off. The light already within the cavity continues to bounce between the mirrors (about 100,000 times), but because the mirrors have slightly less than 100% reflectivity (99.999%), the light intensity inside the cavity steadily leaks out and decays to zero in an exponential fashion. This decay, or \"ring down\", is measured in real-time by the photodetector, and the amount of time it takes for the ring down to happen is determined solely by the reflectivity of the mirrors (for an empty cavity). When a gas species that absorbs the laser light is introduced into the cavity, a second loss mechanism  (absorption) is introduced, which accelerates the ring down time. Analysis of the ring down time of the cavity with and without absorption due to the target gas species can be used to calculate the concentration of the absorbing substance in the gas mixture in the cavity. Comparison of the ring down time of the cavity with and without any absorbing gas is accomplished by tuning the laser first to a wavelength where the gas absorbs light, and then to a wavelength where the gas does not absorb light."@en ;
+  skos:inScheme meth:method ;
+  skos:notation "CRD-S" ;
+  skos:prefLabel "Cavity ring-down spectrometry"@en ;
 .
 meth:charmographanalysis
   rdf:type skos:Concept ;
@@ -740,7 +439,7 @@ meth:chromatographyanalysis
   skos:broader meth:analyticalmethod ;
   skos:definition "a laboratory technique for the separation of a mixture into its components. The mixture is dissolved in a fluid solvent (gas or liquid) called the mobile phase, which carries it through a system (a column, a capillary tube, a plate, or a sheet) on which a material called the stationary phase is fixed. The different constituents of the mixture travel at different apparent velocities in the mobile fluid, causing them to separate. The separation is based on the differential partitioning between the mobile and the stationary phases. The purpose of chromatography analysis is to establish the presence or measure the relative proportions of analytes in a mixture. The result is a chromatogram (https://en.wikipedia.org/wiki/Chromatography)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "xCR" ;
+  skos:notation "CR" ;
   skos:prefLabel "Chromatography analysis"@en ;
 .
 meth:colormetricanalysis
@@ -784,6 +483,7 @@ meth:combustiongaschromatography
   skos:broader meth:gaschromatographyanalysis ;
   skos:definition "Method in which an analytical sample is decomposed by heating in an oxygen atmosphere to induce combustion, and analyzing the combustion products by gas chromatography"@en ;
   skos:inScheme meth:method ;
+  skos:notation "GC-C" ;
   skos:prefLabel "Combustion gas chromatography"@en ;
 .
 meth:combustiongaschromatographyisotopicratiomassspectrometry
@@ -796,7 +496,7 @@ meth:combustiongaschromatographyisotopicratiomassspectrometry
   skos:broader meth:isotoperatiomassspectrometry ;
   skos:definition "Technique used to ascertain the relative ratio of light stable isotopes of carbon (13C/12C), hydrogen (2H/1H), nitrogen (15N/14N) or oxygen (18O/160) in individual compounds separated from often complex mixtures of components. The sample solution is injected into the gas chromatography (GC) inlet where it is vaporized and swept onto a chromatographic column by the carrier gas (usually helium). The sample flows through the column and the compounds comprising the mixture of interest are separated by virtue of their relative interaction with the coating of the column (stationary phase) and the carrier gas (mobile phase). Carbon and nitrogen compounds eluting from the chromatographic column then pass through a combustion reactor (an alumina tube containing Cu, Ni and Pt wires maintained at 940 degree C) where they are oxidatively combusted. This is followed by a reduction reactor (an alumina tube containing three Cu wires maintained at 600 degree C) to reduce any nitrogen oxides to nitrogen. For hydrogen and oxygen a high temperature thermal conversion reactor is required. Water is then removed in a water separator by passing the gas stream through a tube constructed from a water permeable nafion membrane. The sample is then introduced into the ion source of the mass analyzer by an open split interface, and particles with m/z ratios of interest are counted by detectors."@en ;
   skos:inScheme meth:method ;
-  skos:notation "GC-C-IRMS" ;
+  skos:notation "C-GC-IR-MS" ;
   skos:prefLabel "Combustion gas chromatography isotopic ratio mass spectrometry"@en ;
 .
 meth:combustioninfraredspectrometry
@@ -809,7 +509,7 @@ meth:combustioninfraredspectrometry
   skos:broader meth:infraredspectrometry ;
   skos:definition "Composite process, with combustion of sample and infrared spectrographic analysis of constituents. [Need more information -- ?emission or absorption?, is light from the combution analyzed, or does it produce an extract that is then passed to the spectrometer? ]"@en ;
   skos:inScheme meth:method ;
-  skos:notation "CIR" ;
+  skos:notation "CIR-S" ;
   skos:prefLabel "Combustion infrared spectrometry"@en ;
 .
 meth:combustionionchromatography
@@ -844,6 +544,7 @@ meth:confocalxrayfluorescencespectrometry
   skos:broader meth:xrayfluorescencespectrometry ;
   skos:definition "The confocal geometry uses two polycapillary focusing optics for enhanced applications of XRF elemental analysis. An excitation optic focuses a small X-ray beam onto the specimen. A detection optic collects fluorescent X-rays from the sample. Specifically, elemental concentrations are measured within the small probe volume ('confocal volume') defined by the intersection of the output focal spot of the excitation optic and the input focal spot of the collection optic.  The polycapillary focusing optics act as spatial filters to eliminate background radiation from the sample and increase detection sensitivity for sample elements of interest. Additionally, confocal XRF can be used for elemental depth profiling. Confocal XRF acts as a material probe by exciting and detecting emitted characteristic X-ray photons from within the confocal analysis volume as this volume is through the sample. In this way elemental concentrations can be measured on the object's surface and throughout the object's interior. (https://www.xos.com/Confocal-XRF)"@en ;
   skos:inScheme meth:method ;
+  skos:notation "CXRF" ;
   skos:prefLabel "Confocal X-ray fluorescence spectrometry"@en ;
 .
 meth:continuousflowisotoperatiomassspectrometry
@@ -859,7 +560,7 @@ meth:continuousflowisotoperatiomassspectrometry
   skos:broader meth:isotoperatiomassspectrometry ;
   skos:definition "Isotope-Ratio mass spectrometry that extracts analytes from a sample using elemental analyzer with a contintuous flow of gas to be atomized, ionized and passed to the mass analyzer. Components: 1) elemental analyzer; 2) continuous flow input. 3) mass analyzer 4) detectors.  Analyzed aliquots are gas."@en ;
   skos:inScheme meth:method ;
-  skos:notation "CFIRMS" ;
+  skos:notation "CF-IR-MS" ;
   skos:prefLabel "Continuous flow isotope ratio mass spectrometry"@en ;
 .
 meth:coulometricalanalysis
@@ -881,7 +582,7 @@ meth:desorptionelectrosprayionizationorbitrapmassspectrometry
   skos:broader meth:orbitrapmassspectrometry ;
   skos:definition "technique in which sample ionization is achieved by a process in which a spray of charged droplets is directed towards the sample. When the spray impacts the sample, a thin layer of solvent is formed into which the analytes may dissolve. As other primary droplets arrive at the sample surface, they splash secondary microdroplets containing the dissolved analytes from the solvent film. This mechanism causes analyte-containing droplets to be generated in the open air, and then delivered to the mass spectrometer through a heated extended capillary. (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3205348).  After the desorption process, ionization occurs via mechanisms that are similar to those of electrospray ionization, in which a high voltage is applied to a liquid to create an aerosol (https://en.wikipedia.org/wiki/Electrospray_ionization).  Mass analysis is done with an Orbitrap mass analyzer. (https://en.wikipedia.org/wiki/Orbitrap)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "DESI-Orbitrap MS" ;
+  skos:notation "DESI-OT-MS" ;
   skos:prefLabel "Desorption electrospray ionization orbitrap mass spectrometry"@en ;
 .
 meth:deuteronactivationanalysis
@@ -938,6 +639,7 @@ meth:differentialthermalanalyis
   skos:definition "Differential thermal analysis (DTA) is a technique in which the material under study and an inert reference are made to undergo identical thermal cycles, (i.e., same cooling or heating programme) while recording any temperature difference between sample and reference. This differential temperature is then plotted against time, or against temperature (DTA curve, or thermogram). Changes in the sample, either exothermic or endothermic, can be detected relative to the inert reference. Thus, a DTA curve provides data on the transformations that have occurred, such as glass transitions, crystallization, melting and sublimation. The area under a DTA peak is the enthalpy change and is not affected by the heat capacity of the sample. DTA is similar to differential scanning calorimetry."@en ;
   skos:editorialNote "GEOROC groups 'THERMOGRAVIMETRIC AND DIFFERENTIAL ANALYZER' as one technique, split into two techniques in this vocabulary."@en ;
   skos:inScheme meth:method ;
+  skos:notation "DTA" ;
   skos:prefLabel "Differential thermal analysis"@en ;
 .
 meth:directcurrentplasmaemissionspectrometry
@@ -952,7 +654,7 @@ meth:directcurrentplasmaemissionspectrometry
   skos:broader meth:plasmaemissionspectrometry ;
   skos:definition "A type of atomic emission spectrometry where a plasma generated by passing an electrical discharge between two electrodes is used as the excitation source. (https://www.rsc.org/publishing/journals/prospect/ontology.asp?id=CMO:0000265&MSID=b200027j)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "DCPAES" ;
+  skos:notation "DC-AE-S" ;
   skos:prefLabel "Direct current plasma emission spectrometry"@en ;
 .
 meth:directcurrentplasmaspectrometry
@@ -966,7 +668,7 @@ meth:directcurrentplasmaspectrometry
   skos:broader meth:plasmaopticalspectrometry ;
   skos:definition "A type of  spectrometry where a plasma generated by passing an electrical discharge between two electrodes is used as the excitation source. Could be absorption, emission or transmission spectral analysis."@en ;
   skos:inScheme meth:method ;
-  skos:notation "DCP" ;
+  skos:notation "DCP-S" ;
   skos:prefLabel "Direct current plasma spectrometry"@en ;
 .
 meth:directshearstrengthmeasurement
@@ -989,6 +691,7 @@ meth:dnasequencing
   skos:broader meth:bioanalyticalmethod ;
   skos:definition "Determination of nucleotide sequence (the DNA primary structure). (Source: IUPAC; https://doi.org/10.1515/iupac.90.0262, https://www.degruyter.com/database/IUPAC/entry/iupac.90.0262/html)"@en ;
   skos:inScheme meth:method ;
+  skos:notation "DNAS" ;
   skos:prefLabel "DNA sequencing"@en ;
 .
 meth:dualinletisotoperatiomassspectrometry
@@ -1000,7 +703,7 @@ meth:dualinletisotoperatiomassspectrometry
   skos:broader meth:isotoperatiomassspectrometry ;
   skos:definition "Mass spectrometry technique. Components: 1) sample preparation, extract gas, purify; 2) ionization: not specified. Isotope-Ratio mass spectrometry that uses dual inputs to compare and calibrate sample measurement. In dual inlet IRMS, purified gas obtained from a sample is alternated rapidly with a standard gas (of known isotopic composition) by means of a system of valves, so that a number of comparison measurements are made of both gases. (https://en.wikipedia.org/wiki/Isotope-ratio_mass_spectrometry). Analyzed aliquots are gas."@en ;
   skos:inScheme meth:method ;
-  skos:notation "DIIRMS" ;
+  skos:notation "DI-IR-MS" ;
   skos:prefLabel "Dual inlet isotope ratio mass spectrometry"@en ;
 .
 meth:electricalconductivitymeasurement
@@ -1011,6 +714,7 @@ meth:electricalconductivitymeasurement
   skos:broader meth:electrochemicaltechniques ;
   skos:definition "Methods used to measure the electrical conductivity of a sample in an electrochemistry cell."@en ;
   skos:inScheme meth:method ;
+  skos:notation "ECM" ;
   skos:prefLabel "Electrical conductivity measurement"@en ;
 .
 meth:electrochemicalimpedancespectroscopy
@@ -1024,7 +728,7 @@ meth:electrochemicalimpedancespectroscopy
   skos:broader meth:electrochemicaltechniques ;
   skos:definition "tool to investigate properties of materials and electrode reactions. the response of the system (ionic solution and electrodes) to a potential or current sinusoidal perturbation is studied as a function of the frequency, which is swept over a few decades. The frequency sweep enables access to all processes taking place at the electrode: charge transfer and mass transport. Any other electrical contribution and artefacts are visible with EIS. (https://www.biologic.net/topics/what-is-eis/). Electrochemical impedance is the response of an electrochemical system (cell) to an applied potential. The frequency dependence of this impedance can reveal underlying chemical processes. (https://www.jlab.org/conferences/tfsrf/Thursday/Th2_1-EIS%20intro%20Reece.pdf)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "IES" ;
+  skos:notation "EI-S" ;
   skos:prefLabel "Electrochemical impedance spectroscopy"@en ;
 .
 meth:electrochemicaltechniques
@@ -1035,7 +739,7 @@ meth:electrochemicaltechniques
   skos:broader meth:analyticalmethod ;
   skos:definition "Techniques that use electron movement in an oxidation or reduction reaction at a polarized electrode surface to determine chemical properties of an analyte. Each analyte is oxidized or reduced at a specific potential and the current measured is proportional to concentration. Electrochemistry is widely used for measurement of a wide range of analytes. (Bhavik A. Patel, in Electrochemistry for Bioanalysis, 2020)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "xEC" ;
+  skos:notation "EC" ;
   skos:prefLabel "Electrochemical techniques"@en ;
 .
 meth:electronbackscatterdiffraction
@@ -1059,6 +763,7 @@ meth:electrondiffraction
   skos:broader meth:analyticalmethod ;
   skos:definition "Electron diffraction is a technique that allows determination of the crystal structure of materials. When the electron beam is projected onto a specimen, its crystal lattice acts as a diffraction grating, scattering the electrons in a predictable manner, and resulting in a diffraction pattern. Electron diffraction patterns are mainly contributed by elastic scattering. (X Zhou, G.E. Thompson, in Reference Module in Materials Science and Materials Engineering, 2017)"@en ;
   skos:inScheme meth:method ;
+  skos:notation "ED" ;
   skos:prefLabel "Electron diffraction"@en ;
 .
 meth:electronenergylossspectrometry
@@ -1069,6 +774,7 @@ meth:electronenergylossspectrometry
   skos:broader meth:particlebeamexcitation ;
   skos:definition "a material is exposed to a beam of electrons with a known, narrow range of kinetic energies. Some of the electrons will undergo inelastic scattering, which means that they lose energy and have their paths slightly and randomly deflected. The amount of energy loss can be measured via an electron spectrometer and interpreted in terms of what caused the energy loss. With some care, and looking at a wide range of energy losses, one can determine the types of atoms, and the numbers of atoms of each type, being struck by the beam. The scattering angle (that is, the amount that the electron's path is deflected) can also be measured, giving information about the dispersion relation of whatever material excitation caused the inelastic scattering. Most common approach today is transmission EELS, in which the incident electrons pass entirely through the material sample. Usually this occurs in a transmission electron microscope (TEM), although some dedicated systems exist which enable extreme resolution in terms of energy and momentum transfer at the expense of spatial resolution. (https://en.wikipedia.org/wiki/Electron_energy_loss_spectroscopy, https://eels.info/about/techniques/eels-0)"@en ;
   skos:inScheme meth:method ;
+  skos:notation "EEL-S" ;
   skos:prefLabel "Electron energy loss spectrometry"@en ;
   skos:related <https://w3id.org/geochem/1.0/analyticalinstrumemt/instrument/transmissionelectronmicroscope> ;
 .
@@ -1080,7 +786,7 @@ meth:electroninducedxrayspectrometry
   skos:broader meth:xrayspectrometry ;
   skos:definition "Technique to induce X-ray emission using an electron beam as the excitation, and measuring the energy spectra of emitted X-rays. Various X-ray emission peaks are associated with electron energy level quatum intervals for particular elements."@en ;
   skos:inScheme meth:method ;
-  skos:notation "xEIXS" ;
+  skos:notation "EI-X-S" ;
   skos:prefLabel "Electron induced X-ray spectrometry"@en ;
   skos:related <https://w3id.org/geochem/1.0/analyticalinstrumemt/instrument/electronmicroprobe> ;
   skos:related <https://w3id.org/geochem/1.0/analyticalinstrumemt/instrument/transmissionelectronmicroscope> ;
@@ -1112,7 +818,7 @@ meth:electronspectrometry
   skos:broader meth:particlespectrometry ;
   skos:definition "Analysis based on measuring the energy of electrons emitted from or that have interacted with a sample. Particular kinds of interactions and emission processes can be related to particular constituents in the sample."@en ;
   skos:inScheme meth:method ;
-  skos:notation "xESPEC" ;
+  skos:notation "EL-S" ;
   skos:prefLabel "Electron spectrometry"@en ;
 .
 meth:electronspinresonanceageanalysis
@@ -1138,7 +844,7 @@ meth:electrothermalabsorptionspectrometry
   skos:broader meth:atomicabsorptionspectrometry ;
   skos:definition "A type of atomic absorption spectrometry where the sample is atomised using a probe which is rapidly heated by passing a current through it."@en ;
   skos:inScheme meth:method ;
-  skos:notation "ETAAS" ;
+  skos:notation "ET-AA-S" ;
   skos:prefLabel "Electrothermal absorption spectrometry"@en ;
 .
 meth:elementalanalysis
@@ -1184,6 +890,7 @@ meth:elementalanalysisinfraredspectrometry
   skos:broader meth:elementalanalysis ;
   skos:definition "Technique that uses an elemental analyzer (typically a pyrolysis process to extract volatile components in the sample) to extract the aliquots (typically as gas) to be analyzed using infrared spectrometry."@en ;
   skos:inScheme meth:method ;
+  skos:notation "EA-IR-S" ;
   skos:prefLabel "Elemental analysis infrared spectrometry "@en ;
 .
 meth:elementalanalysisisotoperatiomassspectrometry
@@ -1198,7 +905,7 @@ meth:elementalanalysisisotoperatiomassspectrometry
   skos:broader meth:isotoperatiomassspectrometry ;
   skos:definition "Measurement and study of the relative abundances of the different isotopes of an element in a material using a mass spectrometer which is coupled with an elemental analyzer. (Source: IUPAC; https://doi.org/10.1351/PAC-REC-06-04-06). Isotope and chemical analysis of H, C, N, O and S in a sample. (OSIRIS-REx confluence)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "EA-IRMS" ;
+  skos:notation "EA-IR-MS" ;
   skos:prefLabel "Elemental analysis isotope ratio mass spectrometry"@en ;
 .
 meth:elementalanalysismassspectrometry
@@ -1212,7 +919,7 @@ meth:elementalanalysismassspectrometry
   skos:broader meth:massspectrometry ;
   skos:definition "Mass spectrometry method that uses an elemental analyzer (typically a pyrolysis process to extract volatile components in the sample) to extract the aliquots (typically as gas) to be atomized and passed to the mass analyzer. "@en ;
   skos:inScheme meth:method ;
-  skos:notation "EAMS" ;
+  skos:notation "EA-MS" ;
   skos:prefLabel "Elemental analysis mass spectrometry"@en ;
 .
 meth:emissionspectrometry
@@ -1227,7 +934,7 @@ meth:emissionspectrometry
   skos:broader meth:opticalspectrometry ;
   skos:definition "is a method of chemical analysis that uses the intensity of light emitted from a flame, plasma, arc, or spark at a particular wavelength to determine the quantity of an element in a sample. The wavelength of the atomic spectral line in the emission spectrum gives the identity of the element while the intensity of the emitted light is proportional to the number of atoms of the element. The sample may be excited by various methods: flame, inductively coupled plasma, and spark being the most common. (https://en.wikipedia.org/wiki/Atomic_emission_spectroscopy)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "ES" ;
+  skos:notation "E-S" ;
   skos:prefLabel "Emission spectrometry"@en ;
 .
 meth:energydispersiveelectroninducedxrayspectrometry
@@ -1248,7 +955,7 @@ meth:energydispersiveelectroninducedxrayspectrometry
   skos:broader meth:energydispersivexrayspectrometry ;
   skos:definition "Analysis of X-ray spectra generated by electron beam excitation using a Transmission electron microscope instrument"@en ;
   skos:inScheme meth:method ;
-  skos:notation "EEDS" ;
+  skos:notation "EI-ED-X-S" ;
   skos:prefLabel "Energy dispersive electron induced X-ray spectrometry"@en ;
 .
 meth:energydispersivexrayfluorescencespectrometry
@@ -1266,7 +973,7 @@ meth:energydispersivexrayfluorescencespectrometry
   skos:broader meth:xrayfluorescencespectrometry ;
   skos:definition "an X-ray Fluorescence techniques used for elemental analysis applications. In EDXRF spectrometers, all of the elements in the sample are excited simultaneously, and an energy dispersive detector in combination with a multi-channel analyzer is used to simultaneously collect the fluorescence radiation emitted from the sample and then separate the different energies of the characteristic radiation from each of the different sample elements. Resolution of EDXRF systems is dependent upon the detector, and typically ranges from 150 eV -- 600 eV. The principal advantages of EDXRF systems are their simplicity, fast operation, lack of moving parts, and high source efficiency. (https://www.xos.com/EDXRF; Chai et al, 2021, https://doi.org/10.1515/pac-2019-0302)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "XRFEDS" ;
+  skos:notation "ED-XF-S" ;
   skos:prefLabel "Energy dispersive X-ray fluorescence spectrometry"@en ;
 .
 meth:energydispersivexrayspectraraster
@@ -1277,6 +984,7 @@ meth:energydispersivexrayspectraraster
   skos:broader meth:xraymap ;
   skos:definition "production of composition-related images by selecting particular X-ray wavelength intervals from a set of EDS spectra acquired in a raster on a sample surface. If one wavelenth interval is rpresented, get gray scale image. Can combine data from 3 intervals to generate more informative RGB images."@en ;
   skos:inScheme meth:method ;
+  skos:notation "EDS-M" ;
   skos:prefLabel "Energy dispersive X-ray spectral data 2D raster"@en ;
 .
 meth:energydispersivexrayspectrometry
@@ -1291,7 +999,7 @@ meth:energydispersivexrayspectrometry
   skos:broader meth:xrayspectrometry ;
   skos:definition "A method for obtaining information about isolated portions of an X-ray spectrum, achieved electronically with devices that discriminate among various parts of a spectrum based on the energy rather than the wavelength of the radiation.  The sample is exposed to a polychromatic (multiple wavelength) source (X-rays, or other energetic particles, e.g. electrons), and the resulting X-rays from the sample are analyzed by detectors with various electronic components required for energy discrimination. The X-ray spectrum is analyzed (in comparison to standards) to provide quantitative or qualitative analysis of constituents in the sample. (Skoog, Holler & Crouch, p. 289)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "EDS" ;
+  skos:notation "ED-X-S" ;
   skos:prefLabel "Energy dispersive X-ray spectrometry"@en ;
 .
 meth:energyfilteredtransmissionelectronimaging
@@ -1352,7 +1060,7 @@ meth:fireassayemissionspectrometry
   skos:broader meth:wetchemistry ;
   skos:definition "Used for Platinum group element (PGE) analyses. The  sample is decomposed by heating with nickel sulfide to form a button that is then dissolved in acid.  PGE constituents remain in the insoluble residue. After filtering, the residue is dissolved with aqua regia or a mixture of HCl and H2O2 and then determined by inductively coupled plasma-atomic emission spectrometry."@en ;
   skos:inScheme meth:method ;
-  skos:notation "NSFA-ID" ;
+  skos:notation "FA-E-S" ;
   skos:prefLabel "Fire assay emission spectrometry"@en ;
 .
 meth:fissiontrackcounting
@@ -1386,7 +1094,7 @@ meth:flameemissionspectrometry
   skos:broader meth:emissionspectrometry ;
   skos:definition "Emission spectrometry in which emission of photons is induced by introducing the sample into a flame."@en ;
   skos:inScheme meth:method ;
-  skos:notation "FLES" ;
+  skos:notation "FL-E-S" ;
   skos:prefLabel "Flame emission spectrometry"@en ;
 .
 meth:flowcytometry
@@ -1398,6 +1106,7 @@ meth:flowcytometry
   skos:broader meth:bioanalyticalmethod ;
   skos:definition "Laboratory technique to determine the amount of DNA in cells tagged by fluorescent dye by measuring the intensity of fluorescence under a laser beam. (USGS; https://apps.usgs.gov/thesaurus/thesaurus-full.php?thcode=2&code=400). More generally, a technique for examining populations of cells or particles by suspending them in a fluid and passing them through a tube (ideally each particle individually discernible), and probing with a laser or other excitation source that will identify the particles of interest so they can be counted."@en ;
   skos:inScheme meth:method ;
+  skos:notation "FCM" ;
   skos:prefLabel "Flow cytometry"@en ;
 .
 meth:fluorescencemicroscopy
@@ -1411,6 +1120,7 @@ meth:fluorescencemicroscopy
   skos:definition "Fluorescence microscopy is capable of imaging the distribution of a single molecular species based solely on the properties of fluorescence emission. Thus, using fluorescence microscopy, the precise location of intracellular components labeled with specific fluorophores can be monitored, as well as their associated diffusion coefficients, transport characteristics, and interactions with other biomolecules. In addition, the dramatic response in fluorescence to localized environmental variables enables the investigation of pH, viscosity, refractive index, ionic concentrations, membrane potential, and solvent polarity in living cells and tissues. Fluorescence is the property of some atoms and molecules to absorb light at a particular wavelength and to subsequently emit light of longer wavelength after a brief interval, termed the fluorescence lifetime.  http://micro.magnet.fsu.edu/primer/techniques/fluorescence/fluorhome.html"@en ;
   skos:exactMatch <https://gcmd.earthdata.nasa.gov/kms/concept/35dc5fc4-4c96-44d9-8710-0e99e00201c8> ;
   skos:inScheme meth:method ;
+  skos:notation "FM" ;
   skos:prefLabel "Fluorescence microscopy"@en ;
 .
 meth:fluorescencespectrometry
@@ -1431,7 +1141,7 @@ meth:fluorescencespectrometry
   skos:closeMatch <https://gcmd.earthdata.nasa.gov/kms/concept/a2983835-be12-4a07-b2b5-349718045ab4> ;
   skos:definition "measurement the [energy, power?] of fluorescent radiation produced by a sample exposed to monochromatic radiation, used to identify the presence and the amount of specific molecules in a sample (https://en.wikipedia.org/wiki/Fluorometer).  A type of electromagnetic spectroscopy that analyzes fluorescence from a sample. It involves using a beam of light, usually ultraviolet light, that excites the electrons in molecules of certain compounds and causes them to emit light; typically, but not necessarily, visible light (https://en.wikipedia.org/wiki/Fluorescence_spectroscopy)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "AFS" ;
+  skos:notation "F-S" ;
   skos:prefLabel "Fluorescence spectrometry"@en ;
 .
 meth:fluorescentinsituhybridization
@@ -1471,7 +1181,7 @@ meth:fouriertransforminfraredspectrometry
   skos:broader meth:infraredspectrometry ;
   skos:definition "A technique used to obtain an infrared spectrum of absorption or emission of a solid, liquid, or gas. Light from a polychromatic infrared source is collimated and directed to a beam splitter. Half the light is directed to a fixed mirror and the rest to a moving mirror. The light from the two paths is recombined, resulting in constructive or destructive interference that is a function of wavelength in the polychromatic light source and the path retardation determined by different path lengths from the moving mirror. The recombined light is focused on the sample and reflected or transmitted light is refocused onto a detector.  The difference in optical path length between the two arms to the interferometer is known as the retardation or optical path difference (OPD). An interferogram is obtained by varying the retardation and recording the signal from the detector for various values of the retardation. The interferogram when no sample is present is used as a reference to compare. When a sample is present the background interferogram is modulated by the presence of absorption bands in the sample. The interferogram is converted to a spectrum by Fourier transformation.  (https://en.wikipedia.org/wiki/Fourier-transform_infrared_spectroscopy, Skoog, Holler & Crouch p. 188-192)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "FTIR" ;
+  skos:notation "FT-IR-S" ;
   skos:prefLabel "Fourier transform infrared spectrometry"@en ;
 .
 meth:fouriertransformioncyclotronresonancemassspectrometry
@@ -1493,7 +1203,7 @@ meth:gammacounting
   skos:broader meth:particlecounting ;
   skos:definition "counting gamma rays emitted spontaneously from a sample; by looking at the the distribution of energy and frequency of the emitted gamma rays, the presence of elements emitting those gamma rays can be estimated."@en ;
   skos:inScheme meth:method ;
-  skos:notation "GC" ;
+  skos:notation "GAMMA" ;
   skos:prefLabel "Gamma counting"@en ;
 .
 meth:gammarayspectrometry
@@ -1508,7 +1218,7 @@ meth:gammarayspectrometry
   skos:broader meth:photonspectrometry ;
   skos:definition "Technique that measures the energy of gamma-rays emitted by a sample over a spectrum of wavelengths. By comparing the measured spectral distribution and energy to the known energy of gamma-rays produced by radioisotopes, the identity of the emitter can be determined."@en ;
   skos:inScheme meth:method ;
-  skos:notation "GAMMA" ;
+  skos:notation "GR-S" ;
   skos:prefLabel "Gamma ray spectrometry"@en ;
 .
 meth:gaschromatographyanalysis
@@ -1613,7 +1323,7 @@ meth:glowdischargemassspectrometry
   skos:broader meth:massspectrometry ;
   skos:definition "Mass spectrometry using a source in which argon atoms in a low-density plasma impact the sample surface, sputtering atoms from the sample that are then ionized in the plasma and accelerated into the mass analyzer.  Samples are analyzed in solid form. The sputtering and ionization approach is free from the matrix dependence response affecting most other elemental analysis techniques, minimizing the need for matrix matched standards."@en ;
   skos:inScheme meth:method ;
-  skos:notation "GDMS" ;
+  skos:notation "GD-MS" ;
   skos:prefLabel "Glow discharge mass spectrometry"@en ;
 .
 meth:gradientionchromatographyanalysis
@@ -1681,6 +1391,7 @@ meth:hybridizationassay
   skos:broader meth:bioanalyticalmethod ;
   skos:definition "Assay with specifically designed single-stranded DNA probe with a defined (known) nucleotide sequence usually immobilized on a surface (in such a case, the nucleic acid probe is called the capture probe). Note: The probe is used as a recognition element to test for the nucleotide sequence within the target DNA in the sample solution. If target DNA contains a sequence complementary to the probe, a hybrid dsDNA is formed. (Source: IUPAC; https://doi.org/10.1515/iupac.90.0262, https://www.degruyter.com/database/IUPAC/entry/iupac.90.0262/html).  A type of Ligand Binding Assay (LBA) used to quantify nucleic acids in biological matrices. Hybridization assays can be in solution or on a solid support such as 96-well plates or labelled beads.  Hybridization assays involve labelled nucleic acid probes to identify related DNA or RNA molecules (i.e. with significantly high degree of sequence similarity) within a complex mixture of unlabelled nucleic acid molecules. (https://en.wikipedia.org/wiki/Hybridization_assay)"@en ;
   skos:inScheme meth:method ;
+  skos:notation "HYA" ;
   skos:prefLabel "Hybridization assay"@en ;
 .
 meth:imagingtechniques
@@ -1718,7 +1429,7 @@ meth:inductivelycoupledplasmaemissionspectrometry
   skos:broader meth:plasmaemissionspectrometry ;
   skos:definition "technique for determining the composition of a sample by heating it to the point that the material emits photons, and analyzing the wavelenth of the emitted photons.  The sample is heated to emission temperatures using an inductively coupled plasma"@en ;
   skos:inScheme meth:method ;
-  skos:notation "ICPAES" ;
+  skos:notation "ICP-E-S" ;
   skos:prefLabel "Inductively coupled plasma emission spectrometry"@en ;
 .
 meth:inductivelycoupledplasmamassspectrometry
@@ -1740,7 +1451,7 @@ meth:inductivelycoupledplasmamassspectrometry
   skos:broader meth:plasmasourcemassspectrometry ;
   skos:definition "Mass spectrometry technique in which the sample is introduced into an inductively coupled plasma to atomize and ionize the sample for inlet to mass analyzer. Components: 1) sample processing- dissolution, isotope dilution; 2) ionization: Inductively coupled plasma"@en ;
   skos:inScheme meth:method ;
-  skos:notation "ICPMS" ;
+  skos:notation "ICP-MS" ;
   skos:prefLabel "Inductively coupled plasma mass spectrometry"@en ;
 .
 meth:inductivelycoupledplasmaopticalemissionspectrometry
@@ -1756,7 +1467,7 @@ meth:inductivelycoupledplasmaopticalemissionspectrometry
   skos:broader meth:inductivelycoupledplasmaemissionspectrometry ;
   skos:definition "technique for determining the composition of a sample by heating it to the point that the material emits light, and analyzing the wavelenth of the emitted ultraviolet to visible wavelength light.  The sample is heated to emission temperatures using and inductively coupled plasma. The ICP-OES is an optical emission spectrophotometric technique that requires samples to be in solution form. The solution gets introduced to the hot plasma, which excites the electrons that emit energy at a given wavelength as they return to ground state. Each element emits energy at a specific wavelength according to its chemical character. The intensity of the energy emitted at a specific wavelength is proportional to the concentration of that particular sample. The elemental composition can be determined by comparing to a set of reference standards. The final elemental composition can be expressed as ppm or mg/L."@en ;
   skos:inScheme meth:method ;
-  skos:notation "ICPOES" ;
+  skos:notation "ICP-OE-S" ;
   skos:prefLabel "Inductively coupled plasma optical emission spectrometry"@en ;
 .
 meth:infraredabsorptionspectrometry
@@ -1768,11 +1479,10 @@ meth:infraredabsorptionspectrometry
   skos:altLabel "INFRARED ABSORPTION SPECTROSCOPY"@en ;
   skos:altLabel "INFRARED GAS ANALYSIS"@en ;
   skos:altLabel "INFRARED GAS ANALYZER"@en ;
-  skos:broader meth:atomicabsorptionspectrometry ;
   skos:broader meth:infraredspectrometry ;
   skos:definition "Identify composition of gas(es) in a sample by detecting the absorption of infrared wavelengths that are characteristic of that gas.  Infrared energy is emitted from a heated filament. By optically filtering the energy, the radiation spectrum is limited to the absorption band of the gas being measured. A detector measures the energy after the infrared energy has passed through the gas to be measured. This is compared to the energy at reference condition of no absorption. (https://en.wikipedia.org/wiki/Infrared_gas_analyzer)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "IRAS" ;
+  skos:notation "IR-A-S" ;
   skos:prefLabel "Infrared absorption spectrometry"@en ;
 .
 meth:infraredopticalspectrometry
@@ -1822,7 +1532,7 @@ meth:infraredspectrometry
   skos:broader meth:photonspectrometry ;
   skos:definition "The infrared spectrometer (or spectrophotometer) measures the relative amount of energy as a function of the wavelength/frequency of the infrared radiation when it passes through a sample. The two types of the infrared spectrometer are dispersive infrared spectrometer (DS) and Fourier transform infrared spectrometer (FTIS). (https://conductscience.com/the-basics-of-infrared-spectrophotometry/)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "IR" ;
+  skos:notation "IR-S" ;
   skos:prefLabel "Infrared spectrometry"@en ;
 .
 meth:infraredtransmissionspectrometry
@@ -1835,7 +1545,7 @@ meth:infraredtransmissionspectrometry
   skos:broader meth:transmissionspectrometry ;
   skos:definition "In transmission IR spectroscopy, IR radiation is passed through a sample. Some of the IR radiation is absorbed by the sample and some of it is passed through (transmitted). The resulting spectrum represents the molecular absorption and transmission, creating a molecular fingerprint of the sample. (Q. Ye, P. Spencer, in Material-Tissue Interfacial Phenomena, 2017)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "TIRS" ;
+  skos:notation "IR-T-S" ;
   skos:prefLabel "Infrared transmission spectrometry"@en ;
 .
 meth:instrumentalneutronactivationanalysis
@@ -1901,7 +1611,7 @@ meth:isotoperatiomassspectrometry
   skos:broader meth:massspectrometry ;
   skos:definition "Isotope ratio mass spectrometry (IRMS) leverages magnetic sector mass spectrometry to enable high-precision measurement of the stable isotope content of a sample. Typical measurements target hydrogen, carbon, nitrogen, and oxygen analyses, although elements with masses up to and including sulfur can be measured. Solid, liquid, or gas phase samples are converted to simple gases then introduced to the IRMS. During analysis, an electron impact source ionizes sample-derived gas which is then accelerated down a flight tube, separated by mass, and quantified using a series of Faraday cups.   (https://www.emsl.pnnl.gov/science/related-instrument/isotope-ratio-mass-spectrometry/1795)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "IRMS" ;
+  skos:notation "IR-MS" ;
   skos:prefLabel "Isotope ratio mass spectrometry"@en ;
 .
 meth:laserablationinductivelycoupledplasmamassspectrometry
@@ -1931,7 +1641,7 @@ meth:laserablationinductivelycoupledplasmamassspectrometry
   skos:closeMatch <http://pid.geoscience.gov.au/def/voc/ga/analysis/ICP-MS_Laser_Ablation> ;
   skos:definition "Mass spectrometry technique in which a laser beam is focused on a spot on the sample surface to atomize sample material from that spot, for subsequent introduction in to inductively coupled plasma to ionize for inlet into mass analyzer. Components 1) sample prepartion: polished surface 2) ionization: laser, inductively coupled plasma.  Point analysis."@en ;
   skos:inScheme meth:method ;
-  skos:notation "LAICPMS" ;
+  skos:notation "LA-ICP-MS" ;
   skos:prefLabel "Laser ablation inductively coupled plasma mass spectrometry"@en ;
 .
 meth:laserablationmassspectrometry
@@ -1945,7 +1655,7 @@ meth:laserablationmassspectrometry
   skos:broader meth:massspectrometry ;
   skos:definition "Mass spectrometry technique in which a laser beam is focused on a spot on the sample surface to atomize sample material from that spot, for subsequent ionization and intlet to mass analyzer. Compononets 1) sample prepartion: polished surface 2) ionization: laser. Point analysis."@en ;
   skos:inScheme meth:method ;
-  skos:notation "LAMS" ;
+  skos:notation "LA-MS" ;
   skos:prefLabel "Laser ablation mass spectrometry"@en ;
 .
 meth:laserablationresonanceionizationmassspectrometry
@@ -1959,7 +1669,7 @@ meth:laserablationresonanceionizationmassspectrometry
   skos:broader meth:resonanceionizationmassspectrometry ;
   skos:definition "A portion of a solid sample is vaporized by a laser;  ablated atoms and molecules, are both neutral and charged. Charged particles are usually swept away by an electric field, and one or more pulsed lasers tuned to specific resonances in the element of interest are passed through the remaining neutral cloud to affect efficient ionization of that element, while other elements and molecules are largely unaffected. The photoions are then extracted into the mass analyzer, commonly a time-of-flight analyzer."@en ;
   skos:inScheme meth:method ;
-  skos:notation "LA-RIMS" ;
+  skos:notation "LA-RI-MS" ;
   skos:prefLabel "Laser ablation resonance ionization mass spectrometry"@en ;
 .
 meth:laserabsorptionspectrometry
@@ -1972,10 +1682,10 @@ meth:laserabsorptionspectrometry
   skos:altLabel "LIQUID-WATER ISOTOPE ANALYZER"@en ;
   skos:altLabel "OA-ICOS" ;
   skos:altLabel "Off-Axis Integrated Cavity Output Spectroscopy (OA-ICOS)"@en ;
-  skos:broader meth:atomicabsorptionspectrometry ;
+  skos:broader meth:opticalspectrometry ;
   skos:definition "quantitative measurements of gas temperature and composition based on the amount of light that is absorbed at a given excitation wavelength, proportional to the fraction of molecules in the absorbing quantum state.  Molecules can absorb photons at certain wavelengths which causes them to transition from a lower energy level to an upper energy level."@en ;
   skos:inScheme meth:method ;
-  skos:notation "LWI" ;
+  skos:notation "L-A-S" ;
   skos:note "Related resource: Liquid-Water Isotope Analyzer uses tunable, off-axis integrated-cavity High-Resolution Laser Absorption Spectroscopy to measure hydrogen and oxygen isotopic composition (delta 18O and delta 2H) in liquid water samples. (https://eal.ucmerced.edu/instrumentation/water-isotope-analyzer; https://inis.iaea.org/search/search.aspx?orig_q=RN:43008377)"@en ;
   skos:prefLabel "Laser absorption spectrometry"@en ;
 .
@@ -1998,7 +1708,7 @@ meth:laserfluorinationanalysis
   skos:broader meth:wetchemistry ;
   skos:definition "Technique wherein oxygen is quantitatively extracted from oxygen-bearing compounds, without isotopic fractionation, and simultaneously converted to diatomic oxygen (O2) gas, and then  analyzed with isotope-ratio mass spectrometer (IRMS) to determine its delta 17O and delta 18O ratios. (https://sil.uoregon.edu/laser-fluorination/)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "LF" ;
+  skos:notation "LF-MS" ;
   skos:prefLabel "Laser fluorination mass spectrometry"@en ;
 .
 meth:laserinducedbreakdownspectrometry
@@ -2013,7 +1723,7 @@ meth:laserinducedbreakdownspectrometry
   skos:definition """rapid chemical analysis technique that uses a short laser pulse to create a micro-plasma on the sample surface. The highly energetic laser pulse is focused on sample surface to form a plasma, which atomizes and excites atoms from the sample, which then emit light that is spectroscopically analyzed.  Advantages include: 1) minimal sample preparation; 2) 
  fast measurement time (second) for a single spot analysis; 3) Broad elemental coverage, including lighter elements, such as H, Be, Li, C, N, O, Na, and Mg; 4) ability to raster the sample surface and make depth profiles; 5) Thin-sample analysis with no substrate interference.  A typical detection limit of LIBS for heavy metallic elements is in the low-PPM range. LIBS is applicable to a wide range of sample matrices that include metals, semiconductors, glasses, biological tissues, insulators, plastics, soils, plants, soils, thin-paint coating, and electronic materials."""@en ;
   skos:inScheme meth:method ;
-  skos:notation "LIBS" ;
+  skos:notation "LIB-S" ;
   skos:prefLabel "Laser Induced Breakdown Spectrometry"@en ;
 .
 meth:laserionizationmassspectrometry
@@ -2029,7 +1739,7 @@ meth:laserionizationmassspectrometry
   skos:broader meth:plasmasourcemassspectrometry ;
   skos:definition "Technique that uses laser to induce plasma ionization. The laser plasma is sustained between a pneumatic nebulizer and the inlet capillary of the mass analyzer. To maintain stable conditions in the droplet-rich spray environment, the plasma was directly fed by the fundamental output (lambda = 1064 nm) of a laser. Ionization by the laser-driven plasma resulted in signals of intact analyte ions of several chemical categories. Use for mass-spectrometric determinations of polar and nonpolar analytes in solution. (https://doi.org/10.1021/acs.analchem.9b00329)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "LIMS" ;
+  skos:notation "LI-MS" ;
   skos:prefLabel "Laser ionization mass spectrometry"@en ;
 .
 meth:lassmassspectrometry
@@ -2043,7 +1753,7 @@ meth:lassmassspectrometry
   skos:broader meth:laserablationmassspectrometry ;
   skos:definition "The output from laser ablation of a single analysis spot is split between two mass spectrometers (typically ICPMS). The technique allows simultaneous analyses of different geochemical systems in mineral samples using two or more mass spectrometers. An important application is the determination of the complementary isotopic systems of Lu-Hf and U-Pb (age)(https://assets.thermofisher.com/TFS-Assets/CMD/Application-Notes/AN-30298-ICP-MS-Laser-Ablation-Split-Stream-AN30298-EN.pdf)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "LASS" ;
+  skos:notation "LA-SS-MS" ;
   skos:prefLabel "Laser ablation split stream mass spectrometry "@en ;
 .
 meth:lecofurnaceanalysis
@@ -2070,7 +1780,7 @@ meth:liquidchromatographyanalysis
   skos:broader meth:chromatographyanalysis ;
   skos:definition "A chromatography analysis in which the mobile phase is a liquid"@en ;
   skos:inScheme meth:method ;
-  skos:notation "LIC" ;
+  skos:notation "LC" ;
   skos:prefLabel "Liquid chromatography analysis"@en ;
 .
 meth:liquidchromatographymassspectrometry
@@ -2108,7 +1818,7 @@ meth:liquidinletinductivelycoupledplasmamassspectrometry
   skos:broader meth:inductivelycoupledplasmamassspectrometry ;
   skos:definition "Mass spectrometry technique in which sample is dissolved in a liquid reagent and nulized or vaporized by one of several techniques to introduce into an inductively coupled plasma to atomize and ionize for intlet to mass analyzer. Components: 1) sample preparation: dissolution, nebulize to introduce into plasma (this is normal method to get sample into ICP...) 2) ionization: inductively coupled plasma"@en ;
   skos:inScheme meth:method ;
-  skos:notation "SNICPMS" ;
+  skos:notation "LI-ICP-MS" ;
   skos:prefLabel "Liquid inlet inductively coupled plasma mass spectrometry"@en ;
 .
 meth:lockinthermography
@@ -2119,6 +1829,7 @@ meth:lockinthermography
   skos:broader meth:thermalanalysis ;
   skos:definition "The principle of lock-in thermography is based on the application of a periodic input energy wave (i.e. thermal emitter, ultrasound, microwave, eddy current, flash or xenon lamp, halogen lamp, or laser) to the surface of the object being examined and analyzing the resulting local temperatures on the surface of the object using an infrared camera. When the input energy wave penetrates the object's surface, is it absorbed and phase shifted. When the input wave reaches areas within the object where the thermophysical properties are not homogeneous in relation to the surrounding material, (i.e. at delaminations or inclusions), the input wave is partially reflected. The reflected portion of the wave interferes with the incoming input wave at the surface of the object, causing an interference pattern in the local surface temperature, which oscillates at the same frequency as the thermal wave. The internal structure of the object being examined can then be derived by evaluating the phase shift of the local surface temperatures in relation to the input energy wave. The ability to derive internal thermophysical inconsistencies within the object, however, requires that the input energy source be used at an optimal frequency, which depends on both the thermophysical characteristics of the object as well as its thickness. (https://movitherm.com/knowledgebase/what-is-lock-in-thermography/)"@en ;
   skos:inScheme meth:method ;
+  skos:notation "LIT" ;
   skos:prefLabel "Lock in thermography"@en ;
 .
 meth:lossonignitionanalysis
@@ -2145,6 +1856,7 @@ meth:magneticfieldmeasurement
   skos:broader meth:analyticalmethod ;
   skos:definition "Techniques for measuring magnetic field. [TBD--what are the actual techniques...]"@en ;
   skos:inScheme meth:method ;
+  skos:notation "MAG" ;
   skos:prefLabel "Magnetic field measurement "@en ;
 .
 meth:manometry
@@ -2226,7 +1938,7 @@ meth:micromassmultiprepmassspectrometry
   skos:broader meth:massspectrometry ;
   skos:definition "Multiprep automated sample preparation device is used to digest powdered biogenic or mineral carbonate material with phosphoric acid or to equilibrate water samples with carbon dioxide or hydrogen.(Micromass is the instrument manufacturer). Output from multiprep goes to mass spectrometer. Example systems e.g. https://www.atmos.albany.edu/geology/webpages/sirmslab.html are doing stable isotope analyses. Components: 1) sample preparation: multiprep device"@en ;
   skos:inScheme meth:method ;
-  skos:notation "MMMS" ;
+  skos:notation "MM-MS" ;
   skos:prefLabel "Micromass multiprep mass spectrometry"@en ;
 .
 meth:microprobetwosteplasermassspectrometry
@@ -2238,7 +1950,7 @@ meth:microprobetwosteplasermassspectrometry
   skos:broader meth:laserablationinductivelycoupledplasmamassspectrometry ;
   skos:definition "Microprobe two-step laser mass spectrometry (microL2MS) is a technique that allows the detection and characterization of organic molecules.  Output for point analyses consist of time-of-flight spectra and where appropriate low resolution optical location images. Each spectrum represent the time varying signal recorded by the microchannel plate (MCP) detector assembly in microL2MS instrument following laser photoionization of neutral species liberated from the surface a sample by a preceeding laser desorption pulse.  microL2MS instrument output data products will consist of a variable number of spectra and image files depending on the nature of the sample and number of analysis locations."@en ;
   skos:inScheme meth:method ;
-  skos:notation "microL2MS" ;
+  skos:notation "MP-L2-MS" ;
   skos:prefLabel "Microprobe two step laser mass spectrometry"@en ;
 .
 meth:microscopicxrayimaging
@@ -2277,7 +1989,7 @@ meth:microxrayfluorescencespectroscopy
   skos:broader meth:synchrotonxrayfluorescencespectrometry ;
   skos:definition "Measurement method of X-ray fluorescence used to measure amounts of elements in a material. Micro-XRF analysis uses highly brilliant X-ray sources (synchrotron source and spot size 100 nm to 2 micron) and microfocussing X-ray optics to give femtogram to attogram detection limits. (Source: IUPAC; Chai et al, 2021, https://doi.org/10.1515/pac-2019-0302). "@en ;
   skos:inScheme meth:method ;
-  skos:notation "microXRF" ;
+  skos:notation "M-XF-S" ;
   skos:prefLabel "Micro X-ray fluorescence spectrometry"@en ;
 .
 meth:minicryogenfreemeasurementsystemforthermalconductivity
@@ -2316,7 +2028,7 @@ meth:mossbauerspectroscopy
   skos:broader meth:gammarayspectrometry ;
   skos:definition "In its most common form a solid sample is exposed to a beam of gamma radiation, and a detector measures the intensity of the beam transmitted through the sample. The atoms in the source emitting the gamma rays must be of the same isotope as the atoms in the sample absorbing them. The source is accelerated through a range of velocities using a linear motor to produce a Doppler effect and scan the gamma ray energy through a given range. In the resulting spectra, gamma ray intensity is plotted as a function of the source velocity. At velocities corresponding to the resonant energy levels of the sample, a fraction of the gamma rays are absorbed, resulting in a drop in the measured intensity and a corresponding dip in the spectrum. The number, positions, and intensities of the dips (also called peaks; dips in transmitted intensity are peaks in absorbance) provide information about the chemical environment of the absorbing nuclei and can be used to characterize the sample. (https://en.wikipedia.org/wiki/M%C3%B6ssbauer_spectroscopy)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "MBS" ;
+  skos:notation "MB-S" ;
   skos:prefLabel "Mossbauer spectrometry"@en ;
 .
 meth:multicollectorinductivelycoupledplasmamassspectrometry
@@ -2332,7 +2044,7 @@ meth:multicollectorinductivelycoupledplasmamassspectrometry
   skos:broader meth:inductivelycoupledplasmamassspectrometry ;
   skos:definition "Quadrupole and Multi-Collector (MC) Inductively coupled plasma mass spectrometry (ICP-MS) are grouped into one 'analtyical technique' by O-REx sample analysis team."@en ;
   skos:inScheme meth:method ;
-  skos:notation "MC-ICP-MS" ;
+  skos:notation "ICP-MS-MC" ;
   skos:prefLabel "Multi collector inductively coupled plasma mass spectrometry"@en ;
 .
 meth:nanoindentationandmicroindentation
@@ -2357,7 +2069,7 @@ meth:nanoscaleinfraredspectrometry
   skos:broader meth:infraredspectrometry ;
   skos:definition "Technique uses a pulsed, tunable IR source to excite molecular absorption in a sample. As the sample absorbs radiation, it heats up, leading to rapid thermal expansion that excites resonant oscillations of the cantilever of an atomic force microscope (AFM), which is detected using the standard AFM photodiode measurement system. These induced oscillations decay in a characteristic ringdown that can be analyzed  to extract the amplitudes and frequencies of the oscillations. By measuring the amplitudes of the cantilever oscillation as a function of the source wavelength, local absorption spectra are created. (https://doi.org/10.1016/S1369-7021(10)70205-4)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "nanoIR" ;
+  skos:notation "N-IR-S" ;
   skos:prefLabel "Nanoscale infrared spectrometry"@en ;
   skos:related meth:atomicforcemicroscopy ;
 .
@@ -2385,7 +2097,7 @@ meth:negativeionthermalionizationmassspectrometry
   skos:broader meth:thermalionizationmassspectrometry ;
   skos:definition "Mass spectrometer techinque. Components: 1) sample processing- dissolution, isotope dilution; 2) ionization: thermal ionization; analyte: negative ions."@en ;
   skos:inScheme meth:method ;
-  skos:notation "NTIMS" ;
+  skos:notation "NTI-MS" ;
   skos:prefLabel "Negative ion thermal ionization mass spectrometry"@en ;
 .
 meth:neutronactivationanalysis
@@ -2430,7 +2142,7 @@ meth:neutronirradiationnoblegasmassspectrometry
   skos:broader meth:noblegasmassspectrometry ;
   skos:definition "Techique that exposes sample to neutron-irradiation to produce noble gas isotopes from halogen isotopes within the sample. NI-NGMS requires only small sample masses (~1 mg). The method provides information on the abundances and ratios of the halogen (Cl, Br and I) and the noble gas (Ar, Kr and Xe) elements. (OSIRIS-REx confluence). Technique to measure the abundances of Cl, K, Br, I, Ca, Ba and U, in which samples are exposed to a high neutron fluence to produce nucleogenic noble gas isotopes in abundances proportional to those of the parent elements.  (https://goldschmidtabstracts.info/2014/2145.pdf).  The noble gas isotopes are liberated from the sample by heating and analyzed with a mass spectrometer (https://www.sciencedirect.com/science/article/pii/S0009254116302339)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "NINGMS" ;
+  skos:notation "NI-NG-MS" ;
   skos:prefLabel "Neutron irradiation noble gas mass spectrometry"@en ;
 .
 meth:nextgenerationsequencing
@@ -2466,7 +2178,7 @@ meth:noblegasmassspectrometry
   skos:definition "Noble gases (He, Ne, Ar, Kr, Xe ) are extracted from samples by heating in a vacuum with an IR laser or in a heated crucible. The extracted gases are purified using hot metals or alloys (and cold traps). Noble gas elements can be separated using cryogenic traps and sequentially analyzed by separation of the ions according to their mass/charge ratio and a collection block consisting of single or multiple Faraday cups and/or electron multipliers.  (OSIRIS-REx confluence; https://nvlpubs.nist.gov/nistpubs/jres/38/jresv38n6p617_A1b.pdf)"@en ;
   skos:editorialNote "TBD: check if Noble Gas and Nitrogen Static mass spectrometry is something different"@en ;
   skos:inScheme meth:method ;
-  skos:notation "NGMS" ;
+  skos:notation "NG-MS" ;
   skos:prefLabel "Noble gas mass spectrometry"@en ;
 .
 meth:nuclearmagneticresonancespectrometry
@@ -2483,7 +2195,7 @@ meth:nuclearmagneticresonancespectrometry
   skos:broader meth:spectrometry ;
   skos:definition "Measurement principle of spectroscopy to measure the precession of magnetic moments placed in a magnetic induction based on absorption of electromagnetic radiation of a specific frequency by an atomic nucleus. Nuclei having a suitable magnetic moment include <sup>1</sup>H, <sup>13</sup>C, <sup>15</sup>N, <sup>19</sup>F, <sup>31</sup>P. The technique is used as a method of determining structure of organic molecules, or as a mechanism for quantification. (Source: IUPAC; https://iupac.org/wp-content/uploads/2019/10/PAC-REC-19-02-03.R2_PR191002MC.pdf). A spectroscopic technique that observes the signal produced by nuclear magnetic resonance of the atomic nuclei in a sample when exposed to excitation by radio waves. The signal is related to local magnetic fields around atomic nuclei. The intramolecular magnetic field around an atom in a molecule changes the resonance frequency, thus giving access to details of the electronic structure of a molecule and its individual functional groups. The electromagnetic waves emitted by the nuclei of the sample as a result of perturbation by a weak oscillating magnetic field are detected with sensitive radio receivers. Upon excitation of the sample with a radio frequency (60--1000 MHz) pulse, a nuclear magnetic resonance response - a free induction decay (FID) - is obtained. It is a very weak signal, and requires sensitive radio receivers to pick up. A Fourier transform is carried out to extract the frequency-domain spectrum from the raw time-domain FID. As the fields are unique or highly characteristic to individual compounds NMR spectroscopy is the definitive method to identify monomolecular organic compounds. https://en.wikipedia.org/wiki/Nuclear_magnetic_resonance_spectroscopy"@en ;
   skos:inScheme meth:method ;
-  skos:notation "NMR" ;
+  skos:notation "NMR-S" ;
   skos:prefLabel "Nuclear magnetic resonance spectrometry"@en ;
 .
 meth:nuclearmicroprobeanalysis
@@ -2525,7 +2237,7 @@ meth:nuclearreactionspectrometry
   skos:broader meth:particlespectrometry ;
   skos:definition "ion-beam-based analytical method with direct observation of nuclear reactions induced by highly energetic (Me V domain) charged particles. All these reactions are characterized by the prompt emission of charged particles (protons or helium-4 ions) and/or gamma-rays. Method is dedicated to quantitative determination of volumetric distributions of light elements from Z = 1 (H) to Z = 41 (Ga) in the near surface region of solids. (https://doi.org/10.1002/9780470027318.a6208.pub2, https://en.wikipedia.org/wiki/Nuclear_reaction_analysis)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "NRA" ;
+  skos:notation "NR-S" ;
   skos:prefLabel "Nuclear reaction spectrometry"@en ;
 .
 meth:opticalemissionspectrometry
@@ -2539,7 +2251,7 @@ meth:opticalemissionspectrometry
   skos:broader meth:emissionspectrometry ;
   skos:definition "chemical analysis technique in which sample is heated to temperatures at which atoms emit light at characteristic wavelengths; the light is analyzed spectroscopically and compared with standards to determine composition"@en ;
   skos:inScheme meth:method ;
-  skos:notation "OES" ;
+  skos:notation "OE-S" ;
   skos:prefLabel "Optical emission spectrometry"@en ;
 .
 meth:opticalspectrometry
@@ -2555,7 +2267,7 @@ meth:opticalspectrometry
   skos:broader meth:photonspectrometry ;
   skos:definition "analytical techniques in which the spectra of visible or ultraviolet light emitted or absobed by, or transmitted through a sample is analyzed to obtain information about the composition of the sample."@en ;
   skos:inScheme meth:method ;
-  skos:notation "OSPEC" ;
+  skos:notation "O-S" ;
   skos:prefLabel "Optical spectrometry"@en ;
 .
 meth:orbitrapmassspectrometry
@@ -2566,6 +2278,7 @@ meth:orbitrapmassspectrometry
   skos:broader meth:massspectrometry ;
   skos:definition "Orbitrap is an ion trap mass analyzer consisting of an outer barrel-like electrode and a coaxial inner spindle-like electrode that traps ions in an orbital motion around the spindle. The image current from the trapped ions is detected and converted to a mass spectrum using the Fourier transform of the frequency signal. (https://en.wikipedia.org/wiki/Orbitrap)"@en ;
   skos:inScheme meth:method ;
+  skos:notation "O-MS" ;
   skos:prefLabel "Orbitrap mass spectrometry"@en ;
 .
 meth:other
@@ -2589,7 +2302,7 @@ meth:particlebeamexcitation
   skos:broader meth:analyticalmethod ;
   skos:definition "Analytical techniques that involve exposing the sample to a beam of accelerated particles (ions or electrons), and detecting and measureing radiation or emitted particles resulting from interaction of the beam with the sample."@en ;
   skos:inScheme meth:method ;
-  skos:notation "xPBE" ;
+  skos:notation "PBE" ;
   skos:prefLabel "Particle beam excitation"@en ;
 .
 meth:particlecohesiondetermination
@@ -2620,7 +2333,7 @@ meth:particlecounting
   skos:editorialNote "Data in GEOROC for this technique are Ra226 (Radium!) activity. Radium-226 (1600 year half life) yields an alpha particle and Radon-222; Radon-222 (3.82 day half life) yields an alpha particle and Polonium-218... (https://www.nist.gov/image-23773).   Guess Radon is being measured as proxy for Radium, and the Radon concentration measured using alpha particle or gamma ray counting...."@en ;
   skos:editorialNote "Radon method is lumped in this group. https://nrpp.info/standards/measurement-methods/ lists 16 methods for anlyzing radon concentration. All are based on counting radioactive decay products from radon in air, water, or collected on charcoal. Some use gamma counting, some count tracks from alpha particles. lacking more detail, assign to 'Particle counting'"@en ;
   skos:inScheme meth:method ;
-  skos:notation "xPC" ;
+  skos:notation "PC" ;
   skos:prefLabel "Particle counting"@en ;
 .
 meth:particleinducedactivationanalysis
@@ -2648,7 +2361,7 @@ meth:particleinducedxrayspectrometry
   skos:broader meth:xrayspectrometry ;
   skos:definition "An X-ray spectrometry technique in which emisssion of X-rays is induces by bombarding a spot on the sample with ions or sub-atomic particles other than electrons, e.g. neutrons, protons, muons (Chai et al, 2021, https://doi.org/10.1515/pac-2019-0302)."@en ;
   skos:inScheme meth:method ;
-  skos:notation "PIXE" ;
+  skos:notation "PI-X-S" ;
   skos:prefLabel "Particle induced X-ray spectrometry"@en ;
 .
 meth:particlesizedistributionanalysis
@@ -2669,7 +2382,7 @@ meth:particlespectrometry
   skos:broader meth:spectrometry ;
   skos:definition "Analysis of the energy distribution of particles emitted from a sample."@en ;
   skos:inScheme meth:method ;
-  skos:notation "xPASP" ;
+  skos:notation "P-S" ;
   skos:prefLabel "Particle spectrometry"@en ;
 .
 meth:penfieldmethodanalysis
@@ -2693,6 +2406,7 @@ meth:phmeasurement
   skos:broader meth:wetchemistry ;
   skos:definition "Measurement of hydrogen ion concentration in a liquid. Various techniques are used."@en ;
   skos:inScheme meth:method ;
+  skos:notation "PHM" ;
   skos:prefLabel "pH measurement"@en ;
 .
 meth:photometry
@@ -2728,7 +2442,7 @@ meth:photonspectrometry
   skos:broader meth:spectrometry ;
   skos:definition "Analysis of the energy distribution of photons emitted from a sample."@en ;
   skos:inScheme meth:method ;
-  skos:notation "xPHSP" ;
+  skos:notation "PH-S" ;
   skos:prefLabel "Photon spectrometry"@en ;
 .
 meth:physicalpropertymeasurement
@@ -2754,6 +2468,7 @@ meth:pigsneutronactivationanalysis
   skos:broader meth:neutronactivationanalysis ;
   skos:definition "A pre-irradiation group concentration method invovling analysis of REE relative to samarium (Sm).  The sample is split in two portions. Sm and Nd content of the rock is determined by mass spectrometry isotope dilution analysis on one split. The other split is  further purified for REE by cation-exchange, and is used to determine the abundance of REE relative to Sm by NAA. The REE content of the rock is found by normalization to Sm content determined by mass spectrometry in the first portion. The result are directly comparable to REE analyzed by conventional INAA. (https://doi.org/10.1016/0009-2541(90)90036-7, https://doi.org/10.1002/gj.907, http://dx.doi.org/10.1007/BF02055022)"@en ;
   skos:inScheme meth:method ;
+  skos:notation "PIGCNAA" ;
   skos:prefLabel "Pre irradiation group concentration neutron activation analysis "@en ;
 .
 meth:plasmaemissionspectrometry
@@ -2765,7 +2480,7 @@ meth:plasmaemissionspectrometry
   skos:broader meth:emissionspectrometry ;
   skos:definition "an emission spectrometry technique in which emission of photons is induced by introducing sample into a plasma. There are various techniques for generating plasma."@en ;
   skos:inScheme meth:method ;
-  skos:notation "PES" ;
+  skos:notation "P-E-S" ;
   skos:prefLabel "Plasma emission spectrometry"@en ;
 .
 meth:plasmaopticalemissionspectrometry
@@ -2779,7 +2494,7 @@ meth:plasmaopticalemissionspectrometry
   skos:broader meth:plasmaemissionspectrometry ;
   skos:definition "an emission spectrometry technique in which emission of ultraviolet or visible light is induced by introducing sample into a plasma. There are various techniques for generating plasma."@en ;
   skos:inScheme meth:method ;
-  skos:notation "POES" ;
+  skos:notation "P-OE-S" ;
   skos:prefLabel "Plasma optical emission spectrometry"@en ;
 .
 meth:plasmaopticalspectrometry
@@ -2790,7 +2505,7 @@ meth:plasmaopticalspectrometry
   skos:broader meth:opticalspectrometry ;
   skos:definition "Emission, absorption, or transmission spectroscopy to analyze properties of sample atomized using a plasma. Plasma might be generated by different methods, e.g. inductive coupling, laser resonance, spark."@en ;
   skos:inScheme meth:method ;
-  skos:notation "xPOS" ;
+  skos:notation "P-O-S" ;
   skos:prefLabel "Plasma optical spectrometry"@en ;
 .
 meth:plasmasourcemassspectrometry
@@ -2804,7 +2519,7 @@ meth:plasmasourcemassspectrometry
   skos:broader meth:massspectrometry ;
   skos:definition "Mass spectrometry technique. Components: 1) sample preparation: not specified; 2) ionization: plasma; 3) mass analyzer: not specified; 4) detector: not specified. Plasma can be generated in various ways: inductive coupling, spark, lasers, microwaves."@en ;
   skos:inScheme meth:method ;
-  skos:notation "PSMS" ;
+  skos:notation "PS-MS" ;
   skos:prefLabel "Plasma source mass spectrometry"@en ;
 .
 meth:pointcounting
@@ -2818,7 +2533,7 @@ meth:pointcounting
   skos:broader meth:visiblelightmicroscopy ;
   skos:definition "method to determine the proportion of an area that is covered by some objects of interest. In most cases the area is a thin section or a polished slab. The basic method is to cover the area by a grid of points. Then for each of these points, the underlying object is identified. Then the estimate for the proportion of the area covered by the type of object is based on the fraction of points assigned to that object type. ( https://en.wikipedia.org/wiki/Point_counting_(geology) ). The data are typically collected using a microscope."@en ;
   skos:inScheme meth:method ;
-  skos:notation "PC" ;
+  skos:notation "POC" ;
   skos:prefLabel "Point counting"@en ;
 .
 meth:polarography
@@ -2845,6 +2560,7 @@ meth:porosimetry
   skos:broader meth:physicalpropertymeasurement ;
   skos:definition "Porosimetry is an analytical technique used to determine various quantifiable aspects of a material's porous structure, such as pore diameter, total pore volume, surface area, and bulk and absolute densities. (https://en.wikipedia.org/wiki/Porosimetry)"@en ;
   skos:inScheme meth:method ;
+  skos:notation "POM" ;
   skos:prefLabel "Porosimetry"@en ;
 .
 meth:positiveionthermalionizationmassspectrometry
@@ -2856,7 +2572,7 @@ meth:positiveionthermalionizationmassspectrometry
   skos:broader meth:thermalionizationmassspectrometry ;
   skos:definition ""@en ;
   skos:inScheme meth:method ;
-  skos:notation "PTIMS" ;
+  skos:notation "PTI-MS" ;
   skos:prefLabel "Positive ion thermal ionization mass spectrometry"@en ;
 .
 meth:potentiometry
@@ -2899,7 +2615,7 @@ meth:pyrolysisgaschromatography
   skos:broader meth:gaschromatographyanalysis ;
   skos:definition "Chromatography in which an analytical sample is thermally decomposed to smaller fragments before entering the column."@en ;
   skos:inScheme meth:method ;
-  skos:notation "Py-GC" ;
+  skos:notation "PY-GC" ;
   skos:prefLabel "Pyrolysis gas chromatography"@en ;
 .
 meth:pyrolysisgaschromatographyflameionizationdetection
@@ -2912,7 +2628,7 @@ meth:pyrolysisgaschromatographyflameionizationdetection
   skos:broader meth:pyrolysisgaschromatography ;
   skos:definition "Pyrolysis Gas Chromatography that uses a flame ionization detector (FID) to measure the concentration of organic species in a gas stream emerging from the column. An FID typically uses a Hydrogen/Air flame into which the sample is passed to oxidize organic molecules and produces electrically charged particles (ions). The ions are collected and produce an electrical signal which is then measured. (Source: IUPAC; https://doi.org/10.1515/pac-2017-0111)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "Py-GC-FID" ;
+  skos:notation "PY-GC-FID" ;
   skos:prefLabel "Pyrolysis gas chromatography flame ionization detection"@en ;
 .
 meth:pyrolysisgaschromatographymassspectrometry
@@ -2927,7 +2643,7 @@ meth:pyrolysisgaschromatographymassspectrometry
   skos:broader meth:pyrolysisgaschromatography ;
   skos:definition "Mass spectrometry technique in which the sample is heated to the point of decomposition and the gas phase decomposition products are characterized by mass spectrometry. (Source: IUPAC; https://doi.org/10.1351/PAC-REC-06-04-06)."@en ;
   skos:inScheme meth:method ;
-  skos:notation "Py-GC-MS" ;
+  skos:notation "PY-GC-MS" ;
   skos:prefLabel "Pyrolysis gas chromatography mass spectrometry"@en ;
 .
 meth:quadrupoleinductivelycoupledplasmmassspectrometry
@@ -2938,7 +2654,7 @@ meth:quadrupoleinductivelycoupledplasmmassspectrometry
   skos:broader meth:inductivelycoupledplasmamassspectrometry ;
   skos:definition "Mass spectrometry using a quadrupole mass analyzer. Sample preparation, atomization/ionization and detectors not specified"@en ;
   skos:inScheme meth:method ;
-  skos:notation "Q-ICP-MS" ;
+  skos:notation "ICP-Q-MS" ;
   skos:prefLabel "Quadrupole inductively coupled plasma mass spectrometry"@en ;
 .
 meth:quantitativeanalysiselectroninducedxrayspectrometry
@@ -2956,7 +2672,7 @@ meth:quantitativeanalysiselectroninducedxrayspectrometry
   skos:broader meth:electroninducedxrayspectrometry ;
   skos:definition "Within a given sample, once the X-ray intensities of each element of interest are \"counted\" in a detector at a specific beam current, the count rates are compared to those of standards containing known values of the elements of interest. Counting is typically done using wavelength-dispersive spectrometry. In turn, the X-ray intensities must be corrected for matrix effects associated with atomic number (Z), absorption (A) and fluorescence (F). This correction procedure is performed within a computer program that takes the raw counting rates of each element, compares these to standards, computes the ZAF correction (or similar type of correction) and displays the results as a function of the weight % of the oxides or elements. (https://serc.carleton.edu/research_education/geochemsheets/wds.html)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "EMPA" ;
+  skos:notation "QEI-X-S" ;
   skos:prefLabel "Quantitative analysis electron induced X-ray spectrometry"@en ;
 .
 meth:quantitativeanalysisparticleinducedxrayspectrometry
@@ -2970,7 +2686,7 @@ meth:quantitativeanalysisparticleinducedxrayspectrometry
   skos:broader meth:particleinducedxrayspectrometry ;
   skos:definition "Within a given sample, once the X-ray intensities of each element of interest are \"counted\" in a detector at a specific beam current, the count rates are compared to those of standards containing known values of the elements of interest. Counting is typically done using wavelength-dispersive spectrometry. In turn, the X-ray intensities must be corrected for matrix effects associated with atomic number (Z), absorption (A) and fluorescence (F). This correction procedure is performed within a computer program that takes the raw counting rates of each element, compares these to standards, computes the ZAF correction (or similar type of correction) and displays the results as a function of the weight % of the oxides or elements. (https://serc.carleton.edu/research_education/geochemsheets/wds.html)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "PIXEA" ;
+  skos:notation "QPI-X-S" ;
   skos:prefLabel "Quantitative analysis particle induced X-ray spectrometry"@en ;
 .
 meth:quantitativepolymerasechainreaction
@@ -2989,7 +2705,7 @@ meth:quantitativepolymerasechainreaction
   skos:broader meth:bioanalyticalmethod ;
   skos:definition "Polymerase chain reaction to quantify target nucleotide sequences of interest. (Source: IUPAC; https://doi.org/10.1515/iupac.90.0262, https://www.degruyter.com/database/IUPAC/entry/iupac.90.0262/html).  Quantitative PCR adds two elements to the standard Polymerase Chain Reaction (PCR) process: 1)Fluorescent dye and 2) Fluorometer. These two elements turn qPCR to a measurement technique in its own right. The fluorometer detects  fluorescence in real time as the thermal cycler runs, giving readings throughout the amplification process of the PCR.  As a result, quantitative PCR is also called real-time PCR or RT-PCR. (https://www.thermofisher.com/blog/ask-a-scientist/what-is-qpcr/)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "qPCR" ;
+  skos:notation "QPCR" ;
   skos:prefLabel "Quantitative polymerase chain reaction"@en ;
 .
 meth:quantitativereflectanceimagingsystem
@@ -3041,7 +2757,7 @@ meth:ramanspectrometry
   skos:broader meth:spectrometry ;
   skos:definition "Measurement principle of molecular spectroscopy based on Raman scattering. (Source: IUAPC; https://iupac.org/wp-content/uploads/2019/10/PAC-REC-19-02-03.R2_PR191002MC.pdf).  Raman spectroscopy is commonly used in chemistry to provide a structural fingerprint by which molecules can be identified. This technique uses a source of monochromatic electromagnetic radiation to interact with molecular vibrations, phonons or other excitations in the analyzed sample resulting in the energy of the incident photons being shifted up or down. The light source is typically a laser in the visible, near infrared, or near ultraviolet range, although X-rays can also be used.   The shift in energy from the incident source gives information about the vibrational modes in the analyzed sample.  Electromagnetic radiation from the illuminated spot is collected with a lens and sent through a monochromator. Elastic scattered radiation at the wavelength corresponding to the incident excitation is filtered out, while the rest of the collected light is dispersed onto a detector."@en ;
   skos:inScheme meth:method ;
-  skos:notation "RAMAN" ;
+  skos:notation "R-S" ;
   skos:prefLabel "Raman spectrometry"@en ;
 .
 meth:redoxpotentialmeasurement
@@ -3053,6 +2769,7 @@ meth:redoxpotentialmeasurement
   skos:broader meth:electrochemicaltechniques ;
   skos:definition "Redox potential is an electrical measurement that shows the tendency of a solution to transfer electrons to or from a reference electrode. From this measurement we can estimate whether the sample is aerobic, anaerobic, and whether chemical compounds such as Fe oxides or nitrate have been chemically reduced or are present in their oxidized forms. The redox potential is used to describe a system's overall reducing or oxidizing capacity. The redox potential is measured in millivolts (mV) relative to a standard hydrogen electrode and is commonly measured using a platinum electrode with a saturated calomel electrode as reference."@en ;
   skos:inScheme meth:method ;
+  skos:notation "RPM" ;
   skos:prefLabel "Redox potential measurement"@en ;
 .
 meth:resonanceionizationmassspectrometry
@@ -3063,6 +2780,7 @@ meth:resonanceionizationmassspectrometry
   skos:broader meth:massspectrometry ;
   skos:definition "A portion of a solid sample is vaporized by a laser or pulsed ion beam. The liberated material consists of atoms and molecules, both as neutrals and ions. The sputtered ions are usually swept away by an electric field, and one or more pulsed lasers tuned to specific resonances in the element of interest are passed through the remaining neutral cloud to affect efficient ionization of that element, while other elements and molecules are largely unaffected. The photoions are then extracted into the mass analyzer, commonly a time-of-flight analyzer."@en ;
   skos:inScheme meth:method ;
+  skos:notation "RI-MS" ;
   skos:prefLabel "Resonance ionization mass spectrometry"@en ;
 .
 meth:resonanceionizationtimeofflightnoblegasmassspectrometry
@@ -3074,7 +2792,7 @@ meth:resonanceionizationtimeofflightnoblegasmassspectrometry
   skos:broader meth:resonanceionizationmassspectrometry ;
   skos:definition "Noble gas mass spectrometry technique that atomizes and ionizes samples using laser resonance to generate a plasma, and a time-of-flight mass analyzer."@en ;
   skos:inScheme meth:method ;
-  skos:notation "RI-TOF-NGMS" ;
+  skos:notation "RI-TOF-NG-MS" ;
   skos:prefLabel "Resonance ionization time of flight noble gas mass spectrometry"@en ;
 .
 meth:sangersequencing
@@ -3088,6 +2806,7 @@ meth:sangersequencing
   skos:broader meth:bioanalyticalmethod ;
   skos:definition "Method for determining nucleotide sequence of DNA based on incorporating chain-terminating dideoxynucleotides. Note: The method is named after Frederick Sanger (1918--2013, awarded the Nobel Prize in 1958 and 1980). (Source: IUPAC; https://doi.org/10.1515/iupac.90.0262, https://www.degruyter.com/database/IUPAC/entry/iupac.90.0262/html)"@en ;
   skos:inScheme meth:method ;
+  skos:notation "SSEQ" ;
   skos:prefLabel "Sanger sequencing"@en ;
 .
 meth:scanningtransmissionelectronimaging
@@ -3139,7 +2858,7 @@ meth:secondaryionizationmassspectrometry
   skos:broader meth:massspectrometry ;
   skos:definition "secondary-ion mass analyzers are based on bombarding the surface of the sample with a beam of 5- to 20-keV ions. The ion beam is formed in an ion gun in which the gaseous atoms or molecules are ionized by an electron-ionization source. The positive ions are then accelerated by applying a high dc voltage. The impact of these primary ions causes the surface layer of atoms of the sample to be stripped (sputtered) off, largely as neutral atoms. A small fraction, however, forms as positive (or negative) secondary ions that are drawn into a spectrometer for mass analysis. In secondary-ion mass analyzers, which serve for general surface analysis and for depth profiling, the primary ion-beam diameter ranges from 0.3 to 5 mm. Double-focusing, single-focusing, time-of-flight, and quadrupole spectrometers are used for mass determination. Typical transducers for SIMS are electron multipliers, Faraday cups, and imaging detectors. (Skoog, Holler & Crouch, p. 549) Measure method in which a focused beam of primary ions produces secondary ions by sputtering from a solid surface. The secondary ions are analyzed by mass spectrometry. (Source: IUPAC; https://doi.org/10.1351/PAC-REC-06-04-06)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "SIMS" ;
+  skos:notation "SI-MS" ;
   skos:prefLabel "Secondary ionization mass spectrometry"@en ;
 .
 meth:secondaryneutralmassspectrometry
@@ -3152,7 +2871,7 @@ meth:secondaryneutralmassspectrometry
   skos:broader meth:resonanceionizationmassspectrometry ;
   skos:definition "Mass spectrometer that separates the processes of emission and ionisation of sputtered particles. The sputtered neutral particles, atoms and atomic clusters are detected by a mass spectrometer after post sputtering ionisation, which can be performed by an electron beam, electron gas or laser beam. Of these, the most efficient way to ionise the emitted neutral particles is laser beam ionisation. (https://www.spectroscopyeurope.com/system/files/pdf/SNMS_21_4.pdf) Laser ionization mass nanoscope or LIMAS, is a nano-beam time-of-flight secondary neutral mass spectrometry system. The primary ion beam column is a Ga liquid metal ion source that with aberration correction optics can generate a primary ion beam down to 40 nm in diameter under a current of 100 pA with an energy of 20 keV. The sputtered neutral particles are ionized by a femtosecond laser. The ions are introduced into a multi-turn mass analyzer. This instrument would be effective for ultrahigh sensitive analysis of nanosized particles such as return samples from asteroids, comets, and planets. (Ebata, Ishihara, Uchino, Itose;  http://dx.doi.org/10.1002/sia.4857."@en ;
   skos:inScheme meth:method ;
-  skos:notation "SNMS" ;
+  skos:notation "SN-MS" ;
   skos:prefLabel "Secondary neutral mass spectrometry"@en ;
 .
 meth:sectorfieldicpms
@@ -3165,8 +2884,8 @@ meth:sectorfieldicpms
   skos:broader meth:inductivelycoupledplasmamassspectrometry ;
   skos:definition "also called double focusing (electric and magnetic) ICP-MS.  Sample in solution is nebulized, atomized and ionized in an inductively coupled plasma; ions are accelerated into a sector field analyzer; the distinguishing feature from other double focusing (electrostatic, then magnetic) high-resolution mass analyzers is not clear. The technique provides good detection capability and resolving power, useful for applications such as speciation analysis."@en ;
   skos:inScheme meth:method ;
-  skos:notation "ICP-SFMS" ;
-  skos:prefLabel "Sector field inductively coupled plasma mass spectrometry"@en ;
+  skos:notation "ICP-SF-MS" ;
+  skos:prefLabel "Sector field inductively coupled plasma mass spectrometry" ;
 .
 meth:seismicvelocitiesandrockultrasonicelasticconstants
   rdf:type skos:Concept ;
@@ -3177,7 +2896,7 @@ meth:seismicvelocitiesandrockultrasonicelasticconstants
   skos:broader meth:physicalpropertymeasurement ;
   skos:definition "The compression (p) and shear (s) wave velocities in rock may be determined using a pulse generator and p and s-wave ultrasonic transducers.  The transducers are placed on opposite sides of a rock slab and the transit time is measured. (OSIRIS-REx confluence)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "SV-RUEC" ;
+  skos:notation "SVRUEC" ;
   skos:prefLabel "Seismic velocity and ultrasonic elastic constant measurement"@en ;
 .
 meth:shotgunmethod
@@ -3190,6 +2909,7 @@ meth:shotgunmethod
   skos:broader meth:bioanalyticalmethod ;
   skos:definition "Method used for determining the order of bases in long DNA using sequencing of DNA broken up randomly into numerous small segments. (Source: IUPAC; https://doi.org/10.1515/iupac.90.0262, https://www.degruyter.com/database/IUPAC/entry/iupac.90.0262/html)"@en ;
   skos:inScheme meth:method ;
+  skos:notation "SGM" ;
   skos:prefLabel "Shotgun method"@en ;
 .
 meth:shrimp
@@ -3225,6 +2945,7 @@ meth:singlecrystalxraydiffraction
   skos:broader meth:xraydiffraction ;
   skos:definition "Single-crystal X-ray Diffraction is a non-destructive analytical technique which provides detailed information about the internal lattice of crystalline substances, including unit cell dimensions, bond-lengths, bond-angles, and details of site-ordering. X-ray diffraction is based on constructive interference of monochromatic X-rays and a crystalline sample. These X-rays are generated by a cathode ray tube, filtered to produce monochromatic radiation, collimated to concentrate, and directed toward the sample. The interaction of the incident rays with the sample produces constructive interference (and a diffracted ray) when conditions satisfy Bragg's Law (n*'lambda'=2d*sin(theta)). This law relates the wavelength of electromagnetic radiation to the diffraction angle and the lattice spacing in a crystalline sample. These diffracted X-rays are then detected, processed and counted. By changing the geometry of the incident rays, the orientation of the centered crystal and the detector, all possible diffraction directions of the lattice should be attained. Single-crystal diffractometers use either 3- or 4-circle goniometers. These circles refer to the four angles (2*theta, 'chi', 'phi', and 'omega') that define the relationship between the crystal lattice, the incident ray and detector. Samples are mounted on thin glass fibers which are attached to brass pins and mounted onto goniometer heads. Adjustment of the X, Y and Z orthogonal directions allows centering of the crystal within the X-ray beam. Single-crystal X-ray diffraction is most commonly used for precise determination of a unit cell, including cell dimensions and positions of atoms within the lattice. (https://serc.carleton.edu/research_education/geochemsheets/techniques/SXD.html)"@en ;
   skos:inScheme meth:method ;
+  skos:notation "SC-XRD" ;
   skos:prefLabel "Single crystal X-ray diffraction"@en ;
 .
 meth:skooghollercrouch
@@ -3268,7 +2989,7 @@ meth:solidsourcemassspectrometry
   skos:broader meth:massspectrometry ;
   skos:definition "Technique for analysis of elements or isotopes in a solid material. "@en ;
   skos:inScheme meth:method ;
-  skos:notation "SOSMS" ;
+  skos:notation "SOS-MS" ;
   skos:prefLabel "Solid source mass spectrometry"@en ;
 .
 meth:solidstatenuclearmagneticresonancespectroscopy
@@ -3282,7 +3003,7 @@ meth:solidstatenuclearmagneticresonancespectroscopy
   skos:broader meth:nuclearmagneticresonancespectrometry ;
   skos:definition "Solid-state nuclear magnetic resonance (NMR) spectroscopy is an atomic-level method to determine the chemical structure, 3D structure and dynamics of solids and semi-solids. The nuclear spin interactions and the effects of magnetic fields and radiofrequency pulses on nuclear spins in solid-state NMR are the same as in liquid-state NMR spectroscopy. However, because of the orientation dependence of the nuclear spin interactions in the solid state, the majority of high-resolution solid-state NMR spectra are measured under magic-angle spinning (MAS), which has profound effects on the types of radiofrequency pulse sequences required to extract structural and dynamical information. (https://doi.org/10.1038/s43586-020-00002-1, https://en.wikipedia.org/wiki/Solid-state_nuclear_magnetic_resonance)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "SS-NMR" ;
+  skos:notation "SS-NMR-S" ;
   skos:prefLabel "Solid state nuclear magnetic resonance spectroscopy"@en ;
 .
 meth:sparksourcemassspectrometry
@@ -3302,7 +3023,7 @@ meth:sparksourcemassspectrometry
   skos:broader meth:massspectrometry ;
   skos:definition "(SSMS) a general technique for multielement and isotope trace analyses. In SSMS, the atomic constituents of a sample, housed in a vacuum chamber, are converted by a high-voltage (~30 kV), radio-frequency spark to gaseous ions for mass analysis.  The gaseous positive ions formed in the spark plasma are drawn into the analyzer by a dc voltage. Because a spark source produces ions with a wide range of kinetic energies, double-focusing mass spectrometers are required for mass analysis of the ions. When electron multipliers are used with double-focusing instruments, the spectrum is scanned by varying the magnetic field of the magnetic analyzer. The use of this technique leveled off and then declined with the appearance of ICPMS and some of the other mass spectrometric methods. SSMS is still applied to samples that are not easily dissolved and analyzed by plasma methods.  (Skoog, Holler, & Crouch). Mass spectrometry technique. Components: 1) sample preparation: not specified 2) ionization: spark source. NOTE: spark source systems commonly use double focusing mass analyzers."@en ;
   skos:inScheme meth:method ;
-  skos:notation "SSMS" ;
+  skos:notation "SS-MS" ;
   skos:prefLabel "Spark source mass spectrometry"@en ;
 .
 meth:spectrometry
@@ -3318,7 +3039,7 @@ meth:spectrometry
   skos:broader meth:analyticalmethod ;
   skos:definition "any of various analytical techniques in which an emission (as of particles or radiation) is dispersed according to some property (such as mass, energy, or wavelength) of the emission and the amount of dispersion is measured (https://www.merriam-webster.com/dictionary/spectrometry)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "SPEC" ;
+  skos:notation "S" ;
   skos:prefLabel "Spectrometry"@en ;
 .
 meth:spectrophotometry
@@ -3332,7 +3053,7 @@ meth:spectrophotometry
   skos:closeMatch <https://gcmd.earthdata.nasa.gov/kms/concept/3f7c8cc2-e3c3-4dfd-a17f-9d480f1f7179> ;
   skos:definition "measurement of the intensity of electromagnetic radiation as a function of frequency (or wavelength) of the radiation; radiation enters the meter through a slit and is dispersed by means of a prism. (Source: NASA; UUID: 3f7c8cc2-e3c3-4dfd-a17f-9d480f1f7179)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "SP-PH" ;
+  skos:notation "SPH" ;
   skos:prefLabel "Spectrophotometry"@en ;
 .
 meth:sphericalcellbulkthermalconductivityanalysis
@@ -3379,7 +3100,7 @@ meth:surfaceanalysis
   skos:broader meth:analyticalmethod ;
   skos:definition "Analytical techniques focused on characterizing the surface of a sample."@en ;
   skos:inScheme meth:method ;
-  skos:notation "xSA" ;
+  skos:notation "SA" ;
   skos:prefLabel "Surface analysis"@en ;
 .
 meth:synchrotonxrayfluorescencespectrometry
@@ -3397,7 +3118,7 @@ meth:synchrotonxrayfluorescencespectrometry
   skos:broader meth:xrayfluorescencespectrometry ;
   skos:definition "Analysis of X-ray fluorescence spectra generated by excitation using a synchrotron radiation source instead of X-ray tube as excitation source. Synchrotron radiation source has the characteristics of high intensity and high collimation. ( https://link.springer.com/chapter/10.1007/978-981-16-5328-5_6 ).  Synchrotron radiation is light emitted when a beam of electrons traveling close to light speed is bent away from a straight trajectory. (https://www.radiasoft.net/blog/synchrotron-radiation-101-light-sources). It is characterized by high brightness--many orders of magnitude brighter than conventional sources--and [is highly polarized], tunable, collimated (consisting of almost parallel rays) and concentrated over a small area (https://www.iop.org/publications/iop/2011/page_47511.html#gref [page no longer accessible])"@en ;
   skos:inScheme meth:method ;
-  skos:notation "S-XRF" ;
+  skos:notation "S-XF-S" ;
   skos:prefLabel "Synchroton X-ray fluorescence spectrometry"@en ;
 .
 meth:synchrotronxrayfluorescencetomography
@@ -3408,7 +3129,7 @@ meth:synchrotronxrayfluorescencetomography
   skos:broader meth:xraycomputedtomography ;
   skos:definition "X-ray flourescence spectrometery focused to extract inforamtion from inside the volume of a sample, with X-rays sourced from a synchrotron."@en ;
   skos:inScheme meth:method ;
-  skos:notation "SXRFTomographicImage" ;
+  skos:notation "S-XF-T" ;
   skos:prefLabel "Synchrotron X-ray fluorescence tomography"@en ;
 .
 meth:temperatureprogrammeddesorptionelectronprobeanalysis
@@ -3432,6 +3153,7 @@ meth:tensiometry
   skos:broader meth:physicalpropertymeasurement ;
   skos:definition "measurement of soil moisture tension in the vadose zone, typically using a tensiometer."@en ;
   skos:inScheme meth:method ;
+  skos:notation "TEN" ;
   skos:prefLabel "Tensiometry"@en ;
 .
 meth:thermalanalysis
@@ -3442,7 +3164,7 @@ meth:thermalanalysis
   skos:broader meth:physicalpropertymeasurement ;
   skos:definition "analysis techniques that measure the thermal properties of a sample, e.g. conductivity, specific heat."@en ;
   skos:inScheme meth:method ;
-  skos:notation "xTA" ;
+  skos:notation "TA" ;
   skos:prefLabel "Thermal analysis"@en ;
 .
 meth:thermalionizationmassspectrometry
@@ -3466,7 +3188,7 @@ meth:thermalionizationmassspectrometry
   skos:broader meth:massspectrometry ;
   skos:definition "Mass spectrometry technique in which sample undergoes and extraction process to concetrate analyte of interest in a solution that is then placed on a filament, loaded into the mass spectrometer instrument; filaments are heated electrically, causing evaporation and ionization of the analytes, which are then introduced to the mass analyzer. Components: 1) sample preparation: not specified; 2) ionization: thermal ionization"@en ;
   skos:inScheme meth:method ;
-  skos:notation "TIMS" ;
+  skos:notation "TI-MS" ;
   skos:prefLabel "Thermal ionization mass spectrometry"@en ;
 .
 meth:thermalneutronactivationanalysis
@@ -3476,6 +3198,7 @@ meth:thermalneutronactivationanalysis
   skos:broader meth:neutronactivationanalysis ;
   skos:definition "method based on the measurement of the radioactivity or radiation produced in samples when they are irradiated with neutrons  (Skoog, Holler & Crouch, p. 842). Thermal neutrons have energies less than epithermal  neutrons in the 0.1 to  0.5 eV range (based on https://elementalanalysis.com/naa/)."@en ;
   skos:inScheme meth:method ;
+  skos:notation "TNAA" ;
   skos:prefLabel "Thermal neutron activation analysis"@en ;
 .
 meth:thermogravimetryanalysis
@@ -3503,6 +3226,8 @@ Planetary XX. Houston, Lunar Planet. Inst., 383-384;  https://articles.adsabs.ha
   rdfs:label "Thermoluminescence analysis"@en ;
   skos:broader meth:analyticalmethod ;
   skos:definition "Technique used to evaluate the degree of metamorphism for ordinary chondrites, CM, CV, and CO chondrites and eucrites, and to identify meteorites that have experience unusual radiation or thermal history.  Procedure: samples pulverized to 100 mesh powders, metal removed with a hand magnet. Aliquot (typically 4 mg) placed in copper pans, their natural TL emitted light intensity measured while by heating to 500 degree C, annealing any TL effect. Sample is then given a known dose of radiation and induced TL measured by heating to 500 degree C while the intensity of light emitted is measured. Light measured using a photomultiplier (or similar radiometer) equipped with IR and red filters (possibly other filters). Measurements include TL sensitivity - the maximum intensity of light emitted normalized to a standard of Dhajala (H3.8) powder;  Temperature of maximum TL light intensity ('peak temperature'); Peak width of the light intensity vs. temperature curve as full-width at half maximum; ratio of light intensity peak height at low and high temperature (generally 250 and 350 degrees C), 'equivalent dose' - the ratio of natural TL intensity to induced TL intensity (at 250 degree C), multiplied by the excitation dose to induce TL.  Parameters in the experiments include the mass of sample analyzed, temperature range for heating, kind of radiometer and filters used, heating rate (count time at each temperature...), and dose of radiation to the sample after the initial heating and annealing."@en ;
+  skos:inScheme meth:method ;
+  skos:notation "TLA" ;
   skos:prefLabel "Thermoluminescence analysis"@en ;
 .
 meth:thermoluminescencedating
@@ -3514,6 +3239,7 @@ meth:thermoluminescencedating
   skos:broader meth:geochronology ;
   skos:definition "the determination of the time elapsed since a sample was either heated or exposed to sunlight. The method is based on three observations. 1. estimation of the ionizing radiation flux in the sample location; 2. estimation of the accumulation rate of trapped exited states in the material lattice per unit of time at a given ionizing radiation flux;  and 3) measurement of emitted thermoluminescent light intensity as the sample is heated. The ionizing radiation flux at the sample site is related to exposure to sunlight (related to depth of burial), cosmic rays, and radiation due to radioactive decay of elements in the enclosing material (mostly related uranium and potassium concentration).  The ionizing radiation in the sample environment creates electronic excited states in the sample that can be trapped. Exposure to light or heat can causes the electrons in these states to decay to a lower-energy state and emit photons. If the sample has been heated at some point (e.g. by firing ceramics), the accumulation of trapped electrons is reset. By measuring the intensity (total energy carried by the photons reaching a unit area) of light emited when the sample is heated, the density of these electronically excited sites can be estimated.  In combination with the ambient radiation flux, and the trapped excited state accumulation rate in the material, the time interval since the sample was reset can be estimated."@en ;
   skos:inScheme meth:method ;
+  skos:notation "TLD" ;
   skos:prefLabel "Thermoluminescence dating"@en ;
 .
 meth:titration
@@ -3545,7 +3271,7 @@ meth:totalreflectionxrayfluorescencespectrometry
   skos:broader meth:xrayfluorescencespectrometry ;
   skos:definition "a surface elemental analysis technique often used for the ultra-trace analysis of particles, residues, and impurities on smooth surfaces. TXRF is essentially an energy dispersive XRF technique arranged in a special geometry. An incident beam impinges upon a polished flat sample carrier at angles below the critical angle of external total reflection for X-rays, resulting in the reflection of most of the excitation beam photons at this surface. Since Total Reflection angle depends on the energy of the photon, one can use this effect to eliminate the high energy photons from the excitation spectrum and minimize their contribution to the background in the measured spectra, thus making possible to achieve better detection limits. Due to this configuration, the measured spectral background in TXRF is less than in conventional XRF. This reduction results in increased signal to noise ratio. (https://www-pub.iaea.org/MTCD/publications/PDF/TCS-51/html/pdf/Section%201.pdf)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "TXRF" ;
+  skos:notation "TR-XF-S" ;
   skos:prefLabel "Total reflection X-ray fluorescence spectrometry"@en ;
 .
 meth:trackcounting
@@ -3556,7 +3282,7 @@ meth:trackcounting
   skos:broader meth:analyticalmethod ;
   skos:definition "Techniques that measure microscopic damage tracks due to radioactive decay of atoms in the sample."@en ;
   skos:inScheme meth:method ;
-  skos:notation "xTC" ;
+  skos:notation "TC" ;
   skos:prefLabel "Track counting"@en ;
 .
 meth:transmissionelectronimaging
@@ -3582,7 +3308,7 @@ meth:transmissionspectrometry
   skos:broader meth:photonspectrometry ;
   skos:definition "Spectrographic techniques based on spectra of electromagnetic radiation that is transmitted through a sample."@en ;
   skos:inScheme meth:method ;
-  skos:notation "xTSPEC" ;
+  skos:notation "T-S" ;
   skos:prefLabel "Transmission spectrometry"@en ;
 .
 meth:transmittedelectrondiffraction
@@ -3593,6 +3319,7 @@ meth:transmittedelectrondiffraction
   skos:broader meth:electrondiffraction ;
   skos:definition "In a transmission electron microscope, the electron beam passes through a thin film of the examined material. As it interacts with the sample, part of the beam is diffracted and part is transmitted through the sample without changing its direction. Below the sample, the beam is controlled by another set of magnetic lens and apertures. Each set of initially parallel rays is focused by the first lens Objective (optics) to a certain point in the back focal plane of the first lens, forming a spot. The location of these spots is related to the interplanar distance in the sample. Other lenses below the sample can be used to produce a magnified image of the spots for all the different directions that the electrons leave the sample, a diffraction pattern.  (https://en.wikipedia.org/wiki/Electron_diffraction#In_a_transmission_electron_microscope)"@en ;
   skos:inScheme meth:method ;
+  skos:notation "TED" ;
   skos:prefLabel "Transmitted electron diffraction"@en ;
 .
 meth:ultravioletemissionspectrometry
@@ -3604,7 +3331,7 @@ meth:ultravioletemissionspectrometry
   skos:broader meth:emissionspectrometry ;
   skos:definition "Technique based on spectrometer analysis of light emitted in the ultraviolet frequence range."@en ;
   skos:inScheme meth:method ;
-  skos:notation "UVES" ;
+  skos:notation "UV-E-S" ;
   skos:prefLabel "Ultraviolet emission spectrometry"@en ;
 .
 meth:visiblelightmicroscopy
@@ -3653,7 +3380,7 @@ meth:wavelengthdispersiveelectroninducedxrayspectrometry
   skos:broader meth:electroninducedxrayspectrometry ;
   skos:definition "X-rays are generated in the sample by interaction with the excitation electron beam, and are selected using an analytical crystal(s) with specific lattice spacing(s). When X-rays encounter the analytical crystal at a specific angle theta, only those X-rays that satisfy Bragg's Law are reflected and a single wavelength is passed on to the detector. The wavelength of the X-rays reflected into the detector may be varied by changing the position of the analyzing crystal relative to the sample i.e. the X-ray source-crystal distance is a linear function of the wavelength. Consequently, X-rays from only one element at a time can be measured on the spectrometer and the position of a given analytical crystal must be changed in order to adjust to a wavelength characteristic of another element. There is commonly more than a single analytical crystal in a WD spectrometer and, in the case of most EPMA instruments, there are typically multiple spectrometers with a suite of analytical crystals so that the spectrometers can reach all of the elemental wavelengths of interest and it will optimize performance in different wavelength ranges. X-rays of specific wavelengths from the analytical crystal are passed on to the X-ray detector. (https://serc.carleton.edu/research_education/geochemsheets/wds.html)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "WDS" ;
+  skos:notation "EI-WD-X-S" ;
   skos:prefLabel "Wavelength dispersive electron induced X-ray spectrometry"@en ;
 .
 meth:wavelengthmodulationspectrometry
@@ -3664,6 +3391,8 @@ meth:wavelengthmodulationspectrometry
   skos:altLabel "Wavelength-modulation spectroscopy"@en ;
   skos:broader meth:laserabsorptionspectrometry ;
   skos:definition "Laser-absorption spectroscopy (LAS) technique in which excitation laser wavelength is modulated to embed discrete frequencies in the detector signal while the nominal wavelength of the laser is scanned across a molecules absorption transition. The modulation shifts absorption information to harmonics the excitation frequency,  extracted via digital lock-in filters during post-processing, and the wavelength scanning enables spectra of WMS signals to be measured. The WMS signals are then used to calculate gas conditions using calibration-free WMS models."@en ;
+  skos:inScheme meth:method ;
+  skos:notation "WM-S" ;
   skos:prefLabel "Wavelength-modulation spectrometry"@en ;
 .
 meth:wetchemistry
@@ -3695,7 +3424,7 @@ meth:xrayabsorptionnearedgestructurespectrometry
   skos:broader meth:xrayabsorptionspectrometry ;
   skos:definition "This technique is based on the absorption of an X-ray photon, in which an electron interacts with an incident X-ray to acquire a time dependent acceleration. The electron may then be promoted from a core-orbital to an unoccupied bound or continuum state with an intensity given by Fermi's Golden Rule. By varying the energy of a monochromatized beam of incident photons, a spectrum of the absorption cross section can be generated. The probability of an excitation sharply increases when the energy of the incident photon reaches the binding energy of a core-electron. In X-ray Absorption Spectroscopy (XAS) this is referred to as an edge. XANES is a subset of XAS in which the local electronic structure is characterized by investigating the absorption cross section within 50-100 eV of an edge. The XANES region is sensitive to a wealth of electronic structure information, which may be analyzed in three sections. Before the edge, the intensity of pre-edge features is greatly affected by the coordination geometry of the central atom. At the edge, formal oxidation state may be qualitatively assigned, as the energy of the edge position is not an invariant quantity for a given element, the position shifts in accordance with electron density. Finally, coordination shells are interrogated just beyond the edge as the emitted photoelectron scatters off neighboring atoms. (https://www.cei.washington.edu/education/science-of-solar/xray-absorption-near-edge-spectroscopy-xanes/)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "XANES" ;
+  skos:notation "XANE-S" ;
   skos:prefLabel "X-ray absorption near edge structure spectrometry"@en ;
 .
 meth:xrayabsorptionspectrometry
@@ -3708,7 +3437,7 @@ meth:xrayabsorptionspectrometry
   skos:broader meth:xrayspectrometry ;
   skos:definition "In this technique, the sample is exposed to monochromatic X-rays for which the photon energy is tuned to a range where core electrons can be excited (0.1-100 keV). When the incident X-ray energy is larger than the electron binding energy, there is a sharp increase in absorption (an edge). The edge positions are related to the core electron that is excited. Each element has its own edge energy, and an element's valence can be measured even in a heterogeneous sample. There are three main regions found on a spectrum generated by XAS data which are treated as separate spectroscopic techniques: 1) absorption threshold determined by the transition to the lowest unoccupied states; 2) near-edge structure (XANES); 3) Extended X-ray absorption fine structure (EXAFS) (at energy higher than the edge). X-ray absorption spectroscopy (XAS) is used for determining the local geometric and/or electronic structure of matter. The experiment is usually performed at synchrotron radiation facilities, which provide intense and tunable X-ray beams. Samples can be in the gas phase, solutions, or solids. (https://en.wikipedia.org/wiki/X-ray_absorption_spectroscopy, https://www.bnl.gov/nsls2/userguide/lectures/lecture-4-ravel.pdf)"@en ;
   skos:inScheme meth:method ;
-  skos:notation "XAS" ;
+  skos:notation "X-A-S" ;
   skos:prefLabel "X-ray absorption spectrometry"@en ;
 .
 meth:xraycomputedtomography
@@ -3814,6 +3543,7 @@ meth:xrayphotoelectronspectroscopycompositionmap
   skos:broader meth:imagingtechniques ;
   skos:definition "Technique based on irradiation of the sample surface with monochromatic X-radiation (Skoog, Holler, Crouch p540) resulting in emission of electrons. The emitted electron energy spectra are obtained and chemical states are inferred from the measurement of the kinetic energy and the number of the ejected electrons. A typical XPS spectrum is a plot of the number of electrons detected at a specific binding energy. Each element produces a set of characteristic XPS peaks. Image produced from a raster of X-ray Photoelectron Spectrometer data, with image channels mapped to 1 or three characteristic energy peaks."@en ;
   skos:inScheme meth:method ;
+  skos:notation "XPS-M" ;
   skos:prefLabel "X-ray photoelectron spectrometry composition mapping"@en ;
 .
 meth:xraypowderdiffraction
@@ -3839,6 +3569,6 @@ meth:xrayspectrometry
   skos:broader meth:photonspectrometry ;
   skos:definition "Analysis of the energy distribution of photons in the X-ray wavelength range that are emitted from a sample."@en ;
   skos:inScheme meth:method ;
-  skos:notation "XRS" ;
+  skos:notation "X-S" ;
   skos:prefLabel "X-ray spectrometry"@en ;
 .
