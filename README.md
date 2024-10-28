@@ -25,3 +25,7 @@ Vocabulary of categories of meteorites and lunar materials.
 - [HTML view of Extraterrestrial materials vocabulary]( https://amds-ldeo.github.io/Vocabulary/ETmaterials/html/ExtraterrestrialMaterialsMindat.html)
 - SKOS vocabualary, serialized using Turtle. [SKOS Extraterrestrial materials vocabulary]( https://github.com/amds-ldeo/Vocabulary/blob/master/ETmaterials/ExtraterrestrialMaterialsMindat.ttl)
 
+### Minerals
+Draft vocabulary for mineral species. Information pulled from Wikipedia, RRUFF, and MinDat.  Includes hierarchy from Strunz classes and Mindat mineral groups. 
+- [HTML view of Mineral vocabulary]( https://amds-ldeo.github.io/Vocabulary/geochemistry/html/mineralSKOS.html).  This is a big file, takes awhile to load.
+- [SKOS Turtle file, Mineral vocabulary draft](https://github.com/amds-ldeo/Vocabulary/blob/MineralVocabulary/geochemistry/Minerals/mineralSKOS.ttl).  Draft is in the MineralVocabulary branch of this repository.
