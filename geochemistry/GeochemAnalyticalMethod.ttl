@@ -1378,6 +1378,7 @@ meth:highresolutioninductivelycoupledplasmamassspectrometry
   skos:definition "Mass spectrometry technique. Components 1) sample preparation: not specified; 2) ionization: Inductively-coupled plasma. 3) mass analyzer in which the the aperture width of the entrance slit situated between the ion optics and the mass analyzer, and an exit slit located between the mass analyzer and the detector assembly can be controlled. The narrower the slits are positioned, the higher the resolution (and lower the sensitivity); the wider the slits, the higher the sensitivity (and lower the resolution). (R. ArevaloJr., in Treatise on Geochemistry (Second Edition), 2014)"@en ;
   skos:historyNote "2024-02-22  SMR deprecate after team meeting discussion.  Remove inScheme link to the conceptScheme.  Any of the ICP MS techniques might be high resolution, and whether analyses were done in high-resolution modes is not always obvious in the data. Add high-resolution label in skos:altLabel."@en ;
   skos:notation "HRICPMS" ;
+  skos:inScheme meth:method ;
   skos:prefLabel "High resolution inductively coupled plasma mass spectrometry (deprecated)"@en ;
 .
 meth:hybridizationassay
@@ -2929,6 +2930,7 @@ meth:shrimp
   skos:broader meth:secondaryionizationmassspectrometry ;
   skos:definition "SIMS analysis using a system designed to obtain a highly-focused ion excitation beam to induce sputtering from very small target areas (10 to 30 micron-diameter scale), with mass-analyzer and detector designs to maximize mass resolution.  Various approaches are used, and technology is constantly evolving, for example SHRIMP-RG (Reverse Geometry), multiple ion collection systems, negative-ion stable isotope measurements."@en ;
   skos:notation "SHRIMP" ;
+  skos:inScheme meth:method ;
   skos:prefLabel "Sensitive high-mass-resolution ion microprobe"@en ;
 .
 meth:singlecrystalxraydiffraction
