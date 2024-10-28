@@ -1,0 +1,246 @@
+s	l	sources
+meth:geochronology40ar39ar	40Ar-39Ar geochronology	https://w3id.org/geochem/1.0/agent/orex
+meth:afmtopographyimaging	AFM topography imaging	https://w3id.org/geochem/1.0/agent/orex | https://lnf-wiki.eecs.umich.edu/wiki/Atomic_force_microscopy | https://doi.org/10.1007/978-3-642-16712-6_496
+meth:acceleratormassspectrometry	Accelerator mass spectrometry	https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch | https://w3id.org/geochem/1.0/agent/astromat
+meth:acidreactioncarbonateanalysis	Acid reaction carbonate analysis	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:particleinducedactivationanalysis	Activation analysis	https://doi.org/10.1515/pac-2019-0302 | https://w3id.org/geochem/1.0/agent/georoc
+meth:adsorptionanalysis	Adsorption analysis	http://www.cyto.purdue.edu/cdroms/cyto2/6/coulter/ss000107.htm | https://w3id.org/geochem/1.0/agent/georoc
+meth:alphaparticlecounting	Alpha particle counting	https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/georoc
+meth:alphaparticlespectrometry	Alpha particle spectrometry	https://w3id.org/geochem/1.0/agent/georoc | https://en.wikipedia.org/wiki/Alpha-particle_spectroscopy
+meth:alpharecoiltrackcounting	Alpha recoil track counting	https://w3id.org/geochem/1.0/agent/georoc | https://doi.org/10.1016/S0009-2541(99)00185-0
+meth:amperometry	Amperometry	https://w3id.org/geochem/1.0/agent/geox | https://doi.org/10.1515/pac-2018-0109
+meth:analyticalmethod	Analytical method	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:angleofreposemeasurement	Angle of repose measurement	https://w3id.org/geochem/1.0/agent/orex
+meth:anionchromatographyanalysis	Anion chromatography analysis	https://en.wikipedia.org/wiki/Ion_chromatography | https://w3id.org/geochem/1.0/agent/petdb
+meth:atomprobetomography	Atom probe tomography	https://en.wikipedia.org/wiki/Atom_probe | https://w3id.org/geochem/1.0/agent/orex
+meth:atomicabsorptionspectrometry	Atomic absorption spectrometry	https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/geox | https://en.wikipedia.org/wiki/Atomic_absorption_spectroscopy
+meth:atomicforcemicroscopy	Atomic force microscopy	https://en.wikipedia.org/wiki/Atomic_force_microscopy
+meth:augerelectronspectroscopy	Auger electron spectroscopy	https://en.wikipedia.org/wiki/Auger_electron_spectroscopy | https://w3id.org/geochem/1.0/agent/astromat
+meth:backscatteredelectrongrainboundarymap	Backscattered electron grain boundary imaging	https://w3id.org/geochem/1.0/agent/orex
+meth:backscatteredelectronimaging	Backscattered electron imaging	https://w3id.org/geochem/1.0/agent/orex | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/georoc
+meth:benchchemistry	Bench chemistry	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:betacounting	Beta counting	https://w3id.org/geochem/1.0/agent/petdb | https://doi.org/10.1016/S0376-7388(98)00174-4
+meth:bioanalyticalmethod	Bioanalytical method	https://w3id.org/geochem/1.0/analyticalmethod/smrAddGeneralGeoX
+meth:broadbeamxrayspectrometry	Broad beam X-ray spectrometry	https://w3id.org/geochem/1.0/agent/astromat
+meth:capacitancedilatometry	Capacitance dilatometry	https://w3id.org/geochem/1.0/agent/orex | https://en.wikipedia.org/wiki/Dilatometer
+meth:carbonatebombanalysis	Carbonate bomb analysis	https://w3id.org/geochem/1.0/agent/georoc
+meth:catalyticcombustionanalysis	Catalytic combustion analysis	https://w3id.org/geochem/1.0/agent/georoc
+meth:cathodoluminescenceimaging	Cathodoluminescence imaging	https://w3id.org/geochem/1.0/agent/orex | https://www.delmic.com/en/techniques/cathodoluminescence
+meth:cationchromatographyanalysis	Cation chromatography analysis	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory | https://en.wikipedia.org/wiki/Ion_chromatography
+meth:charmographanalysis	Charmograph analysis	https://w3id.org/geochem/1.0/agent/georoc
+meth:chromatographyanalysis	Chromatography analysis	https://en.wikipedia.org/wiki/Chromatography | https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:colormetricanalysis	Colormetric analysis	https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/petdb | https://www.encyclopedia.com/science/dictionaries-thesauruses-pictures-and-press-releases/colorimetric-analysis
+meth:combustionionchromatography	Combustion Ion Chromatography	https://www.teinstruments.com/faq/combustion-ion-chromatography/ | https://www.thermofisher.com/order/catalog/product/IQLAAAGADHFAMJMBIQ | https://w3id.org/geochem/1.0/agent/petdb
+meth:combustionanalysis	Combustion analysis	https://preparatorychemistry.com/Bishop_Combustion_Analysis.htm | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/georoc
+meth:combustiongaschromatography	Combustion gas chromatography	https://doi.org/10.1021/ed046p441
+meth:combustiongaschromatographyisotopicratiomassspectrometry	Combustion gas chromatography isotopic ratio mass spectrometry	https://w3id.org/geochem/1.0/agent/orex
+meth:combustioninfraredspectrometry	Combustion infrared spectrometry	https://w3id.org/geochem/1.0/agent/georoc
+meth:compressiontest	Compression test	https://w3id.org/geochem/1.0/agent/orex
+meth:confocalxrayfluorescencespectrometry	Confocal X-ray fluorescence spectrometry	https://www.xos.com/Confocal-XRF | https://w3id.org/geochem/1.0/agent/orex
+meth:continuousflowisotoperatiomassspectrometry	Continuous flow isotope ratio mass spectrometry	https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/petdb
+meth:coulometricalanalysis	Coulometrical analysis	https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/astromat
+meth:dnasequencing	DNA sequencing	https://w3id.org/geochem/1.0/agent/geox | https://doi.org/10.1515/iupac.90.0262
+meth:desorptionelectrosprayionizationorbitrapmassspectrometry	Desorption electrospray ionization orbitrap mass spectrometry	https://w3id.org/geochem/1.0/agent/orex
+meth:deuteronactivationanalysis	Deuteron activation analysis	https://doi.org/10.1007/BF02520983 | https://w3id.org/geochem/1.0/agent/georoc
+meth:dietrichfruhlingcalcimetry	Dietrich-Fruhling calcimetry	https://www.gabbrielli.com/en/prodotto/dietrich-fruhling-calcimeter/ | https://w3id.org/geochem/1.0/agent/georoc
+meth:differentialscanningcalorimetry	Differential scanning calorimetry	DFG | https://w3id.org/geochem/1.0/agent/orex | https://doi.org/10.1515/pac-2012-0609 | https://en.wikipedia.org/wiki/Differential_scanning_calorimetry | https://w3id.org/geochem/1.0/agent/geox
+meth:differentialthermalanalyis	Differential thermal analysis	https://w3id.org/geochem/1.0/agent/georoc
+meth:directcurrentplasmaemissionspectrometry	Direct current plasma emission spectrometry	https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/georoc | https://www.rsc.org/publishing/journals/prospect/ontology.asp?id=CMO:0000265
+meth:directcurrentplasmaspectrometry	Direct current plasma spectrometry	https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/petdb
+meth:directshearstrengthmeasurement	Direct shear strength measurement	https://w3id.org/geochem/1.0/agent/orex
+meth:dualinletisotoperatiomassspectrometry	Dual inlet isotope ratio mass spectrometry	https://en.wikipedia.org/wiki/Isotope-ratio_mass_spectrometry | https://w3id.org/geochem/1.0/agent/georoc
+meth:electricalconductivitymeasurement	Electrical conductivity measurement	https://w3id.org/geochem/1.0/analyticalmethod/smraddinstmethodsgeox
+meth:electrochemicalimpedancespectroscopy	Electrochemical impedance spectroscopy	https://www.jlab.org/conferences/tfsrf/Thursday/Th2_1-EIS%20intro%20Reece.pdf | https://w3id.org/geochem/1.0/agent/astromat | https://www.biologic.net/topics/what-is-eis/
+meth:electrochemicaltechniques	Electrochemical techniques	https://w3id.org/geochem/1.0/analyticalmethod/smrAddGeneralGeoX
+meth:electronbackscatterdiffraction	Electron backscatter diffraction	https://w3id.org/geochem/1.0/agent/geox | https://w3id.org/geochem/1.0/agent/orex | DFG
+meth:electrondiffraction	Electron diffraction	https://w3id.org/geochem/1.0/analyticalmethod/smrAddGeneralGeoX
+meth:electronenergylossspectrometry	Electron energy loss spectrometry	https://en.wikipedia.org/wiki/Electron_energy_loss_spectroscopy
+meth:electroninducedxrayspectrometry	Electron induced X-ray spectrometry	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:electronmicroscopyimaging	Electron microscopy imaging	https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/orex | https://w3id.org/geochem/1.0/agent/georoc
+meth:electronspectrometry	Electron spectrometry	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:electronspinresonanceageanalysis	Electron spin resonance age analysis	https://en.wikipedia.org/wiki/Electron_spin_resonance_dating | https://w3id.org/geochem/1.0/agent/georoc
+meth:electrothermalabsorptionspectrometry	Electrothermal absorption spectrometry	https://w3id.org/geochem/1.0/agent/georoc
+meth:elementalanalysis	Elemental analysis	https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/georoc | http://vocab.nerc.ac.uk/collection/L05/current/LAB01 | https://w3id.org/geochem/1.0/agent/petdb | https://en.wikipedia.org/wiki/Elemental_analysis
+meth:elementalanalysisinfraredspectrometry	Elemental analysis infrared spectrometry	https://w3id.org/geochem/1.0/analyticalmethod/smrAdd
+meth:elementalanalysisisotoperatiomassspectrometry	Elemental analysis isotope ratio mass spectrometry	https://w3id.org/geochem/1.0/agent/petdb | https://doi.org/10.1351/PAC-REC-06-04-06 | https://w3id.org/geochem/1.0/agent/orex
+meth:elementalanalysismassspectrometry	Elemental analysis mass spectrometry	https://w3id.org/geochem/1.0/agent/astromat
+meth:emissionspectrometry	Emission spectrometry	https://en.wikipedia.org/wiki/Atomic_emission_spectroscopy | https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/astromat
+meth:energydispersiveelectroninducedxrayspectrometry	Energy Dispersive electron induced X-ray spectrometry	https://w3id.org/geochem/1.0/agent/orex | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/petdb
+meth:energydispersivexrayfluorescencespectrometry	Energy dispersive X-ray fluorescence spectrometry	https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/petdb | https://www.xos.com/EDXRF
+meth:energydispersivexrayspectraraster	Energy dispersive X-ray spectral data 2D raster	https://w3id.org/geochem/1.0/agent/orex
+meth:energydispersivexrayspectrometry	Energy dispersive X-ray spectrometry	https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch
+meth:energyfilteredtransmissionelectronimaging	Energy-filtered transmission electron imaging	https://eels.info/about/techniques/eftem | https://w3id.org/geochem/1.0/agent/orex
+meth:epithermalneutronactivationanalysis	Epithermal neutron activation analysis	https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch | https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/georoc
+meth:extendedxrayabsorptionfinestructure	Extended X-ray absorption fine structure	https://doi.org/10.1515/pac-2019-0302
+meth:fastneutronactivationanalysis	Fast neutron activation analysis	https://w3id.org/geochem/1.0/analyticalmethod/smrAdd | https://elementalanalysis.com/naa/
+meth:fireassayemissionspectrometry	Fire assay emission spectrometry	https://w3id.org/geochem/1.0/agent/petdb
+meth:fissiontrackcounting	Fission track counting	https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/petdb | https://doi.org/10.1016/1040-6182(92)90017-V
+meth:flameemissionspectrometry	Flame emission spectrometry	https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/petdb
+meth:flowcytometry	Flow cytometry	https://apps.usgs.gov/thesaurus/thesaurus-full.php?thcode=2&code=400 | https://w3id.org/geochem/1.0/agent/geox
+meth:fluorescencemicroscopy	Fluorescence microscopy	https://w3id.org/geochem/1.0/agent/geox | http://micro.magnet.fsu.edu/primer/techniques/fluorescence/fluorhome.html | https://w3id.org/geochem/1.0/analyticalmethod/nasagcmd
+meth:fluorescencespectrometry	Fluorescence spectrometry	https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/analyticalmethod/nasagcmd | https://w3id.org/geochem/1.0/agent/geox | https://en.wikipedia.org/wiki/Fluorescence_spectroscopy
+meth:fluorescentinsituhybridization	Fluorescent in situ hybridization	https://w3id.org/geochem/1.0/agent/geox | https://doi.org/10.1515/iupac.90.0262
+meth:focusedionbeamscanningmicroscopy	Focused ion beam scanning microscopy	https://w3id.org/geochem/1.0/agent/orex
+meth:fouriertransforminfraredspectrometry	Fourier transform infrared spectrometry	https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch | https://w3id.org/geochem/1.0/agent/petdb | https://en.wikipedia.org/wiki/Fourier-transform_infrared_spectroscopy
+meth:fouriertransformioncyclotronresonancemassspectrometry	Fourier transform ion cyclotron resonance mass spectrometry	https://w3id.org/geochem/1.0/agent/orex
+meth:gammacounting	Gamma counting	https://w3id.org/geochem/1.0/agent/orex
+meth:gammarayspectrometry	Gamma ray spectrometry	https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/georoc
+meth:gaschromatographyanalysis	Gas chromatography analysis	https://w3id.org/geochem/1.0/analyticalmethod/smrAddGeneralGeoX | https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/georoc
+meth:gaschromatographyflameionizationdetection	Gas chromatography flame ionization detection	https://doi.org/10.1515/pac-2017-0111 | https://w3id.org/geochem/1.0/agent/geox
+meth:gaschromatographymassspectrometry	Gas chromatography mass spectrometry	https://w3id.org/geochem/1.0/agent/geox | https://doi.org/10.1351/PAC-REC-06-04-06 | https://w3id.org/geochem/1.0/agent/orex
+meth:gaschromatographythermalconductivitydetection	Gas chromatography thermal conductivity detection	https://w3id.org/geochem/1.0/agent/geox
+meth:gaspycnometry	Gas pycnometry	https://w3id.org/geochem/1.0/agent/orex | https://en.wikipedia.org/wiki/Gas_pycnometer
+meth:geochronology	Geochronology techniques	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:glowdischargemassspectrometry	Glow discharge mass spectrometry	https://nrc.canada.ca/en/research-development/products-services/technical-advisory-services/glow-discharge-mass-spectrometry-gdms-analysis | https://w3id.org/geochem/1.0/agent/metbase | https://www.massint.co.uk/glow-discharge-ms/gdms.php
+meth:gradientionchromatographyanalysis	Gradient ion chromatography analysis	https://w3id.org/geochem/1.0/agent/petdb
+meth:gravimeticanalysis	Gravimetric analysis	https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/astromat | https://en.wikipedia.org/wiki/Wet_chemistry#Gravimetric_analysis
+meth:gutzeittest	Gutzeit test	https://w3id.org/geochem/1.0/agent/georoc
+meth:highresolutioninductivelycoupledplasmamassspectrometry	High resolution inductively coupled plasma mass spectrometry (deprecated)	https://w3id.org/geochem/1.0/agent/orex | https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/astromat
+meth:hybridizationassay	Hybridization assay	https://en.wikipedia.org/wiki/Hybridization_assay | https://w3id.org/geochem/1.0/agent/geox | https://doi.org/10.1515/iupac.90.0262
+meth:imagingtechniques	Imaging techniques	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:inductionheatinganalysis	Induction heating analysis	https://w3id.org/geochem/1.0/agent/georoc
+meth:inductivelycoupledplasmaemissionspectrometry	Inductively coupled plasma emission spectrometry	https://w3id.org/geochem/1.0/agent/georoc
+meth:inductivelycoupledplasmamassspectrometry	Inductively coupled plasma mass spectrometry	https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/orex | https://w3id.org/geochem/1.0/agent/petdb
+meth:inductivelycoupledplasmaopticalemissionspectrometry	Inductively coupled plasma optical emission spectrometry	https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/orex | https://w3id.org/geochem/1.0/agent/georoc
+meth:infraredabsorptionspectrometry	Infrared absorption spectrometry	https://w3id.org/geochem/1.0/agent/georoc | https://en.wikipedia.org/wiki/Infrared_gas_analyzer
+meth:infraredopticalspectrometry	Infrared optical spectrometry	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:infraredphotometry	Infrared photometry	https://w3id.org/geochem/1.0/agent/georoc
+meth:infraredreflectance	Infrared reflectance	https://w3id.org/geochem/1.0/agent/georoc
+meth:infraredspectrometry	Infrared spectrometry	https://w3id.org/geochem/1.0/agent/petdb | https://conductscience.com/the-basics-of-infrared-spectrophotometry/ | https://w3id.org/geochem/1.0/agent/georoc
+meth:infraredtransmissionspectrometry	Infrared transmission spectrometry	https://w3id.org/geochem/1.0/agent/georoc
+meth:instrumentalneutronactivationanalysis	Instrumental neutron activation analysis 	https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch | https://www.nist.gov/laboratories/tools-instruments/instrumental-neutron-activation-analysis-inaa | https://serc.carleton.edu/research_education/geochemsheets/techniques/INAA.html | https://w3id.org/geochem/1.0/agent/georoc
+meth:ionchromatographyanalysis	Ion chromatography analysis	https://w3id.org/geochem/1.0/agent/orex | https://w3id.org/geochem/1.0/agent/georoc | https://doi.org/10.1515/pac-2017-0111 | https://w3id.org/geochem/1.0/agent/geox | https://w3id.org/geochem/1.0/analyticalmethod/nasagcmd
+meth:ionsensitiveelectrodeanalysis	Ion sensitive electrode analysis	https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch | https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Physical_Methods_in_Chemistry_and_Nano_Science_(Barron)/01%3A_Elemental_Analysis/1.07%3A_Ion_Selective_Electrode_Analysis
+meth:isotoperatiomassspectrometry	Isotope ratio mass spectrometry	https://w3id.org/geochem/1.0/agent/georoc | https://www.emsl.pnnl.gov/science/related-instrument/isotope-ratio-mass-spectrometry/1795
+meth:lecofurnaceanalysis	LECO furnace analysis	https://w3id.org/geochem/1.0/agent/georoc | https://www.element.com/materials-testing-services/chemical-analysis-labs/leco-analysis
+meth:laserinducedbreakdownspectrometry	Laser Induced Breakdown Spectrometry	https://doi.org/10.1007/978-3-642-20668-9 | https://w3id.org/geochem/1.0/agent/metbase | https://en.wikipedia.org/wiki/Laser-induced_breakdown_spectroscopy | https://appliedspectra.com/technology/libs.html
+meth:laserablationinductivelycoupledplasmamassspectrometry	Laser ablation inductively coupled plasma mass spectrometry	https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/orex | https://w3id.org/geochem/1.0/agent/petdb
+meth:laserablationmassspectrometry	Laser ablation mass spectrometry	https://w3id.org/geochem/1.0/agent/georoc
+meth:laserablationresonanceionizationmassspectrometry	Laser ablation resonance ionization mass spectrometry	https://w3id.org/geochem/1.0/agent/petdb | https://doi.org/10.1063/1.1143443
+meth:lassmassspectrometry	Laser ablation split stream mass spectrometry 	https://w3id.org/geochem/1.0/agent/georoc | https://assets.thermofisher.com/TFS-Assets/CMD/Application-Notes/AN-30298-ICP-MS-Laser-Ablation-Split-Stream-AN30298-EN.pdf
+meth:laserabsorptionspectrometry	Laser absorption spectrometry	https://new.abb.com/products/measurement-products/analytical/laser-gas-analyzers | https://w3id.org/geochem/1.0/agent/georoc
+meth:laserfluorinationanalysis	Laser fluorination mass spectrometry	https://w3id.org/geochem/1.0/agent/orex | https://w3id.org/geochem/1.0/agent/astromat | https://sil.uoregon.edu/laser-fluorination/ | https://w3id.org/geochem/1.0/agent/georoc
+meth:laserionizationmassspectrometry	Laser ionization mass spectrometry	https://doi.org/10.1021/acs.analchem.9b00329 | https://w3id.org/geochem/1.0/agent/georoc
+meth:liquidchromatographyanalysis	Liquid chromatography analysis	https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/petdb
+meth:liquidchromatographymassspectrometry	Liquid chromatography mass spectrometry	https://w3id.org/geochem/1.0/agent/orex
+meth:liquidchromatographyorganiccarbondetection	Liquid chromatography organic carbon detection	https://w3id.org/geochem/1.0/agent/geox
+meth:liquidinletinductivelycoupledplasmamassspectrometry	Liquid inlet inductively coupled plasma mass spectrometry	https://w3id.org/geochem/1.0/agent/georoc
+meth:lockinthermography	Lock in thermography	https://movitherm.com/knowledgebase/what-is-lock-in-thermography/ | https://w3id.org/geochem/1.0/agent/orex
+meth:lossonignitionanalysis	Loss on ignition analysis 	https://www.precisa.com/blog/what-is-loss-on-ignition-loi | https://w3id.org/geochem/1.0/agent/georoc
+meth:magneticfieldmeasurement	Magnetic field measurement	https://w3id.org/geochem/1.0/analyticalmethod/smraddinstmethodsgeox
+meth:manometry	Manometry	https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/petdb
+meth:massspectrometry	Mass spectrometry	https://w3id.org/geochem/1.0/analyticalmethod/smrAddGeneralGeoX | https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch | https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/astromat | https://doi.org/10.1351/PAC-REC-06-04-06 | https://w3id.org/geochem/1.0/agent/georoc
+meth:microxrayfluorescencespectroscopy	Micro X-ray fluorescence spectrometry	https://doi.org/10.1515/pac-2019-0302
+meth:micromassmultiprepmassspectrometry	Micromass multiprep mass spectrometry	https://w3id.org/geochem/1.0/agent/georoc
+meth:microprobetwosteplasermassspectrometry	Microprobe two step laser mass spectrometry	https://w3id.org/geochem/1.0/agent/orex
+meth:microscopicxrayimaging	Microscopic X-ray imaging	https://w3id.org/geochem/1.0/agent/astromat | https://en.wikipedia.org/wiki/X-ray_microscope
+meth:microscopy	Microscopy	https://w3id.org/geochem/1.0/analyticalmethod/smraddinstmethodsgeox
+meth:minicryogenfreemeasurementsystemforthermalconductivity	Mini cryogen free measurement system for thermal conductivity	https://w3id.org/geochem/1.0/agent/orex
+meth:moistureanalysis	Moisture analysis	https://onlinepubs.trb.org/Onlinepubs/nchrp/nchrp_rpt_138.pdf | https://w3id.org/geochem/1.0/agent/petdb
+meth:mossbauerspectroscopy	Mossbauer spectrometry	https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/georoc | https://en.wikipedia.org/wiki/M%C3%B6ssbauer_spectroscopy | https://w3id.org/geochem/1.0/agent/petdb
+meth:multicollectorinductivelycoupledplasmamassspectrometry	Multi collector inductively coupled plasma mass spectrometry	https://w3id.org/geochem/1.0/agent/orex
+meth:nanoindentationandmicroindentation	Nanoindentation and microindentation	https://w3id.org/geochem/1.0/agent/orex
+meth:nanoscaleinfraredspectrometry	Nanoscale infrared spectrometry	https://doi.org/10.1016/S1369-7021(10)70205-4 | https://w3id.org/geochem/1.0/agent/orex
+meth:negativeionthermalionizationmassspectrometry	Negative ion thermal ionization mass spectrometry	https://w3id.org/geochem/1.0/agent/georoc
+meth:neutronactivationanalysis	Neutron activation analysis	https://w3id.org/geochem/1.0/agent/astromat | https://serc.carleton.edu/research_education/geochemsheets/techniques/INAA.html | https://www.nist.gov/laboratories/tools-instruments/instrumental-neutron-activation-analysis-inaa | https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/petdb
+meth:neutroncounting	Neutron counting	https://w3id.org/geochem/1.0/agent/georoc | https://www.lanl.gov/org/ddste/aldgs/sst-training/_assets/docs/PANDA/Principles%20of%20Neutron%20Coincidence%20Counting%20Ch.%2016%20p.%20457-492.pdf
+meth:neutronirradiationnoblegasmassspectrometry	Neutron irradiation noble gas mass spectrometry	https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/orex | https://w3id.org/geochem/1.0/agent/georoc
+meth:nextgenerationsequencing	Next generation sequencing	https://w3id.org/geochem/1.0/agent/geox | https://doi.org/10.1515/iupac.90.0262
+meth:noblegasmassspectrometry	Noble gas mass spectrometry	https://nvlpubs.nist.gov/nistpubs/jres/38/jresv38n6p617_A1b.pdf | https://w3id.org/geochem/1.0/agent/orex | https://w3id.org/geochem/1.0/agent/georoc
+meth:nuclearmagneticresonancespectrometry	Nuclear magnetic resonance spectrometry	DFG | https://iupac.org/wp-content/uploads/2019/10/PAC-REC-19-02-03.R2_PR191002MC.pdf | https://en.wikipedia.org/wiki/Nuclear_magnetic_resonance_spectroscopy | https://w3id.org/geochem/1.0/agent/geox | https://w3id.org/geochem/1.0/agent/orex
+meth:nuclearmicroprobeanalysis	Nuclear microprobe analysis	https://www.annualreviews.org/doi/pdf/10.1146/annurev.ns.42.120192.000245 | https://w3id.org/geochem/1.0/agent/georoc
+meth:nuclearparticletrackcounting	Nuclear particle track counting	https://w3id.org/geochem/1.0/agent/astromat
+meth:nuclearreactionspectrometry	Nuclear reaction spectrometry	https://w3id.org/geochem/1.0/agent/astromat
+meth:opticalemissionspectrometry	Optical emission spectrometry	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:opticalspectrometry	Optical spectrometry	https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory | https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/georoc
+meth:orbitrapmassspectrometry	Orbitrap mass spectrometry	https://en.wikipedia.org/wiki/Orbitrap | https://w3id.org/geochem/1.0/agent/orex
+meth:other	Other	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:particlebeamexcitation	Particle beam excitation	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:particlecohesiondetermination	Particle cohesion determination	https://w3id.org/geochem/1.0/agent/orex
+meth:particlecounting	Particle counting	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory | https://w3id.org/geochem/1.0/agent/georoc
+meth:particleinducedxrayspectrometry	Particle induced X-ray spectrometry	https://doi.org/10.1515/pac-2019-0302
+meth:particlesizedistributionanalysis	Particle size distribution analysis 	https://w3id.org/geochem/1.0/agent/orex
+meth:particlespectrometry	Particle spectrometry	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:penfieldmethodanalysis	Penfield method analysis	https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/petdb
+meth:photometry	Photometry	https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/geox
+meth:photonactivationanalysis	Photon activation analysis	https://doi.org/10.3390/min11060617 | https://w3id.org/geochem/1.0/agent/georoc
+meth:photonspectrometry	Photon spectrometry	https://w3id.org/geochem/1.0/analyticalmethod/smrAddGeneralGeoX
+meth:physicalpropertymeasurement	Physical property measurement	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:plasmaemissionspectrometry	Plasma emission spectrometry	https://w3id.org/geochem/1.0/agent/georoc
+meth:plasmaopticalemissionspectrometry	Plasma optical emission spectrometry	https://w3id.org/geochem/1.0/agent/georoc
+meth:plasmaopticalspectrometry	Plasma optical spectrometry	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:plasmasourcemassspectrometry	Plasma source mass spectrometry	https://w3id.org/geochem/1.0/agent/georoc
+meth:pointcounting	Point counting	https://en.wikipedia.org/wiki/Point_counting_(geology) | https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/astromat
+meth:polarography	Polarography	https://unacademy.com/content/nta-ugc/study-material/pharmaceutical-analysis/polarography/ | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch | https://en.wikipedia.org/wiki/Polarography
+meth:porosimetry	Porosimetry	https://en.wikipedia.org/wiki/Porosimetry | https://w3id.org/geochem/1.0/analyticalmethod/smraddinstmethodsgeox
+meth:positiveionthermalionizationmassspectrometry	Positive ion thermal ionization mass spectrometry	https://w3id.org/geochem/1.0/agent/georoc
+meth:potentiometry	Potentiometry	https://doi.org/10.1515/pac-2018-0109 | https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/geox
+meth:pigsneutronactivationanalysis	Pre irradiation group concentration neutron activation analysis	https://doi.org/10.1016/0009-2541(90)90036-7 | https://w3id.org/geochem/1.0/agent/georoc | https://doi.org/10.1002/gj.907 | https://doi.org/10.1007/BF02055022
+meth:promptgammaneutronactivationanalysis	Prompt gamma neutron activation analysis	https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/astromat
+meth:pyrolysisgaschromatography	Pyrolysis gas chromatography	"https://doi.org/10.1515/pac-2017-0111 | L. S. Ettre. Pure Appl. Chem.65, 819, (1993); https://doi.org/10.1351/pac1993650408191.5.02. 1.6.11.1"
+meth:pyrolysisgaschromatographyflameionizationdetection	Pyrolysis gas chromatography flame ionization detection	https://doi.org/10.1515/pac-2017-0111 | https://w3id.org/geochem/1.0/agent/geox
+meth:pyrolysisgaschromatographymassspectrometry	Pyrolysis gas chromatography mass spectrometry	https://w3id.org/geochem/1.0/agent/geox | https://doi.org/10.1351/PAC-REC-06-04-06
+meth:quadrupoleinductivelycoupledplasmmassspectrometry	Quadrupole inductively coupled plasma mass spectrometry	https://w3id.org/geochem/1.0/agent/orex
+meth:quantitativeanalysiselectroninducedxrayspectrometry	Quantitative analysis electron induced X-ray spectrometry	https://serc.carleton.edu/research_education/geochemsheets/wds.html | https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/astromat
+meth:quantitativeanalysisparticleinducedxrayspectrometry	Quantitative analysis particle induced X-ray spectrometry	https://serc.carleton.edu/research_education/geochemsheets/wds.html) | https://w3id.org/geochem/1.0/agent/georoc
+meth:quantitativepolymerasechainreaction	Quantitative polymerase chain reaction	https://w3id.org/geochem/1.0/agent/geox | https://doi.org/10.1515/iupac.90.0262 | https://www.thermofisher.com/blog/ask-a-scientist/what-is-qpcr/
+meth:quantitativereflectanceimagingsystem	Quantitative reflectance imaging	https://w3id.org/geochem/1.0/agent/orex
+meth:radiochemicalneutronactivationanalysis	Radiochemical neutron activation analysis	https://doi.org/10.1515/pac-2019-0302 | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/astromat | https://www.nist.gov/laboratories/tools-instruments/radiochemical-neutron-activation-analysis-rnaa
+meth:ramanspectrometry	Raman spectrometry	https://iupac.org/wp-content/uploads/2019/10/PAC-REC-19-02-03.R2_PR191002MC.pdf | DFG | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/orex | https://w3id.org/geochem/1.0/agent/geox
+meth:redoxpotentialmeasurement	Redox potential measurement	DFG | https://w3id.org/geochem/1.0/agent/geox
+meth:resonanceionizationmassspectrometry	Resonance ionization mass spectrometry	https://www.osti.gov/servlets/purl/1763939 | https://w3id.org/geochem/1.0/agent/petdb
+meth:resonanceionizationtimeofflightnoblegasmassspectrometry	Resonance ionization time of flight noble gas mass spectrometry	https://w3id.org/geochem/1.0/agent/orex
+meth:sangersequencing	Sanger sequencing	https://doi.org/10.1515/iupac.90.0262 | https://w3id.org/geochem/1.0/agent/geox
+meth:scanningtransmissionelectronimaging	Scanning transmission electron imaging	https://en.wikipedia.org/wiki/Transmission_electron_microscopy | https://w3id.org/geochem/1.0/agent/orex
+meth:secondaryelectronimaging	Secondary electron imaging	https://www.thermofisher.com/blog/materials/sem-signal-types-electrons-and-the-information-they-provide/ | https://w3id.org/geochem/1.0/agent/orex
+meth:secondaryionizationmassspectrometry	Secondary ionization mass spectrometry	https://doi.org/10.1351/PAC-REC-06-04-06 | https://w3id.org/geochem/1.0/agent/geox | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch | https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/orex
+meth:secondaryneutralmassspectrometry	Secondary neutral mass spectrometry	https://w3id.org/geochem/1.0/agent/orex | https://www.spectroscopyeurope.com/system/files/pdf/SNMS_21_4.pdf | https://doi.org/10.1002/sia.4857
+meth:sectorfieldicpms	Sector field inductively coupled plasma mass spectrometry	https://chemistry.olemiss.edu/icp-sfms/ | https://pubs.rsc.org/en/content/articlelanding/2004/ja/b403128h | https://w3id.org/geochem/1.0/agent/metbase
+meth:seismicvelocitiesandrockultrasonicelasticconstants	Seismic velocity and ultrasonic elastic constant measurement	https://w3id.org/geochem/1.0/agent/orex
+meth:shrimp	Sensitive high-mass-resolution ion microprobe	https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/orex | https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/geox
+meth:shotgunmethod	Shotgun method	https://w3id.org/geochem/1.0/agent/geox | https://doi.org/10.1515/iupac.90.0262
+meth:singlecrystalxraydiffraction	Single crystal X-ray diffraction	https://serc.carleton.edu/research_education/geochemsheets/techniques/SXD.html | https://w3id.org/geochem/1.0/agent/geox | DFG
+meth:solidsourcemassspectrometry	Solid source mass spectrometry	https://w3id.org/geochem/1.0/agent/georoc
+meth:solidstatenuclearmagneticresonancespectroscopy	Solid state nuclear magnetic resonance spectroscopy	https://w3id.org/geochem/1.0/agent/orex | https://doi.org/10.1038/s43586-020-00002-1 | https://en.wikipedia.org/wiki/Solid-state_nuclear_magnetic_resonance
+meth:sparksourcemassspectrometry	Spark source mass spectrometry	https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/astromat
+meth:spectrometry	Spectrometry	https://w3id.org/geochem/1.0/agent/astromat | https://www.merriam-webster.com/dictionary/spectrometry | https://w3id.org/geochem/1.0/agent/petdb
+meth:spectrophotometry	Spectrophotometry	https://w3id.org/geochem/1.0/analyticalmethod/nasagcmd | https://w3id.org/geochem/1.0/agent/geox
+meth:sphericalcellbulkthermalconductivityanalysis	Spherical cell bulk thermal conductivity analysis	https://w3id.org/geochem/1.0/agent/orex
+meth:steppedheatingcarbonandnitrogenisotopicanalysis	Stepped heating carbon and nitrogen isotopic analysis	https://doi.org/10.1016/S0012-821X(02)00592-7 | https://w3id.org/geochem/1.0/agent/orex
+meth:structuredlightscanning	Structured light scanning	https://w3id.org/geochem/1.0/agent/orex
+meth:surfaceanalysis	Surface analysis	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:synchrotonxrayfluorescencespectrometry	Synchroton X-ray fluorescence spectrometry	https://w3id.org/geochem/1.0/agent/orex | https://w3id.org/geochem/1.0/agent/georoc | https://link.springer.com/chapter/10.1007/978-981-16-5328-5_6
+meth:synchrotronxrayfluorescencetomography	Synchrotron X-ray fluorescence tomography	https://w3id.org/geochem/1.0/agent/orex
+meth:temperatureprogrammeddesorptionelectronprobeanalysis	Temperature programmed desorption electron probe analysis	https://w3id.org/geochem/1.0/agent/georoc | https://www.hidenanalytical.com/blog/what-temperature-programmed-desorption-tpd/
+meth:tensiometry	Tensiometry	https://w3id.org/geochem/1.0/analyticalmethod/smraddinstmethodsgeox
+meth:thermalanalysis	Thermal analysis	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:thermalionizationmassspectrometry	Thermal ionization mass spectrometry	https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/orex
+meth:thermalneutronactivationanalysis	Thermal neutron activation analysis	https://doi.org/10.1081/ASR-120004372
+meth:thermogravimetryanalysis	Thermogravimetry analysis	https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/orex
+meth:thermoluminescenceanalysis	Thermoluminescence analysis	"P.H. Benoit, ,K. Ninagawa, and D.W.G. Sears, 2000, Thermoluminescence sensitivity and thermal history of unequilibrated ordinary chondrites: Review and update: Lunar and Planetary Science XXXI, 1394.pdf; https://dsears.hosted.uark.edu//publications/pub%20by%20year/2000%20papers/benoit%20et%20al%202000c.pdf | Hasan, F. A., Score, R. and Sears, D. W. G. (1989) : The natural thermoluminescence survey of  Antarctic meteorites. A discussion of methods for reporting natural TL data. Lunar and  Planetary XX. Houston, Lunar Planet. Inst., 383-384;  https://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query?bibcode=1989LPI....20..383H&db_key=AST | https://w3id.org/geochem/1.0/agent/metbase"
+meth:thermoluminescencedating	Thermoluminescence dating	https://en.wikipedia.org/wiki/Thermoluminescence_dating | https://w3id.org/geochem/1.0/agent/metbase | https://w3id.org/geochem/1.0/agent/astromat
+meth:titration	Titration	https://w3id.org/geochem/1.0/agent/astromat | https://en.wikipedia.org/wiki/Titration | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/petdb
+meth:totalreflectionxrayfluorescencespectrometry	Total reflection X-ray fluorescence spectrometry	https://www-pub.iaea.org/MTCD/publications/PDF/TCS-51/html/pdf/Section%201.pdf | https://w3id.org/geochem/1.0/agent/georoc
+meth:trackcounting	Track counting	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:transmissionelectronimaging	Transmission electron imaging	https://w3id.org/geochem/1.0/agent/orex | https://en.wikipedia.org/wiki/Transmission_electron_microscopy | https://w3id.org/geochem/1.0/agent/georoc
+meth:transmissionspectrometry	Transmission spectrometry	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:transmittedelectrondiffraction	Transmitted electron diffraction	https://en.wikipedia.org/wiki/Electron_diffraction#In_a_transmission_electron_microscope | https://w3id.org/geochem/1.0/agent/orex
+meth:ultravioletemissionspectrometry	Ultraviolet emission spectrometry	https://w3id.org/geochem/1.0/agent/petdb
+meth:visiblelightmicroscopy	Visible light microscopy	https://w3id.org/geochem/1.0/agent/orex
+meth:visiblenearinfraredandmidinfraredimaging	"Visible, near-infrared, and mid-infrared imaging"	https://w3id.org/geochem/1.0/agent/orex
+meth:voltammetry	Voltammetry	https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/petdb
+meth:wavelengthdispersiveelectroninducedxrayspectrometry	Wavelength dispersive electron induced X-ray Spectrometry	https://serc.carleton.edu/research_education/geochemsheets/wds.html
+meth:wavelengthmodulationspectrometry	Wavelength-modulation spectrometry	https://goldensteingroup.com/our-research/wavelength-modulation-spectroscopy/
+meth:wetchemistry	Wet chemistry	https://w3id.org/geochem/1.0/agent/petdb | https://en.wikipedia.org/wiki/Wet_chemistry | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/georoc
+meth:xrayabsorptionnearedgestructurespectrometry	X-ray absorption near edge structure spectrometry	https://w3id.org/geochem/1.0/agent/petdb | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/orex | https://www.cei.washington.edu/education/science-of-solar/xray-absorption-near-edge-spectroscopy-xanes/
+meth:xrayabsorptionspectrometry	X-ray absorption spectrometry	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory | https://www.bnl.gov/nsls2/userguide/lectures/lecture-4-ravel.pdf | https://en.wikipedia.org/wiki/X-ray_absorption_spectroscopy
+meth:xraymap	X-ray composition map	https://w3id.org/geochem/1.0/agent/orex
+meth:xraycomputedtomography	X-ray computed tomography	https://w3id.org/geochem/1.0/agent/orex
+meth:xraydiffraction	X-ray diffraction	https://doi.org/10.1515/pac-2019-0302 | https://serc.carleton.edu/research_education/geochemsheets/techniques/XRD.html | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/astromat | https://w3id.org/geochem/1.0/agent/orex | https://w3id.org/geochem/1.0/agent/geox
+meth:xrayfluorescencespectrometry	X-ray fluorescence spectrometry	https://w3id.org/geochem/1.0/agent/orex | https://w3id.org/geochem/1.0/agent/geox | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/agent/astromat | https://doi.org/10.1515/pac-2019-0302 | https://w3id.org/geochem/1.0/agent/petdb
+meth:xrayimaging	X-ray imaging	https://w3id.org/geochem/1.0/agent/georoc | https://www.fieldmuseum.org/science/research/area/conserving-collections/examination-documentation/x-radiography
+meth:xrayphotoelectronspectrometery	X-ray photoelectron spectrometery	https://w3id.org/geochem/1.0/agent/orex | https://en.wikipedia.org/wiki/X-ray_photoelectron_spectroscopy | https://w3id.org/geochem/1.0/agent/georoc | https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch
+meth:xrayphotoelectronspectroscopycompositionmap	X-ray photoelectron spectrometry composition mapping	https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch
+meth:xraypowderdiffraction	X-ray powder diffraction	https://serc.carleton.edu/research_education/geochemsheets/techniques/XRD.html | https://w3id.org/geochem/1.0/agent/geox
+meth:xrayspectrometry	X-ray spectrometry	https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+meth:phmeasurement	pH measurement	https://w3id.org/geochem/1.0/analyticalmethod/smraddinstmethodsgeox
