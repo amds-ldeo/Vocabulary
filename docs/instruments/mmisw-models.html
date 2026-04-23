@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>mmisw-models</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="mmisw-models_files/libs/clipboard/clipboard.min.js"></script>
+<script src="mmisw-models_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="mmisw-models_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="mmisw-models_files/libs/quarto-html/popper.min.js"></script>
+<script src="mmisw-models_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="mmisw-models_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="mmisw-models_files/libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="mmisw-models_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="mmisw-models_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="mmisw-models_files/libs/bootstrap/bootstrap-7f8d28353e1b7aed8a50cdb71f958a5d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#concept-scheme-conceptscheme" id="toc-concept-scheme-conceptscheme" class="nav-link active" data-scroll-target="#concept-scheme-conceptscheme"><span class="header-section-number">1</span> <strong>Concept scheme:</strong> ConceptScheme</a>
+  <ul>
+  <li><a href="#channelmaster" id="toc-channelmaster" class="nav-link" data-scroll-target="#channelmaster"><span class="header-section-number">1.1</span> ChannelMaster</a></li>
+  <li><a href="#horizontaladcp" id="toc-horizontaladcp" class="nav-link" data-scroll-target="#horizontaladcp"><span class="header-section-number">1.2</span> HorizontalADCP</a></li>
+  <li><a href="#longranger" id="toc-longranger" class="nav-link" data-scroll-target="#longranger"><span class="header-section-number">1.3</span> LongRanger</a></li>
+  <li><a href="#mariner" id="toc-mariner" class="nav-link" data-scroll-target="#mariner"><span class="header-section-number">1.4</span> Mariner</a></li>
+  <li><a href="#monitor" id="toc-monitor" class="nav-link" data-scroll-target="#monitor"><span class="header-section-number">1.5</span> Monitor</a></li>
+  <li><a href="#navigator" id="toc-navigator" class="nav-link" data-scroll-target="#navigator"><span class="header-section-number">1.6</span> Navigator</a></li>
+  <li><a href="#oceanobserver" id="toc-oceanobserver" class="nav-link" data-scroll-target="#oceanobserver"><span class="header-section-number">1.7</span> OceanObserver</a></li>
+  <li><a href="#oceansurveyor" id="toc-oceansurveyor" class="nav-link" data-scroll-target="#oceansurveyor"><span class="header-section-number">1.8</span> OceanSurveyor</a></li>
+  <li><a href="#riograndeadcp" id="toc-riograndeadcp" class="nav-link" data-scroll-target="#riograndeadcp"><span class="header-section-number">1.9</span> RioGrandeADCP</a></li>
+  <li><a href="#sentinel" id="toc-sentinel" class="nav-link" data-scroll-target="#sentinel"><span class="header-section-number">1.10</span> Sentinel</a></li>
+  <li><a href="#streampro" id="toc-streampro" class="nav-link" data-scroll-target="#streampro"><span class="header-section-number">1.11</span> StreamPro</a></li>
+  <li><a href="#vesselmount" id="toc-vesselmount" class="nav-link" data-scroll-target="#vesselmount"><span class="header-section-number">1.12</span> VesselMount</a></li>
+  <li><a href="#workhorseadcp" id="toc-workhorseadcp" class="nav-link" data-scroll-target="#workhorseadcp"><span class="header-section-number">1.13</span> WorkhorseADCP</a></li>
+  <li><a href="#zedhead" id="toc-zedhead" class="nav-link" data-scroll-target="#zedhead"><span class="header-section-number">1.14</span> ZedHead</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+
+
+
+<p><span id="ConceptScheme"></span></p>
+<section id="concept-scheme-conceptscheme" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> <strong>Concept scheme:</strong> ConceptScheme</h1>
+<p>no modified date</p>
+<p>subtitle:</p>
+<p>Namespace: <a href="http://w3id.org/def/mmisw/models/ontology"><code>http://w3id.org/def/mmisw/models/ontology</code></a></p>
+<p><strong>History</strong></p>
+<ul>
+<li><p><a href="#channelmaster">ChannelMaster</a></p></li>
+<li><p><a href="#horizontaladcp">HorizontalADCP</a></p></li>
+<li><p><a href="#longranger">LongRanger</a></p></li>
+<li><p><a href="#mariner">Mariner</a></p></li>
+<li><p><a href="#monitor">Monitor</a></p></li>
+<li><p><a href="#navigator">Navigator</a></p></li>
+<li><p><a href="#oceanobserver">OceanObserver</a></p></li>
+<li><p><a href="#oceansurveyor">OceanSurveyor</a></p></li>
+<li><p><a href="#riograndeadcp">RioGrandeADCP</a></p></li>
+<li><p><a href="#sentinel">Sentinel</a></p></li>
+<li><p><a href="#streampro">StreamPro</a></p></li>
+<li><p><a href="#vesselmount">VesselMount</a></p></li>
+<li><p><a href="#workhorseadcp">WorkhorseADCP</a></p></li>
+<li><p><a href="#zedhead">ZedHead</a></p></li>
+</ul>
+<p><strong>Concepts</strong></p>
+<p><span id="channelmaster"></span></p>
+<section id="channelmaster" class="level2" data-number="1.1">
+<h2 data-number="1.1" data-anchor-id="channelmaster"><span class="header-section-number">1.1</span> ChannelMaster</h2>
+<ul>
+<li>Teledyne Rd Instruments model name for an ADCP designed to use horizontal profiling for flow monitoring in inland waterways.</li>
+<li>Concept URI: http://mmisw.org/ont/trdi/models/ChannelMaster</li>
+</ul>
+<p><span id="horizontaladcp"></span></p>
+</section>
+<section id="horizontaladcp" class="level2" data-number="1.2">
+<h2 data-number="1.2" data-anchor-id="horizontaladcp"><span class="header-section-number">1.2</span> HorizontalADCP</h2>
+<ul>
+<li>Instrument designed to measure velocity profiles in a horizontal plane.</li>
+<li>Concept URI: http://mmisw.org/ont/trdi/models/HorizontalADCP</li>
+</ul>
+<p><span id="longranger"></span></p>
+</section>
+<section id="longranger" class="level2" data-number="1.3">
+<h2 data-number="1.3" data-anchor-id="longranger"><span class="header-section-number">1.3</span> LongRanger</h2>
+<ul>
+<li>Model name for Teledyne RD Instruments Workhorse ADCPs of frequency 75 kHz.</li>
+<li>Concept URI: http://mmisw.org/ont/trdi/models/LongRanger</li>
+</ul>
+<p><span id="mariner"></span></p>
+</section>
+<section id="mariner" class="level2" data-number="1.4">
+<h2 data-number="1.4" data-anchor-id="mariner"><span class="header-section-number">1.4</span> Mariner</h2>
+<ul>
+<li>Model name for a Teledyne RD Instruments Workhorse Monitor ADCP configured for underway current measurement in shallow water (as opposed to the deep water Ocean Surveyor systems).</li>
+<li>Concept URI: http://mmisw.org/ont/trdi/models/Mariner</li>
+</ul>
+<p><span id="monitor"></span></p>
+</section>
+<section id="monitor" class="level2" data-number="1.5">
+<h2 data-number="1.5" data-anchor-id="monitor"><span class="header-section-number">1.5</span> Monitor</h2>
+<ul>
+<li>Teledyne RD Instruments model name for a direct reading Workhorse ADCP.</li>
+<li>Concept URI: http://mmisw.org/ont/trdi/models/Monitor</li>
+</ul>
+<p><span id="navigator"></span></p>
+</section>
+<section id="navigator" class="level2" data-number="1.6">
+<h2 data-number="1.6" data-anchor-id="navigator"><span class="header-section-number">1.6</span> Navigator</h2>
+<ul>
+<li>Teledyne RD Instruments model name for the Teledyne RDI Doppler Velocity Log.</li>
+<li>Concept URI: http://mmisw.org/ont/trdi/models/Navigator</li>
+</ul>
+<p><span id="oceanobserver"></span></p>
+</section>
+<section id="oceanobserver" class="level2" data-number="1.7">
+<h2 data-number="1.7" data-anchor-id="oceanobserver"><span class="header-section-number">1.7</span> OceanObserver</h2>
+<ul>
+<li>Teledyne RD Instruments model name for a low frequency Phased Array ADCP for cabled deployment, usually from an oil rig.</li>
+<li>Concept URI: http://mmisw.org/ont/trdi/models/OceanObserver</li>
+</ul>
+<p><span id="oceansurveyor"></span></p>
+</section>
+<section id="oceansurveyor" class="level2" data-number="1.8">
+<h2 data-number="1.8" data-anchor-id="oceansurveyor"><span class="header-section-number">1.8</span> OceanSurveyor</h2>
+<ul>
+<li>Teledyne RD Instruments model name for a low frequency Phased Array ADCP for vessel mounted operations.</li>
+<li>Concept URI: http://mmisw.org/ont/trdi/models/OceanSurveyor</li>
+</ul>
+<p><span id="riograndeadcp"></span></p>
+</section>
+<section id="riograndeadcp" class="level2" data-number="1.9">
+<h2 data-number="1.9" data-anchor-id="riograndeadcp"><span class="header-section-number">1.9</span> RioGrandeADCP</h2>
+<ul>
+<li>Teledyne RD Instruments model name for an ADCP optimally configured for measurement of river discharge. A distinguishing feature of Rio Grande ADCPs is that they are designed to operate from a 12 VDC power supply (all other ADCPs operate from 20 - 60 VDC).</li>
+<li>Concept URI: http://mmisw.org/ont/trdi/models/RioGrandeADCP</li>
+</ul>
+<p><span id="sentinel"></span></p>
+</section>
+<section id="sentinel" class="level2" data-number="1.10">
+<h2 data-number="1.10" data-anchor-id="sentinel"><span class="header-section-number">1.10</span> Sentinel</h2>
+<ul>
+<li>Teledyne RD Instruments model name for a self-contained Workhorse ADCP.</li>
+<li>Concept URI: http://mmisw.org/ont/trdi/models/Sentinel</li>
+</ul>
+<p><span id="streampro"></span></p>
+</section>
+<section id="streampro" class="level2" data-number="1.11">
+<h2 data-number="1.11" data-anchor-id="streampro"><span class="header-section-number">1.11</span> StreamPro</h2>
+<ul>
+<li>Teledyne RD Instruments model name for a miniaturized ADCP packaged into a streamlined float designed to be towed by hand across very shallow streams for quick and efficient discharge measurements.</li>
+<li>Concept URI: http://mmisw.org/ont/trdi/models/StreamPro</li>
+</ul>
+<p><span id="vesselmount"></span></p>
+</section>
+<section id="vesselmount" class="level2" data-number="1.12">
+<h2 data-number="1.12" data-anchor-id="vesselmount"><span class="header-section-number">1.12</span> VesselMount</h2>
+<ul>
+<li>An ADCP mounted to the hull of a vessel, typically in a sea chest, and having inputs from the vessel’s navigation equipment.</li>
+<li>Concept URI: http://mmisw.org/ont/trdi/models/VesselMount</li>
+</ul>
+<p><span id="workhorseadcp"></span></p>
+</section>
+<section id="workhorseadcp" class="level2" data-number="1.13">
+<h2 data-number="1.13" data-anchor-id="workhorseadcp"><span class="header-section-number">1.13</span> WorkhorseADCP</h2>
+<ul>
+<li>The generic model name for all of the non-phased array broadband ADCPs currently produced by Teledyne RD Instruments</li>
+<li>Concept URI: http://mmisw.org/ont/trdi/models/WorkhorseADCP</li>
+</ul>
+<p><span id="zedhead"></span></p>
+</section>
+<section id="zedhead" class="level2" data-number="1.14">
+<h2 data-number="1.14" data-anchor-id="zedhead"><span class="header-section-number">1.14</span> ZedHead</h2>
+<ul>
+<li>Teledyne RD Instruments trade name for a transducer designed to minimize ringing.</li>
+<li>Concept URI: http://mmisw.org/ont/trdi/models/ZedHead</li>
+</ul>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
