@@ -26,9 +26,11 @@ jobs:
 
       - name: Stage geochemistry output under docs/geochemistry
         run: |
+          # The vocabulary action runs as root in its container; its outputs in
+          # docs/ are root-owned. Re-own to the runner user so subsequent steps
+          # (mv here, JamesIves deploy action) can touch them without sudo.
+          sudo chown -R "$(id -u):$(id -g)" docs
           mkdir -p staged_docs/geochemistry
-          # Move the generated markdown/html/_files into a subdir-scoped folder
-          # so each workflow deploys to its own slice of gh-pages/docs.
           shopt -s nullglob
           for f in docs/GeochemAnalyticalMethod* docs/onegctechniquesastromatv4*; do
             mv "$f" staged_docs/geochemistry/
