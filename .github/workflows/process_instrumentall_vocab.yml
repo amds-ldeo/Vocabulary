@@ -12,7 +12,7 @@
 # (See PR #13 for analysis and rationale.)
 
 name: Process instrumentAll vocabularies
-on: [workflow_dispatch]
+on: [workflow_dispatch, workflow_call]
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -10,7 +10,7 @@
 # no top concepts are declared, and the fallback honors subclass typing.
 
 name: Process instruments vocabularies
-on: [workflow_dispatch]
+on: [workflow_dispatch, workflow_call]
 jobs:
   build:
     runs-on: ubuntu-latest

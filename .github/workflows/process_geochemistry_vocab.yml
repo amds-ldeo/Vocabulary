@@ -8,7 +8,7 @@
 # CURIEs must resolve via @prefix declarations inside the corresponding ttl file.
 
 name: Process geochemistry vocabularies
-on: [workflow_dispatch]
+on: [workflow_dispatch, workflow_call]
 jobs:
   build:
     runs-on: ubuntu-latest
