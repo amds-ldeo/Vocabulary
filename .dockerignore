@@ -3,7 +3,7 @@
 # these patterns additionally prune noisy/large files from the build context.
 
 .git
-.github
+# NOTE: do not exclude .github — Dockerfile COPYs .github/actions/github_action_main.py
 .claude
 .idea
 .venv
