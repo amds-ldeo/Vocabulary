@@ -65,9 +65,10 @@ Concept schemes describing instrument, sampling, and parameter categories compil
 - [HTML view](instrumentAll/SeismicSource.html)
 - [SKOS Turtle source](https://github.com/amds-ldeo/Vocabulary/blob/master/instrumentAll/SeismicSource.ttl)
 
-### MMISW instrument models (pending)
+### MMISW instrument models
 
-`instruments/mmisw-models.ttl` items use a bespoke `:ModelName` type rather than `skos:Concept`, so the markdown generator finds no concepts to render. HTML generation is deferred pending either retyping the items or extending the generator to follow `rdfs:subClassOf skos:Concept`. [SKOS Turtle source](https://github.com/amds-ldeo/Vocabulary/blob/master/instruments/mmisw-models.ttl).
+- [HTML view](instruments/mmisw-models.html)
+- [SKOS Turtle source](https://github.com/amds-ldeo/Vocabulary/blob/master/instruments/mmisw-models.ttl)
 
 ## Related
 

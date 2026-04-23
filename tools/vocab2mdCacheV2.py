@@ -132,6 +132,13 @@ def getVocabRoot(g, v):
     Accepts both concept->scheme (``skos:topConceptOf``) and
     scheme->concept (``skos:hasTopConcept``) assertions, since SKOS
     vocabularies in the wild use either (or both).
+
+    If neither assertion appears, falls back to every concept in the
+    scheme treated as a flat root. The fallback honors both direct
+    ``rdf:type skos:Concept`` and subclass typings (``rdf:type ?C`` where
+    ``?C rdfs:subClassOf skos:Concept``) — the latter is needed for
+    vocabularies like MMISW whose items are typed with a bespoke class
+    that declares ``rdfs:subClassOf skos:Concept``.
     """
     q = PFX + """SELECT DISTINCT ?s WHERE {
         { ?s skos:topConceptOf ?vocabulary . }
@@ -139,10 +146,21 @@ def getVocabRoot(g, v):
         { ?vocabulary skos:hasTopConcept ?s . }
     }"""
     qres = g.query(q, initBindings={'vocabulary': v})
-    res = []
-    for row in qres:
-        res.append(row[0])
-    return res
+    res = [row[0] for row in qres]
+    if res:
+        return res
+
+    q = PFX + """SELECT DISTINCT ?s WHERE {
+        ?s skos:inScheme ?vocabulary .
+        {
+            ?s rdf:type skos:Concept .
+        } UNION {
+            ?s rdf:type ?cls .
+            ?cls rdfs:subClassOf skos:Concept .
+        }
+    }"""
+    qres = g.query(q, initBindings={'vocabulary': v})
+    return [row[0] for row in qres]
 
 def getNarrower(g, v, r):
     """Return concepts that are skos:broader of r.
