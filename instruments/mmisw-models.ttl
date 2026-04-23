@@ -4,6 +4,7 @@
 @prefix : <http://mmisw.org/ont/trdi/models/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterm: <http://purl.org/dc/terms/> .
+@prefix mmiscm: <http://w3id.org/def/mmisw/models/> .
 @prefix omv: <http://omv.ontoware.org/2005/05/ontology#> .
 @prefix omvmmi: <http://mmisw.org/ont/mmi/20081020/ontologyMetadata/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .

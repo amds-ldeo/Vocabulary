@@ -1,0 +1,45 @@
+# Processes the SKOS vocabularies under /instruments and publishes the
+# generated HTML to the gh-pages branch under /docs/instruments.
+#
+# Triggered manually via the GitHub Actions "Run workflow" button.
+#
+# mmisw-models.ttl items are typed with the bespoke :ModelName class,
+# which declares rdfs:subClassOf skos:Concept. They also lack
+# skos:hasTopConcept/topConceptOf assertions. vocab2mdCacheV2.getVocabRoot
+# falls back to listing every skos:inScheme concept as a flat root when
+# no top concepts are declared, and the fallback honors subclass typing.
+
+name: Process instruments vocabularies
+on: [workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Vocabulary action (instruments)
+        uses: ./
+        with:
+          action: docs
+          path: ${{ github.workspace }}
+          vocabdir: instruments
+          inputttl: mmisw-models
+          inputvocaburi: mmiscm:ontology
+
+      - name: Stage instruments output under docs/instruments
+        run: |
+          sudo chown -R "$(id -u):$(id -g)" docs
+          mkdir -p staged_docs/instruments
+          shopt -s nullglob
+          for f in docs/mmisw-models*; do
+            mv "$f" staged_docs/instruments/
+          done
+          ls -la staged_docs/instruments/
+
+      - name: Deploy instruments docs to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: staged_docs/instruments
+          target-folder: docs/instruments
+          commit-message: "Rebuild instruments vocabulary HTML"
