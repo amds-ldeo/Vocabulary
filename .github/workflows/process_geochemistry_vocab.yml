@@ -1,0 +1,44 @@
+# Processes the SKOS vocabularies under /geochemistry and publishes the
+# generated HTML to the gh-pages branch under /docs/geochemistry.
+#
+# Triggered manually via the GitHub Actions "Run workflow" button.
+#
+# inputttl entries are ttl file basenames (no extension) under <vocabdir>.
+# inputvocaburi entries are ConceptScheme CURIEs, one per file, in matching order.
+# CURIEs must resolve via @prefix declarations inside the corresponding ttl file.
+
+name: Process geochemistry vocabularies
+on: [workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Vocabulary action (geochemistry)
+        uses: ./
+        with:
+          action: docs
+          path: ${{ github.workspace }}
+          vocabdir: geochemistry
+          inputttl: GeochemAnalyticalMethod|onegctechniquesastromatv4
+          inputvocaburi: meth:method|meth:method
+
+      - name: Stage geochemistry output under docs/geochemistry
+        run: |
+          mkdir -p staged_docs/geochemistry
+          # Move the generated markdown/html/_files into a subdir-scoped folder
+          # so each workflow deploys to its own slice of gh-pages/docs.
+          shopt -s nullglob
+          for f in docs/GeochemAnalyticalMethod* docs/onegctechniquesastromatv4*; do
+            mv "$f" staged_docs/geochemistry/
+          done
+          ls -la staged_docs/geochemistry/
+
+      - name: Deploy geochemistry docs to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: staged_docs/geochemistry
+          target-folder: docs/geochemistry
+          commit-message: "Rebuild geochemistry vocabulary HTML"

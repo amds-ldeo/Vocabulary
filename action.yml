@@ -1,0 +1,38 @@
+# action.yml
+# see https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions
+#  for information on how this works
+
+name: 'Astromat Vocabulary Action'
+author: 'Dave Vieglais (https://orcid.org/0000-0002-6513-4996),
+         Stephen M Richard (https://orcid.org/0000-0001-6041-5302)'
+description: 'creates a docker container to run python routines that
+       1) load skos (rdf/turtle) vocabularies into an sqlAlchemy store
+       2) generate markdown (Quarto-flavor) and HTML from the skos vocabularies'
+inputs:
+  action:
+    description: 'Which action to run -- defaults to docs, which generates markdown and html representations of the vocabulary'
+    required: true
+    default: 'docs'
+  path:
+    description: 'Path to the output directory for script output'
+    required: true
+  vocabdir:
+    description: 'Repository-relative directory containing the source ttl files for this workflow. Defaults to "vocabulary" to match the upstream vocabularyTemplate layout; this repo uses per-subdirectory values such as "geochemistry" or "ETmaterials".'
+    required: false
+    default: 'vocabulary'
+  inputttl:
+    description: 'Pipe-delimited list of skos rdf/turtle file names (without .ttl extension) located in <vocabdir>'
+    required: true
+  inputvocaburi:
+    description: 'Pipe-delimited list of ConceptScheme URIs, one per inputttl entry in the same order. URIs must be CURIEs resolvable from @prefix declarations in their ttl file.'
+    required: true
+
+runs:   # see https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runs-for-docker-container-actions
+  using: 'docker'
+  image: './Dockerfile'
+  args:
+    - ${{ inputs.action }}
+    - ${{ inputs.path }}
+    - ${{ inputs.inputttl }}
+    - ${{ inputs.inputvocaburi }}
+    - ${{ inputs.vocabdir }}

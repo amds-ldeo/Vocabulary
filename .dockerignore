@@ -1,0 +1,36 @@
+# Keep the vocabulary-action build context small.
+# Everything the container needs is selected by explicit COPY lines in Dockerfile;
+# these patterns additionally prune noisy/large files from the build context.
+
+.git
+.github
+.claude
+.idea
+.venv
+.project
+.DS_Store
+
+# Previously-generated HTML (now moved under */archive/). Also skip pre-existing
+# per-vocab html/ folders still in place until they are archived.
+**/html
+**/archive
+**/Minerals
+
+# Stale caches from local runs (the workflow writes a fresh cache/vocabularies.db).
+cache/*.db
+
+# Source-of-truth formats other than ttl — not needed inside the container.
+**/*.xlsx
+**/*.xls
+**/*.csv
+**/*.pdf
+**/*.docx
+**/*.url
+**/*.zip
+
+# Local Option-A scratch output
+testoutput/local_run
+
+# Python bytecode
+**/__pycache__
+**/*.pyc

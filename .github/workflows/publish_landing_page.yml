@@ -1,0 +1,39 @@
+# Publishes docs/readme.md (the Astromat Vocabulary landing page) to the
+# gh-pages branch at /docs/readme.md. Runs automatically whenever the landing
+# page changes on master, and can also be triggered manually.
+#
+# Each per-subdirectory workflow (process_<subdir>_vocab.yml) owns its slice
+# of docs/<subdir>/; this workflow owns the top-level landing page and any
+# other root-level assets in docs/ that are not subdirectory-specific.
+
+name: Publish landing page
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'docs/readme.md'
+      - '.github/workflows/publish_landing_page.yml'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stage landing page
+        run: |
+          mkdir -p staged_landing
+          cp docs/readme.md staged_landing/readme.md
+          ls -la staged_landing/
+
+      - name: Deploy landing page to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: staged_landing
+          target-folder: docs
+          # Do NOT clean; each subdirectory workflow owns docs/<subdir>/ and
+          # cleaning here would wipe their published HTML.
+          clean: false
+          commit-message: "Publish updated Astromat Vocabulary landing page"
