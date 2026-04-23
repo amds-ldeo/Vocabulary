@@ -1,0 +1,9133 @@
+---
+comment: | 
+  WARNING: This file is generated. Any edits will be lost!
+format:
+  html:
+    ascii: true
+    toc: true
+    toc-depth: 4
+    number-sections: true
+    anchor-sections: false
+    number-depth: 8
+execute:
+  echo: false
+---
+
+[]{#Analyticalmethodsforgeochemistry}
+
+# **Concept scheme:** Analytical methods for geochemistry
+
+Vocabulary last modified:  2025-12-10T01:14:38.194000+00:00
+
+subtitle: 
+  This concept scheme contains skos concepts for analysis methods used to produce observation results with information about the physical properties, chemical or isotopic composition, crystallography, or molecular structure of material samples. Based on spreadsheet compilation of method vocabularies from Geo.X, GEOROC, PetDB and OSIRIS-REx. Definitions added and updated based on web research, and SKOS serialization by S.M. Richard. Note that although there are high-level method categories for 'Physical property measurements' and the 'Bioanalytical method', these are placeholders and only include a few examples that are relevant to analytical methods in geo- or cosmochemistry.
+
+Namespace: 
+[`https://w3id.org/geochem/1.1/analyticalmethod/method`](https://w3id.org/geochem/1.1/analyticalmethod/method)
+
+**History**
+
+* 2023-02-14 S.M. Richard.  Draft generated, based on spreadsheet compilation of method vocabularies from Geo.X, GEOROC, PetDB and OSIRIS-REx (Astromat). Definitions added and updated and SKOS serialization by S.M. Richard.
+* 2023-05-01 SMR.  Add provenance and better source information, prepare for posting to Australian Research Data Commons (ARDC) Research Vocabularies Australia.
+* 2023-05-26 SMR add funding acknowledgement for Astromat support from NASA planetary sciences division, using schema.org/funding property.
+* 2023-06-17 SMR put the dcterm agent objects in https://w3id.org/geochem/1.0/agent URI space (instead of analyticalmethod). Add 'and cosmochemistry' in vocab title.
+* 2024-02-22 SMR  some classes have multiple skos:notation values, pick one to keep as a unique notation, move others to altLabel.  Add some other altLabels for MC and ID TIMS, SIMS.  Deprecate  Add SHRIMP (Sensitive high mass resolution ion microprobe) as a method under Secondary ionization mass spectrometry because of its frequent use as a method in the literature. Fix Duplicate notation value-- GC to GAMMA, GAMMA to GR-S.  Deprecate 'High resolution inductively coupled plasma mass spectrometry'.   TBD--add notations for classes that don't have notation, standardize hyphenation of skos:notation values.
+
+- [Deprecated](#depreciated)
+    - [Electron probe microanalysis (deprecated)](#electronmicroprobe)
+    - [Transmission electron microscopy (deprecated)](#transmissionelectronmicroscope)
+    - [Geochronology techniques (deprecated)](#geochronology)
+        - [Electron spin resonance age analysis](#electronspinresonanceageanalysis)
+        - [40Ar-39Ar geochronology](#geochronology40ar39ar)
+        - [Thermoluminescence dating](#thermoluminescencedating)
+    - [High resolution inductively coupled plasma mass spectrometry (deprecated)](#highresolutioninductivelycoupledplasmamassspectrometry)
+
+- [Outstanding](#outstanding)
+    - [Brillouin spectroscopy](#brillouin-spectroscopy)
+    - [Anodic stripping voltammetry](#anodic-stripping-voltammetry)
+    - [Capillary zone electrophoresis](#capillary-zone-electrophoresis)
+    - [Cathodic stripping voltammetry](#cathodic-stripping-voltammetry)
+    - [Chemiluminescence](#chemiluminescence)
+    - [Constant current stripping analysis](#constant-current-stripping-analysis)
+    - [Culturing](#culturing)
+    - [DNA Fragmentation](#dna-fragmentation)
+    - [DNA isolation](#dna-isolation)
+    - [DNA library preparation](#dna-library-preparation)
+    - [Electron capture detection](#electron-capture-detection)
+    - [Environmental DNA](#environmental-dna)
+    - [Flow injection analysis](#flow-injection-analysis)
+    - [Fluorometry](#fluorometry)
+    - [Gas fusion analysis](#gas-fusion-analysis)
+    - [Glow discharge atomic emission spectrometry](#glow-discharge-atomic-emission-spectrometry)
+    - [High-resolution scanning electron microscopy](#high-resolution-scanning-electron-microscopy)
+    - [High-resolution transmission electron microscopy](#high-resolutionitransmissionielectronimicroscopy)
+    - [High-temperature pyrolysis isotope ratio mass spectrometry](#high-temperature-pyrolysis-isotope-ratio-mass-spectrometry)
+    - [Incubation](#incubation)
+    - [Interferometric microscopy](#interferometric-microscopy)
+    - [Iodometry](#iodometry)
+    - [Isotope dilution mass spectrometry](#isotope-dilution-mass-spectrometry)
+    - [Kerogen determination](#kerogen-determination)
+    - [Liquid chromatography isotope ratio mass spectrometry](#liquid-chromatography-isotope-ratio-mass-spectrometry)
+    - [Liquid phase transmission electron microscopy](#liquid-phase-transmission-electron-microscopy)
+    - [Liquid scintillation spectrometry](#liquid-scintillation-spectrometry)
+    - [Luminescence spectroscopy](#luminescence-spectroscopy)
+    - [Mechanical profilometer](#mechanical-profilometer)
+    - [Medium pressure liquid chromatography](#medium-pressure-liquid-chromatography)
+    - [Mircoabsorption on ignition](#mircoabsorption-on-ignition)
+    - [Optical microscopy](#optical-microscopy)
+    - [Optical scanning](#optical-scanning)
+    - [Polarization microscopy](#polarization-microscopy)
+    - [Polymerase chain reaction](#polymerase-chain-reaction)
+        - [Real-time polymerase chain reaction](#real-time-polymerase-chain-reaction)
+    - [Prompt gamma-ray activation analysis](#prompt-gamma-ray-activation-analysis)
+    - [Radiochemical photon activation analysis](#radiochemical-photon-activation-analysis)
+    - [Reflected light microscopy](#reflected-light-microscopy)
+    - [Total organic carbon analysis](#total-organic-carbon-analysis)
+    - [Transmitted light microscopy](#transmitted-light-microscopy)
+    - [UV-VIS-NIR spectrophotometry](#uv-vis-nir-spectrophotometry)
+    - [UV-VIS spectrophotometry](#uv-vis-spectrophotometry)
+    - [Laser ionization mass spectrometry](#laserionizationmassspectrometry)
+    - [Microprobe two step laser mass spectrometry](#microprobetwosteplasermassspectrometry)
+
+- [Analytical technique](#analyticalmethod)
+    - [Bench chemistry ](#benchchemistry)
+        - [Combustion analysis](#combustionanalysis)
+        - [Loss on ignition analysis ](#lossonignitionanalysis)
+        - [Penfield method analysis](#penfieldmethodanalysis)
+        - [Wet chemistry](#wetchemistry)
+            - [Acid reaction carbonate analysis](#acidreactioncarbonateanalysis)
+                - [Carbonate bomb analysis](#carbonatebombanalysis)
+                - [Charmograph analysis](#charmographanalysis)
+                - [Dietrich-Fruhling calcimetry](#dietrichfruhlingcalcimetry)
+            - [Colormetric analysis](#colormetricanalysis)
+            - [Fire assay emission spectrometry](#fireassayemissionspectrometry)
+            - [Gravimetric analysis](#gravimeticanalysis)
+            - [Gutzeit test](#gutzeittest)
+            - [Laser fluorination mass spectrometry](#laserfluorinationanalysis)
+            - [pH measurement](#phmeasurement)
+            - [Radiochemical neutron activation analysis](#radiochemicalneutronactivationanalysis)
+            - [Titration](#titration)
+    - [Bioanalytical technique](#bioanalyticalmethod)
+        - [DNA sequencing](#dnasequencing)
+        - [Flow cytometry](#flowcytometry)
+        - [Fluorescent in situ hybridization](#fluorescentinsituhybridization)
+        - [Hybridization assay](#hybridizationassay)
+        - [Next generation sequencing](#nextgenerationsequencing)
+        - [Quantitative polymerase chain reaction](#quantitativepolymerasechainreaction)
+        - [Sanger sequencing](#sangersequencing)
+        - [Shotgun method](#shotgunmethod)
+    - [Chromatography analysis](#chromatographyanalysis)
+        - [Gas chromatography analysis](#gaschromatographyanalysis)
+            - [Combustion gas chromatography](#combustiongaschromatography)
+                - [Combustion gas chromatography isotopic ratio mass spectrometry](#combustiongaschromatographyisotopicratiomassspectrometry)
+            - [Gas chromatography flame ionization detection](#gaschromatographyflameionizationdetection)
+                - [Pyrolysis gas chromatography flame ionization detection](#pyrolysisgaschromatographyflameionizationdetection)
+            - [Gas chromatography mass spectrometry](#gaschromatographymassspectrometry)
+                - [Combustion gas chromatography isotopic ratio mass spectrometry](#combustiongaschromatographyisotopicratiomassspectrometry)
+                - [Pyrolysis gas chromatography mass spectrometry](#pyrolysisgaschromatographymassspectrometry)
+            - [Gas chromatography thermal conductivity detection](#gaschromatographythermalconductivitydetection)
+            - [Pyrolysis gas chromatography](#pyrolysisgaschromatography)
+                - [Pyrolysis gas chromatography flame ionization detection](#pyrolysisgaschromatographyflameionizationdetection)
+                - [Pyrolysis gas chromatography mass spectrometry](#pyrolysisgaschromatographymassspectrometry)
+        - [Liquid chromatography analysis](#liquidchromatographyanalysis)
+            - [Ion chromatography analysis](#ionchromatographyanalysis)
+                - [Anion chromatography analysis](#anionchromatographyanalysis)
+                - [Cation chromatography analysis](#cationchromatographyanalysis)
+                - [Combustion Ion Chromatography  ](#combustionionchromatography)
+                - [Gradient ion chromatography analysis](#gradientionchromatographyanalysis)
+            - [Liquid chromatography mass spectrometry](#liquidchromatographymassspectrometry)
+            - [Liquid chromatography organic carbon detection](#liquidchromatographyorganiccarbondetection)
+    - [Electrochemical techniques](#electrochemicaltechniques)
+        - [Amperometry](#amperometry)
+        - [Coulometrical analysis](#coulometricalanalysis)
+        - [Electrical conductivity measurement](#electricalconductivitymeasurement)
+        - [Electrochemical impedance spectroscopy](#electrochemicalimpedancespectroscopy)
+        - [Potentiometry](#potentiometry)
+            - [Ion sensitive electrode analysis](#ionsensitiveelectrodeanalysis)
+        - [Redox potential measurement](#redoxpotentialmeasurement)
+        - [Voltammetry](#voltammetry)
+            - [Polarography](#polarography)
+    - [Electron diffraction](#electrondiffraction)
+        - [Electron backscatter diffraction](#electronbackscatterdiffraction)
+        - [Transmitted electron diffraction](#transmittedelectrondiffraction)
+    - [Elemental analysis ](#elementalanalysis)
+        - [Elemental analysis infrared spectrometry ](#elementalanalysisinfraredspectrometry)
+        - [Elemental analysis mass spectrometry](#elementalanalysismassspectrometry)
+            - [Continuous flow isotope ratio mass spectrometry](#continuousflowisotoperatiomassspectrometry)
+            - [Elemental analysis isotope ratio mass spectrometry](#elementalanalysisisotoperatiomassspectrometry)
+    - [Geochronology techniques (deprecated)](#geochronology)
+        - [Electron spin resonance age analysis](#electronspinresonanceageanalysis)
+        - [40Ar-39Ar geochronology](#geochronology40ar39ar)
+        - [Thermoluminescence dating](#thermoluminescencedating)
+    - [Imaging techniques](#imagingtechniques)
+        - [Confocal laser scanning microscopy](#confocal-laser-scanning-microscopy)
+        - [AFM topography imaging](#afmtopographyimaging)
+        - [Atom probe tomography](#atomprobetomography)
+        - [Cathodoluminescence imaging](#cathodoluminescenceimaging)
+        - [Electron microscopy imaging](#electronmicroscopyimaging)
+            - [Backscattered electron grain boundary imaging](#backscatteredelectrongrainboundarymap)
+            - [Backscattered electron imaging](#backscatteredelectronimaging)
+            - [Secondary electron imaging](#secondaryelectronimaging)
+            - [Transmission electron imaging](#transmissionelectronimaging)
+                - [Energy-filtered transmission electron imaging](#energyfilteredtransmissionelectronimaging)
+                - [Scanning transmission electron imaging](#scanningtransmissionelectronimaging)
+        - [Focused ion beam scanning microscopy](#focusedionbeamscanningmicroscopy)
+        - [Quantitative reflectance imaging](#quantitativereflectanceimagingsystem)
+        - [Structured light scanning](#structuredlightscanning)
+        - [Visible, near-infrared, and mid-infrared imaging](#visiblenearinfraredandmidinfraredimaging)
+        - [X-ray imaging](#xrayimaging)
+            - [Microscopic X-ray imaging](#microscopicxrayimaging)
+            - [X-ray computed tomography](#xraycomputedtomography)
+                - [Synchrotron X-ray fluorescence tomography](#synchrotronxrayfluorescencetomography)
+            - [X-ray composition map](#xraymap)
+                - [Energy dispersive X-ray spectral data 2D raster](#energydispersivexrayspectraraster)
+        - [X-ray photoelectron spectrometry composition mapping](#xrayphotoelectronspectroscopycompositionmap)
+    - [Magnetic field measurement ](#magneticfieldmeasurement)
+    - [Microscopy](#microscopy)
+        - [Fluorescence microscopy](#fluorescencemicroscopy)
+        - [Visible light microscopy](#visiblelightmicroscopy)
+            - [Point counting](#pointcounting)
+    - [Other](#other)
+        - [Moisture analysis](#moistureanalysis)
+        - [Particle size distribution analysis](#particlesizedistributionanalysis)
+        - [Point counting](#pointcounting)
+    - [Particle beam excitation](#particlebeamexcitation)
+        - [Atom probe](#atom-probe)
+        - [Electron energy loss spectrometry](#electronenergylossspectrometry)
+        - [Electron microscopy imaging](#electronmicroscopyimaging)
+            - [Backscattered electron grain boundary imaging](#backscatteredelectrongrainboundarymap)
+            - [Backscattered electron imaging](#backscatteredelectronimaging)
+            - [Secondary electron imaging](#secondaryelectronimaging)
+            - [Transmission electron imaging](#transmissionelectronimaging)
+                - [Energy-filtered transmission electron imaging](#energyfilteredtransmissionelectronimaging)
+                - [Scanning transmission electron imaging](#scanningtransmissionelectronimaging)
+        - [Focused ion beam scanning microscopy](#focusedionbeamscanningmicroscopy)
+        - [Nuclear microprobe analysis](#nuclearmicroprobeanalysis)
+        - [Particle induced X-ray spectrometry](#particleinducedxrayspectrometry)
+            - [Quantitative analysis particle induced X-ray spectrometry](#quantitativeanalysisparticleinducedxrayspectrometry)
+    - [Particle counting](#particlecounting)
+        - [Alpha particle counting](#alphaparticlecounting)
+        - [Beta counting](#betacounting)
+        - [Gamma counting](#gammacounting)
+        - [Neutron counting](#neutroncounting)
+    - [Activation analysis](#particleinducedactivationanalysis)
+        - [Deuteron activation analysis](#deuteronactivationanalysis)
+        - [Neutron activation analysis](#neutronactivationanalysis)
+            - [Epithermal neutron activation analysis](#epithermalneutronactivationanalysis)
+            - [Fast neutron activation analysis](#fastneutronactivationanalysis)
+            - [Instrumental neutron activation analysis](#instrumentalneutronactivationanalysis)
+            - [Pre irradiation group concentration neutron activation analysis ](#pigsneutronactivationanalysis)
+            - [Prompt gamma neutron activation analysis](#promptgammaneutronactivationanalysis)
+            - [Radiochemical neutron activation analysis](#radiochemicalneutronactivationanalysis)
+            - [Thermal neutron activation analysis](#thermalneutronactivationanalysis)
+        - [Photon activation analysis](#photonactivationanalysis)
+            - [Instrumental photon activation analysis](#instrumental-photon-activation-analysis)
+    - [Photometry](#photometry)
+        - [Infrared photometry](#infraredphotometry)
+        - [Infrared reflectance](#infraredreflectance)
+    - [Physical property measurement](#physicalpropertymeasurement)
+        - [Adsorption analysis](#adsorptionanalysis)
+        - [Angle of repose measurement](#angleofreposemeasurement)
+        - [Atomic force microscopy](#atomicforcemicroscopy)
+            - [AFM topography imaging](#afmtopographyimaging)
+            - [Particle cohesion determination](#particlecohesiondetermination)
+        - [Capacitance dilatometry](#capacitancedilatometry)
+        - [Compression test](#compressiontest)
+        - [Direct shear strength measurement](#directshearstrengthmeasurement)
+        - [Gas pycnometry](#gaspycnometry)
+        - [Manometry](#manometry)
+        - [Nanoindentation and microindentation](#nanoindentationandmicroindentation)
+        - [Porosimetry](#porosimetry)
+        - [Seismic velocity and ultrasonic elastic constant measurement](#seismicvelocitiesandrockultrasonicelasticconstants)
+        - [Tensiometry](#tensiometry)
+        - [Thermal analysis](#thermalanalysis)
+            - [Differential scanning calorimetry](#differentialscanningcalorimetry)
+            - [Differential thermal analysis](#differentialthermalanalyis)
+            - [Induction heating analysis](#inductionheatinganalysis)
+            - [Lock in thermography](#lockinthermography)
+            - [Mini cryogen free measurement system for thermal conductivity](#minicryogenfreemeasurementsystemforthermalconductivity)
+            - [Spherical cell bulk thermal conductivity analysis](#sphericalcellbulkthermalconductivityanalysis)
+            - [Thermogravimetry analysis](#thermogravimetryanalysis)
+    - [Spectroscopy and Spectrometry](#spectrometry)
+        - [Nuclear magnetic resonance spectrometry](#nuclearmagneticresonancespectrometry)
+            - [Fourier transform nuclear magnetic resonance](#fourier-transform-nuclear-magnetic-resonance)
+            - [Solid state nuclear magnetic resonance spectroscopy](#solidstatenuclearmagneticresonancespectroscopy)
+        - [Particle spectrometry](#particlespectrometry)
+            - [Alpha particle spectrometry](#alphaparticlespectrometry)
+            - [Electron spectrometry](#electronspectrometry)
+                - [Auger electron spectroscopy](#augerelectronspectroscopy)
+                - [Electron energy loss spectrometry](#electronenergylossspectrometry)
+                - [X-ray photoelectron spectrometery](#xrayphotoelectronspectrometery)
+            - [Mass spectrometry](#massspectrometry)
+                - [Accelerator mass spectrometry](#acceleratormassspectrometry)
+                - [Elemental analysis mass spectrometry](#elementalanalysismassspectrometry)
+                    - [Continuous flow isotope ratio mass spectrometry](#continuousflowisotoperatiomassspectrometry)
+                    - [Elemental analysis isotope ratio mass spectrometry](#elementalanalysisisotoperatiomassspectrometry)
+                - [Fourier transform ion cyclotron resonance mass spectrometry](#fouriertransformioncyclotronresonancemassspectrometry)
+                - [Gas chromatography mass spectrometry](#gaschromatographymassspectrometry)
+                    - [Combustion gas chromatography isotopic ratio mass spectrometry](#combustiongaschromatographyisotopicratiomassspectrometry)
+                    - [Pyrolysis gas chromatography mass spectrometry](#pyrolysisgaschromatographymassspectrometry)
+                - [Glow discharge mass spectrometry](#glowdischargemassspectrometry)
+                - [Isotope ratio mass spectrometry](#isotoperatiomassspectrometry)
+                    - [Combustion gas chromatography isotopic ratio mass spectrometry](#combustiongaschromatographyisotopicratiomassspectrometry)
+                    - [Continuous flow isotope ratio mass spectrometry](#continuousflowisotoperatiomassspectrometry)
+                    - [Dual inlet isotope ratio mass spectrometry](#dualinletisotoperatiomassspectrometry)
+                    - [Elemental analysis isotope ratio mass spectrometry](#elementalanalysisisotoperatiomassspectrometry)
+                    - [Laser fluorination mass spectrometry](#laserfluorinationanalysis)
+                    - [Stepped heating carbon and nitrogen isotopic analysis](#steppedheatingcarbonandnitrogenisotopicanalysis)
+                - [Liquid chromatography mass spectrometry](#liquidchromatographymassspectrometry)
+                - [Micromass multiprep mass spectrometry](#micromassmultiprepmassspectrometry)
+                - [Noble gas mass spectrometry](#noblegasmassspectrometry)
+                    - [Neutron irradiation noble gas mass spectrometry](#neutronirradiationnoblegasmassspectrometry)
+                    - [Resonance ionization time of flight noble gas mass spectrometry](#resonanceionizationtimeofflightnoblegasmassspectrometry)
+                - [Orbitrap mass spectrometry](#orbitrapmassspectrometry)
+                    - [Desorption electrospray ionization orbitrap mass spectrometry](#desorptionelectrosprayionizationorbitrapmassspectrometry)
+                - [Plasma source mass spectrometry](#plasmasourcemassspectrometry)
+                    - [Inductively coupled plasma mass spectrometry](#inductivelycoupledplasmamassspectrometry)
+                        - [Inductively coupled plasma tandem mass spectrometry](#inductively-coupled-plasma-tandem-mass-spectrometry)
+                            - [Laser ablation inductively coupled plasma tandem mass spectrometry](#laser-ablation-inductively-coupled-plasma-tandem-mass-spectrometry)
+                            - [Laser ablation multicollector inductively coupled plasma tandem mass spectrometry](#laser-ablation-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry)
+                            - [Solution inductively coupled plasma tandem mass spectrometry](#solution-inductively-coupled-plasma-tandem-mass-spectrometry)
+                            - [Solution multicollector inductively coupled plasma tandem mass spectrometry](#solution-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry)
+                        - [Inductively coupled plasma time-of-flight mass spectrometry](#inductively-coupled-plasma-time-of-flight-mass-spectrometry)
+                            - [Laser ablation inductively coupled plasma time-of-flight mass spectrometry](#laser-ablation-inductively-coupled-plasma-time-of-flight-mass-spectrometry)
+                            - [Solution inductively coupled plasma time-of-flight mass spectrometry](#solution-inductively-coupled-plasma-time-of-flight-mass-spectrometry)
+                        - [Split stream mass spectrometry](#split-stream-mass-spectrometry)
+                            - [Laser ablation split stream mass spectrometry ](#lassmassspectrometry)
+                        - [High resolution inductively coupled plasma mass spectrometry (deprecated)](#highresolutioninductivelycoupledplasmamassspectrometry)
+                        - [Laser ablation inductively coupled plasma mass spectrometry](#laserablationmassspectrometry)
+                            - [Laser ablation multicollector inductively coupled plasma mass spectrometry](#laser-ablation-multicollector-inductively-coupled-plasma-mass-spectrometry)
+                                - [Femtosecond laser ablation multicollector inductively coupled plasma mass spectrometry](#laser-ablation-femtosecond-multicollector-inductively-coupled-plasma-mass-spectrometry)
+                            - [Laser ablation inductively coupled plasma tandem mass spectrometry](#laser-ablation-inductively-coupled-plasma-tandem-mass-spectrometry)
+                            - [Laser ablation inductively coupled plasma time-of-flight mass spectrometry](#laser-ablation-inductively-coupled-plasma-time-of-flight-mass-spectrometry)
+                            - [Laser ablation multicollector inductively coupled plasma tandem mass spectrometry](#laser-ablation-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry)
+                            - [Laser ablation quadrupole inductively coupled plasma mass spectrometry](#laser-ablation-quadrupole-inductively-coupled-plasma-mass-spectrometry)
+                            - [Laser ablation sector field inductively coupled plasma mass spectrometry](#laser-ablation-sector-field-inductively-coupled-plasma-mass-spectrometry)
+                            - [Laser ablation split stream mass spectrometry ](#lassmassspectrometry)
+                        - [Solution inductively coupled plasma mass spectrometry](#liquidinletinductivelycoupledplasmamassspectrometry)
+                            - [Solution inductively coupled plasma tandem mass spectrometry](#solution-inductively-coupled-plasma-tandem-mass-spectrometry)
+                            - [Solution inductively coupled plasma time-of-flight mass spectrometry](#solution-inductively-coupled-plasma-time-of-flight-mass-spectrometry)
+                            - [Solution multicollector inductively coupled plasma mass spectrometry](#solution-multicollector-inductively-coupled-plasma-mass-spectrometry)
+                            - [Solution multicollector inductively coupled plasma tandem mass spectrometry](#solution-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry)
+                            - [Solution quadrupole inductively coupled plasma mass spectrometry](#solution-quadrupole-inductively-coupled-plasma-mass-spectrometry)
+                            - [Solution sector field inductively coupled plasma mass spectrometry](#solution-sector-field-inductively-coupled-plasma-mass-spectrometry)
+                        - [Quadrupole inductively coupled plasma mass spectrometry](#quadrupoleinductivelycoupledplasmmassspectrometry)
+                            - [Laser ablation inductively coupled plasma tandem mass spectrometry](#laser-ablation-inductively-coupled-plasma-tandem-mass-spectrometry)
+                            - [Laser ablation quadrupole inductively coupled plasma mass spectrometry](#laser-ablation-quadrupole-inductively-coupled-plasma-mass-spectrometry)
+                            - [Solution inductively coupled plasma tandem mass spectrometry](#solution-inductively-coupled-plasma-tandem-mass-spectrometry)
+                            - [Solution quadrupole inductively coupled plasma mass spectrometry](#solution-quadrupole-inductively-coupled-plasma-mass-spectrometry)
+                        - [Sector field inductively coupled plasma mass spectrometry](#sectorfieldicpms)
+                            - [Laser ablation sector field inductively coupled plasma mass spectrometry](#laser-ablation-sector-field-inductively-coupled-plasma-mass-spectrometry)
+                            - [Solution sector field inductively coupled plasma mass spectrometry](#solution-sector-field-inductively-coupled-plasma-mass-spectrometry)
+                            - [Multicollector inductively coupled plasma mass spectrometry](#multicollectorinductivelycoupledplasmamassspectrometry)
+                                - [Laser ablation multicollector inductively coupled plasma mass spectrometry](#laser-ablation-multicollector-inductively-coupled-plasma-mass-spectrometry)
+                                    - [Femtosecond laser ablation multicollector inductively coupled plasma mass spectrometry](#laser-ablation-femtosecond-multicollector-inductively-coupled-plasma-mass-spectrometry)
+                                - [Laser ablation multicollector inductively coupled plasma tandem mass spectrometry](#laser-ablation-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry)
+                                - [Solution multicollector inductively coupled plasma mass spectrometry](#solution-multicollector-inductively-coupled-plasma-mass-spectrometry)
+                                - [Solution multicollector inductively coupled plasma tandem mass spectrometry](#solution-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry)
+                - [Resonance ionization mass spectrometry](#resonanceionizationmassspectrometry)
+                    - [Laser ablation resonance ionization mass spectrometry](#laserablationresonanceionizationmassspectrometry)
+                    - [Resonance ionization time of flight noble gas mass spectrometry](#resonanceionizationtimeofflightnoblegasmassspectrometry)
+                    - [Secondary neutral mass spectrometry](#secondaryneutralmassspectrometry)
+                - [Secondary ionization mass spectrometry](#secondaryionizationmassspectrometry)
+                    - [Large geometry secondary ion mass spectrometry](#large-geometry-secondary-ion-mass-spectrometry)
+                    - [Nanoscale secondary ion mass spectrometry](#nanoscale-secondary-ion-mass-spectrometry)
+                    - [Sensitive high resolution ion microprobe reverse geometry analysis](#sensitive-high-resolution-ion-microprobe-reverse-geometry-analysis)
+                    - [Time-of-flight secondary ion mass spectrometry](#time-of-flight-secondary-ion-mass-spectrometry)
+                    - [Sensitive high resolution ion microprobe analysis](#shrimp)
+                - [Solid source mass spectrometry](#solidsourcemassspectrometry)
+                - [Spark source mass spectrometry](#sparksourcemassspectrometry)
+                - [Thermal ionization mass spectrometry](#thermalionizationmassspectrometry)
+                    - [Isotope dilution thermal ionisation mass spectrometry](#isotope-dilution-thermal-ionisation-mass-spectrometry)
+                        - [Chemical abrasion isotope dilution thermal ionisation mass spectrometry](#chemical-abrasion-isotope-dilution-thermal-ionisation-mass-spectrometry)
+                            - [Chemical abrasion isotope dilution positive ion thermal ionisation mass spectrometry](#chemical-abrasion-isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry)
+                        - [Isotope dilution negative ion thermal ionisation mass spectrometry](#isotope-dilution-negative-ion-thermal-ionisation-mass-spectrometry)
+                        - [Isotope dilution positive ion thermal ionisation mass spectrometry](#isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry)
+                            - [Chemical abrasion isotope dilution positive ion thermal ionisation mass spectrometry](#chemical-abrasion-isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry)
+                    - [Multicollector thermal ionisation mass spectrometry](#multicollector-thermal-ionisation-mass-spectrometry)
+                        - [Multicollector negative ion thermal ionisation mass spectrometry](#multicollector-negative-ion-thermal-ionisation-mass-spectrometry)
+                        - [Multicollector positive ion thermal ionisation mass spectrometry](#multicollector-positive-ion-thermal-ionisation-mass-spectrometry)
+                    - [Negative ion thermal ionization mass spectrometry](#negativeionthermalionizationmassspectrometry)
+                        - [Isotope dilution negative ion thermal ionisation mass spectrometry](#isotope-dilution-negative-ion-thermal-ionisation-mass-spectrometry)
+                        - [Multicollector negative ion thermal ionisation mass spectrometry](#multicollector-negative-ion-thermal-ionisation-mass-spectrometry)
+                    - [Positive ion thermal ionization mass spectrometry](#positiveionthermalionizationmassspectrometry)
+                        - [Isotope dilution positive ion thermal ionisation mass spectrometry](#isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry)
+                            - [Chemical abrasion isotope dilution positive ion thermal ionisation mass spectrometry](#chemical-abrasion-isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry)
+                        - [Multicollector positive ion thermal ionisation mass spectrometry](#multicollector-positive-ion-thermal-ionisation-mass-spectrometry)
+            - [Nuclear reaction spectrometry](#nuclearreactionspectrometry)
+        - [Photon spectrometry](#photonspectrometry)
+            - [Fluorescence spectrometry](#fluorescencespectrometry)
+            - [Gamma ray spectrometry](#gammarayspectrometry)
+                - [Mössbauer spectrometry](#mossbauerspectroscopy)
+                - [Nuclear reaction spectrometry](#nuclearreactionspectrometry)
+            - [Infrared spectrometry](#infraredspectrometry)
+                - [Combustion infrared spectrometry](#combustioninfraredspectrometry)
+                    - [Catalytic combustion analysis](#catalyticcombustionanalysis)
+                - [Fourier transform infrared spectrometry](#fouriertransforminfraredspectrometry)
+                - [Infrared absorption spectrometry](#infraredabsorptionspectrometry)
+                - [Infrared optical spectrometry](#infraredopticalspectrometry)
+                - [Infrared transmission spectrometry](#infraredtransmissionspectrometry)
+                - [LECO furnace analysis](#lecofurnaceanalysis)
+                - [Nanoscale infrared spectrometry](#nanoscaleinfraredspectrometry)
+            - [Optical spectrometry](#opticalspectrometry)
+                - [Atomic absorption spectrometry](#atomicabsorptionspectrometry)
+                    - [Electrothermal absorption spectrometry](#electrothermalabsorptionspectrometry)
+                - [Atomic emission spectrometry](#emissionspectrometry)
+                    - [Fire assay emission spectrometry](#fireassayemissionspectrometry)
+                    - [Flame emission spectrometry](#flameemissionspectrometry)
+                    - [Laser Induced Breakdown Spectrometry](#laserinducedbreakdownspectrometry)
+                    - [Optical emission spectrometry](#opticalemissionspectrometry)
+                        - [Plasma optical emission spectrometry](#plasmaopticalemissionspectrometry)
+                    - [Plasma emission spectrometry](#plasmaemissionspectrometry)
+                        - [Direct current plasma emission spectrometry](#directcurrentplasmaemissionspectrometry)
+                        - [Inductively coupled plasma emission spectrometry](#inductivelycoupledplasmaemissionspectrometry)
+                            - [Inductively coupled plasma optical emission spectrometry](#inductivelycoupledplasmaopticalemissionspectrometry)
+                        - [Plasma optical emission spectrometry](#plasmaopticalemissionspectrometry)
+                    - [Ultraviolet emission spectrometry](#ultravioletemissionspectrometry)
+                - [Laser absorption spectrometry](#laserabsorptionspectrometry)
+                    - [Cavity enhanced absorption spectrometry](#cavityenhancedabsorptionspectrometry)
+                        - [Cavity ring-down spectrometry](#cavityringdownspectrometry)
+                    - [Wavelength-modulation spectrometry](#wavelengthmodulationspectrometry)
+                - [Plasma optical spectrometry](#plasmaopticalspectrometry)
+                    - [Direct current plasma spectrometry](#directcurrentplasmaspectrometry)
+                - [Spectrophotometry](#spectrophotometry)
+            - [Transmission spectrometry](#transmissionspectrometry)
+                - [Infrared transmission spectrometry](#infraredtransmissionspectrometry)
+            - [X-ray spectrometry](#xrayspectrometry)
+                - [Broad beam X-ray spectrometry](#broadbeamxrayspectrometry)
+                - [Electron induced X-ray spectrometry](#electroninducedxrayspectrometry)
+                    - [Energy dispersive electron induced X-ray spectrometry](#energydispersiveelectroninducedxrayspectrometry)
+                        - [Electron probe microanalysis (energy dispersion X-ray spectroscopy)](#electron-probe-microanalysis-energy-dispersion-x-ray-spectroscopy)
+                    - [Electron probe microanalysis](#quantitativeanalysiselectroninducedxrayspectrometry)
+                        - [Electron probe microanalysis (energy dispersion X-ray spectroscopy)](#electron-probe-microanalysis-energy-dispersion-x-ray-spectroscopy)
+                        - [Electron probe microanalysis (wavelength dispersion X-ray spectroscopy)](#electron-probe-microanalysis-wavelength-dispersion-x-ray-spectroscopy)
+                    - [Wavelength dispersive electron induced X-ray spectrometry](#wavelengthdispersiveelectroninducedxrayspectrometry)
+                        - [Electron probe microanalysis (wavelength dispersion X-ray spectroscopy)](#electron-probe-microanalysis-wavelength-dispersion-x-ray-spectroscopy)
+                - [Energy dispersive X-ray spectrometry](#energydispersivexrayspectrometry)
+                    - [Energy dispersive electron induced X-ray spectrometry](#energydispersiveelectroninducedxrayspectrometry)
+                        - [Electron probe microanalysis (energy dispersion X-ray spectroscopy)](#electron-probe-microanalysis-energy-dispersion-x-ray-spectroscopy)
+                    - [Energy dispersive X-ray fluorescence spectrometry](#energydispersivexrayfluorescencespectrometry)
+                    - [Total reflection X-ray fluorescence spectrometry](#totalreflectionxrayfluorescencespectrometry)
+                - [Particle induced X-ray spectrometry](#particleinducedxrayspectrometry)
+                    - [Quantitative analysis particle induced X-ray spectrometry](#quantitativeanalysisparticleinducedxrayspectrometry)
+                - [X-ray absorption spectrometry](#xrayabsorptionspectrometry)
+                    - [Extended X-ray absorption fine structure](#extendedxrayabsorptionfinestructure)
+                    - [X-ray absorption near edge structure spectrometry](#xrayabsorptionnearedgestructurespectrometry)
+                - [X-ray fluorescence spectrometry](#xrayfluorescencespectrometry)
+                    - [Portable X-ray fluorescence](#portable-x-ray-fluorescence)
+                    - [Confocal X-ray fluorescence spectrometry](#confocalxrayfluorescencespectrometry)
+                    - [Energy dispersive X-ray fluorescence spectrometry](#energydispersivexrayfluorescencespectrometry)
+                    - [Synchroton X-ray fluorescence spectrometry](#synchrotonxrayfluorescencespectrometry)
+                        - [Micro X-ray fluorescence spectrometry](#microxrayfluorescencespectroscopy)
+                        - [Synchrotron X-ray fluorescence tomography](#synchrotronxrayfluorescencetomography)
+                    - [Total reflection X-ray fluorescence spectrometry](#totalreflectionxrayfluorescencespectrometry)
+        - [Raman spectrometry](#ramanspectrometry)
+    - [Surface analysis](#surfaceanalysis)
+        - [AFM topography imaging](#afmtopographyimaging)
+        - [Temperature programmed desorption electron probe analysis](#temperatureprogrammeddesorptionelectronprobeanalysis)
+    - [Thermoluminescence analysis](#thermoluminescenceanalysis)
+    - [Track counting](#trackcounting)
+        - [Alpha recoil track counting](#alpharecoiltrackcounting)
+        - [Fission track counting](#fissiontrackcounting)
+        - [Nuclear particle track counting](#nuclearparticletrackcounting)
+    - [X-ray diffraction](#xraydiffraction)
+        - [Single crystal X-ray diffraction](#singlecrystalxraydiffraction)
+        - [X-ray powder diffraction](#xraypowderdiffraction)
+
+**Concepts**
+
+[]{#depreciated}
+
+##  Deprecated
+- ** a bucket for concepts from Astromat v1.4 to be deprecated **
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/depreciated
+
+
+[]{#electronmicroprobe}
+
+###  Electron probe microanalysis (deprecated)
+- Child of:
+ [`depreciated`](#depreciated)
+- **Alternate labels:**
+EMPA, 
+EPMA, 
+Electron microprobe analysis, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalinstrumemt/instrument/electronmicroprobe
+
+
+[]{#transmissionelectronmicroscope}
+
+###  Transmission electron microscopy (deprecated)
+- Child of:
+ [`depreciated`](#depreciated)
+- Concept URI: https://w3id.org/geochem/1.0/analyticalinstrumemt/instrument/transmissionelectronmicroscope
+
+
+[]{#geochronology}
+
+###  Geochronology techniques (deprecated)
+- Child of:
+ [`depreciated`](#depreciated)
+ [`analyticalmethod`](#analyticalmethod)
+- Analytical techniques that have results interpreted to indicate the
+time interval since some event occurred in the history of a sample.
+Typically used to estimate crystallization ages, cooling ages
+(thermochronology), or exposure ages.
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/geochronology
+
+
+[]{#electronspinresonanceageanalysis}
+
+####  Electron spin resonance age analysis
+- Child of:
+ [`geochronology`](#geochronology)
+- a technique used to date materials by measuring the amount of
+unpaired electrons in crystalline structures that were previously
+exposed to natural radiation. The age of a substance can be determined
+by measuring the dosage of radiation since the time of its formation.
+(https://en.wikipedia.org/wiki/Electron_spin_resonance_dating).
+electron spin resonance (ESR) spectroscopy is a method for studying
+materials that have unpaired electrons. The basic concepts of EPR are
+analogous to those of nuclear magnetic resonance (NMR), but the spins
+excited are those of the electrons instead of the atomic nuclei.
+(https://en.wikipedia.org/wiki/Electron_paramagnetic_resonance)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ELECTRON-SPIN RESONANCE AGE ANALYSIS, 
+ELECTRON-SPIN RESONANCE AGE, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://en.wikipedia.org/wiki/Electron_spin_resonance_dating, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/electronspinresonanceageanalysis
+
+
+[]{#geochronology40ar39ar}
+
+####  40Ar-39Ar geochronology
+- Child of:
+ [`geochronology`](#geochronology)
+- determination of cooling age of a sample through one of several
+workflows.  All the workflows involve irradiating the sample to
+produce Ar39 from K39, and then measuring the ratio of Ar40 to Ar39 in
+the irradiated sample. The Ar39 is a proxy for the potassium
+concentration, allowing determination of the temporal duration of K
+decay to accumulate radiogenic Ar since cooling of the sample below
+argon retention temperature.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+40Ar/39Ar geochronology and thermochronology
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/geochronology40ar39ar
+
+
+[]{#thermoluminescencedating}
+
+####  Thermoluminescence dating
+- Child of:
+ [`geochronology`](#geochronology)
+- the determination of the time elapsed since a sample was either
+heated or exposed to sunlight. The method is based on three
+observations. 1. estimation of the ionizing radiation flux in the
+sample location; 2. estimation of the accumulation rate of trapped
+exited states in the material lattice per unit of time at a given
+ionizing radiation flux;  and 3) measurement of emitted
+thermoluminescent light intensity as the sample is heated. The
+ionizing radiation flux at the sample site is related to exposure to
+sunlight (related to depth of burial), cosmic rays, and radiation due
+to radioactive decay of elements in the enclosing material (mostly
+related uranium and potassium concentration).  The ionizing radiation
+in the sample environment creates electronic excited states in the
+sample that can be trapped. Exposure to light or heat can causes the
+electrons in these states to decay to a lower-energy state and emit
+photons. If the sample has been heated at some point (e.g. by firing
+ceramics), the accumulation of trapped electrons is reset. By
+measuring the intensity (total energy carried by the photons reaching
+a unit area) of light emited when the sample is heated, the density of
+these electronically excited sites can be estimated.  In combination
+with the ambient radiation flux, and the trapped excited state
+accumulation rate in the material, the time interval since the sample
+was reset can be estimated.
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/metbase, 
+https://en.wikipedia.org/wiki/Thermoluminescence_dating, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/thermoluminescencedating
+
+
+[]{#highresolutioninductivelycoupledplasmamassspectrometry}
+
+###  High resolution inductively coupled plasma mass spectrometry (deprecated)
+- Child of:
+ [`depreciated`](#depreciated)
+ [`inductivelycoupledplasmamassspectrometry`](#inductivelycoupledplasmamassspectrometry)
+- Mass spectrometry technique. Components 1) sample preparation: not
+specified; 2) ionization: Inductively-coupled plasma. 3) mass analyzer
+in which the the aperture width of the entrance slit situated between
+the ion optics and the mass analyzer, and an exit slit located between
+the mass analyzer and the detector assembly can be controlled. The
+narrower the slits are positioned, the higher the resolution (and
+lower the sensitivity); the wider the slits, the higher the
+sensitivity (and lower the resolution). (R. ArevaloJr., in Treatise on
+Geochemistry (Second Edition), 2014)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/highresolutioninductivelycoupledplasmamassspectrometry
+
+
+
+[]{#outstanding}
+
+##  Outstanding
+- ** a bucket for techniques not yet assigned within the updated
+vocabulary scheme **
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/outstanding
+
+
+[]{#brillouin-spectroscopy}
+
+###  Brillouin spectroscopy
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/Brillouin-spectroscopy
+
+
+[]{#anodic-stripping-voltammetry}
+
+###  Anodic stripping voltammetry
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+ASV
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/anodic-stripping-voltammetry
+
+
+[]{#capillary-zone-electrophoresis}
+
+###  Capillary zone electrophoresis
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+CZE
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/capillary-zone-electrophoresis
+
+
+[]{#cathodic-stripping-voltammetry}
+
+###  Cathodic stripping voltammetry
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+CSV
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/cathodic-stripping-voltammetry
+
+
+[]{#chemiluminescence}
+
+###  Chemiluminescence
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+CL
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/chemiluminescence
+
+
+[]{#constant-current-stripping-analysis}
+
+###  Constant current stripping analysis
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+CCSA
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/constant-current-stripping-analysis
+
+
+[]{#culturing}
+
+###  Culturing
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/culturing
+
+
+[]{#dna-fragmentation}
+
+###  DNA Fragmentation
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/dna-fragmentation
+
+
+[]{#dna-isolation}
+
+###  DNA isolation
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/dna-isolation
+
+
+[]{#dna-library-preparation}
+
+###  DNA library preparation
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/dna-library-preparation
+
+
+[]{#electron-capture-detection}
+
+###  Electron capture detection
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+ECD
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/electron-capture-detection
+
+
+[]{#environmental-dna}
+
+###  Environmental DNA
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/environmental-dna
+
+
+[]{#flow-injection-analysis}
+
+###  Flow injection analysis
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+FIA
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/flow-injection-analysis
+
+
+[]{#fluorometry}
+
+###  Fluorometry
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/fluorometry
+
+
+[]{#gas-fusion-analysis}
+
+###  Gas fusion analysis
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/gas-fusion-analysis
+
+
+[]{#glow-discharge-atomic-emission-spectrometry}
+
+###  Glow discharge atomic emission spectrometry
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+GDAES
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/glow-discharge-atomic-emission-spectrometry
+
+
+[]{#high-resolution-scanning-electron-microscopy}
+
+###  High-resolution scanning electron microscopy
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+HR-SEM
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/high-resolution-scanning-electron-microscopy
+
+
+[]{#high-resolutionitransmissionielectronimicroscopy}
+
+###  High-resolution transmission electron microscopy
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+HR-TEM
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/high-resolutionitransmissionielectronimicroscopy
+
+
+[]{#high-temperature-pyrolysis-isotope-ratio-mass-spectrometry}
+
+###  High-temperature pyrolysis isotope ratio mass spectrometry
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+HTTP-IRMS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/high-temperature-pyrolysis-isotope-ratio-mass-spectrometry
+
+
+[]{#incubation}
+
+###  Incubation
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/incubation
+
+
+[]{#interferometric-microscopy}
+
+###  Interferometric microscopy
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/interferometric-microscopy
+
+
+[]{#iodometry}
+
+###  Iodometry
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/iodometry
+
+
+[]{#isotope-dilution-mass-spectrometry}
+
+###  Isotope dilution mass spectrometry
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/isotope-dilution-mass-spectrometry
+
+
+[]{#kerogen-determination}
+
+###  Kerogen determination
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/kerogen-determination
+
+
+[]{#liquid-chromatography-isotope-ratio-mass-spectrometry}
+
+###  Liquid chromatography isotope ratio mass spectrometry
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+LC-IRMS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/liquid-chromatography-isotope-ratio-mass-spectrometry
+
+
+[]{#liquid-phase-transmission-electron-microscopy}
+
+###  Liquid phase transmission electron microscopy
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+LP-TEM
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/liquid-phase-transmission-electron-microscopy
+
+
+[]{#liquid-scintillation-spectrometry}
+
+###  Liquid scintillation spectrometry
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+LSS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/liquid-scintillation-spectrometry
+
+
+[]{#luminescence-spectroscopy}
+
+###  Luminescence spectroscopy
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/luminescence-spectroscopy
+
+
+[]{#mechanical-profilometer}
+
+###  Mechanical profilometer
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/mechanical-profilometer
+
+
+[]{#medium-pressure-liquid-chromatography}
+
+###  Medium pressure liquid chromatography
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+MPLC
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/medium-pressure-liquid-chromatography
+
+
+[]{#mircoabsorption-on-ignition}
+
+###  Mircoabsorption on ignition
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/mircoabsorption-on-ignition
+
+
+[]{#optical-microscopy}
+
+###  Optical microscopy
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/optical-microscopy
+
+
+[]{#optical-scanning}
+
+###  Optical scanning
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/optical-scanning
+
+
+[]{#polarization-microscopy}
+
+###  Polarization microscopy
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/polarization-microscopy
+
+
+[]{#polymerase-chain-reaction}
+
+###  Polymerase chain reaction
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/polymerase-chain-reaction
+
+
+[]{#real-time-polymerase-chain-reaction}
+
+####  Real-time polymerase chain reaction
+- Child of:
+ [`polymerase-chain-reaction`](#polymerase-chain-reaction)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/real-time-polymerase-chain-reaction
+
+
+[]{#prompt-gamma-ray-activation-analysis}
+
+###  Prompt gamma-ray activation analysis
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+PGAA
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/prompt-gamma-ray-activation-analysis
+
+
+[]{#radiochemical-photon-activation-analysis}
+
+###  Radiochemical photon activation analysis
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+RPAA
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/radiochemical-photon-activation-analysis
+
+
+[]{#reflected-light-microscopy}
+
+###  Reflected light microscopy
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/reflected-light-microscopy
+
+
+[]{#total-organic-carbon-analysis}
+
+###  Total organic carbon analysis
+- Child of:
+ [`outstanding`](#outstanding)
+- **Alternate labels:**
+TOC
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/total-organic-carbon-analysis
+
+
+[]{#transmitted-light-microscopy}
+
+###  Transmitted light microscopy
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/transmitted-light-microscopy
+
+
+[]{#uv-vis-nir-spectrophotometry}
+
+###  UV-VIS-NIR spectrophotometry
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/uv-vis-nir-spectrophotometry
+
+
+[]{#uv-vis-spectrophotometry}
+
+###  UV-VIS spectrophotometry
+- Child of:
+ [`outstanding`](#outstanding)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/uv-vis-spectrophotometry
+
+
+[]{#laserionizationmassspectrometry}
+
+###  Laser ionization mass spectrometry
+- Child of:
+ [`outstanding`](#outstanding)
+- Technique that uses laser to induce plasma ionization. The laser
+plasma is sustained between a pneumatic nebulizer and the inlet
+capillary of the mass analyzer. To maintain stable conditions in the
+droplet-rich spray environment, the plasma was directly fed by the
+fundamental output (lambda = 1064 nm) of a laser. Ionization by the
+laser-driven plasma resulted in signals of intact analyte ions of
+several chemical categories. Use for mass-spectrometric determinations
+of polar and nonpolar analytes in solution.
+(https://doi.org/10.1021/acs.analchem.9b00329)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ISOTOPE-DILUTION RESONANCE-IONIZATION MASS SPECTROMETRY, 
+LASER PLASMA IONIZATION MASS SPECTROMETRY, 
+RESONANCE-IONIZATION MASS SPECTROMETRY, 
+resonance ionisation mass spectrometer, 
+- **Source:**
+https://doi.org/10.1021/acs.analchem.9b00329, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/laserionizationmassspectrometry
+
+
+[]{#microprobetwosteplasermassspectrometry}
+
+###  Microprobe two step laser mass spectrometry
+- Child of:
+ [`outstanding`](#outstanding)
+- Microprobe two-step laser mass spectrometry (microL2MS) is a
+technique that allows the detection and characterization of organic
+molecules.  Output for point analyses consist of time-of-flight
+spectra and where appropriate low resolution optical location images.
+Each spectrum represent the time varying signal recorded by the
+microchannel plate (MCP) detector assembly in microL2MS instrument
+following laser photoionization of neutral species liberated from the
+surface a sample by a preceeding laser desorption pulse.  microL2MS
+instrument output data products will consist of a variable number of
+spectra and image files depending on the nature of the sample and
+number of analysis locations.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+microprobe two-step laser mass spectrometer
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/microprobetwosteplasermassspectrometry
+
+
+
+[]{#analyticalmethod}
+
+##  Analytical technique
+- Procedures that operate on material samples to produce observation
+results with information about the physical properties, chemical or
+isotopic composition, crystallography, or molecular structure of the
+sample.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Other, 
+UNKNOWN, 
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/analyticalmethod
+
+
+[]{#benchchemistry}
+
+###  Bench chemistry
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- Analytical techniques performed by an analyst mixing and handling
+chemicals directly, not employing any of the high-tech devices or
+theoretical approaches that may be associated with the most state-of-
+the-art aspects of the discipline.
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/benchchemistry
+
+
+[]{#combustionanalysis}
+
+####  Combustion analysis
+- Child of:
+ [`benchchemistry`](#benchchemistry)
+- Technique for determination of empirical and molecular formulas for
+compounds that contain only carbon and hydrogen or carbon, hydrogen,
+and oxygen. The steps for this procedure are: 1) Weigh a sample of the
+compound to be analyzed; 2) Burn the compound completely. 3)  H2O and
+CO2 are drawn through two tubes. One tube contains a substance that
+absorbs water, and the other contains a substance that absorbs carbon
+dioxide. Weigh each of these tubes before and after the combustion.
+The increase in mass in the first tube is the mass of H2O that formed
+in the combustion, and the increase in mass for the second tube is the
+mass of CO2 formed. Assume that all the carbon in the compound has
+been converted to CO2 and trapped in the second tube. Calculate the
+mass of carbon in the compound from the mass of carbon in the measured
+mass of CO2 formed. Assume that all of the hydrogen in the compound
+has been converted to H2O and trapped in the first tube. Calculate the
+mass of hydrogen in the compound from the mass of hydrogen in the
+measured mass of water. If the compound contains oxygen as well as
+carbon and hydrogen, calculate the mass of the oxygen by subtracting
+the mass of carbon and hydrogen from the total mass of the original
+sample of compound.
+(https://preparatorychemistry.com/Bishop_Combustion_Analysis.htm)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+COMBUSTION, 
+TOTAL COMBUSTION ANALYSIS, 
+TOTAL COMBUSTION, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://preparatorychemistry.com/Bishop_Combustion_Analysis.htm, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/combustionanalysis
+
+
+[]{#lossonignitionanalysis}
+
+####  Loss on ignition analysis
+- Child of:
+ [`benchchemistry`](#benchchemistry)
+- Method consists of igniting (vigorous heating) a sample at a
+designated temperature which enables volatile substances within the
+sample material to escape, until the mass of the sample ceases to
+change. This process is often performed within air but may be done in
+another inert or reactive atmosphere.  Loss on Ignition measures the
+organic matter content in samples. The volatile materials lost during
+the analysis typically consist of combined water (hydrates, for
+example) and CO2 from carbonates. (https://www.precisa.com/blog/what-
+is-loss-on-ignition-loi)
+- **Alternate labels:**
+IGNITION ANALYSIS, 
+IGNITION, 
+Loss on ignition analysis, 
+STEPPED HEATING ANALYSIS, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://www.precisa.com/blog/what-is-loss-on-ignition-loi, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/lossonignitionanalysis
+
+
+[]{#penfieldmethodanalysis}
+
+####  Penfield method analysis
+- Child of:
+ [`benchchemistry`](#benchchemistry)
+- Penfield, S. L., 1894, On some methods for the determination of
+water: American Journal of Science, v. 48, no. 283, p. 30-37.
+Determination of water by 'heating a weighed quantity of mineral in a
+closed glass tube, weighing the tube plus the water, then drying and
+weighing again'.  Modified method (Shapirro, 1975, p. 55-56,
+https://pubs.usgs.gov/bul/1401/report.pdf)  water is driven from the
+sample when it is heated in a Pyrex test tube with sodium tungstate as
+a flux (Shapiro and Brannock, 1955b). The water is condensed on a
+piece of preweighed filter paper in the upper part of a test tube that
+is cooled by crushed ice in a polyethylene jacket surrounding the test
+tube during the analysis.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+PENFIELD METHOD
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/penfieldmethodanalysis
+
+
+[]{#wetchemistry}
+
+####  Wet chemistry
+- Child of:
+ [`benchchemistry`](#benchchemistry)
+- Wet chemistry is a form of analytical chemistry that uses classical
+methods such as observation to analyze materials. It is called wet
+chemistry since most analyzing is done in the liquid phase.
+(https://en.wikipedia.org/wiki/Wet_chemistry)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+WET-CHEMICAL ANALYSIS
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://en.wikipedia.org/wiki/Wet_chemistry, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/wetchemistry
+
+
+[]{#acidreactioncarbonateanalysis}
+
+#####  Acid reaction carbonate analysis
+- Child of:
+ [`wetchemistry`](#wetchemistry)
+- Determination of calcium carbonate content by reaction with an acid
+and determining the quantity of CO2 produced. Different techniques use
+different acids and CO2 production measurement approaches.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/acidreactioncarbonateanalysis
+
+
+[]{#carbonatebombanalysis}
+
+######  Carbonate bomb analysis
+- Child of:
+ [`acidreactioncarbonateanalysis`](#acidreactioncarbonateanalysis)
+- Treatment of a sample with HCl in a closed instrument creates CO2
+pressure porportional to the CaCO3 content of the sample (Muller and
+Gastner, 1971, https://epic.awi.de/id/eprint/27239/1/Mll1971a.pdf)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+CARBONATE BOMB
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/carbonatebombanalysis
+
+
+[]{#charmographanalysis}
+
+######  Charmograph analysis
+- Child of:
+ [`acidreactioncarbonateanalysis`](#acidreactioncarbonateanalysis)
+- Carbonate was determined with a Charmograph 6 (Wosthoff). The sample
+was heated in 2 N phosphoric acid and the released carbon dioxide
+passed through a 0.05 N sodium hydroxide solution. Carbonate
+concentrations were calculated from the conductivity changes of the
+sodium hydroxide solution (https://drs.nio.org/drs/bitstream/handle/22
+64/7525/J_Geophys_Res_C_101_28569.pdf)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+CHARMOGRAPH
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/charmographanalysis
+
+
+[]{#dietrichfruhlingcalcimetry}
+
+######  Dietrich-Fruhling calcimetry
+- Child of:
+ [`acidreactioncarbonateanalysis`](#acidreactioncarbonateanalysis)
+- Instrument consisting of a sample-holder, one serpentine for cooling
+and one graduated cylinder with readings on the result of reaction
+between calcium carbonate and diluted chloridric acid. Since the
+volume of CO2 (carbonic anhydride) is in relationship with CaCO2
+(carbonate contained in the material) it shall be possible to
+calculate the percentage of CaCO3.
+(https://www.gabbrielli.com/en/prodotto/dietrich-fruhling-calcimeter/)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+DIETRICH-FRUHLING CALCIMETER
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://www.gabbrielli.com/en/prodotto/dietrich-fruhling-calcimeter/, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/dietrichfruhlingcalcimetry
+
+
+[]{#colormetricanalysis}
+
+#####  Colormetric analysis
+- Child of:
+ [`wetchemistry`](#wetchemistry)
+- A method of chemical analysis in which reagents are added to a
+solution to form coloured compounds with specific elements. The
+intensity of the colour, measured on a spectrophotometer, is
+proportional to the concentration of the element. ('colorimetric
+analysis .' A Dictionary of Earth Sciences. Encyclopedia.com. 21 Dec.
+2022 <https://www.encyclopedia.com/science/dictionaries-thesauruses-
+pictures-and-press-releases/colorimetric-analysis>.)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+COLORIMETRIC ANALYSIS, 
+COLORIMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://www.encyclopedia.com/science/dictionaries-thesauruses-pictures-and-press-releases/colorimetric-analysis, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/colormetricanalysis
+
+
+[]{#fireassayemissionspectrometry}
+
+#####  Fire assay emission spectrometry
+- Child of:
+ [`emissionspectrometry`](#emissionspectrometry)
+ [`wetchemistry`](#wetchemistry)
+- Used for Platinum group element (PGE) analyses. The  sample is
+decomposed by heating with nickel sulfide to form a button that is
+then dissolved in acid.  PGE constituents remain in the insoluble
+residue. After filtering, the residue is dissolved with aqua regia or
+a mixture of HCl and H2O2 and then determined by inductively coupled
+plasma-atomic emission spectrometry.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+NICKEL SULFIDE FIRE ASSAY ISOTOPE DILUTION ANALYSIS, 
+NICKEL SULFIDE FIRE ASSAY ISOTOPE DILUTION, 
+xFEMS, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/petdb
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/fireassayemissionspectrometry
+
+
+[]{#gravimeticanalysis}
+
+#####  Gravimetric analysis
+- Child of:
+ [`wetchemistry`](#wetchemistry)
+- Gravimetry is the measurement of weight, a gravitational field, or
+density (Merriam-Webster, https://www.merriam-
+webster.com/dictionary/gravimetry. Accessed 6 Feb. 2023.) Gravimetric
+analysis measures the weight or concentration of a solid that has
+either formed from a precipitate or dissolved in a liquid. (
+https://en.wikipedia.org/wiki/Wet_chemistry#Gravimetric_analysis;
+https://www.allthescience.org/what-is-bench-chemistry.htm).
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+GRAVIMETRY
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://en.wikipedia.org/wiki/Wet_chemistry#Gravimetric_analysis, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/gravimeticanalysis
+
+
+[]{#gutzeittest}
+
+#####  Gutzeit test
+- Child of:
+ [`wetchemistry`](#wetchemistry)
+- technique to detect arsenic, based on the reaction of arsenic gas
+with hydrogen ion to form yellow stain on mercuric chloride paper in
+presence of reducing agents like potassium iodide. It is also called
+as Gutzeit test and requires special apparatus. [not clear if this is
+quantitative or qualitative] (https://www.web-
+formulas.com/Formulas_of_Chemistry/Limit_Test_of_Arsenic.aspx; C.R.
+Sanger and O.F. Black, 1907, Proceedings of the American Academy of
+Arts and Sciences; Vol. 43, No. 8, pp. 297-324.)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ARSINE GUTZEIT REACTION
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/gutzeittest
+
+
+[]{#laserfluorinationanalysis}
+
+#####  Laser fluorination mass spectrometry
+- Child of:
+ [`isotoperatiomassspectrometry`](#isotoperatiomassspectrometry)
+ [`wetchemistry`](#wetchemistry)
+- Technique wherein oxygen is quantitatively extracted from oxygen-
+bearing compounds, without isotopic fractionation, and simultaneously
+converted to diatomic oxygen (O2) gas, and then  analyzed with
+isotope-ratio mass spectrometer (IRMS) to determine its delta 17O and
+delta 18O ratios. (https://sil.uoregon.edu/laser-fluorination/)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+IR-laser fluorination mass spectrometry, 
+LAF, 
+LASER FLUORINATION, 
+Laser Assisted Fluorination for Bulk Oxygen Isotope Ratio Measurements, 
+Laser fluorination analysis, 
+in situ ultraviolet laser fluorination, 
+infrared laser fluorination, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://sil.uoregon.edu/laser-fluorination/, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/laserfluorinationanalysis
+
+
+[]{#phmeasurement}
+
+#####  pH measurement
+- Child of:
+ [`wetchemistry`](#wetchemistry)
+- Measurement of hydrogen ion concentration in a liquid. Various
+techniques are used.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddinstmethodsgeox
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/phmeasurement
+
+
+[]{#radiochemicalneutronactivationanalysis}
+
+#####  Radiochemical neutron activation analysis
+- Child of:
+ [`neutronactivationanalysis`](#neutronactivationanalysis)
+ [`wetchemistry`](#wetchemistry)
+- A method of NAA in which chemical separations are applied after the
+irradiation to separate activities of interest from interfering
+activities. (https://indico.cern.ch/event/716552/sessions/310934/attac
+hments/1848163/3033363/MonicaSisti_LRT2019.pdf slide 6,
+https://www.nist.gov/laboratories/tools-instruments/radiochemical-
+neutron-activation-analysis-rnaa; Chai et al, 2021,
+https://doi.org/10.1515/pac-2019-0302). Components: 1) sample
+irradiation 2) chemical processing 3) gamma ray spectrometry
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+DESTRUCTIVE NEUTRON ACTIVATION ANALYSIS, 
+RADIOANALYTICAL NEUTRON ACTIVATION, 
+destructive activation analysis, 
+- **Source:**
+https://doi.org/10.1515/pac-2019-0302, 
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://www.nist.gov/laboratories/tools-instruments/radiochemical-neutron-activation-analysis-rnaa, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/radiochemicalneutronactivationanalysis
+
+
+[]{#titration}
+
+#####  Titration
+- Child of:
+ [`wetchemistry`](#wetchemistry)
+- method to determine the concentration of an identified analyte, in
+which a reagent, termed the titrant or titrator, with known
+concentration and volume reacts with a solution of analyte (which may
+also be termed the titrand) to determine the analyte's concentration.
+The volume of titrant that reacted with the analyte is termed the
+titration volume. (https://en.wikipedia.org/wiki/Titration)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+TITRATION ANALYSIS, 
+VOLUMETRIC ANALYSIS, 
+VOLUMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://en.wikipedia.org/wiki/Titration, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/titration
+
+
+[]{#bioanalyticalmethod}
+
+###  Bioanalytical technique
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- Analytical technique to determine biochemical properties of samples
+from living organisms, particularly related to genomics or 'omics in
+general.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smrAddGeneralGeoX
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/bioanalyticalmethod
+
+
+[]{#dnasequencing}
+
+####  DNA sequencing
+- Child of:
+ [`bioanalyticalmethod`](#bioanalyticalmethod)
+- Determination of nucleotide sequence (the DNA primary structure).
+(Source: IUPAC; https://doi.org/10.1515/iupac.90.0262,
+https://www.degruyter.com/database/IUPAC/entry/iupac.90.0262/html)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://doi.org/10.1515/iupac.90.0262, 
+https://w3id.org/geochem/1.0/agent/geox, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/dnasequencing
+
+
+[]{#flowcytometry}
+
+####  Flow cytometry
+- Child of:
+ [`bioanalyticalmethod`](#bioanalyticalmethod)
+- Laboratory technique to determine the amount of DNA in cells tagged
+by fluorescent dye by measuring the intensity of fluorescence under a
+laser beam. (USGS; https://apps.usgs.gov/thesaurus/thesaurus-
+full.php?thcode=2&code=400). More generally, a technique for examining
+populations of cells or particles by suspending them in a fluid and
+passing them through a tube (ideally each particle individually
+discernible), and probing with a laser or other excitation source that
+will identify the particles of interest so they can be counted.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/geox, 
+https://apps.usgs.gov/thesaurus/thesaurus-full.php?thcode=2&code=400, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/flowcytometry
+
+
+[]{#fluorescentinsituhybridization}
+
+####  Fluorescent in situ hybridization
+- Child of:
+ [`bioanalyticalmethod`](#bioanalyticalmethod)
+- Cytogenetic technique used to detect and localize the presence or
+absence of specific DNA sequences on chromosomes. It uses fluorescent
+probes that only bind to those parts of the chromosome with which they
+show a high degree of sequence complementarity. Note: FISH is often
+used for finding specific features in DNA for use in genetic
+counselling, medicine, and species identification. FISH can also be
+used to detect and localize specific RNA targets (mRNA, lncRNA and
+miRNA) in cells, circulating tumor cells, and tissue samples. In this
+context, it can help define the spatial-temporal patterns of gene
+expression within cells and tissues. (Source: IUPAC;
+https://doi.org/10.1515/iupac.90.0262,
+https://www.degruyter.com/database/IUPAC/entry/iupac.90.0262/html)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://doi.org/10.1515/iupac.90.0262, 
+https://w3id.org/geochem/1.0/agent/geox, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/fluorescentinsituhybridization
+
+
+[]{#hybridizationassay}
+
+####  Hybridization assay
+- Child of:
+ [`bioanalyticalmethod`](#bioanalyticalmethod)
+- Assay with specifically designed single-stranded DNA probe with a
+defined (known) nucleotide sequence usually immobilized on a surface
+(in such a case, the nucleic acid probe is called the capture probe).
+Note: The probe is used as a recognition element to test for the
+nucleotide sequence within the target DNA in the sample solution. If
+target DNA contains a sequence complementary to the probe, a hybrid
+dsDNA is formed. (Source: IUPAC;
+https://doi.org/10.1515/iupac.90.0262,
+https://www.degruyter.com/database/IUPAC/entry/iupac.90.0262/html).  A
+type of Ligand Binding Assay (LBA) used to quantify nucleic acids in
+biological matrices. Hybridization assays can be in solution or on a
+solid support such as 96-well plates or labelled beads.  Hybridization
+assays involve labelled nucleic acid probes to identify related DNA or
+RNA molecules (i.e. with significantly high degree of sequence
+similarity) within a complex mixture of unlabelled nucleic acid
+molecules. (https://en.wikipedia.org/wiki/Hybridization_assay)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+DNA hybridization capture
+- **Source:**
+https://doi.org/10.1515/iupac.90.0262, 
+https://w3id.org/geochem/1.0/agent/geox, 
+https://en.wikipedia.org/wiki/Hybridization_assay, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/hybridizationassay
+
+
+[]{#nextgenerationsequencing}
+
+####  Next generation sequencing
+- Child of:
+ [`bioanalyticalmethod`](#bioanalyticalmethod)
+- Determination of nucleotide sequence (the DNA primary structure)
+using non-Sanger-based high-throughput DNA sequencing technologies
+where millions of DNA strands can be sequenced in parallel. (Source:
+IUPAC; https://doi.org/10.1515/iupac.90.0262,
+https://www.degruyter.com/database/IUPAC/entry/iupac.90.0262/html)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Massive parallel sequencing, 
+Massively parallel sequencing, 
+Second generation sequencing, 
+- **Source:**
+https://doi.org/10.1515/iupac.90.0262, 
+https://w3id.org/geochem/1.0/agent/geox, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/nextgenerationsequencing
+
+
+[]{#quantitativepolymerasechainreaction}
+
+####  Quantitative polymerase chain reaction
+- Child of:
+ [`bioanalyticalmethod`](#bioanalyticalmethod)
+- Polymerase chain reaction to quantify target nucleotide sequences of
+interest. (Source: IUPAC; https://doi.org/10.1515/iupac.90.0262,
+https://www.degruyter.com/database/IUPAC/entry/iupac.90.0262/html).
+Quantitative PCR adds two elements to the standard Polymerase Chain
+Reaction (PCR) process: 1)Fluorescent dye and 2) Fluorometer. These
+two elements turn qPCR to a measurement technique in its own right.
+The fluorometer detects  fluorescence in real time as the thermal
+cycler runs, giving readings throughout the amplification process of
+the PCR.  As a result, quantitative PCR is also called real-time PCR
+or RT-PCR. (https://www.thermofisher.com/blog/ask-a-scientist/what-is-
+qpcr/)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+DNA amplification, 
+DNA enrichment, 
+Quantitative PCR, 
+- **Source:**
+https://doi.org/10.1515/iupac.90.0262, 
+https://w3id.org/geochem/1.0/agent/geox, 
+https://www.thermofisher.com/blog/ask-a-scientist/what-is-qpcr/, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/quantitativepolymerasechainreaction
+
+
+[]{#sangersequencing}
+
+####  Sanger sequencing
+- Child of:
+ [`bioanalyticalmethod`](#bioanalyticalmethod)
+- Method for determining nucleotide sequence of DNA based on
+incorporating chain-terminating dideoxynucleotides. Note: The method
+is named after Frederick Sanger (1918--2013, awarded the Nobel Prize
+in 1958 and 1980). (Source: IUPAC;
+https://doi.org/10.1515/iupac.90.0262,
+https://www.degruyter.com/database/IUPAC/entry/iupac.90.0262/html)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Chain termination sequencing
+- **Source:**
+https://doi.org/10.1515/iupac.90.0262, 
+https://w3id.org/geochem/1.0/agent/geox, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/sangersequencing
+
+
+[]{#shotgunmethod}
+
+####  Shotgun method
+- Child of:
+ [`bioanalyticalmethod`](#bioanalyticalmethod)
+- Method used for determining the order of bases in long DNA using
+sequencing of DNA broken up randomly into numerous small segments.
+(Source: IUPAC; https://doi.org/10.1515/iupac.90.0262,
+https://www.degruyter.com/database/IUPAC/entry/iupac.90.0262/html)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Shot gun sequencing
+- **Source:**
+https://doi.org/10.1515/iupac.90.0262, 
+https://w3id.org/geochem/1.0/agent/geox, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/shotgunmethod
+
+
+[]{#chromatographyanalysis}
+
+###  Chromatography analysis
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- a laboratory technique for the separation of a mixture into its
+components. The mixture is dissolved in a fluid solvent (gas or
+liquid) called the mobile phase, which carries it through a system (a
+column, a capillary tube, a plate, or a sheet) on which a material
+called the stationary phase is fixed. The different constituents of
+the mixture travel at different apparent velocities in the mobile
+fluid, causing them to separate. The separation is based on the
+differential partitioning between the mobile and the stationary
+phases. The purpose of chromatography analysis is to establish the
+presence or measure the relative proportions of analytes in a mixture.
+The result is a chromatogram
+(https://en.wikipedia.org/wiki/Chromatography)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory, 
+https://en.wikipedia.org/wiki/Chromatography, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/chromatographyanalysis
+
+
+[]{#gaschromatographyanalysis}
+
+####  Gas chromatography analysis
+- Child of:
+ [`chromatographyanalysis`](#chromatographyanalysis)
+- A chromatography analysis in which the mobile phase is a gas.
+Subclasses are differentiated on the sample preparation workflow (e.g.
+pyrolysis) and the type of detector used to analyze the eluates. This
+vocabulary does not define an exhaustive set of subclasses.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+CARBON HYDROGEN NITROGEN GAS CHROMATOGRAPHY, 
+ELECTRON CAPTURE GAS CHROMATOGRAPHY, 
+GAS CHROMATOGRAPHY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://w3id.org/geochem/1.0/analyticalmethod/smrAddGeneralGeoX, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/gaschromatographyanalysis
+
+
+[]{#combustiongaschromatography}
+
+#####  Combustion gas chromatography
+- Child of:
+ [`gaschromatographyanalysis`](#gaschromatographyanalysis)
+- Technique in which an analytical sample is decomposed by heating in
+an oxygen atmosphere to induce combustion, and analyzing the
+combustion products by gas chromatography
+- **Source:**
+https://doi.org/10.1021/ed046p441, 
+<https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory>, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/combustiongaschromatography
+
+
+[]{#combustiongaschromatographyisotopicratiomassspectrometry}
+
+######  Combustion gas chromatography isotopic ratio mass spectrometry
+- Child of:
+ [`combustiongaschromatography`](#combustiongaschromatography)
+ [`gaschromatographymassspectrometry`](#gaschromatographymassspectrometry)
+ [`isotoperatiomassspectrometry`](#isotoperatiomassspectrometry)
+- Technique used to ascertain the relative ratio of light stable
+isotopes of carbon (13C/12C), hydrogen (2H/1H), nitrogen (15N/14N) or
+oxygen (18O/160) in individual compounds separated from often complex
+mixtures of components. The sample solution is injected into the gas
+chromatography (GC) inlet where it is vaporized and swept onto a
+chromatographic column by the carrier gas (usually helium). The sample
+flows through the column and the compounds comprising the mixture of
+interest are separated by virtue of their relative interaction with
+the coating of the column (stationary phase) and the carrier gas
+(mobile phase). Carbon and nitrogen compounds eluting from the
+chromatographic column then pass through a combustion reactor (an
+alumina tube containing Cu, Ni and Pt wires maintained at 940 degree
+C) where they are oxidatively combusted. This is followed by a
+reduction reactor (an alumina tube containing three Cu wires
+maintained at 600 degree C) to reduce any nitrogen oxides to nitrogen.
+For hydrogen and oxygen a high temperature thermal conversion reactor
+is required. Water is then removed in a water separator by passing the
+gas stream through a tube constructed from a water permeable nafion
+membrane. The sample is then introduced into the ion source of the
+mass analyzer by an open split interface, and particles with m/z
+ratios of interest are counted by detectors.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/combustiongaschromatographyisotopicratiomassspectrometry
+
+
+[]{#gaschromatographyflameionizationdetection}
+
+#####  Gas chromatography flame ionization detection
+- Child of:
+ [`gaschromatographyanalysis`](#gaschromatographyanalysis)
+- A gas chromatography technique that uses a flame ionization detector
+(FID) to measure the concentration of organic species in a gas stream
+emerging from the column. An FID typically uses a Hydrogen/Air flame
+into which the sample is passed to oxidize organic molecules and
+produces electrically charged particles (ions). The ions are collected
+and produce an electrical signal which is then measured. (Source:
+IUPAC; https://doi.org/10.1515/pac-2017-0111)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://doi.org/10.1515/pac-2017-0111, 
+https://w3id.org/geochem/1.0/agent/geox, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/gaschromatographyflameionizationdetection
+
+
+[]{#pyrolysisgaschromatographyflameionizationdetection}
+
+######  Pyrolysis gas chromatography flame ionization detection
+- Child of:
+ [`gaschromatographyflameionizationdetection`](#gaschromatographyflameionizationdetection)
+ [`pyrolysisgaschromatography`](#pyrolysisgaschromatography)
+- Technique that uses a flame ionization detector (FID) to measure the
+concentration of organic species in a gas stream emerging from the
+column. An FID typically uses a Hydrogen/Air flame into which the
+sample is passed to oxidize organic molecules and produces
+electrically charged particles (ions). The ions are collected and
+produce an electrical signal which is then measured. (Source: IUPAC;
+https://doi.org/10.1515/pac-2017-0111)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://doi.org/10.1515/pac-2017-0111, 
+https://w3id.org/geochem/1.0/agent/geox, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/pyrolysisgaschromatographyflameionizationdetection
+
+
+[]{#gaschromatographymassspectrometry}
+
+#####  Gas chromatography mass spectrometry
+- Child of:
+ [`gaschromatographyanalysis`](#gaschromatographyanalysis)
+ [`massspectrometry`](#massspectrometry)
+- Technique by which a mixture is separated into individual components
+by gas chromatography, followed by detection with a mass spectrometer.
+(Source: IUPAC; https://doi.org/10.1351/PAC-REC-06-04-06)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+GAS CHROMATOGRAPHY-MASS SPECTROMETRY
+- **Source:**
+https://doi.org/10.1351/PAC-REC-06-04-06, 
+https://w3id.org/geochem/1.0/agent/geox, 
+https://w3id.org/geochem/1.0/agent/orex, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/gaschromatographymassspectrometry
+
+
+[]{#combustiongaschromatographyisotopicratiomassspectrometry}
+
+######  Combustion gas chromatography isotopic ratio mass spectrometry
+- Child of:
+ [`combustiongaschromatography`](#combustiongaschromatography)
+ [`gaschromatographymassspectrometry`](#gaschromatographymassspectrometry)
+ [`isotoperatiomassspectrometry`](#isotoperatiomassspectrometry)
+- Technique used to ascertain the relative ratio of light stable
+isotopes of carbon (13C/12C), hydrogen (2H/1H), nitrogen (15N/14N) or
+oxygen (18O/160) in individual compounds separated from often complex
+mixtures of components. The sample solution is injected into the gas
+chromatography (GC) inlet where it is vaporized and swept onto a
+chromatographic column by the carrier gas (usually helium). The sample
+flows through the column and the compounds comprising the mixture of
+interest are separated by virtue of their relative interaction with
+the coating of the column (stationary phase) and the carrier gas
+(mobile phase). Carbon and nitrogen compounds eluting from the
+chromatographic column then pass through a combustion reactor (an
+alumina tube containing Cu, Ni and Pt wires maintained at 940 degree
+C) where they are oxidatively combusted. This is followed by a
+reduction reactor (an alumina tube containing three Cu wires
+maintained at 600 degree C) to reduce any nitrogen oxides to nitrogen.
+For hydrogen and oxygen a high temperature thermal conversion reactor
+is required. Water is then removed in a water separator by passing the
+gas stream through a tube constructed from a water permeable nafion
+membrane. The sample is then introduced into the ion source of the
+mass analyzer by an open split interface, and particles with m/z
+ratios of interest are counted by detectors.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/combustiongaschromatographyisotopicratiomassspectrometry
+
+
+[]{#pyrolysisgaschromatographymassspectrometry}
+
+######  Pyrolysis gas chromatography mass spectrometry
+- Child of:
+ [`gaschromatographymassspectrometry`](#gaschromatographymassspectrometry)
+ [`pyrolysisgaschromatography`](#pyrolysisgaschromatography)
+- Mass spectrometry technique in which the sample is heated to the
+point of decomposition and the gas phase decomposition products are
+characterized by mass spectrometry. (Source: IUPAC;
+https://doi.org/10.1351/PAC-REC-06-04-06).
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Pyrolysis mass spectrometry
+- **Source:**
+https://doi.org/10.1351/PAC-REC-06-04-06, 
+https://w3id.org/geochem/1.0/agent/geox, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/pyrolysisgaschromatographymassspectrometry
+
+
+[]{#gaschromatographythermalconductivitydetection}
+
+#####  Gas chromatography thermal conductivity detection
+- Child of:
+ [`gaschromatographyanalysis`](#gaschromatographyanalysis)
+- A gas chromatography method that uses a Thermal Conductivity
+Detector  to analyze inorganic gases (Argon, Nitrogen, Hydrogen,
+Carbon Dioxide, etc.) and small hydrocarbon molecules emerging from
+the chromatography column. The TCD compares the thermal conductivity
+of two gas flows - the pure carrier (reference) gas and the sample.
+Changes in the temperature of the electrically-heated wires in the
+detector are affected by the thermal conductivity of the gas which
+flows around this. The changes in this thermal conductivity are sensed
+as a change in electrical resistance and are measured.  (NASA; UUID:
+f54fd6d0-9705-4f45-8c78-7eaba058b1b6)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Gas chromatography thermal conductivity detector, 
+THERMAL CONDUCTIVITY DETECTOR ANALYSIS, 
+THERMAL CONDUCTIVITY DETECTOR, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/geox
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/gaschromatographythermalconductivitydetection
+
+
+[]{#pyrolysisgaschromatography}
+
+#####  Pyrolysis gas chromatography
+- Child of:
+ [`gaschromatographyanalysis`](#gaschromatographyanalysis)
+- Chromatography in which an analytical sample is thermally decomposed
+to smaller fragments before entering the column.
+- **Source:**
+https://doi.org/10.1515/pac-2017-0111, 
+L. S. Ettre. Pure Appl. Chem.65, 819, (1993); https://doi.org/10.1351/pac1993650408191.5.02. 1.6.11.1, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/pyrolysisgaschromatography
+
+
+[]{#pyrolysisgaschromatographyflameionizationdetection}
+
+######  Pyrolysis gas chromatography flame ionization detection
+- Child of:
+ [`gaschromatographyflameionizationdetection`](#gaschromatographyflameionizationdetection)
+ [`pyrolysisgaschromatography`](#pyrolysisgaschromatography)
+- Technique that uses a flame ionization detector (FID) to measure the
+concentration of organic species in a gas stream emerging from the
+column. An FID typically uses a Hydrogen/Air flame into which the
+sample is passed to oxidize organic molecules and produces
+electrically charged particles (ions). The ions are collected and
+produce an electrical signal which is then measured. (Source: IUPAC;
+https://doi.org/10.1515/pac-2017-0111)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://doi.org/10.1515/pac-2017-0111, 
+https://w3id.org/geochem/1.0/agent/geox, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/pyrolysisgaschromatographyflameionizationdetection
+
+
+[]{#pyrolysisgaschromatographymassspectrometry}
+
+######  Pyrolysis gas chromatography mass spectrometry
+- Child of:
+ [`gaschromatographymassspectrometry`](#gaschromatographymassspectrometry)
+ [`pyrolysisgaschromatography`](#pyrolysisgaschromatography)
+- Mass spectrometry technique in which the sample is heated to the
+point of decomposition and the gas phase decomposition products are
+characterized by mass spectrometry. (Source: IUPAC;
+https://doi.org/10.1351/PAC-REC-06-04-06).
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Pyrolysis mass spectrometry
+- **Source:**
+https://doi.org/10.1351/PAC-REC-06-04-06, 
+https://w3id.org/geochem/1.0/agent/geox, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/pyrolysisgaschromatographymassspectrometry
+
+
+[]{#liquidchromatographyanalysis}
+
+####  Liquid chromatography analysis
+- Child of:
+ [`chromatographyanalysis`](#chromatographyanalysis)
+- A chromatography analysis in which the mobile phase is a liquid
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+HIGH-PERFORMANCE LIQUID CHROMATOGRAPHY
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/liquidchromatographyanalysis
+
+
+[]{#ionchromatographyanalysis}
+
+#####  Ion chromatography analysis
+- Child of:
+ [`liquidchromatographyanalysis`](#liquidchromatographyanalysis)
+- liquid chromatography analysis using conductivity detectors where a
+combination of weak ionic solvents are used to separate anions and
+cations of a solution, with the contribution of the solvent to
+conductivity suppressed just prior to detection; measures anions such
+as sulfate, nitrate, and chloride in hydrometers. Chromatography in
+which separation is based mainly on differences in the ion-exchange
+affinities of the sample components. (Source: IUPAC;
+https://doi.org/10.1515/pac-2017-0111)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+HIGH-PERFORMANCE ION CHROMATOGRAPHY, 
+Ion chromatography, 
+Ion exchange chromatography, 
+LIQUID ION CHROMATOGRAPHY, 
+PYROHYDROLYSIS COMBINED WITH ION CHROMATOGRAPHY, 
+- **Source:**
+https://doi.org/10.1515/pac-2017-0111, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/geox, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/analyticalmethod/nasagcmd, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/ionchromatographyanalysis
+
+
+[]{#anionchromatographyanalysis}
+
+######  Anion chromatography analysis
+- Child of:
+ [`ionchromatographyanalysis`](#ionchromatographyanalysis)
+- Anion-exchange chromatography is when the stationary phase is
+positively charged and negatively charged molecules are loaded to be
+attracted to it. (https://en.wikipedia.org/wiki/Ion_chromatography)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ANION CHROMATOGRAPHY
+- **Source:**
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://en.wikipedia.org/wiki/Ion_chromatography, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/anionchromatographyanalysis
+
+
+[]{#cationchromatographyanalysis}
+
+######  Cation chromatography analysis
+- Child of:
+ [`ionchromatographyanalysis`](#ionchromatographyanalysis)
+- Cation-exchange chromatography is used when the molecule of interest
+is positively charged. The molecule is positively charged because the
+pH for chromatography is less than the pI (a/k/a pH(I)). In this type
+of chromatography, the stationary phase is negatively charged and
+positively charged molecules are loaded to be attracted to it.
+(https://en.wikipedia.org/wiki/Ion_chromatography)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Cation Chromatography
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory, 
+https://en.wikipedia.org/wiki/Ion_chromatography, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/cationchromatographyanalysis
+
+
+[]{#combustionionchromatography}
+
+######  Combustion Ion Chromatography
+- Child of:
+ [`ionchromatographyanalysis`](#ionchromatographyanalysis)
+- Samples are pyrolyzed in an oxidizing atmosphere, the resultant
+vapors are absorbed in an aqueous solution, then introduced directly
+into an ion chromatography system for analysis.
+- **Alternate labels:**
+Combustion Ion Chromatography
+- **Source:**
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://www.teinstruments.com/faq/combustion-ion-chromatography/, 
+https://www.thermofisher.com/order/catalog/product/IQLAAAGADHFAMJMBIQ, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/combustionionchromatography
+
+
+[]{#gradientionchromatographyanalysis}
+
+######  Gradient ion chromatography analysis
+- Child of:
+ [`ionchromatographyanalysis`](#ionchromatographyanalysis)
+- By varying the concentration of the eluant, ions with widely
+differing affinities for the separator resin can be eluted in one run
+(https://assets.thermofisher.com/TFS-Assets/CMD/Technical-
+Notes/tn-19-ic-gradient-elution-lpn032834-en.pdf). Components: 1)
+sample prep: load sample in solution; 2) elution - column, vary
+concentration of eluent; 3) detection- not specified
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+GRADIENT ION-CHROMATOGRAPHY, 
+Gradient ion chromatography, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/petdb
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/gradientionchromatographyanalysis
+
+
+[]{#liquidchromatographymassspectrometry}
+
+#####  Liquid chromatography mass spectrometry
+- Child of:
+ [`liquidchromatographyanalysis`](#liquidchromatographyanalysis)
+ [`massspectrometry`](#massspectrometry)
+- technique used to separate, detect, identify, and quantify
+components of a complex mixture. The solid sample is extracted in a
+solvent to pull out soluble target compounds; this creates both a
+solid residue and a liquid extract.  The extract can be subjected to
+additional procedures, for cleanup or exposure to acid vapor to break
+apart large molecules.  The final extracted solution is injected into
+the LC, which separates compounds in the solution and then passes them
+into the MS, where their mass spectra are measured. Each time point on
+the chromatogram is linked to a mass spectrum from which the most
+intense signals are fragmented at defined CID (colision induced
+dissociation) energy.  The combination of retention time (i.e., how
+long it takes for the compound to pass through the LC) and mass
+spectrum allows for identification of the compounds when compared to
+standards.  The LC-MS-MS converted data is in a unversal format of
+data called mzML and used internationally in LC-MS-MS analytical
+community of small molecules, peptides to proteins.  mzML is a
+universal Mass spectrometry format. xml namespace
+=http://psi.hupo.org/ms/mzml; schema location
+http://psidev.info/files/ms/mzML/xsd/mzML1.1.0.xsd
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/liquidchromatographymassspectrometry
+
+
+[]{#liquidchromatographyorganiccarbondetection}
+
+#####  Liquid chromatography organic carbon detection
+- Child of:
+ [`liquidchromatographyanalysis`](#liquidchromatographyanalysis)
+- Liquid chromatography -- organic carbon detection (LC-OCD) is an
+analytical technique for identification and quantification of natural
+organic matter (NOM) constituents in aquatic environments and water-
+soluble synthetic organic matter in water.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/geox
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/liquidchromatographyorganiccarbondetection
+
+
+[]{#electrochemicaltechniques}
+
+###  Electrochemical techniques
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- Techniques that use electron movement in an oxidation or reduction
+reaction at a polarized electrode surface to determine chemical
+properties of an analyte. Each analyte is oxidized or reduced at a
+specific potential and the current measured is proportional to
+concentration. Electrochemistry is widely used for measurement of a
+wide range of analytes. (Bhavik A. Patel, in Electrochemistry for
+Bioanalysis, 2020)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smrAddGeneralGeoX
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/electrochemicaltechniques
+
+
+[]{#amperometry}
+
+####  Amperometry
+- Child of:
+ [`electrochemicaltechniques`](#electrochemicaltechniques)
+- Technique based on measurement of current at a controlled applied
+potential. Application: monitoring of carbon monoxide in air,
+dissolved oxygen in water (Clark electrode), glucose in blood (glucose
+electrode). (Source: IUPAC;  https://doi.org/10.1515/pac-2018-0109).
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://doi.org/10.1515/pac-2018-0109, 
+https://w3id.org/geochem/1.0/agent/geox, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/amperometry
+
+
+[]{#coulometricalanalysis}
+
+####  Coulometrical analysis
+- Child of:
+ [`electrochemicaltechniques`](#electrochemicaltechniques)
+- Coulometry uses either an applied current or potential to
+exhaustively convert an analyte from one oxidation state to another at
+the working electrode. In these experiments, the total current passed
+is measured directly or indirectly to determine the number of
+electrons passed. Knowing the number of electrons passed, extract the
+concentration of the analyte (Timothee Houssin, ... Vincent Senez, in
+Waterborne Pathogens (Second Edition), 2021)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/coulometricalanalysis
+
+
+[]{#electricalconductivitymeasurement}
+
+####  Electrical conductivity measurement
+- Child of:
+ [`electrochemicaltechniques`](#electrochemicaltechniques)
+- Methods used to measure the electrical conductivity of a sample in
+an electrochemistry cell.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddinstmethodsgeox
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/electricalconductivitymeasurement
+
+
+[]{#electrochemicalimpedancespectroscopy}
+
+####  Electrochemical impedance spectroscopy
+- Child of:
+ [`electrochemicaltechniques`](#electrochemicaltechniques)
+- tool to investigate properties of materials and electrode reactions.
+the response of the system (ionic solution and electrodes) to a
+potential or current sinusoidal perturbation is studied as a function
+of the frequency, which is swept over a few decades. The frequency
+sweep enables access to all processes taking place at the electrode:
+charge transfer and mass transport. Any other electrical contribution
+and artefacts are visible with EIS.
+(https://www.biologic.net/topics/what-is-eis/). Electrochemical
+impedance is the response of an electrochemical system (cell) to an
+applied potential. The frequency dependence of this impedance can
+reveal underlying chemical processes. (https://www.jlab.org/conference
+s/tfsrf/Thursday/Th2_1-EIS%20intro%20Reece.pdf)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+IMPEDANCE ELECTROCHEMICAL SPECTROSCOPY
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://www.biologic.net/topics/what-is-eis/, 
+https://www.jlab.org/conferences/tfsrf/Thursday/Th2_1-EIS%20intro%20Reece.pdf, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/electrochemicalimpedancespectroscopy
+
+
+[]{#potentiometry}
+
+####  Potentiometry
+- Child of:
+ [`electrochemicaltechniques`](#electrochemicaltechniques)
+- Technique in which the potential difference between an indicator
+electrode and a reference electrode is measured. Application: gas-
+sensing electrodes (e.g., for CO2, NH3, NOx), determination of oxygen
+in the gas phase (lambda probe) or ions in water solutions (pH
+sensitive electrodes, ion-sensitive electrodes). (Source: IUPAC;
+https://doi.org/10.1515/pac-2018-0109).
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ELECTROMETRY
+- **Source:**
+https://doi.org/10.1515/pac-2018-0109, 
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/geox, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/potentiometry
+
+
+[]{#ionsensitiveelectrodeanalysis}
+
+#####  Ion sensitive electrode analysis
+- Child of:
+ [`potentiometry`](#potentiometry)
+- measurements of the potential of ion-selective electrodes is used to
+determine activity (not concentration) of ions. Such electrodes are
+relatively free from interference and provide a rapid and convenient
+means for quantitative estimations of numerous important anions and
+cations. The method is based on measuring the potential of
+electrochemical cells without drawing appreciable current. (Skoog,
+Holler, & Crouch, p. 601; https://chem.libretexts.org/Bookshelves/Anal
+ytical_Chemistry/Physical_Methods_in_Chemistry_and_Nano_Science_(Barro
+n)/01%3A_Elemental_Analysis/1.07%3A_Ion_Selective_Electrode_Analysis)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ION SELECTIVE ELECTRODE, 
+ION SENSITIVE ELECTRODE, 
+SPECIFIC ION ELECTRODE ANALYSIS, 
+SPECIFIC ION ELECTRODE, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch, 
+https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Physical_Methods_in_Chemistry_and_Nano_Science_(Barron)/01%3A_Elemental_Analysis/1.07%3A_Ion_Selective_Electrode_Analysis, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/ionsensitiveelectrodeanalysis
+
+
+[]{#redoxpotentialmeasurement}
+
+####  Redox potential measurement
+- Child of:
+ [`electrochemicaltechniques`](#electrochemicaltechniques)
+- Redox potential is an electrical measurement that shows the tendency
+of a solution to transfer electrons to or from a reference electrode.
+From this measurement we can estimate whether the sample is aerobic,
+anaerobic, and whether chemical compounds such as Fe oxides or nitrate
+have been chemically reduced or are present in their oxidized forms.
+The redox potential is used to describe a system's overall reducing or
+oxidizing capacity. The redox potential is measured in millivolts (mV)
+relative to a standard hydrogen electrode and is commonly measured
+using a platinum electrode with a saturated calomel electrode as
+reference.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/geox, 
+DFG, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/redoxpotentialmeasurement
+
+
+[]{#voltammetry}
+
+####  Voltammetry
+- Child of:
+ [`electrochemicaltechniques`](#electrochemicaltechniques)
+- Voltammetry is based on the measurement of the current that develops
+in an electrochemical cell under conditions where concentration
+polarization exists. Voltammetry comprises a group of
+electroanalytical methods in which information about the analyte is
+obtained by measuring current as a function of applied potential under
+conditions that promote polarization of an indicator, or working,
+electrode. [Skoog, Holler & Crouch, p. 653).
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+INVERSION VOLT-AMPEROMETRY, 
+VOLTAMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/voltammetry
+
+
+[]{#polarography}
+
+#####  Polarography
+- Child of:
+ [`voltammetry`](#voltammetry)
+- A type of voltammetry in which the working electrode is a unique
+dropping mercury electrode. Voltammetry is based on the measurement of
+the current that develops in an electrochemical cell under conditions
+where concentration polarization exists. At one time, polarography was
+an important tool for the determination of inorganic ions and certain
+organic species in aqueous solutions. Many of these analytical
+applications have been replaced by spectroscopic methods, and
+polarography became a less-important method of analysis except for
+certain special applications, such as the determination of molecular
+oxygen in solutions. (Skoog et al, p. 653,
+https://en.wikipedia.org/wiki/Polarography,
+https://unacademy.com/content/nta-ugc/study-material/pharmaceutical-
+analysis/polarography/)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+FILM POLAROGRAPHY
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch, 
+https://en.wikipedia.org/wiki/Polarography, 
+https://unacademy.com/content/nta-ugc/study-material/pharmaceutical-analysis/polarography/, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/polarography
+
+
+[]{#electrondiffraction}
+
+###  Electron diffraction
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- Electron diffraction is a technique that allows determination of the
+crystal structure of materials. When the electron beam is projected
+onto a specimen, its crystal lattice acts as a diffraction grating,
+scattering the electrons in a predictable manner, and resulting in a
+diffraction pattern. Electron diffraction patterns are mainly
+contributed by elastic scattering. (X Zhou, G.E. Thompson, in
+Reference Module in Materials Science and Materials Engineering, 2017)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smrAddGeneralGeoX
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/electrondiffraction
+
+
+[]{#electronbackscatterdiffraction}
+
+####  Electron backscatter diffraction
+- Child of:
+ [`electrondiffraction`](#electrondiffraction)
+- a flat/polished crystalline specimen is placed in the SEM chamber at
+a highly tilted angle (~70degree from horizontal) towards the
+diffraction camera, to increase the contrast in the resultant electron
+backscatter diffraction pattern. The phosphor screen is located within
+the specimen chamber of the SEM at an angle of approximately 90degree
+to the pole piece and is coupled to a compact lens which focuses the
+image from the phosphor screen onto the CCD camera. In this
+configuration, some of the electrons which enter the sample
+backscatter and may escape. As these electrons leave the sample, they
+may exit at the Bragg condition related to the spacing of the periodic
+atomic lattice planes of the crystalline structure and diffract. These
+diffracted electrons can escape the material and some will collide and
+excite the phosphor causing it to fluoresce. Acquired with EMPA, SEM,
+TEM
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/geox, 
+https://w3id.org/geochem/1.0/agent/orex, 
+DFG, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/electronbackscatterdiffraction
+
+
+[]{#transmittedelectrondiffraction}
+
+####  Transmitted electron diffraction
+- Child of:
+ [`electrondiffraction`](#electrondiffraction)
+- In a transmission electron microscope, the electron beam passes
+through a thin film of the examined material. As it interacts with the
+sample, part of the beam is diffracted and part is transmitted through
+the sample without changing its direction. Below the sample, the beam
+is controlled by another set of magnetic lens and apertures. Each set
+of initially parallel rays is focused by the first lens Objective
+(optics) to a certain point in the back focal plane of the first lens,
+forming a spot. The location of these spots is related to the
+interplanar distance in the sample. Other lenses below the sample can
+be used to produce a magnified image of the spots for all the
+different directions that the electrons leave the sample, a
+diffraction pattern.  (https://en.wikipedia.org/wiki/Electron_diffract
+ion#In_a_transmission_electron_microscope)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex, 
+https://en.wikipedia.org/wiki/Electron_diffraction#In_a_transmission_electron_microscope, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/transmittedelectrondiffraction
+
+
+[]{#elementalanalysis}
+
+###  Elemental analysis
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- Technique to quantify  carbon, hydrogen, nitrogen, sulfur and
+sometimes other elements by heating the sample at very high
+temperature (pyrolysis) in oxygen or oxygen free atmosphere, and
+assaying the resulting gaseous oxides. The products typically undergo
+some chemical refinement, with the final product analyzed by mass
+spectrometry or infrared/optical spectroscopy. Usually used for
+samples including organic material.
+(http://vocab.nerc.ac.uk/collection/L05/current/LAB01;
+https://en.wikipedia.org/wiki/Elemental_analysis).
+- **Alternate labels:**
+CARBON HYDROGEN NITROGEN ANALYSIS, 
+CARBON HYDROGEN NITROGEN ANALYZER, 
+CARBON HYDROGEN NITROGEN SULFUR ELEMENTAL ANALYSIS, 
+CARBON HYDROGEN SULFUR ELEMENTAL ANALYSIS, 
+CARBON NITROGEN SULFUR ANALYSIS, 
+CARBON NITROGEN SULFUR ANALYZER, 
+CARBON SULFUR ANALYSIS, 
+CARBON SULFUR ANALYZER, 
+CARBON SULPHUR ANALYZER, 
+CHNS ANALYZER, 
+CNS ANALYZER, 
+ELEMENTAL ANALYSER, 
+ELEMENTAL ANALYZER, 
+Elemental analysis, 
+MICROSCOPE VACUUM HEATING STAGE, 
+THERMAL CONVERSION ELEMENTAL ANALYSIS, 
+THERMAL CONVERSION ELEMENTAL ANALYZER, 
+- **Source:**
+http://vocab.nerc.ac.uk/collection/L05/current/LAB01, 
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://en.wikipedia.org/wiki/Elemental_analysis, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/elementalanalysis
+
+
+[]{#elementalanalysisinfraredspectrometry}
+
+####  Elemental analysis infrared spectrometry
+- Child of:
+ [`elementalanalysis`](#elementalanalysis)
+- Technique that uses an elemental analyzer (typically a pyrolysis
+process to extract volatile components in the sample) to extract the
+aliquots (typically as gas) to be analyzed using infrared
+spectrometry.
+- **Alternate labels:**
+Direct Mercury Analyzer, 
+Elemental analysis infrared spectrometry, 
+INFRARED QUANTIFICATION AND HIGH TEMPERATURE EVOLUTION ANALYSIS, 
+INFRARED QUANTIFICATION AND HIGH TEMPERATURE EVOLUTION, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/elementalanalysisinfraredspectrometry
+
+
+[]{#elementalanalysismassspectrometry}
+
+####  Elemental analysis mass spectrometry
+- Child of:
+ [`elementalanalysis`](#elementalanalysis)
+ [`massspectrometry`](#massspectrometry)
+- Mass spectrometry method that uses an elemental analyzer (typically
+a pyrolysis process to extract volatile components in the sample) to
+extract the aliquots (typically as gas) to be atomized and passed to
+the mass analyzer.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Elemental analyzer mass spectrometry, 
+elemental analyzer-mass spectrometry, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/elementalanalysismassspectrometry
+
+
+[]{#continuousflowisotoperatiomassspectrometry}
+
+#####  Continuous flow isotope ratio mass spectrometry
+- Child of:
+ [`elementalanalysismassspectrometry`](#elementalanalysismassspectrometry)
+ [`isotoperatiomassspectrometry`](#isotoperatiomassspectrometry)
+- Isotope-Ratio mass spectrometry that extracts analytes from a sample
+using elemental analyzer with a contintuous flow of gas to be
+atomized, ionized and passed to the mass analyzer. Components: 1)
+elemental analyzer; 2) continuous flow input. 3) mass analyzer 4)
+detectors.  Analyzed aliquots are gas.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ELEMENTAL ANALYSER CONTINUOUS FLOW ISOTOPIC RATIO MASS SPECTROMETER, 
+ELEMENTAL ANALYZER CONTINUOUS-FLOW ISOTOPE RATIO MASS SPECTROMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/continuousflowisotoperatiomassspectrometry
+
+
+[]{#elementalanalysisisotoperatiomassspectrometry}
+
+#####  Elemental analysis isotope ratio mass spectrometry
+- Child of:
+ [`elementalanalysismassspectrometry`](#elementalanalysismassspectrometry)
+ [`isotoperatiomassspectrometry`](#isotoperatiomassspectrometry)
+- Measurement and study of the relative abundances of the different
+isotopes of an element in a material using a mass spectrometer which
+is coupled with an elemental analyzer. (Source: IUPAC;
+https://doi.org/10.1351/PAC-REC-06-04-06). Isotope and chemical
+analysis of H, C, N, O and S in a sample. (OSIRIS-REx confluence)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Elemental analyzer - isotope ratio mass spectrometry
+- **Source:**
+https://doi.org/10.1351/PAC-REC-06-04-06, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/elementalanalysisisotoperatiomassspectrometry
+
+
+[]{#geochronology}
+
+###  Geochronology techniques (deprecated)
+- Child of:
+ [`depreciated`](#depreciated)
+ [`analyticalmethod`](#analyticalmethod)
+- Analytical techniques that have results interpreted to indicate the
+time interval since some event occurred in the history of a sample.
+Typically used to estimate crystallization ages, cooling ages
+(thermochronology), or exposure ages.
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/geochronology
+
+
+[]{#electronspinresonanceageanalysis}
+
+####  Electron spin resonance age analysis
+- Child of:
+ [`geochronology`](#geochronology)
+- a technique used to date materials by measuring the amount of
+unpaired electrons in crystalline structures that were previously
+exposed to natural radiation. The age of a substance can be determined
+by measuring the dosage of radiation since the time of its formation.
+(https://en.wikipedia.org/wiki/Electron_spin_resonance_dating).
+electron spin resonance (ESR) spectroscopy is a method for studying
+materials that have unpaired electrons. The basic concepts of EPR are
+analogous to those of nuclear magnetic resonance (NMR), but the spins
+excited are those of the electrons instead of the atomic nuclei.
+(https://en.wikipedia.org/wiki/Electron_paramagnetic_resonance)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ELECTRON-SPIN RESONANCE AGE ANALYSIS, 
+ELECTRON-SPIN RESONANCE AGE, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://en.wikipedia.org/wiki/Electron_spin_resonance_dating, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/electronspinresonanceageanalysis
+
+
+[]{#geochronology40ar39ar}
+
+####  40Ar-39Ar geochronology
+- Child of:
+ [`geochronology`](#geochronology)
+- determination of cooling age of a sample through one of several
+workflows.  All the workflows involve irradiating the sample to
+produce Ar39 from K39, and then measuring the ratio of Ar40 to Ar39 in
+the irradiated sample. The Ar39 is a proxy for the potassium
+concentration, allowing determination of the temporal duration of K
+decay to accumulate radiogenic Ar since cooling of the sample below
+argon retention temperature.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+40Ar/39Ar geochronology and thermochronology
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/geochronology40ar39ar
+
+
+[]{#thermoluminescencedating}
+
+####  Thermoluminescence dating
+- Child of:
+ [`geochronology`](#geochronology)
+- the determination of the time elapsed since a sample was either
+heated or exposed to sunlight. The method is based on three
+observations. 1. estimation of the ionizing radiation flux in the
+sample location; 2. estimation of the accumulation rate of trapped
+exited states in the material lattice per unit of time at a given
+ionizing radiation flux;  and 3) measurement of emitted
+thermoluminescent light intensity as the sample is heated. The
+ionizing radiation flux at the sample site is related to exposure to
+sunlight (related to depth of burial), cosmic rays, and radiation due
+to radioactive decay of elements in the enclosing material (mostly
+related uranium and potassium concentration).  The ionizing radiation
+in the sample environment creates electronic excited states in the
+sample that can be trapped. Exposure to light or heat can causes the
+electrons in these states to decay to a lower-energy state and emit
+photons. If the sample has been heated at some point (e.g. by firing
+ceramics), the accumulation of trapped electrons is reset. By
+measuring the intensity (total energy carried by the photons reaching
+a unit area) of light emited when the sample is heated, the density of
+these electronically excited sites can be estimated.  In combination
+with the ambient radiation flux, and the trapped excited state
+accumulation rate in the material, the time interval since the sample
+was reset can be estimated.
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/metbase, 
+https://en.wikipedia.org/wiki/Thermoluminescence_dating, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/thermoluminescencedating
+
+
+[]{#imagingtechniques}
+
+###  Imaging techniques
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- Methods that produce 2-D or 3-D rasters that contain information
+about a sample, with data points that are spatially related to points
+on in the sample.
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/imagingtechniques
+
+
+[]{#confocal-laser-scanning-microscopy}
+
+####  Confocal laser scanning microscopy
+- Child of:
+ [`imagingtechniques`](#imagingtechniques)
+- **Alternate labels:**
+CLSM, 
+LSCM, 
+Laser scanning confocal microscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/confocal-laser-scanning-microscopy
+
+
+[]{#afmtopographyimaging}
+
+####  AFM topography imaging
+- Child of:
+ [`atomicforcemicroscopy`](#atomicforcemicroscopy)
+ [`imagingtechniques`](#imagingtechniques)
+ [`surfaceanalysis`](#surfaceanalysis)
+- A sharp probe tip mounted on a microcantilever scans over the
+specimen line by line, whereby the topographic image of the sample
+surface is generated by 'feeling' rather than 'looking.'
+(https://doi.org/10.1007/978-3-642-16712-6_496).  As the tip
+approaches the surface, the close-range, attractive forces between the
+surface and the tip causes the cantilever to deflect towards the
+surface. However, as the cantilever is brought even closer to the
+surface, until the tip makes contact with it, increasingly repulsive
+forces takes over and causes the cantilever to deflect away from the
+surface. (https://lnf-
+wiki.eecs.umich.edu/wiki/Atomic_force_microscopy)
+- **Source:**
+https://doi.org/10.1007/978-3-642-16712-6_496, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://lnf-wiki.eecs.umich.edu/wiki/Atomic_force_microscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/afmtopographyimaging
+
+
+[]{#atomprobetomography}
+
+####  Atom probe tomography
+- Child of:
+ [`imagingtechniques`](#imagingtechniques)
+- To conduct an atom probe experiment a very sharp needle shaped
+specimen is placed in an ultra high vacuum chamber. After introduction
+into the vacuum system, the sample is reduced to cryogenic
+temperatures (typically 20-100 K) and manipulated such that the
+needle's point is aimed towards an ion detector. A high voltage is
+applied to the specimen, and either a laser pulse is applied to the
+specimen or a voltage pulse (typically 1-2 kV) with pulse repetition
+rates in the hundreds of kilohertz range is applied to a counter
+electrode. The application of the pulse to the sample allows for
+individual atoms at the sample surface to be ejected as an ion from
+the sample surface at a known time. Typically the pulse amplitude and
+the high voltage on the specimen are computer controlled to encourage
+only one atom to ionize at a time, but multiple ionizations are
+possible. The delay between application of the pulse and detection of
+the ion(s) at the detector allow for the computation of a mass-to-
+charge ratio. The method is destructive in nature removing ions from a
+sample surface in order to image and identify them, generating
+magnifications sufficient to observe individual atoms as they are
+removed from the sample surface. Through coupling of this
+magnification method with time of flight mass spectrometry, ions
+evaporated by application of electric pulses can have their mass-to-
+charge ratio computed. Through successive evaporation of material,
+layers of atoms are removed from a specimen, allowing for probing not
+only of the surface, but also through the material itself.The
+instrument allows the three-dimensional reconstruction of up to
+billions of atoms from a sharp tip (corresponding to specimen volumes
+of 10,000-10,000,000 nm3). (https://en.wikipedia.org/wiki/Atom_probe)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex, 
+https://en.wikipedia.org/wiki/Atom_probe, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/atomprobetomography
+
+
+[]{#cathodoluminescenceimaging}
+
+####  Cathodoluminescence imaging
+- Child of:
+ [`imagingtechniques`](#imagingtechniques)
+- In a vacuum chamber containing the sample of interest, an electron
+beam is focused on the sample, causing cathodoluminescence (CL), the
+generation of electromagnetic radiation ranging from the ultraviolet
+(UV) to the near-infrared (NIR) regime of the electromagnetic
+spectrum. The light is collected with a collection optic (e.g. mirror
+or objective) and directed to a light detection unit, or directly
+captured by a detector in the chamber. This detector output is used to
+characterize various aspects of the light signal such as its
+intensity, color, and more.  Many trace elements or dopants can be
+sensitively detected with CL because they have different optical
+transitions than the bulk materials they are embedded in. It is
+possible to look at crystal defects as these can alter the local
+optical properties of the material.  CL  can also image optical
+resonances and guided modes in a range of (resonant) photonic and
+plasmonic systems.
+(https://www.delmic.com/en/techniques/cathodoluminescence)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Cathodoluminescence microscopy, 
+High resolution cathodoluminescence, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex, 
+https://www.delmic.com/en/techniques/cathodoluminescence, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/cathodoluminescenceimaging
+
+
+[]{#electronmicroscopyimaging}
+
+####  Electron microscopy imaging
+- Child of:
+ [`imagingtechniques`](#imagingtechniques)
+ [`particlebeamexcitation`](#particlebeamexcitation)
+- Technique that produces images by scanning an electron beam over a
+sample surface and measureing the intensity of electrons emitted from
+or transmitted through the sample.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+AEM, 
+ANAYTICAL ELECTRON MICROSCOPY, 
+SCANNING ELECTRON MICROSCOPE, 
+SCANNING ELECTRON MICROSCOPY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/electronmicroscopyimaging
+
+
+[]{#backscatteredelectrongrainboundarymap}
+
+#####  Backscattered electron grain boundary imaging
+- Child of:
+ [`electronmicroscopyimaging`](#electronmicroscopyimaging)
+- Image showing grain boundaries generated by detecting
+crytallographic orientation changes in a raster of backscattered
+electron diffraction data points.
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/backscatteredelectrongrainboundarymap
+
+
+[]{#backscatteredelectronimaging}
+
+#####  Backscattered electron imaging
+- Child of:
+ [`electronmicroscopyimaging`](#electronmicroscopyimaging)
+- Techniques that involve bombarding a sample with an accelerated
+electron beam to produce backscattered electrons. An image is formed
+by scanning the beam in a raster across the sample surface and
+measuring the intensity (count?) of backscattered electrons at each
+sample point. BSEs are reflected back after elastic interactions
+between the beam and the sample. BSE images show high sensitivity to
+differences in atomic number; the higher the atomic number, the
+brighter the material appears in the image.
+(https://www.thermofisher.com/blog/materials/sem-signal-types-
+electrons-and-the-information-they-provide/)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Backscatter electron microscopy
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/backscatteredelectronimaging
+
+
+[]{#secondaryelectronimaging}
+
+#####  Secondary electron imaging
+- Child of:
+ [`electronmicroscopyimaging`](#electronmicroscopyimaging)
+- Techniques that involve bombarding a sample with an accelerated
+electron or ion beam to produce secondary electrons. An image is
+formed by scanning the beam in a raster across the sample surface and
+measuring the intensity (count?) of secondary electrons emitted at
+each sample point.  Secondary electrons are a result of inelastic
+interactions between the excitation beam and atoms in the sample; they
+originate from the surface region of the sample. Secondary electron
+imaging can provide detailed surface information.
+(https://www.thermofisher.com/blog/materials/sem-signal-types-
+electrons-and-the-information-they-provide/)
+- **Alternate labels:**
+SEM, 
+Secondary electron microscopy, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex, 
+https://www.thermofisher.com/blog/materials/sem-signal-types-electrons-and-the-information-they-provide/, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/secondaryelectronimaging
+
+
+[]{#transmissionelectronimaging}
+
+#####  Transmission electron imaging
+- Child of:
+ [`electronmicroscopyimaging`](#electronmicroscopyimaging)
+- technique in which a beam of electrons is transmitted through a
+specimen to form an image. The specimen is most often an ultrathin
+section less than 100 nm thick or a suspension on a grid. An image is
+formed from the interaction of the electrons with the sample as the
+beam is transmitted through the specimen. Multiple operating modes
+based on electron imaging include conventional imaging, scanning TEM
+imaging (STEM), and electron diffraction.
+(https://en.wikipedia.org/wiki/Transmission_electron_microscopy)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+TEM, 
+Transmission electron microscopy, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://en.wikipedia.org/wiki/Transmission_electron_microscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/transmissionelectronimaging
+
+
+[]{#energyfilteredtransmissionelectronimaging}
+
+######  Energy-filtered transmission electron imaging
+- Child of:
+ [`transmissionelectronimaging`](#transmissionelectronimaging)
+- The principle is to illuminate a very thin specimen with a beam of
+high energy electrons. Some of these electrons will interact with the
+specimen and result in elastic or inelastic scattering. Inelastic
+scattering results in both a loss of energy and a change in momentum,
+which in the case of inner shell ionization, the energy loss is
+characteristic of the element the electron interacted with. After the
+electron energy loss spectrum forms in the energy filter, an
+adjustable energy slit allows only electrons that have not lost energy
+to pass through to form the image. This is known as zero-loss
+filtering. The filtering prevents inelastically scattered electrons
+from contributing to the image plus enhances contrast image and
+resolution. In addition to zero-loss filtering, you can adjust the
+system to select electrons that have lost a specific amount of energy
+to obtain additional contrast effects and compositionally sensitive
+images. (https://eels.info/about/techniques/eftem)
+- **Alternate labels:**
+Energy-filtered transmission electron microscopy
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex, 
+https://eels.info/about/techniques/eftem, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/energyfilteredtransmissionelectronimaging
+
+
+[]{#scanningtransmissionelectronimaging}
+
+######  Scanning transmission electron imaging
+- Child of:
+ [`transmissionelectronimaging`](#transmissionelectronimaging)
+- In STEM the electron beam is focused to a fine spot (with the
+typical spot size 0.05 -- 0.2 nm) which is then scanned over the
+sample in a raster illumination system constructed so that the sample
+is illuminated at each point with the beam parallel to the optical
+axis.
+(https://en.wikipedia.org/wiki/Transmission_electron_microscopy). In
+TEM parallel electron beams are focused perpendicular to the sample
+plane, in STEM the beam is focused at a large angle and is converged
+into a focal point. The transmitted signal is collected as a function
+of the beam location as it is rastered across the sample. There are
+multiple detectors for STEM imaging: 1) BF (bright-field) detector:
+small angles (0-10 mrad). These images are similar to the bright-field
+images obtained using TEM; 2) ADF (annular dark-field ) detector:
+larger angles (10-50 mrad); 3) HAADF (high-angle annular dark-field)
+detector: Angles greater than 50mrad. (https://chem.libretexts.org/Cou
+rses/Franklin_and_Marshall_College/Introduction_to_Materials_Character
+ization__CHM_412_Collaborative_Text/Electron_and_Probe_Microscopy/Tran
+smission_electron_microscopy_(TEM)%3A_TEM_versus_STEM_and_HAADF )
+- **Alternate labels:**
+Scanning transmission electron microscopy
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex, 
+https://en.wikipedia.org/wiki/Transmission_electron_microscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/scanningtransmissionelectronimaging
+
+
+[]{#focusedionbeamscanningmicroscopy}
+
+####  Focused ion beam scanning microscopy
+- Child of:
+ [`imagingtechniques`](#imagingtechniques)
+ [`particlebeamexcitation`](#particlebeamexcitation)
+- Production of images by scanning an ion beam in a raster across a
+sample surface and detecting secondary or backscattered electrons from
+each point to generate an image. Instrument used is typically an
+electron microscope that has an additional ion beam excitation source.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/focusedionbeamscanningmicroscopy
+
+
+[]{#quantitativereflectanceimagingsystem}
+
+####  Quantitative reflectance imaging
+- Child of:
+ [`imagingtechniques`](#imagingtechniques)
+- Images acquired for a particular spectral channel [need more
+information]
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Quantitative reflectance imaging system
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/quantitativereflectanceimagingsystem
+
+
+[]{#structuredlightscanning}
+
+####  Structured light scanning
+- Child of:
+ [`imagingtechniques`](#imagingtechniques)
+- Determination of the three-dimensional shape of an object using
+projected light patterns, a camera system, and digital processing. The
+light source from the scanner head projects a series of parallel
+patterns onto the scan target. When light projects onto the object's
+surface, the patterns become distorted. The cameras capture these
+images and send them to the 3D scanning software for processing.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/structuredlightscanning
+
+
+[]{#visiblenearinfraredandmidinfraredimaging}
+
+####  Visible, near-infrared, and mid-infrared imaging
+- Child of:
+ [`imagingtechniques`](#imagingtechniques)
+- Visualization of infrared spectra data  collected at a raster of
+points on a sample surface by selecting particular spectral intervals
+normalizing and mapping the measured intensity in the interval to an
+image channel; gray scale image based on a single spectral interval,
+color image with three intervals mapped to R,G,B channels.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Visible, near-infrared, and mid-infrared (VNMIR)  2D spectral raster SwRI micro-FTIR
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/visiblenearinfraredandmidinfraredimaging
+
+
+[]{#xrayimaging}
+
+####  X-ray imaging
+- Child of:
+ [`imagingtechniques`](#imagingtechniques)
+- As X-rays pass through an object, X-rays of a particular wavelength
+are attentuated more or less depending on the materials through which
+the X-rays pass and the thickness of the material. The attenuation of
+X-rays passing through the object makes a 'shadow pattern' which can
+be captured for study on photographic film, or by a reusable phosphor
+screen which can be read by a digital scanner, or directly by a
+digital detector. The resulting X-radiographs enable visualizing
+features hidden below an object's surface. The different attenuation
+values can also be used to distinguish between materials which look
+the same under visible light but have different X-ray absorptions.
+(https://www.fieldmuseum.org/science/research/area/conserving-
+collections/examination-documentation/x-radiography)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+X-RADIOGRAPHY
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://www.fieldmuseum.org/science/research/area/conserving-collections/examination-documentation/x-radiography, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/xrayimaging
+
+
+[]{#microscopicxrayimaging}
+
+#####  Microscopic X-ray imaging
+- Child of:
+ [`xrayimaging`](#xrayimaging)
+- Technique uses electromagnetic radiation in the X-ray band to
+produce magnified images of objects. Since X-rays penetrate most
+objects, there is no need to specially prepare them for X-ray
+microscopy observations. Because X-rays do not reflect or refract
+easily and are invisible to the human eye an X-ray microscope exposes
+film or uses a charge-coupled device (CCD) detector to detect X-rays
+that pass through the specimen. It is a contrast imaging technology
+using the difference in absorption of soft X-rays in the water window
+region (wavelengths: 2.34-4.4 nm, energies: 280-530 eV) by the carbon
+atom (main element composing the living cell) and the oxygen atom (an
+element of water). (https://en.wikipedia.org/wiki/X-ray_microscope)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+X-RAY MICROSCOPY ANALYSIS
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://en.wikipedia.org/wiki/X-ray_microscope, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/microscopicxrayimaging
+
+
+[]{#xraycomputedtomography}
+
+#####  X-ray computed tomography
+- Child of:
+ [`xrayimaging`](#xrayimaging)
+- 2D Radiograph collected as a stack of planar surfaces by focusing
+X-rays at progressively greater depth throught the sample. The stack
+is then used for the reconstruction process to create a 3D volume.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+X-ray computed micro-tomography (XCMT), 
+XCMT, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/xraycomputedtomography
+
+
+[]{#synchrotronxrayfluorescencetomography}
+
+######  Synchrotron X-ray fluorescence tomography
+- Child of:
+ [`synchrotonxrayfluorescencespectrometry`](#synchrotonxrayfluorescencespectrometry)
+ [`xraycomputedtomography`](#xraycomputedtomography)
+- X-ray flourescence spectrometery focused to extract inforamtion from
+inside the volume of a sample, with X-rays sourced from a synchrotron.
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/synchrotronxrayfluorescencetomography
+
+
+[]{#xraymap}
+
+#####  X-ray composition map
+- Child of:
+ [`xrayimaging`](#xrayimaging)
+- image produced using composition data derived from X-ray spectra
+analysis at a raster of points on a sample surface.  Might be based on
+EDS or WDS data
+- **Alternate labels:**
+COMPUTER-AIDED MICROANALYZER
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/xraymap
+
+
+[]{#energydispersivexrayspectraraster}
+
+######  Energy dispersive X-ray spectral data 2D raster
+- Child of:
+ [`xraymap`](#xraymap)
+- production of composition-related images by selecting particular
+X-ray wavelength intervals from a set of EDS spectra acquired in a
+raster on a sample surface. If one wavelenth interval is rpresented,
+get gray scale image. Can combine data from 3 intervals to generate
+more informative RGB images.
+- **Alternate labels:**
+Energy-dispersive X-ray spectral data (EDS) - 2D raster
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/energydispersivexrayspectraraster
+
+
+[]{#xrayphotoelectronspectroscopycompositionmap}
+
+####  X-ray photoelectron spectrometry composition mapping
+- Child of:
+ [`imagingtechniques`](#imagingtechniques)
+- Technique based on irradiation of the sample surface with
+monochromatic X-radiation (Skoog, Holler, Crouch p540) resulting in
+emission of electrons. The emitted electron energy spectra are
+obtained and chemical states are inferred from the measurement of the
+kinetic energy and the number of the ejected electrons. A typical XPS
+spectrum is a plot of the number of electrons detected at a specific
+binding energy. Each element produces a set of characteristic XPS
+peaks. Image produced from a raster of X-ray Photoelectron
+Spectrometer data, with image channels mapped to 1 or three
+characteristic energy peaks.
+- **Alternate labels:**
+X-ray photoelectron spectroscopy (XPS) elemental/chemical maps
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch, 
+<https://w3id.org/geochem/1.0/analyticalmethod/smrAdd>, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/xrayphotoelectronspectroscopycompositionmap
+
+
+[]{#magneticfieldmeasurement}
+
+###  Magnetic field measurement
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- Techniques for measuring magnetic field. [TBD--what are the actual
+techniques...]
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddinstmethodsgeox
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/magneticfieldmeasurement
+
+
+[]{#microscopy}
+
+###  Microscopy
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- Observation of samples using visible light optical systems
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddinstmethodsgeox
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/microscopy
+
+
+[]{#fluorescencemicroscopy}
+
+####  Fluorescence microscopy
+- Child of:
+ [`microscopy`](#microscopy)
+- Fluorescence microscopy is capable of imaging the distribution of a
+single molecular species based solely on the properties of
+fluorescence emission. Thus, using fluorescence microscopy, the
+precise location of intracellular components labeled with specific
+fluorophores can be monitored, as well as their associated diffusion
+coefficients, transport characteristics, and interactions with other
+biomolecules. In addition, the dramatic response in fluorescence to
+localized environmental variables enables the investigation of pH,
+viscosity, refractive index, ionic concentrations, membrane potential,
+and solvent polarity in living cells and tissues. Fluorescence is the
+property of some atoms and molecules to absorb light at a particular
+wavelength and to subsequently emit light of longer wavelength after a
+brief interval, termed the fluorescence lifetime.  http://micro.magnet
+.fsu.edu/primer/techniques/fluorescence/fluorhome.html
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/geox, 
+https://w3id.org/geochem/1.0/analyticalmethod/nasagcmd, 
+http://micro.magnet.fsu.edu/primer/techniques/fluorescence/fluorhome.html, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/fluorescencemicroscopy
+
+
+[]{#visiblelightmicroscopy}
+
+####  Visible light microscopy
+- Child of:
+ [`microscopy`](#microscopy)
+- observation of samples at high magnification using transmitted or
+reflected light in human-visible part of the spectrum.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/visiblelightmicroscopy
+
+
+[]{#pointcounting}
+
+#####  Point counting
+- Child of:
+ [`other`](#other)
+ [`visiblelightmicroscopy`](#visiblelightmicroscopy)
+- Technique used to determine the proportion of an area that is
+covered by some objects of interest. In most cases the area is a thin
+section or a polished slab. The basic method is to cover the area by a
+grid of points. Then for each of these points, the underlying object
+is identified. Then the estimate for the proportion of the area
+covered by the type of object is based on the fraction of points
+assigned to that object type.
+(https://en.wikipedia.org/wiki/Point_counting_(geology) ). The data
+are typically collected using a microscope.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://en.wikipedia.org/wiki/Point_counting_(geology), 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/pointcounting
+
+
+[]{#other}
+
+###  Other
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- Techniques that don't fit in other categories.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/other
+
+
+[]{#moistureanalysis}
+
+####  Moisture analysis
+- Child of:
+ [`other`](#other)
+- [might be: ]The Model 510 Moisture Analyzer (E. I. du Pont de
+Nemours & Co.) the sensing element is a quartz crystal coated with a
+hygroscopic material. The resonant frequency of such a crystal depends
+on the crystal mass (King, 1964). The mass (and, hence, resonant
+frequency) changes with the adsorption of moisture. A typical
+sensitivity factor is about 1 Hz per A thickness of added material.
+Two crystals are alternately exposed to sample air and dry air. The
+frequency difference between the two is indicated on the analyzer
+scale in parts per million (ppm) water vapor by volume.
+(https://onlinepubs.trb.org/Onlinepubs/nchrp/nchrp_rpt_138.pdf)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+DUPONT SOLID'S MOISTURE ANALYSIS
+- **Source:**
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://onlinepubs.trb.org/Onlinepubs/nchrp/nchrp_rpt_138.pdf, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/moistureanalysis
+
+
+[]{#particlesizedistributionanalysis}
+
+####  Particle size distribution analysis
+- Child of:
+ [`other`](#other)
+- Estimation of a particle size distribution by measuring diameter of
+a set of grains spread on a sample platter.
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/particlesizedistributionanalysis
+
+
+[]{#pointcounting}
+
+####  Point counting
+- Child of:
+ [`other`](#other)
+ [`visiblelightmicroscopy`](#visiblelightmicroscopy)
+- Technique used to determine the proportion of an area that is
+covered by some objects of interest. In most cases the area is a thin
+section or a polished slab. The basic method is to cover the area by a
+grid of points. Then for each of these points, the underlying object
+is identified. Then the estimate for the proportion of the area
+covered by the type of object is based on the fraction of points
+assigned to that object type.
+(https://en.wikipedia.org/wiki/Point_counting_(geology) ). The data
+are typically collected using a microscope.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://en.wikipedia.org/wiki/Point_counting_(geology), 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/pointcounting
+
+
+[]{#particlebeamexcitation}
+
+###  Particle beam excitation
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- Analytical techniques that involve exposing the sample to a beam of
+accelerated particles (ions or electrons), and detecting and
+measureing radiation or emitted particles resulting from interaction
+of the beam with the sample.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ION MICROPROBE ANALYSIS, 
+ION MICROPROBE, 
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/particlebeamexcitation
+
+
+[]{#atom-probe}
+
+####  Atom probe
+- Child of:
+ [`particlebeamexcitation`](#particlebeamexcitation)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/atom-probe
+
+
+[]{#electronenergylossspectrometry}
+
+####  Electron energy loss spectrometry
+- Child of:
+ [`electronspectrometry`](#electronspectrometry)
+ [`particlebeamexcitation`](#particlebeamexcitation)
+- a material is exposed to a beam of electrons with a known, narrow
+range of kinetic energies. Some of the electrons will undergo
+inelastic scattering, which means that they lose energy and have their
+paths slightly and randomly deflected. The amount of energy loss can
+be measured via an electron spectrometer and interpreted in terms of
+what caused the energy loss. With some care, and looking at a wide
+range of energy losses, one can determine the types of atoms, and the
+numbers of atoms of each type, being struck by the beam. The
+scattering angle (that is, the amount that the electron's path is
+deflected) can also be measured, giving information about the
+dispersion relation of whatever material excitation caused the
+inelastic scattering. Most common approach today is transmission EELS,
+in which the incident electrons pass entirely through the material
+sample. Usually this occurs in a transmission electron microscope
+(TEM), although some dedicated systems exist which enable extreme
+resolution in terms of energy and momentum transfer at the expense of
+spatial resolution.
+(https://en.wikipedia.org/wiki/Electron_energy_loss_spectroscopy,
+https://eels.info/about/techniques/eels-0)
+- **Source:**
+https://en.wikipedia.org/wiki/Electron_energy_loss_spectroscopy
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/electronenergylossspectrometry
+
+
+[]{#electronmicroscopyimaging}
+
+####  Electron microscopy imaging
+- Child of:
+ [`imagingtechniques`](#imagingtechniques)
+ [`particlebeamexcitation`](#particlebeamexcitation)
+- Technique that produces images by scanning an electron beam over a
+sample surface and measureing the intensity of electrons emitted from
+or transmitted through the sample.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+AEM, 
+ANAYTICAL ELECTRON MICROSCOPY, 
+SCANNING ELECTRON MICROSCOPE, 
+SCANNING ELECTRON MICROSCOPY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/electronmicroscopyimaging
+
+
+[]{#backscatteredelectrongrainboundarymap}
+
+#####  Backscattered electron grain boundary imaging
+- Child of:
+ [`electronmicroscopyimaging`](#electronmicroscopyimaging)
+- Image showing grain boundaries generated by detecting
+crytallographic orientation changes in a raster of backscattered
+electron diffraction data points.
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/backscatteredelectrongrainboundarymap
+
+
+[]{#backscatteredelectronimaging}
+
+#####  Backscattered electron imaging
+- Child of:
+ [`electronmicroscopyimaging`](#electronmicroscopyimaging)
+- Techniques that involve bombarding a sample with an accelerated
+electron beam to produce backscattered electrons. An image is formed
+by scanning the beam in a raster across the sample surface and
+measuring the intensity (count?) of backscattered electrons at each
+sample point. BSEs are reflected back after elastic interactions
+between the beam and the sample. BSE images show high sensitivity to
+differences in atomic number; the higher the atomic number, the
+brighter the material appears in the image.
+(https://www.thermofisher.com/blog/materials/sem-signal-types-
+electrons-and-the-information-they-provide/)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Backscatter electron microscopy
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/backscatteredelectronimaging
+
+
+[]{#secondaryelectronimaging}
+
+#####  Secondary electron imaging
+- Child of:
+ [`electronmicroscopyimaging`](#electronmicroscopyimaging)
+- Techniques that involve bombarding a sample with an accelerated
+electron or ion beam to produce secondary electrons. An image is
+formed by scanning the beam in a raster across the sample surface and
+measuring the intensity (count?) of secondary electrons emitted at
+each sample point.  Secondary electrons are a result of inelastic
+interactions between the excitation beam and atoms in the sample; they
+originate from the surface region of the sample. Secondary electron
+imaging can provide detailed surface information.
+(https://www.thermofisher.com/blog/materials/sem-signal-types-
+electrons-and-the-information-they-provide/)
+- **Alternate labels:**
+SEM, 
+Secondary electron microscopy, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex, 
+https://www.thermofisher.com/blog/materials/sem-signal-types-electrons-and-the-information-they-provide/, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/secondaryelectronimaging
+
+
+[]{#transmissionelectronimaging}
+
+#####  Transmission electron imaging
+- Child of:
+ [`electronmicroscopyimaging`](#electronmicroscopyimaging)
+- technique in which a beam of electrons is transmitted through a
+specimen to form an image. The specimen is most often an ultrathin
+section less than 100 nm thick or a suspension on a grid. An image is
+formed from the interaction of the electrons with the sample as the
+beam is transmitted through the specimen. Multiple operating modes
+based on electron imaging include conventional imaging, scanning TEM
+imaging (STEM), and electron diffraction.
+(https://en.wikipedia.org/wiki/Transmission_electron_microscopy)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+TEM, 
+Transmission electron microscopy, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://en.wikipedia.org/wiki/Transmission_electron_microscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/transmissionelectronimaging
+
+
+[]{#energyfilteredtransmissionelectronimaging}
+
+######  Energy-filtered transmission electron imaging
+- Child of:
+ [`transmissionelectronimaging`](#transmissionelectronimaging)
+- The principle is to illuminate a very thin specimen with a beam of
+high energy electrons. Some of these electrons will interact with the
+specimen and result in elastic or inelastic scattering. Inelastic
+scattering results in both a loss of energy and a change in momentum,
+which in the case of inner shell ionization, the energy loss is
+characteristic of the element the electron interacted with. After the
+electron energy loss spectrum forms in the energy filter, an
+adjustable energy slit allows only electrons that have not lost energy
+to pass through to form the image. This is known as zero-loss
+filtering. The filtering prevents inelastically scattered electrons
+from contributing to the image plus enhances contrast image and
+resolution. In addition to zero-loss filtering, you can adjust the
+system to select electrons that have lost a specific amount of energy
+to obtain additional contrast effects and compositionally sensitive
+images. (https://eels.info/about/techniques/eftem)
+- **Alternate labels:**
+Energy-filtered transmission electron microscopy
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex, 
+https://eels.info/about/techniques/eftem, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/energyfilteredtransmissionelectronimaging
+
+
+[]{#scanningtransmissionelectronimaging}
+
+######  Scanning transmission electron imaging
+- Child of:
+ [`transmissionelectronimaging`](#transmissionelectronimaging)
+- In STEM the electron beam is focused to a fine spot (with the
+typical spot size 0.05 -- 0.2 nm) which is then scanned over the
+sample in a raster illumination system constructed so that the sample
+is illuminated at each point with the beam parallel to the optical
+axis.
+(https://en.wikipedia.org/wiki/Transmission_electron_microscopy). In
+TEM parallel electron beams are focused perpendicular to the sample
+plane, in STEM the beam is focused at a large angle and is converged
+into a focal point. The transmitted signal is collected as a function
+of the beam location as it is rastered across the sample. There are
+multiple detectors for STEM imaging: 1) BF (bright-field) detector:
+small angles (0-10 mrad). These images are similar to the bright-field
+images obtained using TEM; 2) ADF (annular dark-field ) detector:
+larger angles (10-50 mrad); 3) HAADF (high-angle annular dark-field)
+detector: Angles greater than 50mrad. (https://chem.libretexts.org/Cou
+rses/Franklin_and_Marshall_College/Introduction_to_Materials_Character
+ization__CHM_412_Collaborative_Text/Electron_and_Probe_Microscopy/Tran
+smission_electron_microscopy_(TEM)%3A_TEM_versus_STEM_and_HAADF )
+- **Alternate labels:**
+Scanning transmission electron microscopy
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex, 
+https://en.wikipedia.org/wiki/Transmission_electron_microscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/scanningtransmissionelectronimaging
+
+
+[]{#focusedionbeamscanningmicroscopy}
+
+####  Focused ion beam scanning microscopy
+- Child of:
+ [`imagingtechniques`](#imagingtechniques)
+ [`particlebeamexcitation`](#particlebeamexcitation)
+- Production of images by scanning an ion beam in a raster across a
+sample surface and detecting secondary or backscattered electrons from
+each point to generate an image. Instrument used is typically an
+electron microscope that has an additional ion beam excitation source.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/focusedionbeamscanningmicroscopy
+
+
+[]{#nuclearmicroprobeanalysis}
+
+####  Nuclear microprobe analysis
+- Child of:
+ [`particlebeamexcitation`](#particlebeamexcitation)
+- Technique in which a focused beam of Me V light-mass ions is scanned
+across a sample surface. The most commonly used Me V ion is the
+proton, which is why the Nuclear Microprobe is also sometimes called
+the Scanning Proton Microprobe. However, other MeV light ions can
+generate the same analytical signals as protons, and are preferred for
+some of the analytical techniques described. The focused beam is
+scanned over the sample surface, and the strength of the relevant
+analytical signal is measured at each position in the scanned area to
+generate an image of the sample. There are many different types of
+interaction that can occur when an MeV ion is incident on a sample,
+and each one forms the basis of an analytical technique: Particle-
+Induced X-ray Emission (PIXE), Rutherford Backscattering Spectrometry
+(RBS), Nuclear Reaction Analysis (NRA) -- nuclear reaction products
+such as alpha particles, protons, neutrons, or gamma rays are emitted.
+The energy of these charged reaction products is measured using a
+surface barrier detector . (https://www.annualreviews.org/doi/pdf/10.1
+146/annurev.ns.42.120192.000245)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+NUCLEAR MICROPROBE, 
+PROTON MICROPROBE ANALYSIS, 
+PROTON MICROPROBE, 
+SPM, 
+Scanning Proton Microprobe, 
+scanning proton microscopy (SPM), 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://www.annualreviews.org/doi/pdf/10.1146/annurev.ns.42.120192.000245, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/nuclearmicroprobeanalysis
+
+
+[]{#particleinducedxrayspectrometry}
+
+####  Particle induced X-ray spectrometry
+- Child of:
+ [`particlebeamexcitation`](#particlebeamexcitation)
+ [`xrayspectrometry`](#xrayspectrometry)
+- An X-ray spectrometry technique in which emisssion of X-rays is
+induces by bombarding a spot on the sample with ions or sub-atomic
+particles other than electrons, e.g. neutrons, protons, muons (Chai et
+al, 2021, https://doi.org/10.1515/pac-2019-0302).
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Proton Induced X-ray Emission
+- **Source:**
+https://doi.org/10.1515/pac-2019-0302
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/particleinducedxrayspectrometry
+
+
+[]{#quantitativeanalysisparticleinducedxrayspectrometry}
+
+#####  Quantitative analysis particle induced X-ray spectrometry
+- Child of:
+ [`particleinducedxrayspectrometry`](#particleinducedxrayspectrometry)
+- Within a given sample, once the X-ray intensities of each element of
+interest are "counted" in a detector at a specific beam current, the
+count rates are compared to those of standards containing known values
+of the elements of interest. Counting is typically done using
+wavelength-dispersive spectrometry. In turn, the X-ray intensities
+must be corrected for matrix effects associated with atomic number
+(Z), absorption (A) and fluorescence (F). This correction procedure is
+performed within a computer program that takes the raw counting rates
+of each element, compares these to standards, computes the ZAF
+correction (or similar type of correction) and displays the results as
+a function of the weight % of the oxides or elements.
+(https://serc.carleton.edu/research_education/geochemsheets/wds.html)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+PARTICLE INDUCED X-RAY EMISSION MICROPROBE ANALYSIS, 
+PARTICLE INDUCED X-RAY EMISSION MICROPROBE, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://serc.carleton.edu/research_education/geochemsheets/wds.html), 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/quantitativeanalysisparticleinducedxrayspectrometry
+
+
+[]{#particlecounting}
+
+###  Particle counting
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- Technique that detects and counts photons or particles (neutrons,
+alpha particles) that are spontaneously emitted from a sample due to
+radioactive decay of elements in the sample.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+RADON METHOD can we clarify more???, 
+RADON METHOD, 
+RN-EMANATION ANALYSIS, 
+RN-EMANATION, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/particlecounting
+
+
+[]{#alphaparticlecounting}
+
+####  Alpha particle counting
+- Child of:
+ [`particlecounting`](#particlecounting)
+- The count rate of alpha particles emitted form the surface of a
+sample; used to assess concentration of U, Th, other radiogenic
+elements
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ALPHA COUNTING ISOTOPE DILUTION, 
+ALPHA COUNTING, 
+ALPHA PARTICLE DECAY COUNTING, 
+ALPHA-DECAY COUNTING, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/alphaparticlecounting
+
+
+[]{#betacounting}
+
+####  Beta counting
+- Child of:
+ [`particlecounting`](#particlecounting)
+- detection and quantification of beta-emitting radioactive material.
+Beta counters are used to characterize the decay of short-lived
+radionuclides.
+- **Source:**
+https://doi.org/10.1016/S0376-7388(98)00174-4, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/betacounting
+
+
+[]{#gammacounting}
+
+####  Gamma counting
+- Child of:
+ [`particlecounting`](#particlecounting)
+- counting gamma rays emitted spontaneously from a sample; by looking
+at the the distribution of energy and frequency of the emitted gamma
+rays, the presence of elements emitting those gamma rays can be
+estimated.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/gammacounting
+
+
+[]{#neutroncounting}
+
+####  Neutron counting
+- Child of:
+ [`particlecounting`](#particlecounting)
+- Neutrons from spontaneous fission or induced fission in a sample are
+emitted essentially simultaneously. In many cases it is possible to
+obtain a nearly unique signature for a particular nuclear material.
+The measurement can be made in the presence of neutrons from room
+background or (a,n) reactions because these neutrons are
+noncoincident, or random, in their arrival times.  used to measure the
+quantity of uranium or plutonium present in a sample.
+(https://www.lanl.gov/org/ddste/aldgs/sst-training/_assets/docs/PANDA/
+Principles%20of%20Neutron%20Coincidence%20Counting%20Ch.%2016%20p.%204
+57-492.pdf).   A delayed neutron is a neutron emitted after a nuclear
+fission event, by one of the fission products (or actually, a fission
+product daughter after beta decay), any time from a few milliseconds
+to a few minutes after the fission event.
+(https://en.wikipedia.org/wiki/Delayed_neutron).
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+DELAYED NEUTRON COUNTING, 
+NEUTRON COINCIDENCE COUNTING, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://www.lanl.gov/org/ddste/aldgs/sst-training/_assets/docs/PANDA/Principles%20of%20Neutron%20Coincidence%20Counting%20Ch.%2016%20p.%20457-492.pdf, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/neutroncounting
+
+
+[]{#particleinducedactivationanalysis}
+
+###  Activation analysis
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- Measurement of elemental or isotopic contents in a specified amount
+of a material by irradiation with appropriately chosen penetrating
+radiation, either elementary particles or electromagnetic radiation,
+to induce nuclear reactions in the nuclei of the analyte, producing
+radioactive atoms. Analysis of the radiation emitted by these atoms
+when they decay allows determiniation of the composition of the
+sample. (Chai et al, IUPAC recommendations, 2021,
+https://doi.org/10.1515/pac-2019-0302)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+PARTICULE INDUCED GAMMA-RAY EMISSION ANALYSIS, 
+PARTICULE INDUCED GAMMA-RAY EMISSION, 
+Particle induced activation analysis, 
+- **Source:**
+https://doi.org/10.1515/pac-2019-0302, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/particleinducedactivationanalysis
+
+
+[]{#deuteronactivationanalysis}
+
+####  Deuteron activation analysis
+- Child of:
+ [`particleinducedactivationanalysis`](#particleinducedactivationanalysis)
+- irradiate sample with deuterons, measure gamma ray spectrum
+(https://doi.org/10.1007/BF02520983). Deuterons are nuclei of
+deuterium atoms, consisting of a proton and a neutron.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://doi.org/10.1007/BF02520983, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/deuteronactivationanalysis
+
+
+[]{#neutronactivationanalysis}
+
+####  Neutron activation analysis
+- Child of:
+ [`particleinducedactivationanalysis`](#particleinducedactivationanalysis)
+- method based on the measurement of the radioactivity or radiation
+produced in samples when they are irradiated with neutrons  (Skoog,
+Holler & Crouch, p. 842). Quantification of the elemental nuclei of
+interest is usually performed by gamma ray spectroscopy (high
+resolution germanium detector), or by beta counting (low background
+proportional or liquid scintillation counting) when pure beta emitters
+are measured.  Quantification of elements is accomplished by
+comparison with standards typically processed in the same manner.
+(https://www.nist.gov/laboratories/tools-instruments/instrumental-
+neutron-activation-analysis-inaa, https://serc.carleton.edu/research_e
+ducation/geochemsheets/techniques/INAA.html).  Components: 1) sample
+irradiation 2) gamma ray spectrometry
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch, 
+https://serc.carleton.edu/research_education/geochemsheets/techniques/INAA.html, 
+https://www.nist.gov/laboratories/tools-instruments/instrumental-neutron-activation-analysis-inaa, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/neutronactivationanalysis
+
+
+[]{#epithermalneutronactivationanalysis}
+
+#####  Epithermal neutron activation analysis
+- Child of:
+ [`neutronactivationanalysis`](#neutronactivationanalysis)
+- method based on the measurement of the radioactivity or radiation
+produced in samples when they are irradiated with neutrons  (Skoog,
+Holler & Crouch, p. 842). Epithermal neutrons have energies greater
+than thermal neutrons, but less than fast neutrons,  0.5 eV to 0.5
+MeV.  They can be described as incompletely moderated neutrons which
+are destined to become thermalised.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/epithermalneutronactivationanalysis
+
+
+[]{#fastneutronactivationanalysis}
+
+#####  Fast neutron activation analysis
+- Child of:
+ [`neutronactivationanalysis`](#neutronactivationanalysis)
+- Method based on reactions with high-energy (14MeV) neutrons produced
+by a specialized small accelerator known as a neutron generator.  FNAA
+is a rapid non-destructive technique used for the determination of
+lighter elements such as Nitrogen and Oxygen, and can routinely
+achieve precisions of 1-2% RSD of complex matrices.
+(https://elementalanalysis.com/naa/)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smrAdd, 
+https://elementalanalysis.com/naa/, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/fastneutronactivationanalysis
+
+
+[]{#instrumentalneutronactivationanalysis}
+
+#####  Instrumental neutron activation analysis
+- Child of:
+ [`neutronactivationanalysis`](#neutronactivationanalysis)
+- method based on the measurement of the radioactivity or radiation
+produced in samples when they are irradiated with neutrons  (Skoog,
+Holler & Crouch, p. 842). Quantification of the elemental nuclei of
+interest is usually performed by gamma ray spectroscopy.
+Quantification of elements is accomplished by comparison with
+standards typically processed in the same manner.
+(https://www.nist.gov/laboratories/tools-instruments/instrumental-
+neutron-activation-analysis-inaa, https://serc.carleton.edu/research_e
+ducation/geochemsheets/techniques/INAA.html).   Instrumental indicates
+that no chemical pretreatment is performed on the sample prior to the
+irradiation process.  The samples are simply packaged, irradiated for
+the specified length of time, allowed to decay, then counted, and the
+element results verified and reported.
+(https://elementalanalysis.com/naa/). Components: 1) sample
+irradiation 2) gamma ray spectrometry
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch, 
+https://serc.carleton.edu/research_education/geochemsheets/techniques/INAA.html, 
+https://www.nist.gov/laboratories/tools-instruments/instrumental-neutron-activation-analysis-inaa, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/instrumentalneutronactivationanalysis
+
+
+[]{#pigsneutronactivationanalysis}
+
+#####  Pre irradiation group concentration neutron activation analysis
+- Child of:
+ [`neutronactivationanalysis`](#neutronactivationanalysis)
+- A pre-irradiation group concentration method invovling analysis of
+REE relative to samarium (Sm).  The sample is split in two portions.
+Sm and Nd content of the rock is determined by mass spectrometry
+isotope dilution analysis on one split. The other split is  further
+purified for REE by cation-exchange, and is used to determine the
+abundance of REE relative to Sm by NAA. The REE content of the rock is
+found by normalization to Sm content determined by mass spectrometry
+in the first portion. The result are directly comparable to REE
+analyzed by conventional INAA.
+(https://doi.org/10.1016/0009-2541(90)90036-7,
+https://doi.org/10.1002/gj.907, http://dx.doi.org/10.1007/BF02055022)
+- **Alternate labels:**
+PRE-IRRADIATION GROUP CONCENTRATION ANALYSIS, 
+PRE-IRRADIATION GROUP CONCENTRATION METHOD, 
+Pre irradiation group concentration neutron activation analysis, 
+- **Source:**
+https://doi.org/10.1002/gj.907, 
+https://doi.org/10.1007/BF02055022, 
+https://doi.org/10.1016/0009-2541(90)90036-7, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/pigsneutronactivationanalysis
+
+
+[]{#promptgammaneutronactivationanalysis}
+
+#####  Prompt gamma neutron activation analysis
+- Child of:
+ [`neutronactivationanalysis`](#neutronactivationanalysis)
+- NAA technique based on measurement of the gamma rays emitted during
+irradiation of the sample. (Skoog, Holler & Crouch, p. 842)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Neutron-induced prompt gamma-ray analysis, 
+PROMPT-GAMMA NEUTRON ACTIVATION ANALYSIS, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/promptgammaneutronactivationanalysis
+
+
+[]{#radiochemicalneutronactivationanalysis}
+
+#####  Radiochemical neutron activation analysis
+- Child of:
+ [`neutronactivationanalysis`](#neutronactivationanalysis)
+ [`wetchemistry`](#wetchemistry)
+- A method of NAA in which chemical separations are applied after the
+irradiation to separate activities of interest from interfering
+activities. (https://indico.cern.ch/event/716552/sessions/310934/attac
+hments/1848163/3033363/MonicaSisti_LRT2019.pdf slide 6,
+https://www.nist.gov/laboratories/tools-instruments/radiochemical-
+neutron-activation-analysis-rnaa; Chai et al, 2021,
+https://doi.org/10.1515/pac-2019-0302). Components: 1) sample
+irradiation 2) chemical processing 3) gamma ray spectrometry
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+DESTRUCTIVE NEUTRON ACTIVATION ANALYSIS, 
+RADIOANALYTICAL NEUTRON ACTIVATION, 
+destructive activation analysis, 
+- **Source:**
+https://doi.org/10.1515/pac-2019-0302, 
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://www.nist.gov/laboratories/tools-instruments/radiochemical-neutron-activation-analysis-rnaa, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/radiochemicalneutronactivationanalysis
+
+
+[]{#thermalneutronactivationanalysis}
+
+#####  Thermal neutron activation analysis
+- Child of:
+ [`neutronactivationanalysis`](#neutronactivationanalysis)
+- method based on the measurement of the radioactivity or radiation
+produced in samples when they are irradiated with neutrons  (Skoog,
+Holler & Crouch, p. 842). Thermal neutrons have energies less than
+epithermal  neutrons in the 0.1 to  0.5 eV range (based on
+https://elementalanalysis.com/naa/).
+- **Source:**
+https://doi.org/10.1081/ASR-120004372
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/thermalneutronactivationanalysis
+
+
+[]{#photonactivationanalysis}
+
+####  Photon activation analysis
+- Child of:
+ [`particleinducedactivationanalysis`](#particleinducedactivationanalysis)
+- Activation of a sample with high-energy photons (gamma rays) to
+induce production of radionucleides that emit gamma radiation on
+decay; the decay-related gamma-ray spectrum is interpreted to
+determine composition of the sample
+(https://doi.org/10.3390/min11060617)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+PAA
+- **Source:**
+https://doi.org/10.3390/min11060617, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/photonactivationanalysis
+
+
+[]{#instrumental-photon-activation-analysis}
+
+#####  Instrumental photon activation analysis
+- Child of:
+ [`photonactivationanalysis`](#photonactivationanalysis)
+- **Alternate labels:**
+IPAA
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/instrumental-photon-activation-analysis
+
+
+[]{#photometry}
+
+###  Photometry
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- measurement of the luminance, luminous intensity, or luminance of a
+light source;  with an output weighted by the wavelength response of
+the human eye. (Source: NASA; UUID;
+806d0bc3-8d08-4418-800b-972292f3db99)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/geox, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/photometry
+
+
+[]{#infraredphotometry}
+
+####  Infrared photometry
+- Child of:
+ [`photometry`](#photometry)
+- measurement of the luminance, luminous intensity, or luminance of an
+infrared light source;
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/infraredphotometry
+
+
+[]{#infraredreflectance}
+
+####  Infrared reflectance
+- Child of:
+ [`photometry`](#photometry)
+- measurement of the luminance, luminous intensity, or luminance of
+infrared light light reflected from a sample;
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+INFRARED REFLECTION MOISTURE ANALYSIS
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/infraredreflectance
+
+
+[]{#physicalpropertymeasurement}
+
+###  Physical property measurement
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- Various techniques used to measure the physical properties of a
+sample.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/physicalpropertymeasurement
+
+
+[]{#adsorptionanalysis}
+
+####  Adsorption analysis
+- Child of:
+ [`physicalpropertymeasurement`](#physicalpropertymeasurement)
+- The gas adsorption technique may used to measure the specific
+surface area and pore size distribution of powdered or solid
+materials. The dry sample is usually evacuated of all gas and cooled
+to a temperature of 77K, the temperature of liquid nitrogen. At this
+temperature inert gases such as nitrogen, argon and krypton will
+physically adsorb on the surface of the sample. This adsorption
+process can be considered to be a reversible condensation or layering
+of molecules on the sample surface during which heat is evolved.
+Nitrogen gas is ideal for measuring surface area and pore size
+distribution.
+(http://www.cyto.purdue.edu/cdroms/cyto2/6/coulter/ss000107.htm)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ADSORPTION
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+http://www.cyto.purdue.edu/cdroms/cyto2/6/coulter/ss000107.htm, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/adsorptionanalysis
+
+
+[]{#angleofreposemeasurement}
+
+####  Angle of repose measurement
+- Child of:
+ [`physicalpropertymeasurement`](#physicalpropertymeasurement)
+- A granular sample is poured to create a cone or slope at the maximum
+angle of stability. This slope could be directly measured with a angle
+tool, or better yet should be analyzed from a 3d reconstruction of the
+scene. Various techniques might be used to reconstruct the shape of
+the cone.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/angleofreposemeasurement
+
+
+[]{#atomicforcemicroscopy}
+
+####  Atomic force microscopy
+- Child of:
+ [`physicalpropertymeasurement`](#physicalpropertymeasurement)
+- a high-resolution, non-optical imaging technique that uses a
+cantilever with a sharp tip to scan over a sample surface. AFM can be
+used to image almost any type of surface, including polymers,
+ceramics, composites, glass, and biological samples. AFM can also be
+used to measure and localize many different forces, including adhesion
+strength, magnetic forces, and mechanical properties.
+- **Source:**
+<https://w3id.org/geochem/1.0/agent/orex>, 
+https://en.wikipedia.org/wiki/Atomic_force_microscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/atomicforcemicroscopy
+
+
+[]{#afmtopographyimaging}
+
+#####  AFM topography imaging
+- Child of:
+ [`atomicforcemicroscopy`](#atomicforcemicroscopy)
+ [`imagingtechniques`](#imagingtechniques)
+ [`surfaceanalysis`](#surfaceanalysis)
+- A sharp probe tip mounted on a microcantilever scans over the
+specimen line by line, whereby the topographic image of the sample
+surface is generated by 'feeling' rather than 'looking.'
+(https://doi.org/10.1007/978-3-642-16712-6_496).  As the tip
+approaches the surface, the close-range, attractive forces between the
+surface and the tip causes the cantilever to deflect towards the
+surface. However, as the cantilever is brought even closer to the
+surface, until the tip makes contact with it, increasingly repulsive
+forces takes over and causes the cantilever to deflect away from the
+surface. (https://lnf-
+wiki.eecs.umich.edu/wiki/Atomic_force_microscopy)
+- **Source:**
+https://doi.org/10.1007/978-3-642-16712-6_496, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://lnf-wiki.eecs.umich.edu/wiki/Atomic_force_microscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/afmtopographyimaging
+
+
+[]{#particlecohesiondetermination}
+
+#####  Particle cohesion determination
+- Child of:
+ [`atomicforcemicroscopy`](#atomicforcemicroscopy)
+- Measurement of cohesive force between dust-sized particles that are
+close or in direct contact is measured with an Atomic Force
+Microprobe. One particle is affixed to the pin on the cantilever arm
+of an AFM, while the second particle is fixed to a substrate.
+Particles should be characterized in SEM to determine particle shape
+and local radii at size of contact.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/particlecohesiondetermination
+
+
+[]{#capacitancedilatometry}
+
+####  Capacitance dilatometry
+- Child of:
+ [`physicalpropertymeasurement`](#physicalpropertymeasurement)
+- Measurement of the linear coefficient of thermal expansion in a
+solid material, using  a parallel plate capacitor with a one
+stationary plate, and one moveable plate. When the sample length
+changes, it moves the moveable plate, which changes the gap between
+the plates. The capacitance is inversely proportional to the gap.
+Changes in length of 10 picometres can be detected.
+(https://en.wikipedia.org/wiki/Dilatometer)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex, 
+https://en.wikipedia.org/wiki/Dilatometer, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/capacitancedilatometry
+
+
+[]{#compressiontest}
+
+####  Compression test
+- Child of:
+ [`physicalpropertymeasurement`](#physicalpropertymeasurement)
+- Uniaxial squeezing a single mm to sub-mm sample particle between two
+rigid metallic pistons for quantitative determination of mechanical
+properties (elastic modulus, crushing strength, critical flaw length
+at failure, and fracture behavior).
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/compressiontest
+
+
+[]{#directshearstrengthmeasurement}
+
+####  Direct shear strength measurement
+- Child of:
+ [`physicalpropertymeasurement`](#physicalpropertymeasurement)
+- A shear stress is applied to a cubic sample until it fails
+(subdivides) by shear fracturing. The ultimate shear strength of the
+sample is determined from the peak of the resulting shear stress
+versus shear displacement curve
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/directshearstrengthmeasurement
+
+
+[]{#gaspycnometry}
+
+####  Gas pycnometry
+- Child of:
+ [`physicalpropertymeasurement`](#physicalpropertymeasurement)
+- Measurement of the volume of a solid object, employing some method
+of gas displacement and the volume:pressure relationship known as
+Boyle's Law. The methods uses two chambers, one (with a removable gas-
+tight lid) to hold the sample and a second chamber of fixed, known
+(via calibration) internal volume -- referred to as the reference
+volume or added volume. The device has a valve to admit a gas under
+pressure to one of the chambers, a pressure measuring device --
+usually a transducer -- connected to the first chamber, a valved
+pathway connecting the two chambers, and a valved vent from the second
+of the chambers. The volume of the sample is calculated from the known
+volumne of the empty sample chamber, the volume of the reference
+volume chamber, the pressure after gas is admitted to the sample
+chamber, and the pressure after expansion of the gas into both
+chambers. (https://en.wikipedia.org/wiki/Gas_pycnometer)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+helium pycnometer
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex, 
+https://en.wikipedia.org/wiki/Gas_pycnometer, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/gaspycnometry
+
+
+[]{#manometry}
+
+####  Manometry
+- Child of:
+ [`physicalpropertymeasurement`](#physicalpropertymeasurement)
+- measurement of the pressure of gases or vapors
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+EXTRACTION HYDROGEN MANOMETRY
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/manometry
+
+
+[]{#nanoindentationandmicroindentation}
+
+####  Nanoindentation and microindentation
+- Child of:
+ [`physicalpropertymeasurement`](#physicalpropertymeasurement)
+- determine mechanical properties of materials from the load versus
+displacement curves as a micro indentor is pressed into the sample
+surface
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+  * ["https://osiris-rex.atlassian.net/wiki/spaces/SDPD/pages/526188545"](https://osiris-rex.atlassian.net/wiki/spaces/SDPD/pages/526188545)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/nanoindentationandmicroindentation
+
+
+[]{#porosimetry}
+
+####  Porosimetry
+- Child of:
+ [`physicalpropertymeasurement`](#physicalpropertymeasurement)
+- Porosimetry is an analytical technique used to determine various
+quantifiable aspects of a material's porous structure, such as pore
+diameter, total pore volume, surface area, and bulk and absolute
+densities. (https://en.wikipedia.org/wiki/Porosimetry)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddinstmethodsgeox, 
+https://en.wikipedia.org/wiki/Porosimetry, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/porosimetry
+
+
+[]{#seismicvelocitiesandrockultrasonicelasticconstants}
+
+####  Seismic velocity and ultrasonic elastic constant measurement
+- Child of:
+ [`physicalpropertymeasurement`](#physicalpropertymeasurement)
+- The compression (p) and shear (s) wave velocities in rock may be
+determined using a pulse generator and p and s-wave ultrasonic
+transducers.  The transducers are placed on opposite sides of a rock
+slab and the transit time is measured. (OSIRIS-REx confluence)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Seismic velocities and rock ultrasonic elastic constants
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/seismicvelocitiesandrockultrasonicelasticconstants
+
+
+[]{#tensiometry}
+
+####  Tensiometry
+- Child of:
+ [`physicalpropertymeasurement`](#physicalpropertymeasurement)
+- measurement of soil moisture tension in the vadose zone, typically
+using a tensiometer.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddinstmethodsgeox
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/tensiometry
+
+
+[]{#thermalanalysis}
+
+####  Thermal analysis
+- Child of:
+ [`physicalpropertymeasurement`](#physicalpropertymeasurement)
+- analysis techniques that measure the thermal properties of a sample,
+e.g. conductivity, specific heat.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/thermalanalysis
+
+
+[]{#differentialscanningcalorimetry}
+
+#####  Differential scanning calorimetry
+- Child of:
+ [`thermalanalysis`](#thermalanalysis)
+- Technique where either  the difference between heat flow rates into
+a sample and a reference material is measured (heat-flow DSC) or the
+difference between the electrical powers into a sample and a reference
+material is measured (power compensation DSC). (Source: IUPAC;
+https://doi.org/10.1515/pac-2012-0609).   A technique in which the
+difference in the amount of heat required to increase the temperature
+of a sample and reference is measured as a function of temperature.
+Both the sample and reference are maintained at nearly the same
+temperature throughout the experiment. Generally, the temperature
+program for a DSC analysis is designed such that the sample holder
+temperature increases linearly as a function of time. The reference
+sample should have a well-defined heat capacity over the range of
+temperatures to be scanned. By observing the difference in heat flow
+between the sample and reference, differential scanning calorimeters
+are able to measure the amount of heat absorbed or released during
+phase transitions. DSC may also be used to observe more subtle
+physical changes, such as glass transitions. It is widely used in
+industrial settings as a quality control instrument due to its
+applicability in evaluating sample purity and for studying polymer
+curing.
+(https://en.wikipedia.org/wiki/Differential_scanning_calorimetry)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Heat-flow DSC, 
+Power compensation DSC, 
+xDSC, 
+- **Source:**
+https://doi.org/10.1515/pac-2012-0609, 
+https://w3id.org/geochem/1.0/agent/geox, 
+https://w3id.org/geochem/1.0/agent/orex, 
+DFG, 
+https://en.wikipedia.org/wiki/Differential_scanning_calorimetry, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/differentialscanningcalorimetry
+
+
+[]{#differentialthermalanalyis}
+
+#####  Differential thermal analysis
+- Child of:
+ [`thermalanalysis`](#thermalanalysis)
+- Differential thermal analysis (DTA) is a technique in which the
+material under study and an inert reference are made to undergo
+identical thermal cycles, (i.e., same cooling or heating programme)
+while recording any temperature difference between sample and
+reference. This differential temperature is then plotted against time,
+or against temperature (DTA curve, or thermogram). Changes in the
+sample, either exothermic or endothermic, can be detected relative to
+the inert reference. Thus, a DTA curve provides data on the
+transformations that have occurred, such as glass transitions,
+crystallization, melting and sublimation. The area under a DTA peak is
+the enthalpy change and is not affected by the heat capacity of the
+sample. DTA is similar to differential scanning calorimetry.
+- **Alternate labels:**
+Differential analyzer
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/differentialthermalanalyis
+
+
+[]{#inductionheatinganalysis}
+
+#####  Induction heating analysis
+- Child of:
+ [`thermalanalysis`](#thermalanalysis)
+- a technique for evaluation of the self-heating characteristics of
+particles? [based on interpretation of
+https://pubs.acs.org/doi/10.1021/acsomega.0c03332, not much online
+about this technique]. See also
+https://iris.unipv.it/bitstream/11571/1178389/6/After_revision.pdf .
+[would appear to be methods of analyzing the effectiveness of heating
+objects by electromagnetic induction] 'Induction heating (IH) is
+commonly used for heating and heat treatment. An accurate prediction
+of temperature distribution is required to optimize the heating
+parameters.... temperature-dependent B (magnetic flux density)-H
+(magnetic field strength) curves and changes in phase transformation
+under rapid heating were measured and used for IH analysis' (
+https://doi.org/10.2355/isijinternational.ISIJINT-2018-552)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+INDUCTION HEATING
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/inductionheatinganalysis
+
+
+[]{#lockinthermography}
+
+#####  Lock in thermography
+- Child of:
+ [`thermalanalysis`](#thermalanalysis)
+- The principle of lock-in thermography is based on the application of
+a periodic input energy wave (i.e. thermal emitter, ultrasound,
+microwave, eddy current, flash or xenon lamp, halogen lamp, or laser)
+to the surface of the object being examined and analyzing the
+resulting local temperatures on the surface of the object using an
+infrared camera. When the input energy wave penetrates the object's
+surface, is it absorbed and phase shifted. When the input wave reaches
+areas within the object where the thermophysical properties are not
+homogeneous in relation to the surrounding material, (i.e. at
+delaminations or inclusions), the input wave is partially reflected.
+The reflected portion of the wave interferes with the incoming input
+wave at the surface of the object, causing an interference pattern in
+the local surface temperature, which oscillates at the same frequency
+as the thermal wave. The internal structure of the object being
+examined can then be derived by evaluating the phase shift of the
+local surface temperatures in relation to the input energy wave. The
+ability to derive internal thermophysical inconsistencies within the
+object, however, requires that the input energy source be used at an
+optimal frequency, which depends on both the thermophysical
+characteristics of the object as well as its thickness.
+(https://movitherm.com/knowledgebase/what-is-lock-in-thermography/)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex, 
+https://movitherm.com/knowledgebase/what-is-lock-in-thermography/, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/lockinthermography
+
+
+[]{#minicryogenfreemeasurementsystemforthermalconductivity}
+
+#####  Mini cryogen free measurement system for thermal conductivity
+- Child of:
+ [`thermalanalysis`](#thermalanalysis)
+- measure the bulk thermal conductivity of a bar-shaped sample
+specimen across a wide range of temperatures, producing a table with
+thermal conductivity vs temperature. (OSIRIS-REx confluence).  The
+label implies that the technique measures thermal conductivity at low
+temperatures, using a device that does not require liquid nitrogen or
+liquid helium for cooling. [need more information]
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/minicryogenfreemeasurementsystemforthermalconductivity
+
+
+[]{#sphericalcellbulkthermalconductivityanalysis}
+
+#####  Spherical cell bulk thermal conductivity analysis
+- Child of:
+ [`thermalanalysis`](#thermalanalysis)
+- Technique for measuring thermal conductivity, results based on a
+finite element model of observation data.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/sphericalcellbulkthermalconductivityanalysis
+
+
+[]{#thermogravimetryanalysis}
+
+#####  Thermogravimetry analysis
+- Child of:
+ [`thermalanalysis`](#thermalanalysis)
+- Thermogravimetric analysis is a method in which the mass of a sample
+is measured over time as the temperature changes. This measurement
+provides information about physical phenomena, such as phase
+transitions, absorption, adsorption and desorption; as well as
+chemical phenomena including chemisorptions, thermal decomposition,
+and solid-gas reactions (e.g., oxidation or reduction). The
+thermogravimetric data collected from a thermal reaction is compiled
+into a plot of mass or percentage of initial mass on the y axis versus
+either temperature or time on the x-axis. This plot can be used for
+materials characterization through analysis of characteristic
+decomposition patterns.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+THERMOGRAVIMETRIC AND DIFFERENTIAL ANALYZER, 
+Thermogravimetric analysis, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/thermogravimetryanalysis
+
+
+[]{#spectrometry}
+
+###  Spectroscopy and Spectrometry
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- any of various analytical techniques in which an emission (as of
+particles or radiation) is dispersed according to some property (such
+as mass, energy, or wavelength) of the emission and the amount of
+dispersion is measured (https://www.merriam-
+webster.com/dictionary/spectrometry)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+SPECTROCHEMISTRY, 
+SPECTROGRAPHIC ANALYSIS, 
+SPECTROGRAPHY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://www.merriam-webster.com/dictionary/spectrometry, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/spectrometry
+
+
+[]{#nuclearmagneticresonancespectrometry}
+
+####  Nuclear magnetic resonance spectrometry
+- Child of:
+ [`spectrometry`](#spectrometry)
+- Measurement principle of spectroscopy to measure the precession of
+magnetic moments placed in a magnetic induction based on absorption of
+electromagnetic radiation of a specific frequency by an atomic
+nucleus. Nuclei having a suitable magnetic moment include
+<sup>1</sup>H, <sup>13</sup>C, <sup>15</sup>N, <sup>19</sup>F,
+<sup>31</sup>P. The technique is used as a method of determining
+structure of organic molecules, or as a mechanism for quantification.
+(Source: IUPAC; https://iupac.org/wp-content/uploads/2019/10/PAC-
+REC-19-02-03.R2_PR191002MC.pdf). A spectroscopic technique that
+observes the signal produced by nuclear magnetic resonance of the
+atomic nuclei in a sample when exposed to excitation by radio waves.
+The signal is related to local magnetic fields around atomic nuclei.
+The intramolecular magnetic field around an atom in a molecule changes
+the resonance frequency, thus giving access to details of the
+electronic structure of a molecule and its individual functional
+groups. The electromagnetic waves emitted by the nuclei of the sample
+as a result of perturbation by a weak oscillating magnetic field are
+detected with sensitive radio receivers. Upon excitation of the sample
+with a radio frequency (60--1000 MHz) pulse, a nuclear magnetic
+resonance response - a free induction decay (FID) - is obtained. It is
+a very weak signal, and requires sensitive radio receivers to pick up.
+A Fourier transform is carried out to extract the frequency-domain
+spectrum from the raw time-domain FID. As the fields are unique or
+highly characteristic to individual compounds NMR spectroscopy is the
+definitive method to identify monomolecular organic compounds.
+https://en.wikipedia.org/wiki/Nuclear_magnetic_resonance_spectroscopy
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Nuclear magnetic resonance spectroscopy, 
+Nuclear magnetic resonance, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/geox, 
+https://w3id.org/geochem/1.0/agent/orex, 
+DFG, 
+https://en.wikipedia.org/wiki/Nuclear_magnetic_resonance_spectroscopy, 
+https://iupac.org/wp-content/uploads/2019/10/PAC-REC-19-02-03.R2_PR191002MC.pdf, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/nuclearmagneticresonancespectrometry
+
+
+[]{#fourier-transform-nuclear-magnetic-resonance}
+
+#####  Fourier transform nuclear magnetic resonance
+- Child of:
+ [`nuclearmagneticresonancespectrometry`](#nuclearmagneticresonancespectrometry)
+- **Alternate labels:**
+FT-NMR
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/fourier-transform-nuclear-magnetic-resonance
+
+
+[]{#solidstatenuclearmagneticresonancespectroscopy}
+
+#####  Solid state nuclear magnetic resonance spectroscopy
+- Child of:
+ [`nuclearmagneticresonancespectrometry`](#nuclearmagneticresonancespectrometry)
+- Solid-state nuclear magnetic resonance (NMR) spectroscopy is an
+atomic-level method to determine the chemical structure, 3D structure
+and dynamics of solids and semi-solids. The nuclear spin interactions
+and the effects of magnetic fields and radiofrequency pulses on
+nuclear spins in solid-state NMR are the same as in liquid-state NMR
+spectroscopy. However, because of the orientation dependence of the
+nuclear spin interactions in the solid state, the majority of high-
+resolution solid-state NMR spectra are measured under magic-angle
+spinning (MAS), which has profound effects on the types of
+radiofrequency pulse sequences required to extract structural and
+dynamical information. (https://doi.org/10.1038/s43586-020-00002-1,
+https://en.wikipedia.org/wiki/Solid-state_nuclear_magnetic_resonance)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Solid state nuclear magnetic resonance spectrometry
+- **Source:**
+https://doi.org/10.1038/s43586-020-00002-1, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://en.wikipedia.org/wiki/Solid-state_nuclear_magnetic_resonance, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/solidstatenuclearmagneticresonancespectroscopy
+
+
+[]{#particlespectrometry}
+
+####  Particle spectrometry
+- Child of:
+ [`spectrometry`](#spectrometry)
+- Analysis of the energy distribution of particles emitted from a
+sample.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/particlespectrometry
+
+
+[]{#alphaparticlespectrometry}
+
+#####  Alpha particle spectrometry
+- Child of:
+ [`particlespectrometry`](#particlespectrometry)
+- Analysis of the energy of alpha particles emitted by a radioactive
+nuclide that is an alpha emitter. As emitted alpha particles are mono-
+energetic (i.e. not emitted with a spectrum of energies, such as beta
+decay) with energies often distinct to the decay they can be used to
+identify which radionuclide they originated from.
+(https://en.wikipedia.org/wiki/Alpha-particle_spectroscopy)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Alpha spectrometry, 
+ISOTOPE-DILUTION ALPHA-SPECTROMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://en.wikipedia.org/wiki/Alpha-particle_spectroscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/alphaparticlespectrometry
+
+
+[]{#electronspectrometry}
+
+#####  Electron spectrometry
+- Child of:
+ [`particlespectrometry`](#particlespectrometry)
+- Analysis based on measuring the energy of electrons emitted from or
+that have interacted with a sample. Particular kinds of interactions
+and emission processes can be related to particular constituents in
+the sample.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/electronspectrometry
+
+
+[]{#augerelectronspectroscopy}
+
+######  Auger electron spectroscopy
+- Child of:
+ [`electronspectrometry`](#electronspectrometry)
+- a form of electron spectroscopy that relies on the Auger effect,
+based on the analysis of energetic electrons emitted from an excited
+atom after a series of internal relaxation events.Surface sensitivity
+in Auger electron spectroscopy (AES) arises from the fact that emitted
+electrons usually have energies ranging from 50 eV to 3 keV and at
+these values, electrons have a short mean free path in a solid. The
+escape depth of electrons is therefore localized to within a few
+nanometers of the target surface, giving AES an extreme sensitivity to
+surface species
+(https://en.wikipedia.org/wiki/Auger_electron_spectroscopy)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://en.wikipedia.org/wiki/Auger_electron_spectroscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/augerelectronspectroscopy
+
+
+[]{#electronenergylossspectrometry}
+
+######  Electron energy loss spectrometry
+- Child of:
+ [`electronspectrometry`](#electronspectrometry)
+ [`particlebeamexcitation`](#particlebeamexcitation)
+- a material is exposed to a beam of electrons with a known, narrow
+range of kinetic energies. Some of the electrons will undergo
+inelastic scattering, which means that they lose energy and have their
+paths slightly and randomly deflected. The amount of energy loss can
+be measured via an electron spectrometer and interpreted in terms of
+what caused the energy loss. With some care, and looking at a wide
+range of energy losses, one can determine the types of atoms, and the
+numbers of atoms of each type, being struck by the beam. The
+scattering angle (that is, the amount that the electron's path is
+deflected) can also be measured, giving information about the
+dispersion relation of whatever material excitation caused the
+inelastic scattering. Most common approach today is transmission EELS,
+in which the incident electrons pass entirely through the material
+sample. Usually this occurs in a transmission electron microscope
+(TEM), although some dedicated systems exist which enable extreme
+resolution in terms of energy and momentum transfer at the expense of
+spatial resolution.
+(https://en.wikipedia.org/wiki/Electron_energy_loss_spectroscopy,
+https://eels.info/about/techniques/eels-0)
+- **Source:**
+https://en.wikipedia.org/wiki/Electron_energy_loss_spectroscopy
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/electronenergylossspectrometry
+
+
+[]{#xrayphotoelectronspectrometery}
+
+######  X-ray photoelectron spectrometery
+- Child of:
+ [`electronspectrometry`](#electronspectrometry)
+- Technique based on irradiation of the sample surface with
+monochromatic X-radiation (Skoog, Holler, Crouch p540) resulting in
+emission of electrons. The emitted electron energy spectra are
+obtained and chemical states are inferred from the measurement of the
+kinetic energy and the number of the ejected electrons. A typical XPS
+spectrum is a plot of the number of electrons detected at a specific
+binding energy. Each element produces a set of characteristic XPS
+peaks. These peaks correspond to the electron configuration of the
+electrons within the atoms, e.g., 1s, 2s, 2p, 3s, etc. The number of
+detected electrons in each peak is directly related to the amount of
+element within the XPS sampling volume. XPS requires high vacuum
+(residual gas pressure p ~ 10-6 Pa) or ultra-high vacuum (p less than
+10-7 Pa) conditions.
+(https://en.wikipedia.org/wiki/X-ray_photoelectron_spectroscopy)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+X-RAY PHOTOELECTRON SPECTROSCOPY
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch, 
+https://en.wikipedia.org/wiki/X-ray_photoelectron_spectroscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/xrayphotoelectronspectrometery
+
+
+[]{#massspectrometry}
+
+#####  Mass spectrometry
+- Child of:
+ [`particlespectrometry`](#particlespectrometry)
+- Study of matter through the formation of gas-phase ions that are
+characterized using mass spectrometers by their mass, charge,
+structure, and/or physico-chemical properties. (Source: IUPAC;
+https://doi.org/10.1351/PAC-REC-06-04-06). Atomic mass spectrometric
+analysis involves: (1) atomization, (2) conversion of a substantial
+fraction of the atoms formed in step 1 to a stream of ions (usually
+singly charged positive ions), (3) separating the ions formed in step
+2 on the basis of their mass-to-charge ratio (m/z), where m is the
+mass number of the ion and z is the number of fundamental charges that
+it bears, and (4) counting the number of ions of each type or
+measuring the ion current produced when the ions formed from the
+sample strike a suitable transducer.  (Skoog, Holler & Crouch, p.
+253).  Molecular mass spectrometry is used to determine the structures
+of inorganic, organic, and biological molecules and the qualitative
+and quantitative composition of complex mixtures; The appearance of
+mass spectra for a given molecular species strongly depends on the
+method used for ion formation. That these methods fall into three
+major categories: gas-phase sources, desorption sources, and ambient
+desorption sources. (Skoog, Holler & Crouch, p. 502)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ISOTOPE-DILUTION MASS SPECTROMETRY, 
+ISOTOPE-RATIO MASS SPECTROMETRY, 
+MASS SPECTROMETRY ISOTOPE DILUTION, 
+- **Source:**
+https://doi.org/10.1351/PAC-REC-06-04-06, 
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch, 
+https://w3id.org/geochem/1.0/analyticalmethod/smrAddGeneralGeoX, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/massspectrometry
+
+
+[]{#acceleratormassspectrometry}
+
+######  Accelerator mass spectrometry
+- Child of:
+ [`massspectrometry`](#massspectrometry)
+- In this technique, the target element is first chemically separated
+from the sample before it is placed in a sample holder in the AMS
+instrument. The sample element is then bombarded by cesium ions to
+sputter the analyte element from the sample as negative ions. The
+analyte ions are then accelerated down a beam tube by a positive
+potential difference of several million volts, passed through an
+electron stripper to convert them to positive ions, and accelerated
+back down the beam tube toward common potential where ion velocities
+approach a few percent of the speed of light. Using a series of
+magnetic and electrostatic mass filters, the ion beam containing all
+isotopes of the analyte element is then separated into separate beams
+containing the (usually unstable) isotope of interest and other
+isotopes, and each of the isotopes is counted by a separate detector.
+(Skoog, Holler & Crouch, p. 271). Components: 1) sample preparation:
+chemical concentration of analyte; 2) ionization: ion beam; 3) mass
+analyzer: accelerator Mass spectrometer; 4) detector: not specified.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/acceleratormassspectrometry
+
+
+[]{#elementalanalysismassspectrometry}
+
+######  Elemental analysis mass spectrometry
+- Child of:
+ [`elementalanalysis`](#elementalanalysis)
+ [`massspectrometry`](#massspectrometry)
+- Mass spectrometry method that uses an elemental analyzer (typically
+a pyrolysis process to extract volatile components in the sample) to
+extract the aliquots (typically as gas) to be atomized and passed to
+the mass analyzer.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Elemental analyzer mass spectrometry, 
+elemental analyzer-mass spectrometry, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/elementalanalysismassspectrometry
+
+
+[]{#continuousflowisotoperatiomassspectrometry}
+
+#######  Continuous flow isotope ratio mass spectrometry
+- Child of:
+ [`elementalanalysismassspectrometry`](#elementalanalysismassspectrometry)
+ [`isotoperatiomassspectrometry`](#isotoperatiomassspectrometry)
+- Isotope-Ratio mass spectrometry that extracts analytes from a sample
+using elemental analyzer with a contintuous flow of gas to be
+atomized, ionized and passed to the mass analyzer. Components: 1)
+elemental analyzer; 2) continuous flow input. 3) mass analyzer 4)
+detectors.  Analyzed aliquots are gas.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ELEMENTAL ANALYSER CONTINUOUS FLOW ISOTOPIC RATIO MASS SPECTROMETER, 
+ELEMENTAL ANALYZER CONTINUOUS-FLOW ISOTOPE RATIO MASS SPECTROMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/continuousflowisotoperatiomassspectrometry
+
+
+[]{#elementalanalysisisotoperatiomassspectrometry}
+
+#######  Elemental analysis isotope ratio mass spectrometry
+- Child of:
+ [`elementalanalysismassspectrometry`](#elementalanalysismassspectrometry)
+ [`isotoperatiomassspectrometry`](#isotoperatiomassspectrometry)
+- Measurement and study of the relative abundances of the different
+isotopes of an element in a material using a mass spectrometer which
+is coupled with an elemental analyzer. (Source: IUPAC;
+https://doi.org/10.1351/PAC-REC-06-04-06). Isotope and chemical
+analysis of H, C, N, O and S in a sample. (OSIRIS-REx confluence)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Elemental analyzer - isotope ratio mass spectrometry
+- **Source:**
+https://doi.org/10.1351/PAC-REC-06-04-06, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/elementalanalysisisotoperatiomassspectrometry
+
+
+[]{#fouriertransformioncyclotronresonancemassspectrometry}
+
+######  Fourier transform ion cyclotron resonance mass spectrometry
+- Child of:
+ [`massspectrometry`](#massspectrometry)
+- analysis of polar/apolar solvent-soluble organics can be performed
+using extremely high resolution mass spectrometry to identify
+molecular formulas (but not structures) with the elements C, H, O, N,
+S, Mg, Cl in a mixture.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/fouriertransformioncyclotronresonancemassspectrometry
+
+
+[]{#gaschromatographymassspectrometry}
+
+######  Gas chromatography mass spectrometry
+- Child of:
+ [`gaschromatographyanalysis`](#gaschromatographyanalysis)
+ [`massspectrometry`](#massspectrometry)
+- Technique by which a mixture is separated into individual components
+by gas chromatography, followed by detection with a mass spectrometer.
+(Source: IUPAC; https://doi.org/10.1351/PAC-REC-06-04-06)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+GAS CHROMATOGRAPHY-MASS SPECTROMETRY
+- **Source:**
+https://doi.org/10.1351/PAC-REC-06-04-06, 
+https://w3id.org/geochem/1.0/agent/geox, 
+https://w3id.org/geochem/1.0/agent/orex, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/gaschromatographymassspectrometry
+
+
+[]{#combustiongaschromatographyisotopicratiomassspectrometry}
+
+#######  Combustion gas chromatography isotopic ratio mass spectrometry
+- Child of:
+ [`combustiongaschromatography`](#combustiongaschromatography)
+ [`gaschromatographymassspectrometry`](#gaschromatographymassspectrometry)
+ [`isotoperatiomassspectrometry`](#isotoperatiomassspectrometry)
+- Technique used to ascertain the relative ratio of light stable
+isotopes of carbon (13C/12C), hydrogen (2H/1H), nitrogen (15N/14N) or
+oxygen (18O/160) in individual compounds separated from often complex
+mixtures of components. The sample solution is injected into the gas
+chromatography (GC) inlet where it is vaporized and swept onto a
+chromatographic column by the carrier gas (usually helium). The sample
+flows through the column and the compounds comprising the mixture of
+interest are separated by virtue of their relative interaction with
+the coating of the column (stationary phase) and the carrier gas
+(mobile phase). Carbon and nitrogen compounds eluting from the
+chromatographic column then pass through a combustion reactor (an
+alumina tube containing Cu, Ni and Pt wires maintained at 940 degree
+C) where they are oxidatively combusted. This is followed by a
+reduction reactor (an alumina tube containing three Cu wires
+maintained at 600 degree C) to reduce any nitrogen oxides to nitrogen.
+For hydrogen and oxygen a high temperature thermal conversion reactor
+is required. Water is then removed in a water separator by passing the
+gas stream through a tube constructed from a water permeable nafion
+membrane. The sample is then introduced into the ion source of the
+mass analyzer by an open split interface, and particles with m/z
+ratios of interest are counted by detectors.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/combustiongaschromatographyisotopicratiomassspectrometry
+
+
+[]{#pyrolysisgaschromatographymassspectrometry}
+
+#######  Pyrolysis gas chromatography mass spectrometry
+- Child of:
+ [`gaschromatographymassspectrometry`](#gaschromatographymassspectrometry)
+ [`pyrolysisgaschromatography`](#pyrolysisgaschromatography)
+- Mass spectrometry technique in which the sample is heated to the
+point of decomposition and the gas phase decomposition products are
+characterized by mass spectrometry. (Source: IUPAC;
+https://doi.org/10.1351/PAC-REC-06-04-06).
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Pyrolysis mass spectrometry
+- **Source:**
+https://doi.org/10.1351/PAC-REC-06-04-06, 
+https://w3id.org/geochem/1.0/agent/geox, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/pyrolysisgaschromatographymassspectrometry
+
+
+[]{#glowdischargemassspectrometry}
+
+######  Glow discharge mass spectrometry
+- Child of:
+ [`massspectrometry`](#massspectrometry)
+- Mass spectrometry using a source in which argon atoms in a low-
+density plasma impact the sample surface, sputtering atoms from the
+sample that are then ionized in the plasma and accelerated into the
+mass analyzer.  Samples are analyzed in solid form. The sputtering and
+ionization approach is free from the matrix dependence response
+affecting most other elemental analysis techniques, minimizing the
+need for matrix matched standards.
+- **Source:**
+https://w3id.org/geochem/1.0/agent/metbase, 
+https://nrc.canada.ca/en/research-development/products-services/technical-advisory-services/glow-discharge-mass-spectrometry-gdms-analysis, 
+https://www.massint.co.uk/glow-discharge-ms/gdms.php, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/glowdischargemassspectrometry
+
+
+[]{#isotoperatiomassspectrometry}
+
+######  Isotope ratio mass spectrometry
+- Child of:
+ [`massspectrometry`](#massspectrometry)
+- Isotope ratio mass spectrometry (IRMS) leverages magnetic sector
+mass spectrometry to enable high-precision measurement of the stable
+isotope content of a sample. Typical measurements target hydrogen,
+carbon, nitrogen, and oxygen analyses, although elements with masses
+up to and including sulfur can be measured. Solid, liquid, or gas
+phase samples are converted to simple gases then introduced to the
+IRMS. During analysis, an electron impact source ionizes sample-
+derived gas which is then accelerated down a flight tube, separated by
+mass, and quantified using a series of Faraday cups.
+(https://www.emsl.pnnl.gov/science/related-instrument/isotope-ratio-
+mass-spectrometry/1795)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+GAS CHROMATOGRAPHY AND CONTINUOUS FLOW ISOTOPE RATIO MONITORING MASS SPECTROMETRY
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://www.emsl.pnnl.gov/science/related-instrument/isotope-ratio-mass-spectrometry/1795, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/isotoperatiomassspectrometry
+
+
+[]{#combustiongaschromatographyisotopicratiomassspectrometry}
+
+#######  Combustion gas chromatography isotopic ratio mass spectrometry
+- Child of:
+ [`combustiongaschromatography`](#combustiongaschromatography)
+ [`gaschromatographymassspectrometry`](#gaschromatographymassspectrometry)
+ [`isotoperatiomassspectrometry`](#isotoperatiomassspectrometry)
+- Technique used to ascertain the relative ratio of light stable
+isotopes of carbon (13C/12C), hydrogen (2H/1H), nitrogen (15N/14N) or
+oxygen (18O/160) in individual compounds separated from often complex
+mixtures of components. The sample solution is injected into the gas
+chromatography (GC) inlet where it is vaporized and swept onto a
+chromatographic column by the carrier gas (usually helium). The sample
+flows through the column and the compounds comprising the mixture of
+interest are separated by virtue of their relative interaction with
+the coating of the column (stationary phase) and the carrier gas
+(mobile phase). Carbon and nitrogen compounds eluting from the
+chromatographic column then pass through a combustion reactor (an
+alumina tube containing Cu, Ni and Pt wires maintained at 940 degree
+C) where they are oxidatively combusted. This is followed by a
+reduction reactor (an alumina tube containing three Cu wires
+maintained at 600 degree C) to reduce any nitrogen oxides to nitrogen.
+For hydrogen and oxygen a high temperature thermal conversion reactor
+is required. Water is then removed in a water separator by passing the
+gas stream through a tube constructed from a water permeable nafion
+membrane. The sample is then introduced into the ion source of the
+mass analyzer by an open split interface, and particles with m/z
+ratios of interest are counted by detectors.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/combustiongaschromatographyisotopicratiomassspectrometry
+
+
+[]{#continuousflowisotoperatiomassspectrometry}
+
+#######  Continuous flow isotope ratio mass spectrometry
+- Child of:
+ [`elementalanalysismassspectrometry`](#elementalanalysismassspectrometry)
+ [`isotoperatiomassspectrometry`](#isotoperatiomassspectrometry)
+- Isotope-Ratio mass spectrometry that extracts analytes from a sample
+using elemental analyzer with a contintuous flow of gas to be
+atomized, ionized and passed to the mass analyzer. Components: 1)
+elemental analyzer; 2) continuous flow input. 3) mass analyzer 4)
+detectors.  Analyzed aliquots are gas.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ELEMENTAL ANALYSER CONTINUOUS FLOW ISOTOPIC RATIO MASS SPECTROMETER, 
+ELEMENTAL ANALYZER CONTINUOUS-FLOW ISOTOPE RATIO MASS SPECTROMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/continuousflowisotoperatiomassspectrometry
+
+
+[]{#dualinletisotoperatiomassspectrometry}
+
+#######  Dual inlet isotope ratio mass spectrometry
+- Child of:
+ [`isotoperatiomassspectrometry`](#isotoperatiomassspectrometry)
+- Mass spectrometry technique. Components: 1) sample preparation,
+extract gas, purify; 2) ionization: not specified. Isotope-Ratio mass
+spectrometry that uses dual inputs to compare and calibrate sample
+measurement. In dual inlet IRMS, purified gas obtained from a sample
+is alternated rapidly with a standard gas (of known isotopic
+composition) by means of a system of valves, so that a number of
+comparison measurements are made of both gases.
+(https://en.wikipedia.org/wiki/Isotope-ratio_mass_spectrometry).
+Analyzed aliquots are gas.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://en.wikipedia.org/wiki/Isotope-ratio_mass_spectrometry, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/dualinletisotoperatiomassspectrometry
+
+
+[]{#elementalanalysisisotoperatiomassspectrometry}
+
+#######  Elemental analysis isotope ratio mass spectrometry
+- Child of:
+ [`elementalanalysismassspectrometry`](#elementalanalysismassspectrometry)
+ [`isotoperatiomassspectrometry`](#isotoperatiomassspectrometry)
+- Measurement and study of the relative abundances of the different
+isotopes of an element in a material using a mass spectrometer which
+is coupled with an elemental analyzer. (Source: IUPAC;
+https://doi.org/10.1351/PAC-REC-06-04-06). Isotope and chemical
+analysis of H, C, N, O and S in a sample. (OSIRIS-REx confluence)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Elemental analyzer - isotope ratio mass spectrometry
+- **Source:**
+https://doi.org/10.1351/PAC-REC-06-04-06, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/elementalanalysisisotoperatiomassspectrometry
+
+
+[]{#laserfluorinationanalysis}
+
+#######  Laser fluorination mass spectrometry
+- Child of:
+ [`isotoperatiomassspectrometry`](#isotoperatiomassspectrometry)
+ [`wetchemistry`](#wetchemistry)
+- Technique wherein oxygen is quantitatively extracted from oxygen-
+bearing compounds, without isotopic fractionation, and simultaneously
+converted to diatomic oxygen (O2) gas, and then  analyzed with
+isotope-ratio mass spectrometer (IRMS) to determine its delta 17O and
+delta 18O ratios. (https://sil.uoregon.edu/laser-fluorination/)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+IR-laser fluorination mass spectrometry, 
+LAF, 
+LASER FLUORINATION, 
+Laser Assisted Fluorination for Bulk Oxygen Isotope Ratio Measurements, 
+Laser fluorination analysis, 
+in situ ultraviolet laser fluorination, 
+infrared laser fluorination, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://sil.uoregon.edu/laser-fluorination/, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/laserfluorinationanalysis
+
+
+[]{#steppedheatingcarbonandnitrogenisotopicanalysis}
+
+#######  Stepped heating carbon and nitrogen isotopic analysis
+- Child of:
+ [`isotoperatiomassspectrometry`](#isotoperatiomassspectrometry)
+- Stepped combustion technique on the FINESSE  highly sensitive mass
+spectrometric complex (a single gas extraction and purification system
+coupled with three mass spectrometers operating in static mode).
+Sample is crushed to powder and loaded in the mass spectrometer
+extraction system, then heated incrementally (step heating) from 200
+to 1400 degree C in the presence of oxygen derived from thermal
+decomposition, at 930 degree C, of CuO present in a separately heated
+unit with an inlet into the furnace, resulting in the liberation of
+individual components. Carbon (in the form of CO2) and molecular
+nitrogen are cryogenically separated from each other before analysis.
+Simultaneous analysis is possible by using multiple mass spectrometers
+connected to a common extraction line: two magnetic sector mass
+spectrometers for determination of carbon isotopes and nitrogen
+abundance, and a quadrupole mass spectrometer for nitrogen isotopes.
+(https://doi.org/10.1016/S0012-821X(02)00592-7)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Stepped heating carbon and nitrogen isotopic compositions
+- **Source:**
+https://doi.org/10.1016/S0012-821X(02)00592-7, 
+https://w3id.org/geochem/1.0/agent/orex, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/steppedheatingcarbonandnitrogenisotopicanalysis
+
+
+[]{#liquidchromatographymassspectrometry}
+
+######  Liquid chromatography mass spectrometry
+- Child of:
+ [`liquidchromatographyanalysis`](#liquidchromatographyanalysis)
+ [`massspectrometry`](#massspectrometry)
+- technique used to separate, detect, identify, and quantify
+components of a complex mixture. The solid sample is extracted in a
+solvent to pull out soluble target compounds; this creates both a
+solid residue and a liquid extract.  The extract can be subjected to
+additional procedures, for cleanup or exposure to acid vapor to break
+apart large molecules.  The final extracted solution is injected into
+the LC, which separates compounds in the solution and then passes them
+into the MS, where their mass spectra are measured. Each time point on
+the chromatogram is linked to a mass spectrum from which the most
+intense signals are fragmented at defined CID (colision induced
+dissociation) energy.  The combination of retention time (i.e., how
+long it takes for the compound to pass through the LC) and mass
+spectrum allows for identification of the compounds when compared to
+standards.  The LC-MS-MS converted data is in a unversal format of
+data called mzML and used internationally in LC-MS-MS analytical
+community of small molecules, peptides to proteins.  mzML is a
+universal Mass spectrometry format. xml namespace
+=http://psi.hupo.org/ms/mzml; schema location
+http://psidev.info/files/ms/mzML/xsd/mzML1.1.0.xsd
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/liquidchromatographymassspectrometry
+
+
+[]{#micromassmultiprepmassspectrometry}
+
+######  Micromass multiprep mass spectrometry
+- Child of:
+ [`massspectrometry`](#massspectrometry)
+- Multiprep automated sample preparation device is used to digest
+powdered biogenic or mineral carbonate material with phosphoric acid
+or to equilibrate water samples with carbon dioxide or
+hydrogen.(Micromass is the instrument manufacturer). Output from
+multiprep goes to mass spectrometer. Example systems e.g.
+https://www.atmos.albany.edu/geology/webpages/sirmslab.html are doing
+stable isotope analyses. Components: 1) sample preparation: multiprep
+device
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+MICROMASS MULTIPREP MASS SPECTROMETER
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/micromassmultiprepmassspectrometry
+
+
+[]{#noblegasmassspectrometry}
+
+######  Noble gas mass spectrometry
+- Child of:
+ [`massspectrometry`](#massspectrometry)
+- Noble gases (He, Ne, Ar, Kr, Xe ) are extracted from samples by
+heating in a vacuum with an IR laser or in a heated crucible. The
+extracted gases are purified using hot metals or alloys (and cold
+traps). Noble gas elements can be separated using cryogenic traps and
+sequentially analyzed by separation of the ions according to their
+mass/charge ratio and a collection block consisting of single or
+multiple Faraday cups and/or electron multipliers.  (OSIRIS-REx
+confluence;
+https://nvlpubs.nist.gov/nistpubs/jres/38/jresv38n6p617_A1b.pdf)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+MSRG, 
+NG-NS-MS, 
+Noble gas and nitrogen static mass spectrometry, 
+Rare-gas mass spectrometry, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://nvlpubs.nist.gov/nistpubs/jres/38/jresv38n6p617_A1b.pdf, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/noblegasmassspectrometry
+
+
+[]{#neutronirradiationnoblegasmassspectrometry}
+
+#######  Neutron irradiation noble gas mass spectrometry
+- Child of:
+ [`noblegasmassspectrometry`](#noblegasmassspectrometry)
+- Techique that exposes sample to neutron-irradiation to produce noble
+gas isotopes from halogen isotopes within the sample. NI-NGMS requires
+only small sample masses (~1 mg). The method provides information on
+the abundances and ratios of the halogen (Cl, Br and I) and the noble
+gas (Ar, Kr and Xe) elements. (OSIRIS-REx confluence). Technique to
+measure the abundances of Cl, K, Br, I, Ca, Ba and U, in which samples
+are exposed to a high neutron fluence to produce nucleogenic noble gas
+isotopes in abundances proportional to those of the parent elements.
+(https://goldschmidtabstracts.info/2014/2145.pdf).  The noble gas
+isotopes are liberated from the sample by heating and analyzed with a
+mass spectrometer
+(https://www.sciencedirect.com/science/article/pii/S0009254116302339)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+NOBLE-GAS METHOD, 
+neutron-irradiation noble gas mass spectrometry, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/neutronirradiationnoblegasmassspectrometry
+
+
+[]{#resonanceionizationtimeofflightnoblegasmassspectrometry}
+
+#######  Resonance ionization time of flight noble gas mass spectrometry
+- Child of:
+ [`noblegasmassspectrometry`](#noblegasmassspectrometry)
+ [`resonanceionizationmassspectrometry`](#resonanceionizationmassspectrometry)
+- Noble gas mass spectrometry technique that atomizes and ionizes
+samples using laser resonance to generate a plasma, and a time-of-
+flight mass analyzer.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/resonanceionizationtimeofflightnoblegasmassspectrometry
+
+
+[]{#orbitrapmassspectrometry}
+
+######  Orbitrap mass spectrometry
+- Child of:
+ [`massspectrometry`](#massspectrometry)
+- Orbitrap is an ion trap mass analyzer consisting of an outer barrel-
+like electrode and a coaxial inner spindle-like electrode that traps
+ions in an orbital motion around the spindle. The image current from
+the trapped ions is detected and converted to a mass spectrum using
+the Fourier transform of the frequency signal.
+(https://en.wikipedia.org/wiki/Orbitrap)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex, 
+https://en.wikipedia.org/wiki/Orbitrap, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/orbitrapmassspectrometry
+
+
+[]{#desorptionelectrosprayionizationorbitrapmassspectrometry}
+
+#######  Desorption electrospray ionization orbitrap mass spectrometry
+- Child of:
+ [`orbitrapmassspectrometry`](#orbitrapmassspectrometry)
+- technique in which sample ionization is achieved by a process in
+which a spray of charged droplets is directed towards the sample. When
+the spray impacts the sample, a thin layer of solvent is formed into
+which the analytes may dissolve. As other primary droplets arrive at
+the sample surface, they splash secondary microdroplets containing the
+dissolved analytes from the solvent film. This mechanism causes
+analyte-containing droplets to be generated in the open air, and then
+delivered to the mass spectrometer through a heated extended
+capillary. (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3205348).
+After the desorption process, ionization occurs via mechanisms that
+are similar to those of electrospray ionization, in which a high
+voltage is applied to a liquid to create an aerosol
+(https://en.wikipedia.org/wiki/Electrospray_ionization).  Mass
+analysis is done with an Orbitrap mass analyzer.
+(https://en.wikipedia.org/wiki/Orbitrap)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/desorptionelectrosprayionizationorbitrapmassspectrometry
+
+
+[]{#plasmasourcemassspectrometry}
+
+######  Plasma source mass spectrometry
+- Child of:
+ [`massspectrometry`](#massspectrometry)
+- Mass spectrometry technique. Components: 1) sample preparation: not
+specified; 2) ionization: plasma; 3) mass analyzer: not specified; 4)
+detector: not specified. Plasma can be generated in various ways:
+inductive coupling, spark, lasers, microwaves.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ISOTOPE-DILUTION PLASMA IONISATION MULTI-COLLECTOR MASS SPECTROMETRY, 
+PLASMA-SOURCE MASS SPECTROMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/plasmasourcemassspectrometry
+
+
+[]{#inductivelycoupledplasmamassspectrometry}
+
+#######  Inductively coupled plasma mass spectrometry
+- Child of:
+ [`plasmasourcemassspectrometry`](#plasmasourcemassspectrometry)
+- Mass spectrometry technique that uses an ionised plasma torch to
+ionise an analyte material for discrimination by mass/charge ratio. An
+aerosol of the material to be analysed is passed through a plasma
+torch in order to remove electron(s) from neutral atoms to create a
+charged ion. Degree of ionisation is determined by the ionisation
+potential of an element, and ICPs are generally designed to produce
+single charge positive ions. Once ionised, the ions of the analysed
+material are passed through a mass spectrometer where they are
+filtered by mass-to-charge ratios, with single charge positive ions
+this can be considered as a mass spectrum. Numerous types of mass
+spectrometers can be used, including quadrupole, sector field, and
+time-of-flight mass spectrometry systems. Filtered masses are passed
+to a detector where a quantitative determination on isotopic ratios or
+abundances can be calculated. ICP-MS analysis requires an introduction
+system to be paired with the ICP-MS system, which has consequences for
+the materials which may be analysed, interferences which may occur and
+precision that can be achieved.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+FUSION-INDUCTIVELY COUPLED PLASMA MASS SPECTROMETRY, 
+INDUCTIVELY COUPLED PLASMA MASS SPECTROMETRY ISOTOPE DILUTION, 
+ISOTOPE-DILUTION HIGH-RESOLUTION INDUCTIVELY-COUPLED PLASMA MASS SPECTROMETRY, 
+ISOTOPE-DILUTION INDUCTIVELY-COUPLED PLASMA MASS SPECTROMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/inductivelycoupledplasmamassspectrometry
+
+
+[]{#inductively-coupled-plasma-tandem-mass-spectrometry}
+
+########  Inductively coupled plasma tandem mass spectrometry
+- Child of:
+ [`inductivelycoupledplasmamassspectrometry`](#inductivelycoupledplasmamassspectrometry)
+- Mass spectrometry technique that uses an inductively coupled plasma
+connected to two mass spectrometers with an intermediate reaction cell
+to remove isobaric interferences before discrimination by mass/charge
+ratio. An aerosol of the material to be analysed is passed through a
+plasma torch in order to remove electron(s) from neutral atoms to
+create a charged ion. Degree of ionisation is determined by the
+ionisation potential of an element, and ICPs are generally designed to
+produce single charge positive ions. Once ionised, the ions of the
+analysed material are passed to a quadrupole which only allows ions of
+a selected mass to pass through - these commonly consist of isotopes
+of different elements which have the same atomic mass, referred to as
+isobaric interferences. Once filtered the remaining ions pass to a
+reaction cell where they are reacted with a selected gas to form a
+charged molecule, where different elements will react with the gas to
+form different molecules and/or at different rates. These charged
+molecules are then passed through a second mass spectrometry system
+and filtered by mass-to-charge ratios, where the formerly equivalent
+atomic masses can be separated as ‘mass shifted’ molecules allowing
+for removal of isobaric interference. Filtered masses are passed to a
+detector where a quantitative determination on isotopic ratios or
+abundances can be calculated. ICP-MS/MS analysis requires an
+introduction system to be paired with the ICP-MS system, which has
+consequences for the materials which may be analysed, precision that
+can be achieved, and types of interferences that may occur.
+- **Alternate labels:**
+ICP-MS/MS, 
+ICP-QQQ-MS, 
+Triple quad mass spectrometry, 
+Triple quadrupole mass spectrometry, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/inductively-coupled-plasma-tandem-mass-spectrometry
+
+
+[]{#laser-ablation-inductively-coupled-plasma-tandem-mass-spectrometry}
+
+#########  Laser ablation inductively coupled plasma tandem mass spectrometry
+- Child of:
+ [`inductively-coupled-plasma-tandem-mass-spectrometry`](#inductively-coupled-plasma-tandem-mass-spectrometry)
+ [`laserablationmassspectrometry`](#laserablationmassspectrometry)
+ [`quadrupoleinductivelycoupledplasmmassspectrometry`](#quadrupoleinductivelycoupledplasmmassspectrometry)
+- Mass spectrometry technique that uses an inductively coupled plasma
+connected to two quadrupoles with an intermediate reaction cell to
+remove isobaric interferences before discrimination by mass/charge
+ratio. The analyte material is atomised by laser and passed to the
+ICP-MS system entrained in an inert carrier gas, allowing for analysis
+of a variety of mediums including in-situ microscale samples. The
+aerosol is passed through a plasma torch in order to remove
+electron(s) from neutral atoms to create a charged ion. Degree of
+ionisation is determined by the ionisation potential of an element,
+and ICPs are generally designed to produce single charge positive
+ions. Once ionised, the ions of the analysed material are passed to
+the first quadrupole which only allows ions of a selected mass to pass
+through - these commonly consist of isotopes of different elements
+which have the same atomic mass, referred to as isobaric
+interferences. Once filtered the remaining ions pass to a reaction
+cell where they are reacted with a selected gas to form a charged
+molecule, where different elements will react with the gas to form
+different molecules and/or at different rates. These charged molecules
+are then passed through a second quadrupole and filtered by mass-to-
+charge ratios, where the formerly equivalent atomic masses can be
+separated as ‘mass shifted’ molecules allowing for removal of isobaric
+interference. Filtered masses are passed to a detector where a
+quantitative determination on isotopic ratios or abundances can be
+calculated.
+- **Alternate labels:**
+LA-ICP-MS/MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/laser-ablation-inductively-coupled-plasma-tandem-mass-spectrometry
+
+
+[]{#laser-ablation-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry}
+
+#########  Laser ablation multicollector inductively coupled plasma tandem mass spectrometry
+- Child of:
+ [`inductively-coupled-plasma-tandem-mass-spectrometry`](#inductively-coupled-plasma-tandem-mass-spectrometry)
+ [`laserablationmassspectrometry`](#laserablationmassspectrometry)
+ [`multicollectorinductivelycoupledplasmamassspectrometry`](#multicollectorinductivelycoupledplasmamassspectrometry)
+- Mass spectrometry technique that uses an inductively coupled plasma
+connected to two mass spectrometry systems; a quadrupole and sector
+field, with an intermediate reaction cell to remove isobaric
+interferences before discrimination by mass/charge ratio. The analyte
+material is atomised by laser and passed to the ICP-MS system
+entrained in an inert carrier gas, allowing for analysis of a variety
+of mediums including in-situ microscale samples. The aerosol is passed
+through a plasma torch in order to remove electron(s) from neutral
+atoms to create a charged ion. Degree of ionisation is determined by
+the ionisation potential of an element, and ICPs are generally
+designed to produce single charge positive ions. Once ionised, the
+ions of the analysed material are passed through a quadrupole which
+only allows ions of a selected mass to pass through - these commonly
+consist of isotopes of different elements which have the same atomic
+mass, referred to as isobaric interferences. Once filtered the
+remaining ions pass to a reaction cell where they are reacted with a
+selected gas to form a charged molecule, where different elements will
+react with the gas to form different molecules and/or at different
+rates. These charged molecules are then passed through a sector field
+system and discriminated by mass-to-charge ratios, where the formerly
+equivalent atomic masses can be separated as ‘mass shifted’ molecules
+allowing for removal of isobaric interference. Masses are passed to a
+multicollector array where quantitative determination on isotopic
+ratios or abundances can be resolved for multiple masses
+simultaneously.
+- **Alternate labels:**
+LA-MC-ICP-MS/MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/laser-ablation-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry
+
+
+[]{#solution-inductively-coupled-plasma-tandem-mass-spectrometry}
+
+#########  Solution inductively coupled plasma tandem mass spectrometry
+- Child of:
+ [`inductively-coupled-plasma-tandem-mass-spectrometry`](#inductively-coupled-plasma-tandem-mass-spectrometry)
+ [`liquidinletinductivelycoupledplasmamassspectrometry`](#liquidinletinductivelycoupledplasmamassspectrometry)
+ [`quadrupoleinductivelycoupledplasmmassspectrometry`](#quadrupoleinductivelycoupledplasmmassspectrometry)
+- Mass spectrometry technique that uses an inductively coupled plasma
+connected to two quadrupoles with an intermediate reaction cell to
+remove isobaric interferences before discrimination by mass/charge
+ratio. The analyte material is prepared as a solution, often diluted
+to prevent overwhelming the detector. Analyte solution is pumped into
+a nebuliser to convert to an aerosol mist which is passed to the ICP-
+MS system entrained in an inert carrier gas. The aerosol is passed
+through a plasma torch in order to remove electron(s) from neutral
+atoms to create a charged ion. Degree of ionisation is determined by
+the ionisation potential of an element, and ICPs are generally
+designed to produce single charge positive ions. Once ionised, the
+ions of the analysed material are passed to the first quadrupole which
+only allows ions of a selected mass to pass through - these commonly
+consist of isotopes of different elements which have the same atomic
+mass, referred to as isobaric interferences. Once filtered the
+remaining ions pass to a reaction cell where they are reacted with a
+selected gas to form a charged molecule, where different elements will
+react with the gas to form different molecules and/or at different
+rates. These charged molecules are then passed through a second
+quadrupole and filtered by mass-to-charge ratios, where the formerly
+equivalent atomic masses can be separated as ‘mass shifted’ molecules
+allowing for removal of isobaric interference. Filtered masses are
+passed to a detector where a quantitative determination on isotopic
+ratios or abundances can be calculated.
+- **Alternate labels:**
+Solution ICP-MS/MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/solution-inductively-coupled-plasma-tandem-mass-spectrometry
+
+
+[]{#solution-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry}
+
+#########  Solution multicollector inductively coupled plasma tandem mass spectrometry
+- Child of:
+ [`inductively-coupled-plasma-tandem-mass-spectrometry`](#inductively-coupled-plasma-tandem-mass-spectrometry)
+ [`liquidinletinductivelycoupledplasmamassspectrometry`](#liquidinletinductivelycoupledplasmamassspectrometry)
+ [`multicollectorinductivelycoupledplasmamassspectrometry`](#multicollectorinductivelycoupledplasmamassspectrometry)
+- Mass spectrometry technique that uses an inductively coupled plasma
+connected to two mass spectrometry systems; a quadrupole and sector
+field, with an intermediate reaction cell to remove isobaric
+interferences before discrimination by mass/charge ratio. The analyte
+material is prepared as a solution, often diluted to prevent
+overwhelming the detector. Analyte solution is pumped into a nebuliser
+to convert to an aerosol mist which is passed to the ICP-MS system
+entrained in an inert carrier gas. The aerosol is passed through a
+plasma torch in order to remove electron(s) from neutral atoms to
+create a charged ion. Degree of ionisation is determined by the
+ionisation potential of an element, and ICPs are generally designed to
+produce single charge positive ions. Once ionised, the ions of the
+analysed material are passed through a quadrupole which only allows
+ions of a selected mass to pass through - these commonly consist of
+isotopes of different elements which have the same atomic mass,
+referred to as isobaric interferences. Once filtered the remaining
+ions pass to a reaction cell where they are reacted with a selected
+gas to form a charged molecule, where different elements will react
+with the gas to form different molecules and/or at different rates.
+These charged molecules are then passed through a sector field system
+and discriminated by mass-to-charge ratios, where the formerly
+equivalent atomic masses can be separated as ‘mass shifted’ molecules
+allowing for removal of isobaric interference. Masses are passed to a
+multicollector array where quantitative determination on isotopic
+ratios or abundances can be resolved for multiple masses
+simultaneously.
+- **Alternate labels:**
+Solution ICP-MC-MS/MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/solution-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry
+
+
+[]{#inductively-coupled-plasma-time-of-flight-mass-spectrometry}
+
+########  Inductively coupled plasma time-of-flight mass spectrometry
+- Child of:
+ [`inductivelycoupledplasmamassspectrometry`](#inductivelycoupledplasmamassspectrometry)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a time-
+of-flight configuration, a mass spectrometry technique that
+accelerates ions by an electromagnetic field and measures the travel
+time between acceleration and a detector, where ions of lower
+mass/charge ratios will travel more slowly through the accelerating
+field. An aerosol of the material to be analysed is passed through a
+plasma torch in order to remove electron(s) from neutral atoms to
+create a charged ion. Degree of ionisation is determined by the
+ionisation potential of an element, and ICPs are generally designed to
+produce single charge positive ions. Once ionised, the ions of the
+analysed material are passed through an electromagnetic field which
+accelerates the ions to a detector. All ions are imparted with equal
+kinetic energy, but ions with lower mass-to-charge ratios (i.e.
+lighter isotopes for single charge positive ions) will travel faster
+and take less time to reach the detector. Quantitative determinations
+of isotopic abundance or rations can then be calculated using the
+travel time from acceleration to detector. ICP-MS analysis requires an
+introduction system to be paired with the ICP-MS system, which has
+consequences for the materials which may be analysed, interferences
+which may occur and precision that can be achieved.
+- **Alternate labels:**
+ICP-TOF-MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/inductively-coupled-plasma-time-of-flight-mass-spectrometry
+
+
+[]{#laser-ablation-inductively-coupled-plasma-time-of-flight-mass-spectrometry}
+
+#########  Laser ablation inductively coupled plasma time-of-flight mass spectrometry
+- Child of:
+ [`inductively-coupled-plasma-time-of-flight-mass-spectrometry`](#inductively-coupled-plasma-time-of-flight-mass-spectrometry)
+ [`laserablationmassspectrometry`](#laserablationmassspectrometry)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a time-
+of-flight configuration, a mass spectrometry technique that
+accelerates ions by an electromagnetic field and measures the travel
+time between acceleration and a detector, where ions of lower
+mass/charge ratios will travel more slowly through the accelerating
+field. The analyte material is atomised by laser and passed to the
+ICP-MS system entrained in an inert carrier gas, allowing for analysis
+of a variety of mediums including in-situ microscale samples. An
+aerosol of the material to be analysed is passed through a plasma
+torch in order to remove electron(s) from neutral atoms to create a
+charged ion. Degree of ionisation is determined by the ionisation
+potential of an element, and ICPs are generally designed to produce
+single charge positive ions. Once ionised, the ions of the analysed
+material are passed through an electromagnetic field which accelerates
+the ions to a detector. All ions are imparted with equal kinetic
+energy, but ions with lower mass-to-charge ratios (i.e. lighter
+isotopes for single charge positive ions) will travel faster and take
+less time to reach the detector. Quantitative determinations of
+isotopic abundance or rations can then be calculated using the travel
+time from acceleration to detector.
+- **Alternate labels:**
+LA-ICP-TOF-MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/laser-ablation-inductively-coupled-plasma-time-of-flight-mass-spectrometry
+
+
+[]{#solution-inductively-coupled-plasma-time-of-flight-mass-spectrometry}
+
+#########  Solution inductively coupled plasma time-of-flight mass spectrometry
+- Child of:
+ [`inductively-coupled-plasma-time-of-flight-mass-spectrometry`](#inductively-coupled-plasma-time-of-flight-mass-spectrometry)
+ [`liquidinletinductivelycoupledplasmamassspectrometry`](#liquidinletinductivelycoupledplasmamassspectrometry)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a time-
+of-flight configuration, a mass spectrometry technique that
+accelerates ions by an electromagnetic field and measures the travel
+time between acceleration and a detector, where ions of lower
+mass/charge ratios will travel more slowly through the accelerating
+field. The analyte material is prepared as a solution, often diluted
+to prevent overwhelming the detector. Analyte solution is pumped into
+a nebuliser to convert to an aerosol mist which is passed to the ICP-
+MS system entrained in an inert carrier gas. An aerosol of the
+material to be analysed is passed through a plasma torch in order to
+remove electron(s) from neutral atoms to create a charged ion. Degree
+of ionisation is determined by the ionisation potential of an element,
+and ICPs are generally designed to produce single charge positive
+ions. Once ionised, the ions of the analysed material are passed
+through an electromagnetic field which accelerates the ions to a
+detector. All ions are imparted with equal kinetic energy, but ions
+with lower mass-to-charge ratios (i.e. lighter isotopes for single
+charge positive ions) will travel faster and take less time to reach
+the detector. Quantitative determinations of isotopic abundance or
+rations can then be calculated using the travel time from acceleration
+to detector.
+- **Alternate labels:**
+Solution ICP-TOF-MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/solution-inductively-coupled-plasma-time-of-flight-mass-spectrometry
+
+
+[]{#split-stream-mass-spectrometry}
+
+########  Split stream mass spectrometry
+- Child of:
+ [`inductivelycoupledplasmamassspectrometry`](#inductivelycoupledplasmamassspectrometry)
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/split-stream-mass-spectrometry
+
+
+[]{#lassmassspectrometry}
+
+#########  Laser ablation split stream mass spectrometry
+- Child of:
+ [`split-stream-mass-spectrometry`](#split-stream-mass-spectrometry)
+ [`laserablationmassspectrometry`](#laserablationmassspectrometry)
+- The output from laser ablation of a single analysis spot is split
+between two mass spectrometers (typically ICPMS). The technique allows
+simultaneous analyses of different geochemical systems in mineral
+samples using two or more mass spectrometers. An important application
+is the determination of the complementary isotopic systems of Lu-Hf
+and U-Pb (age)(https://assets.thermofisher.com/TFS-
+Assets/CMD/Application-Notes/AN-30298-ICP-MS-Laser-Ablation-Split-
+Stream-AN30298-EN.pdf)
+- **Alternate labels:**
+LA-SS-MS, 
+LASER ABLATION SPLIT STREAM MASS SPECTROMETRY, 
+LASER ABLATION-SPLIT STREAM ANALYSIS, 
+LASER ABLATION-SPLIT STREAM, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://assets.thermofisher.com/TFS-Assets/CMD/Application-Notes/AN-30298-ICP-MS-Laser-Ablation-Split-Stream-AN30298-EN.pdf, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/lassmassspectrometry
+
+
+[]{#highresolutioninductivelycoupledplasmamassspectrometry}
+
+########  High resolution inductively coupled plasma mass spectrometry (deprecated)
+- Child of:
+ [`depreciated`](#depreciated)
+ [`inductivelycoupledplasmamassspectrometry`](#inductivelycoupledplasmamassspectrometry)
+- Mass spectrometry technique. Components 1) sample preparation: not
+specified; 2) ionization: Inductively-coupled plasma. 3) mass analyzer
+in which the the aperture width of the entrance slit situated between
+the ion optics and the mass analyzer, and an exit slit located between
+the mass analyzer and the detector assembly can be controlled. The
+narrower the slits are positioned, the higher the resolution (and
+lower the sensitivity); the wider the slits, the higher the
+sensitivity (and lower the resolution). (R. ArevaloJr., in Treatise on
+Geochemistry (Second Edition), 2014)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/highresolutioninductivelycoupledplasmamassspectrometry
+
+
+[]{#laserablationmassspectrometry}
+
+########  Laser ablation inductively coupled plasma mass spectrometry
+- Child of:
+ [`inductivelycoupledplasmamassspectrometry`](#inductivelycoupledplasmamassspectrometry)
+- Mass spectrometry technique that uses a laser ablation introduction
+system coupled to an ICP-MS system that uses an ionised plasma torch
+to ionise an analyte material for discrimination by mass/charge ratio.
+The analyte material is atomised by laser and passed to the ICP-MS
+system entrained in an inert carrier gas, allowing for analysis of a
+variety of mediums including in-situ microscale samples. The aerosol
+is passed through a plasma torch in order to remove electron(s) from
+neutral atoms to create a charged ion. Degree of ionisation is
+determined by the ionisation potential of an element, and ICPs are
+generally designed to produce single charge positive ions. Once
+ionised, the ions of the analysed material are passed through a mass
+spectrometer where they are filtered by mass-to-charge ratios, with
+single charge positive ions this can be considered as a mass spectrum.
+Numerous types of mass spectrometers can be used, including
+quadrupole, sector field, and time-of-flight mass spectrometry
+systems. Filtered masses are passed to a detector where a quantitative
+determination on isotopic ratios or abundances can be calculated.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+LA-ICP-MS, 
+LASER-MICROPROBE ANALYSIS, 
+SINGLE CRYSTAL LASER FUSION ANALYSIS, 
+SINGLE CRYSTAL LASER FUSION TECHNIQUE, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/laserablationmassspectrometry
+
+
+[]{#laser-ablation-multicollector-inductively-coupled-plasma-mass-spectrometry}
+
+#########  Laser ablation multicollector inductively coupled plasma mass spectrometry
+- Child of:
+ [`laserablationmassspectrometry`](#laserablationmassspectrometry)
+ [`multicollectorinductivelycoupledplasmamassspectrometry`](#multicollectorinductivelycoupledplasmamassspectrometry)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a
+magnetic sector, a mass spectrometry technique that bends the paths of
+ions dependent on mass/charge ratios, before the deflected ions are
+passed to multiple detector cups. The analyte material is atomised by
+laser and passed to the ICP-MS system entrained in an inert carrier
+gas, allowing for analysis of a variety of mediums including in-situ
+microscale samples. An aerosol of the material to be analysed is
+passed through a plasma torch in order to remove electron(s) from
+neutral atoms to create a charged ion. Degree of ionisation is
+determined by the ionisation potential of an element, and ICPs are
+generally designed to produce single charge positive ions. Once
+ionised, the ions of the analysed material are passed through a
+magnetic sector field where they are deflected to different degrees
+controlled by the strength of the magnetic field and the mass-to-
+charge ratios of the ions. For single charge positive ions this can be
+considered as a mass spectrum. Deflected ions are passed to an array
+of multiple detectors (commonly 10 to 20 depending on instruments)
+where a quantitative determination on isotopic ratios or abundances
+can be calculated.
+- **Alternate labels:**
+LA-MC-ICP-MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/laser-ablation-multicollector-inductively-coupled-plasma-mass-spectrometry
+
+
+[]{#laser-ablation-femtosecond-multicollector-inductively-coupled-plasma-mass-spectrometry}
+
+##########  Femtosecond laser ablation multicollector inductively coupled plasma mass spectrometry
+- Child of:
+ [`laser-ablation-multicollector-inductively-coupled-plasma-mass-spectrometry`](#laser-ablation-multicollector-inductively-coupled-plasma-mass-spectrometry)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a
+magnetic sector, a mass spectrometry technique that bends the paths of
+ions dependent on mass/charge ratios, before the deflected ions are
+passed to multiple detector cups. The analyte material is ablated by a
+femtosecond laser, a laser system capable of femtosecond-scale pulses
+to reduce the damage caused to the target material by the incident
+laser, with material liberated through a combination of ablation and
+Coulombic explosion. This technique may be used to analyse a variety
+of mediums including in-situ microscale samples. Liberated material is
+passed to the ICP-MS system entrained in an inert carrier gas, where
+it is passed through a plasma torch in order to remove remaining
+electrons from neutral atoms to create charged ions. Degree of
+ionisation is determined by the ionisation potential of an element,
+and ICPs are generally designed to produce single charge positive
+ions. Once ionised, the ions of the analysed material are passed
+through a magnetic sector field where they are deflected to different
+degrees controlled by the strength of the magnetic field and the mass-
+to-charge ratios of the ions. For single charge positive ions this can
+be considered as a mass spectrum. Deflected ions are passed to an
+array of multiple detectors (commonly 10 to 20 depending on
+instruments) where a quantitative determination on isotopic ratios or
+abundances can be calculated.
+- **Alternate labels:**
+fs-LA-MC-ICP-MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/laser-ablation-femtosecond-multicollector-inductively-coupled-plasma-mass-spectrometry
+
+
+[]{#laser-ablation-inductively-coupled-plasma-tandem-mass-spectrometry}
+
+#########  Laser ablation inductively coupled plasma tandem mass spectrometry
+- Child of:
+ [`inductively-coupled-plasma-tandem-mass-spectrometry`](#inductively-coupled-plasma-tandem-mass-spectrometry)
+ [`laserablationmassspectrometry`](#laserablationmassspectrometry)
+ [`quadrupoleinductivelycoupledplasmmassspectrometry`](#quadrupoleinductivelycoupledplasmmassspectrometry)
+- Mass spectrometry technique that uses an inductively coupled plasma
+connected to two quadrupoles with an intermediate reaction cell to
+remove isobaric interferences before discrimination by mass/charge
+ratio. The analyte material is atomised by laser and passed to the
+ICP-MS system entrained in an inert carrier gas, allowing for analysis
+of a variety of mediums including in-situ microscale samples. The
+aerosol is passed through a plasma torch in order to remove
+electron(s) from neutral atoms to create a charged ion. Degree of
+ionisation is determined by the ionisation potential of an element,
+and ICPs are generally designed to produce single charge positive
+ions. Once ionised, the ions of the analysed material are passed to
+the first quadrupole which only allows ions of a selected mass to pass
+through - these commonly consist of isotopes of different elements
+which have the same atomic mass, referred to as isobaric
+interferences. Once filtered the remaining ions pass to a reaction
+cell where they are reacted with a selected gas to form a charged
+molecule, where different elements will react with the gas to form
+different molecules and/or at different rates. These charged molecules
+are then passed through a second quadrupole and filtered by mass-to-
+charge ratios, where the formerly equivalent atomic masses can be
+separated as ‘mass shifted’ molecules allowing for removal of isobaric
+interference. Filtered masses are passed to a detector where a
+quantitative determination on isotopic ratios or abundances can be
+calculated.
+- **Alternate labels:**
+LA-ICP-MS/MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/laser-ablation-inductively-coupled-plasma-tandem-mass-spectrometry
+
+
+[]{#laser-ablation-inductively-coupled-plasma-time-of-flight-mass-spectrometry}
+
+#########  Laser ablation inductively coupled plasma time-of-flight mass spectrometry
+- Child of:
+ [`inductively-coupled-plasma-time-of-flight-mass-spectrometry`](#inductively-coupled-plasma-time-of-flight-mass-spectrometry)
+ [`laserablationmassspectrometry`](#laserablationmassspectrometry)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a time-
+of-flight configuration, a mass spectrometry technique that
+accelerates ions by an electromagnetic field and measures the travel
+time between acceleration and a detector, where ions of lower
+mass/charge ratios will travel more slowly through the accelerating
+field. The analyte material is atomised by laser and passed to the
+ICP-MS system entrained in an inert carrier gas, allowing for analysis
+of a variety of mediums including in-situ microscale samples. An
+aerosol of the material to be analysed is passed through a plasma
+torch in order to remove electron(s) from neutral atoms to create a
+charged ion. Degree of ionisation is determined by the ionisation
+potential of an element, and ICPs are generally designed to produce
+single charge positive ions. Once ionised, the ions of the analysed
+material are passed through an electromagnetic field which accelerates
+the ions to a detector. All ions are imparted with equal kinetic
+energy, but ions with lower mass-to-charge ratios (i.e. lighter
+isotopes for single charge positive ions) will travel faster and take
+less time to reach the detector. Quantitative determinations of
+isotopic abundance or rations can then be calculated using the travel
+time from acceleration to detector.
+- **Alternate labels:**
+LA-ICP-TOF-MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/laser-ablation-inductively-coupled-plasma-time-of-flight-mass-spectrometry
+
+
+[]{#laser-ablation-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry}
+
+#########  Laser ablation multicollector inductively coupled plasma tandem mass spectrometry
+- Child of:
+ [`inductively-coupled-plasma-tandem-mass-spectrometry`](#inductively-coupled-plasma-tandem-mass-spectrometry)
+ [`laserablationmassspectrometry`](#laserablationmassspectrometry)
+ [`multicollectorinductivelycoupledplasmamassspectrometry`](#multicollectorinductivelycoupledplasmamassspectrometry)
+- Mass spectrometry technique that uses an inductively coupled plasma
+connected to two mass spectrometry systems; a quadrupole and sector
+field, with an intermediate reaction cell to remove isobaric
+interferences before discrimination by mass/charge ratio. The analyte
+material is atomised by laser and passed to the ICP-MS system
+entrained in an inert carrier gas, allowing for analysis of a variety
+of mediums including in-situ microscale samples. The aerosol is passed
+through a plasma torch in order to remove electron(s) from neutral
+atoms to create a charged ion. Degree of ionisation is determined by
+the ionisation potential of an element, and ICPs are generally
+designed to produce single charge positive ions. Once ionised, the
+ions of the analysed material are passed through a quadrupole which
+only allows ions of a selected mass to pass through - these commonly
+consist of isotopes of different elements which have the same atomic
+mass, referred to as isobaric interferences. Once filtered the
+remaining ions pass to a reaction cell where they are reacted with a
+selected gas to form a charged molecule, where different elements will
+react with the gas to form different molecules and/or at different
+rates. These charged molecules are then passed through a sector field
+system and discriminated by mass-to-charge ratios, where the formerly
+equivalent atomic masses can be separated as ‘mass shifted’ molecules
+allowing for removal of isobaric interference. Masses are passed to a
+multicollector array where quantitative determination on isotopic
+ratios or abundances can be resolved for multiple masses
+simultaneously.
+- **Alternate labels:**
+LA-MC-ICP-MS/MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/laser-ablation-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry
+
+
+[]{#laser-ablation-quadrupole-inductively-coupled-plasma-mass-spectrometry}
+
+#########  Laser ablation quadrupole inductively coupled plasma mass spectrometry
+- Child of:
+ [`laserablationmassspectrometry`](#laserablationmassspectrometry)
+ [`quadrupoleinductivelycoupledplasmmassspectrometry`](#quadrupoleinductivelycoupledplasmmassspectrometry)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a
+quadrupole, a mass spectrometry technique that selectively filters
+masses by destabilising all other masses to prevent these reaching the
+detector. The analyte material is atomised by laser and passed to the
+ICP-MS system entrained in an inert carrier gas, allowing for analysis
+of a variety of mediums including in-situ microscale samples. An
+aerosol of the material to be analysed is passed through a plasma
+torch in order to remove electron(s) from neutral atoms to create a
+charged ion. Degree of ionisation is determined by the ionisation
+potential of an element, and ICPs are generally designed to produce
+single charge positive ions. Once ionised, the ions of the analysed
+material are passed through a quadrupole where they are filtered by
+mass-to-charge ratios, with single charge positive ions this can be
+considered as a mass spectrum. Filtered masses are passed to a
+detector where a quantitative determination on isotopic ratios or
+abundances can be calculated.
+- **Alternate labels:**
+LA-ICP-Q-MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/laser-ablation-quadrupole-inductively-coupled-plasma-mass-spectrometry
+
+
+[]{#laser-ablation-sector-field-inductively-coupled-plasma-mass-spectrometry}
+
+#########  Laser ablation sector field inductively coupled plasma mass spectrometry
+- Child of:
+ [`laserablationmassspectrometry`](#laserablationmassspectrometry)
+ [`sectorfieldicpms`](#sectorfieldicpms)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a
+magnetic sector, a mass spectrometry technique that bends the paths of
+ions dependent on mass/charge ratios, before the deflected ions are
+passed to a detector. The analyte material is atomised by laser and
+passed to the ICP-MS system entrained in an inert carrier gas,
+allowing for analysis of a variety of mediums including in-situ
+microscale samples. An aerosol of the material to be analysed is
+passed through a plasma torch in order to remove electron(s) from
+neutral atoms to create a charged ion. Degree of ionisation is
+determined by the ionisation potential of an element, and ICPs are
+generally designed to produce single charge positive ions. Once
+ionised, the ions of the analysed material are passed through a
+magnetic sector field where they are deflected to different degrees
+controlled by the strength of the magnetic field and the mass-to-
+charge ratios of the ions. For single charge positive ions this can be
+considered as a mass spectrum. Deflected ions are passed to a detector
+where a quantitative determination on isotopic ratios or abundances
+can be calculated.
+- **Alternate labels:**
+HR-LA-ICP-MS, 
+High resolution laser ablation inductively coupled plasma mass spectrometry,, 
+LA-ICP-SF-MS, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/laser-ablation-sector-field-inductively-coupled-plasma-mass-spectrometry
+
+
+[]{#lassmassspectrometry}
+
+#########  Laser ablation split stream mass spectrometry
+- Child of:
+ [`split-stream-mass-spectrometry`](#split-stream-mass-spectrometry)
+ [`laserablationmassspectrometry`](#laserablationmassspectrometry)
+- The output from laser ablation of a single analysis spot is split
+between two mass spectrometers (typically ICPMS). The technique allows
+simultaneous analyses of different geochemical systems in mineral
+samples using two or more mass spectrometers. An important application
+is the determination of the complementary isotopic systems of Lu-Hf
+and U-Pb (age)(https://assets.thermofisher.com/TFS-
+Assets/CMD/Application-Notes/AN-30298-ICP-MS-Laser-Ablation-Split-
+Stream-AN30298-EN.pdf)
+- **Alternate labels:**
+LA-SS-MS, 
+LASER ABLATION SPLIT STREAM MASS SPECTROMETRY, 
+LASER ABLATION-SPLIT STREAM ANALYSIS, 
+LASER ABLATION-SPLIT STREAM, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://assets.thermofisher.com/TFS-Assets/CMD/Application-Notes/AN-30298-ICP-MS-Laser-Ablation-Split-Stream-AN30298-EN.pdf, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/lassmassspectrometry
+
+
+[]{#liquidinletinductivelycoupledplasmamassspectrometry}
+
+########  Solution inductively coupled plasma mass spectrometry
+- Child of:
+ [`inductivelycoupledplasmamassspectrometry`](#inductivelycoupledplasmamassspectrometry)
+- Mass spectrometry technique that uses a solution introduction system
+coupled to an ICP-MS system that uses an ionised plasma torch to
+ionise an analyte material for discrimination by mass/charge ratio.
+The analyte material is prepared as a solution, often diluted to
+prevent overwhelming the detector. Analyte solution is pumped into a
+nebuliser to convert to an aerosol mist which is passed to the ICP-MS
+system entrained in an inert carrier gas. The aerosol is passed
+through a plasma torch in order to remove electron(s) from neutral
+atoms to create a charged ion. Degree of ionisation is determined by
+the ionisation potential of an element, and ICPs are generally
+designed to produce single charge positive ions. Once ionised, the
+ions of the analysed material are passed through a mass spectrometer
+where they are filtered by mass-to-charge ratios, with single charge
+positive ions this can be considered as a mass spectrum. Numerous
+types of mass spectrometers can be used, including quadrupole, sector
+field, and time-of-flight mass spectrometry systems. Filtered masses
+are passed to a detector where a quantitative determination on
+isotopic ratios or abundances can be calculated.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+LI-ICP-MS, 
+Liquid inlet inductively coupled plasma mass spectrometry, 
+SOLUTION-NEBULIZED INDUCTIVELY-COUPLED PLASMA MASS SPECTROMETRY, 
+STANDARD ADDITION SOLUTION INDUCTIVELY-COUPLED PLASMA MASS-SPECTROMETRY, 
+Solution ICP-MS, 
+TOTAL DIGESTION-INDUCTIVELY COUPLED PLASMA MASS SPECTROMETRY, 
+ULTRASONIC NEBULIZATION INDUCTIVELY-COUPLED PLASMA MASS SPECTROMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/liquidinletinductivelycoupledplasmamassspectrometry
+
+
+[]{#solution-inductively-coupled-plasma-tandem-mass-spectrometry}
+
+#########  Solution inductively coupled plasma tandem mass spectrometry
+- Child of:
+ [`inductively-coupled-plasma-tandem-mass-spectrometry`](#inductively-coupled-plasma-tandem-mass-spectrometry)
+ [`liquidinletinductivelycoupledplasmamassspectrometry`](#liquidinletinductivelycoupledplasmamassspectrometry)
+ [`quadrupoleinductivelycoupledplasmmassspectrometry`](#quadrupoleinductivelycoupledplasmmassspectrometry)
+- Mass spectrometry technique that uses an inductively coupled plasma
+connected to two quadrupoles with an intermediate reaction cell to
+remove isobaric interferences before discrimination by mass/charge
+ratio. The analyte material is prepared as a solution, often diluted
+to prevent overwhelming the detector. Analyte solution is pumped into
+a nebuliser to convert to an aerosol mist which is passed to the ICP-
+MS system entrained in an inert carrier gas. The aerosol is passed
+through a plasma torch in order to remove electron(s) from neutral
+atoms to create a charged ion. Degree of ionisation is determined by
+the ionisation potential of an element, and ICPs are generally
+designed to produce single charge positive ions. Once ionised, the
+ions of the analysed material are passed to the first quadrupole which
+only allows ions of a selected mass to pass through - these commonly
+consist of isotopes of different elements which have the same atomic
+mass, referred to as isobaric interferences. Once filtered the
+remaining ions pass to a reaction cell where they are reacted with a
+selected gas to form a charged molecule, where different elements will
+react with the gas to form different molecules and/or at different
+rates. These charged molecules are then passed through a second
+quadrupole and filtered by mass-to-charge ratios, where the formerly
+equivalent atomic masses can be separated as ‘mass shifted’ molecules
+allowing for removal of isobaric interference. Filtered masses are
+passed to a detector where a quantitative determination on isotopic
+ratios or abundances can be calculated.
+- **Alternate labels:**
+Solution ICP-MS/MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/solution-inductively-coupled-plasma-tandem-mass-spectrometry
+
+
+[]{#solution-inductively-coupled-plasma-time-of-flight-mass-spectrometry}
+
+#########  Solution inductively coupled plasma time-of-flight mass spectrometry
+- Child of:
+ [`inductively-coupled-plasma-time-of-flight-mass-spectrometry`](#inductively-coupled-plasma-time-of-flight-mass-spectrometry)
+ [`liquidinletinductivelycoupledplasmamassspectrometry`](#liquidinletinductivelycoupledplasmamassspectrometry)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a time-
+of-flight configuration, a mass spectrometry technique that
+accelerates ions by an electromagnetic field and measures the travel
+time between acceleration and a detector, where ions of lower
+mass/charge ratios will travel more slowly through the accelerating
+field. The analyte material is prepared as a solution, often diluted
+to prevent overwhelming the detector. Analyte solution is pumped into
+a nebuliser to convert to an aerosol mist which is passed to the ICP-
+MS system entrained in an inert carrier gas. An aerosol of the
+material to be analysed is passed through a plasma torch in order to
+remove electron(s) from neutral atoms to create a charged ion. Degree
+of ionisation is determined by the ionisation potential of an element,
+and ICPs are generally designed to produce single charge positive
+ions. Once ionised, the ions of the analysed material are passed
+through an electromagnetic field which accelerates the ions to a
+detector. All ions are imparted with equal kinetic energy, but ions
+with lower mass-to-charge ratios (i.e. lighter isotopes for single
+charge positive ions) will travel faster and take less time to reach
+the detector. Quantitative determinations of isotopic abundance or
+rations can then be calculated using the travel time from acceleration
+to detector.
+- **Alternate labels:**
+Solution ICP-TOF-MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/solution-inductively-coupled-plasma-time-of-flight-mass-spectrometry
+
+
+[]{#solution-multicollector-inductively-coupled-plasma-mass-spectrometry}
+
+#########  Solution multicollector inductively coupled plasma mass spectrometry
+- Child of:
+ [`liquidinletinductivelycoupledplasmamassspectrometry`](#liquidinletinductivelycoupledplasmamassspectrometry)
+ [`multicollectorinductivelycoupledplasmamassspectrometry`](#multicollectorinductivelycoupledplasmamassspectrometry)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a
+magnetic sector, a mass spectrometry technique that bends the paths of
+ions dependent on mass/charge ratios, before the deflected ions are
+passed to multiple detector cups. The analyte material is prepared as
+a solution, often diluted to prevent overwhelming the detector.
+Analyte solution is pumped into a nebuliser to convert to an aerosol
+mist which is passed to the ICP-MS system entrained in an inert
+carrier gas. An aerosol of the material to be analysed is passed
+through a plasma torch in order to remove electron(s) from neutral
+atoms to create a charged ion. Degree of ionisation is determined by
+the ionisation potential of an element, and ICPs are generally
+designed to produce single charge positive ions. Once ionised, the
+ions of the analysed material are passed through a magnetic sector
+field where they are deflected to different degrees controlled by the
+strength of the magnetic field and the mass-to-charge ratios of the
+ions. For single charge positive ions this can be considered as a mass
+spectrum. Deflected ions are passed to an array of multiple detectors
+(commonly 10 to 20 depending on instruments) where a quantitative
+determination on isotopic ratios or abundances can be calculated. ICP-
+MS analysis requires an introduction system to be paired with the ICP-
+MS system, which has consequences for the materials which may be
+analysed, interferences which may occur and precision that can be
+achieved.
+- **Alternate labels:**
+Solution MC-ICP-MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/solution-multicollector-inductively-coupled-plasma-mass-spectrometry
+
+
+[]{#solution-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry}
+
+#########  Solution multicollector inductively coupled plasma tandem mass spectrometry
+- Child of:
+ [`inductively-coupled-plasma-tandem-mass-spectrometry`](#inductively-coupled-plasma-tandem-mass-spectrometry)
+ [`liquidinletinductivelycoupledplasmamassspectrometry`](#liquidinletinductivelycoupledplasmamassspectrometry)
+ [`multicollectorinductivelycoupledplasmamassspectrometry`](#multicollectorinductivelycoupledplasmamassspectrometry)
+- Mass spectrometry technique that uses an inductively coupled plasma
+connected to two mass spectrometry systems; a quadrupole and sector
+field, with an intermediate reaction cell to remove isobaric
+interferences before discrimination by mass/charge ratio. The analyte
+material is prepared as a solution, often diluted to prevent
+overwhelming the detector. Analyte solution is pumped into a nebuliser
+to convert to an aerosol mist which is passed to the ICP-MS system
+entrained in an inert carrier gas. The aerosol is passed through a
+plasma torch in order to remove electron(s) from neutral atoms to
+create a charged ion. Degree of ionisation is determined by the
+ionisation potential of an element, and ICPs are generally designed to
+produce single charge positive ions. Once ionised, the ions of the
+analysed material are passed through a quadrupole which only allows
+ions of a selected mass to pass through - these commonly consist of
+isotopes of different elements which have the same atomic mass,
+referred to as isobaric interferences. Once filtered the remaining
+ions pass to a reaction cell where they are reacted with a selected
+gas to form a charged molecule, where different elements will react
+with the gas to form different molecules and/or at different rates.
+These charged molecules are then passed through a sector field system
+and discriminated by mass-to-charge ratios, where the formerly
+equivalent atomic masses can be separated as ‘mass shifted’ molecules
+allowing for removal of isobaric interference. Masses are passed to a
+multicollector array where quantitative determination on isotopic
+ratios or abundances can be resolved for multiple masses
+simultaneously.
+- **Alternate labels:**
+Solution ICP-MC-MS/MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/solution-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry
+
+
+[]{#solution-quadrupole-inductively-coupled-plasma-mass-spectrometry}
+
+#########  Solution quadrupole inductively coupled plasma mass spectrometry
+- Child of:
+ [`liquidinletinductivelycoupledplasmamassspectrometry`](#liquidinletinductivelycoupledplasmamassspectrometry)
+ [`quadrupoleinductivelycoupledplasmmassspectrometry`](#quadrupoleinductivelycoupledplasmmassspectrometry)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a
+quadrupole, a mass spectrometry technique that selectively filters
+masses by destabilising all other masses to prevent these reaching the
+detector. The analyte material is prepared as a solution, often
+diluted to prevent overwhelming the detector. Analyte solution is
+pumped into a nebuliser to convert to an aerosol mist which is passed
+to the ICP-MS system entrained in an inert carrier gas. An aerosol of
+the material to be analysed is passed through a plasma torch in order
+to remove electron(s) from neutral atoms to create a charged ion.
+Degree of ionisation is determined by the ionisation potential of an
+element, and ICPs are generally designed to produce single charge
+positive ions. Once ionised, the ions of the analysed material are
+passed through a quadrupole where they are filtered by mass-to-charge
+ratios, with single charge positive ions this can be considered as a
+mass spectrum. Filtered masses are passed to a detector where a
+quantitative determination on isotopic ratios or abundances can be
+calculated.
+- **Alternate labels:**
+Solution ICP-Q-MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/solution-quadrupole-inductively-coupled-plasma-mass-spectrometry
+
+
+[]{#solution-sector-field-inductively-coupled-plasma-mass-spectrometry}
+
+#########  Solution sector field inductively coupled plasma mass spectrometry
+- Child of:
+ [`liquidinletinductivelycoupledplasmamassspectrometry`](#liquidinletinductivelycoupledplasmamassspectrometry)
+ [`sectorfieldicpms`](#sectorfieldicpms)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a
+magnetic sector, a mass spectrometry technique that bends the paths of
+ions dependent on mass/charge ratios, before the deflected ions are
+passed to a detector. The analyte material is prepared as a solution,
+often diluted to prevent overwhelming the detector. Analyte solution
+is pumped into a nebuliser to convert to an aerosol mist which is
+passed to the ICP-MS system entrained in an inert carrier gas. An
+aerosol of the material to be analysed is passed through a plasma
+torch in order to remove electron(s) from neutral atoms to create a
+charged ion. Degree of ionisation is determined by the ionisation
+potential of an element, and ICPs are generally designed to produce
+single charge positive ions. Once ionised, the ions of the analysed
+material are passed through a magnetic sector field where they are
+deflected to different degrees controlled by the strength of the
+magnetic field and the mass-to-charge ratios of the ions. For single
+charge positive ions this can be considered as a mass spectrum.
+Deflected ions are passed to a detector where a quantitative
+determination on isotopic ratios or abundances can be calculated.
+- **Alternate labels:**
+High resolution solution inductively coupled plasma mass spectrometry, 
+Solution HR-ICP-MS, 
+Solution ICP-SF-MS, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/solution-sector-field-inductively-coupled-plasma-mass-spectrometry
+
+
+[]{#quadrupoleinductivelycoupledplasmmassspectrometry}
+
+########  Quadrupole inductively coupled plasma mass spectrometry
+- Child of:
+ [`inductivelycoupledplasmamassspectrometry`](#inductivelycoupledplasmamassspectrometry)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a
+quadrupole, a mass spectrometry technique that selectively filters
+masses by destabilising all other masses to prevent these reaching the
+detector. An aerosol of the material to be analysed is passed through
+a plasma torch in order to remove electron(s) from neutral atoms to
+create a charged ion. Degree of ionisation is determined by the
+ionisation potential of an element, and ICPs are generally designed to
+produce single charge positive ions. Once ionised, the ions of the
+analysed material are passed through a quadrupole where they are
+filtered by mass-to-charge ratios, with single charge positive ions
+this can be considered as a mass spectrum. Filtered masses are passed
+to a detector where a quantitative determination on isotopic ratios or
+abundances can be calculated. ICP-MS analysis requires an introduction
+system to be paired with the ICP-MS system, which has consequences for
+the materials which may be analysed, interferences which may occur and
+precision that can be achieved.
+- **Alternate labels:**
+ICP-Q-MS, 
+QUADRUPOLE INDUCTIVELY COUPLED PLASMA MASS SPECTROMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/quadrupoleinductivelycoupledplasmmassspectrometry
+
+
+[]{#laser-ablation-inductively-coupled-plasma-tandem-mass-spectrometry}
+
+#########  Laser ablation inductively coupled plasma tandem mass spectrometry
+- Child of:
+ [`inductively-coupled-plasma-tandem-mass-spectrometry`](#inductively-coupled-plasma-tandem-mass-spectrometry)
+ [`laserablationmassspectrometry`](#laserablationmassspectrometry)
+ [`quadrupoleinductivelycoupledplasmmassspectrometry`](#quadrupoleinductivelycoupledplasmmassspectrometry)
+- Mass spectrometry technique that uses an inductively coupled plasma
+connected to two quadrupoles with an intermediate reaction cell to
+remove isobaric interferences before discrimination by mass/charge
+ratio. The analyte material is atomised by laser and passed to the
+ICP-MS system entrained in an inert carrier gas, allowing for analysis
+of a variety of mediums including in-situ microscale samples. The
+aerosol is passed through a plasma torch in order to remove
+electron(s) from neutral atoms to create a charged ion. Degree of
+ionisation is determined by the ionisation potential of an element,
+and ICPs are generally designed to produce single charge positive
+ions. Once ionised, the ions of the analysed material are passed to
+the first quadrupole which only allows ions of a selected mass to pass
+through - these commonly consist of isotopes of different elements
+which have the same atomic mass, referred to as isobaric
+interferences. Once filtered the remaining ions pass to a reaction
+cell where they are reacted with a selected gas to form a charged
+molecule, where different elements will react with the gas to form
+different molecules and/or at different rates. These charged molecules
+are then passed through a second quadrupole and filtered by mass-to-
+charge ratios, where the formerly equivalent atomic masses can be
+separated as ‘mass shifted’ molecules allowing for removal of isobaric
+interference. Filtered masses are passed to a detector where a
+quantitative determination on isotopic ratios or abundances can be
+calculated.
+- **Alternate labels:**
+LA-ICP-MS/MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/laser-ablation-inductively-coupled-plasma-tandem-mass-spectrometry
+
+
+[]{#laser-ablation-quadrupole-inductively-coupled-plasma-mass-spectrometry}
+
+#########  Laser ablation quadrupole inductively coupled plasma mass spectrometry
+- Child of:
+ [`laserablationmassspectrometry`](#laserablationmassspectrometry)
+ [`quadrupoleinductivelycoupledplasmmassspectrometry`](#quadrupoleinductivelycoupledplasmmassspectrometry)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a
+quadrupole, a mass spectrometry technique that selectively filters
+masses by destabilising all other masses to prevent these reaching the
+detector. The analyte material is atomised by laser and passed to the
+ICP-MS system entrained in an inert carrier gas, allowing for analysis
+of a variety of mediums including in-situ microscale samples. An
+aerosol of the material to be analysed is passed through a plasma
+torch in order to remove electron(s) from neutral atoms to create a
+charged ion. Degree of ionisation is determined by the ionisation
+potential of an element, and ICPs are generally designed to produce
+single charge positive ions. Once ionised, the ions of the analysed
+material are passed through a quadrupole where they are filtered by
+mass-to-charge ratios, with single charge positive ions this can be
+considered as a mass spectrum. Filtered masses are passed to a
+detector where a quantitative determination on isotopic ratios or
+abundances can be calculated.
+- **Alternate labels:**
+LA-ICP-Q-MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/laser-ablation-quadrupole-inductively-coupled-plasma-mass-spectrometry
+
+
+[]{#solution-inductively-coupled-plasma-tandem-mass-spectrometry}
+
+#########  Solution inductively coupled plasma tandem mass spectrometry
+- Child of:
+ [`inductively-coupled-plasma-tandem-mass-spectrometry`](#inductively-coupled-plasma-tandem-mass-spectrometry)
+ [`liquidinletinductivelycoupledplasmamassspectrometry`](#liquidinletinductivelycoupledplasmamassspectrometry)
+ [`quadrupoleinductivelycoupledplasmmassspectrometry`](#quadrupoleinductivelycoupledplasmmassspectrometry)
+- Mass spectrometry technique that uses an inductively coupled plasma
+connected to two quadrupoles with an intermediate reaction cell to
+remove isobaric interferences before discrimination by mass/charge
+ratio. The analyte material is prepared as a solution, often diluted
+to prevent overwhelming the detector. Analyte solution is pumped into
+a nebuliser to convert to an aerosol mist which is passed to the ICP-
+MS system entrained in an inert carrier gas. The aerosol is passed
+through a plasma torch in order to remove electron(s) from neutral
+atoms to create a charged ion. Degree of ionisation is determined by
+the ionisation potential of an element, and ICPs are generally
+designed to produce single charge positive ions. Once ionised, the
+ions of the analysed material are passed to the first quadrupole which
+only allows ions of a selected mass to pass through - these commonly
+consist of isotopes of different elements which have the same atomic
+mass, referred to as isobaric interferences. Once filtered the
+remaining ions pass to a reaction cell where they are reacted with a
+selected gas to form a charged molecule, where different elements will
+react with the gas to form different molecules and/or at different
+rates. These charged molecules are then passed through a second
+quadrupole and filtered by mass-to-charge ratios, where the formerly
+equivalent atomic masses can be separated as ‘mass shifted’ molecules
+allowing for removal of isobaric interference. Filtered masses are
+passed to a detector where a quantitative determination on isotopic
+ratios or abundances can be calculated.
+- **Alternate labels:**
+Solution ICP-MS/MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/solution-inductively-coupled-plasma-tandem-mass-spectrometry
+
+
+[]{#solution-quadrupole-inductively-coupled-plasma-mass-spectrometry}
+
+#########  Solution quadrupole inductively coupled plasma mass spectrometry
+- Child of:
+ [`liquidinletinductivelycoupledplasmamassspectrometry`](#liquidinletinductivelycoupledplasmamassspectrometry)
+ [`quadrupoleinductivelycoupledplasmmassspectrometry`](#quadrupoleinductivelycoupledplasmmassspectrometry)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a
+quadrupole, a mass spectrometry technique that selectively filters
+masses by destabilising all other masses to prevent these reaching the
+detector. The analyte material is prepared as a solution, often
+diluted to prevent overwhelming the detector. Analyte solution is
+pumped into a nebuliser to convert to an aerosol mist which is passed
+to the ICP-MS system entrained in an inert carrier gas. An aerosol of
+the material to be analysed is passed through a plasma torch in order
+to remove electron(s) from neutral atoms to create a charged ion.
+Degree of ionisation is determined by the ionisation potential of an
+element, and ICPs are generally designed to produce single charge
+positive ions. Once ionised, the ions of the analysed material are
+passed through a quadrupole where they are filtered by mass-to-charge
+ratios, with single charge positive ions this can be considered as a
+mass spectrum. Filtered masses are passed to a detector where a
+quantitative determination on isotopic ratios or abundances can be
+calculated.
+- **Alternate labels:**
+Solution ICP-Q-MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/solution-quadrupole-inductively-coupled-plasma-mass-spectrometry
+
+
+[]{#sectorfieldicpms}
+
+########  Sector field inductively coupled plasma mass spectrometry
+- Child of:
+ [`inductivelycoupledplasmamassspectrometry`](#inductivelycoupledplasmamassspectrometry)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a
+magnetic sector, a mass spectrometry technique that bends the paths of
+ions dependent on mass/charge ratios, before the deflected ions are
+passed to a detector. An aerosol of the material to be analysed is
+passed through a plasma torch in order to remove electron(s) from
+neutral atoms to create a charged ion. Degree of ionisation is
+determined by the ionisation potential of an element, and ICPs are
+generally designed to produce single charge positive ions. Once
+ionised, the ions of the analysed material are passed through a
+magnetic sector field where they are deflected to different degrees
+controlled by the strength of the magnetic field and the mass-to-
+charge ratios of the ions. For single charge positive ions this can be
+considered as a mass spectrum. Deflected ions are passed to a single
+or multiple detectors where a quantitative determination on isotopic
+ratios or abundances can be calculated. ICP-MS analysis requires an
+introduction system to be paired with the ICP-MS system, which has
+consequences for the materials which may be analysed, interferences
+which may occur and precision that can be achieved.
+- **Alternate labels:**
+HIGH-RESOLUTION INDUCTIVELY COUPLED PLASMA MASS SPECTROMETRY, 
+HR-ICP-MS, 
+High resolution inductively coupled plasma mass spectrometry, 
+ICP-SF-MS, 
+SECTOR FIELD INDUCTIVELY-COUPLED PLASMA MASS SPECTROMETRY, 
+SFICPMS, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/metbase, 
+https://chemistry.olemiss.edu/icp-sfms/, 
+https://pubs.rsc.org/en/content/articlelanding/2004/ja/b403128h, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/sectorfieldicpms
+
+
+[]{#laser-ablation-sector-field-inductively-coupled-plasma-mass-spectrometry}
+
+#########  Laser ablation sector field inductively coupled plasma mass spectrometry
+- Child of:
+ [`laserablationmassspectrometry`](#laserablationmassspectrometry)
+ [`sectorfieldicpms`](#sectorfieldicpms)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a
+magnetic sector, a mass spectrometry technique that bends the paths of
+ions dependent on mass/charge ratios, before the deflected ions are
+passed to a detector. The analyte material is atomised by laser and
+passed to the ICP-MS system entrained in an inert carrier gas,
+allowing for analysis of a variety of mediums including in-situ
+microscale samples. An aerosol of the material to be analysed is
+passed through a plasma torch in order to remove electron(s) from
+neutral atoms to create a charged ion. Degree of ionisation is
+determined by the ionisation potential of an element, and ICPs are
+generally designed to produce single charge positive ions. Once
+ionised, the ions of the analysed material are passed through a
+magnetic sector field where they are deflected to different degrees
+controlled by the strength of the magnetic field and the mass-to-
+charge ratios of the ions. For single charge positive ions this can be
+considered as a mass spectrum. Deflected ions are passed to a detector
+where a quantitative determination on isotopic ratios or abundances
+can be calculated.
+- **Alternate labels:**
+HR-LA-ICP-MS, 
+High resolution laser ablation inductively coupled plasma mass spectrometry,, 
+LA-ICP-SF-MS, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/laser-ablation-sector-field-inductively-coupled-plasma-mass-spectrometry
+
+
+[]{#solution-sector-field-inductively-coupled-plasma-mass-spectrometry}
+
+#########  Solution sector field inductively coupled plasma mass spectrometry
+- Child of:
+ [`liquidinletinductivelycoupledplasmamassspectrometry`](#liquidinletinductivelycoupledplasmamassspectrometry)
+ [`sectorfieldicpms`](#sectorfieldicpms)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a
+magnetic sector, a mass spectrometry technique that bends the paths of
+ions dependent on mass/charge ratios, before the deflected ions are
+passed to a detector. The analyte material is prepared as a solution,
+often diluted to prevent overwhelming the detector. Analyte solution
+is pumped into a nebuliser to convert to an aerosol mist which is
+passed to the ICP-MS system entrained in an inert carrier gas. An
+aerosol of the material to be analysed is passed through a plasma
+torch in order to remove electron(s) from neutral atoms to create a
+charged ion. Degree of ionisation is determined by the ionisation
+potential of an element, and ICPs are generally designed to produce
+single charge positive ions. Once ionised, the ions of the analysed
+material are passed through a magnetic sector field where they are
+deflected to different degrees controlled by the strength of the
+magnetic field and the mass-to-charge ratios of the ions. For single
+charge positive ions this can be considered as a mass spectrum.
+Deflected ions are passed to a detector where a quantitative
+determination on isotopic ratios or abundances can be calculated.
+- **Alternate labels:**
+High resolution solution inductively coupled plasma mass spectrometry, 
+Solution HR-ICP-MS, 
+Solution ICP-SF-MS, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/solution-sector-field-inductively-coupled-plasma-mass-spectrometry
+
+
+[]{#multicollectorinductivelycoupledplasmamassspectrometry}
+
+#########  Multicollector inductively coupled plasma mass spectrometry
+- Child of:
+ [`sectorfieldicpms`](#sectorfieldicpms)
+- Quadrupole and Multi-Collector (MC) Inductively coupled plasma mass
+spectrometry (ICP-MS) are grouped into one 'analtyical technique' by
+O-REx sample analysis team.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+HIGH-RESOLUTION MULTI-COLLECTOR INDUCTIVELY-COUPLED PLASMA MASS SPECTROMETRY, 
+ISOTOPE-DILUTION MULTI-COLLECTOR INDUCTIVELY COUPLED PLASMA MASS SPECTROMETRY, 
+MULTI-COLLECTOR INDUCTIVELY COUPLED PLASMA MAGNETIC SECTOR MASS SPECTROMETRY, 
+MULTICOLLECTOR INDUCTIVELY COUPLED PLASMA MASS SPECTROMETRY-ISOTOPE DILUTION, 
+PLASMA IONISATION MULTI-COLLECTOR MASS SPECTROMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/multicollectorinductivelycoupledplasmamassspectrometry
+
+
+[]{#laser-ablation-multicollector-inductively-coupled-plasma-mass-spectrometry}
+
+##########  Laser ablation multicollector inductively coupled plasma mass spectrometry
+- Child of:
+ [`laserablationmassspectrometry`](#laserablationmassspectrometry)
+ [`multicollectorinductivelycoupledplasmamassspectrometry`](#multicollectorinductivelycoupledplasmamassspectrometry)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a
+magnetic sector, a mass spectrometry technique that bends the paths of
+ions dependent on mass/charge ratios, before the deflected ions are
+passed to multiple detector cups. The analyte material is atomised by
+laser and passed to the ICP-MS system entrained in an inert carrier
+gas, allowing for analysis of a variety of mediums including in-situ
+microscale samples. An aerosol of the material to be analysed is
+passed through a plasma torch in order to remove electron(s) from
+neutral atoms to create a charged ion. Degree of ionisation is
+determined by the ionisation potential of an element, and ICPs are
+generally designed to produce single charge positive ions. Once
+ionised, the ions of the analysed material are passed through a
+magnetic sector field where they are deflected to different degrees
+controlled by the strength of the magnetic field and the mass-to-
+charge ratios of the ions. For single charge positive ions this can be
+considered as a mass spectrum. Deflected ions are passed to an array
+of multiple detectors (commonly 10 to 20 depending on instruments)
+where a quantitative determination on isotopic ratios or abundances
+can be calculated.
+- **Alternate labels:**
+LA-MC-ICP-MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/laser-ablation-multicollector-inductively-coupled-plasma-mass-spectrometry
+
+
+[]{#laser-ablation-femtosecond-multicollector-inductively-coupled-plasma-mass-spectrometry}
+
+###########  Femtosecond laser ablation multicollector inductively coupled plasma mass spectrometry
+- Child of:
+ [`laser-ablation-multicollector-inductively-coupled-plasma-mass-spectrometry`](#laser-ablation-multicollector-inductively-coupled-plasma-mass-spectrometry)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a
+magnetic sector, a mass spectrometry technique that bends the paths of
+ions dependent on mass/charge ratios, before the deflected ions are
+passed to multiple detector cups. The analyte material is ablated by a
+femtosecond laser, a laser system capable of femtosecond-scale pulses
+to reduce the damage caused to the target material by the incident
+laser, with material liberated through a combination of ablation and
+Coulombic explosion. This technique may be used to analyse a variety
+of mediums including in-situ microscale samples. Liberated material is
+passed to the ICP-MS system entrained in an inert carrier gas, where
+it is passed through a plasma torch in order to remove remaining
+electrons from neutral atoms to create charged ions. Degree of
+ionisation is determined by the ionisation potential of an element,
+and ICPs are generally designed to produce single charge positive
+ions. Once ionised, the ions of the analysed material are passed
+through a magnetic sector field where they are deflected to different
+degrees controlled by the strength of the magnetic field and the mass-
+to-charge ratios of the ions. For single charge positive ions this can
+be considered as a mass spectrum. Deflected ions are passed to an
+array of multiple detectors (commonly 10 to 20 depending on
+instruments) where a quantitative determination on isotopic ratios or
+abundances can be calculated.
+- **Alternate labels:**
+fs-LA-MC-ICP-MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/laser-ablation-femtosecond-multicollector-inductively-coupled-plasma-mass-spectrometry
+
+
+[]{#laser-ablation-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry}
+
+##########  Laser ablation multicollector inductively coupled plasma tandem mass spectrometry
+- Child of:
+ [`inductively-coupled-plasma-tandem-mass-spectrometry`](#inductively-coupled-plasma-tandem-mass-spectrometry)
+ [`laserablationmassspectrometry`](#laserablationmassspectrometry)
+ [`multicollectorinductivelycoupledplasmamassspectrometry`](#multicollectorinductivelycoupledplasmamassspectrometry)
+- Mass spectrometry technique that uses an inductively coupled plasma
+connected to two mass spectrometry systems; a quadrupole and sector
+field, with an intermediate reaction cell to remove isobaric
+interferences before discrimination by mass/charge ratio. The analyte
+material is atomised by laser and passed to the ICP-MS system
+entrained in an inert carrier gas, allowing for analysis of a variety
+of mediums including in-situ microscale samples. The aerosol is passed
+through a plasma torch in order to remove electron(s) from neutral
+atoms to create a charged ion. Degree of ionisation is determined by
+the ionisation potential of an element, and ICPs are generally
+designed to produce single charge positive ions. Once ionised, the
+ions of the analysed material are passed through a quadrupole which
+only allows ions of a selected mass to pass through - these commonly
+consist of isotopes of different elements which have the same atomic
+mass, referred to as isobaric interferences. Once filtered the
+remaining ions pass to a reaction cell where they are reacted with a
+selected gas to form a charged molecule, where different elements will
+react with the gas to form different molecules and/or at different
+rates. These charged molecules are then passed through a sector field
+system and discriminated by mass-to-charge ratios, where the formerly
+equivalent atomic masses can be separated as ‘mass shifted’ molecules
+allowing for removal of isobaric interference. Masses are passed to a
+multicollector array where quantitative determination on isotopic
+ratios or abundances can be resolved for multiple masses
+simultaneously.
+- **Alternate labels:**
+LA-MC-ICP-MS/MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/laser-ablation-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry
+
+
+[]{#solution-multicollector-inductively-coupled-plasma-mass-spectrometry}
+
+##########  Solution multicollector inductively coupled plasma mass spectrometry
+- Child of:
+ [`liquidinletinductivelycoupledplasmamassspectrometry`](#liquidinletinductivelycoupledplasmamassspectrometry)
+ [`multicollectorinductivelycoupledplasmamassspectrometry`](#multicollectorinductivelycoupledplasmamassspectrometry)
+- Analytical technique that uses an ionised plasma torch to ionise an
+analyte material for discrimination by mass/charge ratio using a
+magnetic sector, a mass spectrometry technique that bends the paths of
+ions dependent on mass/charge ratios, before the deflected ions are
+passed to multiple detector cups. The analyte material is prepared as
+a solution, often diluted to prevent overwhelming the detector.
+Analyte solution is pumped into a nebuliser to convert to an aerosol
+mist which is passed to the ICP-MS system entrained in an inert
+carrier gas. An aerosol of the material to be analysed is passed
+through a plasma torch in order to remove electron(s) from neutral
+atoms to create a charged ion. Degree of ionisation is determined by
+the ionisation potential of an element, and ICPs are generally
+designed to produce single charge positive ions. Once ionised, the
+ions of the analysed material are passed through a magnetic sector
+field where they are deflected to different degrees controlled by the
+strength of the magnetic field and the mass-to-charge ratios of the
+ions. For single charge positive ions this can be considered as a mass
+spectrum. Deflected ions are passed to an array of multiple detectors
+(commonly 10 to 20 depending on instruments) where a quantitative
+determination on isotopic ratios or abundances can be calculated. ICP-
+MS analysis requires an introduction system to be paired with the ICP-
+MS system, which has consequences for the materials which may be
+analysed, interferences which may occur and precision that can be
+achieved.
+- **Alternate labels:**
+Solution MC-ICP-MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/solution-multicollector-inductively-coupled-plasma-mass-spectrometry
+
+
+[]{#solution-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry}
+
+##########  Solution multicollector inductively coupled plasma tandem mass spectrometry
+- Child of:
+ [`inductively-coupled-plasma-tandem-mass-spectrometry`](#inductively-coupled-plasma-tandem-mass-spectrometry)
+ [`liquidinletinductivelycoupledplasmamassspectrometry`](#liquidinletinductivelycoupledplasmamassspectrometry)
+ [`multicollectorinductivelycoupledplasmamassspectrometry`](#multicollectorinductivelycoupledplasmamassspectrometry)
+- Mass spectrometry technique that uses an inductively coupled plasma
+connected to two mass spectrometry systems; a quadrupole and sector
+field, with an intermediate reaction cell to remove isobaric
+interferences before discrimination by mass/charge ratio. The analyte
+material is prepared as a solution, often diluted to prevent
+overwhelming the detector. Analyte solution is pumped into a nebuliser
+to convert to an aerosol mist which is passed to the ICP-MS system
+entrained in an inert carrier gas. The aerosol is passed through a
+plasma torch in order to remove electron(s) from neutral atoms to
+create a charged ion. Degree of ionisation is determined by the
+ionisation potential of an element, and ICPs are generally designed to
+produce single charge positive ions. Once ionised, the ions of the
+analysed material are passed through a quadrupole which only allows
+ions of a selected mass to pass through - these commonly consist of
+isotopes of different elements which have the same atomic mass,
+referred to as isobaric interferences. Once filtered the remaining
+ions pass to a reaction cell where they are reacted with a selected
+gas to form a charged molecule, where different elements will react
+with the gas to form different molecules and/or at different rates.
+These charged molecules are then passed through a sector field system
+and discriminated by mass-to-charge ratios, where the formerly
+equivalent atomic masses can be separated as ‘mass shifted’ molecules
+allowing for removal of isobaric interference. Masses are passed to a
+multicollector array where quantitative determination on isotopic
+ratios or abundances can be resolved for multiple masses
+simultaneously.
+- **Alternate labels:**
+Solution ICP-MC-MS/MS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/solution-multicollector-inductively-coupled-plasma-tandem-mass-spectrometry
+
+
+[]{#resonanceionizationmassspectrometry}
+
+######  Resonance ionization mass spectrometry
+- Child of:
+ [`massspectrometry`](#massspectrometry)
+- A portion of a solid sample is vaporized by a laser or pulsed ion
+beam. The liberated material consists of atoms and molecules, both as
+neutrals and ions. The sputtered ions are usually swept away by an
+electric field, and one or more pulsed lasers tuned to specific
+resonances in the element of interest are passed through the remaining
+neutral cloud to affect efficient ionization of that element, while
+other elements and molecules are largely unaffected. The photoions are
+then extracted into the mass analyzer, commonly a time-of-flight
+analyzer.
+- **Source:**
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://www.osti.gov/servlets/purl/1763939, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/resonanceionizationmassspectrometry
+
+
+[]{#laserablationresonanceionizationmassspectrometry}
+
+#######  Laser ablation resonance ionization mass spectrometry
+- Child of:
+ [`resonanceionizationmassspectrometry`](#resonanceionizationmassspectrometry)
+- A portion of a solid sample is vaporized by a laser;  ablated atoms
+and molecules, are both neutral and charged. Charged particles are
+usually swept away by an electric field, and one or more pulsed lasers
+tuned to specific resonances in the element of interest are passed
+through the remaining neutral cloud to affect efficient ionization of
+that element, while other elements and molecules are largely
+unaffected. The photoions are then extracted into the mass analyzer,
+commonly a time-of-flight analyzer.
+- **Alternate labels:**
+Laser ablation resonance ionization mass spectrometry , 
+laser ablation resonance ionisation mass spectrometer, 
+- **Source:**
+https://doi.org/10.1063/1.1143443, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/laserablationresonanceionizationmassspectrometry
+
+
+[]{#resonanceionizationtimeofflightnoblegasmassspectrometry}
+
+#######  Resonance ionization time of flight noble gas mass spectrometry
+- Child of:
+ [`noblegasmassspectrometry`](#noblegasmassspectrometry)
+ [`resonanceionizationmassspectrometry`](#resonanceionizationmassspectrometry)
+- Noble gas mass spectrometry technique that atomizes and ionizes
+samples using laser resonance to generate a plasma, and a time-of-
+flight mass analyzer.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/resonanceionizationtimeofflightnoblegasmassspectrometry
+
+
+[]{#secondaryneutralmassspectrometry}
+
+#######  Secondary neutral mass spectrometry
+- Child of:
+ [`resonanceionizationmassspectrometry`](#resonanceionizationmassspectrometry)
+- Mass spectrometer that separates the processes of emission and
+ionisation of sputtered particles. The sputtered neutral particles,
+atoms and atomic clusters are detected by a mass spectrometer after
+post sputtering ionisation, which can be performed by an electron
+beam, electron gas or laser beam. Of these, the most efficient way to
+ionise the emitted neutral particles is laser beam ionisation.
+(https://www.spectroscopyeurope.com/system/files/pdf/SNMS_21_4.pdf)
+Laser ionization mass nanoscope or LIMAS, is a nano-beam time-of-
+flight secondary neutral mass spectrometry system. The primary ion
+beam column is a Ga liquid metal ion source that with aberration
+correction optics can generate a primary ion beam down to 40 nm in
+diameter under a current of 100 pA with an energy of 20 keV. The
+sputtered neutral particles are ionized by a femtosecond laser. The
+ions are introduced into a multi-turn mass analyzer. This instrument
+would be effective for ultrahigh sensitive analysis of nanosized
+particles such as return samples from asteroids, comets, and planets.
+(Ebata, Ishihara, Uchino, Itose;  http://dx.doi.org/10.1002/sia.4857.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://doi.org/10.1002/sia.4857, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://www.spectroscopyeurope.com/system/files/pdf/SNMS_21_4.pdf, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/secondaryneutralmassspectrometry
+
+
+[]{#secondaryionizationmassspectrometry}
+
+######  Secondary ionization mass spectrometry
+- Child of:
+ [`massspectrometry`](#massspectrometry)
+- secondary-ion mass analyzers are based on bombarding the surface of
+the sample with a beam of 5- to 20-keV ions. The ion beam is formed in
+an ion gun in which the gaseous atoms or molecules are ionized by an
+electron-ionization source. The positive ions are then accelerated by
+applying a high dc voltage. The impact of these primary ions causes
+the surface layer of atoms of the sample to be stripped (sputtered)
+off, largely as neutral atoms. A small fraction, however, forms as
+positive (or negative) secondary ions that are drawn into a
+spectrometer for mass analysis. In secondary-ion mass analyzers, which
+serve for general surface analysis and for depth profiling, the
+primary ion-beam diameter ranges from 0.3 to 5 mm. Double-focusing,
+single-focusing, time-of-flight, and quadrupole spectrometers are used
+for mass determination. Typical transducers for SIMS are electron
+multipliers, Faraday cups, and imaging detectors. (Skoog, Holler &
+Crouch, p. 549) Measure method in which a focused beam of primary ions
+produces secondary ions by sputtering from a solid surface. The
+secondary ions are analyzed by mass spectrometry. (Source: IUPAC;
+https://doi.org/10.1351/PAC-REC-06-04-06)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+HIGH-RESOLUTION SECONDARY IONIZATION MASS SPECTROMETRY, 
+ID-SIMS, 
+LARGE ISOTOPE-DILUTION ION-PROBE ANALYSIS, 
+MC-SIMS, 
+MULTI-COLLECTOR SECONDARY IONIZATION MASS SPECTROMETRY, 
+SECONDARY ION MASS SPECTROMETRY, 
+Secondary Ion mass spectrometry, 
+- **Source:**
+https://doi.org/10.1351/PAC-REC-06-04-06, 
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/geox, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/secondaryionizationmassspectrometry
+
+
+[]{#large-geometry-secondary-ion-mass-spectrometry}
+
+#######  Large geometry secondary ion mass spectrometry
+- Child of:
+ [`secondaryionizationmassspectrometry`](#secondaryionizationmassspectrometry)
+- **Alternate labels:**
+LG-SIMS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/large-geometry-secondary-ion-mass-spectrometry
+
+
+[]{#nanoscale-secondary-ion-mass-spectrometry}
+
+#######  Nanoscale secondary ion mass spectrometry
+- Child of:
+ [`secondaryionizationmassspectrometry`](#secondaryionizationmassspectrometry)
+- **Alternate labels:**
+NANO SECONDARY ION MASS SPECTROMETRY, 
+NANO SECONDARY IONIZATION MASS SPECTROMETRY, 
+Nano-SIMS, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/nanoscale-secondary-ion-mass-spectrometry
+
+
+[]{#sensitive-high-resolution-ion-microprobe-reverse-geometry-analysis}
+
+#######  Sensitive high resolution ion microprobe reverse geometry analysis
+- Child of:
+ [`secondaryionizationmassspectrometry`](#secondaryionizationmassspectrometry)
+- **Alternate labels:**
+SENSITIVE HIGH-MASS-RESOLUTION ION MICROPROBE-REVERSE GEOMETRY ANALYSIS, 
+SENSITIVE HIGH-MASS-RESOLUTION ION MICROPROBE-REVERSE GEOMETRY, 
+SHRIMP-RG, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/sensitive-high-resolution-ion-microprobe-reverse-geometry-analysis
+
+
+[]{#time-of-flight-secondary-ion-mass-spectrometry}
+
+#######  Time-of-flight secondary ion mass spectrometry
+- Child of:
+ [`secondaryionizationmassspectrometry`](#secondaryionizationmassspectrometry)
+- **Alternate labels:**
+TOF-SIMS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/time-of-flight-secondary-ion-mass-spectrometry
+
+
+[]{#shrimp}
+
+#######  Sensitive high resolution ion microprobe analysis
+- Child of:
+ [`secondaryionizationmassspectrometry`](#secondaryionizationmassspectrometry)
+- SIMS analysis using a system designed to obtain a highly-focused ion
+excitation beam to induce sputtering from very small target areas (10
+to 30 micron-diameter scale), with mass-analyzer and detector designs
+to maximize mass resolution.  Various approaches are used, and
+technology is constantly evolving, for example SHRIMP-RG (Reverse
+Geometry), multiple ion collection systems, negative-ion stable
+isotope measurements.
+- **Alternate labels:**
+SENSITIVE HIGH-MASS-RESOLUTION ION MICROPROBE ANALYSIS, 
+SENSITIVE HIGH-MASS-RESOLUTION ION MICROPROBE, 
+SHRIMP, 
+Sensitive high-mass-resolution ion microprobe, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/geox, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/shrimp
+
+
+[]{#solidsourcemassspectrometry}
+
+######  Solid source mass spectrometry
+- Child of:
+ [`massspectrometry`](#massspectrometry)
+- Technique for analysis of elements or isotopes in a solid material.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ISOTOPE-DILUTION SOLID-SOURCE MASS SPECTROMETRY, 
+SOLID-SOURCE MASS SPECTROMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/solidsourcemassspectrometry
+
+
+[]{#sparksourcemassspectrometry}
+
+######  Spark source mass spectrometry
+- Child of:
+ [`massspectrometry`](#massspectrometry)
+- (SSMS) a general technique for multielement and isotope trace
+analyses. In SSMS, the atomic constituents of a sample, housed in a
+vacuum chamber, are converted by a high-voltage (~30 kV), radio-
+frequency spark to gaseous ions for mass analysis.  The gaseous
+positive ions formed in the spark plasma are drawn into the analyzer
+by a dc voltage. Because a spark source produces ions with a wide
+range of kinetic energies, double-focusing mass spectrometers are
+required for mass analysis of the ions. When electron multipliers are
+used with double-focusing instruments, the spectrum is scanned by
+varying the magnetic field of the magnetic analyzer. The use of this
+technique leveled off and then declined with the appearance of ICPMS
+and some of the other mass spectrometric methods. SSMS is still
+applied to samples that are not easily dissolved and analyzed by
+plasma methods.  (Skoog, Holler, & Crouch). Mass spectrometry
+technique. Components: 1) sample preparation: not specified 2)
+ionization: spark source. NOTE: spark source systems commonly use
+double focusing mass analyzers.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ISOTOPE-DILUTION MULTI-ION COUNTING SPARK-SOURCE MASS SPECTROMETRY, 
+ISOTOPE-DILUTION SPARK-SOURCE MASS SPECTROMETRY, 
+MULTI-ION COUNTING SPARK-SOURCE MASS SPECTROMETRY, 
+SPARK SOURCE MASS SPECTROMETRY - ISOTOPE DILUTION, 
+SPARK-SOURCE MASS SPECTROMETRY AND CALIBRATION WITH RELATIVE SENSITIVITY FACTOR, 
+SPARK-SOURCE MASS SPECTROMETRY, 
+SS-MS, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/sparksourcemassspectrometry
+
+
+[]{#thermalionizationmassspectrometry}
+
+######  Thermal ionization mass spectrometry
+- Child of:
+ [`massspectrometry`](#massspectrometry)
+- Mass spectrometry technique in which sample undergoes and extraction
+process to concetrate analyte of interest in a solution that is then
+placed on a filament, loaded into the mass spectrometer instrument;
+filaments are heated electrically, causing evaporation and ionization
+of the analytes, which are then introduced to the mass analyzer.
+Components: 1) sample preparation: not specified; 2) ionization:
+thermal ionization
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+HIGH-ABUNDANCE SENSITIVITY THERMAL IONIZATION MASS SPECTROMETRY, 
+ISOTOPE-DILUTION SOLID-SOURCE MASS SPECTROMETRY, 
+THERMAL-IONIZATION MASS SPECTROMETRY, 
+TIMS, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/thermalionizationmassspectrometry
+
+
+[]{#isotope-dilution-thermal-ionisation-mass-spectrometry}
+
+#######  Isotope dilution thermal ionisation mass spectrometry
+- Child of:
+ [`thermalionizationmassspectrometry`](#thermalionizationmassspectrometry)
+- Isotope dilution is a technique for the determination of elemental
+concentrations in minerals, rocks, and fluids. This technique involves
+the addition of an exactly known amount of an enriched isotope (or
+sometimes two or three enriched isotopes) “spike” or “tracer” to the
+sample material. The resulting isotopic composition of the sample-
+spike mixture with the known amount of spike, and the weight of the
+sample the elemental concentration of the original sample can be
+readily determined to an ultra-trace level (i.e. sub pg g-1).
+- **Alternate labels:**
+ID-TIMS, 
+ISOTOPE-DILUTION THERMAL-IONIZATION MASS SPECTROMETRY, 
+THERMAL IONIZATION MASS SPECTROMETRY ISOTOPE DILUTION, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/isotope-dilution-thermal-ionisation-mass-spectrometry
+
+
+[]{#chemical-abrasion-isotope-dilution-thermal-ionisation-mass-spectrometry}
+
+########  Chemical abrasion isotope dilution thermal ionisation mass spectrometry
+- Child of:
+ [`isotope-dilution-thermal-ionisation-mass-spectrometry`](#isotope-dilution-thermal-ionisation-mass-spectrometry)
+- Chemical abrasion is an analyte preparation process to chemically
+remove damaged parts of a selected single crystal. This would be
+conducted prior to wet chemistry, spike addition (Isotope Dilution),
+and analysis.
+- **Alternate labels:**
+CA-ID-TIMS, 
+CA-TIMS, 
+CHEMICAL ABRASION THERMAL-IONIZATION MASS SPECTROMETRY, 
+ISOTOPE DILUTION CHEMICAL ABRASION THERMAL-IONIZATION MASS SPECTROMETRY, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/chemical-abrasion-isotope-dilution-thermal-ionisation-mass-spectrometry
+
+
+[]{#chemical-abrasion-isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry}
+
+#########  Chemical abrasion isotope dilution positive ion thermal ionisation mass spectrometry
+- Child of:
+ [`chemical-abrasion-isotope-dilution-thermal-ionisation-mass-spectrometry`](#chemical-abrasion-isotope-dilution-thermal-ionisation-mass-spectrometry)
+ [`isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry`](#isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry)
+- **Alternate labels:**
+CA-ID-PTIMS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/chemical-abrasion-isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry
+
+
+[]{#isotope-dilution-negative-ion-thermal-ionisation-mass-spectrometry}
+
+########  Isotope dilution negative ion thermal ionisation mass spectrometry
+- Child of:
+ [`isotope-dilution-thermal-ionisation-mass-spectrometry`](#isotope-dilution-thermal-ionisation-mass-spectrometry)
+ [`negativeionthermalionizationmassspectrometry`](#negativeionthermalionizationmassspectrometry)
+- **Alternate labels:**
+ID-NTIMS, 
+ISOTOPE-DILUTION NEGATIVE ION THERMAL-IONIZATION MASS SPECTROMETRY, 
+NEGATIVE THERMAL IONIZATION MASS SPECTROMETRY ISOTOPE DILUTION, 
+NEGATIVE THERMAL-IONIZATION MASS SPECTROMETRY ISOTOPE DILUTION, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/isotope-dilution-negative-ion-thermal-ionisation-mass-spectrometry
+
+
+[]{#isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry}
+
+########  Isotope dilution positive ion thermal ionisation mass spectrometry
+- Child of:
+ [`isotope-dilution-thermal-ionisation-mass-spectrometry`](#isotope-dilution-thermal-ionisation-mass-spectrometry)
+ [`positiveionthermalionizationmassspectrometry`](#positiveionthermalionizationmassspectrometry)
+- **Alternate labels:**
+ID-PTIMS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry
+
+
+[]{#chemical-abrasion-isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry}
+
+#########  Chemical abrasion isotope dilution positive ion thermal ionisation mass spectrometry
+- Child of:
+ [`chemical-abrasion-isotope-dilution-thermal-ionisation-mass-spectrometry`](#chemical-abrasion-isotope-dilution-thermal-ionisation-mass-spectrometry)
+ [`isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry`](#isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry)
+- **Alternate labels:**
+CA-ID-PTIMS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/chemical-abrasion-isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry
+
+
+[]{#multicollector-thermal-ionisation-mass-spectrometry}
+
+#######  Multicollector thermal ionisation mass spectrometry
+- Child of:
+ [`thermalionizationmassspectrometry`](#thermalionizationmassspectrometry)
+- **Alternate labels:**
+MC-TIMS, 
+MULTI-COLLECTOR THERMAL-IONIZATION MASS SPECTROMETRY, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/multicollector-thermal-ionisation-mass-spectrometry
+
+
+[]{#multicollector-negative-ion-thermal-ionisation-mass-spectrometry}
+
+########  Multicollector negative ion thermal ionisation mass spectrometry
+- Child of:
+ [`multicollector-thermal-ionisation-mass-spectrometry`](#multicollector-thermal-ionisation-mass-spectrometry)
+ [`negativeionthermalionizationmassspectrometry`](#negativeionthermalionizationmassspectrometry)
+- **Alternate labels:**
+MC-NTIMS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/multicollector-negative-ion-thermal-ionisation-mass-spectrometry
+
+
+[]{#multicollector-positive-ion-thermal-ionisation-mass-spectrometry}
+
+########  Multicollector positive ion thermal ionisation mass spectrometry
+- Child of:
+ [`multicollector-thermal-ionisation-mass-spectrometry`](#multicollector-thermal-ionisation-mass-spectrometry)
+ [`positiveionthermalionizationmassspectrometry`](#positiveionthermalionizationmassspectrometry)
+- **Alternate labels:**
+MC-PTIMS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/multicollector-positive-ion-thermal-ionisation-mass-spectrometry
+
+
+[]{#negativeionthermalionizationmassspectrometry}
+
+#######  Negative ion thermal ionization mass spectrometry
+- Child of:
+ [`thermalionizationmassspectrometry`](#thermalionizationmassspectrometry)
+- Mass spectrometer techinque. Components: 1) sample processing-
+dissolution, isotope dilution; 2) ionization: thermal ionization;
+analyte: negative ions.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+NEGATIVE ION THERMAL-IONIZATION MASS SPECTROMETRY, 
+NEGATIVE THERMAL IONIZATION MASS SPECTROMETRY, 
+NEGATIVE THERMAL-IONIZATION MASS SPECTROMETRY, 
+NTIMS, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/negativeionthermalionizationmassspectrometry
+
+
+[]{#isotope-dilution-negative-ion-thermal-ionisation-mass-spectrometry}
+
+########  Isotope dilution negative ion thermal ionisation mass spectrometry
+- Child of:
+ [`isotope-dilution-thermal-ionisation-mass-spectrometry`](#isotope-dilution-thermal-ionisation-mass-spectrometry)
+ [`negativeionthermalionizationmassspectrometry`](#negativeionthermalionizationmassspectrometry)
+- **Alternate labels:**
+ID-NTIMS, 
+ISOTOPE-DILUTION NEGATIVE ION THERMAL-IONIZATION MASS SPECTROMETRY, 
+NEGATIVE THERMAL IONIZATION MASS SPECTROMETRY ISOTOPE DILUTION, 
+NEGATIVE THERMAL-IONIZATION MASS SPECTROMETRY ISOTOPE DILUTION, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/isotope-dilution-negative-ion-thermal-ionisation-mass-spectrometry
+
+
+[]{#multicollector-negative-ion-thermal-ionisation-mass-spectrometry}
+
+########  Multicollector negative ion thermal ionisation mass spectrometry
+- Child of:
+ [`multicollector-thermal-ionisation-mass-spectrometry`](#multicollector-thermal-ionisation-mass-spectrometry)
+ [`negativeionthermalionizationmassspectrometry`](#negativeionthermalionizationmassspectrometry)
+- **Alternate labels:**
+MC-NTIMS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/multicollector-negative-ion-thermal-ionisation-mass-spectrometry
+
+
+[]{#positiveionthermalionizationmassspectrometry}
+
+#######  Positive ion thermal ionization mass spectrometry
+- Child of:
+ [`thermalionizationmassspectrometry`](#thermalionizationmassspectrometry)
+-
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+POSITIVE ION THERMAL-IONIZATION MASS SPECTROMETRY, 
+PTIMS, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/positiveionthermalionizationmassspectrometry
+
+
+[]{#isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry}
+
+########  Isotope dilution positive ion thermal ionisation mass spectrometry
+- Child of:
+ [`isotope-dilution-thermal-ionisation-mass-spectrometry`](#isotope-dilution-thermal-ionisation-mass-spectrometry)
+ [`positiveionthermalionizationmassspectrometry`](#positiveionthermalionizationmassspectrometry)
+- **Alternate labels:**
+ID-PTIMS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry
+
+
+[]{#chemical-abrasion-isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry}
+
+#########  Chemical abrasion isotope dilution positive ion thermal ionisation mass spectrometry
+- Child of:
+ [`chemical-abrasion-isotope-dilution-thermal-ionisation-mass-spectrometry`](#chemical-abrasion-isotope-dilution-thermal-ionisation-mass-spectrometry)
+ [`isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry`](#isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry)
+- **Alternate labels:**
+CA-ID-PTIMS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/chemical-abrasion-isotope-dilution-positive-ion-thermal-ionisation-mass-spectrometry
+
+
+[]{#multicollector-positive-ion-thermal-ionisation-mass-spectrometry}
+
+########  Multicollector positive ion thermal ionisation mass spectrometry
+- Child of:
+ [`multicollector-thermal-ionisation-mass-spectrometry`](#multicollector-thermal-ionisation-mass-spectrometry)
+ [`positiveionthermalionizationmassspectrometry`](#positiveionthermalionizationmassspectrometry)
+- **Alternate labels:**
+MC-PTIMS
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/multicollector-positive-ion-thermal-ionisation-mass-spectrometry
+
+
+[]{#nuclearreactionspectrometry}
+
+#####  Nuclear reaction spectrometry
+- Child of:
+ [`gammarayspectrometry`](#gammarayspectrometry)
+ [`particlespectrometry`](#particlespectrometry)
+- ion-beam-based analytical method with direct observation of nuclear
+reactions induced by highly energetic (Me V domain) charged particles.
+All these reactions are characterized by the prompt emission of
+charged particles (protons or helium-4 ions) and/or gamma-rays. Method
+is dedicated to quantitative determination of volumetric distributions
+of light elements from Z = 1 (H) to Z = 41 (Ga) in the near surface
+region of solids. (https://doi.org/10.1002/9780470027318.a6208.pub2,
+https://en.wikipedia.org/wiki/Nuclear_reaction_analysis)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+NUCLEAR REACTION ANALYSIS
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/nuclearreactionspectrometry
+
+
+[]{#photonspectrometry}
+
+####  Photon spectrometry
+- Child of:
+ [`spectrometry`](#spectrometry)
+- Analysis of the energy distribution of photons emitted from a
+sample.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smrAddGeneralGeoX
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/photonspectrometry
+
+
+[]{#fluorescencespectrometry}
+
+#####  Fluorescence spectrometry
+- Child of:
+ [`photonspectrometry`](#photonspectrometry)
+- measurement the [energy, power?] of fluorescent radiation produced
+by a sample exposed to monochromatic radiation, used to identify the
+presence and the amount of specific molecules in a sample
+(https://en.wikipedia.org/wiki/Fluorometer).  A type of
+electromagnetic spectroscopy that analyzes fluorescence from a sample.
+It involves using a beam of light, usually ultraviolet light, that
+excites the electrons in molecules of certain compounds and causes
+them to emit light; typically, but not necessarily, visible light
+(https://en.wikipedia.org/wiki/Fluorescence_spectroscopy)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ATOMIC FLUORESCENCE SPECTROMETRY, 
+FLUOROMETRY, 
+Fluorescence Spectroscopy, 
+Fluorimetry, 
+SFM, 
+Spectrofluorometry, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/geox, 
+https://w3id.org/geochem/1.0/analyticalmethod/nasagcmd, 
+https://en.wikipedia.org/wiki/Fluorescence_spectroscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/fluorescencespectrometry
+
+
+[]{#gammarayspectrometry}
+
+#####  Gamma ray spectrometry
+- Child of:
+ [`photonspectrometry`](#photonspectrometry)
+- Technique that measures the energy of gamma-rays emitted by a sample
+over a spectrum of wavelengths. By comparing the measured spectral
+distribution and energy to the known energy of gamma-rays produced by
+radioisotopes, the identity of the emitter can be determined.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+GAMMA RAY SPECTROSCOPY, 
+GAMMA SPECTROMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/gammarayspectrometry
+
+
+[]{#mossbauerspectroscopy}
+
+######  Mössbauer spectrometry
+- Child of:
+ [`gammarayspectrometry`](#gammarayspectrometry)
+- In its most common form a solid sample is exposed to a beam of gamma
+radiation, and a detector measures the intensity of the beam
+transmitted through the sample. The atoms in the source emitting the
+gamma rays must be of the same isotope as the atoms in the sample
+absorbing them. The source is accelerated through a range of
+velocities using a linear motor to produce a Doppler effect and scan
+the gamma ray energy through a given range. In the resulting spectra,
+gamma ray intensity is plotted as a function of the source velocity.
+At velocities corresponding to the resonant energy levels of the
+sample, a fraction of the gamma rays are absorbed, resulting in a drop
+in the measured intensity and a corresponding dip in the spectrum. The
+number, positions, and intensities of the dips (also called peaks;
+dips in transmitted intensity are peaks in absorbance) provide
+information about the chemical environment of the absorbing nuclei and
+can be used to characterize the sample.
+(https://en.wikipedia.org/wiki/M%C3%B6ssbauer_spectroscopy)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Mossbauer spectrometry, 
+Mossbauer spectroscopy, 
+Mössbauer spectroscopy, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://en.wikipedia.org/wiki/M%C3%B6ssbauer_spectroscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/mossbauerspectroscopy
+
+
+[]{#nuclearreactionspectrometry}
+
+######  Nuclear reaction spectrometry
+- Child of:
+ [`gammarayspectrometry`](#gammarayspectrometry)
+ [`particlespectrometry`](#particlespectrometry)
+- ion-beam-based analytical method with direct observation of nuclear
+reactions induced by highly energetic (Me V domain) charged particles.
+All these reactions are characterized by the prompt emission of
+charged particles (protons or helium-4 ions) and/or gamma-rays. Method
+is dedicated to quantitative determination of volumetric distributions
+of light elements from Z = 1 (H) to Z = 41 (Ga) in the near surface
+region of solids. (https://doi.org/10.1002/9780470027318.a6208.pub2,
+https://en.wikipedia.org/wiki/Nuclear_reaction_analysis)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+NUCLEAR REACTION ANALYSIS
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/nuclearreactionspectrometry
+
+
+[]{#infraredspectrometry}
+
+#####  Infrared spectrometry
+- Child of:
+ [`photonspectrometry`](#photonspectrometry)
+- The infrared spectrometer (or spectrophotometer) measures the
+relative amount of energy as a function of the wavelength/frequency of
+the infrared radiation when it passes through a sample. The two types
+of the infrared spectrometer are dispersive infrared spectrometer (DS)
+and Fourier transform infrared spectrometer (FTIS).
+(https://conductscience.com/the-basics-of-infrared-spectrophotometry/)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+INFRA-RED SPECTROSCOPY, 
+INFRARED SPECTROPHOTOMETRY, 
+INFRARED SPECTROSCOPY, 
+NEAR-INFRARED SPECTROMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://conductscience.com/the-basics-of-infrared-spectrophotometry/, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/infraredspectrometry
+
+
+[]{#combustioninfraredspectrometry}
+
+######  Combustion infrared spectrometry
+- Child of:
+ [`infraredspectrometry`](#infraredspectrometry)
+- Composite process, with combustion of sample and infrared
+spectrographic analysis of constituents. [Need more information --
+?emission or absorption?, is light from the combution analyzed, or
+does it produce an extract that is then passed to the spectrometer? ]
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+COMBUSTION-INFRARED ANALYSIS, 
+COMBUSTION-INFRARED TECHNIQUE, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/combustioninfraredspectrometry
+
+
+[]{#catalyticcombustionanalysis}
+
+#######  Catalytic combustion analysis
+- Child of:
+ [`combustioninfraredspectrometry`](#combustioninfraredspectrometry)
+- [might be:] The 680 degree C combustion catalytic oxidation method
+achieves total combustion of samples by heating them to 680 degree C
+in an oxygen-rich environment inside TC combustion tubes filled with a
+platinum catalyst. Since this utilizes the simple principle of
+oxidation through heating and combustion, pretreatment and post-
+treatment using oxidizing agents are unnecessary, which enhances
+operability. The carbon dioxide generated by oxidation is detected
+using an infrared gas analyzer (NDIR).
+(https://www.shimadzu.eu.com/680-%C2%B0c-combustion-catalytic-
+oxidation-method-measurement-principles; https://www.sciencedirect.com
+/science/article/abs/pii/0304420388900436)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/catalyticcombustionanalysis
+
+
+[]{#fouriertransforminfraredspectrometry}
+
+######  Fourier transform infrared spectrometry
+- Child of:
+ [`infraredspectrometry`](#infraredspectrometry)
+- A technique used to obtain an infrared spectrum of absorption or
+emission of a solid, liquid, or gas. Light from a polychromatic
+infrared source is collimated and directed to a beam splitter. Half
+the light is directed to a fixed mirror and the rest to a moving
+mirror. The light from the two paths is recombined, resulting in
+constructive or destructive interference that is a function of
+wavelength in the polychromatic light source and the path retardation
+determined by different path lengths from the moving mirror. The
+recombined light is focused on the sample and reflected or transmitted
+light is refocused onto a detector.  The difference in optical path
+length between the two arms to the interferometer is known as the
+retardation or optical path difference (OPD). An interferogram is
+obtained by varying the retardation and recording the signal from the
+detector for various values of the retardation. The interferogram when
+no sample is present is used as a reference to compare. When a sample
+is present the background interferogram is modulated by the presence
+of absorption bands in the sample. The interferogram is converted to a
+spectrum by Fourier transformation.
+(https://en.wikipedia.org/wiki/Fourier-
+transform_infrared_spectroscopy, Skoog, Holler & Crouch p. 188-192)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+FOURIER TRANSFORM IR SPECTROSCOPY
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch, 
+https://en.wikipedia.org/wiki/Fourier-transform_infrared_spectroscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/fouriertransforminfraredspectrometry
+
+
+[]{#infraredabsorptionspectrometry}
+
+######  Infrared absorption spectrometry
+- Child of:
+ [`infraredspectrometry`](#infraredspectrometry)
+- Identify composition of gas(es) in a sample by detecting the
+absorption of infrared wavelengths that are characteristic of that
+gas.  Infrared energy is emitted from a heated filament. By optically
+filtering the energy, the radiation spectrum is limited to the
+absorption band of the gas being measured. A detector measures the
+energy after the infrared energy has passed through the gas to be
+measured. This is compared to the energy at reference condition of no
+absorption. (https://en.wikipedia.org/wiki/Infrared_gas_analyzer)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+INFRARED ABSORPTION SPECTROSCOPY, 
+INFRARED GAS ANALYSIS, 
+INFRARED GAS ANALYZER, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://en.wikipedia.org/wiki/Infrared_gas_analyzer, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/infraredabsorptionspectrometry
+
+
+[]{#infraredopticalspectrometry}
+
+######  Infrared optical spectrometry
+- Child of:
+ [`infraredspectrometry`](#infraredspectrometry)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/infraredopticalspectrometry
+
+
+[]{#infraredtransmissionspectrometry}
+
+######  Infrared transmission spectrometry
+- Child of:
+ [`infraredspectrometry`](#infraredspectrometry)
+ [`transmissionspectrometry`](#transmissionspectrometry)
+- In transmission IR spectroscopy, IR radiation is passed through a
+sample. Some of the IR radiation is absorbed by the sample and some of
+it is passed through (transmitted). The resulting spectrum represents
+the molecular absorption and transmission, creating a molecular
+fingerprint of the sample. (Q. Ye, P. Spencer, in Material-Tissue
+Interfacial Phenomena, 2017)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+TRANSMISSION IR SPECTROSCOPY
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/infraredtransmissionspectrometry
+
+
+[]{#lecofurnaceanalysis}
+
+######  LECO furnace analysis
+- Child of:
+ [`infraredspectrometry`](#infraredspectrometry)
+- LECO analysis uses infrared absorption and thermal conductivity to
+measure combustion gases from sample. This process determines the
+presence and concentration of carbon, sulfur, oxygen, nitrogen or
+hydrogen. LECO analysis converts the elements from a sample into their
+oxidized form by utilizing either the gas fusion method (Hydrogen,
+Nitrogen, and Oxygen) or the combustion method (Carbon and Sulfur).
+(https://www.element.com/materials-testing-services/chemical-analysis-
+labs/leco-analysis)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+LECO FURNACE
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://www.element.com/materials-testing-services/chemical-analysis-labs/leco-analysis, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/lecofurnaceanalysis
+
+
+[]{#nanoscaleinfraredspectrometry}
+
+######  Nanoscale infrared spectrometry
+- Child of:
+ [`infraredspectrometry`](#infraredspectrometry)
+- Technique uses a pulsed, tunable IR source to excite molecular
+absorption in a sample. As the sample absorbs radiation, it heats up,
+leading to rapid thermal expansion that excites resonant oscillations
+of the cantilever of an atomic force microscope (AFM), which is
+detected using the standard AFM photodiode measurement system. These
+induced oscillations decay in a characteristic ringdown that can be
+analyzed  to extract the amplitudes and frequencies of the
+oscillations. By measuring the amplitudes of the cantilever
+oscillation as a function of the source wavelength, local absorption
+spectra are created. (https://doi.org/10.1016/S1369-7021(10)70205-4)
+- **Source:**
+https://doi.org/10.1016/S1369-7021(10)70205-4, 
+https://w3id.org/geochem/1.0/agent/orex, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/nanoscaleinfraredspectrometry
+
+
+[]{#opticalspectrometry}
+
+#####  Optical spectrometry
+- Child of:
+ [`photonspectrometry`](#photonspectrometry)
+- analytical techniques in which the spectra of visible or ultraviolet
+light emitted or absobed by, or transmitted through a sample is
+analyzed to obtain information about the composition of the sample.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+OPTICAL SPECTROSCOPY, 
+SPECTROPHOTOMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/opticalspectrometry
+
+
+[]{#atomicabsorptionspectrometry}
+
+######  Atomic absorption spectrometry
+- Child of:
+ [`opticalspectrometry`](#opticalspectrometry)
+- Analytical technique used to measure a wide range of elements in
+materials such as metals, pottery and glass, based on absorption of
+light by free metallic ions. The sample is accurately weighed and then
+dissolved, often using strong acids. The resulting solution is sprayed
+into the flame of the instrument and atomized. Light of a suitable
+wavelength for a particular element is shone through the flame, and
+some of this light is absorbed by the atoms of the sample. Individual
+elements will absorb wavelengths differently, and these absorbances
+are measured against standards. The amount of light absorbed is
+proportional to the concentration of the element in the solution, and
+hence in the original object. Measurements are made separately for
+each element of interest in turn to achieve a complete analysis of an
+object, and thus the technique is relatively slow to use. However, it
+is very sensitive and it can measure trace elements down to the part
+per million level, as well as being able to measure elements present
+in minor and major amounts. The method requires standards with known
+analyte content to establish the relation between the measured
+absorbance and the analyte concentration.
+(https://en.wikipedia.org/wiki/Atomic_absorption_spectroscopy;
+(https://www.thermofisher.com/us/en/home/industrial/spectroscopy-
+elemental-isotope-analysis/spectroscopy-elemental-isotope-analysis-
+learning-center/trace-elemental-analysis-tea-information/atomic-
+absorption-aa-information.html)).  Although it is a destructive
+technique (unlike ED-XRF), the sample size needed is very small
+(typically about 10 milligrams - i.e. one hundredth of a gram) and its
+removal causes little damage.  Additional information available at
+http://www.thebritishmuseum.ac.uk/science/text/techniques/sr-tech-
+aas-t.html
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ATOMIC ABSORPTION, 
+Atomic absorption spectrophotometry, 
+Atomic absorption spectroscopy, 
+MICROABSORPTION ANALYSIS, 
+MICROABSORPTION, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/geox, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://en.wikipedia.org/wiki/Atomic_absorption_spectroscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/atomicabsorptionspectrometry
+
+
+[]{#electrothermalabsorptionspectrometry}
+
+#######  Electrothermal absorption spectrometry
+- Child of:
+ [`atomicabsorptionspectrometry`](#atomicabsorptionspectrometry)
+- A type of atomic absorption spectrometry where the sample is
+atomised using a probe which is rapidly heated by passing a current
+through it.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ELECTROTHERMAL ATOMIC ABSORPTION SPECTROMETRY
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/electrothermalabsorptionspectrometry
+
+
+[]{#emissionspectrometry}
+
+######  Atomic emission spectrometry
+- Child of:
+ [`opticalspectrometry`](#opticalspectrometry)
+- is a method of chemical analysis that uses the intensity of light
+emitted from a flame, plasma, arc, or spark at a particular wavelength
+to determine the quantity of an element in a sample. The wavelength of
+the atomic spectral line in the emission spectrum gives the identity
+of the element while the intensity of the emitted light is
+proportional to the number of atoms of the element. The sample may be
+excited by various methods: flame, inductively coupled plasma, and
+spark being the most common.
+(https://en.wikipedia.org/wiki/Atomic_emission_spectroscopy)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+DIRECT READING OPTICAL EMISSIONS SPECTROSCOPY, 
+DROES, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://en.wikipedia.org/wiki/Atomic_emission_spectroscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/emissionspectrometry
+
+
+[]{#fireassayemissionspectrometry}
+
+#######  Fire assay emission spectrometry
+- Child of:
+ [`emissionspectrometry`](#emissionspectrometry)
+ [`wetchemistry`](#wetchemistry)
+- Used for Platinum group element (PGE) analyses. The  sample is
+decomposed by heating with nickel sulfide to form a button that is
+then dissolved in acid.  PGE constituents remain in the insoluble
+residue. After filtering, the residue is dissolved with aqua regia or
+a mixture of HCl and H2O2 and then determined by inductively coupled
+plasma-atomic emission spectrometry.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+NICKEL SULFIDE FIRE ASSAY ISOTOPE DILUTION ANALYSIS, 
+NICKEL SULFIDE FIRE ASSAY ISOTOPE DILUTION, 
+xFEMS, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/petdb
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/fireassayemissionspectrometry
+
+
+[]{#flameemissionspectrometry}
+
+#######  Flame emission spectrometry
+- Child of:
+ [`emissionspectrometry`](#emissionspectrometry)
+- Emission spectrometry in which emission of photons is induced by
+introducing the sample into a flame.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ATOMIC EMISSION SPECTROMETRY (FLAME PHOTOMETRY), 
+FLAME EMISSION SPECTROSCOPY, 
+FLAME PHOTOMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/flameemissionspectrometry
+
+
+[]{#laserinducedbreakdownspectrometry}
+
+#######  Laser Induced Breakdown Spectrometry
+- Child of:
+ [`emissionspectrometry`](#emissionspectrometry)
+- rapid chemical analysis technique that uses a short laser pulse to
+create a micro-plasma on the sample surface. The highly energetic
+laser pulse is focused on sample surface to form a plasma, which
+atomizes and excites atoms from the sample, which then emit light that
+is spectroscopically analyzed.  Advantages include: 1) minimal sample
+preparation; 2)   fast measurement time (second) for a single spot
+analysis; 3) Broad elemental coverage, including lighter elements,
+such as H, Be, Li, C, N, O, Na, and Mg; 4) ability to raster the
+sample surface and make depth profiles; 5) Thin-sample analysis with
+no substrate interference.  A typical detection limit of LIBS for
+heavy metallic elements is in the low-PPM range. LIBS is applicable to
+a wide range of sample matrices that include metals, semiconductors,
+glasses, biological tissues, insulators, plastics, soils, plants,
+soils, thin-paint coating, and electronic materials.
+- **Alternate labels:**
+LIBS, 
+Laser Induced Breakdown Spectroscopy, 
+- **Source:**
+https://doi.org/10.1007/978-3-642-20668-9, 
+https://w3id.org/geochem/1.0/agent/metbase, 
+https://appliedspectra.com/technology/libs.html, 
+https://en.wikipedia.org/wiki/Laser-induced_breakdown_spectroscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/laserinducedbreakdownspectrometry
+
+
+[]{#opticalemissionspectrometry}
+
+#######  Optical emission spectrometry
+- Child of:
+ [`emissionspectrometry`](#emissionspectrometry)
+- chemical analysis technique in which sample is heated to
+temperatures at which atoms emit light at characteristic wavelengths;
+the light is analyzed spectroscopically and compared with standards to
+determine composition
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+DIRECT READING OPTICAL EMISSIONS SPECTROSCOPY, 
+DROES, 
+OPTICAL EMISSION SPECTROSCOPY, 
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/opticalemissionspectrometry
+
+
+[]{#plasmaopticalemissionspectrometry}
+
+########  Plasma optical emission spectrometry
+- Child of:
+ [`opticalemissionspectrometry`](#opticalemissionspectrometry)
+ [`plasmaemissionspectrometry`](#plasmaemissionspectrometry)
+- an emission spectrometry technique in which emission of ultraviolet
+or visible light is induced by introducing sample into a plasma. There
+are various techniques for generating plasma.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+DIRECTLY COUPLED PLASMA OPTICAL EMISSION SPECTROSCOPY, 
+PLASMA OPTICAL EMISSION SPECTROSCOPY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/plasmaopticalemissionspectrometry
+
+
+[]{#plasmaemissionspectrometry}
+
+#######  Plasma emission spectrometry
+- Child of:
+ [`emissionspectrometry`](#emissionspectrometry)
+- an emission spectrometry technique in which emission of photons is
+induced by introducing sample into a plasma. There are various
+techniques for generating plasma.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+MICROWAVE PLASMA EMISSION SPECTROMETRY
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/plasmaemissionspectrometry
+
+
+[]{#directcurrentplasmaemissionspectrometry}
+
+########  Direct current plasma emission spectrometry
+- Child of:
+ [`plasmaemissionspectrometry`](#plasmaemissionspectrometry)
+- A type of atomic emission spectrometry where a plasma generated by
+passing an electrical discharge between two electrodes is used as the
+excitation source. (https://www.rsc.org/publishing/journals/prospect/o
+ntology.asp?id=CMO:0000265&MSID=b200027j)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+DCAES, 
+DIRECT-CURRENT PLASMA ATOMIC EMISSION SPECTROMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://www.rsc.org/publishing/journals/prospect/ontology.asp?id=CMO:0000265, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/directcurrentplasmaemissionspectrometry
+
+
+[]{#inductivelycoupledplasmaemissionspectrometry}
+
+########  Inductively coupled plasma emission spectrometry
+- Child of:
+ [`plasmaemissionspectrometry`](#plasmaemissionspectrometry)
+- technique for determining the composition of a sample by heating it
+to the point that the material emits photons, and analyzing the
+wavelenth of the emitted photons.  The sample is heated to emission
+temperatures using an inductively coupled plasma
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ICPES, 
+INDUCTIVELY COUPLED PLASMA (FURTHER DETAIL NOT PROVIDED), 
+INDUCTIVELY COUPLED PLASMA ATOMIC EMISSION SPECTROMETRY, 
+INDUCTIVELY COUPLED PLASMA SPECTROMETRY, 
+INDUCTIVELY-COUPLED PLASMA ATOMIC EMISSION SPECTROMETRY, 
+TOTAL DIGESTION INDUCTIVELY COUPLED PLASMA EMISSION SPECTROMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/inductivelycoupledplasmaemissionspectrometry
+
+
+[]{#inductivelycoupledplasmaopticalemissionspectrometry}
+
+#########  Inductively coupled plasma optical emission spectrometry
+- Child of:
+ [`inductivelycoupledplasmaemissionspectrometry`](#inductivelycoupledplasmaemissionspectrometry)
+- technique for determining the composition of a sample by heating it
+to the point that the material emits light, and analyzing the
+wavelenth of the emitted ultraviolet to visible wavelength light.  The
+sample is heated to emission temperatures using and inductively
+coupled plasma. The ICP-OES is an optical emission spectrophotometric
+technique that requires samples to be in solution form. The solution
+gets introduced to the hot plasma, which excites the electrons that
+emit energy at a given wavelength as they return to ground state. Each
+element emits energy at a specific wavelength according to its
+chemical character. The intensity of the energy emitted at a specific
+wavelength is proportional to the concentration of that particular
+sample. The elemental composition can be determined by comparing to a
+set of reference standards. The final elemental composition can be
+expressed as ppm or mg/L.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+INDUCTIVELY COUPLED PLASMA OPTICAL EMISSION SPECTROMETRY, 
+INDUCTIVELY-COUPLED PLASMA OPTICAL EMISSION SPECTROSCOPY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/inductivelycoupledplasmaopticalemissionspectrometry
+
+
+[]{#plasmaopticalemissionspectrometry}
+
+########  Plasma optical emission spectrometry
+- Child of:
+ [`opticalemissionspectrometry`](#opticalemissionspectrometry)
+ [`plasmaemissionspectrometry`](#plasmaemissionspectrometry)
+- an emission spectrometry technique in which emission of ultraviolet
+or visible light is induced by introducing sample into a plasma. There
+are various techniques for generating plasma.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+DIRECTLY COUPLED PLASMA OPTICAL EMISSION SPECTROSCOPY, 
+PLASMA OPTICAL EMISSION SPECTROSCOPY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/plasmaopticalemissionspectrometry
+
+
+[]{#ultravioletemissionspectrometry}
+
+#######  Ultraviolet emission spectrometry
+- Child of:
+ [`emissionspectrometry`](#emissionspectrometry)
+- Technique based on spectrometer analysis of light emitted in the
+ultraviolet frequence range.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ULTRAVIOLET EMISSION SPECTROGRAPHY
+- **Source:**
+https://w3id.org/geochem/1.0/agent/petdb
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/ultravioletemissionspectrometry
+
+
+[]{#laserabsorptionspectrometry}
+
+######  Laser absorption spectrometry
+- Child of:
+ [`opticalspectrometry`](#opticalspectrometry)
+- quantitative measurements of gas temperature and composition based
+on the amount of light that is absorbed at a given excitation
+wavelength, proportional to the fraction of molecules in the absorbing
+quantum state.  Molecules can absorb photons at certain wavelengths
+which causes them to transition from a lower energy level to an upper
+energy level.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+LIQUID-WATER ISOTOPE ANALYSIS, 
+LIQUID-WATER ISOTOPE ANALYZER, 
+OA-ICOS, 
+Off-Axis Integrated Cavity Output Spectroscopy (OA-ICOS), 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://new.abb.com/products/measurement-products/analytical/laser-gas-analyzers, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/laserabsorptionspectrometry
+
+
+[]{#cavityenhancedabsorptionspectrometry}
+
+#######  Cavity enhanced absorption spectrometry
+- Child of:
+ [`laserabsorptionspectrometry`](#laserabsorptionspectrometry)
+- technique to increase sensitivity of laser absorption spectrometry
+by placing analyzed gas in a cavity with mirrors such that the light
+bounces back and forth, increasing the interaction length between the
+light and the sample.
+- **Source:**
+https://en.wikipedia.org/w/index.php?title=Laser_absorption_spectrometry&section=4
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/cavityenhancedabsorptionspectrometry
+
+
+[]{#cavityringdownspectrometry}
+
+########  Cavity ring-down spectrometry
+- Child of:
+ [`cavityenhancedabsorptionspectrometry`](#cavityenhancedabsorptionspectrometry)
+- In CRDS, the beam from a single-frequency laser diode enters a
+cavity defined by two or more high reflectivity mirrors. When the
+laser is on, the cavity quickly fills with circulating laser light. A
+fast photodetector senses the small amount of light leaking through
+one of the mirrors to produce a signal that is directly proportional
+to the intensity in the cavity. When the photodetector signal reaches
+a threshold level (in a few tens of microseconds), the continuous wave
+(CW) laser is abruptly turned off. The light already within the cavity
+continues to bounce between the mirrors (about 100,000 times), but
+because the mirrors have slightly less than 100% reflectivity
+(99.999%), the light intensity inside the cavity steadily leaks out
+and decays to zero in an exponential fashion. This decay, or "ring
+down", is measured in real-time by the photodetector, and the amount
+of time it takes for the ring down to happen is determined solely by
+the reflectivity of the mirrors (for an empty cavity). When a gas
+species that absorbs the laser light is introduced into the cavity, a
+second loss mechanism  (absorption) is introduced, which accelerates
+the ring down time. Analysis of the ring down time of the cavity with
+and without absorption due to the target gas species can be used to
+calculate the concentration of the absorbing substance in the gas
+mixture in the cavity. Comparison of the ring down time of the cavity
+with and without any absorbing gas is accomplished by tuning the laser
+first to a wavelength where the gas absorbs light, and then to a
+wavelength where the gas does not absorb light.
+- **Source:**
+https://w3id.org/geochem/1.0/agent/geox, 
+https://en.wikipedia.org/wiki/Cavity_ring-down_spectroscopy, 
+https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/all/9a61fcbd-c75f-4940-939f-6e4c7d84d643, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/cavityringdownspectrometry
+
+
+[]{#wavelengthmodulationspectrometry}
+
+#######  Wavelength-modulation spectrometry
+- Child of:
+ [`laserabsorptionspectrometry`](#laserabsorptionspectrometry)
+- Laser-absorption spectroscopy (LAS) technique in which excitation
+laser wavelength is modulated to embed discrete frequencies in the
+detector signal while the nominal wavelength of the laser is scanned
+across a molecules absorption transition. The modulation shifts
+absorption information to harmonics the excitation frequency,
+extracted via digital lock-in filters during post-processing, and the
+wavelength scanning enables spectra of WMS signals to be measured. The
+WMS signals are then used to calculate gas conditions using
+calibration-free WMS models.
+- **Alternate labels:**
+Wavelength-modulation spectroscopy
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smrAdd, 
+https://goldensteingroup.com/our-research/wavelength-modulation-spectroscopy/, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/wavelengthmodulationspectrometry
+
+
+[]{#plasmaopticalspectrometry}
+
+######  Plasma optical spectrometry
+- Child of:
+ [`opticalspectrometry`](#opticalspectrometry)
+- Emission, absorption, or transmission spectroscopy to analyze
+properties of sample atomized using a plasma. Plasma might be
+generated by different methods, e.g. inductive coupling, laser
+resonance, spark.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/plasmaopticalspectrometry
+
+
+[]{#directcurrentplasmaspectrometry}
+
+#######  Direct current plasma spectrometry
+- Child of:
+ [`plasmaopticalspectrometry`](#plasmaopticalspectrometry)
+- A type of  spectrometry where a plasma generated by passing an
+electrical discharge between two electrodes is used as the excitation
+source. Could be absorption, emission or transmission spectral
+analysis.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+DIRECT CURRENT PLASMA (FURTHER DETAIL NOT PROVIDED), 
+DIRECT-CURRENT PLASMA SPECTROMETRY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/directcurrentplasmaspectrometry
+
+
+[]{#spectrophotometry}
+
+######  Spectrophotometry
+- Child of:
+ [`opticalspectrometry`](#opticalspectrometry)
+- measurement of the intensity of electromagnetic radiation as a
+function of frequency (or wavelength) of the radiation; radiation
+enters the meter through a slit and is dispersed by means of a prism.
+(Source: NASA; UUID: 3f7c8cc2-e3c3-4dfd-a17f-9d480f1f7179)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+  * ["https://felixinstruments.com/blog/spectrophotometry-in-2023/"](https://felixinstruments.com/blog/spectrophotometry-in-2023/)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/geox, 
+https://w3id.org/geochem/1.0/analyticalmethod/nasagcmd, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/spectrophotometry
+
+
+[]{#transmissionspectrometry}
+
+#####  Transmission spectrometry
+- Child of:
+ [`photonspectrometry`](#photonspectrometry)
+- Spectrographic techniques based on spectra of electromagnetic
+radiation that is transmitted through a sample.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/transmissionspectrometry
+
+
+[]{#infraredtransmissionspectrometry}
+
+######  Infrared transmission spectrometry
+- Child of:
+ [`infraredspectrometry`](#infraredspectrometry)
+ [`transmissionspectrometry`](#transmissionspectrometry)
+- In transmission IR spectroscopy, IR radiation is passed through a
+sample. Some of the IR radiation is absorbed by the sample and some of
+it is passed through (transmitted). The resulting spectrum represents
+the molecular absorption and transmission, creating a molecular
+fingerprint of the sample. (Q. Ye, P. Spencer, in Material-Tissue
+Interfacial Phenomena, 2017)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+TRANSMISSION IR SPECTROSCOPY
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/infraredtransmissionspectrometry
+
+
+[]{#xrayspectrometry}
+
+#####  X-ray spectrometry
+- Child of:
+ [`photonspectrometry`](#photonspectrometry)
+- Analysis of the energy distribution of photons in the X-ray
+wavelength range that are emitted from a sample.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/xrayspectrometry
+
+
+[]{#broadbeamxrayspectrometry}
+
+######  Broad beam X-ray spectrometry
+- Child of:
+ [`xrayspectrometry`](#xrayspectrometry)
+- Technique to induce X-ray emission using a broad (large diameter)
+ion or electron beam as the excitation. [inferred from https://inis.ia
+ea.org/collection/NCLCollectionStore/_Public/30/060/30060365.pdf, but
+not really clear what is meant here...]
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+BROAD BEAM ANALYSIS
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/broadbeamxrayspectrometry
+
+
+[]{#electroninducedxrayspectrometry}
+
+######  Electron induced X-ray spectrometry
+- Child of:
+ [`xrayspectrometry`](#xrayspectrometry)
+- Technique to induce X-ray emission using an electron beam as the
+excitation, and measuring the energy spectra of emitted X-rays.
+Various X-ray emission peaks are associated with electron energy level
+quatum intervals for particular elements.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/electroninducedxrayspectrometry
+
+
+[]{#energydispersiveelectroninducedxrayspectrometry}
+
+#######  Energy dispersive electron induced X-ray spectrometry
+- Child of:
+ [`electroninducedxrayspectrometry`](#electroninducedxrayspectrometry)
+ [`energydispersivexrayspectrometry`](#energydispersivexrayspectrometry)
+- Analysis of X-ray spectra generated by electron beam excitation
+using a Transmission electron microscope instrument
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Elemental spectra (ESPC) measurements, 
+SCANNING ELECTRON MICROSCOPE-ENERGY DISPERSIVE XRAY ANALYSIS, 
+SCANNING ELECTRON MICROSCOPE-ENERGY DISPERSIVE XRAYS, 
+SCANNING TRANSMISSION ELECTRON MICROSCOPY ENERGY DISPERSIVE XRAY SPECTROMETER, 
+SCANNING TRANSMISSION ELECTRON MICROSCOPY ENERGY DISPERSIVE XRAY SPECTROMETRY, 
+TEM-EDS, 
+TRANSMISSION ELECTRON MICROSCOPY- ENERGY-DISPERSIVE X-RAY SPECTROSCOPY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/energydispersiveelectroninducedxrayspectrometry
+
+
+[]{#electron-probe-microanalysis-energy-dispersion-x-ray-spectroscopy}
+
+########  Electron probe microanalysis (energy dispersion X-ray spectroscopy)
+- Child of:
+ [`energydispersiveelectroninducedxrayspectrometry`](#energydispersiveelectroninducedxrayspectrometry)
+ [`quantitativeanalysiselectroninducedxrayspectrometry`](#quantitativeanalysiselectroninducedxrayspectrometry)
+- Electron microprobe analysis conducted with emitted x-rays measured
+as a photon energy spectrum.
+- **Alternate labels:**
+EMPA-EDX, 
+EPMA-EDX, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/electron-probe-microanalysis-energy-dispersion-x-ray-spectroscopy
+
+
+[]{#quantitativeanalysiselectroninducedxrayspectrometry}
+
+#######  Electron probe microanalysis
+- Child of:
+ [`electroninducedxrayspectrometry`](#electroninducedxrayspectrometry)
+- Within a given sample, once the X-ray intensities of each element of
+interest are "counted" in a detector at a specific beam current, the
+count rates are compared to those of standards containing known values
+of the elements of interest. Counting is typically done using
+wavelength-dispersive spectrometry. In turn, the X-ray intensities
+must be corrected for matrix effects associated with atomic number
+(Z), absorption (A) and fluorescence (F). This correction procedure is
+performed within a computer program that takes the raw counting rates
+of each element, compares these to standards, computes the ZAF
+correction (or similar type of correction) and displays the results as
+a function of the weight % of the oxides or elements.
+(https://serc.carleton.edu/research_education/geochemsheets/wds.html)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ELECTRON MICROPROBE ANALYSIS, 
+ELECTRON MICROPROBE, 
+EMPA, 
+EPMA, 
+FIELD EMISSION ELECTRON MICROPROBE ANALYSIS, 
+FIELD EMISSION ELECTRON MICROPROBE, 
+QEI-X-S, 
+Quantitative analysis electron induced X-ray spectrometry, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://serc.carleton.edu/research_education/geochemsheets/wds.html, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/quantitativeanalysiselectroninducedxrayspectrometry
+
+
+[]{#electron-probe-microanalysis-energy-dispersion-x-ray-spectroscopy}
+
+########  Electron probe microanalysis (energy dispersion X-ray spectroscopy)
+- Child of:
+ [`energydispersiveelectroninducedxrayspectrometry`](#energydispersiveelectroninducedxrayspectrometry)
+ [`quantitativeanalysiselectroninducedxrayspectrometry`](#quantitativeanalysiselectroninducedxrayspectrometry)
+- Electron microprobe analysis conducted with emitted x-rays measured
+as a photon energy spectrum.
+- **Alternate labels:**
+EMPA-EDX, 
+EPMA-EDX, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/electron-probe-microanalysis-energy-dispersion-x-ray-spectroscopy
+
+
+[]{#electron-probe-microanalysis-wavelength-dispersion-x-ray-spectroscopy}
+
+########  Electron probe microanalysis (wavelength dispersion X-ray spectroscopy)
+- Child of:
+ [`quantitativeanalysiselectroninducedxrayspectrometry`](#quantitativeanalysiselectroninducedxrayspectrometry)
+ [`wavelengthdispersiveelectroninducedxrayspectrometry`](#wavelengthdispersiveelectroninducedxrayspectrometry)
+- Electron microprobe analysis conducted with emitted x-rays measured
+by wavelength. This approach requires multiple analysing crystals in
+order to cover the required range of emitted wavelengths.
+- **Alternate labels:**
+EMPA-WDX, 
+EPMA-WDX, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/electron-probe-microanalysis-wavelength-dispersion-x-ray-spectroscopy
+
+
+[]{#wavelengthdispersiveelectroninducedxrayspectrometry}
+
+#######  Wavelength dispersive electron induced X-ray spectrometry
+- Child of:
+ [`electroninducedxrayspectrometry`](#electroninducedxrayspectrometry)
+- X-rays are generated in the sample by interaction with the
+excitation electron beam, and are selected using an analytical
+crystal(s) with specific lattice spacing(s). When X-rays encounter the
+analytical crystal at a specific angle theta, only those X-rays that
+satisfy Bragg's Law are reflected and a single wavelength is passed on
+to the detector. The wavelength of the X-rays reflected into the
+detector may be varied by changing the position of the analyzing
+crystal relative to the sample i.e. the X-ray source-crystal distance
+is a linear function of the wavelength. Consequently, X-rays from only
+one element at a time can be measured on the spectrometer and the
+position of a given analytical crystal must be changed in order to
+adjust to a wavelength characteristic of another element. There is
+commonly more than a single analytical crystal in a WD spectrometer
+and, in the case of most EPMA instruments, there are typically
+multiple spectrometers with a suite of analytical crystals so that the
+spectrometers can reach all of the elemental wavelengths of interest
+and it will optimize performance in different wavelength ranges.
+X-rays of specific wavelengths from the analytical crystal are passed
+on to the X-ray detector.
+(https://serc.carleton.edu/research_education/geochemsheets/wds.html)
+- **Alternate labels:**
+Wavelength-dispersive X-ray fluorescence analysis
+- **Source:**
+https://serc.carleton.edu/research_education/geochemsheets/wds.html
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/wavelengthdispersiveelectroninducedxrayspectrometry
+
+
+[]{#electron-probe-microanalysis-wavelength-dispersion-x-ray-spectroscopy}
+
+########  Electron probe microanalysis (wavelength dispersion X-ray spectroscopy)
+- Child of:
+ [`quantitativeanalysiselectroninducedxrayspectrometry`](#quantitativeanalysiselectroninducedxrayspectrometry)
+ [`wavelengthdispersiveelectroninducedxrayspectrometry`](#wavelengthdispersiveelectroninducedxrayspectrometry)
+- Electron microprobe analysis conducted with emitted x-rays measured
+by wavelength. This approach requires multiple analysing crystals in
+order to cover the required range of emitted wavelengths.
+- **Alternate labels:**
+EMPA-WDX, 
+EPMA-WDX, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/electron-probe-microanalysis-wavelength-dispersion-x-ray-spectroscopy
+
+
+[]{#energydispersivexrayspectrometry}
+
+######  Energy dispersive X-ray spectrometry
+- Child of:
+ [`xrayspectrometry`](#xrayspectrometry)
+- A method for obtaining information about isolated portions of an
+X-ray spectrum, achieved electronically with devices that discriminate
+among various parts of a spectrum based on the energy rather than the
+wavelength of the radiation.  The sample is exposed to a polychromatic
+(multiple wavelength) source (X-rays, or other energetic particles,
+e.g. electrons), and the resulting X-rays from the sample are analyzed
+by detectors with various electronic components required for energy
+discrimination. The X-ray spectrum is analyzed (in comparison to
+standards) to provide quantitative or qualitative analysis of
+constituents in the sample. (Skoog, Holler & Crouch, p. 289)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ENERGY-DISPERSIVE X-RAY SPECTROSCOPY, 
+Energy dispersive spectroscopy, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/analyticalmethod/skooghollercrouch, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/energydispersivexrayspectrometry
+
+
+[]{#energydispersiveelectroninducedxrayspectrometry}
+
+#######  Energy dispersive electron induced X-ray spectrometry
+- Child of:
+ [`electroninducedxrayspectrometry`](#electroninducedxrayspectrometry)
+ [`energydispersivexrayspectrometry`](#energydispersivexrayspectrometry)
+- Analysis of X-ray spectra generated by electron beam excitation
+using a Transmission electron microscope instrument
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Elemental spectra (ESPC) measurements, 
+SCANNING ELECTRON MICROSCOPE-ENERGY DISPERSIVE XRAY ANALYSIS, 
+SCANNING ELECTRON MICROSCOPE-ENERGY DISPERSIVE XRAYS, 
+SCANNING TRANSMISSION ELECTRON MICROSCOPY ENERGY DISPERSIVE XRAY SPECTROMETER, 
+SCANNING TRANSMISSION ELECTRON MICROSCOPY ENERGY DISPERSIVE XRAY SPECTROMETRY, 
+TEM-EDS, 
+TRANSMISSION ELECTRON MICROSCOPY- ENERGY-DISPERSIVE X-RAY SPECTROSCOPY, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/energydispersiveelectroninducedxrayspectrometry
+
+
+[]{#electron-probe-microanalysis-energy-dispersion-x-ray-spectroscopy}
+
+########  Electron probe microanalysis (energy dispersion X-ray spectroscopy)
+- Child of:
+ [`energydispersiveelectroninducedxrayspectrometry`](#energydispersiveelectroninducedxrayspectrometry)
+ [`quantitativeanalysiselectroninducedxrayspectrometry`](#quantitativeanalysiselectroninducedxrayspectrometry)
+- Electron microprobe analysis conducted with emitted x-rays measured
+as a photon energy spectrum.
+- **Alternate labels:**
+EMPA-EDX, 
+EPMA-EDX, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/electron-probe-microanalysis-energy-dispersion-x-ray-spectroscopy
+
+
+[]{#energydispersivexrayfluorescencespectrometry}
+
+#######  Energy dispersive X-ray fluorescence spectrometry
+- Child of:
+ [`energydispersivexrayspectrometry`](#energydispersivexrayspectrometry)
+ [`xrayfluorescencespectrometry`](#xrayfluorescencespectrometry)
+- an X-ray Fluorescence techniques used for elemental analysis
+applications. In EDXRF spectrometers, all of the elements in the
+sample are excited simultaneously, and an energy dispersive detector
+in combination with a multi-channel analyzer is used to simultaneously
+collect the fluorescence radiation emitted from the sample and then
+separate the different energies of the characteristic radiation from
+each of the different sample elements. Resolution of EDXRF systems is
+dependent upon the detector, and typically ranges from 150 eV -- 600
+eV. The principal advantages of EDXRF systems are their simplicity,
+fast operation, lack of moving parts, and high source efficiency.
+(https://www.xos.com/EDXRF; Chai et al, 2021,
+https://doi.org/10.1515/pac-2019-0302)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ENERGY-DISPERSIVE X-RAY FLUORESCENCE, 
+energy-dispersive X-ray analysis (EDXA), 
+energy-dispersive X-ray fluorescence analysis (EDX), 
+energy-dispersive X-ray spectroscopy (EDS, EDXS), 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://www.xos.com/EDXRF, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/energydispersivexrayfluorescencespectrometry
+
+
+[]{#totalreflectionxrayfluorescencespectrometry}
+
+#######  Total reflection X-ray fluorescence spectrometry
+- Child of:
+ [`energydispersivexrayspectrometry`](#energydispersivexrayspectrometry)
+ [`xrayfluorescencespectrometry`](#xrayfluorescencespectrometry)
+- a surface elemental analysis technique often used for the ultra-
+trace analysis of particles, residues, and impurities on smooth
+surfaces. TXRF is essentially an energy dispersive XRF technique
+arranged in a special geometry. An incident beam impinges upon a
+polished flat sample carrier at angles below the critical angle of
+external total reflection for X-rays, resulting in the reflection of
+most of the excitation beam photons at this surface. Since Total
+Reflection angle depends on the energy of the photon, one can use this
+effect to eliminate the high energy photons from the excitation
+spectrum and minimize their contribution to the background in the
+measured spectra, thus making possible to achieve better detection
+limits. Due to this configuration, the measured spectral background in
+TXRF is less than in conventional XRF. This reduction results in
+increased signal to noise ratio. (https://www-
+pub.iaea.org/MTCD/publications/PDF/TCS-51/html/pdf/Section%201.pdf)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+TOTAL REFLECTION X-RAY FLUORESCENCE ANALYSIS, 
+total reflection X- ray fluorescence analysis, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://www-pub.iaea.org/MTCD/publications/PDF/TCS-51/html/pdf/Section%201.pdf, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/totalreflectionxrayfluorescencespectrometry
+
+
+[]{#particleinducedxrayspectrometry}
+
+######  Particle induced X-ray spectrometry
+- Child of:
+ [`particlebeamexcitation`](#particlebeamexcitation)
+ [`xrayspectrometry`](#xrayspectrometry)
+- An X-ray spectrometry technique in which emisssion of X-rays is
+induces by bombarding a spot on the sample with ions or sub-atomic
+particles other than electrons, e.g. neutrons, protons, muons (Chai et
+al, 2021, https://doi.org/10.1515/pac-2019-0302).
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Proton Induced X-ray Emission
+- **Source:**
+https://doi.org/10.1515/pac-2019-0302
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/particleinducedxrayspectrometry
+
+
+[]{#quantitativeanalysisparticleinducedxrayspectrometry}
+
+#######  Quantitative analysis particle induced X-ray spectrometry
+- Child of:
+ [`particleinducedxrayspectrometry`](#particleinducedxrayspectrometry)
+- Within a given sample, once the X-ray intensities of each element of
+interest are "counted" in a detector at a specific beam current, the
+count rates are compared to those of standards containing known values
+of the elements of interest. Counting is typically done using
+wavelength-dispersive spectrometry. In turn, the X-ray intensities
+must be corrected for matrix effects associated with atomic number
+(Z), absorption (A) and fluorescence (F). This correction procedure is
+performed within a computer program that takes the raw counting rates
+of each element, compares these to standards, computes the ZAF
+correction (or similar type of correction) and displays the results as
+a function of the weight % of the oxides or elements.
+(https://serc.carleton.edu/research_education/geochemsheets/wds.html)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+PARTICLE INDUCED X-RAY EMISSION MICROPROBE ANALYSIS, 
+PARTICLE INDUCED X-RAY EMISSION MICROPROBE, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://serc.carleton.edu/research_education/geochemsheets/wds.html), 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/quantitativeanalysisparticleinducedxrayspectrometry
+
+
+[]{#xrayabsorptionspectrometry}
+
+######  X-ray absorption spectrometry
+- Child of:
+ [`xrayspectrometry`](#xrayspectrometry)
+- In this technique, the sample is exposed to monochromatic X-rays for
+which the photon energy is tuned to a range where core electrons can
+be excited (0.1-100 keV). When the incident X-ray energy is larger
+than the electron binding energy, there is a sharp increase in
+absorption (an edge). The edge positions are related to the core
+electron that is excited. Each element has its own edge energy, and an
+element's valence can be measured even in a heterogeneous sample.
+There are three main regions found on a spectrum generated by XAS data
+which are treated as separate spectroscopic techniques: 1) absorption
+threshold determined by the transition to the lowest unoccupied
+states; 2) near-edge structure (XANES); 3) Extended X-ray absorption
+fine structure (EXAFS) (at energy higher than the edge). X-ray
+absorption spectroscopy (XAS) is used for determining the local
+geometric and/or electronic structure of matter. The experiment is
+usually performed at synchrotron radiation facilities, which provide
+intense and tunable X-ray beams. Samples can be in the gas phase,
+solutions, or solids.
+(https://en.wikipedia.org/wiki/X-ray_absorption_spectroscopy,
+https://www.bnl.gov/nsls2/userguide/lectures/lecture-4-ravel.pdf)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory, 
+https://en.wikipedia.org/wiki/X-ray_absorption_spectroscopy, 
+https://www.bnl.gov/nsls2/userguide/lectures/lecture-4-ravel.pdf, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/xrayabsorptionspectrometry
+
+
+[]{#extendedxrayabsorptionfinestructure}
+
+#######  Extended X-ray absorption fine structure
+- Child of:
+ [`xrayabsorptionspectrometry`](#xrayabsorptionspectrometry)
+- X-ray absorption analysis in which the fine structure of the
+adsorption spectrum in the range 30 eV to 1 keV above the adsorption
+edge is used to measure the number and species of neighbouring atoms,
+their distance from the selected atom, and the thermal or structural
+disorder of their positions. In the EXAFS region, interference between
+the wave functions of the core and neighbouring atoms gives a periodic
+pattern that contains information characterizing the arrangement of
+atoms, including the number and type of neighbouring atoms and their
+distance to the absorbing atom. The method uses synchrotron radiation.
+(Chai et al, 2021, https://doi.org/10.1515/pac-2019-0302)
+- **Source:**
+https://doi.org/10.1515/pac-2019-0302
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/extendedxrayabsorptionfinestructure
+
+
+[]{#xrayabsorptionnearedgestructurespectrometry}
+
+#######  X-ray absorption near edge structure spectrometry
+- Child of:
+ [`xrayabsorptionspectrometry`](#xrayabsorptionspectrometry)
+- This technique is based on the absorption of an X-ray photon, in
+which an electron interacts with an incident X-ray to acquire a time
+dependent acceleration. The electron may then be promoted from a core-
+orbital to an unoccupied bound or continuum state with an intensity
+given by Fermi's Golden Rule. By varying the energy of a
+monochromatized beam of incident photons, a spectrum of the absorption
+cross section can be generated. The probability of an excitation
+sharply increases when the energy of the incident photon reaches the
+binding energy of a core-electron. In X-ray Absorption Spectroscopy
+(XAS) this is referred to as an edge. XANES is a subset of XAS in
+which the local electronic structure is characterized by investigating
+the absorption cross section within 50-100 eV of an edge. The XANES
+region is sensitive to a wealth of electronic structure information,
+which may be analyzed in three sections. Before the edge, the
+intensity of pre-edge features is greatly affected by the coordination
+geometry of the central atom. At the edge, formal oxidation state may
+be qualitatively assigned, as the energy of the edge position is not
+an invariant quantity for a given element, the position shifts in
+accordance with electron density. Finally, coordination shells are
+interrogated just beyond the edge as the emitted photoelectron
+scatters off neighboring atoms.
+(https://www.cei.washington.edu/education/science-of-solar/xray-
+absorption-near-edge-spectroscopy-xanes/)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+X-RAY ABSORPTION NEAR-EDGE STRUCTURE SPECTROSCOPY, 
+X-ray absorption near edge structure (XANES) spectroscopy, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://www.cei.washington.edu/education/science-of-solar/xray-absorption-near-edge-spectroscopy-xanes/, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/xrayabsorptionnearedgestructurespectrometry
+
+
+[]{#xrayfluorescencespectrometry}
+
+######  X-ray fluorescence spectrometry
+- Child of:
+ [`xrayspectrometry`](#xrayspectrometry)
+- Primary X-rays are used to excite (fluoresce) X-rays that are
+emitted from the specimen. A fused disc or pressed pellet is used for
+the determination of major element concentrations or trace element
+abundances in a bulk specimen. The X-ray detector utilizes a set of
+diffracting crystals specially positioned to detect one characteristic
+X-ray at-a-time. This sequential measurement of X-rays is termed
+Wavelength Dispersive Spectroscopy (WDS). Additional information
+available at 'http://www.nmnh.si.edu/minsci/labs/xrf.htm'. Measurement
+method of X-ray fluorescence used to measure amounts of elements in a
+material. (Source: IUPAC; https://doi.org/10.1515/pac-2019-0302)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Active X-Ray Spectrometer, 
+X-RAY FLUORESCENCE ANALYSIS, 
+X-RAY FLUORESCENCE, 
+X-ray Fluorescence spectroscopy, 
+X-ray fluorescence analysis, 
+XRF Spectroscopy, 
+- **Source:**
+https://doi.org/10.1515/pac-2019-0302, 
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/geox, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/xrayfluorescencespectrometry
+
+
+[]{#portable-x-ray-fluorescence}
+
+#######  Portable X-ray fluorescence
+- Child of:
+ [`xrayfluorescencespectrometry`](#xrayfluorescencespectrometry)
+- **Alternate labels:**
+HH-XRF, 
+Handheld XRF, 
+Portable XRF, 
+p-XRF, 
+- Concept URI: https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/portable-X-ray-fluorescence
+
+
+[]{#confocalxrayfluorescencespectrometry}
+
+#######  Confocal X-ray fluorescence spectrometry
+- Child of:
+ [`xrayfluorescencespectrometry`](#xrayfluorescencespectrometry)
+- The confocal geometry uses two polycapillary focusing optics for
+enhanced applications of XRF elemental analysis. An excitation optic
+focuses a small X-ray beam onto the specimen. A detection optic
+collects fluorescent X-rays from the sample. Specifically, elemental
+concentrations are measured within the small probe volume ('confocal
+volume') defined by the intersection of the output focal spot of the
+excitation optic and the input focal spot of the collection optic.
+The polycapillary focusing optics act as spatial filters to eliminate
+background radiation from the sample and increase detection
+sensitivity for sample elements of interest. Additionally, confocal
+XRF can be used for elemental depth profiling. Confocal XRF acts as a
+material probe by exciting and detecting emitted characteristic X-ray
+photons from within the confocal analysis volume as this volume is
+through the sample. In this way elemental concentrations can be
+measured on the object's surface and throughout the object's interior.
+(https://www.xos.com/Confocal-XRF)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex, 
+https://www.xos.com/Confocal-XRF, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/confocalxrayfluorescencespectrometry
+
+
+[]{#energydispersivexrayfluorescencespectrometry}
+
+#######  Energy dispersive X-ray fluorescence spectrometry
+- Child of:
+ [`energydispersivexrayspectrometry`](#energydispersivexrayspectrometry)
+ [`xrayfluorescencespectrometry`](#xrayfluorescencespectrometry)
+- an X-ray Fluorescence techniques used for elemental analysis
+applications. In EDXRF spectrometers, all of the elements in the
+sample are excited simultaneously, and an energy dispersive detector
+in combination with a multi-channel analyzer is used to simultaneously
+collect the fluorescence radiation emitted from the sample and then
+separate the different energies of the characteristic radiation from
+each of the different sample elements. Resolution of EDXRF systems is
+dependent upon the detector, and typically ranges from 150 eV -- 600
+eV. The principal advantages of EDXRF systems are their simplicity,
+fast operation, lack of moving parts, and high source efficiency.
+(https://www.xos.com/EDXRF; Chai et al, 2021,
+https://doi.org/10.1515/pac-2019-0302)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ENERGY-DISPERSIVE X-RAY FLUORESCENCE, 
+energy-dispersive X-ray analysis (EDXA), 
+energy-dispersive X-ray fluorescence analysis (EDX), 
+energy-dispersive X-ray spectroscopy (EDS, EDXS), 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+https://www.xos.com/EDXRF, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/energydispersivexrayfluorescencespectrometry
+
+
+[]{#synchrotonxrayfluorescencespectrometry}
+
+#######  Synchroton X-ray fluorescence spectrometry
+- Child of:
+ [`xrayfluorescencespectrometry`](#xrayfluorescencespectrometry)
+- Analysis of X-ray fluorescence spectra generated by excitation using
+a synchrotron radiation source instead of X-ray tube as excitation
+source. Synchrotron radiation source has the characteristics of high
+intensity and high collimation. (
+https://link.springer.com/chapter/10.1007/978-981-16-5328-5_6 ).
+Synchrotron radiation is light emitted when a beam of electrons
+traveling close to light speed is bent away from a straight
+trajectory. (https://www.radiasoft.net/blog/synchrotron-
+radiation-101-light-sources). It is characterized by high brightness--
+many orders of magnitude brighter than conventional sources--and [is
+highly polarized], tunable, collimated (consisting of almost parallel
+rays) and concentrated over a small area
+(https://www.iop.org/publications/iop/2011/page_47511.html#gref [page
+no longer accessible])
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+SYNCHROTON X-RAY FLUORESCENCE ANALYSIS, 
+SYNCHXRF, 
+Synchotron X-Ray Fluorescence Analysis, 
+Synchrotron-based X-ray Fluorescence Spectroscopy, 
+synchrotron radiation induced X-ray fluorescence analysis, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://link.springer.com/chapter/10.1007/978-981-16-5328-5_6, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/synchrotonxrayfluorescencespectrometry
+
+
+[]{#microxrayfluorescencespectroscopy}
+
+########  Micro X-ray fluorescence spectrometry
+- Child of:
+ [`synchrotonxrayfluorescencespectrometry`](#synchrotonxrayfluorescencespectrometry)
+- Measurement method of X-ray fluorescence used to measure amounts of
+elements in a material. Micro-XRF analysis uses highly brilliant X-ray
+sources (synchrotron source and spot size 100 nm to 2 micron) and
+microfocussing X-ray optics to give femtogram to attogram detection
+limits. (Source: IUPAC; Chai et al, 2021,
+https://doi.org/10.1515/pac-2019-0302).
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Micro X-ray fluorescence spectroscopy, 
+Micro X-ray fluorescence, 
+X-ray fluorescence analysis, 
+- **Source:**
+https://doi.org/10.1515/pac-2019-0302
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/microxrayfluorescencespectroscopy
+
+
+[]{#synchrotronxrayfluorescencetomography}
+
+########  Synchrotron X-ray fluorescence tomography
+- Child of:
+ [`synchrotonxrayfluorescencespectrometry`](#synchrotonxrayfluorescencespectrometry)
+ [`xraycomputedtomography`](#xraycomputedtomography)
+- X-ray flourescence spectrometery focused to extract inforamtion from
+inside the volume of a sample, with X-rays sourced from a synchrotron.
+- **Source:**
+https://w3id.org/geochem/1.0/agent/orex
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/synchrotronxrayfluorescencetomography
+
+
+[]{#totalreflectionxrayfluorescencespectrometry}
+
+#######  Total reflection X-ray fluorescence spectrometry
+- Child of:
+ [`energydispersivexrayspectrometry`](#energydispersivexrayspectrometry)
+ [`xrayfluorescencespectrometry`](#xrayfluorescencespectrometry)
+- a surface elemental analysis technique often used for the ultra-
+trace analysis of particles, residues, and impurities on smooth
+surfaces. TXRF is essentially an energy dispersive XRF technique
+arranged in a special geometry. An incident beam impinges upon a
+polished flat sample carrier at angles below the critical angle of
+external total reflection for X-rays, resulting in the reflection of
+most of the excitation beam photons at this surface. Since Total
+Reflection angle depends on the energy of the photon, one can use this
+effect to eliminate the high energy photons from the excitation
+spectrum and minimize their contribution to the background in the
+measured spectra, thus making possible to achieve better detection
+limits. Due to this configuration, the measured spectral background in
+TXRF is less than in conventional XRF. This reduction results in
+increased signal to noise ratio. (https://www-
+pub.iaea.org/MTCD/publications/PDF/TCS-51/html/pdf/Section%201.pdf)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+TOTAL REFLECTION X-RAY FLUORESCENCE ANALYSIS, 
+total reflection X- ray fluorescence analysis, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://www-pub.iaea.org/MTCD/publications/PDF/TCS-51/html/pdf/Section%201.pdf, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/totalreflectionxrayfluorescencespectrometry
+
+
+[]{#ramanspectrometry}
+
+####  Raman spectrometry
+- Child of:
+ [`spectrometry`](#spectrometry)
+- Measurement principle of molecular spectroscopy based on Raman
+scattering. (Source: IUAPC; https://iupac.org/wp-
+content/uploads/2019/10/PAC-REC-19-02-03.R2_PR191002MC.pdf).  Raman
+spectroscopy is commonly used in chemistry to provide a structural
+fingerprint by which molecules can be identified. This technique uses
+a source of monochromatic electromagnetic radiation to interact with
+molecular vibrations, phonons or other excitations in the analyzed
+sample resulting in the energy of the incident photons being shifted
+up or down. The light source is typically a laser in the visible, near
+infrared, or near ultraviolet range, although X-rays can also be used.
+The shift in energy from the incident source gives information about
+the vibrational modes in the analyzed sample.  Electromagnetic
+radiation from the illuminated spot is collected with a lens and sent
+through a monochromator. Elastic scattered radiation at the wavelength
+corresponding to the incident excitation is filtered out, while the
+rest of the collected light is dispersed onto a detector.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+LASER CONFOCAL-MICRORAMAN ANALYSIS, 
+LASER CONFOCAL-MICRORAMAN, 
+Laser Raman Microanalysis, 
+Raman Spectroscopy, 
+Raman vibrational spectroscopy, 
+Raman, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/geox, 
+https://w3id.org/geochem/1.0/agent/orex, 
+DFG, 
+https://iupac.org/wp-content/uploads/2019/10/PAC-REC-19-02-03.R2_PR191002MC.pdf, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/ramanspectrometry
+
+
+[]{#surfaceanalysis}
+
+###  Surface analysis
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- Analytical techniques focused on characterizing the surface of a
+sample.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/surfaceanalysis
+
+
+[]{#afmtopographyimaging}
+
+####  AFM topography imaging
+- Child of:
+ [`atomicforcemicroscopy`](#atomicforcemicroscopy)
+ [`imagingtechniques`](#imagingtechniques)
+ [`surfaceanalysis`](#surfaceanalysis)
+- A sharp probe tip mounted on a microcantilever scans over the
+specimen line by line, whereby the topographic image of the sample
+surface is generated by 'feeling' rather than 'looking.'
+(https://doi.org/10.1007/978-3-642-16712-6_496).  As the tip
+approaches the surface, the close-range, attractive forces between the
+surface and the tip causes the cantilever to deflect towards the
+surface. However, as the cantilever is brought even closer to the
+surface, until the tip makes contact with it, increasingly repulsive
+forces takes over and causes the cantilever to deflect away from the
+surface. (https://lnf-
+wiki.eecs.umich.edu/wiki/Atomic_force_microscopy)
+- **Source:**
+https://doi.org/10.1007/978-3-642-16712-6_496, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://lnf-wiki.eecs.umich.edu/wiki/Atomic_force_microscopy, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/afmtopographyimaging
+
+
+[]{#temperatureprogrammeddesorptionelectronprobeanalysis}
+
+####  Temperature programmed desorption electron probe analysis
+- Child of:
+ [`surfaceanalysis`](#surfaceanalysis)
+- carried out by placing a catalyst inside a reactor and pushing an
+inert gas into the chamber. Alternatively the sample can be located in
+a UHV chamber with no carrier gas. The sample is dosed with a probe
+gas such as CO, NH3, H2 etc. The sample is then increased in
+temperature at a linear ramp rate and the desorption products analysed
+by a mass spectrometer. This technique is powerful and effective in
+obtaining information about surface chemistry.
+(https://www.hidenanalytical.com/blog/what-temperature-programmed-
+desorption-tpd/)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+TEMPERATURE PROGRAMMED DESORPTION ELECTRON PROBE
+- **Source:**
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://www.hidenanalytical.com/blog/what-temperature-programmed-desorption-tpd/, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/temperatureprogrammeddesorptionelectronprobeanalysis
+
+
+[]{#thermoluminescenceanalysis}
+
+###  Thermoluminescence analysis
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- Technique used to evaluate the degree of metamorphism for ordinary
+chondrites, CM, CV, and CO chondrites and eucrites, and to identify
+meteorites that have experience unusual radiation or thermal history.
+Procedure: samples pulverized to 100 mesh powders, metal removed with
+a hand magnet. Aliquot (typically 4 mg) placed in copper pans, their
+natural TL emitted light intensity measured while by heating to 500
+degree C, annealing any TL effect. Sample is then given a known dose
+of radiation and induced TL measured by heating to 500 degree C while
+the intensity of light emitted is measured. Light measured using a
+photomultiplier (or similar radiometer) equipped with IR and red
+filters (possibly other filters). Measurements include TL sensitivity
+- the maximum intensity of light emitted normalized to a standard of
+Dhajala (H3.8) powder;  Temperature of maximum TL light intensity
+('peak temperature'); Peak width of the light intensity vs.
+temperature curve as full-width at half maximum; ratio of light
+intensity peak height at low and high temperature (generally 250 and
+350 degrees C), 'equivalent dose' - the ratio of natural TL intensity
+to induced TL intensity (at 250 degree C), multiplied by the
+excitation dose to induce TL.  Parameters in the experiments include
+the mass of sample analyzed, temperature range for heating, kind of
+radiometer and filters used, heating rate (count time at each
+temperature...), and dose of radiation to the sample after the initial
+heating and annealing.
+- **Source:**
+https://w3id.org/geochem/1.0/agent/metbase, 
+Hasan, F. A., Score, R. and Sears, D. W. G. (1989) : The natural thermoluminescence survey of
+Antarctic meteorites. A discussion of methods for reporting natural TL data. Lunar and
+Planetary XX. Houston, Lunar Planet. Inst., 383-384;  https://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query?bibcode=1989LPI....20..383H&db_key=AST, 
+P.H. Benoit, ,K. Ninagawa, and D.W.G. Sears, 2000, Thermoluminescence sensitivity and thermal history of unequilibrated ordinary chondrites: Review and update: Lunar and Planetary Science XXXI, 1394.pdf; https://dsears.hosted.uark.edu//publications/pub%20by%20year/2000%20papers/benoit%20et%20al%202000c.pdf, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/thermoluminescenceanalysis
+
+
+[]{#trackcounting}
+
+###  Track counting
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- Techniques that measure microscopic damage tracks due to radioactive
+decay of atoms in the sample.
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/analyticalmethod/smraddgencategory
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/trackcounting
+
+
+[]{#alpharecoiltrackcounting}
+
+####  Alpha recoil track counting
+- Child of:
+ [`trackcounting`](#trackcounting)
+- Like fission-track dating, alpha-recoil track (ART) dating is based
+on the accumulation of nuclear particles that are released by natural
+radioactivity and produce etchable tracks in solids. ARTs are formed
+during the alpha-decay of uranium and thorium as well as of their
+daughter nuclei. When emitting an alpha-particle, the heavy remaining
+nucleus recoils 30-40 nm, leaving behind a trail of radiation damage.
+Through etching the ART tracks become visible with interference phase-
+contrast microscopy. Alpha-recoil dating has a great potential for
+Quaternary chronometry and tephrochronology.
+(https://doi.org/10.1016/S0009-2541(99)00185-0)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+ALPHA-RECOIL TRACKS DATING
+- **Source:**
+https://doi.org/10.1016/S0009-2541(99)00185-0, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/alpharecoiltrackcounting
+
+
+[]{#fissiontrackcounting}
+
+####  Fission track counting
+- Child of:
+ [`trackcounting`](#trackcounting)
+- Fission track age with correction applied for partial annealing
+using  Isothermal plateau correction
+(https://doi.org/10.1016/1040-6182(92)90017-V)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+FISSION TRACK ANALYSIS, 
+FISSION TRACK, 
+ISOTHERMAL PLATEAU FISSION TRACK ANALYSIS, 
+ISOTHERMAL PLATEAU FISSION TRACK, 
+- **Source:**
+https://doi.org/10.1016/1040-6182(92)90017-V, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/petdb, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/fissiontrackcounting
+
+
+[]{#nuclearparticletrackcounting}
+
+####  Nuclear particle track counting
+- Child of:
+ [`trackcounting`](#trackcounting)
+- [? guess ] Technique used to measure the 222Rn concentration
+(Bq.m-3) in occupational and domestic environments. The detector
+employed is the LEXAN plastic. An electrochemical process is used to
+reveal the tracks generated at the detector surface by the incidence
+of the alpha particles from radon and its progeny decay ( Andrade
+Pinheiro and Cardozo, 2009, https://inis.iaea.org/collection/NCLCollec
+tionStore/_Public/41/057/41057319.pdf)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Source:**
+https://w3id.org/geochem/1.0/agent/astromat
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/nuclearparticletrackcounting
+
+
+[]{#xraydiffraction}
+
+###  X-ray diffraction
+- Child of:
+ [`analyticalmethod`](#analyticalmethod)
+- Measurement method using diffraction of X-radiation to obtain the
+spatial arrangement of atoms in a crystalline sample. X-ray
+diffraction is based on constructive interference of monochromatic
+X-rays and a crystalline sample. These X-rays are generated by a
+cathode ray tube, filtered to produce monochromatic radiation,
+collimated to concentrate, and directed toward the sample. The
+interaction of the incident rays with the sample produces constructive
+interference (and a diffracted ray) when conditions satisfy Bragg's
+Law (n*'lambda'=2d*sin(theta)). This law relates the wavelength of
+electromagnetic radiation to the diffraction angle and the lattice
+spacing in a crystalline sample. These diffracted X-rays are then
+detected, processed and counted. By changing the geometry of the
+incident rays, the sample, and the detector, all possible diffraction
+directions of the lattice should be attained.(https://serc.carleton.ed
+u/research_education/geochemsheets/techniques/XRD.html) Copper K-a
+radiation (l = 0.15406 nm, E = 8.04 keV) is typically used for routine
+XRD. (Source: IUPAC; https://doi.org/10.1515/pac-2019-0302). Technique
+based on observing the scattered intensity of an X-ray beam hitting a
+sample as a function of incident and scattered angle, polarization,
+and wavelength or energy where the scattering is elastic and the
+scattering object is crystalline, so that the resulting pattern
+contains sharp spots analyzed by X-ray crystallography.
+(https://en.wikipedia.org/wiki/X-ray_scattering_techniques)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+X-RAY DIFFRACTION SPECTROMETRY, 
+X-ray diffraction analysis, 
+X-ray diffraction snalysis, 
+- **Source:**
+https://doi.org/10.1515/pac-2019-0302, 
+https://w3id.org/geochem/1.0/agent/astromat, 
+https://w3id.org/geochem/1.0/agent/georoc, 
+https://w3id.org/geochem/1.0/agent/geox, 
+https://w3id.org/geochem/1.0/agent/orex, 
+https://serc.carleton.edu/research_education/geochemsheets/techniques/XRD.html, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/xraydiffraction
+
+
+[]{#singlecrystalxraydiffraction}
+
+####  Single crystal X-ray diffraction
+- Child of:
+ [`xraydiffraction`](#xraydiffraction)
+- Single-crystal X-ray Diffraction is a non-destructive analytical
+technique which provides detailed information about the internal
+lattice of crystalline substances, including unit cell dimensions,
+bond-lengths, bond-angles, and details of site-ordering. X-ray
+diffraction is based on constructive interference of monochromatic
+X-rays and a crystalline sample. These X-rays are generated by a
+cathode ray tube, filtered to produce monochromatic radiation,
+collimated to concentrate, and directed toward the sample. The
+interaction of the incident rays with the sample produces constructive
+interference (and a diffracted ray) when conditions satisfy Bragg's
+Law (n*'lambda'=2d*sin(theta)). This law relates the wavelength of
+electromagnetic radiation to the diffraction angle and the lattice
+spacing in a crystalline sample. These diffracted X-rays are then
+detected, processed and counted. By changing the geometry of the
+incident rays, the orientation of the centered crystal and the
+detector, all possible diffraction directions of the lattice should be
+attained. Single-crystal diffractometers use either 3- or 4-circle
+goniometers. These circles refer to the four angles (2*theta, 'chi',
+'phi', and 'omega') that define the relationship between the crystal
+lattice, the incident ray and detector. Samples are mounted on thin
+glass fibers which are attached to brass pins and mounted onto
+goniometer heads. Adjustment of the X, Y and Z orthogonal directions
+allows centering of the crystal within the X-ray beam. Single-crystal
+X-ray diffraction is most commonly used for precise determination of a
+unit cell, including cell dimensions and positions of atoms within the
+lattice. (https://serc.carleton.edu/research_education/geochemsheets/t
+echniques/SXD.html)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+X-ray crystallography, 
+X-ray diffraction analysis, 
+X-ray diffraction, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/geox, 
+DFG, 
+https://serc.carleton.edu/research_education/geochemsheets/techniques/SXD.html, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/singlecrystalxraydiffraction
+
+
+[]{#xraypowderdiffraction}
+
+####  X-ray powder diffraction
+- Child of:
+ [`xraydiffraction`](#xraydiffraction)
+- X-ray powder diffraction (XRD) is a rapid analytical technique
+primarily used for phase identification of a crystalline material and
+can provide information on unit cell dimensions. The analyzed material
+is finely ground, homogenized, and average bulk composition is
+determined. The geometry of an X-ray diffractometer is such that the
+sample rotates in the path of the collimated X-ray beam at an angle
+theta while the X-ray detector is mounted on an arm to collect the
+diffracted X-rays and rotates at an angle of 2*theta. The instrument
+used to maintain the angle and rotate the sample is termed a
+goniometer. For typical powder patterns, data is collected at 2theta
+from ~5degree to 70degree, angles that are preset in the X-ray scan.
+X-ray powder diffraction is most widely used for the identification of
+unknown crystalline materials (e.g. minerals, inorganic compounds). (h
+ttps://serc.carleton.edu/research_education/geochemsheets/techniques/X
+RD.html)
+- See Also:
+  * [meth:method](https://w3id.org/geochem/1.1/analyticalmethod/method)
+- **Alternate labels:**
+Powder X-ray diffraction, 
+X-ray diffraction snalysis, 
+X-ray diffraction, 
+- **Source:**
+https://w3id.org/geochem/1.0/agent/geox, 
+https://serc.carleton.edu/research_education/geochemsheets/techniques/XRD.html, 
+- Concept URI: https://w3id.org/geochem/1.0/analyticalmethod/xraypowderdiffraction
+
+
+
