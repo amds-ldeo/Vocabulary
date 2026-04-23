@@ -1,0 +1,40 @@
+# Processes the SKOS vocabularies under /ETmaterials and publishes the
+# generated HTML to the gh-pages branch under /docs/ETmaterials.
+#
+# Triggered manually via the GitHub Actions "Run workflow" button.
+
+name: Process ETmaterials vocabularies
+on: [workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Vocabulary action (ETmaterials)
+        uses: ./
+        with:
+          action: docs
+          path: ${{ github.workspace }}
+          vocabdir: ETmaterials
+          inputttl: ExtraterrestrialMaterialsMindat
+          inputvocaburi: etma:cscheme
+
+      - name: Stage ETmaterials output under docs/ETmaterials
+        run: |
+          # Action runs as root in its container; reown outputs to the runner user.
+          sudo chown -R "$(id -u):$(id -g)" docs
+          mkdir -p staged_docs/ETmaterials
+          shopt -s nullglob
+          for f in docs/ExtraterrestrialMaterialsMindat*; do
+            mv "$f" staged_docs/ETmaterials/
+          done
+          ls -la staged_docs/ETmaterials/
+
+      - name: Deploy ETmaterials docs to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: staged_docs/ETmaterials
+          target-folder: docs/ETmaterials
+          commit-message: "Rebuild ETmaterials vocabulary HTML"
