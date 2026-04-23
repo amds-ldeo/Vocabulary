@@ -21,15 +21,18 @@ Vocabularies for analytical techniques in geochemistry and cosmochemistry.
 
 Vocabulary to classify types of meteorites and other extraterrestrial materials. Derived from Meteorite Bulletin classes (via Mindat), extended with lunar materials from Apollo return samples and links to subsuming terrestrial material classes.
 
-- _HTML view — to be published by a follow-up `process_etmaterials_vocab.yml` workflow._
+### Extraterrestrial materials (Mindat)
+
+- [HTML view](ETmaterials/ExtraterrestrialMaterialsMindat.html)
 - [SKOS Turtle source](https://github.com/amds-ldeo/Vocabulary/blob/master/ETmaterials/ExtraterrestrialMaterialsMindat.ttl)
 
 ## Instruments and related vocabularies
 
 Concept schemes describing instrument and sample-handling categories: `Instruments`, `NumericModel`, `Parameters`, `PositioningSystem`, `SampleCollection`, `SamplePreparation`, `SeismicSource`, and `mmisw-models`.
 
-- _HTML views — to be published by follow-up workflows (`process_instrumentall_vocab.yml`, `process_instruments_vocab.yml`)._
-- [SKOS Turtle sources](https://github.com/amds-ldeo/Vocabulary/tree/master/instrumentAll)
+- _HTML views — pending. The `instrumentAll/*.ttl` files declare multiple ConceptSchemes per file (mix of external NERC schemes and several in-house schemes) and need a per-file "primary scheme" decision before they can be processed. `instruments/mmisw-models.ttl` needs its items retyped as `skos:Concept` before HTML generation can produce non-empty output._
+- [SKOS Turtle sources (instrumentAll)](https://github.com/amds-ldeo/Vocabulary/tree/master/instrumentAll)
+- [SKOS Turtle source (mmisw-models)](https://github.com/amds-ldeo/Vocabulary/blob/master/instruments/mmisw-models.ttl)
 
 ## Related
 
