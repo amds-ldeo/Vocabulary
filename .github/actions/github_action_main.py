@@ -70,11 +70,11 @@ def main():
 
         if command == "uijson":
             print("Generating uijson for inclusion in webUI build")
-            _run_uijson_in_container(os.path.join(path, inputf + ".json"), voc_uri)
+            _run_uijson_in_container(os.path.join(path, inputf + ".json"), voc_uri, cachepath)
         elif command == "docs":
             print("Generating markdown and html docs")
             md_path = os.path.join(path, inputf + ".md")
-            result = _run_docs_in_container(md_path, voc_uri)
+            result = _run_docs_in_container(md_path, voc_uri, cachepath)
             if result == 0:
                 _quarto_render_html(md_path, path)
             else:
@@ -126,9 +126,9 @@ def _run_make_in_container(target: str):
     subprocess.run(["/usr/bin/make", "-C", "/app", "-f", "/app/Makefile", target])
 
 
-def _run_uijson_in_container(output_path: str, vocab_location: str):
+def _run_uijson_in_container(output_path: str, vocab_location: str, cachepath: str):
     with open(output_path, "w") as f:
-        vocab_args = ["-s", "/app/cache/vocabularies.db", "uijson", vocab_location, "-e"]
+        vocab_args = ["-s", cachepath, "uijson", vocab_location, "-e"]
         testflag = _run_python_in_container("/app/tools/vocab.py", vocab_args, f)
         if testflag == 0:
             print(f"Run_uijson: Successfully wrote uijson file to {output_path}")
@@ -137,9 +137,9 @@ def _run_uijson_in_container(output_path: str, vocab_location: str):
         return 1
 
 
-def _run_docs_in_container(output_path: str, vocab_location: str):
+def _run_docs_in_container(output_path: str, vocab_location: str, cachepath: str):
     with open(output_path, "w") as f:
-        docs_args = ["/app/cache/vocabularies.db", vocab_location]
+        docs_args = [cachepath, vocab_location]
         testflag = _run_python_in_container("/app/tools/vocab2mdCacheV2.py", docs_args, f)
         if testflag == 0:
             print(f"Docs in container: Successfully wrote doc file {vocab_location} to {output_path}")
