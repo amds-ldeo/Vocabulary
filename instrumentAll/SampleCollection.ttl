@@ -14,6 +14,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sdev: <http://vocab.nerc.ac.uk/collection/L05/current/> .
 @prefix sdnc: <http://vocab.nerc.ac.uk/collection/L21/current/> .
+@prefix sdndev: <http://vocab.nerc.ac.uk/scheme/SDNDEV/> .
 @prefix sdnd: <http://vocab.nerc.ac.uk/collection/C77/current/> .
 @prefix sdnk: <http://vocab.nerc.ac.uk/collection/L19/current/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .

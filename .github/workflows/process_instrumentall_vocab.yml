@@ -1,0 +1,52 @@
+# Processes the 7 SKOS vocabularies under /instrumentAll and publishes the
+# generated HTML (flat) to the gh-pages branch under /docs/instrumentAll/.
+#
+# Triggered manually via the GitHub Actions "Run workflow" button.
+#
+# Each ttl file contains several skos:ConceptScheme declarations (external
+# NERC schemes + in-house ones). The primary scheme chosen per file is the
+# one whose skos:hasTopConcept entries are anchored in the file's own
+# skos:broader/narrower graph:
+#   - SDNDEV/current  for six of the seven files
+#   - EDMED_DCAT_THEMES/current  for Parameters.ttl
+# (See PR #13 for analysis and rationale.)
+
+name: Process instrumentAll vocabularies
+on: [workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Vocabulary action (instrumentAll)
+        uses: ./
+        with:
+          action: docs
+          path: ${{ github.workspace }}
+          vocabdir: instrumentAll
+          inputttl: Instruments|NumericModel|Parameters|PositioningSystem|SampleCollection|SamplePreparation|SeismicSource
+          inputvocaburi: sdndev:current|sdndev:current|edmedscheme:current|sdndev:current|sdndev:current|sdndev:current|sdndev:current
+
+      - name: Stage instrumentAll output under docs/instrumentAll
+        run: |
+          # Action runs as root in its container; reown outputs to the runner user.
+          sudo chown -R "$(id -u):$(id -g)" docs
+          mkdir -p staged_docs/instrumentAll
+          shopt -s nullglob
+          for slug in Instruments NumericModel Parameters PositioningSystem SampleCollection SamplePreparation SeismicSource; do
+            for f in docs/${slug}.md docs/${slug}.html "docs/${slug}_files"; do
+              if [ -e "$f" ]; then
+                mv "$f" staged_docs/instrumentAll/
+              fi
+            done
+          done
+          ls -la staged_docs/instrumentAll/
+
+      - name: Deploy instrumentAll docs to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: staged_docs/instrumentAll
+          target-folder: docs/instrumentAll
+          commit-message: "Rebuild instrumentAll vocabulary HTML"

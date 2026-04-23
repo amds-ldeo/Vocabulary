@@ -14,6 +14,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sdev: <http://vocab.nerc.ac.uk/collection/L05/current/> .
 @prefix sdnc: <http://vocab.nerc.ac.uk/collection/L21/current/> .
+@prefix sdndev: <http://vocab.nerc.ac.uk/scheme/SDNDEV/> .
 @prefix sdnd: <http://vocab.nerc.ac.uk/collection/C77/current/> .
 @prefix sdnk: <http://vocab.nerc.ac.uk/collection/L19/current/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -838,6 +839,8 @@ inst:seavoxdevicecatalog
   dcterm:title "SeaDataNet Device Thesaurus" ;
   owl:versionInfo "541" ;
   skos:altLabel "Devices" ;
+  skos:hasTopConcept sdnc:ICAT08 ;
+  skos:historyNote "2026-04-23 SMR: added skos:hasTopConcept sdnc:ICAT08 so that the vocabularyTemplate-based HTML generation can anchor the broader/narrower tree at the numeric-model category root. The base SDNDEV scheme as distributed by NERC does not list ICAT08 as a top concept; this local NumericModel.ttl export extends it solely for documentation-rendering purposes."@en ;
   skos:prefLabel "SeaDataNet Device Thesaurus" ;
 .
 <http://w3id.org/def/nerc/discipline-P08/collection>
