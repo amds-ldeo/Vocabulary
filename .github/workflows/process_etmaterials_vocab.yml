@@ -4,7 +4,7 @@
 # Triggered manually via the GitHub Actions "Run workflow" button.
 
 name: Process ETmaterials vocabularies
-on: [workflow_dispatch]
+on: [workflow_dispatch, workflow_call]
 jobs:
   build:
     runs-on: ubuntu-latest

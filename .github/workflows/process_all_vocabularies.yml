@@ -1,0 +1,34 @@
+# Orchestrator that runs every per-subdirectory vocabulary workflow in one click.
+#
+# Invokes the four process_*_vocab.yml workflows as reusable workflows
+# (workflow_call), chained via `needs:` so they run **sequentially**. Sequential
+# matters: each one deploys to the gh-pages branch and parallel pushes would
+# race (the JamesIves deploy action force-pushes by default).
+#
+# The individual process_<subdir>_vocab.yml workflows remain independently
+# dispatchable via the Actions tab; this one is a shortcut when you want to
+# rebuild everything after a wide source change.
+#
+# Manual dispatch only — triggered via the "Run workflow" button.
+
+name: Process all vocabularies
+on: [workflow_dispatch]
+
+permissions:
+  contents: write
+
+jobs:
+  geochemistry:
+    uses: ./.github/workflows/process_geochemistry_vocab.yml
+
+  etmaterials:
+    needs: geochemistry
+    uses: ./.github/workflows/process_etmaterials_vocab.yml
+
+  instrumentall:
+    needs: etmaterials
+    uses: ./.github/workflows/process_instrumentall_vocab.yml
+
+  instruments:
+    needs: instrumentall
+    uses: ./.github/workflows/process_instruments_vocab.yml
