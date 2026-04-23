@@ -28,11 +28,46 @@ Vocabulary to classify types of meteorites and other extraterrestrial materials.
 
 ## Instruments and related vocabularies
 
-Concept schemes describing instrument and sample-handling categories: `Instruments`, `NumericModel`, `Parameters`, `PositioningSystem`, `SampleCollection`, `SamplePreparation`, `SeismicSource`, and `mmisw-models`.
+Concept schemes describing instrument, sampling, and parameter categories compiled from the SeaDataNet/NETMAR/NERC thesauri (SDN devices L22, SDN keyword types L19, SDN keyword categories L21, EDMED DCAT themes D01, etc.). Each file's HTML is rendered by anchoring the tree at the scheme whose `skos:hasTopConcept` entries line up with the file's actual `skos:broader`/`narrower` roots — `SDNDEV/current` for six of the seven, `EDMED_DCAT_THEMES/current` for `Parameters`.
 
-- _HTML views — pending. The `instrumentAll/*.ttl` files declare multiple ConceptSchemes per file (mix of external NERC schemes and several in-house schemes) and need a per-file "primary scheme" decision before they can be processed. `instruments/mmisw-models.ttl` needs its items retyped as `skos:Concept` before HTML generation can produce non-empty output._
-- [SKOS Turtle sources (instrumentAll)](https://github.com/amds-ldeo/Vocabulary/tree/master/instrumentAll)
-- [SKOS Turtle source (mmisw-models)](https://github.com/amds-ldeo/Vocabulary/blob/master/instruments/mmisw-models.ttl)
+### Measurement instruments
+
+- [HTML view](instrumentAll/Instruments.html)
+- [SKOS Turtle source](https://github.com/amds-ldeo/Vocabulary/blob/master/instrumentAll/Instruments.ttl)
+
+### Numeric models
+
+- [HTML view](instrumentAll/NumericModel.html)
+- [SKOS Turtle source](https://github.com/amds-ldeo/Vocabulary/blob/master/instrumentAll/NumericModel.ttl)
+
+### Parameters
+
+- [HTML view](instrumentAll/Parameters.html)
+- [SKOS Turtle source](https://github.com/amds-ldeo/Vocabulary/blob/master/instrumentAll/Parameters.ttl)
+
+### Positioning systems
+
+- [HTML view](instrumentAll/PositioningSystem.html)
+- [SKOS Turtle source](https://github.com/amds-ldeo/Vocabulary/blob/master/instrumentAll/PositioningSystem.ttl)
+
+### Sample collection instruments
+
+- [HTML view](instrumentAll/SampleCollection.html)
+- [SKOS Turtle source](https://github.com/amds-ldeo/Vocabulary/blob/master/instrumentAll/SampleCollection.ttl)
+
+### Sample preparation instruments
+
+- [HTML view](instrumentAll/SamplePreparation.html)
+- [SKOS Turtle source](https://github.com/amds-ldeo/Vocabulary/blob/master/instrumentAll/SamplePreparation.ttl)
+
+### Seismic sources
+
+- [HTML view](instrumentAll/SeismicSource.html)
+- [SKOS Turtle source](https://github.com/amds-ldeo/Vocabulary/blob/master/instrumentAll/SeismicSource.ttl)
+
+### MMISW instrument models (pending)
+
+`instruments/mmisw-models.ttl` items use a bespoke `:ModelName` type rather than `skos:Concept`, so the markdown generator finds no concepts to render. HTML generation is deferred pending either retyping the items or extending the generator to follow `rdfs:subClassOf skos:Concept`. [SKOS Turtle source](https://github.com/amds-ldeo/Vocabulary/blob/master/instruments/mmisw-models.ttl).
 
 ## Related
 
