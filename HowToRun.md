@@ -1,63 +1,101 @@
-# Setting up and running SKOS to HTML tools 
+# How to build and publish the vocabulary HTML
 
-Notes by Stephen M. Richard 2023-02-27
+Notes by Stephen M. Richard. Original SKOS-to-HTML tooling by Dave Vieglais for the
+iSamples project (https://github.com/isamplesorg/isamplesorg.github.io), supported by
+NSF award 2004815.
 
-Based on configuration set up by Dave Vieglais for the iSamples project, https://github.com/isamplesorg/isamplesorg.github.io
+The authoritative vocabularies are the SKOS Turtle files on the `master` branch, under
+`geochemistry/`, `ETmaterials/`, `instrumentAll/`, and `instruments/`. Edit those. The
+HTML views are generated artifacts and live only on the `gh-pages` branch, under
+`docs/<subdirectory>/`; never edit them by hand.
 
-## Tools:
-•	**Python code**. The code imports import **sys, textwrap, click, rdflib**, and **datetime**. This code reads a turtle file from a URL and writes a markdown file to the stdout.   The markdown uses some special syntax that is interpreted by Quarto for better html rendering. 
+## The normal path: run the GitHub Action
 
-•	**Quarto**. Software that converts files from Quarto-flavor Markdown to various output formats. Quarto is ‘built on Pandoc’.   In the course of debugging, I installed both Quarto (https://quarto.org/docs/get-started/) and Pandoc, but I’m not sure I needed to install Pandoc.
+Publishing is done entirely by GitHub Actions — there is nothing to install locally.
 
-•	**Bash shell script**.  The source URL and target file for the markdown output are defined here. The script executes the python code, then runs Quarto on the python output to generate html. Currently the markdown output and the html representation are saved in the same output directory. Note that I added the call to Quarto to render the markdown to html in the loop that does the markdown transformation. In Dave's original workflow, this is a separate step. 
+1. Commit and push your edited `.ttl` file to `master`.
+2. Go to the repository's **Actions** tab.
+3. Pick the workflow for the subdirectory you changed — *Process geochemistry
+   vocabularies*, *Process ETmaterials vocabularies*, *Process instrumentAll
+   vocabularies*, or *Process instruments vocabularies* — and press **Run workflow**.
+   To rebuild everything after a wide change, run *Process all vocabularies* instead;
+   it runs the four in sequence.
+4. When the run finishes, the regenerated HTML is on `gh-pages` and visible at
+   `https://amds-ldeo.github.io/Vocabulary/docs/<subdirectory>/<name>.html`.
 
-## Workflow
-I’m running Windows 11 Home, and managing Python environments using Anaconda. In order to run the Bash shell scripts, I had to get the Windows Subsystem for Linux running, Install Quarto, set up a python environment. Here’s the steps:
+The landing page (`docs/readme.md`) publishes itself: the *Publish landing page*
+workflow runs automatically whenever that file changes on `master`.
 
+### What the workflow actually does
 
-- **get 'Windows Subsystem for Linux' (WSL) working**   https://linuxhint.com/run-sh-file-windows/.  Have to change default subsystem to ubuntu 22.04 (defaulted to docker data for some reason)
-- **install Quarto**  https://github.com/quarto-dev/quarto-cli/releases/download/v1.2.335/quarto-1.2.335-win.msi
-- get **plantuml.jar** (Apache license) from https://plantuml.com/download
-copy jar to {plantumlpath}
-add PLANTUML_BIN as env variable 
-PLANTUML_BIN =  "java -jar {plantumlpath}\plantuml.jar"  (note path with no spaces...). NOTE-- this is likely not necessary since we're not generating any UML, but I installed it when debugging and I'm not sure things work without it...
+The workflow calls the repository's own composite action (`action.yml`), which builds
+the `Dockerfile` image and runs `.github/actions/github_action_main.py`. For each
+vocabulary that script deletes the SQLite cache, loads the Turtle file into it with
+`tools/vocab.py`, generates Quarto-flavored Markdown with `tools/vocab2mdCacheV2.py`,
+and renders HTML with Quarto. The workflow then stages the output and deploys it to
+`gh-pages`.
 
-- At the Anaconda prompt, make python environment (I named it quarto, the name doesn't matter, you just need to remember what you used.). Anaconda is not essential, its just what I use, there are other ways...: 
-  - conda create --name quarto
-  - activate quarto
-  - check that the python dependencies are installed in your python environment; you might need to do some conda installs...
+### Adding or changing a vocabulary in a workflow
 
-There are lots of ways to manage your files. Here's what I've done. Set up a github repository for the vocabularies. In the github vocabulary repository 
-- The **pages** branch that is the source for github.io pages where the vocabulary presentations are accessed; the python code is in a scripts directory on this branch, and the markdown and html representations of the turtle files are in directories on this branch. I have separate directories for different vocabularies.
-- The **main** branch contains the source Turtle files. These are the authoritative versions of the vocabulary and any updates should be made based on this branch. 
+Each workflow names its files in two pipe-delimited inputs that must have the same
+number of entries in the same order:
 
-In Git, checkout the repository containing the vocabulary, and then checkout the pages branch of the vocabulary repository. 
+- `inputttl` — Turtle file basenames, no `.ttl` extension, located in `vocabdir`.
+- `inputvocaburi` — the `skos:ConceptScheme` URI for each file, written as a CURIE.
 
-Working in the Quarto python environment, change directories to the scripts directory in the github pages branch. 
+The CURIE has to be resolvable from the `@prefix` declarations inside that same Turtle
+file. A file commonly declares more than one concept scheme (imported NERC schemes
+alongside the in-house one); the correct choice is the scheme whose `skos:hasTopConcept`
+entries are anchored in that file's own `skos:broader`/`narrower` hierarchy. Getting
+this wrong produces an empty or near-empty HTML page rather than an error.
 
-Open the shell script (generate_vocab_docs.sh) in a text editor
+Also update the staging step's file list in the same workflow, and add the new entry to
+`docs/readme.md`.
 
-Configure the source URL for the vocabularies and the target directory for output. The Source has to be accessible via URL. 
+## Running it locally to debug
 
-- SOURCE_BASE this is the base URL for the directory that contains the turtle files from which the ouput markdown will be generated. If you're working with turtle files in Github, remember to use the 'raw' versions. The path will be something like
-"https://raw.githubusercontent.com/{Github organization}/{*your vocabulary repository*}/{*branch that has Turtle files*}/{*subdirectory containing Turtle files*}/"
-- SOURCES a list of turtle files that will be processes, Each file name in quotes, spaces separating file names. E.g. ("file1.ttl"  "file2.ttl"  "file3.ttl")
+Useful when a vocabulary renders empty, with the wrong roots, or not at all. Requires
+Python 3.8+ and a local [Quarto](https://quarto.org/docs/get-started/) install.
 
-The destination is a local directory accessible from you python enviornment command line.
+Set up once, from the repository root:
 
-- DEST_FOLDER  a quoted local file path to a directory where output will be places. I make the pages branch in my vocabulary repo the destination. 
+```bash
+python -m venv .venv && .venv/Scripts/python.exe -m pip install -r tools/requirements.txt
+```
 
-If you want to run Quarto as part of the process, check that this line appears jsut above 'done' in the for loop that transforms the sources:
-```quarto render "${DEST_FOLDER}${fname}" --to html```
+Then, for each vocabulary, delete the cache database and load the Turtle file:
 
-Don't forget to save and push any updates if you want to use them again. 
+```bash
+rm -f cache/vocabularies.db && .venv/Scripts/python.exe tools/vocab.py --verbosity ERROR -s cache/vocabularies.db load "geochemistry/GeochemAnalyticalMethod.ttl" "meth:method"
+```
 
-Now run the shell script
-```scripts>  .\generate_vocab_docs.sh```
+Generate the Markdown:
 
-If all goes well, the markdown and html files will show up in the destination folder. 
+```bash
+PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe tools/vocab2mdCacheV2.py cache/vocabularies.db "meth:method" > testoutput/local_run/GeochemAnalyticalMethod.md
+```
 
+Render it:
 
-PROBLEMS to be aware of:
-- the conversion process fails if there are any non-base ASCII characters in your source files. The GitHUB process that updates the github.io pages is even more sensitive that the python code to special characters.
-- If you  update your turtle file and push to github, the raw files don't get updated right away-- it take about 5 minutes for the updates to propagate, so when you are fixing things in the turtle files, you have to wait before regenerating the html.
+```bash
+quarto render testoutput/local_run/GeochemAnalyticalMethod.md -t html
+```
+
+`cache/`, `.venv/`, and `testoutput/local_run/` are gitignored. Put scratch output in
+`testoutput/local_run/` — not in `docs/`, which is reserved for the published landing page.
+
+`tools/vocab.py` is also a standalone command-line tool for inspecting a loaded
+vocabulary (`vocabs`, `roots`, `concepts`, `narrower`, `match`, `namespaces`). Running
+`roots` against the cache is the quickest way to find out why a page came out empty.
+See `tools/README.md` for examples.
+
+## Things that bite
+
+- **Delete the cache database between vocabularies.** If you skip it, concepts from the
+  previously loaded vocabulary leak into the next one's output. The GitHub Action does
+  this automatically; local runs do not.
+- **Non-base-ASCII characters in a Turtle file break the conversion.** This has been a
+  persistent failure mode. Check for them first when a build fails on a file you just
+  edited; the GitHub Pages step is even less tolerant of them than the Python is.
+- **On Windows, set `PYTHONIOENCODING=utf-8`** when generating Markdown. The tool writes
+  to stdout, and the default console encoding will mangle the output.
