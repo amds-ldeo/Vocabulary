@@ -2839,6 +2839,7 @@ skos:topConceptOf
   skos:altLabel "NANO SECONDARY ION MASS SPECTROMETRY"@en ;
   skos:altLabel "NANO SECONDARY IONIZATION MASS SPECTROMETRY"@en ;
   skos:altLabel "Nano-SIMS"@en ;
+  skos:altLabel "NanoSIMS"@en ;
   skos:broader <https://w3id.org/geochem/1.0/analyticalmethod/secondaryionizationmassspectrometry> ;
   skos:changeNote [
       dcterms:created "2025-12-09T00:18:30.645Z"^^xsd:dateTime ;
@@ -3942,6 +3943,7 @@ skos:topConceptOf
   rdfs:isDefinedBy <https://w3id.org/geochem/1.1/analyticalmethod/method> ;
   rdfs:label "Accelerator mass spectrometry"@en ;
   rdfs:seeAlso <https://w3id.org/geochem/1.1/analyticalmethod/method> ;
+  skos:altLabel "AMS"@en ;
   skos:broader <https://w3id.org/geochem/1.0/analyticalmethod/massspectrometry> ;
   skos:definition "In this technique, the target element is first chemically separated from the sample before it is placed in a sample holder in the AMS instrument. The sample element is then bombarded by cesium ions to sputter the analyte element from the sample as negative ions. The analyte ions are then accelerated down a beam tube by a positive potential difference of several million volts, passed through an electron stripper to convert them to positive ions, and accelerated back down the beam tube toward common potential where ion velocities approach a few percent of the speed of light. Using a series of magnetic and electrostatic mass filters, the ion beam containing all isotopes of the analyte element is then separated into separate beams containing the (usually unstable) isotope of interest and other isotopes, and each of the isotopes is counted by a separate detector. (Skoog, Holler & Crouch, p. 271). Components: 1) sample preparation: chemical concentration of analyte; 2) ionization: ion beam; 3) mass analyzer: accelerator Mass spectrometer; 4) detector: not specified."@en ;
   skos:inScheme <https://w3id.org/geochem/1.1/analyticalmethod/method> ;
@@ -5011,6 +5013,7 @@ skos:topConceptOf
   rdfs:label "Elemental analysis isotope ratio mass spectrometry"@en ;
   rdfs:seeAlso <https://w3id.org/geochem/1.1/analyticalmethod/method> ;
   skos:altLabel "Elemental analyzer - isotope ratio mass spectrometry"@en ;
+  skos:altLabel "EA-IRMS"@en ;
   skos:broader <https://w3id.org/geochem/1.0/analyticalmethod/elementalanalysismassspectrometry> ;
   skos:broader <https://w3id.org/geochem/1.0/analyticalmethod/isotoperatiomassspectrometry> ;
   skos:definition "Measurement and study of the relative abundances of the different isotopes of an element in a material using a mass spectrometer which is coupled with an elemental analyzer. (Source: IUPAC; https://doi.org/10.1351/PAC-REC-06-04-06). Isotope and chemical analysis of H, C, N, O and S in a sample. (OSIRIS-REx confluence)"@en ;
@@ -5623,6 +5626,7 @@ skos:topConceptOf
   rdfs:isDefinedBy <https://w3id.org/geochem/1.1/analyticalmethod/method> ;
   rdfs:label "High resolution inductively coupled plasma mass spectrometry (deprecated)"@en ;
   rdfs:seeAlso <https://w3id.org/geochem/1.1/analyticalmethod/method> ;
+  skos:altLabel "HR-ICP-MS"@en ;
   skos:broader <https://w3id.org/geochem/1.0/TESTanalyticaltechnique/technique/depreciated> ;
   skos:broader <https://w3id.org/geochem/1.0/analyticalmethod/inductivelycoupledplasmamassspectrometry> ;
   skos:changeNote [
@@ -5775,6 +5779,7 @@ skos:topConceptOf
   rdfs:seeAlso <https://w3id.org/geochem/1.1/analyticalmethod/method> ;
   skos:altLabel "INDUCTIVELY COUPLED PLASMA OPTICAL EMISSION SPECTROMETRY"@en ;
   skos:altLabel "INDUCTIVELY-COUPLED PLASMA OPTICAL EMISSION SPECTROSCOPY"@en ;
+  skos:altLabel "ICP-OES"@en ;
   skos:broader <https://w3id.org/geochem/1.0/analyticalmethod/inductivelycoupledplasmaemissionspectrometry> ;
   skos:definition "technique for determining the composition of a sample by heating it to the point that the material emits light, and analyzing the wavelenth of the emitted ultraviolet to visible wavelength light.  The sample is heated to emission temperatures using and inductively coupled plasma. The ICP-OES is an optical emission spectrophotometric technique that requires samples to be in solution form. The solution gets introduced to the hot plasma, which excites the electrons that emit energy at a given wavelength as they return to ground state. Each element emits energy at a specific wavelength according to its chemical character. The intensity of the energy emitted at a specific wavelength is proportional to the concentration of that particular sample. The elemental composition can be determined by comparing to a set of reference standards. The final elemental composition can be expressed as ppm or mg/L."@en ;
   skos:inScheme <https://w3id.org/geochem/1.1/analyticalmethod/method> ;
@@ -7657,6 +7662,7 @@ skos:topConceptOf
   rdfs:isDefinedBy <https://w3id.org/geochem/1.1/analyticalmethod/method> ;
   rdfs:label "Resonance ionization time of flight noble gas mass spectrometry"@en ;
   rdfs:seeAlso <https://w3id.org/geochem/1.1/analyticalmethod/method> ;
+  skos:altLabel "RI-TOF-NGMS"@en ;
   skos:broader <https://w3id.org/geochem/1.0/analyticalmethod/noblegasmassspectrometry> ;
   skos:broader <https://w3id.org/geochem/1.0/analyticalmethod/resonanceionizationmassspectrometry> ;
   skos:definition "Noble gas mass spectrometry technique that atomizes and ionizes samples using laser resonance to generate a plasma, and a time-of-flight mass analyzer."@en ;
@@ -7739,6 +7745,7 @@ skos:topConceptOf
   skos:altLabel "MULTI-COLLECTOR SECONDARY IONIZATION MASS SPECTROMETRY"@en ;
   skos:altLabel "SECONDARY ION MASS SPECTROMETRY"@en ;
   skos:altLabel "Secondary Ion mass spectrometry"@en ;
+  skos:altLabel "SIMS"@en ;
   skos:broader <https://w3id.org/geochem/1.0/analyticalmethod/massspectrometry> ;
   skos:changeNote [
       dcterms:created "2025-12-09T02:25:03.119Z"^^xsd:dateTime ;
@@ -7846,6 +7853,7 @@ skos:topConceptOf
   rdfs:label "Seismic velocity and ultrasonic elastic constant measurement"@en ;
   rdfs:seeAlso <https://w3id.org/geochem/1.1/analyticalmethod/method> ;
   skos:altLabel "Seismic velocities and rock ultrasonic elastic constants"@en ;
+  skos:altLabel "SV-RUEC"@en ;
   skos:broader <https://w3id.org/geochem/1.0/analyticalmethod/physicalpropertymeasurement> ;
   skos:definition "The compression (p) and shear (s) wave velocities in rock may be determined using a pulse generator and p and s-wave ultrasonic transducers.  The transducers are placed on opposite sides of a rock slab and the transit time is measured. (OSIRIS-REx confluence)"@en ;
   skos:inScheme <https://w3id.org/geochem/1.1/analyticalmethod/method> ;
@@ -8619,6 +8627,7 @@ Planetary XX. Houston, Lunar Planet. Inst., 383-384;  https://articles.adsabs.ha
   rdfs:seeAlso <https://w3id.org/geochem/1.1/analyticalmethod/method> ;
   skos:altLabel "X-RAY ABSORPTION NEAR-EDGE STRUCTURE SPECTROSCOPY"@en ;
   skos:altLabel "X-ray absorption near edge structure (XANES) spectroscopy"@en ;
+  skos:altLabel "XANES"@en ;
   skos:broader <https://w3id.org/geochem/1.0/analyticalmethod/xrayabsorptionspectrometry> ;
   skos:definition "This technique is based on the absorption of an X-ray photon, in which an electron interacts with an incident X-ray to acquire a time dependent acceleration. The electron may then be promoted from a core-orbital to an unoccupied bound or continuum state with an intensity given by Fermi's Golden Rule. By varying the energy of a monochromatized beam of incident photons, a spectrum of the absorption cross section can be generated. The probability of an excitation sharply increases when the energy of the incident photon reaches the binding energy of a core-electron. In X-ray Absorption Spectroscopy (XAS) this is referred to as an edge. XANES is a subset of XAS in which the local electronic structure is characterized by investigating the absorption cross section within 50-100 eV of an edge. The XANES region is sensitive to a wealth of electronic structure information, which may be analyzed in three sections. Before the edge, the intensity of pre-edge features is greatly affected by the coordination geometry of the central atom. At the edge, formal oxidation state may be qualitatively assigned, as the energy of the edge position is not an invariant quantity for a given element, the position shifts in accordance with electron density. Finally, coordination shells are interrogated just beyond the edge as the emitted photoelectron scatters off neighboring atoms. (https://www.cei.washington.edu/education/science-of-solar/xray-absorption-near-edge-spectroscopy-xanes/)"@en ;
   skos:inScheme <https://w3id.org/geochem/1.1/analyticalmethod/method> ;
@@ -8843,6 +8852,7 @@ Planetary XX. Houston, Lunar Planet. Inst., 383-384;  https://articles.adsabs.ha
   skos:historyNote "2023-05-26 SMR add funding acknowledgement for Astromat support from NASA planetary sciences division, using schema.org/funding property."@en ;
   skos:historyNote "2023-06-17 SMR put the dcterm agent objects in https://w3id.org/geochem/1.0/agent URI space (instead of analyticalmethod). Add 'and cosmochemistry' in vocab title."@en ;
   skos:historyNote "2024-02-22 SMR  some classes have multiple skos:notation values, pick one to keep as a unique notation, move others to altLabel.  Add some other altLabels for MC and ID TIMS, SIMS.  Deprecate  Add SHRIMP (Sensitive high mass resolution ion microprobe) as a method under Secondary ionization mass spectrometry because of its frequent use as a method in the literature. Fix Duplicate notation value-- GC to GAMMA, GAMMA to GR-S.  Deprecate 'High resolution inductively coupled plasma mass spectrometry'.   TBD--add notations for classes that don't have notation, standardize hyphenation of skos:notation values."@en ;
+  skos:historyNote "2026-09-09 SMR  Add skos:altLabel for nine common-usage abbreviations that differ from the concept notation only in punctuation: XANES (XANE-S), SIMS (SI-MS), NanoSIMS (nano-SI-MS), EA-IRMS (EA-IR-MS), AMS (A-MS), ICP-OES (ICP-OE-S), RI-TOF-NGMS (RI-TOF-NG-MS), HR-ICP-MS (HRICPMS) and SV-RUEC (SVRUEC). These are the spellings used by the Astromaterials Data Archive (ADA), the geochemBuildingBlocks technique profiles and the TAPP planning table; without them a join on code alone misses the concept even though the technique is present. Follows the practice recorded on 2024-02-22 of keeping one notation per concept and carrying the other spellings as altLabel. TIMS and TOF-SIMS already had theirs."@en ;
   skos:prefLabel "Analytical methods for geochemistry"@en ;
   <https://schema.org/funding> "Compilation of this vocabulary supported by funding from the US National Aeronautics and Space Administration (NASA) Planetary Sciences Division for the Astromaterials Data System at Lamont Doherty Earth Observatory, Columbia University"@en ;
   <https://schema.org/provider> "Australian Research Data Commons, Research Vocabularies Australia" ;
